@@ -1,4 +1,4 @@
-<h1>TUMx – Technical University of Munich</h1>
+<h1 align="center">TUMx – Technical University of Munich</h1>
 
 <p align="center" width="100%">
 <img src="/images/image001.png?raw=true"
@@ -6,18 +6,17 @@
    width="40%" />
 </p>
 
-<h2>DWAPNx – Web App Development with the Power of Node.js</h2>
+<h2 align="center">DWAPNx – Web App Development with the Power of Node.js</h2>
 
 1.	Introduction – Language Basics
 2.	Functions and Objects
 3.	Server-side JavaScript
 4.	API calls and data visualization
 5.	Conclusion – Putting it all together
-
  
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
-<p> 
-Hey there and welcome to developing a web app with the power of Node!
+<p>
+Hey there and welcome to developing a web app with the power of Node!<br/>
 My name is Guy Yachdav and I'm a postdoctoral researcher at the department for Bioinformatics and Computational Biology at the TU Munich (Technical University of Munich).
 I am also the leader for this course. 
 For the past 10 years I ran multiple JavaScript software development projects in both industry and academia. 
@@ -30,14 +29,17 @@ The fourth mentor, Christian Dallago is also a Master's student and an expert fu
 Christian has been involved in JavaScript as a developer and as a teacher for over two years. 
 Dennis Schwartz, our fifth mentor, is a Master's student in Bioinformatics who is passionate about open-source development and community building. 
 The sixth mentor, Sebastian Wilzbach, is also a Master's Bioinformatics student and a JavaScript wonder kid. Sebastian has developed countless open-source tools, some of which got published in scientific journals. 
-All of us are part of the department for Bioinformatics and Computational Biology. 
-We always strive to make the biological data we work with easy to understand. 
-So, a few years ago we started working on developing JavaScript tools to visualize biological data. 
+All of us are part of the department for Bioinformatics and Computational Biology.
+
+We always strive to make the biological data we work with easy to understand.
+
+So, a few years ago we started working on developing JavaScript tools to visualize biological data.
+
 We joined forces with BioJS, an open-source community that is dedicated to the creation of tools that visualize Genomics data. We also got so interested in JavaScript and its application that we started giving a course at our university.
 You might have even heard about our course as it made international headlines when we worked with our students to develop "A Song of Ice and Data", a web app that uses data about the Game of Thrones books and TV show. 
 We had a lot of fun working on this project and hope you will enjoy learning web app development using JavaScript, while working on the Game of Thrones project we assigned for this course. 
  
-And here are more reasons to learn JavaScript. 
+And here are more reasons to learn JavaScript.<br/>
  
 First, JavaScript has been consistently the most popular language on GitHub, the world's most popular code repository. 
 
