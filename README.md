@@ -18,7 +18,7 @@
 <p align="center" width="100%">
 <img src="/images/image004.jpg?raw=true"
    alt=""
-   width="40%" />
+   width="65%" />
 </p>
 <p>
 Hey there and welcome to developing a web app with the power of Node!<br/>
