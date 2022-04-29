@@ -16,7 +16,7 @@
  
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
 <p align="center" width="100%">
-<img src="/images/image002.png?raw=true"
+<img src="/images/image004.jpg?raw=true"
    alt=""
    width="40%" />
 </p>
