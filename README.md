@@ -1,7 +1,7 @@
 <h1>TUMx – Technical University of Munich</h1>
 
 <p align="center" width="100%">
-<img src="/images/image-logo.png?raw=true"
+<img src="/images/image001.png?raw=true"
    alt="Linux logo"
    width="40%" />
 </p>
