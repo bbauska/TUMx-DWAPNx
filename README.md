@@ -15,6 +15,11 @@
 5.	Conclusion – Putting it all together
  
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
+<p align="center" width="100%">
+<img src="/images/image002.png?raw=true"
+   alt=""
+   width="40%" />
+</p>
 <p>
 Hey there and welcome to developing a web app with the power of Node!<br/>
 My name is Guy Yachdav and I'm a postdoctoral researcher at the department for Bioinformatics and Computational Biology at the TU Munich (Technical University of Munich).
