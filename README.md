@@ -50,7 +50,11 @@ First, JavaScript has been consistently the most popular language on GitHub, the
 
 Second, JavaScript has the fastest growing and by far the largest library repository called Node Package Management. 
 We'll talk about that more in module number four.
- 
+<p align="center" width="100%">
+<img src="/images/image005.jpg?raw=true"
+   alt=""
+   width="65%" />
+</p>
 Third, JavaScript is everywhere. 
 More vendors are adopting JavaScript and you can now run the same JavaScript code across many devices and platforms. 
 Maybe these are the reasons why JavaScript has become the number one technology choice of so-called unicorns. 
