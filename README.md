@@ -13,7 +13,7 @@
 3.	Server-side JavaScript
 4.	API calls and data visualization
 5.	Conclusion – Putting it all together
- 
+
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
 <p align="center" width="100%">
 <img src="/images/image004.jpg?raw=true"
@@ -97,8 +97,6 @@ Then, in the data visualization module, Dennis will introduce you to the most re
 At the final module, we will meet Professor Rost who will describe a few applications of JavaScript in the Life Sciences. 
 I then will summarize this course before we part.
 Right now, I'm sure, you're already excited about learning how to work with JavaScript. So, let's not waste any time and head straight to the next module language fundamentals.
-
-
 
 1.	Language Basics – An Introduction
  
@@ -2341,6 +2339,7 @@ the math library, which is the square root. So, I'm just going to square the
 weight and now it looks a lot nicer. As you can see, the characters that are
 having more intensive relationships have now wider links between them than those
 that have like a less close relationship.
+
 If you remember the demo I showed you in the beginning of this video and
 the in last few videos as well, we also can define an interactive behavior of the
 graph. There is a couple of things we can do. If you'd like to
@@ -2353,46 +2352,83 @@ responds to click events, so if I click on it, it get registered by the browser 
 we'll fire this click event on this node element. So, I can define what's going to
 happen whenever this click event is fired, and I'm going to use d3 again and
 what I'm going to do is I'm going to select this specific node
-using d3 and change some of its attributes. So, I'm going to do it d3.select
-and this time because this function is called on the node itself,
-I'm going to select this and now I can start transforming whichever node I
-or the user has clicked on. And what I'm going to do is, I'm going to set the
-attribute radius to 20. Actually, because, we already have our node radius, let's
-just set it to whatever the node radius was times 4. If I save that, go back, reload,
-run the visualization and I'll click on any of the links, they are four times
-the size then before. Now, that's nice but looks a bit abrupt. One of the things
-that d3 is really good at is making transitions look smooth and nice. So,
-we're going to add a little bit more to this and then add a transition and this
-transition function needs to be called before the actual change of attributes. So, I'm going to just tell it to transition and then I also need to define how long that transition period is going to be and that's in milliseconds and I'm going to make it nice and slow, so you can see it, so 750 milliseconds. So, save the file and go back and reload our graph again. If I now click any of the nodes, get it a little nice and slowly transition from one setting of radius size to the next. And we can also just for the fun of it maybe add another transition. So, let's say you want to change the fill color and I'm just going to change to red so whenever I click on it, it will increase its radius by times 4 and it fill the color red. And you could take a look at the d3 documentation, there's a whole number of things you can do with this and it's a lot of fun to play around. So, just spend some time with it if you're interested. Now, this is fine, but what if you want to go back. So there's a number
-of things we could do. We could for example start storing the previous size
-or color, you know node itself, and then on a different event go back to that. So,
-now we're going to keep it simple and just going to define another event on the
+using d3 and change some of its attributes.
+
+I'm going to do it d3.select and this time because this function is called on the node itself,
+I'm going to select this and now I can start transforming whichever node I or the user has clicked on.
+
+And what I'm going to do is, I'm going to set the attribute radius to 20.
+Actually, because, we already have our node radius, let's just set it to whatever 
+the node radius was times 4.
+If I save that, go back, reload, run the visualization and I'll click on any of the 
+links, they are four times the size then before.
+
+Now, that's nice but looks a bit abrupt. 
+One of the things that d3 is really good at is making transitions look smooth and nice. 
+We're going to add a little bit more to this and then add a transition and this
+transition function needs to be called before the actual change of attributes.
+
+I'm going to just tell it to transition and then I also need to define how long that 
+transition period is going to be and that's in milliseconds and I'm going to make 
+it nice and slow, so you can see it, so 750 milliseconds. So, save the file and go 
+back and reload our graph again.
+
+If I now click any of the nodes, get it a little nice and slowly transition from one setting of radius size to the next.
+
+And we can also just for the fun of it maybe add another transition.
+Let's say you want to change the fill color and I'm just going to change to red so whenever I 
+click on it, it will increase its radius by times 4 and it fill the color red.
+And you could take a look at the d3 documentation, there's a whole number of 
+things you can do with this and it's a lot of fun to play around. 
+Just spend some time with it if you're interested.
+Now, this is fine, but what if you want to go back. So there's a number of things we could do. 
+
+We could for example start storing the previous size or color, you know node itself, and then on a different event go back to that.
+
+Now we're going to keep it simple and just going to define another event on the
 nodes. A node on double-click I want something else to happen.
+
 More specifically, again, I want to select the current node using d3 and again I'd
 like it to transition nicely to the same duration and I'm just going to return
 the attribute to its original radius, so node radius again, and I'm just gonna set
 the color to white to say okay I've been here before,
 this one has been clicked.
-So, now I can click it. It will get big and red on a double-click it will go back to
+
+Now I can click it. It will get big and red on a double-click it will go back to
 white. So now, with a few simple steps and a few lines of code we've created a
 nice and interactive graph visualization using d3. There's a number of things you
 can add to that. Play around with it and it's a lot of fun. There's a whole bunch
 of documentation and tutorials available on d3 online. So, take a look at it. We
 have been using the version 3 of d3. There's an upcoming version 4 that changes some of the functions and the way to interact with it.
-So, take a look at that if you see this video in a couple of months from now or so, but the basic principles are all the same. It's just that some of the functions have been simplified or moved around a little bit. This is all we need to create this visualization: we have our forced layout physics simulation that calculates our node positions, we created a new SVG element on our DOM on the HTML page to actually populate with our visualization, we created a bunch of link and node elements in SVGs for lines and circles and then we connected the positions for the calculated positions of the physics simulation to our SVG elements on the page, and then also added some events for interactivity. I really hope you enjoyed these demonstration videos to our visualization lecture. Thank you very much for watching!
-Conclusion – Putting it all together
-Course Summary
+
+Take a look at that if you see this video in a couple of months from now or so, but the basic principles are all the same.
+It's just that some of the functions have been simplified or moved around a little bit.
+This is all we need to create this visualization: we have our forced layout physics simulation that calculates our 
+node positions, we created a new SVG element on our DOM on the HTML page to actually populate with our visualization, 
+we created a bunch of link and node elements in SVGs for lines and circles and then we connected the positions for the 
+calculated positions of the physics simulation to our SVG elements on the page, and then also added some events 
+for interactivity. I really hope you enjoyed these demonstration videos to our visualization lecture. 
+Thank you very much for watching!
+
+<h4>Conclusion – Putting it all together</h4>
+
+<h4>Course Summary</h4>
 Congratulations on finishing the series of lectures about developing a web application using the power of Node.js! The knowledge you acquired in the lectures and in the exercises will enable you to develop your own web or mobile applications entirely in JavaScript. In this series of lectures, we first covered the language basics, explaining the syntax and structure of a JavaScript program. We then saw that you can use objects and functions to structure your code. JavaScript is no longer a language that is just intended to be used in the web browser. Instead, we saw that JavaScript can now be run on the server side, allowing you to write JavaScript code both on the front and the back-end side.
 Finally, we saw that you can use JavaScript to turn data into interactive visual elements. So, by completing this course you should now be comfortable creating an end-to-end JavaScript application. We encourage you to continue and explore advanced topics, such as learning more on how to use web development frameworks or how to take advantage of functional reactive programming. We hope you enjoyed the set of lectures and we wish you good luck working with JavaScript!
 JavaScript in Bioinformatics (optional)
 Hello! My name is Burkhard Rost. I'm the Chair of Computational Biology in the department of Computational Biology and Bioinformatics at the Technical University in Munich at TUM. I got into Computational Biology, into Life Sciences, as a physicist, because I was fascinated by watching seeing protein structures in 3D. The intricate details of these shapes of protein 3D structures, something that I just found so absolutely fascinating. 
 And I saw them on SGI's, then on screens that, in fact, I had 3D glasses, I could look at the protein, I could look at what is behind this protein. And it absolutely fascinated me. It took over 20 years before we could do something, such as what I then saw on very expensive machines for everybody. Now, today, visualization is simple. 
+
 Today, we all are used to seeing 3D information on our home screens, on our computers, but the moment until we got to the point, so it needed something, in order to, really span between making it simple and using biological data, and the thing that connects these two extreme points really is JavaScript. It's the language, it's the bridge. JavaScript is extremely easy to share, it's extremely easy to write, is extremely easy to learn quickly. You need, in order to use it, just a browser and it allows a very easy interpretation of data, it allows easy writing. 
+
 Now, it is important to use JavaScript as a means of visualizing very complex data. In Biology, data is complex. Well, complex data we also find in other fields. We find it in Astrophysics, we find it in Physics, we find it in Finances, for instance, and other examples. The difference really is that in Biology, in some sense, the data, I'd argue, is even more complex. Another issue is that in Biology data is constantly changing. What today is the top data, tomorrow nobody will care for.
 Tomorrow, being in five years from now. Now, that means we need an interface, a bridge, between the data and visualization of the data, that in fact is very easy to handle, very easy to write and that, again, is exactly JavaScript. That is why JavaScript is uniquely fascinating for Biology and hopefully will allow us to make more sense of complex data, which, in fact, I believe, will help us to get a better healthcare in the future. 
 More and more Biology, Molecular Biology, modern Biology will intrude where we see a physician and I believe this will really contribute to helping to get a better treatment for all of us. 
+
 More health for all of us. When we taught JavaScript, one f the examples that we used was the Game of Thrones. Initially, we used it, because that was a relatively easy data set to use and to motivate students. 
+
 Biological data is more complex, but even from these simple first implementations we learned something about how to do JavaScript and something that gave us a new idea how to in fact look at protein protein interaction visualizers. 
+
 So, JavaScript also allows you to come up with a quick solution and then that quick solution may give you a new idea where to go. This again is an interactive way of using visualization, in a way that we haven't had before and it's really easy for everybody to use. I hope you will enjoy the JavaScript course. I hope you will enjoy programming JavaScript and I hope you will contribute to the growing body of things that will help Science and Life Science in particular. Thanks for being with us! Burkhard Rost, bye bye.
 …The end…
 
