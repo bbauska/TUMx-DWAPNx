@@ -1,27 +1,30 @@
 <h1 align="center">TUMx – Technical University of Munich</h1>
-
+<!------------------------------------------------------------------------------------------------>
+<!--------------------- image001.png - technical university of munich logo ----------------------->
+<!------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="/images/image001.png?raw=true"
-   alt="Linux logo"
+   alt="Technical University of Munich logo"
    width="40%" />
 </p>
 
 <h2 align="center">DWAPNx – Web App Development with the Power of Node.js</h2>
 
-1.	Introduction – Language Basics
-2.	Functions and Objects
-3.	Server-side JavaScript
-4.	API calls and data visualization
-5.	Conclusion – Putting it all together
+<ol type="1">
+<li>Introduction – Language Basics</li>
+<li>Functions and Objects</li>
+<li>Server-side JavaScript</li>
+<li>API calls and data visualization</li>
+<li>Conclusion – Putting it all together</li>
+</ol>
 
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
 <p align="center" width="100%">
 <img src="/images/image004.jpg?raw=true"
-   alt=""
-   width="65%" />
+  alt="JavaScript Overview."
+  width="65%" />
 </p>
-<p>
-Hey there and welcome to developing a web app with the power of Node!<br>
+<p>Hey there and welcome to developing a web app with the power of Node!<br>
 <br>
 My name is Guy Yachdav and I'm a postdoctoral researcher at the department for Bioinformatics and Computational Biology at the TU Munich (Technical University of Munich).<br>
 <br>
@@ -65,7 +68,7 @@ First, JavaScript has been consistently the most popular language on GitHub, the
 Second, JavaScript has the fastest growing and by far the largest library repository called Node Package Management.<br>
 <br>
 We'll talk about that more in module number four.
-
+<!------------------------------------------------------------------------------------------------------>
 <p align="center" width="100%">
 <img src="/images/image005.jpg?raw=true"
    alt="Why learn JavaScript?"
