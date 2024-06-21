@@ -1,7 +1,6 @@
 <h1 align="center">TUMx – Technical University of Munich</h1>
-<!------------------------------------------------------------------------------------------------>
-<!--------------------- image001.png - technical university of munich logo ----------------------->
-<!------------------------------------------------------------------------------------------------>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ image001.png - technical university of munich logo ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image001.png?raw=true"
    alt="Technical University of Munich logo"
@@ -19,221 +18,245 @@
 </ol>
 
 <h3>Introduction:  Web App Development with the Power of Node.JS</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ image004.jpg - javascript overview ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image004.jpg?raw=true"
+  title="JavaScript Overview."
   alt="JavaScript Overview."
   width="65%" />
 </p>
-<p>Hey there and welcome to developing a web app with the power of Node!<br>
-<br>
-My name is Guy Yachdav and I'm a postdoctoral researcher at the department for Bioinformatics and Computational Biology at the TU Munich (Technical University of Munich).<br>
-<br>
-I am also the leader for this course.<br>
-<br>
-For the past 10 years I ran multiple JavaScript software development projects in both industry and academia.<br>
-<br>
-I'm a Google Summer of Code mentor and I'm also a JavaScript lecturer at the TU Munich.<br>
-<br>
-The second mentor in this course is Dr. Tatyana Goldberg who is also a postdoctoral researcher and a true open-source enthusiast.<br>
-Tatyana is also a Google Summer of Code mentor and she has organized events to teach JavaScript to beginners.<br>
-<br>
-Our third mentor Dmitrii Nechaev is a Master's student who has vast experience in JavaScript development.<br>
-<br>
-Dmitrii is a gifted JavaScript guru who can take you through all the tricks and hidden shortcuts of the language. He has been teaching JavaScript for over five years.<br>
-<br>
-The fourth mentor, Christian Dallago is also a Master's student and an expert full stack developer who knows the ins and outs of JavaScript back-end technologies.<br>
-<br>
-Christian has been involved in JavaScript as a developer and as a teacher for over two years.<br>
-<br>
-Dennis Schwartz, our fifth mentor, is a Master's student in Bioinformatics who is passionate about open-source development and community building.<br>
-<br>
-The sixth mentor, Sebastian Wilzbach, is also a Master's Bioinformatics student and a JavaScript wonder kid. Sebastian has developed countless open-source tools, some of which got published in scientific journals.<br>
-<br>
-All of us are part of the department for Bioinformatics and Computational Biology.<br>
-<br>
-We always strive to make the biological data we work with easy to understand.<br>
-<br>
-A few years ago we started working on developing JavaScript tools to visualize biological data.<br>
-<br>
-We joined forces with BioJS, an open-source community that is dedicated to the creation of tools that visualize Genomics data. We also got so interested in JavaScript and its application that we started giving a course at our university.<br>
-<br>
-You might have even heard about our course as it made international headlines when we worked with our students to develop "A Song of Ice and Data", a web app that uses data about the Game of Thrones books and TV show.<br>
-<br>
-We had a lot of fun working on this project and hope you will enjoy learning web app development using JavaScript, while working on the Game of Thrones project we assigned for this course.<br>
-<br>
-And here are more reasons to learn JavaScript.<br/>
-<br>
-First, JavaScript has been consistently the most popular language on GitHub, the world's most popular code repository.<br>
-<br>
-Second, JavaScript has the fastest growing and by far the largest library repository called Node Package Management.<br>
-<br>
-We'll talk about that more in module number four.
-<!------------------------------------------------------------------------------------------------------>
+
+<p>Hey there and welcome to developing a web app with the power of Node!</p>
+
+<p>My name is Guy Yachdav and I'm a postdoctoral researcher at the department for 
+Bioinformatics and Computational Biology at the TU Munich (Technical University 
+of Munich).</p>
+
+<p>I am also the leader for this course. 
+For the past 10 years I ran multiple JavaScript software development projects 
+in both industry and academia. I'm a Google Summer of Code mentor and I'm also a 
+JavaScript lecturer at the TU Munich.</p>
+
+<p>The second mentor in this course is Dr. Tatyana Goldberg who is also a 
+postdoctoral researcher and a true open-source enthusiast.
+Tatyana is also a Google Summer of Code mentor and she has organized events 
+to teach JavaScript to beginners.</p>
+
+<p>Our third mentor Dmitrii Nechaev is a Master's student who has vast experience 
+in JavaScript development.
+Dmitrii is a gifted JavaScript guru who can take you through all the tricks 
+and hidden shortcuts of the language. He has been teaching JavaScript for over 
+five years.</p>
+
+<p>The fourth mentor, Christian Dallago is also a Master's student and an expert 
+full stack developer who knows the ins and outs of JavaScript back-end technologies.
+Christian has been involved in JavaScript as a developer and as a teacher for over two years.</p>
+
+<p>Dennis Schwartz, our fifth mentor, is a Master's student in Bioinformatics 
+who is passionate about open-source development and community building.<br>
+
+<p>The sixth mentor, Sebastian Wilzbach, is also a Master's Bioinformatics student 
+and a JavaScript wonder kid. Sebastian has developed countless open-source tools, 
+some of which got published in scientific journals.</p>
+
+<p>All of us are part of the department for Bioinformatics and Computational Biology.
+We always strive to make the biological data we work with easy to understand.
+A few years ago we started working on developing JavaScript tools to visualize 
+biological data. We joined forces with BioJS, an open-source community that is 
+dedicated to the creation of tools that visualize Genomics data. We also got so 
+interested in JavaScript and its application that we started giving a course at 
+our university.</p>
+
+<p>And here are more reasons to learn JavaScript. First, JavaScript has been 
+consistently the most popular language on GitHub, the world's most popular code 
+repository. Second, JavaScript has the fastest growing and by far the largest 
+library repository called Node Package Management. We'll talk about that more 
+in module number four.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ image005.jpg - why learn javascript? ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image005.jpg?raw=true"
-   alt="Why learn JavaScript?"
-   width="65%" />
+  title="Why learn JavaScript?"
+  alt="Why learn JavaScript?"
+  width="65%" />
 </p>
-Third, JavaScript is everywhere.<br>
-<br>
-More vendors are adopting JavaScript and you can now run the same JavaScript code across many devices and platforms.<br>
-<br>
-Maybe these are the reasons why JavaScript has become the number one technology choice of so-called unicorns.<br>
-<br>
-Unicorns are startups, valued at more than 1 billion dollars.<br>
-<br>
-And because javascript is such a hot language, JavaScript developers are in high demand.<br>
-<br>
-It is now easier than ever to find work as a JavaScript developer and the salaries offered are competitive.<br>
-<br>
-Before we begin, let's take a look at the history of JavaScript.<br>
-<br>
-JavaScript was first developed in ten days, back in 1995, by Brandon Eich who was at the Netscape Corporation.<br>
-<br>
-It was first called Mocha, but was quickly renamed to JavaScript for marketing purposes, even though it has nothing to do with language called Java.<br>
-<br>
-The first official standards for JavaScript ECMAScript 1 appeared in 1997. <br>
-<br>
-Then, between 1997 to 2005, competing standards for JavaScript appeared and this has resulted in several different versions of JavaScript that were not fully supported by major browsers. <br>
+
+<p>Third, JavaScript is everywhere. More vendors are adopting JavaScript and 
+you can now run the same JavaScript code across many devices and platforms.
+Maybe these are the reasons why JavaScript has become the number one technology 
+choice of so-called unicorns.</p>
+
+<p>Before we begin, let's take a look at the history of JavaScript.
+JavaScript was first developed in ten days, back in 1995, by Brandon Eich who 
+was at the Netscape Corporation.</p>
+
+<p>It was first called Mocha, but was quickly renamed to JavaScript for marketing 
+purposes, even though it has nothing to do with language called Java.
+The first official standards for JavaScript ECMAScript 1 appeared in 1997.</p>
+
+<p>Then, between 1997 to 2005, competing standards for JavaScript appeared and 
+this has resulted in several different versions of JavaScript that were not 
+fully supported by major browsers.</p>
+
+<p>In 2005, a new set of technologies, called Ajax, were developed. 
+AJAX allowed JavaScript to load data in the background without the need to 
+do a full page reload and enabled more dynamic JavaScript-based applications 
+to be developed. This resulted in a JavaScript renaissance, led by open-source 
+communities, which started releasing many libraries.</p>
+
+<p>The new libraries enabled the development of a new generation of JavaScript 
+applications and overall accelerated the functionality, acceptance and popularity 
+of the language. Yet in 2007, the standardization battles were still raging.
+Microsoft promoted their own ECMAScript 3.1, while Mozilla and others worked on 
+creating ECMAScript 4.</p>
+
+<p>Finally, in 2009, all parties came together and decided to move from ECMAScript 
+3.1 to a unified standard called ES 5 Harmony. All this then brings us to today 
+with JavaScript entering a completely new phase.</p>
+
+<p>The Node.js platform allows JavaScript to be run on the server side and Angular.js 
+provides an easy way to create powerful JavaScript-based web application.
+D3 allows data to be easily visualized and made interactive.
+There are many more applications and now is an exciting time to learn JavaScript.
+Let's see what is ahead of us and what we will cover over the next few modules.</p>
+
+<p>First, you will get a crash course in JavaScript.
+It is important to remember that we adapted it as lectures and code examples to 
+be compatible with ECMAScript 6, the latest JavaScript standard.</p>
+
+<p>Then, we will cover the basics of writing JavaScript code on the server using 
+Node.js, Express and MongoDB. Finally, in the last part of the course, you will 
+learn how to bring data to life using a stack of data visualization techniques.</p>
+
+<p>All parts of the course are accompanied with hands-on exercises that will help 
+you put your new skills to practice. Now, looking at the schedule – in the next 
+module number two, Tatyana will show you how easy it is to get started with 
+JavaScript and she will introduce you to the language fundamentals.</p>
+
+<p>After completing this module, you will be well on your way to write simple 
+JavaScript programs. Next is the object and function modules, in which Dimitri 
+will show you how you can take advantage of one of JavaScript's most powerful 
+features - its flexibility. JavaScript flexibility gives you the freedom to 
+write JavaScript object oriented code, as well as use functional programming.</p>
+
+<p>In module number four, Christian will introduce the wonders of Node.js and show 
+you how you can quickly and easily write JavaScript code that will run on the 
+server. Then, in the data visualization module, Dennis will introduce you to the 
+most relevant technologies we use today to visualize data on the web.</p>
+
+<p>At the final module, we will meet Professor Rost who will describe a few 
+applications of JavaScript in the Life Sciences. I then will summarize this 
+course before we part. Right now, I'm sure, you're already excited about 
+learning how to work with JavaScript. So, let's not waste any time and head 
+straight to the next module language fundamentals.</p>
+
+<h4>1.	Language Basics – An Introduction</h4>
+
+<p>Welcome to the language basics module!
+Together with HTML and cascading style sheets, JavaScript is one of the core 
+technologies for building websites.
+However, JavaScript is not only for building websites, it can also be used for 
+game development and application development. 
+While JavaScript may resemble general-purpose programming languages, such as C, 
+for instance, it still has very distinct features. 
+For instance, it is an interpreted language that does not require data typing 
+and its code is being evaluated during program execution. 
+
+<p>In this module, we will make our first steps and learn the basics of the 
+language. Tatyana will first show how to edit and run your code. She will then 
+survey some of the most essential parts of the JavaScript language. Tatyana is 
+an experienced data scientist and a JavaScript developer. She uses JavaScript'ing 
+at work researching bacteria's role in disease.</p>
+
+<h4>Lexical structure</h4>
+
+<p>Welcome to the first lecture of the lexical structure module! Getting started 
+with JavaScript is easy. All you need is a web console, which is included in any 
+modern browser of your choice. It is always a good idea to work with the latest 
+version of a web browser to fully enjoy the strength of JavaScript.</p>
+
+<p>A web console shows information about the currently loaded page.
+It also provides you with a command line that allows you to execute JavaScript 
+directly in the current page.</p>
+
+<p>There are two ways for opening the console: you can either press the combination 
+of three keys ctrl shift + I or you can open it through the menu of your browser.
+In Firefox, you click on menu, select developer menu and then the dev console.
+In Chrome, you also first click on menu, then select tools, where you find 
+developer tools, which will open the web console for you.
+The dev console appears at the bottom of the browser window and the command line, 
+framed in the blue box on the figure, will be ready for you to enter the JavaScript 
+code.</p>
+
+<p>You can try out the console by typing the instruction: console dot log hello 
+world and you will see hello world appearing in the console below your command.
+These instructions are also called statements in JavaScript. Similar to C, C++ 
+and Java, JavaScript statements end with a semicolon.</p>
+
+<p>In principle, you can omit the semicolon at the end of your statement. 
+JavaScript will add it for you. However, it is considered to be a bad practice 
+to do so. Semicolons allow your code to be more readable and they also make 
+sure that your code is free from side-effects.</p>
+
+<h4>JavaScript is a case-sensitive language.</h4>
+
+<p>This means that language keywords, variable and function names must always 
+be typed with a consistent capitalization of letters. For example, a different 
+capitalization of the name myvar will be understood by your program such that 
+if you are using three different names.</p>
+
+<p>All JavaScript programs are written using the Unicode character set.
+The standard Unicode set supports virtually every language currently used on 
+the planet, making JavaScript independent of the operating platform and the 
+language used.</p> 
+
+<p>JavaScript ignores white spaces, tabs and newlines that appear in your code, 
+except if they are part of a string or a regular expression. 
+Because of this feature, you can format your programs in the neat and consistent 
+way. And, in general, it is a very good idea to format your programs, because 
+formatting makes your programs easy to read and understand.</p>
 <br> 
-In 2005, a new set of technologies, called Ajax, were developed. <br>
-AJAX allowed JavaScript to load data in the background without the need to do a full page reload and enabled more dynamic JavaScript-based applications to be developed. This resulted in a JavaScript renaissance, led by open-source communities, which started releasing many libraries. <br>
-<br>
-The new libraries enabled the development of a new generation of JavaScript applications and overall accelerated the functionality, acceptance and popularity of the language. <br>
-<br>
-Yet in 2007, the standardization battles were still raging. <br>
-<br>
-Microsoft promoted their own ECMAScript 3.1, while Mozilla and others worked on creating ECMAScript 4. <br>
-<br>
-Finally, in 2009, all parties came together and decided to move from ECMAScript 3.1 to a unified standard called ES 5 Harmony. <br>
-<br>
-All this then brings us to today with JavaScript entering a completely new phase. <br>
-<br>
-The Node.js platform allows JavaScript to be run on the server side and Angular.js provides an easy way to create powerful JavaScript-based web application. <br>
-<br>
-D3 allows data to be easily visualized and made interactive. <br>
-<br>
-There are many more applications and now is an exciting time to learn JavaScript. <br>
-<br>
-Let's see what is ahead of us and what we will cover over the next few modules. <br>
-<br>
-First, you will get a crash course in JavaScript. <br>
-<br>
-It is important to remember that we adapted it as lectures and code examples to be compatible with ECMAScript 6, the latest JavaScript standard.<br>
-<br>
-Then, we will cover the basics of writing JavaScript code on the server using Node.js, Express and MongoDB. <br>
-<br>Finally, in the last part of the course, you will learn how to bring data to life using a stack of data visualization techniques. <br>
-<br>
-All parts of the course are accompanied with hands-on exercises that will help you put your new skills to practice. <br>
-<br> 
-Now, looking at the schedule – in the next module number two, Tatyana will show you how easy it is to get started with JavaScript and she will introduce you to the language fundamentals. <br>
-<br>
-After completing this module, you will be well on your way to write simple JavaScript programs. <br>
-<br>
-Next is the object and function modules, in which Dimitri will show you how you can take advantage of one of JavaScript's most powerful features - its flexibility. <br>
-<br>
-JavaScript flexibility gives you the freedom to write JavaScript object oriented code, as well as use functional programming. <br>
-<br>
-In module number four, Christian will introduce the wonders of Node.js and show you how you can quickly and easily write JavaScript code that will run on the server. <br>
-<br>
-Then, in the data visualization module, Dennis will introduce you to the most relevant technologies we use today to visualize data on the web. <br>
-<br>
-At the final module, we will meet Professor Rost who will describe a few applications of JavaScript in the Life Sciences. <br>
-<br>
-I then will summarize this course before we part.<br>
-<br>
-Right now, I'm sure, you're already excited about learning how to work with JavaScript. So, let's not waste any time and head straight to the next module language fundamentals.<br>
-<br>
-1.	Language Basics – An Introduction
-<br> 
-Welcome to the language basics module! <br>
-<br>
-Together with HTML and cascading style sheets, JavaScript is one of the core technologies for building websites.<br>
-However, JavaScript is not only for building websites, it can also be used for game development and application development. 
-While JavaScript may resemble general-purpose programming languages, such as C, for instance, it still has very distinct features. 
-For instance, it is an interpreted language that does not require data typing and its code is being evaluated during program execution. 
-<br>
-In this module, we will make our first steps and learn the basics of the language. <br>
-<br>
-Tatyana will first show how to edit and run your code.<br>
-<br>
-She will then survey some of the most essential parts of the JavaScript language. Tatyana is an experienced data scientist and a JavaScript developer. <br>
-<br>
-She uses JavaScript'ing at work researching bacteria's role in disease.<br>
-<br>
-Lexical structure
-<br> 
-Welcome to the first lecture of the lexical structure module! <br>
-<br>
-Getting started with JavaScript is easy. <br>
-<br>
-All you need is a web console, which is included in any modern browser of your choice. It is always a good idea to work with the latest version of a web browser to fully enjoy the strength of JavaScript.<br>
-<br>
-A web console shows information about the currently loaded page. <br>
-<br>
-It also provides you with a command line that allows you to execute JavaScript directly in the current page. <br>
-<br>
-There are two ways for opening the console: you can either press the combination of three keys ctrl shift + I or you can open it through the menu of your browser. <br>
-<br>
-In Firefox, you click on menu, select developer menu and then the dev console. <br>
-<br>
-In Chrome, you also first click on menu, then select tools, where you find developer tools, which will open the web console for you. <br>
-<br>
-The dev console appears at the bottom of the browser window and the command line, framed in the blue box on the figure, will be ready for you to enter the JavaScript code.<br>
-<br>
-You can try out the console by typing the instruction: console dot log hello world and you will see hello world appearing in the console below your command. <br>
-These instructions are also called statements in JavaScript. Similar to C, C++ and Java, JavaScript statements end with a semicolon. <br>
-In principle, you can omit the semicolon at the end of your statement. JavaScript will add it for you. <br>
-However, it is considered to be a bad practice to do so. <br>
-Semicolons allow your code to be more readable and they also make sure that your code is free from side-effects. <br>
-<br> 
-JavaScript is a case-sensitive language. <br>
-<br>
-This means that language keywords, variable and function names must always be typed with a consistent capitalization of letters.<br>
-<br>
-For example, a different capitalization of the name myvar will be understood by your program such that if you are using three different names. <br>
-<br>
-All JavaScript programs are written using the Unicode character set. <br>
-<br>
-The standard Unicode set supports virtually every language currently used on the planet, making JavaScript independent of the operating platform and the language used.<br>
-<br> 
-JavaScript ignores white spaces, tabs and newlines that appear in your code, except if they are part of a string or a regular expression. 
-<br>
-Because of this feature, you can format your programs in the neat and consistent way. And, in general, it is a very good idea to format your programs, because formatting makes your programs easy to read and understand. <br>
-<br> 
-JavaScript supports, as some other programming languages, two styles of comments. Namely, any text written after two slash characters up to the end of a line is treated as a single line comment and is ignored by JavaScript.<br>
-<br>
-Also, text written between slash star and star slash characters is also treated as a comment. You can span these comments over multiple lines.<br>
-<br>
-You can't, however, nest comments, as it will result in a syntax error shown in your console. <br>
-<br>
-Variables are symbolic names for values in your code.<br>
-<br>
-The names of variables are called identifiers and they conform to certain rules.<br>
-<br>
-For example, an identifier can start and contain only letters, numbers, underscores or dollar signs. 
-<br>
-An identifier cannot start with a number. <br>
-<br>
-Identifiers are always case-sensitive and, finally, identifiers cannot match any of JavaScript reserved words and what they are we will see on the next slide. <br>
-<br>
-JavaScript reserves a number of identifiers as keywords of the language itself.<br>
-<br> 
-The words listed on this slide cannot be used as identifiers in your programs, because they are part of the JavaScript syntax and have a special meaning for JavaScript.<br>
-<br>
-These include break, case, catch, class and others. <br>
-<br>
-There is a number of other keywords not listed on the slide that are reserved for future versions of JavaScript and therefore should also not be used. Please refer to other sources for the complete list of these keywords. <br>
-<br>
-Before a variable can be used in JavaScript, it needs to be declared. 
-<br>
-Note that, while declaring a variable is not a requirement, it is considered to be a best practice to do so and is highly encouraged.<br>
-<br>
-Declaring a variable can be done in three ways.
-First, by using the keyword var. The keyword var tells the program that variable can be used both globally, throughout the whole program, if it is declared outside of a function, or locally, meaning that the variable can be used within the function it is declared. <br>
-<br>
-Note, in our example the variable x has no value specified. <br>
-<br>
+JavaScript supports, as some other programming languages, two styles of comments. 
+Namely, any text written after two slash characters up to the end of a line is 
+treated as a single line comment and is ignored by JavaScript.
+Also, text written between slash star and star slash characters is also treated 
+as a comment. You can span these comments over multiple lines.
+You can't, however, nest comments, as it will result in a syntax error shown in your console.</p>
+
+<p>Variables are symbolic names for values in your code. The names of variables 
+are called identifiers and they conform to certain rules.
+For example, an identifier can start and contain only letters, numbers, 
+underscores or dollar signs.</p>
+
+<h4>An identifier cannot start with a number.</h4>
+Identifiers are always case-sensitive and, finally, identifiers cannot match 
+any of JavaScript reserved words and what they are we will see on the next 
+slide. JavaScript reserves a number of identifiers as keywords of the language 
+itself.</p>
+
+
+
+<p>The words listed on this slide cannot be used as identifiers in your programs, 
+because they are part of the JavaScript syntax and have a special meaning for 
+JavaScript. These include break, case, catch, class and others.
+There is a number of other keywords not listed on the slide that are reserved for 
+future versions of JavaScript and therefore should also not be used. Please refer 
+to other sources for the complete list of these keywords.</p>
+
+<p>Before a variable can be used in JavaScript, it needs to be declared. 
+Note that, while declaring a variable is not a requirement, it is considered 
+to be a best practice to do so and is highly encouraged.</p>
+
+<p>Declaring a variable can be done in three ways. First, by using the keyword var. 
+The keyword var tells the program that variable can be used both globally, 
+throughout the whole program, if it is declared outside of a function, or 
+locally, meaning that the variable can be used within the function it is 
+declared.</p>
+
+<p>Note, in our example the variable x has no value specified.</p>
+
+<p>
 Second, we can declare a variable by assigning it a value. Doing so, we always declare a global variable that is a variable available throughout the whole program.<br>
 <br>
 Finally, we can declare a variable using the keyword let, which tells the program that the variable is only available within the block scope of its declaration. <br>
