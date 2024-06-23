@@ -1,8 +1,25 @@
-# TUMx - Technical University of Munich 
-
-## DWAPNx -- Web App Development with the Power of Node.js
-
-![image001.png](./images/image001.png)
+---
+title: TUMx - Technical University of Munich 
+author: "bbauska"
+date prior editted: "6/22/2024 5+pm"
+date last editted: "6/22/2024 5+pm"
+output: 
+  markdown:
+    with some style
+---
+<!-- DWAPNx -- Web App Development with the Power of Node.js -->
+<h1 align="center">Web App Development with the Power of node.js</h1>
+<h6 align="center">(by T Goldberg, Lecturer - Technical University of Munich)</h6>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ readme.md of TUMx-DWAPNx in bbauska.github.io ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01 tech un of munich logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image001.png"
+  style="width:40%"
+  title="TUM logo"
+  alt="TUM logo." />
+</p>
 
 1.  **Introduction -- Language Basics**
 
