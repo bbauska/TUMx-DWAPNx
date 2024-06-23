@@ -1,6 +1,8 @@
-![][image001.png](./images/image001.png)
+# TUMx - Technical University of Munich 
 
-DWAPNx -- Web App Development with the Power of Node.js
+## DWAPNx -- Web App Development with the Power of Node.js
+
+![image001.png](./images/image001.png)
 
 1.  **Introduction -- Language Basics**
 
@@ -52,7 +54,7 @@ definitely for you!
 
 ### 1. Introduction: Web App Development with the Power of Node.JS (7:41)
 
-![][image002.png](./images/image002.png)
+![image002.png](./images/image002.png)
 
 Hey there and welcome to developing a web app with the power of Node!
 
