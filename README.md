@@ -69,7 +69,7 @@ pondering developing a mobile app for your next startup or just want to
 pad your toolbox with a highly sought out skill, this course is
 definitely for you!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-0">1. Intro: Web App Development with the Power of Node.JS (7:41)</h3>
+<h3 id="ch1-0">1.0 Introduction: JavaScript Overview (7:41)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -160,7 +160,6 @@ GitHub, the world\'s most popular code repository.
   alt="Why Learn JavaScript #2?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
-![image006](./images/image006.png)
 
 Second, JavaScript has the fastest growing and by far the largest
 library repository called Node Package Management. We\'ll talk about
@@ -182,14 +181,13 @@ Maybe these are the reasons why JavaScript has become the number one
 technology choice of so-called unicorns. Unicorns are startups, valued
 at more than 1 billion dollars.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image008.png" 
   title="Why Learn JavaScript, #4?"
   alt="Why Learn JavaScript, #4?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
-![image008](./images/image008.png)
 
 And because javascript is such a hot language, JavaScript developers are
 in high demand. It is now easier than ever to find work as a JavaScript
@@ -202,7 +200,6 @@ developer and the salaries offered are competitive.
   alt="The Evolution of JavaScript."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-![image009](./images/image009.png)
 
 Before we begin, let\'s take a look at the history of JavaScript.
 JavaScript was first developed in ten days, back in 1995, by Brandon
@@ -310,7 +307,6 @@ I then will summarize this course before we part. Right now, I\'m sure,
 you\'re already excited about learning how to work with JavaScript. So,
 let\'s not waste any time and head straight to the next module language
 fundamentals.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1">Language Basics -- Introduction (1:02)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
