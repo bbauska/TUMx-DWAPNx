@@ -1,8 +1,8 @@
 ---
 title: TUMx - Technical University of Munich 
 author: "bbauska"
-date prior editted: "6/22/2024 5+pm"
-date last editted: "6/22/2024 5+pm"
+date first editted: "6/22/2024 5+pm"
+date last editted: "6/23/2024 11+pm"
 output: 
   markdown:
     with some style
@@ -68,10 +68,16 @@ Whether you are considering a career as a full-stack web developer,
 pondering developing a mobile app for your next startup or just want to
 pad your toolbox with a highly sought out skill, this course is
 definitely for you!
-
-### 1. Introduction: Web App Development with the Power of Node.JS (7:41)
-
-![image002.png](./images/image002.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-0">1. Intro: Web App Development with the Power of Node.JS (7:41)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image002.png" 
+  title="1.01 Course Introduction: JavaScript Overview"
+  alt="1.01 Course Introduction: JavaScript Overview."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Hey there and welcome to developing a web app with the power of Node!
 
@@ -117,25 +123,56 @@ Game of Thrones books and TV show. We had a lot of fun working on this
 project and hope you will enjoy learning web app development using
 JavaScript, while working on the Game of Thrones project we assigned for
 this course.
-
-![image003.png](./images/image003.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image003.png" 
+  title="Covered in this module (1)"
+  alt="Covered in this module (1)."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 And here are more reasons to learn JavaScript.
-
-![image004.png](./images/image004.png)
-
-![image005.png](./images/image005.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image004.png" 
+  title="MOOCs for Masters"
+  alt="MOOCs for Masters."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05 why learn javascript? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image005.png" 
+  title="Why Learn JavaScript?"
+  alt="Why Learn JavaScript?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 First, JavaScript has been consistently the most popular language on
 GitHub, the world\'s most popular code repository.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image006.png" 
+  title="Why Learn JavaScript #2?"
+  alt="Why Learn JavaScript #2?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 ![image006](./images/image006.png)
 
 Second, JavaScript has the fastest growing and by far the largest
 library repository called Node Package Management. We\'ll talk about
 that more in module number four.
-
-![](./images/image007.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image007.png" 
+  title="Why Learn JavaScript, #3?"
+  alt="Why Learn JavaScript, #3?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Third, JavaScript is everywhere. More vendors are adopting JavaScript
 and you can now run the same JavaScript code across many devices and
@@ -144,13 +181,27 @@ platforms.
 Maybe these are the reasons why JavaScript has become the number one
 technology choice of so-called unicorns. Unicorns are startups, valued
 at more than 1 billion dollars.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image008.png" 
+  title="Why Learn JavaScript, #4?"
+  alt="Why Learn JavaScript, #4?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 ![image008](./images/image008.png)
 
 And because javascript is such a hot language, JavaScript developers are
 in high demand. It is now easier than ever to find work as a JavaScript
 developer and the salaries offered are competitive.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image009.png" 
+  title="The Evolution of JavaScript"
+  alt="The Evolution of JavaScript."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 ![image009](./images/image009.png)
 
 Before we begin, let\'s take a look at the history of JavaScript.
@@ -165,8 +216,14 @@ The first official standards for JavaScript ECMAScript 1 appeared in
 Then, between 1997 to 2005, competing standards for JavaScript appeared
 and this has resulted in several different versions of JavaScript that
 were not fully supported by major browsers.
-
-![image010.png](./images/image010.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, #2 (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image010.png" 
+  title=""
+  alt=""
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In 2005, a new set of technologies, called Ajax, were developed. AJAX
 allowed JavaScript to load data in the background without the need to do
@@ -195,8 +252,14 @@ made interactive.
 
 There are many more applications and now is an exciting time to learn
 JavaScript.
-
-![image011](./images/image011.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image011.png" 
+  title="What you will learn in this course"
+  alt="What you will learn in this course."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s see what is ahead of us and what we will cover over the next few
 modules.
@@ -212,8 +275,14 @@ Finally, in the last part of the course, you will learn how to bring
 data to life using a stack of data visualization techniques. All parts
 of the course are accompanied with hands-on exercises that will help you
 put your new skills to practice.
-
-![](./images/image012.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12 course overview (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image012.png" 
+  title="Course Overview"
+  alt="Course Overview."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Now, looking at the schedule -- in the next module number two, Tatyana
 will show you how easy it is to get started with JavaScript and she will
@@ -242,9 +311,16 @@ you\'re already excited about learning how to work with JavaScript. So,
 let\'s not waste any time and head straight to the next module language
 fundamentals.
 
-### Language Basics -- Introduction (1:02)
-
-![](./images/image013.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-1">Language Basics -- Introduction (1:02)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image013.png" 
+  title="JavaScript Overview"
+  alt="JavaScript Overview."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome to the language basics module!
 
@@ -6824,5 +6900,16 @@ the JavaScript course. I hope you will enjoy programming JavaScript and
 I hope you will contribute to the growing body of things that will help
 Science and Life Science in particular. Thanks for being with us!
 Burkhard Rost, bye bye.
+
+<!-- date first editted 6/22/2024 Sat 5+pm -->
+<!-- date last editted 6/23/2024 Sun 11+pm -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##  (m:ss) (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/imageXXX.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 ...The end...
