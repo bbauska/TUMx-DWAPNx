@@ -310,7 +310,7 @@ fundamentals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1">Language Basics -- Introduction (1:02)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image013.png" 
   title="JavaScript Overview"
@@ -331,18 +331,31 @@ such as C, for instance, it still has very distinct features.
 For instance, it is an interpreted language that does not require data
 typing and its code is being evaluated during program execution.
 
-![](./images/image014.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14 covered in this module (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image014.png" 
+  title="Covered in this module (1)"
+  alt="Covered in this module (1)."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-In this module, we will make our first steps and learn the basics of the
+In this module (1), we will make our first steps and learn the basics of the
 language. Tatyana will first show how to edit and run your code. She
 will then survey some of the most essential parts of the JavaScript
 language. Tatyana is an experienced data scientist and a JavaScript
 developer. She uses JavaScript\'ing at work researching bacteria\'s role
 in disease.
-
-### Lexical structure (6:56)
-
-![](./images/image015.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-1">1.1 Lexical structure (6:56)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15 how to access the web console (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image015.png" 
+  title="How to access the web console"
+  alt="How to access the web console."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome to the first lecture of the lexical structure module!
 
@@ -368,8 +381,14 @@ find developer tools, which will open the web console for you.
 The dev console appears at the bottom of the browser window and the
 command line, framed in the blue box on the figure, will be ready for
 you to enter the JavaScript code.
-
-![](./images/image016.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16 hello world (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image016.png" 
+  title="Hello World"
+  alt="Hello World."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 You can try out the console by typing the instruction: console dot log
 hello world and you will see hello world appearing in the console below
@@ -384,8 +403,14 @@ practice to do so.
 
 Semicolons allow your code to be more readable and they also make sure
 that your code is free from side-effects.
-
-![](./images/image017.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17 js character set (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image017.png" 
+  title="JavaScript Character Set"
+  alt="JavaScript Character Set."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript is a case-sensitive language.
 
@@ -401,8 +426,14 @@ All JavaScript programs are written using the Unicode character set.
 The standard Unicode set supports virtually every language currently
 used on the planet, making JavaScript independent of the operating
 platform and the language used.
-
-![](./images/image018.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18 whitespace and new lines (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image018.png" 
+  title="Whitespace and new lines"
+  alt="Whitespace and new lines."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript ignores white spaces, tabs and newlines that appear in your
 code, except if they are part of a string or a regular expression.
@@ -411,8 +442,14 @@ Because of this feature, you can format your programs in the neat and
 consistent way. And, in general, it is a very good idea to format your
 programs, because formatting makes your programs easy to read and
 understand.
-
-![](./images/image019.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19 comments (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image019.png" 
+  title="Comments"
+  alt="Comments"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript supports, as some other programming languages, two styles of
 comments. Namely, any text written after two slash characters up to the
@@ -422,7 +459,14 @@ characters is also treated as a comment. You can span these comments
 over multiple lines. You can\'t, however, nest comments, as it will
 result in a syntax error shown in your console.
 
-![](./images/image020.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20 variables (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image020.png" 
+  title="Variables"
+  alt="Variables"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Variables are symbolic names for values in your code. The names of
 variables are called identifiers and they conform to certain rules.
@@ -432,8 +476,14 @@ underscores or dollar signs. An identifier cannot start with a number.
 Identifiers are always case-sensitive and, finally, identifiers cannot
 match any of JavaScript reserved words and what they are we will see on
 the next slide.
-
-![](./images/image021.png
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21 reserved words (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image021.png" 
+  title="Reserved words"
+  alt="Reserved words"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript reserves a number of identifiers as keywords of the language
 itself.
@@ -445,8 +495,14 @@ and others. There is a number of other keywords not listed on the slide
 that are reserved for future versions of JavaScript and therefore should
 also not be used. Please refer to other sources for the complete list of
 these keywords.
-
-![](./images/image022.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22 declaring variables (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image022.png" 
+  title="Variables"
+  alt="Declaring Variables."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Before a variable can be used in JavaScript, it needs to be declared.
 Note that, while declaring a variable is not a requirement, it is
@@ -466,19 +522,29 @@ the whole program.
 Finally, we can declare a variable using the keyword **let**, which
 tells the program that the variable is only available within the block
 scope of its declaration.
-
-![](./images/image023.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23 constants (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image023.png" 
+  title="Constants"
+  alt="Constants"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An identifier with an associated constant value, that is a value, that
 cannot be changed anymore, is called a constant. Constants are declared
 with a const keyword and have to be initialized upon declaration.
 
 Trying to re-declare the constant with a different type or trying to
-assign a new
-
-value to it, will result in a type error printed in your console.
-
-![](./images/image024.png)
+assign a new value to it, will result in a type error printed in your console.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 24 printing out variables to the console (17) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image024.png" 
+  title="Printing out variables to the console"
+  alt="Printing out variables to the console."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 To print out the declaration of a variable, it is sufficient to just
 enter its identifier name in the console. If the variable is undeclared,
@@ -488,8 +554,14 @@ has no values assigned, then the console will return the value is
 undefined. And, if a variable is declared and initialized, for example,
 the variable C is initialized with the value of 3, then accessing the
 variable will result in no error message printed to the console.
-
-![](./images/image025.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25 literals (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image025.png" 
+  title="Literals"
+  alt="Literals"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 So far, we talked about variable names, the identifiers and variable
 declarations using the keywords var, let and const.
@@ -498,9 +570,9 @@ Ideally, each variable is assigned with a value. A fixed value that is
 literally provided to a variable is called a literal. There are several
 types of literals, including integer floating-point, string, boolean,
 regular expression, array and object literals.
-
-### Data Types (6:58)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-2">1.2 Data Types (6:58)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to data types, the second lecture of the JavaScript language
 basics module.
 
@@ -509,8 +581,14 @@ defined the term variable. We learned that a variable in JavaScript
 needs to be declared and ideally initialized with a value. In the
 current lecture, we will learn different types of values that a variable
 can be initialized with.
-
-![Data types; primitive and reference data types.](./images/image026.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 26 data types; primitive and reference data types (19) ~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image026.png" 
+  title="Data Types; Primitive and Reference Data Types"
+  alt="Data Types; Primitive and Reference Data Types."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript is an un-typed language. This means that unlike in other
 languages, such as Java and C, in JavaScript we do not declare the data
@@ -528,8 +606,14 @@ have a fixed size. For example, arrays can contain any number of
 elements and therefore an array cannot be stored in 8 bytes of memory.
 Instead, it can hold a reference to the values and that\'s why it is
 called a reference type.
-
-![Number type; 64-bit floating-point number.](./images/image027.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 27 number type; 64-bit floating-point number (19) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image027.png" 
+  alt="Number type; 64-bit floating-point number"
+  alt="Number type; 64-bit floating-point number."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s have a closer look at the primitive data types.
 **Numbers** are a basic data type. All numbers in JavaScript
@@ -541,8 +625,14 @@ decimals or exponent notation are integers. Integers can be as large as
 2 to the power of 53 and as small as minus 2 to the power of 53. Using
 integers outside this range may lead to a lower precision in the
 representation of your number.
-
-![Number type II; Standard and special charactes](./images/image028.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 28 number type ii; standard number & special value (20) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image028.png" 
+  title="Number type II; Standard Number &amp; Special values"
+  alt="Number type II; Standard Number &amp; Special Values."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript provides standard arithmetic operators for numbers, such as
 addition, subtraction, multiplication, division and modular. JavaScript
