@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/23/2024 11+pm"
+date last editted: "6/24/2024 12+pm"
 output: 
   markdown:
     with some style
@@ -31,7 +31,7 @@ output:
 
 5.  **Conclusion -- Putting it all together**
 
-### **About**
+<h3 id="about">About</h3>
 
 Learn to use the powerful Node.js framework to bring your web
 application to life and develop end-to-end applications in JavaScript.
@@ -857,14 +857,14 @@ printed.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Local variables are declared with the keywords let or var. In contrast
-to global variables that are accessible and modifiable from anywhere in
-the code, local variables are only available within the function they
-are declared. Let\'s have a look at the code example.
+Local variables are declared with the keywords let or var. In contrast to global 
+variables that are accessible and modifiable from anywhere in the code, local 
+variables are only available within the function they are declared. Let\'s have 
+a look at the code example.
 
-Printing x at the bottom of the code will return 1, because x has a
-global scope. However, printing y at the bottom of the code will return
-a y is undefined error, because y has a local of scope.
+Printing x at the bottom of the code will return 1, because x has a global scope. 
+However, printing y at the bottom of the code will return a y is undefined error, 
+because y has a local of scope.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 40 variable hoisting - moving variable declaration to top of script (27) ~~~~~~~~~~-->
 <p align="center">
@@ -889,29 +889,35 @@ variable initializations or assignments.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In our example, the variable x is declared with a var and can be hoisted
-to before the console log y statement, while the variable y is declared
-with a let and thus cannot be hoisted. Function declaration is also
-hoisted. This way, we can invoke a function before it is declared.
-Hoisting lifts the declaration of a function to the top of the block. In
-the first example, the declaration of the function addOne is lifted to
-the top, which allows us invoking this function without error message
-being shown. It is very important to mention that only function
-declaration is hoisted and not the function expression. The function
-expression, basically, corresponds to the function being assigned to a
-variable and, therefore, the rules for variable hosting apply. Namely,
-that the variable declaration is moved to the top, but not the variable
-initialization.
+In our example, the variable x is declared with a var and can be hoisted to 
+before the console log y statement, while the variable y is declared with a let 
+and thus cannot be hoisted. Function declaration is also hoisted. This way, we 
+can invoke a function before it is declared. Hoisting lifts the declaration of 
+a function to the top of the block.
 
-### Loops (3:16)
-
+In the first example, the declaration of the function addOne is lifted to the 
+top, which allows us invoking this function without error message being shown. 
+It is important to mention that only function declaration is hoisted and not 
+the function expression. The function expression, basically, corresponds to the 
+function being assigned to a variable and, therefore, the rules for variable 
+hosting apply. Namely, that the variable declaration is moved to the top, but 
+not the variable initialization.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4">1.4 Loops (3:16)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to our fourth lecture of the language basics module!
 
 In this lecture, we will learn about the concept of loops. Loops are
 used to execute the same block of code repeatedly until a certain
 condition is met.
-
-![](./images/image042.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42 what are loops? (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image042.png" 
+  title="What are Loops?"
+  alt="What are loops?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 For example, one way of printing all integers from 0 to 9 can be to use
 10 statements of console.log.
@@ -922,7 +928,13 @@ each iteration of the loop.
 There are several options of how a block of code can be repeatedly run
 in JavaScript.
 
-![](./images/image043.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43 for loop (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image043.png" 
+  title="For loop"
+  alt="For loop"
+  style="border: 2px solid #000000; width:40%;" />
 
 The for loop is probably the most frequently used loop in any
 programming language.
@@ -944,8 +956,14 @@ This statement is invoked after each loop iteration.
 
 Typically, it increments or decrements the counter. All three statements
 are usually written in one line and each of them is optional.
-
-![](./images/image044.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44 for/in loop (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image044.png" 
+  title="For/in are loop"
+  alt="For/in loop."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A **["for in"]** loop is especially useful when working with
 objects. It iterates over the properties of an object and returns the
@@ -969,8 +987,14 @@ a type error.
 
 If using the for in loop for an array, then the indices instead of
 values are printed, as shown in the second example.
-
-![](./images/image045.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 45 while loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image045.png" 
+  title="While loop"
+  alt="While loop."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The for loop is repeated a specific number of times. The while loop in
 contrast, is repeated an unknown number of times as long as a condition
@@ -988,7 +1012,14 @@ is smaller than 5.
 
 If this is the case, then the program prints the updated value of i.
 
-![](./images/image046.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 46 do/while loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image046.png" 
+  title="Do/While loop"
+  alt="Do/While loop."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The while loop first evaluates the condition and then executes the code
 if the condition is true. The do while loop does it in the opposite way.
@@ -997,9 +1028,9 @@ It first executes the code and then evaluates the condition.
 
 Because the condition is evaluated only after the code is executed, the
 code is executed at least once even if the condition is false.
-
-### Conditional Statements (3:09)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-5">Conditional Statements (3:09)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to the fifth and the last lecture of the language basics module!
 In this module, we will learn about conditional statements. An example
 for conditional statement could be the following:
@@ -1008,7 +1039,14 @@ for conditional statement could be the following:
 statements are used to perform different actions based on different
 conditions.
 
-![](./images/image047.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 47 types of conditional statements (31) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image047.png" 
+  title="Types of conditional statements"
+  alt="Types of conditional statements."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 There are four ways to construct a conditional statement in JavaScript.
 
@@ -1024,16 +1062,28 @@ if statement is evaluated.
 Finally, a switch statement compares the values of the switch expression
 with the values to the switch cases and executes a code block associated
 with a match.
-
-![](./images/image048.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 48 if statement (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image048.png" 
+  title="If statement"
+  alt="If statement."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 **[If]** statement includes the condition to be evaluated and the
 block of code to be executed in case the condition is true.
 
 In the example, the code block is executed in case the variable x holds
 the value larger than zero.
-
-![](./images/image049.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49 if/else statement (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image049.png" 
+  title="If/else statement"
+  alt="If/else statement."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 **["If else"]** statement includes the condition to be evaluated
 and the block of code to be executed in case the condition is true.
@@ -1044,8 +1094,14 @@ than zero.
 
 If true, the variable text is set to \"x is a positive number\".
 Otherwise, text is set to \"x is zero or a negative number\".
-
-![](./images/image050.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50 if else if statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image050.png" 
+  title="If/else/if statement"
+  alt="If/else/if statement."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An **["if else if"]** statement evaluates a new if condition, if
 the first if condition is evaluated to false. If a subsequent if
@@ -1061,7 +1117,14 @@ text to \"x is a negative number\".
 If both if conditions are false, the program sets the variable text to
 \"x is zero\".
 
-![](./images/image051.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51 switch statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image051.png" 
+  title="Switch statement"
+  alt="Switch statement."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A switch statement compares the values of the switch expression with the
 values of the switch cases and executes a code block associated with the
@@ -1082,13 +1145,19 @@ very end on the switch statement.
 
 Finally, the default keyword can be used within a switch block to
 specify a block of code that executes if no matches are found.
-
-### Module 1 -- Summary (1:08)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-6">Module 1 -- Summary (1:08)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Tatyana, for this comprehensive lecture about the language
 basics!
-
-![](./images/image052.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52 module 1 recap (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image052.png" 
+  title="Module 1 recap"
+  alt="Module 1 recap."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 As we mentioned at the introduction to this module, JavaScript may
 resemble general-purpose programming languages, but it is also very
@@ -6925,50 +6994,27 @@ times 4 and it fill the color red. And you could take a look at the d3
 documentation, there\'s a whole number of things you can do with this
 and it\'s a lot of fun to play around. So, just spend some time with it
 if you\'re interested. Now, this is fine, but what if you want to go
-back. So there\'s a number
-
-of things we could do. We could for example start storing the previous
-size
-
-or color, you know node itself, and then on a different event go back to
-that. So,
-
-now we\'re going to keep it simple and just going to define another
-event on the
-
-nodes. A node on double-click I want something else to happen.
+back. So there\'s a number of things we could do. We could for example start 
+storing the previous size or color, you know node itself, and then on a different 
+event go back to that. So, now we\'re going to keep it simple and just going to 
+define another event on the nodes. A node on double-click I want something else 
+to happen.
 
 More specifically, again, I want to select the current node using d3 and
-again I\'d
-
-like it to transition nicely to the same duration and I\'m just going to
-return
-
-the attribute to its original radius, so node radius again, and I\'m
-just gonna set
-
-the color to white to say okay I\'ve been here before,
-
+again I\'d like it to transition nicely to the same duration and I\'m just 
+going to return the attribute to its original radius, so node radius again, 
+and I\'m just gonna set the color to white to say okay I\'ve been here before,
 this one has been clicked.
 
-So, now I can click it. It will get big and red on a double-click it
-will go back to
+So, now I can click it. It will get big and red on a double-click it will go 
+back to white. So now, with a few simple steps and a few lines of code we\'ve
+created a nice and interactive graph visualization using d3. There\'s a number 
+of things you can add to that. Play around with it and it\'s a lot of fun. 
+There\'s a whole bunch of documentation and tutorials available on d3 online. 
+So, take a look at it. 
 
-white. So now, with a few simple steps and a few lines of code we\'ve
-created a
-
-nice and interactive graph visualization using d3. There\'s a number of
-things you
-
-can add to that. Play around with it and it\'s a lot of fun. There\'s a
-whole bunch
-
-of documentation and tutorials available on d3 online. So, take a look
-at it. We
-
-have been using the version 3 of d3. There\'s an upcoming version 4 that
+We have been using the version 3 of d3. There\'s an upcoming version 4 that
 changes some of the functions and the way to interact with it.
-
 So, take a look at that if you see this video in a couple of months from
 now or so, but the basic principles are all the same. It\'s just that
 some of the functions have been simplified or moved around a little bit.
@@ -7063,15 +7109,16 @@ I hope you will contribute to the growing body of things that will help
 Science and Life Science in particular. Thanks for being with us!
 Burkhard Rost, bye bye.
 
-<!-- date first editted 6/22/2024 Sat 5+pm -->
-<!-- date last editted 6/23/2024 Sun 11+pm -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##  (m:ss) (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
 <p align="center">
   <img src="./images/imageXXX.png" 
   title=""
   alt="."
   style="border: 2px solid #000000; width:40%;" />
 </p>
+<!-- date first editted 6/22/2024 Sat 5+pm -->
+<!-- date last editted 6/24/2024 Mon 12+pm -->
 
 ...The end...
