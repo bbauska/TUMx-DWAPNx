@@ -573,8 +573,7 @@ regular expression, array and object literals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2">1.2 Data Types (6:58)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to data types, the second lecture of the JavaScript language
-basics module.
+Welcome to data types, the second lecture of the JavaScript language basics module.
 
 In the previous lecture, we talked about JavaScript language syntax and
 defined the term variable. We learned that a variable in JavaScript
@@ -585,8 +584,8 @@ can be initialized with.
 <!--~~~~~~~~~~~~~~~~~~ 26 data types; primitive and reference data types (19) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image026.png" 
-  title="Data Types; Primitive and Reference Data Types"
-  alt="Data Types; Primitive and Reference Data Types."
+  title="Data Types; Primitive and Reference data types"
+  alt="Data Types; Primitive and Reference data types."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -644,8 +643,14 @@ largest possible number that can be represented in JavaScript. For
 these, JavaScript prints infinity. If the outcome of a mathematical
 operation is an undefined result or an error, then JavaScript prints not
 a number value, also known as NaN.
-
-![Number type III; Floating arithmetics and math object for more complex operations.](./images/image029.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~ 29 number type iii; Floating arithmetics and math object for more complex operations (21) -->
+<p align="center">
+  <img src="./images/image029.png" 
+  title="Number type III; Floating arithmetics and math object for more complex operations"
+  alt="Number type III; Floating arithmetics and math object for more complex operations."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 One of the drawbacks of JavaScript numbers is that floating arithmetic
 may not always be accurate. To overcome this problem, multiplication and
@@ -655,8 +660,14 @@ can be used in JavaScript. All these functions are stored as properties
 of a single Math object. So, you always need to use the object name Math
 to access them. For example, to compute 2 to the power of 10, you can
 use the power function of Math.
-
-![String type; Strings, Special characters, indexed start at 0.](./images/image030.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 30 string type; strings, special characters, indexed start at 0 (21) ~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image030.png" 
+  title="String type; Strings, Special characters, indexed start at 0"
+  alt="String type; Strings, Special characters, indexed start at 0."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We can use string literals to represent any text in JavaScript. The text
 can be enclosed in matching pairs of single or double quotation marks.
@@ -664,29 +675,46 @@ It is possible to insert a special character in a string by using the
 escape backslash character. Finally, the length of a string corresponds
 to the number of characters in it. Like in many other programming
 languages, the first character in a string has position index 0.
-
-![Boolean type; yes, no, 1, 0, true, false.](./images/image031.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 31 Boolean type; yes, no, 1, 0, true, false (22) ~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image031.png" 
+  title="Boolean type; yes, no, 1, 0, true, false"
+  alt="Boolean type; yes, no, 1, 0, true, false."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In contrast to number and string datatypes, the boolean type has only
 two values - true and false. A **boolean** value represents if
 something is true or not.
 
-In a numeric representation, true evaluates to 1 and false evaluates to
-0.
+In a numeric representation, true evaluates to 1 and false evaluates to 0.
 
 Typically, boolean values are used for comparison in JavaScript
 programs, for example, to check whether two values are equal or not, if
 their values and data types are equal or not, or if one value is larger
 or smaller than the other value. Another important data type is called
 **undefined**.
-
-![Undefined type; non-initialized variable = 'undefined'.](./images/image032.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 32 Undefined type; non-initialized variable = 'undefined' (22) ~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image032.png" 
+  title="Undefined type; non-initialized variable = 'undefined'"
+  alt="Undefined type; non-initialized variable = 'undefined'."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 **Undefined** is returned when the variable was declared, but
 never initialized. That means, it never got a value assigned to it. It
 is also possible to manually assign undefined to a variable as a value.
-
-![Null type; means 'nothing'. Absence of value.](./images/image033.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 33 null type; means 'nothing'. absence of value (23) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image033.png" 
+  title="Null type; means 'nothing'. absence of value"
+  alt="Null type; means 'nothing'. absence of value."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The last primitive data type is called **null**. Null means
 nothing and is used to indicate an absence of a value. It is considered
@@ -701,8 +729,14 @@ equal undefined. If the values of both types are compared, then true is
 returned.
 
 However, if both values and types are compared, then false is returned.
-
-![](./images/image034.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 34 object - a collection of named values (23) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image034.png" 
+  title="Object - a collection of named values"
+  alt="Object - a collection of named values."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An **object** is a reference data type that consists of a
 **collection of named values.** These named values are also
@@ -716,8 +750,14 @@ and the key name of the property.
 
 Additionally, the value of any property can be changed by assigning it a
 new value.
-
-![Array; indexed collection.](./images/image035.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 35 array - an indexed collection of values (24) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image035.png" 
+  title="Array - an indxed collection of values"
+  alt="Array - an indxed collection of values."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An **array** is another reference data type, which also stores
 a collection of values. While each value in an object has a name -
@@ -732,7 +772,7 @@ shown in the example, after declaration and initiation. Any value in an
 array can be changed and new values can be added. The length of an array
 can be printed using the property called length.
 
-#### Errata corrige
+<h4 id="ch1-2-1">1.2.1 Errata corrige</h4>
 
 As some viewers pointed out, in this video, there is a mistake in one
 code snippet example. The following:
@@ -747,14 +787,20 @@ code snippet example. The following:
 > **\< \[\"firstName\", \"lastName\", \"age\"\]**
 ```
 
-### Scoping & Hoisting (3:41)
+<h3 id="ch1-3">1.3 Scoping & Hoisting (3:41)</h3>
 
 Welcome to our third lecture of the language basics module! In this
 lecture, we will learn the fundamental aspects of the JavaScript
 language, namely scoping and hoisting. But before we do that, we first
 need to introduce JavaScript functions.
-
-![Funtions; block of code that performs a particular task.](./images/image036.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 36 function - block of code which performs a particular task (25) ~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image036.png" 
+  title="Function; block of code that performs a particular task"
+  alt="Function; block of code that performs a particular task."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A function is a block of code that performs a particular task. In the
 example, we define a function, called sumFunction, with two parameters:
@@ -769,8 +815,14 @@ console.
 
 We will get back to functions in a few moments. Now, let us take a look
 at the concept of scoping.
-
-![](./images/image037.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~ 37 scoping; defines the context in which variables and functions can be accessed (25) ~~-->
+<p align="center">
+  <img src="./images/image037.png" 
+  title="Scoping; Defines the context in which variables and functions can be accessed"
+  alt="Scoping; Defines the context in which variables and functions can be accessed."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Scope defines the context in which variables and also functions can be
 accessed. The lifetime of a variable starts when it is declared.
@@ -780,8 +832,14 @@ variables can be accessed and modified throughout the program. In
 contrast, a variable declared within a function, has a local scope.
 Local variables can only be accessed and modified within that function.
 Global variables are declared with a keyword var.
-
-![](./images/image038.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38 scoping - global variables (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image038.png" 
+  title="Scoping - Global variables"
+  alt="Scoping - Global variables."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 If a variable is initialized without being declared, it is automatically
 considered to be global. Global variables are available to any code in a
@@ -790,8 +848,14 @@ function printVar(), in the example, has a global scope and can
 therefore be accessed and modified from anywhere in the code. Calling
 the function printVar in the console will result in the value 1 to be
 printed.
-
-![](./images/image039.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39 scoping - local variables (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image039.png" 
+  title="Scoping - Local variables"
+  alt="Scoping - Local variables."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Local variables are declared with the keywords let or var. In contrast
 to global variables that are accessible and modifiable from anywhere in
@@ -801,17 +865,29 @@ are declared. Let\'s have a look at the code example.
 Printing x at the bottom of the code will return 1, because x has a
 global scope. However, printing y at the bottom of the code will return
 a y is undefined error, because y has a local of scope.
-
-![](./images/image040.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 40 variable hoisting - moving variable declaration to top of script (27) ~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image040.png" 
+  title="Variable Hoisting - moving variable declaration to the top of a script"
+  alt="Variable Hoisting - moving variable declaration to the top of a script."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Hoisting means moving a variable declaration to the top of the script or
 a function. This means that the declaration of a variable is used before
 the variable is actually declared. Only variables declared with the
 keyword var can be hoisted. Hoisted variables return undefined. It is
-important to mention that only the variable declarations are hosted, not
+important to mention that only the variable declarations are hoisted, not
 variable initializations or assignments.
-
-![](./images/image041.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~ 41 function hoisting - 'lifts' variable declaration to top of block (27) ~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image041.png" 
+  title="Function Hoisting - 'lifts' variable declaration to top of block"
+  alt="Function Hoisting - 'lifts' variable declaration to top of block."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In our example, the variable x is declared with a var and can be hoisted
 to before the console log y statement, while the variable y is declared
