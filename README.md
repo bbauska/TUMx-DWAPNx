@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/24/2024 12+pm"
+date last editted: "6/25/2024 3+pm"
 output: 
   markdown:
     with some style
@@ -4130,15 +4130,31 @@ have specified in the package dot JSON to be the start of our application.
 Then, it will log to console that Mongoose has connected, which is the event
 connected that we see here - mongoose connected. 
 
-
-<two images>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 198/199  (12x) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+<img src="./images/image198.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image199.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 And, then, we see these other logs, which stem from these lines of code, which 
 tell us ok that we are fully connected to the database. So, we are executing 
 this callback function and our Express server is now listening in our specific 
 port and it is running and our application is running and we should be able to 
 open up this website and see some content.
-
-<image>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 200  (12x) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image200.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 What we will actually do is we will open up this website. So, I copy it, I open 
 up Safari, I paste it in here and what we see is we have all of our JSON objects
 representing our relationships here, which is exactly what we expected
@@ -4152,7 +4168,14 @@ application.
 Welcome back to our demonstration about how our demo applications
 actually work!
 
-<IMAGE pg 127>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 201  (127) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image201.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 In the previous video, I have explained briefly what the database file looks 
 like and how it works, and what this function down here actually executes, and 
 that it only executes once we are really connected to the database and we are able to
@@ -4160,7 +4183,14 @@ query the database. And in this video, we\'re going to see what the router is,
 what the controller is and what the models are. And we are going to implement a 
 new route into our application. 
 
-<image pg 127>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 202  (127) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image202.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 First of all, let\'s again go and start the application. We can do this again, as
 I showed it in a previous video, through the terminal emulator from our
 computer or you can do it from the terminal here. My preferred way is actually to
