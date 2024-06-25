@@ -1449,12 +1449,8 @@ A property value can be of any type, including functions.
 Functions that are properties of an object are called methods.
 
 Inside of a method, this keyword refers to the object the method is
-invoked on.
-
-However, beware of pitfalls of late binding that trip many beginning
-JavaScript programmers.
-
-We will cover it in details in lesson five.
+invoked on. However, beware of pitfalls of late binding that trip many beginning
+JavaScript programmers. We will cover it in details in lesson five.
 
 This keyword allows us to manipulate object properties in its methods.
 
@@ -1599,7 +1595,14 @@ does not affect all other objects inheriting from the same prototype.
 As we have seen, JavaScript allows us to write programs in
 object-oriented way.
 
-![](./images/image078.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image078.png" 
+  title="Object Oriented Programming in JavaScript"
+  alt="Object Oriented Programming in JavaScript."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Object-oriented programming paradigm means we model our program as a set
 of objects. Objects are a combination of data and behavior.
@@ -1607,7 +1610,14 @@ of objects. Objects are a combination of data and behavior.
 Methods represent behavior, while attributes, these are properties that
 hold data, are data.
 
-![](./images/image079.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image079.png" 
+  title="Objects with similar behavior"
+  alt="Objects with similar behavior."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We also want to define groups of similar objects, objects that have
 similar attributes and behavior. For details about object-oriented
@@ -1637,14 +1647,28 @@ method to the Object.prototype.
 Now, swordsmen have shooting arrow method and archers have attack with a
 sword method. Is there a better way?
 
-![](./images/image080.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image080.png" 
+  title="Constructor functions, #1"
+  alt="Constructor functions, #1."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Yes! There is!
 
 With constructor functions we can create groups of objects. Each object
 belonging to a group, has similar contents and behavior.
 
-![](./images/image081.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image081.png" 
+  title="Constructor functions, #2, #2"
+  alt="Constructor functions, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 How exactly does a constructor function work?
 
@@ -1652,7 +1676,14 @@ First, we invoke it with a new keyword.
 
 New keyword creates a new object.
 
-![](./images/image082.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image082.png" 
+  title="Constructor functions"
+  alt="Constructor functions."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The value of constructor function special property, called prototype,
 becomes the prototype of the newly created object.
@@ -1672,7 +1703,14 @@ created by Swordsman constructor function inherits this method.
 Thus, constructor functions allow us to easily create groups of objects
 with similar behavior and data.
 
-![](./images/image083.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 83 adding properties to a prototype (50) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image083.png" 
+  title="Adding properties to a prototype"
+  alt="Adding properties to a prototype."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We can add properties of any type and not just functions. However,
 adding attributes, that is data properties to a prototype, is an
@@ -1682,17 +1720,30 @@ Why?
 
 Can you imagine what will happen if we make hitPoints a property of a
 prototype?
-
-### Functions, part 2 (5:19)
-
-![](./images/image084.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-3">Functions, part 2 (5:19)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 84 functions & objects; functions, part 2 (51) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image084.png" 
+  title="Functions &amp; Objects; Functions, part 2"
+  alt="Functions &amp; Objects; Functions, part 2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome back to functions! In this lecture, we will take a detailed look
 at working with functions arguments, scopes and variable shadowing, and
 one of the most powerful features of JavaScript - higher-order
 functions.
 
-![](./images/image085.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 85 working with arguments object (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image085.png" 
+  title="Working with arguments object"
+  alt="Working with arguments object."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s look again at the arguments object.
 
@@ -1703,8 +1754,14 @@ We can access a specific argument by index.
 We can use length property to get number of passed arguments.
 
 Arguments object looks like an array, but, remember, it is not an array.
-
-![](./images/image086.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 86 working with arguments object, #2 (52) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image086.png" 
+  title="Working with arguments object, #2"
+  alt="Working with arguments object, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Arguments object does not have array methods. We can see in this example
 that attempting to invoke an array\'s method indexOf results in a
