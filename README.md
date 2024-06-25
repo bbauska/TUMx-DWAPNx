@@ -3016,7 +3016,14 @@ handler is **Restify** (http://restify.com/). **Restify** focuses only
 on constructing APIs. So, you would not have views, which we\'re gonna
 explain in a moment. **Restify** is also heavily based on
 **Express.js**. So, as you see, **Express.js** always comes in.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 146 node.js as back-end - databases (89) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image146.png" 
+  title="Node.js as back-end - Databases"
+  alt="Node.js as back-end - Databases."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The next thing you would probably need when you construct a web
 application is a database. All of the data that you usually see on
 websites is stored in a database and there are two big categories of
@@ -3036,7 +3043,14 @@ stores are maybe thought for smaller applications, but nonetheless you
 always need a database. MongoDB as well as Redis are non-relational
 databases and if you want to know more about these, I invite you to look
 at the web. There\'s plenty of guides.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 147 node.js as back-end - view engines (90) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image147.png" 
+  title="Node.js as back-end - View engines"
+  alt="Node.js as back-end - View engines."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The last component that you might need to build a web application is
 called a view engine. I say might because it\'s actually not necessary.
 View engines are only necessary if you build a full application with
@@ -3078,34 +3092,61 @@ won\'t have views. In the second example, which we call complete, we
 will also provide some views, which are done using the **Pug**
 templating engine.
 
-### Our example application
+<h3 id="ch3-4">3.4 Our example application (7:32)</h3>
 
 Welcome back to our lectures on server-side JavaScript! In this video,
-we are going to talk about our example application. What we used for
+we are going to talk about our example application. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 148 node.js as back-end in our example (91) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image148.png" 
+  title="Node.js as back-end in our example"
+  alt="Node.js as back-end in our exapmle."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+What we used for
 example application are these four components. If you have not seen the
 previous video, you might want to look at it, because we are explaining
 what the components are. Specifically for our application, we use
 express.js to be able to interpret the incoming requests and produce
-meaningful
+meaningful answers. We use Pug for the views, but actually, we have prepared two
+examples, one with Pug and one without Pug. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 149 node.js as back-end in our example ii (92) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image149.png" 
+  title="Node.js as back-end in our example II"
+  alt="Node.js as back-end in our exapmle II."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-answers. We use Pug for the views, but actually, we have prepared two
-examples, one with Pug and one without Pug. In the first example, we
+In the first example, we 
 won\'t use Pug, because it\'s simply an API. So, it only uses the other
 three components, which are express, MongoDB and Node. We use MongoDB to
 store our information and to be able to retrieve it in a later stage. We
 use Node as the base of our application, as it allows us to interpret
-our JavaScript and present everything that we have discussed so far. So,
-let\'s actually look at our examples.
+our JavaScript and present everything that we have discussed so far. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150 reference example (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image150.png" 
+  title="Reference examples"
+  alt="Reference examples."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-They are two, as already said: the first example is only an API example.
-So, it does not have use. You can download it following the first link,
+Let\'s actually look at our examples. They are two, as already said: the 
+first example is only an API example. So, it does not have use. You can 
+download it following the first link,
 which is example.dallago.us/public/api.zip. The complete example, on the
 other hand, you can find on the second link, which is the same as the
 first, just the last part is complete.zip. The running example of the
 complete application is available at example.dallgo.us. At the first
 glance, you might immediately see that example is very easy, both in
 terms of code complexity as well as in terms of the example of the view
-itself, so, what you see on your browser. When we developed our example,
+itself, so, what you see on your browser. 
+
+When we developed our example,
 we used a very common pattern which is called the Model-View-Controllers
 pattern.What this pattern tells us to do is to divide our application
 into different parts: first, the models, which are representation of the
@@ -3122,7 +3163,17 @@ They combine data and they combine the views and calculations to produce
 some meaningful output. Specifically, if, for example, we want to view a
 blog post, we want to see in the same location both the information
 about the user, the information about some previous posts and
-information about the comments. So, here is the folder structure of a
+information about the comments. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151 folder structure (93) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image151.png" 
+  title="Folder structure"
+  alt="Folder structure."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+So, here is the folder structure of a
 first example application, which is the API example. We have the first
 folder, which is the app folder where we have our controllers, our
 models and our views. These are also folders, but the views folder is
@@ -3138,15 +3189,27 @@ knowing which requests are incoming and how to answer them. The
 package.json, which we have already discussed in a previous video and I
 urge you to look at this video if you don\'t know what we are talking
 about. And, the index.js, which is the starting point of our
-application. The folder structure for the complete example is a little
+application. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 152 folder structure, #2 (94) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image152.png" 
+  title="Folder structure, #2"
+  alt="Folder structure, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+The folder structure for the complete example is a little
 bit larger. Here you can actually see that there\'s more files, but most
 of these files are either executed in the browser or just there to give
-views, which are things that you actually see in the application. As you
-see in this folder structure, we have four views, which are: the base,
+views, which are things that you actually see in the application. 
+
+As you see in this folder structure, we have four views, which are: the base,
 the home, the navigation and the visualization pug. Views, as already
 said in previous videos, are modular components. So, for example, the
 navigation.pug is going to be used in the base as well as in a home and
-a visualization.pug. The public folder, which is a new folder which you
+a visualization.pug. 
+
+The public folder, which is a new folder which you
 find in our folder structure, is going to be exported to people
 connecting to our application as is, which means all of the files that
 are in this folder are going to be accessed by people connecting to our
@@ -3155,25 +3218,40 @@ connecting to example.dallago.us/public/libs/d3.js, you will actually
 access the content of this file on our server. You can also do that on
 your own computer and if you just put some files into this public
 folder, they will be exported to your application and you can view them.
+
 In this folder, we only have JavaScript, which is executed in the
 front-end. So, this is a very important distinction. This is not going
 to be executed on your machine, but only in the browser of the machines
 connecting to your application. Here we also find the style sheets, or
-cascading style sheets, which are in orange in our representation. Now,
-another important part is how do you get these applications to run on
-your computer. Well, first of all, you need to download the zip files,
+cascading style sheets, which are in orange in our representation. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 153 reference examples (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image153.png" 
+  title="Reference examples"
+  alt="Reference examples."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Now, another important part is how do you get these applications to run on
+your computer. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 154 how to get the examples running (96) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image154.png" 
+  title="How to get the examples running"
+  alt="How to get the examples running."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+Well, first of all, you need to download the zip files,
 which we presented in a previous slide and you have to unzip them on
 your computer. Later, you have to make sure that you have installed
 Node.js and NPM. When your install Node.js, you automatically install
 NPM as well.
 
 So, don\'t worry, it\'s not two separate things. You can install Node.js
-by following the
-
-link on the slide, which is nodejs.org. You then have to use the command
-line
-
-to navigate to the folder where the applications are and you will know
+by following the link on the slide, which is nodejs.org. You then have to use the command
+line to navigate to the folder where the applications are and you will know
 when you are in this folder if you can open the index.js file, which is
 the entry point of our application. To run the application, we actually
 need our dependencies, which are described in the package.json, as
@@ -3189,356 +3267,249 @@ successfully in connecting to the database and that now you can navigate
 to your application. To later view the application, which is being
 serviced from your own computer, you will have to connect to the link,
 which is on the last line of this slide. What localhost means is that
-you are
-
-connecting to your own computer. 3000 is the port on which your
+you are connecting to your own computer. 3000 is the port on which your
 application is running and /api/relationships is the API endpoint in
 which we will expose data about the relationships between the different
 characters in the Game of Thrones. So, we are pretty sure that API and
 relationships, the endpoint api/relationships, will work on both the
 complete applications and the example of the application. So, this is
-just to give
-
-you an overview about our example, but we will discuss further in detail
-about the code in the upcoming video.
-
-### Controllers and Models
-
+just to give you an overview about our example, but we will discuss 
+further in detail about the code in the upcoming video.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-5">3.5 Controllers and Models (11:24)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome back to our videos about Server-side JavaScript development.
-
 In this video, we are going to talk about controllers and models, which
-are two of
+are two of the components of our example applications. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 155 express framework (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image155.png" 
+  title="Express framework"
+  alt="Express framework."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-the components of our example applications. Firstly, I want to talk to
-
+Firstly, I want to talk to
 you about express. We have already seen what request handlers are. So,
-if you\'re
-
-not familiar with them, please go back to the previous videos. Express,
-in short,
-
-allows you to react to incoming requests and send responses. It\'s
-possible to
-
-extend express by putting some layers between the incoming requests and
-
-the final function, which is going to execute to produce a
-
-response. These layers can, for example, distinguish between a user,
-which has
-
-authentication and a user that has not. So, that the final response is
-different
-
-for someone that is identified and different for someone who\'s not.
+if you\'re not familiar with them, please go back to the previous videos. Express,
+in short, allows you to react to incoming requests and send responses. It\'s
+possible to extend express by putting some layers between the incoming requests and
+the final function, which is going to execute to produce a response. These layers can, 
+for example, distinguish between a user, which has authentication and a user that has 
+not. So, that the final response is different for someone that is identified and 
+different for someone who\'s not. 
 
 Express can also be extended using other packages, but for our simple
-applications
+applications we didn\'t need to use them. So, we\'re not going to discuss about
+these. If you\'d like to know more about these, please go on the web, there\'s
+plenty of guides to find out more about these. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 156 express.js in our first example application (97) ~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image156.png" 
+  title="Express.js in our first example application"
+  alt="Express.js in our first example application."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-we didn\'t need to use them. So, we\'re not going to discuss about
-these.
-
-If you\'d like to know more about these, please go on the web, there\'s
-plenty of guides to
-
-find out more about these. In our API example, you will find express in
-the
-
-files that are highlighted on the left side. You will find also express
-in the
-
-same files on the complete example, but for the reference of these two
-
+In our API example, you will find express in
+the files that are highlighted on the left side. You will find also express
+in the same files on the complete example, but for the reference of these two
 components and what we are going to discuss in this video, we use the
-API.
+API. You will find express starting in the index.js and that\'s the first
+file we are going to look at. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 157 express.js: index.js (98) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image157.png" 
+  title="Express.js: index.js"
+  alt="Express.js: index.js."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-You will find express starting in the index.js and that\'s the first
-file we are going
-
-to look at. So, in the index.js, we define express. We actually have to
-require it.
-
-So, the first thing that we do is we require express and we define it as
-a
-
-constant variable, because it won\'t change during the execution of our
-code.
+In the index.js, we define express. We actually have to require it.
+The first thing that we do is we require express and we define it as
+a constant variable, because it won\'t change during the execution of our
+code. 
 
 The second thing that we do is we define our application, which is app
-and it\'s
-
-an express application. So, we define it as an express app. With express
-we can
-
-set values and, specifically, in the third line of code, which will be
-compiled, we
-
-will see that you can define the port number on which our application is
-going
-
-to be listening. And this port number is by default going to be 3,000.
+and it\'s an express application. So, we define it as an express app. With express
+we can set values and, specifically, in the third line of code, which will be
+compiled, we will see that you can define the port number on which our application is
+going to be listening. And this port number is by default going to be 3,000.
 
 Later, we\'ll see that we can define a router, which is the logic that
-stands behind
-
-knowing which requests are coming in and what output or response to
-produce.
-
-In the last lines of code, what we see, is that we actually listen to
-incoming requests
-
-and we do so by listening on the port that we defined earlier.
+stands behind knowing which requests are coming in and what output or response to
+produce. In the last lines of code, what we see, is that we actually listen to
+incoming requests and we do so by listening on the port that we defined earlier.
 
 We also have a function, which is a callback and this function tells us
-that our
+that our express server is listening on the port that we defined earlier. 
 
-express server is listening on the port that we defined earlier. The
-other file that we want to look at for express
-
-is a router.js and the controllers/relationships.js in our app folder.
-In the router, we define that if a get
-
+<img>
+The other file that we want to look at for express is a router.js and the 
+controllers/relationships.js in our app folder. In the router, we define that if a get
 request is coming at /api/relationships, the relationships controller
-has to perform a function,
+has to perform a function, which is relationships. 
 
-which is relationships. This function is defined as below. So,
-relationships is a function, which
-
-accepts a request, an incoming request, and has as a second object, the
-response, the outgoing response.
-
-What we do is we find objects in the relationships model,
-
+This function is defined as below. So, relationships is a function, which accepts 
+a request, an incoming request, and has as a second object, the response, the 
+outgoing response. What we do is we find objects in the relationships model,
 which we are going to explain shortly, so, don\'t worry. If the find is
-
 successful, we will return the results of defined in the last
-
 meaningful line of code of this example, which is - response dot status
-200 dot
+200 dot send results. Notice that status 200 in HTTP protocol, status 200 means
+that the request was answered successfully, that there was no problem and that we
+are answering back: ok, we have the data. On the other hand, if there was an
+error, we are sending a status 500, which in HTTP means that there was an error
+and that we are sending back an error object as well. 
 
-send results. Notice that status 200 in HTTP protocol, status 200 means
-that the
-
-request was answered successfully, that there was no problem and that we
-are
-
-answering back: ok, we have the data. On the other hand, if there was an
-error, we
-
-are sending a status 500, which in HTTP means that there was an error
-and that
-
-we are sending back an error object as well. The next thing that we will
-look at
-
-is MongoDB. We have already discussed about
-
+<img>
+The next thing that we will look at is MongoDB. We have already discussed about
 databases before, but, specifically, we will use MongoDB in our example.
-
 As already said, MongoDB is a document-oriented database management
-system and
-
-it\'s non-relational, which brings us to the most important part of
-
+system and it\'s non-relational, which brings us to the most important part of
 non-relational database management systems, which is they don\'t have a
 schema.
 
 A schema allows you to say that whenever you have an object from a
-
 database, it will always have the same look and feel to so say.
-Specifically, if
+Specifically, if we have a relational database system, we always know that we are going
+to find the same fields when we ask for the same data. 
 
-we have a relational database system, we always know that we are going
-to find
+If, for example, I have an object, which contains my name and my age, and I have 
+a schema, which defines that there\'s always the need of my name, my surname and 
+my age, all objects will always look like this. They can not differ. On the other 
+hand, in MongoDB objects can differ. They can have more fields. For example, there 
+could be name, age and location from where I come from, or there can be less fields. 
+There could be only the name without the surname, because someone forgot to put it 
+in, and the age. MongoDB actually stores objects in binary JSON format. It does so
+because binary JSON allows you to store not only the usual JSON files, but it also 
+allows you to store music and images. 
 
-the same fields when we ask for the same data. So, if, for example, I
-have an object,
+<img>
+This is the example of a JSON file being stored into a MongoDB entry. On the top, 
+we see an ordinary JSON file and on the bottom we see what we would see if we 
+insert this JSON file into MongoDB. As you see, MongoDB will give an attribute 
+to the object, which is underscore id. This is very important, because you will 
+need an identifier in the object to know that this is the only object of its kind. 
 
-which contains my name and my age, and I have a schema, which defines
-that there\'s
+If, for example, we have two people, which have exactly the same name, surname 
+and are of the same age, then we would not know which objects we actually want 
+to get. But thanks to the id, which is a randomly generated information, we 
+always have just one field, which is for that specific object.
 
-always the need of my name, my surname and my age, all objects will
-always look
-
-like this. They can not differ. On the other hand, in MongoDB objects
-can differ.
-
-They can have more fields. For example, there could be name, age and
-location
-
-from where I come from, or there can be less fields. There could be only
-the name
-
-without the surname, because someone forgot to put it in, and the age.
-
-MongoDB actually stores objects in binary JSON format. It does so
-because binary JSON allows
-
-you to store not only the usual JSON files, but it also allows you to
-store
-
-music and images. This is the example of a JSON file being stored into a
-MongoDB entry.
-
-On the top, we see an ordinary JSON file and on the bottom we see what
-we
-
-would see if we insert this JSON file into MongoDB. As you see, MongoDB
-will
-
-give an attribute to the object, which is underscore id. This is very
-important,
-
-because you will need an identifier in the object to know that this is
-the
-
-only object of its kind. If, for example, we have two people, which have
-exactly the same name, surname and are of the same age, then we would
-not know which objects we actually want to get. But thanks to the id,
-which is a randomly generated information, we always have just one
-field, which is for that specific object.
-
+<img>
 The other things, which you see on the bottom, are the same fields that
-we have
+we have already seen above, which are the name the surname and the age. 
 
-already seen above, which are the name the surname and the age. To
-actually use MongoDB in a Node application, you need something called a
-driver.
-
-The most common driver with Node.js is called mongoose. Mongoose allows
-you
-
-firstly, to connect to the database and handle connection events.
+<img>
+To actually use MongoDB in a Node application, you need something called a
+driver. The most common driver with Node.js is called mongoose. Mongoose allows
+you firstly, to connect to the database and handle connection events.
 
 The second important thing is that it allows you to define models.
 Models allow you to enforce some type of a schema, which is the thing
-that we have discussed before.
-
-So, through mongoose you could define that your objects always have to
-set the same structure and that Mongoose won\'t accept objects if they
-are not of the structure that you have defined them in.
+that we have discussed before. So, through mongoose you could define that 
+your objects always have to set the same structure and that Mongoose won\'t 
+accept objects if they are not of the structure that you have defined them in.
 
 The other thing that mongoose allows you to do is to perform queries.
-
 So, you can find objects, create objects, update and remove items.
 
+<img>
 Let\'s see some code examples. First, we will find mongoose in these
-files.
-
-As you see, there is one file, which is highlighted a little bit
-differently
-
-than the other ones. This is because we\'re not directly using mongoose,
-but we
-
-are using the mongoose model, created in the relationships model in the
-
+files. As you see, there is one file, which is highlighted a little bit
+differently than the other ones. This is because we\'re not directly using mongoose,
+but we are using the mongoose model, created in the relationships model in the
 controller. So, to produce a meaningful response, when an incoming
-request is
+request is coming. 
 
-coming. Let\'s look at the model for the relationships. Here, we define
-the model
-
-of our relationships. Firstly, we require mongoose, as we did, we did
+<img>
+Let\'s look at the model for the relationships. Here, we define
+the model of our relationships. Firstly, we require mongoose, as we did, we did
 with express in our previous example. The second thing that we do is we
-define our
+define our relationships model. 
 
-relationships model. Here, we have three fields, which are compulsory.
-So, they are always required. If you will try to create new objects,
-which don\'t have one of these fields, it won\'t work. Mongoose will
-complain.
+Here, we have three fields, which are compulsory. So, they are always required. 
+If you will try to create new objects, which don\'t have one of these fields, 
+it won\'t work. Mongoose will complain. The three fields that we are going to 
+need in our objects are source, target and weight. The first two source and 
+target are of type string, while weight is a number-typed object.
 
-The three fields that we are going to need in our objects are source,
-target and weight.
-
-The first two source and target are of type string, while weight is a
-number-typed object.
-
+<img>
 The second location in which we find mongoose is our relationships
 controller. Here, we can find objects in our model, as seen from the
 fourth line of code. So, we have our relationships model and we perform
 a find without filtering for results. Filtering for results would be
 something like: if I\'m only interested in those objects in which the
 source is equal to, for example, \'me\', I would put this as a filtering
-before I perform the find.
+before I perform the find. You can look at how filtering is done in the 
+examples on the mongoose website.
 
-You can look at how filtering is done in the examples on the mongoose
-website.
-
+<img>
 Mongoose allows us to do also other things. It allows us to create
-objects,
-
-as already set before. So, in this specific case, we are creating a new
+objects, as already set before. So, in this specific case, we are creating a new
 object, which has a source \'me\', as target \'you\' and as weight
 \'6\'.
 
+<img>
 If the object was successfully created, we will return an anonymous
 callback function, which will log the created object, as we see below
-here. The next thing that we can do in mongoose is to find and remove
-objects. Be careful, we are only finding and removing one object. This
+here. 
+
+<img>
+The next thing that we can do in mongoose is to find and remove
+objects. 
+
+<img>
+Be careful, we are only finding and removing one object. This
 is very important, because you can easily remove many items from your
-database and maybe it is not what you want to do.
+database and maybe it is not what you want to do. You have to be very 
+careful when you\'re coding these parts of your application. 
 
-You have to be very careful when you\'re coding these parts of your
-application.
-
-So, here, what we are doing is we are finding one object, which is the
-first
-
-object in which the source is \'me\' and we are removing it.
-
+Here, what we are doing is we are finding one object, which is the
+first object in which the source is \'me\' and we are removing it.
 If the removal is successful, we will log into console the removed
 object.
 
+<img>
 Another thing that we can do is to update objects. Also, here, you have
-to pay
+to pay attention, because the updates function out-of-the-box will only update
+the first filtered item that is defined in a database. 
 
-attention, because the updates function out-of-the-box will only update
-the
+In this case, the first time it will find an object, which has a source 
+\'me\', it will update it and put or set the target as \'Tommen\'. So, if 
+we only have one object, which is the one that we created two slides back, 
+instead of having source \'me\' and target \'you\', it would have source \'me\' 
+and target \'Tommen\'. The weight will always be the same.
 
-first filtered item that is defined in a database. So, in this case, the
-first
-
-time it will find an object, which has a source \'me\', it will update
-it and put or
-
-set the target as \'Tommen\'. So, if we only have one object, which is
-the one that we created two slides back, instead of having source \'me\'
-and target \'you\',
-
-it would have source \'me\' and target \'Tommen\'. The weight will
-always be the same.
-
+<img>
 What we have seen now, were four basic operations, which are needed in
-every database.
-
-They are called the CRUD stack. They stand for create, read, update and
-delete.
-
-We have also seen, which functions you can use to perform these
-operations,
-
-which are, on the model - the create function, on the model - define
-function, on the model - the update function and on the model - the
-remove function. I urge you again to pay attention when you implement
+every database. They are called the CRUD stack. They stand for create, 
+read, update and delete. We have also seen, which functions you can use 
+to perform these operations, which are, on the model - the create function, 
+on the model - define function, on the model - the update function and on 
+the model - the remove function. I urge you again to pay attention when you implement
 the update and remove function, because you can easily generate mistakes
 within your data.
 
 So, we have seen two of the components of our example applications and
 in the next video we are going to discuss the missing component, which
-is the view.
-
-We decided to split these three components into the first two and the
-last component, which is the view, because sometimes you don\'t need the last
+is the view. We decided to split these three components into the first two and 
+the last component, which is the view, because sometimes you don\'t need the last
 component as already explained in previous videos.
 
-### Views
+<h3 id="ch3-6">3.6 Views (5:54)</h3>
 
 Welcome back to our videos on server-side JavaScript! In this video, we
-
 are going to see the last component that you need to build a complete
 application, which means an application, which has also a view
-component. The view engine that we used is Pug, as already mentioned in 
+component. 
+
+<img>
+The view engine that we used is Pug, as already mentioned in 
 previous videos. Pug was renamed after a legal matter with the original 
 name, which was called Jade.
 
@@ -3555,22 +3526,27 @@ In Pug, you can also use control statements, like each and if, which allow you
 to, for example, handle variables that you pass the view through the controller.
 So, for example, through the controller you pass the title. You can specify a
 location that if the title is defined, you want to show the title at
-that location. Let\'s look at where we can find Pug in our complete example. 
+that location. 
 
-We can find Pug in our
-complete example in the four highlighted files. These are the base.pug,
-the home.pug, the navigation.pug and the visualization.pug. They are
-inside the views folder, which again is inside the app folder on the
+<img>
+Let\'s look at where we can find Pug in our complete example. 
+We can find Pug in our complete example in the four highlighted files. These are 
+the base.pug, the home.pug, the navigation.pug and the visualization.pug. They 
+are inside the views folder, which again is inside the app folder on the
 root of our application. We take a look now at the base, home and
 **navigation.pug**. There are simplified versions of these files, but
 the actual files are pretty similar and the concepts are definitely the
-same. So, let\'s look at them. On the top in green, you see the
-**base.pug**, on the bottom in orange you see the **navigation.pug** and
-on the bottom on the left in blue you see the **home.pug.**
+same. Let\'s look at them. 
 
+<img>
+On the top in green, you see the
+**base.pug**, on the bottom in orange you see the **navigation.pug** and
+on the bottom on the left in blue you see the **home.pug.**.
 This is what we want to access when we navigate to the home of our
 application. We are going to load the **home.pug**, but the **home.pug**
-extends the **base.pug**, so we will start from there. The **base.pug** starts with
+extends the **base.pug**, so we will start from there. 
+
+The **base.pug** starts with
 an HTML tag, which is the starting point of every HTML file. It then has a head part,
 which contains, for example, metadata about the encoding of our HTML file,
 which in this case is utf-8. It contains also a link to a stylesheet,
@@ -3594,16 +3570,16 @@ with the hashtag navigation, which means it has the id navigation. One
 list item, which has an a href, which is a link to the home. Also, the
 name of this link will be home itself. 
 
-The next interesting part of our
-**base.pug** is the block content. In **Pug**, we define blocks, which
-are extendable parts of our HTML file. In this case, we want to extend
-the base in our **home.pug** and we want to extend the base based on the
+The next interesting part of our **base.pug** is the block content. In **Pug**, 
+we define blocks, which are extendable parts of our HTML file. In this case, we 
+want to extend the base in our **home.pug** and we want to extend the base based on the
 block content. So, we extend block content by writing block content and
 every element that follows that block content statement will be put
 exactly where the block content is in the **base.pug**. So, in this
 case, we will put there an h1, which will be here is a title and that p
 for the paragraph, a nice paragraph. 
 
+<img>
 So, let\'s look at the outcome of
 these three files combined. If we connect to the home, which means
 example.dallago.us, this is pretty much what we see. As you see, the
