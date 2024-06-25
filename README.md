@@ -2988,6 +2988,7 @@ means both the API and also the front-end part with the views.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-3">3.3 What is needed for a web app? (5:07)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- last image as of 6/24/2024 -->
 <!--~~~~~~~~~~~~~~~~~~~~~ 145 node.js as back-end - request handling (88) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image145.png" 
@@ -3348,6 +3349,14 @@ We also have a function, which is a callback and this function tells us
 that our express server is listening on the port that we defined earlier. 
 
 <img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158 express.js: index.js (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image158.png" 
+  title="Express.js: index.js"
+  alt="Express.js: index.js."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The other file that we want to look at for express is a router.js and the 
 controllers/relationships.js in our app folder. In the router, we define that if a get
 request is coming at /api/relationships, the relationships controller
@@ -3366,6 +3375,14 @@ error, we are sending a status 500, which in HTTP means that there was an error
 and that we are sending back an error object as well. 
 
 <img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 159 mongodb (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image159.png" 
+  title="MongoDB; non-relational"
+  alt="MongoDB; non-relational."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The next thing that we will look at is MongoDB. We have already discussed about
 databases before, but, specifically, we will use MongoDB in our example.
 As already said, MongoDB is a document-oriented database management
@@ -3387,8 +3404,14 @@ There could be only the name without the surname, because someone forgot to put 
 in, and the age. MongoDB actually stores objects in binary JSON format. It does so
 because binary JSON allows you to store not only the usual JSON files, but it also 
 allows you to store music and images. 
-
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 160 mongodb: json example (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image160.png" 
+  title="MongoDB; JSON example"
+  alt="MongoDB; JSON example."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 This is the example of a JSON file being stored into a MongoDB entry. On the top, 
 we see an ordinary JSON file and on the bottom we see what we would see if we 
 insert this JSON file into MongoDB. As you see, MongoDB will give an attribute 
@@ -3399,12 +3422,25 @@ If, for example, we have two people, which have exactly the same name, surname
 and are of the same age, then we would not know which objects we actually want 
 to get. But thanks to the id, which is a randomly generated information, we 
 always have just one field, which is for that specific object.
-
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 161 mongodb: json example, #2 (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image161.png" 
+  title="MongoDB; JSON example, #2"
+  alt="MongoDB; JSON example, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The other things, which you see on the bottom, are the same fields that
 we have already seen above, which are the name the surname and the age. 
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 162 mongoose; mongodb driver (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image162.png" 
+  title="Mongoose; mongoDB driver"
+  alt="Mongoose; mongoDB driver."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 To actually use MongoDB in a Node application, you need something called a
 driver. The most common driver with Node.js is called mongoose. Mongoose allows
 you firstly, to connect to the database and handle connection events.
@@ -3418,7 +3454,14 @@ accept objects if they are not of the structure that you have defined them in.
 The other thing that mongoose allows you to do is to perform queries.
 So, you can find objects, create objects, update and remove items.
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 163 mongoose in our first example application (103) ~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image163.png" 
+  title="Mongoose in our first example application"
+  alt="Mongoose in our first example application."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let\'s see some code examples. First, we will find mongoose in these
 files. As you see, there is one file, which is highlighted a little bit
 differently than the other ones. This is because we\'re not directly using mongoose,
@@ -3426,7 +3469,14 @@ but we are using the mongoose model, created in the relationships model in the
 controller. So, to produce a meaningful response, when an incoming
 request is coming. 
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 164 mongoose: models/relationships.js (model:define) (103) ~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image164.png" 
+  title="Mongoose: models/relationships.js (model: define)"
+  alt="Mongoose: models/relationships.js (model: define)."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let\'s look at the model for the relationships. Here, we define
 the model of our relationships. Firstly, we require mongoose, as we did, we did
 with express in our previous example. The second thing that we do is we
@@ -3438,7 +3488,14 @@ it won\'t work. Mongoose will complain. The three fields that we are going to
 need in our objects are source, target and weight. The first two source and 
 target are of type string, while weight is a number-typed object.
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 165 mongoose: controllers/relationships.js (model:find items) (104) ~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image165.png" 
+  title="Mongoose: controllers/relationships.js (model: find items)"
+  alt="Mongoose: controllers/relationships.js (model: find items)."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The second location in which we find mongoose is our relationships
 controller. Here, we can find objects in our model, as seen from the
 fourth line of code. So, we have our relationships model and we perform
@@ -3447,23 +3504,51 @@ something like: if I\'m only interested in those objects in which the
 source is equal to, for example, \'me\', I would put this as a filtering
 before I perform the find. You can look at how filtering is done in the 
 examples on the mongoose website.
-
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 166 mongoose: what else can you do? (105) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image166.png" 
+  title="Mongoose: what else can you do?"
+  alt="Mongoose: what else can you do?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Mongoose allows us to do also other things. It allows us to create
 objects, as already set before. So, in this specific case, we are creating a new
 object, which has a source \'me\', as target \'you\' and as weight
 \'6\'.
 
-<img>
-If the object was successfully created, we will return an anonymous
-callback function, which will log the created object, as we see below
-here. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (105) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image167.png" 
+  title="Mongoose: what else can you do, #2?"
+  alt="Mongoose: what else can you do, #2?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-<img>
+<p>If the object was successfully created, we will return an anonymous
+callback function, which will log the created object, as we see below
+here.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 168 mongoose: what else can you do, #3? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image168.png" 
+  title="Mongoose: what else can you do, #3?"
+  alt="Mongoose: what else can you do, #3?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The next thing that we can do in mongoose is to find and remove
 objects. 
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 169 mongoose: what else can you do, #4? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image169.png" 
+  title="Mongoose: what else can you do, #4?"
+  alt="Mongoose: what else can you do, #4?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Be careful, we are only finding and removing one object. This
 is very important, because you can easily remove many items from your
 database and maybe it is not what you want to do. You have to be very 
@@ -3474,7 +3559,14 @@ first object in which the source is \'me\' and we are removing it.
 If the removal is successful, we will log into console the removed
 object.
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 170 mongoose: what else can you do, #5? (107) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image170.png" 
+  title="Mongoose: what else can you do, #5?"
+  alt="Mongoose: what else can you do, #5?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Another thing that we can do is to update objects. Also, here, you have
 to pay attention, because the updates function out-of-the-box will only update
 the first filtered item that is defined in a database. 
@@ -3485,7 +3577,15 @@ we only have one object, which is the one that we created two slides back,
 instead of having source \'me\' and target \'you\', it would have source \'me\' 
 and target \'Tommen\'. The weight will always be the same.
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image171.png" 
+  title="Mongoose: CRUD, create, read, update &amp; delete"
+  alt="Mongoose: CRUD, create, read, update &amp; delete."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
 What we have seen now, were four basic operations, which are needed in
 every database. They are called the CRUD stack. They stand for create, 
 read, update and delete. We have also seen, which functions you can use 
@@ -3500,15 +3600,21 @@ in the next video we are going to discuss the missing component, which
 is the view. We decided to split these three components into the first two and 
 the last component, which is the view, because sometimes you don\'t need the last
 component as already explained in previous videos.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6">3.6 Views (5:54)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome back to our videos on server-side JavaScript! In this video, we
 are going to see the last component that you need to build a complete
 application, which means an application, which has also a view
 component. 
-
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172 pug (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image172.png" 
+  title="pug; a view engine"
+  alt="pug; a view engine."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The view engine that we used is Pug, as already mentioned in 
 previous videos. Pug was renamed after a legal matter with the original 
 name, which was called Jade.
@@ -3527,8 +3633,14 @@ to, for example, handle variables that you pass the view through the controller.
 So, for example, through the controller you pass the title. You can specify a
 location that if the title is defined, you want to show the title at
 that location. 
-
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173 pug: where do you find it? (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image173.png" 
+  title="pug; Where do you find it?"
+  alt="pug; Where do you find it?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let\'s look at where we can find Pug in our complete example. 
 We can find Pug in our complete example in the four highlighted files. These are 
 the base.pug, the home.pug, the navigation.pug and the visualization.pug. They 
@@ -3538,7 +3650,14 @@ root of our application. We take a look now at the base, home and
 the actual files are pretty similar and the concepts are definitely the
 same. Let\'s look at them. 
 
-<img>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (110) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image174.png" 
+  title="pug; home.pug + base.pug + navigation.pug"
+  alt="pug; home.pug + base.pug + navigation.pug."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 On the top in green, you see the
 **base.pug**, on the bottom in orange you see the **navigation.pug** and
 on the bottom on the left in blue you see the **home.pug.**.
@@ -3579,8 +3698,15 @@ exactly where the block content is in the **base.pug**. So, in this
 case, we will put there an h1, which will be here is a title and that p
 for the paragraph, a nice paragraph. 
 
-<img>
-So, let\'s look at the outcome of
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (111) ~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image175.png" 
+  title="pug; home.pug + base.pug + navigation.pug, #2"
+  alt="pug; home.pug + base.pug + navigation.pug, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Let\'s look at the outcome of
 these three files combined. If we connect to the home, which means
 example.dallago.us, this is pretty much what we see. As you see, the
 navigation has been loaded as an unordered list with one list item and
@@ -3592,10 +3718,19 @@ previous videos we have seen the models and the controls. I invite you
 to look more at our code together with me in the demonstration, which is
 going to follow this video.
 
-### Chapter 3 - Summary
+<h3 id="ch3-7">3.7 Chapter 3 - Summary</h3>
 
-Thank you, Chris, for covering server-side JavaScript. In this module,
-we saw that Node makes it easy to write JavaScript code for the server-side
+Thank you, Chris, for covering server-side JavaScript. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176 advantages of node.js (112) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image176.png" 
+  title="Advantages of Node.JS"
+  alt="Advantages of Node.JS."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+In this module, we saw that Node makes it easy to write JavaScript code for the server-side
 component of our web application. Thanks to employing a non-blocking I/O
 module, Node.js scales very well to support thousands of simultaneous
 connections. 
@@ -3605,15 +3740,31 @@ system. Chris introduced some of the components needed for web application
 development and how those could be found and integrated using NPM. Finally, we saw
 a code example for a small app that pulls data from an API and
 visualizes it.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 177 in the next module; data visualization using d3 (112) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image177.png" 
+  title="In the next module; Data visualization using D3"
+  alt="In the next module; Data visualization using D3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In the next module, Dennis will show us what are the current techniques
 to visualize data on the web and how we can use the D3 library to do data
 visualization in JavaScript.
 
-### Demo 1: Working with an Example Application (optional)
+<h3 id="ch3-8">3.8 Demo 1: Working with an Example Application (14:44)</h3>
 
 Welcome back! In this video lecture, I\'m going to demonstrate you the
 code that me and Dennis are using in our previous video lectures.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 178 webstore, api code (113) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image178.png" 
+  title="WebStore API"
+  alt="WebStore API."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We are going to see in my specific case the API code. Dennis is going 
 to use the complete code in his demonstrations, which come after
@@ -3629,16 +3780,10 @@ downloads and here we see API folder. And we just drag this onto the
 desktop, so that it\'s here.
 
 Good, now we can use our favorite editing tool. In my specific case I\'m
-
 going to use WebStorm. It is an IDE. So, it has some nice features,
-
 like code highlights, it tells me if, for example, I mistyped the name
-of a
-
-variable, that this variable has never been declared before; so, maybe I
-did a
-
-mistake in typing the name of it. There are also free tools, for
+of a variable, that this variable has never been declared before; so, maybe I
+did a mistake in typing the name of it. There are also free tools, for
 example, Brackets.
 
 Or you can also download Atom, which is going to be used by Dennis in
@@ -3647,142 +3792,62 @@ his videos.
 But, again, I\'m going to use WebStorm. So, let\'s fire that up.
 
 Good, so, now that webstorm is open, we can start opening up our
-
 application just by clicking open, navigate into the desktop and
-selecting
-
-the folder. Then, we select open again and webstorm will open up our
+selecting the folder. Then, we select open again and webstorm will open up our
 application.
 
 What we see then on the left side is our folder and all of the files
-that are
-
-contained in it. The same thing is reflected if we just open up our
-folder
-
-with Finder and these are the same files that we\'re going to find in
-
+that are contained in it. The same thing is reflected if we just open up our
+folder with Finder and these are the same files that we\'re going to find in
 WebStorm here. Good, so, the first thing that we want to look at when we
-open up
+open up a Node application is the package dot JSON file I talked about. This
+also in my video lectures and there are some nice and mention-worthy things to look
+at, like the scripts section, the dependencies and the main. So, the main
+tells us which is the most important script usually and in our application. In this
+specific case it\'s index dot js. It is this file. The scripts section tells us how to
+start our application. 
 
-a Node application is the package dot JSON file I talked about. This
-also in my
-
-video lectures and there are some nice and mention-worthy things to look
-at,
-
-like the scripts section, the dependencies and the main. So, the main
-tells us which
-
-is the most important script usually and in our application. In this
-specific case
-
-it\'s index dot js. It is this file. The scripts section tells us how to
-start our
-
-application. So, it says we need to have Node installed and we start by
-calling
-
-Node and then starting from the index dot js file, which is again this
-one.
+So, it says we need to have Node installed and we start by
+calling Node and then starting from the index dot js file, which is again this
+one. 
 
 And then there is the list of dependencies, which are expressed in
 Mongoose.
 
 It\'s only two dependencies. it\'s a quite easy application and both of
-the dependencies
-
-are at the latest version. So, when we see actually that there are
-dependencies, we
-
-know that to run our application, we first have to install the
-dependencies
-
-that are specified here and we do that by calling NPM install from a
-
+the dependencies are at the latest version. So, when we see actually that there are
+dependencies, we know that to run our application, we first have to install the
+dependencies that are specified here and we do that by calling NPM install from a
 terminal window. We can either do that by opening up a terminal window
-here and
-
-NPM install, but just to explain for the people that might not be using
-
+here and NPM install, but just to explain for the people that might not be using
 WebStorm, we can just open up a terminal window from the terminal
-emulator
-
-from our computer, navigate to the desktop and then navigate to the API
-
+emulator from our computer, navigate to the desktop and then navigate to the API
 folder. We know that we are there because we\'re doing ls, we see the
-exact same
-
-files as we see here on the left side and then we can run npm install
-and this
-
-will install all of the dependencies. While the two dependencies that
-are specified
-
-here, but also a lot of co-dependencies, because Express, to actually
-perform
-
-its function, will need some core dependencies, which are for example
-these
-
-accepts, array-flatten and so on and so forth. So, there\'s actually a
-bunch of
-
-these, which come with express and mongoose. And now if we navigate back
-to our
-
-application here, what we see is that there is a new folder, which
-
+exact same files as we see here on the left side and then we can run npm install
+and this will install all of the dependencies. While the two dependencies that
+are specified here, but also a lot of co-dependencies, because Express, to actually
+perform its function, will need some core dependencies, which are for example
+these accepts, array-flatten and so on and so forth. So, there\'s actually a
+bunch of these, which come with express and mongoose. And now if we navigate back
+to our application here, what we see is that there is a new folder, which
 is called node modules and this will collect all of the different
-
 dependencies that we just installed. Good, so, next thing we want to do
-is actually
-
-to look at index dot js. So, let\'s go ahead and open up that file and
-what we
-
-see is that in the very first two lines we have two requirements: the
-first
-
-requirement is express. It\'s a dependency we have just seen it in a
-
+is actually to look at index dot js. So, let\'s go ahead and open up that file and
+what we see is that in the very first two lines we have two requirements: the
+first requirement is express. It\'s a dependency we have just seen it in a
 package dot JSON and we have just installed it with NPM install. The
-second
-
-thing that we require is database and this is actually a file and we see
-it
-
-from this dot slash at the beginning of the name. We don\'t have to
-specify the
-
-extension, which in this case is js, as we see here, simply because Node
-is
-
-able to automatically get the extension if there is only one file with
-that name,
-
-and we only have one file, which is called database, and the file is
-either
-
-of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
-the
-
-case we only have one file it\'s called a database and it is of the
-extension dot
-
-JavaScript. So, we don\'t really need to specify the dot and js here. It
-is good
-
-practice to actually see what this database file does. So, let\'s go
-ahead and
-
-open up the database dot js file. Again, here, at the very beginning we
-have two
-
-requirements: the second one is just a dependency again, as we have seen
-it
-
-before. It is defined in the package dot JSON and the first one is again
+second thing that we require is database and this is actually a file and we see
+it from this dot slash at the beginning of the name. We don\'t have to
+specify the extension, which in this case is js, as we see here, simply because Node
+is able to automatically get the extension if there is only one file with
+that name, and we only have one file, which is called database, and the file is
+either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
+the case we only have one file it\'s called a database and it is of the
+extension dot JavaScript. So, we don\'t really need to specify the dot and js here. It
+is good practice to actually see what this database file does. So, let\'s go
+ahead and open up the database dot js file. Again, here, at the very beginning we
+have two requirements: the second one is just a dependency again, as we have seen
+it before. It is defined in the package dot JSON and the first one is again
 a file
 
 and we see this again from the dot slash here and it is the config file,
