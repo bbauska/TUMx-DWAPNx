@@ -1801,22 +1801,22 @@ It is described by a somewhat intimidating specification, but we don\'t
 really have to know it by heart. However, please remember that we have
 to put the returned value on the same line as return keyword.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 89  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 89 automatic semicolon insertion (asi) (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image089.png" 
-  title=""
-  alt="."
+  title="Automatic Semicolon Insertion (ASI)"
+  alt="Automatic Semicolon Insertion (ASI)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 Otherwise, a semicolon will be inserted right after return keyword,
 which means that a function will return undefined.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 90  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image090.png" 
-  title=""
-  alt="."
+  title="Functions create scope"
+  alt="Functions create scope."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1827,11 +1827,11 @@ Each function creates a new scope.
 A variable declared in a scope is accessible inside all of the inner
 scopes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 91  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image091.png" 
-  title=""
-  alt="."
+  title="Inner functions and outer scope"
+  alt="Inner functions and outer scope."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1848,11 +1848,11 @@ Then, it is changed in the inner scope created by a function.
 Of course, this change exists not only in the inner scope, but in the
 outer scope as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 92  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image092.png" 
-  title=""
-  alt="."
+  title="Variable shadowing"
+  alt="Variable shadowing."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1867,11 +1867,11 @@ An outer scope variable is shadowed by an inner scope variable.
 That is, manipulations with an inner scope variable have no effect on an
 outer scope variable.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 93  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image093.png" 
-  title=""
-  alt="."
+  title="Higher order functions"
+  alt="Higher order functions."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1887,11 +1887,11 @@ Here, we see a function that returns another function.
 Let\'s take a closer look at this example. What exactly is going on
 here?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 94  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image094.png" 
-  title=""
-  alt="."
+  title="add(4)(5)"
+  alt="add(4)(5)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1907,11 +1907,11 @@ parentheses?
 First, we invoke add with four as an argument that returns innerAdd and
 we immediately invoke it passing 5 as an argument.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 95  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image095.png" 
-  title=""
-  alt="."
+  title="Closures"
+  alt="Closures."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1929,22 +1929,22 @@ Thus, a closure is function plus function\'s context. Immediately
 invoked function expressions are very often used together with closures
 in JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 96  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (56) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image096.png" 
-  title=""
-  alt="."
+  title="IIFE - Immediately Invoked Function Expression"
+  alt="IIFE - Immediately Invoked Function Expression."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 What is it? Well, it\'s simply a function expression that is immediately
 invoked!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 97  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (57) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image097.png" 
-  title=""
-  alt="."
+  title="Classical example - a simple counter"
+  alt="Classical example - a simple counter."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1960,15 +1960,14 @@ returns it.
 
 There is no other way to access counter value, but through this
 function.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4">2.4 Objects, part 2</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 98  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (57) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image098.png" 
-  title=""
-  alt="."
+  title="Functions and Objects; Objects, part II"
+  alt="Functions and Objects; Objects, part II."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -1978,11 +1977,11 @@ similar behavior.
 
 But we have a problem.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 99  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image099.png" 
-  title=""
-  alt="."
+  title="Access control"
+  alt="Access control."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2013,11 +2012,11 @@ attributes as private. Is there any way to solve this problem?
 
 Indeed, there is and we have already seen it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 100  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image100.png" 
-  title=""
-  alt="."
+  title="Closures as a solution"
+  alt="Closures as a solution."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2027,11 +2026,11 @@ enclosing function.
 We\'re going to use closure now to hide swordsman\'s damage and attacks
 from the outside.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 101  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image101.png" 
-  title=""
-  alt="."
+  title="Closures as a solution, #2"
+  alt="Closures as a solution, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2052,11 +2051,11 @@ variables.
 But there is no other way to access these values from the outside. They
 are safely hidden.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 102  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image102.png" 
-  title=""
-  alt="."
+  title="Access control VS prototypes"
+  alt="Access control VS prototypes."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2071,11 +2070,11 @@ because prototype methods cannot access data hidden within closures.
 Thus, we have to choose between access control with closures and code
 reuse with prototype chains.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 103  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image103.png" 
-  title=""
-  alt="."
+  title="Prototype chain?"
+  alt="Prototype chain?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2101,11 +2100,11 @@ constructor, whose Prototype is a Lannister.prototype object.
 Thus, Swordsman object inherit methods from Swordsman.prototype and
 Lannister.prototype.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 104  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image104.png" 
-  title=""
-  alt="."
+  title="Object.create"
+  alt="Object.create."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2115,11 +2114,11 @@ Object.create method allows us to create objects with custom prototypes
 without defining constructors. It takes one object as an argument and
 then returns another object, whose prototype is the first object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 105  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image105.png" 
-  title=""
-  alt="."
+  title="Prototypal inheritance"
+  alt="Prototypal inheritance."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2132,11 +2131,11 @@ always located at the very root of prototype hierarchy.
 
 The first found method is used.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 106  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image106.png" 
-  title=""
-  alt="."
+  title="Dangers of constructors"
+  alt="Dangers of constructors."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2153,35 +2152,35 @@ Calling a constructor function without a new keyword and conversely
 calling a regular function that explicitly returns an object with a new
 keyword are two common mistakes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 107  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image107.png" 
-  title=""
-  alt="."
+  title="Dangers of constructors, #2"
+  alt="Dangers of constructors, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 If we call a constructor function without a new keyword, then this
 keyword returns global object and we end up creating global variables.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 108  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image108.png" 
-  title=""
-  alt="."
+  title="Dangers of constructors, #3"
+  alt="Dangers of constructors, #3."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 If we call a regular function that explicitly returns an object with a
 new keyword, then our function will still return that object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4">2.4 Functions, part 3</h3>
+<h3 id="ch2-5">2.5 Functions, part 3 (5:03)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 109  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image109.png" 
-  title=""
-  alt="."
+  title="Functions are objects"
+  alt="Functions are objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2197,11 +2196,11 @@ In case of an anonymous function, it is an empty string.
 
 The value of the length property is an amount of parameters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 110  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image110.png" 
-  title=""
-  alt="."
+  title="Function.prototype"
+  alt="Function.prototype."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2213,21 +2212,21 @@ prototype as well.
 
 Function.prototype is the prototype of functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 111  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image111.png" 
-  title=""
-  alt="."
+  title="apply and call"
+  alt="apply and call."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 Functions inherit apply and call methods from Function.prototype.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 112  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image112.png" 
-  title=""
-  alt="."
+  title="apply and call, #2"
+  alt="apply and call, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2238,11 +2237,11 @@ the object that is passed as a first argument.
 
 In other words, this keyword returns passed object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 113  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image113.png" 
-  title=""
-  alt="."
+  title="apply and call, #3"
+  alt="apply and call, #3."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2255,11 +2254,11 @@ Remember, call and apply treat them differently. call method takes these
 arguments simply as arguments, while apply method takes an array and
 turns it into arguments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 114  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image114.png" 
-  title=""
-  alt="."
+  title="Array of arguments with apply"
+  alt="Array of arguments with apply."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2273,11 +2272,11 @@ problem with apply.
 A mnemonic allows to remember which of two methods takes an array. apply
 and array start and end with the same letters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 115  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image115.png" 
-  title=""
-  alt="."
+  title="Spread operator"
+  alt="Spread operator."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2294,11 +2293,11 @@ If we are defining a function, it\'s rest parameters.
 
 If we are calling a function, it\'s a spread operator.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 116  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image116.png" 
-  title=""
-  alt="."
+  title="arguments as an array"
+  alt="arguments as an array."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2313,7 +2312,7 @@ Slice is an array method that returns a copy of an array.
 Passing an argument\'s object to slice by a call or apply, returns an
 array containing the same elements as argument\'s object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image117.png" 
   title=""
@@ -2328,7 +2327,7 @@ the current example.
 This is possible thanks to a very important feature of JavaScript,
 called late binding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image118.png" 
   title=""
@@ -2346,7 +2345,7 @@ invoke a function.
 
 However, there is one way to change this behavior.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 119  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 119  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image119.png" 
   title=""
@@ -2361,7 +2360,7 @@ function.
 We can see in this example that even if we copy a bound method to
 another object, this keyword still returns the bound object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image120.png" 
   title=""
@@ -2380,7 +2379,7 @@ By default, this returns the global object.
 
 In the browser, it\'s the window object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121  (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image121.png" 
   title=""
@@ -2391,7 +2390,7 @@ In the browser, it\'s the window object.
 This also returns the global object in an inner function that is in a
 function that is called by a method.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 122  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 122  (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image122.png" 
   title=""
@@ -2409,12 +2408,12 @@ For example, that or self and access it from an inner function.
 In this example, we decided to use that.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-0">2.0 Chapter 2 - Summary</h3>
+<h3 id="ch2-6">2.6 Chapter 2 - Summary</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Thank you, Dimitrii, for covering functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 123  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 123  (71) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image123.png" 
   title=""
@@ -2431,7 +2430,7 @@ indirect invocation.
 These different invocations lend flexibility to the language when
 working with functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 124  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 124  (71) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image124.png" 
   title=""
@@ -2450,7 +2449,7 @@ closures. This module showed the basics of using objects and functions,
 and would allow you to better understand how to structure your
 JavaScript code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 125  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 125  (72) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image125.png" 
   title=""
@@ -2462,11 +2461,10 @@ In the next module, Chris will show you how we can create JavaScript on
 the server-side using Node.js as well as other technologies.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-1">2.1 Server-side JavaScript (1:31)</h3>
+<h3 id="ch3-0">3.0 Server-side JavaScript (1:31)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Introduction -- </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Welcome to the server-side JavaScript module! JavaScript was developed
 as a scripting language that can only be run in the web browser.
 
@@ -2486,7 +2484,7 @@ Since the first version of Node appeared, many developers have found it
 useful and have chosen to build the back-end of their applications using
 JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 126  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 126  (73) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image126.png" 
   title=""
@@ -2505,7 +2503,7 @@ of the Intro to JavaScript course, given at the TU of Munich.
 
 By his own admission, Chris really likes to turn pizza into code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 127  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 127  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image127.png" 
   title=""
@@ -2522,7 +2520,7 @@ control requests and present the results on the web.
 You will also get a chance to experiment with node.js using code
 examples we provide.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2">2.2 Anatomy of HTTP transactions (6:19)</h3>
+<h3 id="ch3-1">3.1 Anatomy of HTTP transactions (6:19)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to this lecture about anatomy of HTTP transactions!
 
@@ -2531,7 +2529,7 @@ stands for.
 
 Let\'s look at the first example.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image128.png" 
   title=""
@@ -2548,7 +2546,7 @@ to deliver to me?
 The server will answer to the browser: yes, I have something for you and
 it\'s an HTML file, which is called index.html.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129  (75) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image129.png" 
   title=""
@@ -2567,8 +2565,14 @@ called image.png.
 
 If everything went according to plan, the server will then answer to the
 browser: yes, I have these files and there you are.
-
-![](./images/image130.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 130  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image130.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In the HTML, the locations where we find these requests are tags like
 these.
@@ -2580,8 +2584,14 @@ What we see later in the href, is a URL of where the image is to be
 taken from.
 
 In this case, the image is located at example.dallago.us/image.png.
-
-![](./images/image131.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 131  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image131.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Most likely, in modern web pages, you see href references like this.
 
@@ -2599,8 +2609,14 @@ if we\'re executing an HTML file, which is located in
 example.dot.dallago.us/public and we have an img tag, like this one,
 which is trying to access image.png, what we\'re actually asking for is
 the image at example.dallago.us/public/image.png.
-
-![](./images/image132.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 132  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image132.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 There are different types of requests that you can perform on the web.
 The ones that we have seen up until now, are ***get*** requests. They
@@ -2627,8 +2643,14 @@ don\'t have them anymore on our web server.
 
 There are other types of requests, but we are not going to discuss about
 them, because they are not relevant to the slide set.
-
-![](./images/image133.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 133  (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image133.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The next thing that we\'re going to talk about are URLs. There are
 different things you want to look at when you see a URL.
@@ -2658,8 +2680,14 @@ were opening sub folders on your computer.
 
 The last part is the ***resource*** that you\'re going to ask and in
 this specific case is a png image and it\'s called protein.png.
-
-![](./images/image134.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 134  (79) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image134.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Here is a different representation of the URL that we had before. We see
 in the first part the protocol and the hostname. The hostname maps to
@@ -2677,8 +2705,14 @@ we\'re accessing assets and then we\'re accessing images.
 
 The last part is a resource that we want to access, which is the image
 of this protein, which is called protein.png.
-
-![](./images/image135.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 135  (80) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image135.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What we have seen up until now is JavaScript as it is used for
 front-end. It is used to extend normal HTML code to allow us to perform
@@ -2699,13 +2733,19 @@ node.js, which we will look at into later videos.
 
 That is used to create web backends or **API**s, which we are also going
 to discuss in the next videos.
-
-### Node.js and NPM (9:28)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-2">3.2 Node.js and NPM (9:28)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to this session about Node.js and NPM! Let\'s start right away
 with Node.js.
-
-![](./images/image136.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 136  (81) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image136.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What is it? Node.js allows you to interpret JavaScript in your computer.
 It\'s similar at the way JavaScript is interpreted in your browser, but
@@ -2753,8 +2793,14 @@ And that\'s exactly what a front-end is! It provides you with the tools
 to build these views, to reuse them and to use the code from the server
 to, for example, give meaningful objects meaningful data to the view
 itself.
-
-![](./images/image137.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 137  (82) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image137.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 So how is Node different from things that we have already seen in the
 past? The traditional approach of -- for example PHP and Apache - is
@@ -2783,8 +2829,14 @@ response is provided to the requester.
 
 Once this response is provided, the callback will terminate and the
 request will have been answered.
-
-![](./images/image138.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 138  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image138.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 When you install Node, you also install NPM, which is its companion. NPM
 stands for Node Package Manager.
@@ -2812,8 +2864,14 @@ You can easily find what is a good application, and what is a bad
 application by looking at the documentation of this app.
 
 Same thing is for NPM.
-
-![](./images/image139.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 139  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image139.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s look at the growth of NPM over the years: you can definitely see
 by the red line that it\'s above everything else. Specifically here, we
@@ -2821,8 +2879,14 @@ have a package manager for Ruby on Rails, a package manager for PHP, a
 package manager for GO, which is a Google initiative and a package
 manager for CPAN, which is Perl. There is nothing growing as NPM. So,
 you\'re on the safe side if you start coding now with Node.
-
-![](./images/image140.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 140  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image140.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 As I said earlier, you can use Node as a scripting language to create
 scripts on your computer that execute like if they were, for example,
@@ -2837,16 +2901,28 @@ have more than just one comma separated values file. So, what this tool
 allows you to do is to say I have a file with comma separated values,
 please translate it into a JSON file with an array of all the exactly
 same objects, but in JSON format.
-
-![](./images/image141.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 141  (85) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image141.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What is actually JSON? JSON stands for JavaScript Object Notation. It\'s
 a way to represent objects in JavaScript. It\'s actually not just used
 in JavaScript, it\'s a very commonly used for data exchange on the web.
 So, as I was saying before, many APIs provide you with messages and
 these messages are encoded in JavaScript notation.
-
-![](./images/image142.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 142  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image142.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 You can also store different format types in JSON objects. As we see in
 this example, we can store every primitive JavaScript type and also
@@ -2857,8 +2933,14 @@ two values, which are Christian and my phone number. Another example is
 locations, where you have an array of different strings. Availability
 and price, instead, are JavaScript data types, which we have already
 seen like, for example, a float and a boolean.
-
-![](./images/image143.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 143  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image143.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Defining dependencies is a very important part of building your
 application using Node.
@@ -2882,8 +2964,14 @@ running Node, if you don\'t have these dependencies downloaded in the
 same folder, your application won\'t run.
 
 So, you really need these dependencies.
-
-![](./images/image144.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 144 installing npm packages using command line (87) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image144.png" 
+  title="Installing NPM packages using command line"
+  alt="Installing NPM packages using command line."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 You can also install NPM packages, which are thought as standalone
 scripts, so as the example that I said before. In this specific case, we
@@ -2897,10 +2985,16 @@ use them to create scripts.
 In the next sessions we\'re going to discuss more specifically how to
 build your first API and how to create a full stack application, which
 means both the API and also the front-end part with the views.
-
-### What is needed for a web app? (5:07)
-
-### ![](./images/image145.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-3">3.3 What is needed for a web app? (5:07)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 145 node.js as back-end - request handling (88) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image145.png" 
+  title="Node.js as back-end - Request handling"
+  alt="Node.js as back-end - Request handling."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome back to our videos about server-side JavaScript. In this one
 we\'re going to talk about what is needed for a web application. So,
