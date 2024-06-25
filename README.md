@@ -1766,8 +1766,14 @@ Arguments object looks like an array, but, remember, it is not an array.
 Arguments object does not have array methods. We can see in this example
 that attempting to invoke an array\'s method indexOf results in a
 TypeErrorpart 2.
-
-![](./images/image087.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image087.png" 
+  title="Rest parameters"
+  alt="Rest parameters."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Working with arguments object is not the only way to handle an
 indefinite number of arguments. Rest parameter syntax, which is very
@@ -1779,8 +1785,14 @@ In this example, we define a function using rest parameters syntax and
 invoke it with four arguments. First and second arguments are assigned
 to respective parameters, while the rest are assigned to third
 parameter.
-
-![](./images/image088.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (53) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image088.png" 
+  title="ASI - Automatic Semicolon Insertion"
+  alt="ASI - Automatic Semicolon Insertion."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Automatic semicolon insertion is one of the most controversial features
 of JavaScript.
@@ -1788,13 +1800,25 @@ of JavaScript.
 It is described by a somewhat intimidating specification, but we don\'t
 really have to know it by heart. However, please remember that we have
 to put the returned value on the same line as return keyword.
-
-![](./images/image089.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 89  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image089.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Otherwise, a semicolon will be inserted right after return keyword,
 which means that a function will return undefined.
-
-![](./images/image090.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 90  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image090.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Now, let\'s look into scoping.
 
@@ -1802,8 +1826,14 @@ Each function creates a new scope.
 
 A variable declared in a scope is accessible inside all of the inner
 scopes.
-
-![](./images/image091.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 91  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image091.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s rephrase: inside a function we can access all of the variables
 declared in these functions outer scope.
@@ -1817,8 +1847,14 @@ Then, it is changed in the inner scope created by a function.
 
 Of course, this change exists not only in the inner scope, but in the
 outer scope as well.
-
-![](./images/image0092.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 92  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image092.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Declaring a variable with the same name as a variable in an outer scope
 blocks access to the outer variable in an inner scope.
@@ -1830,8 +1866,14 @@ An outer scope variable is shadowed by an inner scope variable.
 
 That is, manipulations with an inner scope variable have no effect on an
 outer scope variable.
-
-![](./images/image0093.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 93  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image093.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Higher-order functions are one of the most powerful tools in
 JavaScript\'s arsenal.
@@ -1844,8 +1886,14 @@ Here, we see a function that returns another function.
 
 Let\'s take a closer look at this example. What exactly is going on
 here?
-
-![](./images/image0094.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 94  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image094.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We have defined function add that takes an integer as an argument and
 returns another function innerAdd.
@@ -1858,8 +1906,14 @@ parentheses?
 
 First, we invoke add with four as an argument that returns innerAdd and
 we immediately invoke it passing 5 as an argument.
-
-![](./images/image0095.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 95  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image095.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Wait a minute! We invoke innerAdd after add function has been invoked,
 right? It\'s done, it\'s over. So, how can innerAdd access variable X?
@@ -1874,13 +1928,25 @@ We can say that a function \*encloses\* its environment.
 Thus, a closure is function plus function\'s context. Immediately
 invoked function expressions are very often used together with closures
 in JavaScript.
-
-![image096](./images/image096.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 96  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image096.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What is it? Well, it\'s simply a function expression that is immediately
 invoked!
-
-![](./images/image097.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 97  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image097.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Using immediately invoked function expression, we create a function in
 this example, declare counter value variable and initialize it with
@@ -1895,17 +1961,30 @@ returns it.
 There is no other way to access counter value, but through this
 function.
 
-### [Objects, part 2]
-
-![](./images/image098.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4">2.4 Objects, part 2</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 98  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image098.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We already know that constructor functions and prototypes allow us to
 create groups of similar objects of objects with similar data and
 similar behavior.
 
 But we have a problem.
-
-![](./images/image099.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 99  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image099.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We can\'t control access to objects properties. Our swordsman\'s
 properties are exposed to the outside world.
@@ -1933,16 +2012,28 @@ Unfortunately, JavaScript has no mechanism of declaring certain
 attributes as private. Is there any way to solve this problem?
 
 Indeed, there is and we have already seen it.
-
-![](./images/image100.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 100  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image100.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Closures allow us to create variables that can only be accessed by an
 enclosing function.
 
 We\'re going to use closure now to hide swordsman\'s damage and attacks
 from the outside.
-
-![](./images/image101.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 101  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image101.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We have turned objects properties damage and attacks into variables in a
 constructor function.
@@ -1960,8 +2051,14 @@ variables.
 
 But there is no other way to access these values from the outside. They
 are safely hidden.
-
-![](./images/image102.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 102  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image102.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Okay! We know now how to create groups of similar objects and how to
 implement access control. Are we golden now?
@@ -1973,8 +2070,14 @@ because prototype methods cannot access data hidden within closures.
 
 Thus, we have to choose between access control with closures and code
 reuse with prototype chains.
-
-![](./images/image103.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 103  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image103.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Did I just say prototype chain?
 
@@ -1997,16 +2100,28 @@ constructor, whose Prototype is a Lannister.prototype object.
 
 Thus, Swordsman object inherit methods from Swordsman.prototype and
 Lannister.prototype.
-
-![](./images/image104.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 104  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image104.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 There is an even simpler way to do it.
 
 Object.create method allows us to create objects with custom prototypes
 without defining constructors. It takes one object as an argument and
 then returns another object, whose prototype is the first object.
-
-![](./images/image105.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 105  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image105.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 When we invoke a specific method on an object, JavaScript first looks
 for a method with a given name in the object.
@@ -2016,8 +2131,14 @@ prototype etc, etc, all the way up to the Object.prototype, which is
 always located at the very root of prototype hierarchy.
 
 The first found method is used.
-
-![](./images/image106.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 106  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image106.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We started this lecture praising constructors and saying that thanks to
 them we can create groups of similar objects.
@@ -2031,20 +2152,38 @@ confuse a constructor function and a regular function.
 Calling a constructor function without a new keyword and conversely
 calling a regular function that explicitly returns an object with a new
 keyword are two common mistakes.
-
-![](./images/image107.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 107  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image107.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 If we call a constructor function without a new keyword, then this
 keyword returns global object and we end up creating global variables.
-
-![](./images/image108.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 108  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image108.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 If we call a regular function that explicitly returns an object with a
 new keyword, then our function will still return that object.
-
-### Functions, part 3
-
-![](./images/image109.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-4">2.4 Functions, part 3</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 109  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image109.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Functions are objects in JavaScript.
 
@@ -2057,8 +2196,14 @@ The value of the name property is function\'s name.
 In case of an anonymous function, it is an empty string.
 
 The value of the length property is an amount of parameters.
-
-![](./images/image110.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 110  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image110.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We know that objects have prototypes and we know that functions are
 objects.
@@ -2067,12 +2212,24 @@ It\'s not surprising then that each function object is connected to a
 prototype as well.
 
 Function.prototype is the prototype of functions.
-
-![](./images/image111.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 111  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image111.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Functions inherit apply and call methods from Function.prototype.
-
-![](./images/image112.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 112  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image112.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Do you understand what these methods do in the current example?
 
@@ -2080,8 +2237,14 @@ apply and call methods allow to call a function as if it was a method of
 the object that is passed as a first argument.
 
 In other words, this keyword returns passed object.
-
-![](./images/image113.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 113  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image113.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The first argument passed to apply and call methods becomes the value
 returned by this keyword.
@@ -2091,8 +2254,14 @@ Other arguments become arguments of the function.
 Remember, call and apply treat them differently. call method takes these
 arguments simply as arguments, while apply method takes an array and
 turns it into arguments.
-
-![](./images/image114.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 114  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image114.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Since apply takes an array and turns it into arguments for function, we
 can use apply when we are stuck with an array.
@@ -2103,8 +2272,14 @@ problem with apply.
 
 A mnemonic allows to remember which of two methods takes an array. apply
 and array start and end with the same letters.
-
-![](./images/image115.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 115  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image115.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 That\'s nice, but we have an even simpler way of unpacking an array of
 arguments.
@@ -2118,8 +2293,14 @@ Please do not confuse it with rest parameters.
 If we are defining a function, it\'s rest parameters.
 
 If we are calling a function, it\'s a spread operator.
-
-![](./images/image116.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 116  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image116.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s take a look at argument subject one more time, just one more
 time.
@@ -2131,8 +2312,14 @@ Slice is an array method that returns a copy of an array.
 
 Passing an argument\'s object to slice by a call or apply, returns an
 array containing the same elements as argument\'s object.
-
-![](./images/image117.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image117.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In JavaScript we can call one object\'s methods on another object using
 apply and call, or we can simply add methods to another object, as in
@@ -2140,8 +2327,14 @@ the current example.
 
 This is possible thanks to a very important feature of JavaScript,
 called late binding.
-
-![](./images/image118.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image118.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What\'s it about?
 
@@ -2152,8 +2345,14 @@ In other words, object returned by this keyword is selected only when we
 invoke a function.
 
 However, there is one way to change this behavior.
-
-![](./images/image119.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 119  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image119.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Function.prototype.bind method returns a new function bound to a
 specified object this keyword always returns bound object inside a bound
@@ -2161,8 +2360,14 @@ function.
 
 We can see in this example that even if we copy a bound method to
 another object, this keyword still returns the bound object.
-
-![](./images/image120.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image120.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The value returned by this keyword is decided at invocation time.
 
@@ -2174,13 +2379,25 @@ to an object and is not invoked as a method, or via apply or call?
 By default, this returns the global object.
 
 In the browser, it\'s the window object.
-
-![](./images/image121.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image121.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 This also returns the global object in an inner function that is in a
 function that is called by a method.
-
-![](./images/image122.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 122  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image122.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 However, we already know how to deal with such a problem.
 
@@ -2191,11 +2408,19 @@ For example, that or self and access it from an inner function.
 
 In this example, we decided to use that.
 
-### Chapter 2 - Summary
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-0">2.0 Chapter 2 - Summary</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Thank you, Dimitrii, for covering functions and objects.
-
-![](./images/image123.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 123  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image123.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In this module, we saw different ways of invoking functions. JavaScript
 has several ways to invoke functions.
@@ -2205,8 +2430,14 @@ indirect invocation.
 
 These different invocations lend flexibility to the language when
 working with functions and objects.
-
-![](./images/image124.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 124  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image124.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We also saw different ways to create objects.
 
@@ -2218,18 +2449,23 @@ data. And we also saw that we can solve access control problems with
 closures. This module showed the basics of using objects and functions,
 and would allow you to better understand how to structure your
 JavaScript code.
-
-![](./images/image125.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 125  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image125.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In the next module, Chris will show you how we can create JavaScript on
 the server-side using Node.js as well as other technologies.
 
-[\
-]
-
-### [Server-side JavaScript] (1:31)
-
-### Introduction -- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1">2.1 Server-side JavaScript (1:31)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Introduction -- </h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Welcome to the server-side JavaScript module! JavaScript was developed
 as a scripting language that can only be run in the web browser.
@@ -2249,8 +2485,14 @@ the dynamic content of the front-end.
 Since the first version of Node appeared, many developers have found it
 useful and have chosen to build the back-end of their applications using
 JavaScript.
-
-![](./images/image126.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 126  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image126.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Chris is a master student in Informatics with a solid background in
 Software Engineering. He has over three years' experience developing
@@ -2262,8 +2504,14 @@ He is also a mentor in the Google Summer of Code program and the tutor
 of the Intro to JavaScript course, given at the TU of Munich.
 
 By his own admission, Chris really likes to turn pizza into code.
-
-![](./images/image127.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 127  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image127.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In this module, Chris will take you through the first steps of building
 a back-end JavaScript application.
@@ -2273,17 +2521,23 @@ control requests and present the results on the web.
 
 You will also get a chance to experiment with node.js using code
 examples we provide.
-
-### Anatomy of HTTP transactions (6:19)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-2">2.2 Anatomy of HTTP transactions (6:19)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to this lecture about anatomy of HTTP transactions!
 
 In this lecture, we\'re going to see how requests are made and what URL
 stands for.
 
 Let\'s look at the first example.
-
-![](./images/image128.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image128.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What we see here is the browser that is trying to access a location on
 the web, which is example.dallago.us.
@@ -2293,8 +2547,14 @@ to deliver to me?
 
 The server will answer to the browser: yes, I have something for you and
 it\'s an HTML file, which is called index.html.
-
-![](./images/image129.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image129.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Later, when the browser executes the index.html, tt will most likely
 require some further components, which are specified in the HTML file.
