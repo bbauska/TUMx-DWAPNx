@@ -3789,507 +3789,438 @@ example, Brackets.
 Or you can also download Atom, which is going to be used by Dennis in
 his videos.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 179/180  (114) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image179.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image180.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
 But, again, I\'m going to use WebStorm. So, let\'s fire that up.
 
 Good, so, now that webstorm is open, we can start opening up our
 application just by clicking open, navigate into the desktop and
 selecting the folder. Then, we select open again and webstorm will open up our
 application.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 181  (114) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image181.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What we see then on the left side is our folder and all of the files
 that are contained in it. The same thing is reflected if we just open up our
 folder with Finder and these are the same files that we\'re going to find in
-WebStorm here. Good, so, the first thing that we want to look at when we
+WebStorm here. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 182  (115) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image182.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+Good, so, the first thing that we want to look at when we
 open up a Node application is the package dot JSON file I talked about. This
 also in my video lectures and there are some nice and mention-worthy things to look
 at, like the scripts section, the dependencies and the main. So, the main
 tells us which is the most important script usually and in our application. In this
 specific case it\'s index dot js. It is this file. The scripts section tells us how to
-start our application. 
-
-So, it says we need to have Node installed and we start by
+start our application. So, it says we need to have Node installed and we start by
 calling Node and then starting from the index dot js file, which is again this
-one. 
-
-And then there is the list of dependencies, which are expressed in
+one. And then there is the list of dependencies, which are expressed in
 Mongoose.
 
 It\'s only two dependencies. it\'s a quite easy application and both of
 the dependencies are at the latest version. So, when we see actually that there are
 dependencies, we know that to run our application, we first have to install the
 dependencies that are specified here and we do that by calling NPM install from a
-terminal window. We can either do that by opening up a terminal window
+terminal window. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 183  (116) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image183.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+We can either do that by opening up a terminal window
 here and NPM install, but just to explain for the people that might not be using
 WebStorm, we can just open up a terminal window from the terminal
 emulator from our computer, navigate to the desktop and then navigate to the API
-folder. We know that we are there because we\'re doing ls, we see the
+folder. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 184  (116) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image184.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+We know that we are there because we\'re doing ls, we see the
 exact same files as we see here on the left side and then we can run npm install
 and this will install all of the dependencies. While the two dependencies that
 are specified here, but also a lot of co-dependencies, because Express, to actually
 perform its function, will need some core dependencies, which are for example
-these accepts, array-flatten and so on and so forth. So, there\'s actually a
-bunch of these, which come with express and mongoose. And now if we navigate back
+these accepts, array-flatten and so on and so forth. 
+
+There\'s actually a bunch of these, which come with express and mongoose. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 185  (117) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image185.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+And now if we navigate back
 to our application here, what we see is that there is a new folder, which
 is called node modules and this will collect all of the different
 dependencies that we just installed. Good, so, next thing we want to do
-is actually to look at index dot js. So, let\'s go ahead and open up that file and
-what we see is that in the very first two lines we have two requirements: the
-first requirement is express. It\'s a dependency we have just seen it in a
-package dot JSON and we have just installed it with NPM install. The
-second thing that we require is database and this is actually a file and we see
+is actually to look at index.js. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 186  (117) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image186.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+Let\'s open up that file and what we see is that in the very first two 
+lines we have two requirements: the first requirement is express. It\'s 
+a dependency we have just seen it in a package dot JSON and we have just 
+installed it with NPM install. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 187  (118) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image187.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+The second thing that we require is database and this is actually a file and we see
 it from this dot slash at the beginning of the name. We don\'t have to
 specify the extension, which in this case is js, as we see here, simply because Node
 is able to automatically get the extension if there is only one file with
 that name, and we only have one file, which is called database, and the file is
 either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
 the case we only have one file it\'s called a database and it is of the
-extension dot JavaScript. So, we don\'t really need to specify the dot and js here. It
-is good practice to actually see what this database file does. So, let\'s go
-ahead and open up the database dot js file. Again, here, at the very beginning we
+extension dot JavaScript. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 188  (118) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image188.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+We don\'t really need to specify the dot and js here. It
+is good practice to actually see what this database file does. 
+
+
+Let\'s go ahead and open up the database dot js file. Again, here, at the very beginning we
 have two requirements: the second one is just a dependency again, as we have seen
 it before. It is defined in the package dot JSON and the first one is again
-a file
-
-and we see this again from the dot slash here and it is the config file,
-but
-
-this time a config file is config dot JSON and, as I just explained a
-few seconds ago,
-
-Node is able to automatically guess the extension if there is only one
-file with
-
-that name and if that file has either the extension dot JavaScript or
+a file and we see this again from the dot slash here and it is the config file,
+but this time a config file is config dot JSON and, as I just explained a
+few seconds ago, Node is able to automatically guess the extension if there is only one
+file with that name and if that file has either the extension dot JavaScript or
 dot JSON.
 
-In our case we only have one file.
+In our case we only have one file. It\'s dot JSON. So, we don\'t need to specify 
+here dot JSON, but if we wanted to, we could. Again, it is good practice to see 
+what actually this file contains. 
 
-It\'s dot JSON. So, we don\'t need to specify here dot JSON, but if we
-wanted to, we could.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 189  (119) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image189.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-Again, it is good practice to see what actually this file contains. So,
-let\'s go ahead and
-
-open conflict dot JSON. In the conflict dot JSON we have only one
-object. We
-
+Let\'s open config.JSON. In the config.JSON we have only one object. We
 might have an array of objects if, for example, we started our file like
-this.
+this. This would then be a JavaScript JSON file with an array of objects. 
 
-This would then be a JavaScript JSON file with an array of objects. In
-this case,
-
-only one object inside the array. But, again, the file as it is is only
-one
-
-object, it has one key, which is the database and this key has value
-
+In this case, only one object inside the array. But, again, the file as it is is only
+one object, it has one key, which is the database and this key has value
 associated to it, which is again an object and has a few keys associated
-to
+to that object. So, when we require the config file here, what we actually
+require is the object that we just saw there and we can go ahead and look at
+our database connection string here. 
 
-that object. So, when we require the config file here, what we actually
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 190  (120) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image190.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-require is the object that we just saw there and we can go ahead and
-look at
+And, what we do here is assigning to this database parameters: the 
+config.database key. We are assigning to this value this constant value - the 
+database object here, so all of the values that we see in this object. 
 
-our database connection string here. And, what we do here is assigning
-to this
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 191  (120) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image191.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+We then want to construct a database connection string through these lines of code here 
+and what this will perform at the end, so what we will get after executing this 
+last line of code, we expect to have something like MongoDB column slash slash, 
+which is the first part that we see up here. There, might be a username and a 
+password required to connect to the database. So, username password at some host 
+name, which might be for example, example.com, a port, so 1 2 3 4 and then slash the 
+database collection that we want to use.
 
-database parameters: the config dot database key. So, we are assigning
-to this
-
-value this constant value - the database object here, so all of the
-values that we
-
-see in this object. We then want to construct a database connection
-string
-
-through these lines of code here and what this will perform at the end,
-so what we
-
-will get after executing this last line of code, we expect to have
-something like
-
-MongoDB column slash slash, which is the first part that we see up here.
-There,
-
-might be a username and a password required to connect to the database.
-So,
-
-username password at some host name, which might be for example,
-example.com,
-
-a port, so 1 2 3 4 and then slash the database collection that we want
-to use.
-
-So, for example relationships. So, at the end of executing this code and
-after
-
+For example relationships. So, at the end of executing this code and after
 this line of code what we expect this variable to hold is this specific
-string
-
-or well not too specific but something similar to this where we have
-user name
-
-password, the host name, the port and the collection that we want to
+string or well not too specific but something similar to this where we have
+user name password, the host name, the port and the collection that we want to
 use.
 
-So, the next important bit we are going to look at is the module dot
-exports. This is an
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 192  (121) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image192.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+The next important bit we are going to look at is the module dot
+exports. This is an API of Node and it basically tells us that when this file is being
+required by another file, so for example it\'s being required in index dot js, what
+is actually being required is what comes after this equal sign and what we
+are requiring in this case is a function that accepts a callback and that
+executes some code when the function is being called.
 
-API of Node and it basically tells us that when this file is being
-required by
+Let\'s look at what happens when a function is actually being called. The first 
+thing we do is we connect to our database connection string. So, Mongoose 
+connected to this connection and then we assign the database object to a variable, 
+which is called db. 
 
-another file, so for example it\'s being required in index dot js, what
-is
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 193  (122) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image193.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-actually being required is what comes after this equal sign and what we
-are
-
-requiring in this case is a function that accepts a callback and that
-executes
-
-some code when the function is being called. So, let\'s look at what
-happens
-
-when a function is actually being called. The first thing we do is we
-connect to
-
-our database connection string. So, Mongoose connected to this
-connection
-
-and then we assign the database object to a variable, which is called
-db. We then
-
-have four events here. These are four events
-
+We then have four events here. These are four events
 and basically what this does is it reacts to certain things that happen
-onto
-
-the database or when we connect to the database. First of all, we want
-to react
-
-when there is a connection to the database. So, we are able to connect
-to it
-
-and what we want to do is log on to the console that we have been able
-to
-
-connect to the database. The next thing that we want to do is to react
-on
-
-this if there was an error. So, if we were not able to connect to the
-database, we
-
-want to log this into the console, telling there was some kind of an
+onto the database or when we connect to the database. First of all, we want
+to react when there is a connection to the database. So, we are able to connect
+to it and what we want to do is log on to the console that we have been able
+to connect to the database. The next thing that we want to do is to react
+on this if there was an error. So, if we were not able to connect to the
+database, we want to log this into the console, telling there was some kind of an
 error.
 
 Here is the stack and the next thing we want to do is we want to exit
-our
-
-application, because it wouldn\'t make sense to start our application if
-we
-
-cannot connect to the database, as most of the data that we\'re going to
-require to
-
-answer some routes comes from the database. So, there might be some
-
+our application, because it wouldn\'t make sense to start our application if
+we cannot connect to the database, as most of the data that we\'re going to
+require to answer some routes comes from the database. So, there might be some
 inconsistency if we keep the application running, so we want to exit it.
 
-The next thing that we want to do is to react on disconnected. So, if we
-were
+The next thing that we want to do is to react on disconnected. If we
+were connected to the database, but then for some mysterious reason the
+connection gets dropped, we want to log this into the console, saying, hey, 
+we\'ve been disconnected and we closed our application just because it\'s safer 
+to do so. 
 
-connected to the database, but then for some mysterious reason the
-connection gets
+Last but not least, is the on open event and this is similar to connect, though 
+it\'s slightly different, because open actually means that we are connected to 
+the database and we are able to query the database at the time that this event 
+is happening. So, this is every time the connection is open. This is the most 
+important event that we have to react on and because of that, this is where we 
+call our callback function here. Again, we have the function defined up here as 
+a parameter of our function and we call it when we are fully connected to the 
+database. This ensures that when we execute this callback function, we are only 
+executing it when we are sure that the database connection is up. 
 
-dropped or something like that, again, we want to log this into the
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 194  (123) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image194.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-console, saying, hey, we\'ve been disconnected and we closed our
-application just
+Let\'s go back to our index dot js and let\'s see what happens after we require 
+the database.js file. We are only going to look at the database connection here 
+for a moment and in the next video I am going to talk to you about the rest of 
+this code, how the router calls controllers and what the models stands for, but 
+for this video we are only going to see that we connect to the database and that 
+we start our application.
 
-because it\'s safer to do so. Last but not least, is the on open event
-and this is
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 195  (123) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image195.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-similar to connect, though it\'s slightly different, because open
-actually means
-
-that we are connected to the database and we are able to query the
-database at
-
-the time that this event is happening. So, this is every time the
-connection is
-
-open. So, this is the most important event that we have to react on and
-because of
-
-that, this is where we call our callback function here. So, again we
-have the
-
-function defined up here as a parameter of our function and we call it
-when we
-
-are fully connected to the database. This ensures that when we execute
-this
-
-callback function, we are only executing it when we are sure that the
-database
-
-connection is up. So, let\'s go back to our index dot js and let\'s see
-what
-
-happens after we require the database dot js file .
-
-We are only going to look at the database connection here for a
-
-moment and in the next video I am going to talk
-
-to you about the rest of this code, how the router calls
-
-controllers and what the models stands for, but for this video we are
-only going
-
-to see that we connect to the database and that we start our
-application. So,
-
-again we require a database file here and the next place that we see our
-
+Again, we require a database file here and the next place that we see our
 database variable being used is down here and we are using it as a
-function,
-
-because again we exported it. We set module export and we exported a
-function,
-
-the function accepted a callback, which is this anonymous function here
-and what
-
-this tells us is that this function, these lines of code that we see
-here, are
-
-only going to be executed when the database connection is up and running
-
+function, because again we exported it. We set module export and we exported a
+function, the function accepted a callback, which is this anonymous function here
+and what this tells us is that this function, these lines of code that we see
+here, are only going to be executed when the database connection is up and running
 when the connection is open. So, we are assuring that our application is
-going to
+going to listen to incoming requests only when the database connection is open.
+This is very important. 
 
-listen to incoming requests only when the database connection is open.
-So, this
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 196  (124) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image196.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Again, because, obviously, we only want to answer to requests once the connection to the database
+is open, because otherwise we have no access to the data and this is exactly what
+this ensures us. Now we can go ahead and start the application. 
 
-is very important. Again, because, obviously,
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 197  (125) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image197.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-we only want to answer to requests once the connection to the database
-is open,
+We can do that either by opening up a terminal window here or for the NPM tab here and
+click on start or from the terminal, just run NPM start, and what we\'ll see is
+that it will tell us we are going into node index dot js, because that\'s what we
+have specified in the package dot JSON to be the start of our application.
 
-because otherwise we have no access to the data and this is exactly what
+Then, it will log to console that Mongoose has connected, which is the event
+connected that we see here - mongoose connected. 
 
-this ensures us. So, now we can go ahead and start the application. We
-can do that
 
-either by opening up a terminal window here or for the NPM tab here and
-click on
+<two images>
+And, then, we see these other logs, which stem from these lines of code, which 
+tell us ok that we are fully connected to the database. So, we are executing 
+this callback function and our Express server is now listening in our specific 
+port and it is running and our application is running and we should be able to 
+open up this website and see some content.
 
-start or from the terminal, just run NPM start, and what we\'ll see is
-that it will
-
-tell us we are going into node index dot js, because that\'s what we
-have
-
-specified in the package dot JSON to be the start of our application.
-Then, it
-
-will log to console that Mongoose has connected, which is the event
-connected
-
-that we see here - mongoose connected. And, then, we see these other
-logs, which stem
-
-from these lines of code, which tell us ok that we are fully connected
-to the
-
-database. So, we are executing this callback function and our Express
-server
-
-is now listening in our specific port and it is running and our
-application is
-
-running and we should be able to open up this website and see some
-content.
-
-So, what we will actually do is we will open up this website. So, I copy
-it, I open up
-
-Safari, I paste it in here and what we see is we have all of our JSON
-objects
-
+<image>
+What we will actually do is we will open up this website. So, I copy it, I open 
+up Safari, I paste it in here and what we see is we have all of our JSON objects
 representing our relationships here, which is exactly what we expected
-from
-
-calling that specific route. So, thank you! In the next video I\'m going
-to talk
-
-about the router, the controllers, the models and the flow of our
+from calling that specific route. So, thank you! In the next video I\'m going
+to talk about the router, the controllers, the models and the flow of our
 application.
 
-### Demo 2: Running an Example Application (optional)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-9">3.9 Demo 2: Running an Example Application (22:56)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome back to our demonstration about how our demo applications
 actually work!
 
-So, in the previous video, I have explained briefly what
+<IMAGE pg 127>
+In the previous video, I have explained briefly what the database file looks 
+like and how it works, and what this function down here actually executes, and 
+that it only executes once we are really connected to the database and we are able to
+query the database. And in this video, we\'re going to see what the router is,
+what the controller is and what the models are. And we are going to implement a 
+new route into our application. 
 
-the database file looks like and how it works,
-
-and what this function down here actually executes, and that it only
-
-executes once we are really connected to the database and we are able to
-query
-
-the database. And in this video, we\'re going to see what the router is,
-
-what the controller is and what the models are.
-
-And we are going to implement a new route into our application. So,
-first of
-
-all, let\'s again go and start the application. We can do this again, as
-I
-
-showed it in a previous video, through the terminal emulator from our
-computer
-
-or you can do it from the terminal here. My preferred way is actually to
-just
-
-click on the NPM tab and then press on the start script and you will see
-down
-
-here that this is the same output that you get if you run this on a
+<image pg 127>
+First of all, let\'s again go and start the application. We can do this again, as
+I showed it in a previous video, through the terminal emulator from our
+computer or you can do it from the terminal here. My preferred way is actually to
+just click on the NPM tab and then press on the start script and you will see
+down here that this is the same output that you get if you run this on a
 terminal.
 
 I did this in my previous video just to show that it actually is
-working. I\'m
-
-copying this link over here. Let me just hide these sections, open
-Safari,
-
-paste, enter and this is exactly what we want to see. So, our
-application is
-
-running and this are the relationships that I get back from our
-application.
+working. I\'m copying this link over here. Let me just hide these sections, open
+Safari, paste, enter and this is exactly what we want to see. So, our
+application is running and this are the relationships that I get back from our
+application. 
 
 So, back here and our application is running. This code is loaded into a
-process and
-
-let\'s actually see what these lines of code now do. So, we
-
+process and let\'s actually see what these lines of code now do. So, we
 have seen that at the very beginning, we are requiring some files and
-some
-
-components of our app and next line of code, that we want to look at, is
+some components of our app and next line of code, that we want to look at, is
 this one.
 
 We define our application, so our app to be an express application and
-later we
-
-set some some variables and we add some components to it.
-
+later we set some some variables and we add some components to it.
 One of the variables that we want to assign is the port number on which
-our
+our application is going to be listening and we have seen, I\'m going to
+switch back to Safari right now, that we are listening on port 3000 here. So, this is
+exactly what we are telling here that if there is no port specified in the
+environment variables, then by default it will fall back and that\'s but what the
+and and stands for here, sorry the or or stands for here. 
 
-application is going to be listening and we have seen, I\'m going to
-switch back to
-
-Safari right now, that we are listening on port 3000 here. So, this is
-exactly
-
-what we are telling here that if there is no port specified in the
-environment
-
-variables, then by default it will fall back and that\'s but what the
-
-and and stands for here, sorry the or or stands for here. The default
-fall back is
-
-the board 3000. This is also an important bit to talk about one second
-and it\'s
-
-the environment variables, because here we can specify some variables,
-for
-
-example, the port number that might differ when we\'re executing our
-code on
-
-our production servers, for example. So, it\'s always good practice to
-have this
-
-variable things, like, for example, the port number or the database
-connection
-
-string to be environment variable friendly or to pull back on some
-default
-
-values. And next thing that we\'re going to talk about is the router and
-we see
-
-that here we create a router and we create router by requiring a file. I
-have
-
-already explained earlier that we can omit the extension here. So, when
-we are
-
-requiring this file, we\'re actually requiring the file that is called
-router.js,
-
-because we see it here, it\'s router.js. And since it\'s good practice,
-let\'s go
-
-ahead and look what is actually contained in our files.
+The default fall back is the board 3000. This is also an important bit to talk 
+about one second and it\'s the environment variables, because here we can specify 
+some variables, for example, the port number that might differ when we\'re executing 
+our code on our production servers, for example. So, it\'s always good practice to
+have this variable things, like, for example, the port number or the database
+connection string to be environment variable friendly or to pull back on some
+default values. And next thing that we\'re going to talk about is the router and
+we see that here we create a router and we create router by requiring a file. I
+have already explained earlier that we can omit the extension here. So, when
+we are requiring this file, we\'re actually requiring the file that is called
+router.js, because we see it here, it\'s router.js. And since it\'s good practice,
+let\'s go ahead and look what is actually contained in our files.
 
 So, we fire up router.js and we see, this file is very short, it starts
-with two
-
-requirements, well sorry, just one requirement and one assignment. We
-
+with two requirements, well sorry, just one requirement and one assignment. We
 require express again here on top and then we define our router, which
-
 is a new express router. That\'s what we do in this line here. And then
-we
+we can assign some routes to it. For example, get requests or we can also
+assign post requests, put request, delete requests. These are the requests that
+I talked about in my video lectures. 
 
-can assign some routes to it. For example, get requests or we can also
-assign
-
-post requests, put request, delete requests. These are the requests that
-I
-
-talked about in my video lectures. But before that, let\'s see here,
-
-we are actually requiring something else and we call it the
-relationships
-
-controller and this file is actually located somewhere, not right at the
-root
-
-of our application. It\'s located in the folder app, that we see here on
-top, so
-
-let\'s expand that. Then we go into controllers
-
+But before that, let\'s see here, we are actually requiring something else and 
+we call it the relationships controller and this file is actually located somewhere, 
+not right at the root of our application. It\'s located in the folder app, that 
+we see here on top, so let\'s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
-So, let\'s
 
-double click on that and open it up and what we see here is again, first
-of all,
-
-that we are requiring something else. It\'s again the file and now the
-two dots
-
-tell us that we have to look one folder before the folder we are in. So,
-we are in
-
-controllers and we need to look at app and then we want to look at
-models. So, we
-
-open up the models and then there should be a file, which is
+So, let\'s double click on that and open it up and what we see here is again, first
+of all, that we are requiring something else. It\'s again the file and now the
+two dots tell us that we have to look one folder before the folder we are in. So,
+we are in controllers and we need to look at app and then we want to look at
+models. So, we open up the models and then there should be a file, which is
 
 called relationships. And, in fact, there is and we\'re going to open up
 that.
@@ -7359,101 +7290,43 @@ stroke width so we\'re going to define the width of the line between two
 nodes.
 
 Again, function receives the current data point and then this gets
-called
-
-for any element that has the class link attached to it. So, this
-function returns.
-
-And we can just return the d.weight here because all of the link, all of
-the
-
-relationships that we got from the API actually have a weight attribute.
-Now, if
-
-you take a look at that. Well, it doesn\'t really look too nice,
-
+called for any element that has the class link attached to it. So, this
+function returns. And we can just return the d.weight here because all of the link, all of
+the relationships that we got from the API actually have a weight attribute.
+Now, if you take a look at that. Well, it doesn\'t really look too nice,
 because there\'s a big difference between some of the smaller ones and
-the bigger
+the bigger ones and some of them are quite large, so it becomes a bit ungainly. So,
+what I\'m going to do is I\'m actually going to use another built-in JavaScript
+function from the math library, which is the square root. So, I\'m just going to
+square the weight and now it looks a lot nicer. As you can see, the characters that
+are having more intensive relationships have now wider links between them
+than those that have like a less close relationship.
 
-ones and some of them are quite large, so it becomes a bit ungainly. So,
-what I\'m
-
-going to do is I\'m actually going to use another built-in JavaScript
-function from
-
-the math library, which is the square root. So, I\'m just going to
-square the
-
-weight and now it looks a lot nicer. As you can see, the characters that
-are
-
-having more intensive relationships have now wider links between them
-than those
-
-that have like a less close relationship.
-
-If you remember the demo I showed you in the beginning of this video and
-
-the in last few videos as well, we also can define an interactive
-behavior of the
-
-graph. There is a couple of things we can do. If you\'d like to
-
-see some more advanced examples, go online and you can see things like
-
-dragging them around, so they respond nicely to input. For now, we\'re
-going to
-
-focus on making them clickable. For that, we are going to add two more
-event
-
-functions. So, we\'re going to take a look at the node and this time
-you\'re gonna
-
-implement an event on the node itself. So, the node is a DOM element and
-as such it
-
-responds to click events, so if I click on it, it get registered by the
-browser and
-
-we\'ll fire this click event on this node element. So, I can define
-what\'s going to
-
+If you remember the demo I showed you in the beginning of this video and the in 
+last few videos as well, we also can define an interactive behavior of the
+graph. There is a couple of things we can do. If you\'d like to see some more 
+advanced examples, go online and you can see things like dragging them around, 
+so they respond nicely to input. For now, we\'re going to focus on making them 
+clickable. For that, we are going to add two more event functions. So, we\'re 
+going to take a look at the node and this time you\'re gonna implement an event 
+on the node itself. So, the node is a DOM element and as such it responds to 
+click events, so if I click on it, it get registered by the browser and we\'ll 
+fire this click event on this node element. So, I can define what\'s going to
 happen whenever this click event is fired, and I\'m going to use d3
-again and
-
-what I\'m going to do is I\'m going to select this specific node
-
+again and what I\'m going to do is I\'m going to select this specific node
 using d3 and change some of its attributes. So, I\'m going to do it
-d3.select
-
-and this time because this function is called on the node itself,
+d3.select and this time because this function is called on the node itself,
 
 I\'m going to select this and now I can start transforming whichever
-node I
+node I or the user has clicked on. And what I\'m going to do is, I\'m going to
+set the attribute radius to 20. Actually, because, we already have our node
+radius, let\'s just set it to whatever the node radius was times 4. If I save that, go
+back, reload, run the visualization and I\'ll click on any of the links, they are four
+times the size then before. Now, that\'s nice but looks a bit abrupt. One of
+the things that d3 is really good at is making transitions look smooth and nice.
 
-or the user has clicked on. And what I\'m going to do is, I\'m going to
-set the
-
-attribute radius to 20. Actually, because, we already have our node
-radius, let\'s
-
-just set it to whatever the node radius was times 4. If I save that, go
-back, reload,
-
-run the visualization and I\'ll click on any of the links, they are four
-times
-
-the size then before. Now, that\'s nice but looks a bit abrupt. One of
-the things
-
-that d3 is really good at is making transitions look smooth and nice.
-So,
-
-we\'re going to add a little bit more to this and then add a transition
-and this
-
-transition function needs to be called before the actual change of
+So, we\'re going to add a little bit more to this and then add a transition
+and this transition function needs to be called before the actual change of
 attributes. So, I\'m going to just tell it to transition and then I also
 need to define how long that transition period is going to be and
 that\'s in milliseconds and I\'m going to make it nice and slow, so you
