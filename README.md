@@ -1146,7 +1146,7 @@ very end on the switch statement.
 Finally, the default keyword can be used within a switch block to
 specify a block of code that executes if no matches are found.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-6">Module 1 -- Summary (1:08)</h3>
+<h3 id="ch1-6">1.6 Module 1 -- Summary (1:08)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Tatyana, for this comprehensive lecture about the language
 basics!
@@ -1176,22 +1176,38 @@ Remember that JavaScript is a very forgiving language that will allow
 you to do many things without complaining. This gives the programmer a
 lot of power, but can also lead to many mistakes.
 
-![](./images/image053.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 53 additional reading; javascript (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image053.png" 
+  title="Additional reading; JavaScript"
+  alt="Additional reading; JavaScript."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 These fine references provide great guidance on how to properly and
 effectively write JavaScript code.
-
-![](./images/image054.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 54 in the next module; functions, objects, etc (35) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image054.png" 
+  title="In the next module; functions, objects, prototypes, properties, inheritance"
+  alt="In the next module; functions, objects, prototypes, properties, inheritance."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In the next module, Dimitrii will talk about functions and objects, and
 show you how you can use those to structure your Javascript program.
-
-[\
-]
-
-### Module 2: Functions and Objects (1:14)
-
-![](./images/image055.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch2">Module 2: Functions and Objects (1:14)</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image055.png" 
+  title="The Two Pillars of JavaScript"
+  alt="The Two Pillars of JavaScript."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome to the functions and objects module! As we mentioned in the
 intro to the previous module, JavaScript has a similar syntax to other
@@ -1201,8 +1217,14 @@ programming styles. JavaScript allows developers to take advantage of
 two programming paradigms. Namely, the prototypal inheritance and
 functional programming. These two programming paradigms are called by
 Eric Elliott the two pillars of JavaScript.
-
-![](./images/image056.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56 covered in this module (2) (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image056.png" 
+  title="Covered in this module (2)"
+  alt="Covered in this module (2)."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In this module, Dimitrii will walk us through the basics of working with
 objects and how we can write object-oriented code in JavaScript.
@@ -1213,13 +1235,19 @@ has worked on processing massive amount of data and became passionate
 about turning data into knowledge. Dimitrii has five years' experience
 in JavaScript development and he\'s also a tutor of the introduction to
 JavaScript course in the TUM.
-
-### Functions, part 1 (3:06)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-1">2.1 Functions, part 1 (3:06)</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We will now take a closer look at working with functions and objects in
 JavaScript. Let\'s start!
-
-![](./images/image057.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57 function declaration (2.1) (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image057.png" 
+  title="2.1 Functions, part 1"
+  alt="2.1 Functions, part 1."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 To declare a function use keyword function followed by function\'s name,
 a list of parameters in parentheses and function\'s body that is
@@ -1231,8 +1259,14 @@ created with a function expression to a variable. Although, a name in a
 function expression is not mandatory, we still can use it. However, in
 such a case, we will only be able to invoke a function by its name
 inside the function.
-
-![](./images/image058.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 58 function expression with a name (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image058.png" 
+  title="Function Expression with a name"
+  alt="Function Expression with a name."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A function declaration and a function expression both define functions.
 What is the difference?
@@ -1246,8 +1280,14 @@ Finally, we can\'t use function declarations inside loops, conditionals
 and other control statements, while function expressions have no such
 limits. Working with arguments is the same for functions created with
 function declarations and function expressions.
-
-![](./images/image059.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59 working with arguments (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image059.png" 
+  title="Working with arguments"
+  alt="Working with arguments."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s first make our language clear here. A function has parameters and
 takes arguments. When we define a function, we list its parameters.
@@ -1259,16 +1299,28 @@ different number of arguments.
 In this example, we have defined a function with two parameters and
 invoked it with only one argument. As we can see, parameters with no
 corresponding argument will have value undefined.
-
-![](./images/image060.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 60 working with arguments, #2 (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image060.png" 
+  title="Working with arguments, #2"
+  alt="Working with arguments, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Still, we don\'t always have to pass an argument for each parameter.
 JavaScript allows us to specify a default value for a parameter. Here,
 we have defined a function that performs an exponentiation operation and
 has two parameters - a base and a power. If we do not pass an argument
 for the power parameter, it will be equal to its default value - 10.
-
-![](./images/image061.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61 working with arguments, #3 (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image061.png" 
+  title="Working with arguments, #3"
+  alt="Working with arguments, #3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What if the number of variants is larger than the number of parameters?
 
@@ -1278,20 +1330,39 @@ can access them thanks to a special variable - arguments. An argument
 object contains all the arguments passed to a function. JavaScript
 functions always have a return value.
 
-![](./images/image062.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62 function return value (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image062.png" 
+  title="Function return value"
+  alt="Function return value."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 By default, a function returns an undefined. If we want to return a
 different value, we have to explicitly specify it using the return
 keyword.
-
-### Objects, part 1 (9:04)
-
-![](./images/image063.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch2-2">2.2 Objects, part 1 (9:04)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 63 function and objects: objects, part 1 (2.2) (40) ~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image063.png" 
+  title="2.2 Functions and Objects: Objects, part 1"
+  alt="2.2 Functions and Objects: Objects, part 1."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In the previous module, we have learned that a JavaScript object is a
 set of properties of Key, Value pairs.
-
-![](./images/image064.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64 objects, recap (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image064.png" 
+  title="Objects, recap"
+  alt="Objects, recap."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 JavaScript objects are mutable, passed by reference and they can have
 arbitrary properties with values of any type.
@@ -1302,8 +1373,14 @@ We can create an object by invoking the standard object constructor with
 a keyword new.
 
 Having created an object, we can add desired properties one by one.
-
-![](./images/image065.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65 creating an object (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image065.png" 
+  title="Creating an object"
+  alt="Creating an object."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let\'s create an object that describes our online class.
 
@@ -1314,8 +1391,14 @@ If we type the name of our variable in the browser console and hit
 enter, we will get a representation of our object.
 
 We don\'t have to add properties one by one to an empty object, though.
-
-![](./images/image066.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 66 object literal (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image066.png" 
+  title="Object literal"
+  alt="Object literal."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An object literal that is a list of properties in curly braces allows us
 to specify object\'s properties at once.
@@ -1324,24 +1407,42 @@ An object property has a name and a value.
 
 We can use valid JavaScript identifiers as property names and access
 such properties via dot notations.
-
-![](./images/image067.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 67 property names (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image067.png" 
+  title="Property names"
+  alt="Property names."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Remember, a valid identifier starts with a letter, an underscore or a
 dollar sign.
 
 Subsequent characters can be letters, digits, underscores and dollar
 signs.
-
-![](./images/image068.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68 property names, #2 (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image068.png" 
+  title="Property names, #2"
+  alt="Property names, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 However, we do not have to use only strings that have valid identifiers.
 
 JavaScript allows us to use any string as a property name. If a string
 is not a valid identifier, we have to quote it. To access such a
 property, we have to use square bracket notation.
-
-![](./images/image069.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 69 property values (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image069.png" 
+  title="Property values"
+  alt="Property values."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A property value can be of any type, including functions.
 
@@ -1361,8 +1462,14 @@ Here, we define an object that describes our class. It has properties
 name, year and print.
 
 Print is a method that prints object\'s name and the year together.
-
-![](./images/image070.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 70 working with properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image070.png" 
+  title="Working with properties"
+  alt="Working with properties."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We have already seen defining and accessing properties.
 
@@ -1379,22 +1486,40 @@ When we assign undefined to a certain property, it is not removed.
 So, an object still has property with its name and value undefined.
 
 Delete, on the other hand, completely removes a property from an object.
-
-![](./images/image071.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71 iterating over properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image071.png" 
+  title="Iterating over properties"
+  alt="Iterating over properties."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 For in loop allows us to iterate over objects properties names. Once we
 have a name, we can get a corresponding value by using the square
 bracket notation.
-
-![](./images/image072.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72 checking property existence (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image072.png" 
+  title="Checking property existence"
+  alt="Checking property existence."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We can also check if a certain property exists using hasOwnProperty
 method.
 
 This method takes a name of a property as an argument and returns true
 if such a property exists. Otherwise, it returns false.
-
-![](./images/image073.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73 comparing objects (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image073.png" 
+  title="Comparing objects"
+  alt="Comparing objects."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 An important thing to remember is that an object is only equal to
 itself.
@@ -1403,8 +1528,14 @@ In other words, equality operator returns true only if both variables
 hold a reference to the same object. It will return false in all other
 cases, even if objects have the same set of properties with the same
 names and the same values.
-
-![](./images/image074.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74 prototypes (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image074.png" 
+  title="Prototypes"
+  alt="Prototypes"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Oh, by the way, just two slides ago we have invoked **hasOwnProperty**
 method on our objects, right? But we have never added this method to our
@@ -1412,8 +1543,14 @@ objects. Yet, we still are able to invoke it. Why? Because prototypes!
 
 In JavaScript, each object has a special connection to another object -
 to a prototype.
-
-![](./images/image075.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 75 prototypal inheritance (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image075.png" 
+  title="Prototypal inheritance"
+  alt="Prototypes inheritance."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 When we try to access a certain property that is absent in an object,
 JavaScript will look for that property in the prototype. We can say that
@@ -1421,8 +1558,14 @@ object inherits its prototype properties. Special object
 **object.prototype** is a prototype of all objects created via an object
 literal or an object constructor. **Object.prototype** has
 **hasOwnProperty** methods and that\'s exactly what we have invoked.
-
-![](./images/image076.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image076.png" 
+  title="Prototypal inheritance, #2"
+  alt="Prototypes inheritance, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 A prototype is an object and we know how to add properties to an object.
 
@@ -1435,8 +1578,14 @@ value \"Hello, world!\" to the **Object.prototype.**
 Having done that, we can immediately access **easterEgg** property from
 our **cls object**, which was created via an object literal and inherits
 from **Object.prototype**.
-
-![](./images/image077.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77 prototypal inheritance, #3 (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image077.png" 
+  title="Prototypal inheritance, #3"
+  alt="Prototypes inheritance, #3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 So, what will happen if we add a property with the same name easterEgg
 to our cls object?
