@@ -3431,15 +3431,11 @@ the update and remove function, because you can easily generate mistakes
 within your data.
 
 So, we have seen two of the components of our example applications and
-
 in the next video we are going to discuss the missing component, which
 is the view.
 
 We decided to split these three components into the first two and the
-last
-
-component, which is the view, because sometimes you don\'t need the last
-
+last component, which is the view, because sometimes you don\'t need the last
 component as already explained in previous videos.
 
 ### Views
@@ -3448,45 +3444,26 @@ Welcome back to our videos on server-side JavaScript! In this video, we
 
 are going to see the last component that you need to build a complete
 application, which means an application, which has also a view
-component. The view engine
-
-that we used is Pug, as already mentioned in previous videos. Pug was
-
-renamed after a legal matter with the original name, which was called
-Jade.
+component. The view engine that we used is Pug, as already mentioned in 
+previous videos. Pug was renamed after a legal matter with the original 
+name, which was called Jade.
 
 Pug gives us a way to define reusable and extendable HTML components.
 What this means is that you have to view web pages as pieces, a set of
-pieces. So, there is
-
-the navigation, there are different menus, there is the actual content
-of the page
-
-and, for example, the footer. You can use Pug to define all of these
-components
-
-and use them dynamically in the different views. Pug has a simplified
-
+pieces. So, there is the navigation, there are different menus, there is the actual content
+of the page and, for example, the footer. You can use Pug to define all of these
+components and use them dynamically in the different views. Pug has a simplified
 syntax. It\'s very close to the syntax that you would ordinarily see in
-your
+your normal HTML files, but it\'s simpler in the sense that you don\'t have
+the closing brackets and you don\'t have all of this major and minor signs.
 
-normal HTML files, but it\'s simpler in the sense that you don\'t have
-the
-
-closing brackets and you don\'t have all of this major and minor signs.
-In Pug,
-
-you can also use control statements, like each and if, which allow you
-to, for
-
-example, handle variables that you pass the view through the controller.
-So, for
-
-example, through the controller you pass the title. You can specify a
+In Pug, you can also use control statements, like each and if, which allow you
+to, for example, handle variables that you pass the view through the controller.
+So, for example, through the controller you pass the title. You can specify a
 location that if the title is defined, you want to show the title at
-that location. Let\'s look at
+that location. Let\'s look at where we can find Pug in our complete example. 
 
-where we can find Pug in our complete example. We can find Pug in our
+We can find Pug in our
 complete example in the four highlighted files. These are the base.pug,
 the home.pug, the navigation.pug and the visualization.pug. They are
 inside the views folder, which again is inside the app folder on the
@@ -3495,25 +3472,15 @@ root of our application. We take a look now at the base, home and
 the actual files are pretty similar and the concepts are definitely the
 same. So, let\'s look at them. On the top in green, you see the
 **base.pug**, on the bottom in orange you see the **navigation.pug** and
-on the
-
-bottom on the left in blue you see the **home.pug.**
+on the bottom on the left in blue you see the **home.pug.**
 
 This is what we want to access when we navigate to the home of our
 application. We are going to load the **home.pug**, but the **home.pug**
-extends the
-
-**base.pug**, so we will start from there. The **base.pug** starts with
-an HTML tag,
-
-which is the starting point of every HTML file. It then has a head part,
-which
-
-contains, for example, metadata about the encoding of our HTML file,
+extends the **base.pug**, so we will start from there. The **base.pug** starts with
+an HTML tag, which is the starting point of every HTML file. It then has a head part,
+which contains, for example, metadata about the encoding of our HTML file,
 which in this case is utf-8. It contains also a link to a stylesheet,
-which in this case is
-
-public/style.css and it contains a title of the page. As I\'ve said, you
+which in this case is public/style.css and it contains a title of the page. As I\'ve said, you
 can pass variables to the pug files and in this case, we pass the
 variable title as the title of the page. So, when we construct the
 **pug** file, we actually pass it this variable and I encourage you to
@@ -3531,7 +3498,9 @@ that location. It will then include everything that is in
 **navigation.pug**, which in this case is just a ul or unordered list
 with the hashtag navigation, which means it has the id navigation. One
 list item, which has an a href, which is a link to the home. Also, the
-name of this link will be home itself. The next interesting part of our
+name of this link will be home itself. 
+
+The next interesting part of our
 **base.pug** is the block content. In **Pug**, we define blocks, which
 are extendable parts of our HTML file. In this case, we want to extend
 the base in our **home.pug** and we want to extend the base based on the
@@ -3539,7 +3508,9 @@ block content. So, we extend block content by writing block content and
 every element that follows that block content statement will be put
 exactly where the block content is in the **base.pug**. So, in this
 case, we will put there an h1, which will be here is a title and that p
-for the paragraph, a nice paragraph. So, let\'s look at the outcome of
+for the paragraph, a nice paragraph. 
+
+So, let\'s look at the outcome of
 these three files combined. If we connect to the home, which means
 example.dallago.us, this is pretty much what we see. As you see, the
 navigation has been loaded as an unordered list with one list item and
@@ -3554,61 +3525,38 @@ going to follow this video.
 ### Chapter 3 - Summary
 
 Thank you, Chris, for covering server-side JavaScript. In this module,
-we saw that
-
-Node makes it easy to write JavaScript code for the server-side
-component of
-
-our web application. Thanks to employing a non-blocking I/O
-
+we saw that Node makes it easy to write JavaScript code for the server-side
+component of our web application. Thanks to employing a non-blocking I/O
 module, Node.js scales very well to support thousands of simultaneous
-connections. In
+connections. 
 
-this module, Chris talked about Node.js and the Node package management
-system.
-
-Chris introduced some of the components needed for web application
-development
-
-and how those could be found and integrated using NPM. Finally, we saw
-
+In this module, Chris talked about Node.js and the Node package management
+system. Chris introduced some of the components needed for web application
+development and how those could be found and integrated using NPM. Finally, we saw
 a code example for a small app that pulls data from an API and
 visualizes it.
 
 In the next module, Dennis will show us what are the current techniques
-to
-
-visualize data on the web and how we can use the D3 library to do data
-
+to visualize data on the web and how we can use the D3 library to do data
 visualization in JavaScript.
 
 ### Demo 1: Working with an Example Application (optional)
 
 Welcome back! In this video lecture, I\'m going to demonstrate you the
-code that
+code that me and Dennis are using in our previous video lectures.
 
-me and Dennis are using in our previous video lectures.
-
-We are going to see in my specific case the API code. Dennis is
-
-going to use the complete code in his demonstrations, which come after
-mine.
+We are going to see in my specific case the API code. Dennis is going 
+to use the complete code in his demonstrations, which come after
+mine. 
 
 So, first of all, what we need to do is actually download the code.
 
 So, we navigate: we want to open up a browser window and navigate to
-example dot dallago dot us
-
-slash public slash API dot zip and then we press enter
-
-and this will download, as you have seen from the animation, the API
-code
-
-onto my computer. So, let\'s minimize Safari again, go into the
-downloads and here we
-
-see API folder. And we just drag this onto the desktop, so that it\'s
-here.
+example dot dallago dot us slash public slash API dot zip and then we 
+press enter and this will download, as you have seen from the animation, the API
+code onto my computer. So, let\'s minimize Safari again, go into the
+downloads and here we see API folder. And we just drag this onto the 
+desktop, so that it\'s here.
 
 Good, now we can use our favorite editing tool. In my specific case I\'m
 
@@ -5100,147 +5048,71 @@ means, they are
 supported by any browser. They support all the things that any HTML
 element
 
-will support. That means DOM-handling and events and callbacks would
-make it really
+will support. 
 
+That means DOM-handling and events and callbacks would make it really
 easy to make it responsive and interactive. However, they only support
-
 very simple shapes, such as circles and lines, and to create more
-complex shapes,
+complex shapes, it takes a lot of effort to get it done. Secondly, a whole 
+different way of creating graphics in a web page are the Canvas and WebGL elements.
 
-it takes a lot of effort to get it done. Secondly, a whole different way
-
-of creating graphics in a web page are the Canvas and WebGL elements.
-Now, Canvas
-
-and WebGL are different, but these are related, and they work in similar
-
+Now, Canvas and WebGL are different, but these are related, and they work in similar
 ways. Canvas is for two-dimensional graphics, but WebGL enables
-
 three-dimensional graphics in a web browser. And if you have a lot of
-
 elements and a lot of shapes to draw, they are very fast. However, they
-also
+also require a lot of effort to get it done, because every shape needs to be
+explicitly stated by the user itself. 
 
-require a lot of effort to get it done, because every shape needs to be
-
-explicitly stated by the user itself. That means that they do not
-natively
-
-support events or callbacks, which makes it very hard to create a very
-nice
-
-interactive experience. They also are based on pixels, like a JPEG or a
-bitmap
-
-picture, for example, which means that they are a resolution-dependent
-
+That means that they do not
+natively support events or callbacks, which makes it very hard to create a very
+nice interactive experience. They also are based on pixels, like a JPEG or a
+bitmap picture, for example, which means that they are a resolution-dependent
 and if you would like to zoom into it, the quality may degrade. The last
-way to
+way to visualize data in the browser is a very common one and these are called
+scalable vector graphics, also known SVG and they are similar in the way they
+work to HTML elements. 
 
-visualize data in the browser is a very common one and these are called
-scalable
-
-vector graphics, also known SVG and they are similar in the way they
-work to HTML
-
-elements. They provide DOM-handling ability,
-
+They provide DOM-handling ability,
 because they are basically part of the HTML file. That means that you
-can create
+can create events and callbacks when clicking on them, which means they are very
+good for interactive graphs and visualizations. And because SVG doesn\'t actually
+place any pixels anywhere, but rather provides a description of how a shape
+should look like, it\'s completely resolution-independent. The problem, however, is that if 
+you have a lot of elements and shapes to draw, as in thousands, it can become very 
+slow and we would probably need to move to a WebGL or canvas-based visualization. 
 
-events and callbacks when clicking on them, which means they are very
-good for
+Let\'s talk about why we want to use D3. If you go to the website at d3js.org, 
+you will see that most of the examples are some form of graph or bar chart, or 
+in some other form of craft-based visualization. However, D3 is not just a 
+graphing library, like some of the other ones that we have listed on a few 
+slides ago. It is a more flexible JavaScript library. It is focused on a more 
+abstract concept of binding arbitrary data to a page element and then applying 
+data-driven transformation to them. 
 
-interactive graphs and visualizations. And because SVG doesn\'t actually
-place
+And those can be, for example, SVG graphics. They can also be tables or text 
+elements or any other kind of HTML elements. So, the main point for D3 is the 
+way that data binding works with D3 and let\'s talk about what that actually 
+means. 
 
-any pixels anywhere, but rather provides a description of how a shape
-should look
+Data binding in web development refers to the assignment of data to specific
+elements of a UI or, in our case, a website. So, for example, imagine we have a
+star shape that is displayed on our website and that has an attribute that is
+defining its color and we also have a variable in our script that is called star
+color in this case and it holds the color we want the star to have. 
 
-like, it\'s completely resolution-independent. The problem,
-
-however, is that if you have a lot of elements and shapes to draw, as in
-
-thousands, it can become very slow and we would probably need to move to
-a WebGL
-
-or canvas-based visualization. Let\'s talk about why we want to use D3.
-If you go to the
-
-website at d3js.org, you will see that most of the examples are some
-form of
-
-graph or bar chart, or in some other form of craft-based visualization.
-However, D3
-
-is not just a graphing library, like some of the other ones that we have
-
-listed on a few slides ago. It is a more flexible JavaScript library. It
-is
-
-focused on a more abstract concept of binding arbitrary data to a page
-element
-
-and then applying data-driven transformation to them. And those can be,
-
-for example, SVG graphics. They can also be tables or text elements
-
-or any other kind of HTML elements. So, the main point for D3 is the way
-that data
-
-binding works with D3 and let\'s talk about what that actually means.
-Data
-
-binding in web development refers to the assignment of data to specific
-elements
-
-of a UI or, in our case, a website. So, for example, imagine we have a
-star shape
-
-that is displayed on our website and that has an attribute that is
-defining its
-
-color and we also have a variable in our script that is called star
-color in this
-
-case and it holds the color we want the star to have. We can now assign
-the
-
-variable to the color attribute of the star, so that they are bound
-together,
-
-meaning that if either the star color variable in our script
-
+We can now assign the variable to the color attribute of the star, so that they 
+are bound together, meaning that if either the star color variable in our script
 changes, for example, programmatically, that will also influence the
-color of the
+color of the star on the website immediately and vice versa as well. If the star
+color on the website is, for example, through user interaction influenced, this will
+be reflected in our code and data as well. So, the code and UI are kept
+consistent across changes and D3 uses this as its central working paradigm. 
 
-star on the website immediately and vice versa as well. If the star
-color on the
-
-website is, for example, through user interaction influenced, this will
-be
-
-reflected in our code and data as well. So, the code and UI are kept
-consistent
-
-across changes and D3 uses this as its central working paradigm. It
-allows the
-
-user to bind arbitrary data to the document object model, for example,
-when
-
-providing graph data to create an SVG visualization. And now, I have
-already
-
-mentioned the document object model or DOM a couple of times. So, in the
-next
-
+It allows the user to bind arbitrary data to the document object model, for example,
+when providing graph data to create an SVG visualization. And now, I have already 
+mentioned the document object model or DOM a couple of times. So, in the next
 part of this course, we will talk about what it actually means and will
-also
-
-look into scalable vector graphics before we go on to actually create a
-
+also look into scalable vector graphics before we go on to actually create a
 graph using D3.
 
 ### DOM and SVG
