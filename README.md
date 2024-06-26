@@ -21,7 +21,7 @@ output:
   alt="TUM logo." />
 </p>
 
-## [**Module 1: Introduction -- Language Basics **](#ch1)
+## [**Module 1: Introduction -- Language Basics**](#ch1)
 >### 1.0 [**JavaScript Overview (7:41)**](#ch1-0)
 >### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
 >### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
@@ -108,8 +108,8 @@ definitely for you!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image002.png" 
-  title="1.01 Course Introduction: JavaScript Overview"
-  alt="1.01 Course Introduction: JavaScript Overview."
+  title="1.0 Course Introduction: JavaScript Overview"
+  alt="1.0 Course Introduction: JavaScript Overview."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -159,7 +159,7 @@ project and hope you will enjoy learning web app development using
 JavaScript, while working on the Game of Thrones project we assigned for
 this course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (1) (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image003.png" 
   title="Covered in this module (1)"
@@ -172,49 +172,48 @@ this course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image004.png" 
-  title="MOOCs for Masters"
-  alt="MOOCs for Masters."
+  title="MOOCs for Masters logo"
+  alt="MOOCs for Masters logo."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05 why learn javascript? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image005.png" 
-  title="Why Learn JavaScript?"
-  alt="Why Learn JavaScript?"
+  title="Why Learn JavaScript? Most popular language"
+  alt="Why Learn JavaScript? Most popular language."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-<p>First, JavaScript has been consistently the most popular language on
-GitHub, the world&apos;s most popular code repository.</p>
+<p>First, JavaScript has been consistently the most popular language on GitHub, 
+the world&apos;s most popular code repository.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image006.png" 
-  title="Why Learn JavaScript #2?"
-  alt="Why Learn JavaScript #2?"
+  title="Why Learn JavaScript #2? Largest library repository"
+  alt="Why Learn JavaScript #2? Largest library repository."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-<p>Second, JavaScript has the fastest growing and by far the largest
-library repository called Node Package Management. We&apos;ll talk about
-that more in module number four.</p>
+<p>Second, JavaScript has the fastest growing and by far the largest library 
+repository called <b>Node Package Management</b>. We&apos;ll talk about that 
+more in module four.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image007.png" 
-  title="Why Learn JavaScript, #3?"
-  alt="Why Learn JavaScript, #3?"
+  title="Why Learn JavaScript, #3? It's everywhere"
+  alt="Why Learn JavaScript, #3? It's everywhere."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-<p>Third, JavaScript is everywhere. More vendors are adopting JavaScript
-and you can now run the same JavaScript code across many devices and
-platforms.</p>
+<p>Third, JavaScript is everywhere. More vendors are adopting JavaScript and you 
+can now run the same JavaScript code across many devices and platforms.</p>
 
-<p>Maybe these are the reasons why JavaScript has become the number one
-technology choice of so-called unicorns. Unicorns are startups, valued
-at more than 1 billion dollars.</p>
+<p>Maybe these are the reasons why JavaScript has become the number one technology 
+choice of so-called unicorns. Unicorns are startups, valued at more than 1 billion 
+dollars.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -224,15 +223,15 @@ at more than 1 billion dollars.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-<p>And because javascript is such a hot language, JavaScript developers are
-in high demand. It is now easier than ever to find work as a JavaScript
-developer and the salaries offered are competitive.</p>
+<p>And because JavaScript is such a hot language, JavaScript developers are in 
+high demand. It is now easier than ever to find work as a JavaScript developer 
+and the salaries offered are competitive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript, may 1995 - 2005 (07) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image009.png" 
-  title="The Evolution of JavaScript"
-  alt="The Evolution of JavaScript."
+  title="The Evolution of JavaScript, 1995-2005"
+  alt="The Evolution of JavaScript, 1995-2005."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -247,11 +246,11 @@ has nothing to do with language called Java.</p>
 and this has resulted in several different versions of JavaScript that
 were not fully supported by major browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, #2 (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, 2005-2015 (08) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image010.png" 
-  title="2005-2015; Evolution of JavaScript"
-  alt="2005-2015; Evolution of JavaScript."
+  title="Evolution of JavaScript, 2005-2015"
+  alt="Evolution of JavaScript, 2005-2015."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -298,7 +297,9 @@ remember that we adapted it as lectures and code examples to be
 compatible with ECMAScript 6, the latest JavaScript standard.</p>
 
 <p>Then, we will cover the basics of writing JavaScript code on the server
-using **Node.js**, **Express** and **MongoDB**.</p>
+using <a href="https://www.educative.io/blog/what-is-nodejs"><b>Node.js</b></a>, 
+<a href="https://expressjs.com/"><b>Express</b></a> and 
+<a href="https://www.mongodb.com/"><b>MongoDB</b></a>.</p>
 
 <p>Finally, in the last part of the course, you will learn how to bring
 data to life using a stack of data visualization techniques. All parts
@@ -348,19 +349,18 @@ fundamentals.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Welcome to the language basics module!
+<p>Welcome to the language basics module!</p>
 
-Together with HTML and cascading style sheets, JavaScript is one of the
+<p>Together with HTML and cascading style sheets, JavaScript is one of the
 core technologies for building websites. However, JavaScript is not only
 for building websites, it can also be used for game development and
-application development.
+application development.</p>
 
-While JavaScript may resemble general-purpose programming languages,
-such as C, for instance, it still has very distinct features.
+<p>While JavaScript may resemble general-purpose programming languages,
+such as C, for instance, it still has very distinct features.</p>
 
-For instance, it is an interpreted language that does not require data
-typing and its code is being evaluated during program execution.
-
+<p>For instance, it is an interpreted language that does not require data
+typing and its code is being evaluated during program execution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14 covered in this module (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -370,12 +370,12 @@ typing and its code is being evaluated during program execution.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In this module (1), we will make our first steps and learn the basics of the
+<p>In this module (1), we will make our first steps and learn the basics of the
 language. Tatyana will first show how to edit and run your code. She
 will then survey some of the most essential parts of the JavaScript
 language. Tatyana is an experienced data scientist and a JavaScript
 developer. She uses JavaScript&apos;ing at work researching bacteria&apos;s role
-in disease.
+in disease.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2">1.2 Lexical Structure (6:56)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -387,30 +387,30 @@ in disease.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Welcome to the first lecture of the lexical structure module!
+<p>Welcome to the first lecture of the lexical structure module!</p>
 
-Getting started with JavaScript is easy. All you need is a web console,
+<p>Getting started with JavaScript is easy. All you need is a web console,
 which is included in any modern browser of your choice. It is always a
 good idea to work with the latest version of a web browser to fully
-enjoy the strength of JavaScript.
+enjoy the strength of JavaScript.</p>
 
-A web console shows information about the currently loaded page. It also
+<p>A web console shows information about the currently loaded page. It also
 provides you with a command line that allows you to execute JavaScript
-directly in the current page.
+directly in the current page.</p>
 
-There are two ways for opening the console: you can either press the
+<p>There are two ways for opening the console: you can either press the
 combination of three keys ctrl shift + I or you can open it through the
-menu of your browser.
+menu of your browser.</p>
 
-In Firefox, you click on menu, select developer menu and then the dev
-console.
+<p>In Firefox, you click on menu, select developer menu and then the dev
+console.</p>
 
-In Chrome, you also first click on menu, then select tools, where you
-find developer tools, which will open the web console for you.
+<p>In Chrome, you also first click on menu, then select tools, where you
+find developer tools, which will open the web console for you.</p>
 
-The dev console appears at the bottom of the browser window and the
+<p>The dev console appears at the bottom of the browser window and the
 command line, framed in the blue box on the figure, will be ready for
-you to enter the JavaScript code.
+you to enter the JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16 hello world (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -420,19 +420,19 @@ you to enter the JavaScript code.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-You can try out the console by typing the instruction: console dot log
+<p>You can try out the console by typing the instruction: console.log
 hello world and you will see hello world appearing in the console below
-your command.
+your command.</p>
 
-These instructions are also called statements in JavaScript. Similar to
-C, C++ and Java, JavaScript statements end with a semicolon.
+<p>These instructions are also called statements in JavaScript. Similar to
+C, C++ and Java, JavaScript statements end with a semicolon.</p>
 
-In principle, you can omit the semicolon at the end of your statement.
+<p>In principle, you can omit the semicolon at the end of your statement.
 JavaScript will add it for you. However, it is considered to be a bad
-practice to do so.
+practice to do so.</p>
 
-Semicolons allow your code to be more readable and they also make sure
-that your code is free from side-effects.
+<p>Semicolons allow your code to be more readable and they also make sure
+that your code is free from side-effects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17 js character set (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -442,20 +442,19 @@ that your code is free from side-effects.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-JavaScript is a case-sensitive language.
+<p>JavaScript is a case-sensitive language.</p>
 
-This means that language keywords, variable and function names must
-always be typed with a consistent capitalization of letters.
+<p>This means that language keywords, variable and function names must
+always be typed with a consistent capitalization of letters.</p>
 
-For example, a different capitalization of the name myvar will be
+<p>For example, a different capitalization of the name myvar will be
 understood by your program such that if you are using three different
-names.
+names.</p>
 
-All JavaScript programs are written using the Unicode character set.
-
+<p>All JavaScript programs are written using the Unicode character set.
 The standard Unicode set supports virtually every language currently
 used on the planet, making JavaScript independent of the operating
-platform and the language used.
+platform and the language used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18 whitespace and new lines (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -465,13 +464,13 @@ platform and the language used.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-JavaScript ignores white spaces, tabs and newlines that appear in your
-code, except if they are part of a string or a regular expression.
+<p>JavaScript ignores white spaces, tabs and newlines that appear in your
+code, except if they are part of a string or a regular expression.</p>
 
-Because of this feature, you can format your programs in the neat and
+<p>Because of this feature, you can format your programs in the neat and
 consistent way. And, in general, it is a very good idea to format your
 programs, because formatting makes your programs easy to read and
-understand.
+understand.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19 comments (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -481,14 +480,13 @@ understand.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-JavaScript supports, as some other programming languages, two styles of
+<p>JavaScript supports, as some other programming languages, two styles of
 comments. Namely, any text written after two slash characters up to the
 end of a line is treated as a single line comment and is ignored by
 JavaScript. Also, text written between slash star and star slash
 characters is also treated as a comment. You can span these comments
 over multiple lines. You can&apos;t, however, nest comments, as it will
-result in a syntax error shown in your console.
-
+result in a syntax error shown in your console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20 variables (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -498,14 +496,14 @@ result in a syntax error shown in your console.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Variables are symbolic names for values in your code. The names of
-variables are called identifiers and they conform to certain rules.
+<p>Variables are symbolic names for values in your code. The names of
+variables are called identifiers and they conform to certain rules.</p>
 
-For example, an identifier can start and contain only letters, numbers,
+<p>For example, an identifier can start and contain only letters, numbers,
 underscores or dollar signs. An identifier cannot start with a number.
 Identifiers are always case-sensitive and, finally, identifiers cannot
 match any of JavaScript reserved words and what they are we will see on
-the next slide.
+the next slide.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21 reserved words (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -515,16 +513,16 @@ the next slide.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-JavaScript reserves a number of identifiers as keywords of the language
-itself.
+<p>JavaScript reserves a number of identifiers as keywords of the language
+itself.</p>
 
-The words listed on this slide cannot be used as identifiers in your
+<p>The words listed on this slide cannot be used as identifiers in your
 programs, because they are part of the JavaScript syntax and have a
 special meaning for JavaScript. These include break, case, catch, class
 and others. There is a number of other keywords not listed on the slide
 that are reserved for future versions of JavaScript and therefore should
 also not be used. Please refer to other sources for the complete list of
-these keywords.
+these keywords.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22 declaring variables (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -534,24 +532,24 @@ these keywords.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Before a variable can be used in JavaScript, it needs to be declared.
+<p>Before a variable can be used in JavaScript, it needs to be declared.
 Note that, while declaring a variable is not a requirement, it is
 considered to be a best practice to do so and is highly encouraged.
-Declaring a variable can be done in three ways.
+Declaring a variable can be done in three ways.</p>
 
-First, by using the keyword **var**. The keyword var tells the program
+<p>First, by using the keyword <b>var</b>. The keyword var tells the program
 that variable can be used both globally, throughout the whole program,
 if it is declared outside of a function, or locally, meaning that the
 variable can be used within the function it is declared. Note, in our
-example the variable x has no value specified.
+example the variable x has no value specified.</p>
 
-Second, we can declare a variable by assigning it a value. Doing so, we
+<p>Second, we can declare a variable by assigning it a value. Doing so, we
 always declare a global variable that is a variable available throughout
-the whole program.
+the whole program.</p>
 
-Finally, we can declare a variable using the keyword **let**, which
+<p>Finally, we can declare a variable using the keyword <b>let</b>, which
 tells the program that the variable is only available within the block
-scope of its declaration.
+scope of its declaration.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23 constants (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -623,11 +621,11 @@ JavaScript is an un-typed language. This means that unlike in other
 languages, such as Java and C, in JavaScript we do not declare the data
 type of variables explicitly. JavaScript automatically converts one data
 type to another when it&apos;s needed. For example, it can append numbers
-and strings by automatically converting numbers to strings. **Data
-types** in JavaScript can be divided in **two groups** - **primitive**
-types and **reference** types. **String, number, boolean, undefined and
-null are primitive data types**. **Objects and arrays are referenced
-data types.**
+and strings by automatically converting numbers to strings. <b>Data
+types</b> in JavaScript can be divided in <b>two groups</b> - <b>primitive</b>
+types and <b>reference</b> types. <b>String, number, boolean, undefined and
+null are primitive data types</b>. <b>Objects and arrays are referenced
+data types.</b>
 
 While primitive data types have a fixed size and memory, for example, a
 single number occupies 8 bytes in memory, reference data types do not
@@ -645,7 +643,7 @@ called a reference type.
 </p>
 
 Let&apos;s have a closer look at the primitive data types.
-**Numbers** are a basic data type. All numbers in JavaScript
+<b>Numbers</b> are a basic data type. All numbers in JavaScript
 are represented as one type floating point values.
 
 JavaScript numbers can be positive and negative, and can also be
@@ -715,7 +713,7 @@ languages, the first character in a string has position index 0.
 </p>
 
 In contrast to number and string datatypes, the boolean type has only
-two values - true and false. A **boolean** value represents if
+two values - true and false. A <b>boolean</b> value represents if
 something is true or not.
 
 In a numeric representation, true evaluates to 1 and false evaluates to 0.
@@ -724,7 +722,7 @@ Typically, boolean values are used for comparison in JavaScript
 programs, for example, to check whether two values are equal or not, if
 their values and data types are equal or not, or if one value is larger
 or smaller than the other value. Another important data type is called
-**undefined**.
+<b>undefined</b>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 32 Undefined type; non-initialized variable = 'undefined' (22) ~~~~~~~~~~~~~~-->
 <p align="center">
@@ -734,7 +732,7 @@ or smaller than the other value. Another important data type is called
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-**Undefined** is returned when the variable was declared, but
+<b>Undefined</b> is returned when the variable was declared, but
 never initialized. That means, it never got a value assigned to it. It
 is also possible to manually assign undefined to a variable as a value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -746,7 +744,7 @@ is also possible to manually assign undefined to a variable as a value.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-The last primitive data type is called **null**. Null means
+The last primitive data type is called <b>null</b>. Null means
 nothing and is used to indicate an absence of a value. It is considered
 good practice to use null in your code instead of undefined. The
 variable foo in our example is assigned the value null. It means that
@@ -768,9 +766,9 @@ However, if both values and types are compared, then false is returned.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-An **object** is a reference data type that consists of a
-**collection of named values.** These named values are also
-called **properties,** they describe the object. A property is
+An <b>object</b> is a reference data type that consists of a
+<b>collection of named values.</b> These named values are also
+called <b>properties,</b> they describe the object. A property is
 a mapping between keys and values. Keys are always represented as
 strings and values can be of any data type. For example, the object king
 holds properties named first name, last name and age. Keys of the
@@ -789,7 +787,7 @@ new value.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-An **array** is another reference data type, which also stores
+An <b>array</b> is another reference data type, which also stores
 a collection of values. While each value in an object has a name -
 that&apos;s the key name - as we saw in the previous slide, the values in an
 array are indexed by a number. The first value in an array has index 0,
@@ -994,13 +992,13 @@ are usually written in one line and each of them is optional.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-A **["for in"]** loop is especially useful when working with
+A <b>["for in"]</b> loop is especially useful when working with
 objects. It iterates over the properties of an object and returns the
 name of each of the properties. In the example, at each iteration of the
 loop, the variable i is set to the name of each property of the object
 king.
 
-At each iteration, the value of **[i]** is printed to the
+At each iteration, the value of <b>[i]</b> is printed to the
 console.
 
 As a result, we have the strings:
@@ -1008,7 +1006,7 @@ As a result, we have the strings:
 first name, last name and age printed. While the "for-in" loop is great
 for iterating over object properties,
 
-the **["for of"]** loop should be the choice when iterating over
+the <b>["for of"]</b> loop should be the choice when iterating over
 array values.
 
 As a matter of fact, using for of for other referenced types fails with
@@ -1100,7 +1098,7 @@ with a match.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-**[If]** statement includes the condition to be evaluated and the
+<b>[If]</b> statement includes the condition to be evaluated and the
 block of code to be executed in case the condition is true.
 
 In the example, the code block is executed in case the variable x holds
@@ -1114,7 +1112,7 @@ the value larger than zero.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-**["If else"]** statement includes the condition to be evaluated
+<b>["If else"]</b> statement includes the condition to be evaluated
 and the block of code to be executed in case the condition is true.
 
 It also includes a block of code to be executed in case the condition is
@@ -1132,7 +1130,7 @@ Otherwise, text is set to &quot;x is zero or a negative number&quot;.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-An **["if else if"]** statement evaluates a new if condition, if
+An <b>["if else if"]</b> statement evaluates a new if condition, if
 the first if condition is evaluated to false. If a subsequent if
 conditional is evaluated to true, then the block of code that follows
 this else if statement is executed. In the example, the program
@@ -1562,7 +1560,7 @@ names and the same values.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Oh, by the way, just two slides ago we have invoked **hasOwnProperty**
+Oh, by the way, just two slides ago we have invoked <b>hasOwnProperty</b>
 method on our objects, right? But we have never added this method to our
 objects. Yet, we still are able to invoke it. Why? Because prototypes!
 
@@ -1580,9 +1578,9 @@ to a prototype.
 When we try to access a certain property that is absent in an object,
 JavaScript will look for that property in the prototype. We can say that
 object inherits its prototype properties. Special object
-**object.prototype** is a prototype of all objects created via an object
-literal or an object constructor. **Object.prototype** has
-**hasOwnProperty** methods and that&apos;s exactly what we have invoked.
+<b>object.prototype</b> is a prototype of all objects created via an object
+literal or an object constructor. <b>Object.prototype</b> has
+<b>hasOwnProperty</b> methods and that&apos;s exactly what we have invoked.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1597,8 +1595,8 @@ A prototype is an object and we know how to add properties to an object.
 So, what happens when we add a property to a prototype?
 
 All objects inheriting from this prototype get immediate access to the
-new property. Let&apos;s add a new property called **easterEgg** with a
-value &quot;Hello, world!&quot; to the **Object.prototype.**
+new property. Let&apos;s add a new property called <b>easterEgg</b> with a
+value &quot;Hello, world!&quot; to the <b>Object.prototype.</b>
 
 Having done that, we can immediately access **easterEgg** property from
 our **cls object**, which was created via an object literal and inherits
@@ -2408,22 +2406,22 @@ By default, this returns the global object.
 
 In the browser, it&apos;s the window object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121  (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121 this (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image121.png" 
   title=""
-  alt="."
+  alt="this: In an inner function 'this' by default returns the global object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 This also returns the global object in an inner function that is in a
 function that is called by a method.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 122  (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 122 this and that (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image122.png" 
-  title=""
-  alt="."
+  title="this and that"
+  alt="this and that."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2435,18 +2433,16 @@ another variable.
 For example, that or self and access it from an inner function.
 
 In this example, we decided to use that.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-6">2.6 Chapter 2 - Summary (mm:ss)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Thank you, Dimitrii, for covering functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 123  (71) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 123 covered in this module; working with functions (71) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image123.png" 
-  title=""
-  alt="."
+  title="Covered in this module; Working with functions"
+  alt="Covered in this module; Working with functions."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2459,11 +2455,11 @@ indirect invocation.
 These different invocations lend flexibility to the language when
 working with functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 124  (71) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 124 covered in this module; working with modules (71) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image124.png" 
-  title=""
-  alt="."
+  title="Covered in this module; Working with objects"
+  alt="Covered in this module; Working with objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2478,17 +2474,16 @@ closures. This module showed the basics of using objects and functions,
 and would allow you to better understand how to structure your
 JavaScript code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 125  (72) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 125 in the next module, writing code on the server side (72) ~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image125.png" 
-  title=""
-  alt="."
+  title="In the next module, writing code on the server side, using node.js &amp; an example"
+  alt="In the next module, writing code on the server side, using node.js &amp; an example."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In the next module, Chris will show you how we can create JavaScript on
-the server-side using Node.js as well as other technologies.
-
+<p>In the next module, Chris will show you how we can create JavaScript on
+the server-side using Node.js as well as other technologies.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-0">3.0 Server-side JavaScript (1:31)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2513,24 +2508,21 @@ Since the first version of Node appeared, many developers have found it
 useful and have chosen to build the back-end of their applications using
 JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 126  (73) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 126 about the instructor - christian dallago (73) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image126.png" 
-  title=""
-  alt="."
+  title="About the instructor - Christian Dallago"
+  alt="About the instructor - Christian Dallago."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Chris is a master student in Informatics with a solid background in
+<p>Chris is a master student in Informatics with a solid background in
 Software Engineering. He has over three years' experience developing
-full-stack applications in
+full-stack applications in JavaScript.</p>
 
-JavaScript.
-
-He is also a mentor in the Google Summer of Code program and the tutor
-of the Intro to JavaScript course, given at the TU of Munich.
-
-By his own admission, Chris really likes to turn pizza into code.
+<p>He is also a mentor in the Google Summer of Code program and the tutor of the 
+Intro to JavaScript course, given at the TU of Munich. By his own admission, 
+Chris really likes to turn pizza into code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 127  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3035,17 +3027,19 @@ power to answer them in a meaningful way. We have seen what requests are
 in previous videos. So, I invite you to look back at previous videos if
 you don&apos;t know what we are talking about.
 
-The first **request handler** that I would like to talk to you about is
-**Express.js** (https://expressjs.com/). It is de facto standard for
-**Node.js**. You would hardly ever find anything else, but there are
-alternatives and we just listed another two of them. The first
-alternative is **koa** (https://koajs.com/), which is a simplified
-version of **Express.js (**. It stems from the same developers as
-**Express.js**, but it&apos;s a much lighter version. Another request
-handler is **Restify** (http://restify.com/). **Restify** focuses only
+The first <b>request handler</b> that I would like to talk to you about is
+<a href="https://expressjs.com/"><b>Express.js</b></a>. It is de facto standard for
+<a href="https://nodejs.com/"><b>Node.js</b></a>. You would hardly ever find 
+anything else, but there are alternatives and we just listed another two of them. 
+The first alternative is  <a href="https://koajs.com/"><b>koa</b></a>, which is 
+a simplified version of <a href="https://www.geeksforgeeks.org/express-js/">
+<b>Express.js</b></a>(. It stems from the same developers as 
+<a href="https://www.npmjs.com/package/express"><b>Express.js</b></a>, but it&apos;s a 
+much lighter version. Another request handler is <a href="http://restify.com/">
+<b>Restify</b></a>. <b>Restify</b> focuses only
 on constructing APIs. So, you would not have views, which we&apos;re gonna
-explain in a moment. **Restify** is also heavily based on
-**Express.js**. So, as you see, **Express.js** always comes in.
+explain in a moment. <b>Restify</b> is also heavily based on
+<b>Express.js</b>. So, as you see, <b>Express.js</b> always comes in.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 146 node.js as back-end - databases (89) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3694,14 +3688,14 @@ This is what we want to access when we navigate to the home of our
 application. We are going to load the **home.pug**, but the **home.pug**
 extends the **base.pug**, so we will start from there. 
 
-The **base.pug** starts with
+The <b>base.pug</b> starts with
 an HTML tag, which is the starting point of every HTML file. It then has a head part,
 which contains, for example, metadata about the encoding of our HTML file,
 which in this case is utf-8. It contains also a link to a stylesheet,
 which in this case is public/style.css and it contains a title of the page. As I&apos;ve said, you
 can pass variables to the pug files and in this case, we pass the
 variable title as the title of the page. So, when we construct the
-**pug** file, we actually pass it this variable and I encourage you to
+<b>pug</b> file, we actually pass it this variable and I encourage you to
 look at the controller for the front-end where this is very visible.
 
 The next thing that we are going to look at is the body. I just see that
@@ -3711,19 +3705,19 @@ in UL hash tag navigation we have a UL element of id navigation. We&apos;re
 going to see more what CSS is used for and how it works in later
 sessions. So, let&apos;s look at include navigation. This is an important
 directive. It tells Pug that when you are loading this file, which is
-the **base.pug**, it has to include a **navigation.pug** precisely in
+the <b>base.pug</b>, it has to include a <b>navigation.pug</b> precisely in
 that location. It will then include everything that is in
-**navigation.pug**, which in this case is just a ul or unordered list
+<b>navigation.pug</b>, which in this case is just a ul or unordered list
 with the hashtag navigation, which means it has the id navigation. One
 list item, which has an a href, which is a link to the home. Also, the
 name of this link will be home itself. 
 
-The next interesting part of our **base.pug** is the block content. In **Pug**, 
+The next interesting part of our <b>base.pug</b> is the block content. In <b>Pug</b>, 
 we define blocks, which are extendable parts of our HTML file. In this case, we 
-want to extend the base in our **home.pug** and we want to extend the base based on the
+want to extend the base in our <b>home.pug</b> and we want to extend the base based on the
 block content. So, we extend block content by writing block content and
 every element that follows that block content statement will be put
-exactly where the block content is in the **base.pug**. So, in this
+exactly where the block content is in the <b>base.pug</b>. So, in this
 case, we will put there an h1, which will be here is a title and that p
 for the paragraph, a nice paragraph. 
 
@@ -3740,7 +3734,7 @@ these three files combined. If we connect to the home, which means
 example.dallago.us, this is pretty much what we see. As you see, the
 navigation has been loaded as an unordered list with one list item and
 then h tag to the home and then we have the extension of a base, which
-is the **home.pug** with the h1 title here is the title and the p
+is the <b>home.pug</b> with the h1 title here is the title and the p
 paragraph, a nice paragraph. So, with this part, we have covered also
 the last part of our application. We have seen the views and in the
 previous videos we have seen the models and the controls. I invite you
@@ -4830,7 +4824,7 @@ nice graph visualization
 
 of the interactions of these characters.
 
-We will use the **Pug** templating engine that you have been presented
+We will use the <b>Pug</b> templating engine that you have been presented
 in the last part
 
 of this course to create the site and then use the D3.js library for the
@@ -4852,7 +4846,7 @@ them as JSON data.
 
 And once we have it, we&apos;ll try to visualize it nicely.
 
-The first step in this is to use the **Pug** templating and engine and
+The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into
 
 an HTML file that will be displayed in a web browser.
@@ -4865,7 +4859,7 @@ views folder of the app,
 
 you can find four files.
 
-You can think of these **pug** files as building blocks for the web
+You can think of these <b>pug</b> files as building blocks for the web
 site.
 
 These templates will be put together and then compiled into HTML.
@@ -4878,7 +4872,7 @@ can then be referenced in other parts,
 for example, in the base file. So, we don&apos;t have to include the code
 for navigation in every site.
 
-The **visualization.pug** file is where the content for our
+The <b>visualization.pug</b> file is where the content for our
 visualization page will
 
 be hosted and we&apos;ll try to have a look at that in a second.
@@ -4896,7 +4890,7 @@ as in the head of the HTML file and it has a block for the content.
 And right on top, it also says extends base.
 
 This means, it will adhere to the basic structure that is defined in the
-**base.pug** file and then only
+<b>base.pug</b> file and then only
 
 check the content in the relevant areas.
 
@@ -5239,7 +5233,7 @@ This example here is actually the compiled version
 
 of our visualization site.
 
-We had discussed in an earlier video using the **Pug** template, but if
+We had discussed in an earlier video using the <b>Pug</b> template, but if
 you want to look
 
 at it in a different way, you could also see it like this.
@@ -6833,7 +6827,7 @@ names of our relationship are already part of our names object, or list
 of names. And the list of names, the current one, is going to be stored
 in our accumulator. So, what we&apos;re going to do is to check if this
 accumulator already has this name as part of it. So, I&apos;m going to use
-the **indexOf** function on the **val.target**. So, this checks if the
+the <b>indexOf</b> function on the <b>val.target</b>. So, this checks if the
 name that&apos;s stored in the target attributes of our relationship object
 is found anywhere in our list of names and if it does, it will return
 the position of it in the array. And if it is not already in there, it
@@ -6870,7 +6864,7 @@ we&apos;re going to replace the actual names with the position of those
 names in the names array. So, we&apos;re going to use, in this case, we&apos;re
 going to say new variable and these are going to be our links we are
 going to use in our visualization later and that&apos;s going to be a
-response.map()**.** This is another JavaScript array function and it&apos;s
+<b>response.map().</b> This is another JavaScript array function and it&apos;s
 very similar to the reduce, except, in this case, we are not going to
 keep any accumulator. It&apos;s just going to pass this anonymous function
 that will be applied to each of the relationships. In this case, this
