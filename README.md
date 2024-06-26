@@ -32,10 +32,10 @@ output:
 >### 1.7 [**Summary (Module 1) (1:08)**](#ch1-7)
 
 ## [**Module 2: Functions and Objects**](#ch2)
->### 2.0 [**Intro: Functions and Objects (1:14) **](#ch2-0)
->### 2.1 [**Functions, part 1 (3:06) **](#ch2-1)
+>### 2.0 [**Intro: Functions and Objects (1:14)**](#ch2-0)
+>### 2.1 [**Functions, part 1 (3:06)**](#ch2-1)
 >### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
->### 2.3 [**Functions, part 2 (5:19) **](#ch2-3)
+>### 2.3 [**Functions, part 2 (5:19)**](#ch2-3)
 >### 2.4 [**Objects, part 2 (mm:ss)**](#ch2-4)
 >### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
 >### 2.6 [**Summary (Module 2) (mm:ss)**](#ch2-6)
@@ -43,9 +43,9 @@ output:
 ## [**Module 3: Server-side JavaScript**](#ch3)
 >### 3.0 [**Server-side JavaScript (1:31)**](#ch3-0)
 >### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
->### 3.2 [** Node.js and NPM (9:28)**](#ch3-2)
->### 3.3 [** What is needed for a web app? (5:07)**](#ch3-3)
->### 3.4 [** Our example application (7:32)**](#ch3-4)
+>### 3.2 [**Node.js and NPM (9:28)**](#ch3-2)
+>### 3.3 [**What is needed for a web app? (5:07)**](#ch3-3)
+>### 3.4 [**Our example application (7:32)**](#ch3-4)
 >### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
 >### 3.6 [**Views (5:54)**](#ch3-6)
 >### 3.7 [**Summary (Module 3) (m:s)**](#ch3-7)
@@ -53,14 +53,14 @@ output:
 >### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
 
 ## [**Module 4: API calls and data visualization**](#ch4)
->### 4.0 [** (mm:ss)**](#ch4-0)
->### 4.1 [** (mm:ss)**](#ch4-1)
->### 4.2 [** (mm:ss)**](#ch4-2)
+>### 4.0 [**(mm:ss)**](#ch4-0)
+>### 4.1 [**(mm:ss)**](#ch4-1)
+>### 4.2 [**(mm:ss)**](#ch4-2)
 
 ## [**Module 5: Conclusion -- Putting it all together**](#ch5)
->### 5.0 [** (mm:ss)**](#ch5-0)
->### 5.1 [** (mm:ss)**](#ch5-1)
->### 5.2 [** (mm:ss)**](#ch5-2)
+>### 5.0 [**(mm:ss)**](#ch5-0)
+>### 5.1 [**(mm:ss)**](#ch5-1)
+>### 5.2 [**(mm:ss)**](#ch5-2)
 
 <h3 id="about">About</h3>
 
