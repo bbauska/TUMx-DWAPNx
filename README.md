@@ -3891,17 +3891,16 @@ that name, and we only have one file, which is called database, and the file is
 either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
 the case we only have one file it&apos;s called a database and it is of the
 extension dot JavaScript. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 188  (118) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image188.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
 <p>We don&apos;t really need to specify the dot and js here. It is good practice 
 to actually see what this database file does.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 188 database.js - two requirements to start (118) ~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image188.png" 
+  title="database.js - first two requirements"
+  alt="database.js - first two requirements."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 <p>Let&apos;s open the <b>database.js</b> file. Again, here, at the very beginning 
 we have two requirements: the second one is just a dependency again, as we have 
@@ -3916,11 +3915,11 @@ dot JSON.</p>
 to specify here dot JSON, but if we wanted to, we could. Again, it is good practice 
 to see what actually this file contains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 189 config.json (119) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 189 config.json - with one object (119) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image189.png" 
-  title=""
-  alt="."
+  title="config.json - with one object"
+  alt="config.json - with one object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -3950,7 +3949,7 @@ database object here, so all of the values that we see in this object.
 <!--~~~~~~~~~~~~~~~~~~~ 191 config.json - create database connection (120) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image191.png" 
-  title=""
+  title="config.json - create database connection"
   alt="config.json - create database connection."
   style="border: 2px solid #000000; width:40%;" />
 </p>
@@ -3988,7 +3987,7 @@ connected to this connection and then we assign the database object to a variabl
 which is called db. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (122) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (121) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image193.png" 
   title="Four events associated with connecting to mongoose database"
