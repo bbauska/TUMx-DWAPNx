@@ -4174,7 +4174,7 @@ our app and next line of code, that we want to look at, is this one.
 <p align="center">
   <img src="./images/image204.png" 
   title=""
-  alt="Express application, ."
+  alt="Express application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We define our application, so our app to be an express application and later we 
@@ -4230,10 +4230,10 @@ not right at the root of our application. It&apos;s located in the folder app,
 that we see here on top, so let&apos;s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image207.png" 
-  title=""
+  title="router.js"
   alt="router.js."
   style="border: 2px solid #000000; width:40%;" />
 </p>
@@ -4243,7 +4243,7 @@ two dots tell us that we have to look one folder before the folder we are in. So
 we are in controllers and we need to look at app and then we want to look at
 models. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208  (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image208.png" 
   title=""
@@ -4277,11 +4277,11 @@ happens when we actually require this specific file. And what we&apos;re
 exporting here is exactly the model. The model that we defined over here 
 is what we are exporting down here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 209  (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 209 controllers/relationships.js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image209.png" 
-  title=""
-  alt="."
+  title="controllers/relationships.js"
+  alt="controllers/relationships.js."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 And when we go back to our controllers, we see that we are requiring it here and we 
@@ -4319,7 +4319,7 @@ to return is a response with the status of 500, which again in HTTP means there
 has been an error on the server side and I want to send my error back to the user, 
 so that the user knows of what kind of problem might have happened. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 210  (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 210  (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image210.png" 
   title=""
@@ -4457,7 +4457,7 @@ type of the function that we&apos;re going to call. We want the relationships
 only for Aemon and we also have to add the semicolon here, because I deleted it
 from here before. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image217.png" 
   title=""
@@ -4473,7 +4473,7 @@ over it, it actually tells me there is an unresolved variable relationship Aemon
 doesn&apos;t happen here, because this is obviously defined. So, what we have to do
 now is actually to define this function over in the controller. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image218.png" 
   title=""
@@ -4517,13 +4517,12 @@ only thing again that I&apos;m changing here is just I&apos;m filtering out the
 relationships, such that what I get is that the source of our relationships is 
 Aemon. Now I have saved this file, there is no modification here, so there&apos;s 
 no need to save anything here.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 219  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 219 restart process with $npm start (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image219.png" 
-  title=""
-  alt=" ."
+  title="Restart process with $NPM start"
+  alt="Restart process with $NPM start."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 If I go back to my run tab here, I can restart the process and this is
@@ -4538,11 +4537,11 @@ control+C and then you can just type in $NPM start again.
 Just for the sake here, I press run again and the output is going to be the same, 
 because I&apos;m not logging anything new. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 220  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 220 relationship data with two objects (139) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image220.png" 
-  title=""
-  alt=" ."
+  title="Relationship data with two objects"
+  alt="Relationship data with two objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 But when I go to Safari now and I
@@ -4551,11 +4550,11 @@ what I will get is a new array. So, this is the array of objects with only two
 objects and the two objects that I get are with the source Aemon. These are the 
 only two objects that I have in my database, which have this source. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 221  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 221 relationship data with multiple objects (139) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image221.png" 
-  title=""
-  alt=" ."
+  title="Relationship data with multiple objects"
+  alt="Relationship data with multiple objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We were successful in implementing this route and we can
@@ -4572,8 +4571,8 @@ wanted to show you.
   alt=" ."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-You have seen that it&apos;s actually really really easy to
-implement a new root. Probably, you want to do this in a more systematic and a
+You have seen that it&apos;s actually really easy to implement a new root. 
+Probably, you want to do this in a more systematic and a 
 more a reusable way. Instead of defining really specific names for
 characters, since we&apos;re dealing with a database and names might change, you can
 define a variable here. Basically I can say column name, source name, is even
@@ -4599,7 +4598,7 @@ how the application works.
 
 That is a good test for you to try out and have fun.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-0">4.0 API calls and data visualization (1:01)</h3>
+<h3 id="ch4-0">4.0 API calls and Data Visualization (1:01)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Module 4 - Introduction</h3>
 
@@ -4607,11 +4606,11 @@ Welcome to the data visualization module. Data visualization is an
 important aspect of data analysis. Creating images, diagrams and animations help
 us in the process of analysis and data communication. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 223  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 223 data visualization turn information to knowledge (140) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image223.png" 
-  title=""
-  alt=" ."
+  title="Data visualization turn information to knowledge"
+  alt="Data visualization turn information to knowledge."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4620,7 +4619,7 @@ points into a graph, we can start recognizing patterns and trends in our data.
 Over the past couple of decades, more and more data is communicated online and 
 so JavaScript is playing a unique role in enabling data visualization. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image224.png" 
   title=""
@@ -4633,18 +4632,18 @@ library D3 to tell the story of our data in a web browser. Dennis Schwartz is a
 master student for bioinformatics. He has developed several JavaScript-based 
 visualization tools and he&apos;s passionate about open-source communities.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-1">4.1 Data retrieval using HTTP requests (7:48)</h3>
+<h3 id="ch4-1">4.1 Data Retrieval using HTTP Requests (7:48)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome everyone to this part of our course!
 
 This part will deal with data visualization and we&apos;ll start off with
 data retrieval using HTTP requests.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 225  (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~ 225 Outlook - Web-based visualization with relationship data from a novel (141) ~~~~~-->
 <p align="center">
   <img src="./images/image225.png" 
-  title=""
-  alt=" ."
+  title="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API"
+  alt="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4660,22 +4659,22 @@ You might have heard of it. We will then use this data that we retrieved from
 the API and create a nice graph visualization of the interactions of these 
 characters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 226  (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 226 outlook - web-based visualization using d3 and pug (142) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image226.png" 
-  title=""
-  alt=" ."
+  title="Outlook - Web-based visualization using D3 and Pug"
+  alt="Outlook - Web-based visualization using D3 and Pug."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We will use the <b>Pug</b> templating engine that you have been presented
 in the last part of this course to create the site and then use the D3.js library for the
 visualization itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 227  (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227 data retrieval, #1 (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image227.png" 
-  title=""
-  alt=" ."
+  title="Data retrieval, #1"
+  alt="Data retrieval, #1."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4684,37 +4683,46 @@ The back-end is the Node.js application that you were presented previously
 and at this point, we&apos;re going to look at the front-end, which is going to 
 be the website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 228  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 228 data retrieval, #2 (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image228.png" 
-  title=""
-  alt=" ."
+  title="Data retrieval, #2"
+  alt="Data retrieval, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 This website will also contain JavaScript and JavaScript will be used to
 query our API for the relationships of these characters, which we&apos;ll then return
 them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 229  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 229 content creation with pug, #1 (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image229.png" 
-  title=""
-  alt=" ."
+  title="Content creation with Pug, #1"
+  alt="Content creation with Pug, #1."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into an HTML file that will be displayed in a web browser.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 230  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 230 content creation with pug, #2 (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image230.png" 
-  title=""
-  alt=" ."
+  title="Content creation with Pug, #2"
+  alt="Content creation with Pug, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
+
 Then, with the help of JavaScript, we will create the backend server and
 get the data from there.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 231 creating a page for the visualization (144) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image231.png" 
+  title="Creating a page for the visualization"
+  alt="Creating a page for the visualization."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let&apos;s take a look at the code you were provided before. In the views folder 
 of the app, you can find four files. You can think of these <b>pug</b> files as 
 building blocks for the web site. These templates will be put together and then 
@@ -4726,11 +4734,11 @@ We don&apos;t have to include the code for navigation in every site. The
 <b>visualization.pug</b> file is where the content for our visualization 
 page will be hosted and we&apos;ll try to have a look at that in a second.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 231  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 232 creating a simple page for the visualization, #1 (144) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image231.png" 
-  title=""
-  alt=" ."
+  <img src="./images/image232.png" 
+  title="Creating a simple plage for the visualization, #1"
+  alt="Creating a simple plage for the visualization, #1."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4748,15 +4756,15 @@ have another JavaScript file linked that will host the code for data retrieval a
 visualization.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 231  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 233 creating a simple page for the visualization, #2 (145) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image231.png" 
-  title=""
-  alt=" ."
+  <img src="./images/image233.png" 
+  title="Creating a simple page for the visualization, #2"
+  alt="Creating a simple page for the visualization, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-But let&apos;s take a closer look at the content itself. There are three parts 
+Let&apos;s take a closer look at the content itself. There are three parts 
 here. The title itself will be provided by the API or at the router of our
 application.
 
