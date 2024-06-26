@@ -1451,11 +1451,9 @@ such properties via dot notations.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Remember, a valid identifier starts with a letter, an underscore or a
-dollar sign.
+Remember, a valid identifier starts with a letter, an underscore or a dollar sign.
 
-Subsequent characters can be letters, digits, underscores and dollar
-signs.
+Subsequent characters can be letters, digits, underscores and dollar signs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68 property names, #2 (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1629,7 +1627,6 @@ does not affect all other objects inheriting from the same prototype.
 
 As we have seen, JavaScript allows us to write programs in
 object-oriented way.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1644,7 +1641,6 @@ of objects. Objects are a combination of data and behavior.
 
 Methods represent behavior, while attributes, these are properties that
 hold data, are data.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1681,7 +1677,6 @@ method to the Object.prototype.
 
 Now, swordsmen have shooting arrow method and archers have attack with a
 sword method. Is there a better way?
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1695,7 +1690,6 @@ Yes! There is!
 
 With constructor functions we can create groups of objects. Each object
 belonging to a group, has similar contents and behavior.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1710,7 +1704,6 @@ How exactly does a constructor function work?
 First, we invoke it with a new keyword.
 
 New keyword creates a new object.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1737,7 +1730,6 @@ created by Swordsman constructor function inherits this method.
 
 Thus, constructor functions allow us to easily create groups of objects
 with similar behavior and data.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 83 adding properties to a prototype (50) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1770,7 +1762,6 @@ Welcome back to functions! In this lecture, we will take a detailed look
 at working with functions arguments, scopes and variable shadowing, and
 one of the most powerful features of JavaScript - higher-order
 functions.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 85 working with arguments object (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1821,7 +1812,7 @@ invoke it with four arguments. First and second arguments are assigned
 to respective parameters, while the rest are assigned to third
 parameter.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (53) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image088.png" 
   title="ASI - Automatic Semicolon Insertion"
@@ -2020,32 +2011,26 @@ But we have a problem.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We can&apos;t control access to objects properties. Our swordsman&apos;s
-properties are exposed to the outside world.
+<p>We can&apos;t control access to objects properties. Our swordsman&apos;s 
+properties are exposed to the outside world. And that is a problem, because any 
+piece of code can directly change hit points.</p>
 
-And that is a problem, because any piece of code can directly change hit
-points.
-
-Consider this example:
-
+<p>Consider this example:<br>
 Let&apos;s say, we&apos;ve been exposing swordsman&apos;s hit points and directly
 changing it from other parts of our code, subtracting damage from hit
-points directly.
-
+points directly.<br>
 Now, we decide to implement different types of armor with each type
 reducing damage by a certain percentage.
-
 That means, we have to go over all places where we directly interact
-with hit points and take armor into account.
+with hit points and take armor into account.</p>
 
-This problem is solved in languages, such as Java and C++ by declaring
+<p>This problem is solved in languages, such as Java and C++ by declaring
 some attributes as public exposed to the outside and others as private
-that is accessible only by the objects methods.
+that is accessible only by the objects methods.</p>
 
-Unfortunately, JavaScript has no mechanism of declaring certain
+<p>Unfortunately, JavaScript has no mechanism of declaring certain
 attributes as private. Is there any way to solve this problem?
-
-Indeed, there is and we have already seen it.
+Indeed, there is and we have already seen it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2055,11 +2040,11 @@ Indeed, there is and we have already seen it.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Closures allow us to create variables that can only be accessed by an
-enclosing function.
+<p>Closures allow us to create variables that can only be accessed by an
+enclosing function.</p>
 
-We&apos;re going to use closure now to hide swordsman&apos;s damage and attacks
-from the outside.
+<p>We&apos;re going to use closure now to hide swordsman&apos;s damage and attacks
+from the outside.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2069,22 +2054,16 @@ from the outside.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We have turned objects properties damage and attacks into variables in a
-constructor function.
-
-getTotalDamage, being an inner function, has access to these variables.
-
-It keeps access even after constructor invocation has been completed.
-Can we somehow access them as objects properties?
-
+<p>We have turned objects properties damage and attacks into variables in a
+constructor function. <b>getTotalDamage</b>, being an inner function, has access 
+to these variables. It keeps access even after constructor invocation has been 
+completed. Can we somehow access them as objects properties?
 Well, in this example, we try to do exactly that - we try to use
-parameter name dmg and variable name damage, but all in vain.
+parameter name <b>dmg</b> and variable name <b>damage</b>, but all in vain.</p>
 
-Thus, objects methods getTotalDamage has access to damage and attacks
-variables.
-
-But there is no other way to access these values from the outside. They
-are safely hidden.
+<p>Thus, objects methods <b>getTotalDamage</b> has access to <b>damage</b> and 
+<b>attacks</b> variables. But there is no other way to access these values from 
+the outside. They are safely hidden.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2094,16 +2073,13 @@ are safely hidden.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Okay! We know now how to create groups of similar objects and how to
-implement access control. Are we golden now?
+<p>Okay! We know now how to create groups of similar objects and how to
+implement access control. Are we golden now? Unfortunately, we are not!</p>
 
-Unfortunately, we are not!
-
-Prototypes and closures are mutually exclusive in a certain sense,
+<p>Prototypes and closures are mutually exclusive in a certain sense,
 because prototype methods cannot access data hidden within closures.
-
-Thus, we have to choose between access control with closures and code
-reuse with prototype chains.
+Thus, we have to choose between access control with closures and code reuse with 
+prototype chains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2113,27 +2089,19 @@ reuse with prototype chains.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Did I just say prototype chain?
+<p>Did I just say prototype chain? Oh yes, I did! We can create an object via 
+constructor function and make this object a prototype of another object, 
+building a chain of prototypes.</p>
 
-Oh yes, I did! We can create an object via constructor function and make
-this object a prototype of another object, building a chain of
-prototypes.
+<p>In this example, we define a constructor function Lannister. We add battleCry 
+method to the corresponding prototype. Then, we define another constructor function 
+Swordsman and make an object created with the Lannister constructor a corresponding 
+prototype for Swordsmen constructor.</p>
 
-In this example, we define a constructor function Lannister.
-
-We add battleCry method to the corresponding prototype.
-
-Then, we define another constructor function Swordsman and make an
-object created with the Lannister constructor a corresponding prototype
-for Swordsmen constructor.
-
-Finally, we create a Swordsman object with a Swordsmen constructor.
-
-Prototype of Swordsman object is an object created with a Lannister
-constructor, whose Prototype is a Lannister.prototype object.
-
-Thus, Swordsman object inherit methods from Swordsman.prototype and
-Lannister.prototype.
+<p>Finally, we create a Swordsman object with a Swordsmen constructor. Prototype of 
+Swordsman object is an object created with a Lannister constructor, whose 
+Prototype is a Lannister.prototype object. Thus, Swordsman object inherit methods 
+from Swordsman.prototype and Lannister.prototype.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2143,11 +2111,11 @@ Lannister.prototype.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-There is an even simpler way to do it.
+<p>There is an even simpler way to do it.</p>
 
-Object.create method allows us to create objects with custom prototypes
+<p><b>Object.create</b> method allows us to create objects with custom prototypes
 without defining constructors. It takes one object as an argument and
-then returns another object, whose prototype is the first object.
+then returns another object, whose prototype is the first object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2157,14 +2125,14 @@ then returns another object, whose prototype is the first object.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-When we invoke a specific method on an object, JavaScript first looks
-for a method with a given name in the object.
+<p>When we invoke a specific method on an object, JavaScript first looks for a method 
+with a given name in the object.</p>
 
-Then, in the objects prototype, then in the object's prototypes
-prototype etc, etc, all the way up to the Object.prototype, which is
-always located at the very root of prototype hierarchy.
+<p>Then, in the objects prototype, then in the object's prototypes prototype etc, 
+etc, all the way up to the <b>Object.prototype</b>, which is always located at 
+the very root of prototype hierarchy.</p>
 
-The first found method is used.
+<p>The first found method is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2174,18 +2142,16 @@ The first found method is used.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We started this lecture praising constructors and saying that thanks to
-them we can create groups of similar objects.
+<p>We started this lecture praising constructors and saying that thanks to them we 
+can create groups of similar objects. Unfortunately, it&apos;s not all roses.</p>
 
-Unfortunately, it&apos;s not all roses.
-
-Now we will mention dangers of constructors. These dangers stem from the
+<p>Now we will mention dangers of constructors. These dangers stem from the
 fact that constructor functions are still functions. So, it&apos;s easy to
-confuse a constructor function and a regular function.
+confuse a constructor function and a regular function.</p>
 
-Calling a constructor function without a new keyword and conversely
-calling a regular function that explicitly returns an object with a new
-keyword are two common mistakes.
+<p>Calling a constructor function without a new keyword and conversely calling 
+a regular function that explicitly returns an object with a new keyword are two 
+common mistakes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2195,8 +2161,8 @@ keyword are two common mistakes.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-If we call a constructor function without a new keyword, then this
-keyword returns global object and we end up creating global variables.
+<p>If we call a constructor function without a new keyword, then this keyword 
+returns global object and we end up creating global variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2206,8 +2172,8 @@ keyword returns global object and we end up creating global variables.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-If we call a regular function that explicitly returns an object with a
-new keyword, then our function will still return that object.
+<p>If we call a regular function that explicitly returns an object with a
+new keyword, then our function will still return that object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5">2.5 Functions, part 3 (5:03)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3378,8 +3344,6 @@ incoming requests and we do so by listening on the port that we defined earlier.
 
 We also have a function, which is a callback and this function tells us
 that our express server is listening on the port that we defined earlier. 
-
-<img>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158 express.js: index.js (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3404,8 +3368,6 @@ that the request was answered successfully, that there was no problem and that w
 are answering back: ok, we have the data. On the other hand, if there was an
 error, we are sending a status 500, which in HTTP means that there was an error
 and that we are sending back an error object as well. 
-
-<img>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 159 mongodb (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3463,7 +3425,6 @@ always have just one field, which is for that specific object.
 </p>
 The other things, which you see on the bottom, are the same fields that
 we have already seen above, which are the name the surname and the age. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 162 mongoose; mongodb driver (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3484,7 +3445,6 @@ accept objects if they are not of the structure that you have defined them in.
 
 The other thing that mongoose allows you to do is to perform queries.
 So, you can find objects, create objects, update and remove items.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 163 mongoose in our first example application (103) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3499,7 +3459,6 @@ differently than the other ones. This is because we&apos;re not directly using m
 but we are using the mongoose model, created in the relationships model in the
 controller. So, to produce a meaningful response, when an incoming
 request is coming. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 164 mongoose: models/relationships.js (model:define) (103) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3518,7 +3477,6 @@ If you will try to create new objects, which don&apos;t have one of these fields
 it won&apos;t work. Mongoose will complain. The three fields that we are going to 
 need in our objects are source, target and weight. The first two source and 
 target are of type string, while weight is a number-typed object.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 165 mongoose: controllers/relationships.js (model:find items) (104) ~~~~~~~~~~~~~-->
 <p align="center">
@@ -3547,7 +3505,6 @@ Mongoose allows us to do also other things. It allows us to create
 objects, as already set before. So, in this specific case, we are creating a new
 object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weight
 &apos;6&apos;.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (105) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3560,7 +3517,6 @@ object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weig
 <p>If the object was successfully created, we will return an anonymous
 callback function, which will log the created object, as we see below
 here.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 168 mongoose: what else can you do, #3? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3571,7 +3527,6 @@ here.</p>
 </p>
 The next thing that we can do in mongoose is to find and remove
 objects. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 169 mongoose: what else can you do, #4? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3589,7 +3544,6 @@ Here, what we are doing is we are finding one object, which is the
 first object in which the source is &apos;me&apos; and we are removing it.
 If the removal is successful, we will log into console the removed
 object.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 170 mongoose: what else can you do, #5? (107) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3607,7 +3561,6 @@ In this case, the first time it will find an object, which has a source
 we only have one object, which is the one that we created two slides back, 
 instead of having source &apos;me&apos; and target &apos;you&apos;, it would have source &apos;me&apos; 
 and target &apos;Tommen&apos;. The weight will always be the same.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3786,104 +3739,93 @@ visualization in JavaScript.
 
 <h3 id="ch3-8">3.8 Demo 1: Working with an Example Application (14:44)</h3>
 
-Welcome back! In this video lecture, I&apos;m going to demonstrate you the
-code that me and Dennis are using in our previous video lectures.
+<p>Welcome back! In this lecture, I&apos;m going to demonstrate the code that 
+Dennis &amp; I used in our previous lectures.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 178 webstore, api code (113) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 178 webstorm, an ide for api code (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image178.png" 
-  title="WebStore API"
-  alt="WebStore API."
+  title="WebStorm, an IDE for API code"
+  alt="WebStorm, an IDE for API code."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We are going to see in my specific case the API code. Dennis is going 
-to use the complete code in his demonstrations, which come after
-mine. 
+<p>We are going to see in my specific case the API code. Dennis is going 
+to use the complete code in his demonstrations, which come after mine.</p>
 
-So, first of all, what we need to do is actually download the code.
+<p>First of all, we need to do download the code. So, we navigate: we want to open 
+up a browser window and navigate to example dot dallago dot us slash public slash 
+API dot zip and then we press enter and this will download, as you have seen from 
+the animation, the API code onto my computer. So, let&apos;s minimize Mac's Safari again, 
+go into the downloads and here we see API folder. And we just drag this onto the 
+desktop, so that it&apos;s here.</p>
 
-So, we navigate: we want to open up a browser window and navigate to
-example dot dallago dot us slash public slash API dot zip and then we 
-press enter and this will download, as you have seen from the animation, the API
-code onto my computer. So, let&apos;s minimize Safari again, go into the
-downloads and here we see API folder. And we just drag this onto the 
-desktop, so that it&apos;s here.
-
-Good, now we can use our favorite editing tool. In my specific case I&apos;m
+<p>Good, now we can use our favorite editing tool. In my case I&apos;m
 going to use WebStorm. It is an IDE. So, it has some nice features,
-like code highlights, it tells me if, for example, I mistyped the name
-of a variable, that this variable has never been declared before; so, maybe I
-did a mistake in typing the name of it. There are also free tools, for
-example, Brackets.
-
-Or you can also download Atom, which is going to be used by Dennis in
-his videos.
-
+like code highlights, it tells me if, for example, if I mistyped the name
+of a variable or many JavaScript reserved words. There are other free tools, for
+example, Brackets. Or you can also download Atom, which is going to be used by 
+Dennis in his videos.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 179/180  (114) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 179/180 folder of web code and api; webstorm (114) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image179.png" 
-  title=""
-  alt="."
+  title="Folder of website on Mac"
+  alt="Folder of website on MacIntosh."
   style="border: 2px solid #000000; width:40%;" />
 <img src="./images/image180.png" 
-  title=""
-  alt="."
+  title=Folder using WebStorm on Mac"
+  alt="Folder using WebStorm on MacIntosh."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-But, again, I&apos;m going to use WebStorm. So, let&apos;s fire that up.
-
-Good, so, now that webstorm is open, we can start opening up our
-application just by clicking open, navigate into the desktop and
-selecting the folder. Then, we select open again and webstorm will open up our
-application.
+<p>But, again, I&apos;m going to use WebStorm. So, let&apos;s fire that up.<br>
+Good, so, now that WebStorm is open, we can start opening up our application 
+just by clicking open, navigate into the desktop and selecting the folder. Then, 
+we select open again and WebStorm will open up our application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 181  (114) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 181 app directory with .js and .json files (114) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image181.png" 
-  title=""
-  alt="."
+  title="app directory with .js and .json files"
+  alt="app directory with .js and .json files."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-What we see then on the left side is our folder and all of the files
+<p>What we see then on the left side is our folder and all of the files
 that are contained in it. The same thing is reflected if we just open up our
 folder with Finder and these are the same files that we&apos;re going to find in
-WebStorm here. 
-
+WebStorm.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 182  (115) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 182 package.json - scripts section (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image182.png" 
-  title=""
-  alt="."
+  title="package.json - scripts section"
+  alt="package.json - scripts section."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Good, so, the first thing that we want to look at when we
-open up a Node application is the package dot JSON file I talked about. This
+<p>Good, so, the first thing that we want to look at when we
+open up a Node application is the <b>package.JSON</b> file I talked about. This
 also in my video lectures and there are some nice and mention-worthy things to look
-at, like the scripts section, the dependencies and the main. So, the main
-tells us which is the most important script usually and in our application. In this
-specific case it&apos;s index dot js. It is this file. The scripts section tells us how to
-start our application. So, it says we need to have Node installed and we start by
-calling Node and then starting from the index dot js file, which is again this
-one. And then there is the list of dependencies, which are expressed in
-Mongoose.
+at, like the <b>scripts</b> section, the <b>dependencies</b> and the <b>main</b>. 
+The <b>main</b> tells us which is the most important script in our application. In this
+specific case it&apos;s <b>index.js</b>. The scripts section tells us how to
+start our application. It says we need to have Node installed and we start by
+calling Node and then starting from the <b>index.js</b> file. And then there is 
+the list of dependencies, which are expressed in Mongoose.</p>
 
-It&apos;s only two dependencies. it&apos;s a quite easy application and both of
-the dependencies are at the latest version. So, when we see actually that there are
-dependencies, we know that to run our application, we first have to install the
+<p>It&apos;s only two dependencies. It&apos;s an easy application and both of
+the dependencies are at the latest version. So, when we see that there are
+dependencies, we know that to run our application, we must first install the
 dependencies that are specified here and we do that by calling NPM install from a
-terminal window. 
+terminal window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 183  (116) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 183 api folder of website; run cli $npm install (116) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image183.png" 
-  title=""
-  alt="."
+  title="API folder; run cli $npm install"
+  alt="API folder; run cli $npm install."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We can either do that by opening up a terminal window
@@ -3892,11 +3834,11 @@ WebStorm, we can just open up a terminal window from the terminal
 emulator from our computer, navigate to the desktop and then navigate to the API
 folder. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 184  (116) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 184 list of npm install dependencies/co-dependencies (116) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image184.png" 
-  title=""
-  alt="."
+  title="List of npm installed dependencies/co-dependencies"
+  alt="List of npm installed dependencies/co-dependencies."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -3910,39 +3852,37 @@ these accepts, array-flatten and so on and so forth.
 There&apos;s actually a bunch of these, which come with express and mongoose. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 185  (117) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 185 new folder created: node_modules (117) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image185.png" 
   title=""
-  alt="."
+  alt="New folder; node_modules created by npm install."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-And now if we navigate back
-to our application here, what we see is that there is a new folder, which
-is called node modules and this will collect all of the different
+<p>And now if we navigate back to our application here, what we see is that there 
+is a new folder, called node_modules which will collect all of the different
 dependencies that we just installed. Good, so, next thing we want to do
-is actually to look at index.js. 
-
+is look at index.js.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 186  (117) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 186 index.js; two requirements; express and database  (117) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image186.png" 
-  title=""
-  alt="."
+  title="index.js with 2 requirements; express and database"
+  alt="index.js with 2 requirements; express and database."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 Let&apos;s open up that file and what we see is that in the very first two 
 lines we have two requirements: the first requirement is express. It&apos;s 
-a dependency we have just seen it in a package dot JSON and we have just 
+a dependency we have just seen it in a <b>package.JSON</b> and we have just 
 installed it with NPM install. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 187  (118) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187 require database.js (118) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image187.png" 
-  title=""
-  alt="."
+  title="Require database.js"
+  alt="Require database.js."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -3954,7 +3894,6 @@ that name, and we only have one file, which is called database, and the file is
 either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
 the case we only have one file it&apos;s called a database and it is of the
 extension dot JavaScript. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 188  (118) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3964,25 +3903,23 @@ extension dot JavaScript.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We don&apos;t really need to specify the dot and js here. It
-is good practice to actually see what this database file does. 
+<p>We don&apos;t really need to specify the dot and js here. It is good practice 
+to actually see what this database file does.</p>
 
-
-Let&apos;s go ahead and open up the database dot js file. Again, here, at the very beginning we
-have two requirements: the second one is just a dependency again, as we have seen
-it before. It is defined in the package dot JSON and the first one is again
+<p>Let&apos;s open the <b>database.js</b> file. Again, here, at the very beginning 
+we have two requirements: the second one is just a dependency again, as we have 
+seen it before. It is defined in the <b>package.JSON</b> and the first one is again 
 a file and we see this again from the dot slash here and it is the config file,
-but this time a config file is config dot JSON and, as I just explained a
-few seconds ago, Node is able to automatically guess the extension if there is only one
+but this time a config file is <b>config.JSON</b> and, as I just explained a few
+seconds ago, Node is able to automatically guess the extension if there is only one
 file with that name and if that file has either the extension dot JavaScript or
-dot JSON.
+dot JSON.</p>
 
-In our case we only have one file. It&apos;s dot JSON. So, we don&apos;t need to specify 
-here dot JSON, but if we wanted to, we could. Again, it is good practice to see 
-what actually this file contains. 
-
+<p>In our case we only have one file. It&apos;s dot JSON. So, we don&apos;t need 
+to specify here dot JSON, but if we wanted to, we could. Again, it is good practice 
+to see what actually this file contains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 189  (119) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 189 config.json (119) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image189.png" 
   title=""
@@ -3994,32 +3931,30 @@ Let&apos;s open config.JSON. In the config.JSON we have only one object. We
 might have an array of objects if, for example, we started our file like
 this. This would then be a JavaScript JSON file with an array of objects. 
 
-In this case, only one object inside the array. But, again, the file as it is is only
-one object, it has one key, which is the database and this key has value
+In this case, only one object inside the array. But, again, the file as it is 
+is only one object, it has one key, which is the database and this key has value
 associated to it, which is again an object and has a few keys associated
 to that object. So, when we require the config file here, what we actually
-require is the object that we just saw there and we can go ahead and look at
-our database connection string here. 
-
+require is the object that we just saw there and we can look at our database 
+connection string here. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 190  (120) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 190 config.json database parameters = config.database (120) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image190.png" 
-  title=""
-  alt="."
+  title="config.JSON database parameters = config.database file"
+  alt="config.JSON database parameters = config.database file."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 And, what we do here is assigning to this database parameters: the 
 config.database key. We are assigning to this value this constant value - the 
 database object here, so all of the values that we see in this object. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 191  (120) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 191 config.json - create database connection (120) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image191.png" 
   title=""
-  alt="."
+  alt="config.json - create database connection."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We then want to construct a database connection string through these lines of code here 
@@ -4035,18 +3970,17 @@ this line of code what we expect this variable to hold is this specific
 string or well not too specific but something similar to this where we have
 user name password, the host name, the port and the collection that we want to
 use.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 192  (121) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 192  config.json - module.exports callback function (121) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image192.png" 
-  title=""
-  alt="."
+  title="config.json - module.exports callback function"
+  alt="config.json - module.exports callback function."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-The next important bit we are going to look at is the module dot
-exports. This is an API of Node and it basically tells us that when this file is being
-required by another file, so for example it&apos;s being required in index dot js, what
+The next important bit we are going to look at is the module.exports. This is 
+an API of Node and it basically tells us that when this file is being required 
+by another file, so for example it&apos;s being required in index.js, what
 is actually being required is what comes after this equal sign and what we
 are requiring in this case is a function that accepts a callback and that
 executes some code when the function is being called.
@@ -4057,11 +3991,11 @@ connected to this connection and then we assign the database object to a variabl
 which is called db. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 193  (122) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (122) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image193.png" 
-  title=""
-  alt="."
+  title="Four events associated with connecting to mongoose database"
+  alt="Four events associated with connecting to mongoose database."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4098,27 +4032,26 @@ database. This ensures that when we execute this callback function, we are only
 executing it when we are sure that the database connection is up. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 194  (123) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 194 config.json - database function to connect and start appl'n (123) ~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image194.png" 
-  title=""
-  alt="."
+  title="config.json - database function - connect and start application"
+  alt="config.json - database function - connect and start application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let&apos;s go back to our index dot js and let&apos;s see what happens after we require 
+Let&apos;s go back to our index.js and let&apos;s see what happens after we require 
 the database.js file. We are only going to look at the database connection here 
-for a moment and in the next video I am going to talk to you about the rest of 
+for a moment and in the next lesson I am going to talk to you about the rest of 
 this code, how the router calls controllers and what the models stands for, but 
-for this video we are only going to see that we connect to the database and that 
+for this leson we are only going to see that we connect to the database and that 
 we start our application.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 195  (123) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 195 only execute application if database connection is valid (123) ~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image195.png" 
-  title=""
-  alt="."
+  title="Only execute application if database connection is running and valid"
+  alt="Only execute application if database connection is running and valid."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4131,38 +4064,35 @@ here, are only going to be executed when the database connection is up and runni
 when the connection is open. So, we are assuring that our application is
 going to listen to incoming requests only when the database connection is open.
 This is very important. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 196  (124) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 196 if database connection is open, start application (124) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image196.png" 
-  title=""
-  alt="."
+  title="If database connection is open, start application"
+  alt="If database connection is open, start application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Again, because, obviously, we only want to answer to requests once the connection to the database
 is open, because otherwise we have no access to the data and this is exactly what
 this ensures us. Now we can go ahead and start the application. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 197  (125) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 197 $npm start using index.js, connecting to mongoose (125) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image197.png" 
-  title=""
-  alt="."
+  title="$npm start using index.js, connecting to mongoose"
+  alt="$npm start using index.js, connecting to mongoose."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 We can do that either by opening up a terminal window here or for the NPM tab here and
 click on start or from the terminal, just run NPM start, and what we&apos;ll see is
-that it will tell us we are going into node index dot js, because that&apos;s what we
-have specified in the package dot JSON to be the start of our application.
+that it will tell us we are going into node index.js, because that&apos;s what we
+have specified in the package.JSON to be the start of our application.
 
 Then, it will log to console that Mongoose has connected, which is the event
 connected that we see here - mongoose connected. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 198/199  (12x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 198/199 verify listening on port 3000 & appl'n is running (126) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image198.png" 
   title=""
@@ -4179,50 +4109,46 @@ this callback function and our Express server is now listening in our specific
 port and it is running and our application is running and we should be able to 
 open up this website and see some content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 200  (12x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 200 relationship entries for database (126) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image200.png" 
-  title=""
-  alt="."
+  title="Relationship entries for mongoose database"
+  alt="Relationship entries for mongoose database."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 What we will actually do is we will open up this website. So, I copy it, I open 
 up Safari, I paste it in here and what we see is we have all of our JSON objects
 representing our relationships here, which is exactly what we expected
-from calling that specific route. So, thank you! In the next video I&apos;m going
+from calling that specific route. So, thank you! In the next lesson I&apos;m going
 to talk about the router, the controllers, the models and the flow of our
 application.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-9">3.9 Demo 2: Running an Example Application (22:56)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our demonstration about how our demo applications
-actually work!
-
+<p>Welcome back to our demonstration about how our demo applications actually work!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 201  (127) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~ 201 validate port listening, database connection and application running (127) ~~~~~~-->
 <p align="center">
   <img src="./images/image201.png" 
   title=""
-  alt="."
+  alt="Validate port listening, database connection, and application running."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-In the previous video, I have explained briefly what the database file looks 
+<p>In the previous lesson, I explained briefly what the database file looks 
 like and how it works, and what this function down here actually executes, and 
-that it only executes once we are really connected to the database and we are able to
-query the database. And in this video, we&apos;re going to see what the router is,
+that it only executes once we are connected to the database and we are able to
+query the database. And in this lesson, we&apos;re going to see what the router is,
 what the controller is and what the models are. And we are going to implement a 
-new route into our application. 
-
+new route into our application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 202  (127) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 202 $npm start - starts application (127) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image202.png" 
-  title=""
-  alt="."
+  title="$npm start - starts application"
+  alt="$npm start - starts application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-First of all, let&apos;s again go and start the application. We can do this again, as
+First of all, let&apos;s go and start the application. We can do this again, as
 I showed it in a previous video, through the terminal emulator from our
 computer or you can do it from the terminal here. My preferred way is actually to
 just click on the NPM tab and then press on the start script and you will see
@@ -4236,13 +4162,13 @@ application is running and this are the relationships that I get back from our
 application. 
 
 So, back here and our application is running. This code is loaded into a
-process and let&apos;s actually see what these lines of code now do. So, we
+process and let&apos;s see what these lines of code now do. So, we
 have seen that at the very beginning, we are requiring some files and
 some components of our app and next line of code, that we want to look at, is
 this one.
 
 We define our application, so our app to be an express application and
-later we set some some variables and we add some components to it.
+later we set some variables and we add some components to it.
 One of the variables that we want to assign is the port number on which
 our application is going to be listening and we have seen, I&apos;m going to
 switch back to Safari right now, that we are listening on port 3000 here. So, this is
