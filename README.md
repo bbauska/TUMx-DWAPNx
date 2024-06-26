@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/25/2024 7+pm"
+date last editted: "6/26/2024 4+am"
 output: 
   markdown:
     with some style
@@ -4156,14 +4156,27 @@ terminal.
 I did this in my previous lesson just to show that it actually is
 working. I&apos;m copying this link over here. Let me just hide these sections, open
 Safari, paste, enter and this is exactly what we want to see. 
-
-<image>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 203 data for mongoose database (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image203.png" 
+  title="Data dump for mongoose database"
+  alt="Data dump for mongoose database."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Our application is running and this are the relationships that I get back from 
 our application. Back here and our application is running. This code is loaded 
 into a process and let&apos;s see what these lines of code now do. We have seen 
 that at the very beginning, we are requiring some files and some components of 
 our app and next line of code, that we want to look at, is this one.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204  (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image204.png" 
+  title=""
+  alt="Express application, ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We define our application, so our app to be an express application and later we 
 set some variables and we add some components to it. One of the variables that 
 we want to assign is the port number on which our application is going to be 
@@ -4180,7 +4193,14 @@ our code on our production servers, for example. It&apos;s always good practice 
 have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
 default values. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205  (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image205.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 And next thing that we&apos;re going to talk about is the router and
 we see that here we create a router and we create router by requiring a file. 
 I have already explained earlier that we can omit the extension here. When we 
@@ -4188,7 +4208,14 @@ are requiring this file, we&apos;re actually requiring the file that is called
 router.js, because we see it here, it&apos;s router.js. And since it&apos;s 
 good practice, let&apos;s go ahead and look what is actually contained in our 
 files.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image206.png" 
+  title=""
+  alt="router.js."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We fire up router.js and we see, this file is very short, it starts
 with two requirements, well sorry, just one requirement and one assignment. We
 require express again here on top and then we define our router, which
@@ -4202,22 +4229,38 @@ the relationships controller and this file is actually located somewhere,
 not right at the root of our application. It&apos;s located in the folder app, 
 that we see here on top, so let&apos;s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image207.png" 
+  title=""
+  alt="router.js."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let&apos;s double click on that and open it up and what we see here is again, first
 of all, that we are requiring something else. It&apos;s again the file and now the
 two dots tell us that we have to look one folder before the folder we are in. So,
 we are in controllers and we need to look at app and then we want to look at
-models. So, we open up the models and then there should be a file, which is
+models. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208  (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image208.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+We open up the models and then there should be a file, which is
 called relationships. And, in fact, there is and we&apos;re going to open up
 that. And now here, we actually see an entire code - that there is no
 requirement of other files within our file tree. 
 
-We can start reading this file and from
-here work backwards and see how a router and power application works. So,
-let&apos;s get started on that and the first line again - we require mongoose and
-that&apos;s because we want to create a model, which is the relationships model, that is a
-mongoose model, and we call this model relationships. And it has some fields
-that we want to specify that our model has to adhere to. 
+We can start reading this file and from here work backwards and see how a router 
+and power application works. Let&apos;s get started on that and the first line 
+again - we require mongoose and that&apos;s because we want to create a model, 
+which is the relationships model, that is a mongoose model, and we call this 
+model relationships. And it has some fields that we want to specify that our 
+model has to adhere to.
 
 Specifically, we want our objects inside the relationships database to have a 
 source, to have a target and to have a weight. The source is of type string, 
@@ -4227,12 +4270,21 @@ might mean - now we can store integer numbers or double or float numbers.
 All of the three fields are required. So, we cannot insert elements into our 
 database, which do not adhere to the standard, to say so. All of the objects 
 need to have a field, which is source of that string, a field which is target 
-of type string and a weight of type number. The last line is the module exports. 
-This we have seen before. This is what happens when we actually
-require this specific file. And what we&apos;re exporting here is exactly the model.
+of type string and a weight of type number. 
 
-The model that we defined over here is what we are exporting down here. And 
-when we go back to our controllers, we see that we are requiring it here and we 
+The last line is the module exports. This we have seen before. This is what 
+happens when we actually require this specific file. And what we&apos;re 
+exporting here is exactly the model. The model that we defined over here 
+is what we are exporting down here.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 209  (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image209.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+And when we go back to our controllers, we see that we are requiring it here and we 
 are actually requiring the relationships model. Inside the relationships controller, 
 what we are exporting is an object and this object has an attribute, which is called 
 relationships and this attribute actually executes a function, which accepts two 
@@ -4240,13 +4292,12 @@ parameters. The first one being the request and the second one being the respons
 These are two parameters, which are passed by let&apos;s say to confirm to the 
 express way of dealing with requests. 
 
-When you have an incoming request, there
-are some attributes, which you can read off. For example, where does the request
-come from, from which IP address, who is the user.
-If the user is using Safari, is the user using Chrome, is the user using Firefox 
-or something like that. And then the next one is response and this is actually 
-what we are going to answer back to the user that performed the request. So, 
-let&apos;s go into this function and what we do here is we have a relationships 
+When you have an incoming request, there are some attributes, which you can read 
+off. For example, where does the request come from, from which IP address, who 
+is the user. If the user is using Safari, is the user using Chrome, is the user 
+using Firefox or something like that. And then the next one is response and this 
+is actually what we are going to answer back to the user that performed the request. 
+Let&apos;s go into this function and what we do here is we have a relationships 
 model, that is the one defined over here, the one required from this file and 
 what we do is we want to perform a find. 
 
@@ -4267,8 +4318,15 @@ On the other hand, if there was an error, so, if there is an error, what I want
 to return is a response with the status of 500, which again in HTTP means there 
 has been an error on the server side and I want to send my error back to the user, 
 so that the user knows of what kind of problem might have happened. 
-
-Now, we have seen what calling this relationships function actually does. It 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 210  (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image210.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+We have seen what calling this relationships function actually does. It 
 will answer to a certain request with a response that is either an error or a
 successful response, and it will return the results of finding all of
 the objects in our relationships model. 
@@ -4279,13 +4337,14 @@ requests that we want to be
 available from a router. So, for example, here, we specify that if an incoming
 request is a get request and it matches this URL, then we perform the function 
 from the relationships controller, which is called relationships, which is the 
-function that we have just seen one second ago. 
+function that we have just seen one second ago. We can also change the get to, 
+for example, post. 
 
-We can also change the get to, for example, post. And this would then be a post
-request or or a put request, or a delete request. And this obviously depends on
-what you actually want to do. But, in our specific case, what we want is we want
-to get data. We want to specify a get request and the difference
-between get, put, post and delete requests I have explained in my lectures. 
+And this would then be a post request or or a put request, or a delete request. 
+And this obviously depends on what you actually want to do. But, in our specific 
+case, what we want is we want to get data. We want to specify a get request and 
+the difference between get, put, post and delete requests I have explained in my lectures.
+ 
 What we see here now is that if we navigate to these API relationships, as I
 said before, we&apos;re executing this function and you might have noticed that
 at the end here, we&apos;re actually not calling the function. We&apos;re not
@@ -4293,17 +4352,16 @@ specifying one specific call of the function but we&apos;re just specifying let&
 so say the blueprint of the function. We&apos;re specifying what needs to be called if
 a user is trying to open up this route and this is because when this code gets 
 executed for the first time, if we had something like this here, we would actually 
-execute the function at on that moment. 
+execute the function at on that moment. Say, today I start my server. 
 
-Say, today I start my server. This code gets executed after I start my server. It performs
-this request and this will be stored, let&apos;s say her,e and then every time
-someone calls this call, the same object will always be returned. So, the same
-array of relationships will always be returned. But obviously, in our
-database the data might change over time. What we want to say is every time a
-user is calling this request, I don&apos;t want my application to just return the
-result of the first time I execute the code and I execute this function, but I
-want to execute a function on the spot at the moment for that user
-and I want to answer to that user exactly the data that we get back
+This code gets executed after I start my server. It performs this request and this 
+will be stored, let&apos;s say her,e and then every time someone calls this call, 
+the same object will always be returned. So, the same array of relationships will 
+always be returned. But obviously, in our database the data might change over time. 
+What we want to say is every time a user is calling this request, I don&apos;t want 
+my application to just return the result of the first time I execute the code and I 
+execute this function, but I want to execute a function on the spot at the moment 
+for that user and I want to answer to that user exactly the data that we get back
 from the database at that specific point in time. 
 
 The last thing that we see here is that we are exporting again because this is
@@ -4311,57 +4369,119 @@ necessary for the other files requiring this file to know what would we actually
 want to achieve by requiring this file. And what I&apos;m exporting here is
 exactly the router object, which is the one that we have defined over here and
 to which we have assigned a route. I get requests over here. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 211  (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image211.png" 
+  title=""
+  alt="index.js ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, we can go back into the index.json or we actually require the router and we 
 assign it to this variable here. And we can say that our router is listening on 
-the route here and we are using the route of our application. And if an incoming
-request gets on the route and it matches one of the routers specified, incoming
-requests, for example, /api/relationships, as we have seen here, then you have 
-to answer oh sorry you have to answer with this call of this function, which is 
-but basically we are telling the application here.
-
+the route here and we are using the route of our application.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 212  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image212.png" 
+  title=""
+  alt="index.js ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+And if an incoming request gets on the route and it matches one of the routers 
+specified, incoming requests, for example, /api/relationships, as we have seen 
+here, then you have to answer oh sorry you have to answer with this call of this 
+function, which is but basically we are telling the application here.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 213  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image213.png" 
+  title=""
+  alt="index.js ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The last part of the code in our index.js is what we have already
 mentioned in the previous lesson. Basically, what we do here is we actually start
 listening. This is the most important part, this is really where we say now we have
 loaded all of our controllers, we have loaded all of our roots, we have
 executed all of our logic that we need to bootstrap our application and now we actually
 want to start listening to incoming requests. And the way we do that is,
-basically, we say: we start listening on a port that has been specified before. So,
-app.get(&apos;port&apos;) will get this variable, which we have set here and then once the server
+basically, we say: we start listening on a port that has been specified before. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 214  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image214.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+So, app.get(&apos;port&apos;) will get this variable, which we have set here and then once the server
 is actually listening, we execute a callback function and we print on the
 log that the express server is listening on the port that we have specified and
 the application is running, and we should be able to connect to localhost +
 port number + /api/relationships and we should be able to get back the data that
-we see here. 
+we see here. This is exactly the flow of our application what we
+have just seen. 
 
-This is exactly the flow of our application what we
-have just seen. But, now, what we want to do is we want to specify that we
-want to have a request where we are getting data, but we&apos;re only getting the
-relationships for the source, that is, for example, Aemon.
+But, now, what we want to do is we want to specify that we want to have a request 
+where we are getting data, but we&apos;re only getting the relationships for the 
+source, that is, for example, Aemon. How do we do that? 
 
-How do we do that? We go back to our webstore and we start
-implementing a new route. We know that the routes are defined into the router. We
-don&apos;t have to modify index, but we have to modify a router first and a router
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 215  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image215.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+We go back to our webstore and we start
+implementing a new route. We know that the routes are defined into the router. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 216  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image216.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+We don&apos;t have to modify index, but we have to modify a router first and a router
 specified exactly here. We can come up with any name that we want. I&apos;m going
 to delete the semicolon at the end of this line. I&apos;m going to copy paste this
-line one line below. 
-
-It&apos;s not the gap request, because we&apos;re getting data and we
+line one line below. It&apos;s not the gap request, because we&apos;re getting data and we
 want to get the relationships for the character Aemon and we obviously change the
-type of the function that we&apos;re going to call. 
-
-We want the relationships
+type of the function that we&apos;re going to call. We want the relationships
 only for Aemon and we also have to add the semicolon here, because I deleted it
-from here before. What you can actually immediately notice is that the color
+from here before. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image217.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+What you can actually immediately notice is that the color
 of these two blueprints of the function is different and this is because webstorm
 automatically knows that in the file controllers/relationships there is
 no key that has the name relationships Aemon and defined. If I hover
 over it, it actually tells me there is an unresolved variable relationship Aemon. It
 doesn&apos;t happen here, because this is obviously defined. So, what we have to do
 now is actually to define this function over in the controller. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image218.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-What we do
-is, I am copy pasting the name of this function, just out of simplicity, I
+What we do is, I am copy pasting the name of this function, just out of simplicity, I
 am navigate to controllers/relationships, I append at the end here a comma,
 then I specify the new function that I want to implement, a colon and I,
 basically, can copy what is written above here. I say function, then I
@@ -4369,38 +4489,43 @@ put request and response and automatically webstorm has already put the
 parentheses for me. Just to be consistent with the way I have written them over
 here, I will delete some of the spaces and then what we want to do here is we want to
 find in our relationships model only those objects, which have as a
-source Aemon. 
-
-So, we can copy what is over here, because this is
-actually good code and there is no reason why not to reuse it. So, we can just copy
+source Aemon. We can copy what is over here, because this is
+actually good code and there is no reason why not to reuse it. We can just copy
 what we have over there and if we look at the documentation of mongoose, we
 will see that in the find function of a model, we can specify as the first
-parameter an object. So, let&apos;s put an object in and then we put a comma, and we
+parameter an object. 
+
+Let&apos;s put an object in and then we put a comma, and we
 leave the callback as it is. And in this object, I&apos;m going to now return just to
 have more space here, in this object we can specify what filters to apply on
-our data before we get it out. 
+our data before we get it out. The filters we want to apply, as we said
+before, are that the source must equal Aemon. 
 
-The filters we want to apply, as we said
-before, are that the source must equal Aemon. So, this is all we
-have to do now to be sure that when we perform the find operation on our
+This is all we have to do now to be sure that when we perform the find operation on our
 relationships model, we only filter out those elements of which the
 source is Aemon. The rest, as I said before, the callback is actually working
 pretty well, because we will have a very similar result of what we have above
 here. If we have an error, then we just return there was some kind
-of an error. So, this is the error. And if there was no error, we will
+of an error. This is the error. And if there was no error, we will
 have some results, which are most likely and hopefully going to be those elements
 in which the source is Aemon and we will return this element to the
 user.
 
-So, now, I am saving this and as you have noticed, there is no
-need for me to change the model, because the model is the same.
+Now, I am saving this and as you have noticed, there is no need for me to change 
+the model, because the model is the same. There&apos;s no difference there, the 
+only thing again that I&apos;m changing here is just I&apos;m filtering out the 
+relationships, such that what I get is that the source of our relationships is 
+Aemon. Now I have saved this file, there is no modification here, so there&apos;s 
+no need to save anything here.
 
-There&apos;s no difference there, the only thing again that I&apos;m changing
-here is just I&apos;m filtering out the relationships, such that what I get is that
-the source of our relationships is Aemon. Now I have saved this file, I have saved
-this file, there is no modification here, so there&apos;s no need to save
-anything here.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 219  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image219.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If I go back to my run tab here, I can restart the process and this is
 needed, because, as I just mentioned, we have modified files here and when we
 start the process here, what actually happens inside your PC or inside your
@@ -4408,39 +4533,62 @@ Mac or Linux machine is that the files that you have here, they are being
 collected inside the process and the process contains a copy of the files. So,
 since the copy is outdated, I need to restart my server and I can do that by
 pressing this button. If I was using the terminal, you would have to press
-control+C and then you can just type in NPM start again. 
+control+C and then you can just type in $NPM start again. 
 
-So, just for the sake here, I
-press run again and the output is going to be the same, because I&apos;m not
-logging anything new. But when I go to Safari now and I
+Just for the sake here, I press run again and the output is going to be the same, 
+because I&apos;m not logging anything new. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 220  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image220.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+But when I go to Safari now and I
 have my API relationships root, if I now append Aemon, as you see here,
 what I will get is a new array. So, this is the array of objects with only two
 objects and the two objects that I get are with the source Aemon. These are the 
 only two objects that I have in my database, which have this source. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 221  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image221.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We were successful in implementing this route and we can
 also confirm that by going back, looking at our complete relationships root
 with all of our relationships data and you will see that at the very top there&apos;s
 only two objects, which are of a source Aemon and they are exactly the
 same ones that we get if we navigate back to this root. So, yes, this is exactly what I
-wanted to show you. You have seen that it&apos;s actually really really easy to
+wanted to show you. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image222.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+You have seen that it&apos;s actually really really easy to
 implement a new root. Probably, you want to do this in a more systematic and a
-more a reusable way. So, instead of defining really specific names for
+more a reusable way. Instead of defining really specific names for
 characters, since we&apos;re dealing with a database and names might change, you can
-define a variable here. So, basically I can say column name, source name, is even
-better. Source name. 
+define a variable here. Basically I can say column name, source name, is even
+better. Source name. And this way I can use this variable later inside my 
+relationships controller to just filter out those sources, sorry, those objects
+of which the source is the name that I specify here. 
 
-And this way I can use this variable later inside my relationships
-controller to just filter out those sources, sorry, those objects
-of which the source is the name that I specify here. So, for example, I
-might write ABC here and then what this value will hold is ABC. So, somewhere
-in the roots over here, sorry, in the controllers over here, I can instead
-of hard-coding in the name, I can use something like - sourcename. There is
-more to that, it&apos;s actually not that easy. 
+For example, I might write ABC here and then what this value will hold is ABC. 
+Somewhere in the roots over here, sorry, in the controllers over here, I can 
+instead of hard-coding in the name, I can use something like - sourcename. There 
+is more to that, it&apos;s actually not that easy. You have to define a couple 
+of things here and there, but it this is just to give an idea of how to make 
+this code more reusable. That's it.
 
-You have to define a couple of things here and there, but it this is just to 
-give an idea of how to make this code more reusable. This is all. Dennis is 
-going to talk to you about the visual part of our application. In his example 
+Dennis is going to talk to you about the visual part of our application. In his example 
 application, there will be also views defined inside of the code, which I am 
 missing in this code, simply because out of simplicity. This is just an API. 
 
@@ -4456,16 +4604,29 @@ That is a good test for you to try out and have fun.
 <h3>Module 4 - Introduction</h3>
 
 Welcome to the data visualization module. Data visualization is an
-important
+important aspect of data analysis. Creating images, diagrams and animations help
+us in the process of analysis and data communication. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 223  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image223.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-aspect of data analysis. Creating images, diagrams and animations help
-us in the
-process of analysis and data communication. In this example, we can see
-that by simply visualizing a large number of data points into a graph,
-we can start recognizing patterns and trends in our data. Over the past
-couple of decades, more and more data is communicated online and so JavaScript
-is playing a unique role in enabling data visualization. 
-
+In this example, we can see that by simply visualizing a large number of data 
+points into a graph, we can start recognizing patterns and trends in our data. 
+Over the past couple of decades, more and more data is communicated online and 
+so JavaScript is playing a unique role in enabling data visualization. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image224.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 In this module, Dennis will survey the current techniques we use to visualize 
 data on the web. Dennis will then show how we can use the powerful JavaScript 
 library D3 to tell the story of our data in a web browser. Dennis Schwartz is a 
@@ -4478,6 +4639,14 @@ Welcome everyone to this part of our course!
 
 This part will deal with data visualization and we&apos;ll start off with
 data retrieval using HTTP requests.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 225  (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image225.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let&apos;s take a look at what we plan to do. At this part we&apos;re going 
 to create a simple web site and retrieve data from the Node.js application that 
@@ -4486,88 +4655,116 @@ you built in previous lectures.
 That means, we are moving away from the back-end now and towards the front-end. 
 We&apos;ll use data from a dataset called the Network of Thrones dataset and 
 that contains a number of character interactions from the novel of &quot;Storm 
-of Swords&quot;.
-
-That is the third book in The Game of Thrones series.
-You might have heard of it. We will then use this data that we retrieved from the API and create a
-nice graph visualization of the interactions of these characters.
-
+of Swords&quot;. That is the third book in The Game of Thrones series.
+You might have heard of it. We will then use this data that we retrieved from 
+the API and create a nice graph visualization of the interactions of these 
+characters.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 226  (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image226.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We will use the <b>Pug</b> templating engine that you have been presented
 in the last part of this course to create the site and then use the D3.js library for the
 visualization itself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 227  (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image227.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let&apos;s take another look at the architecture of this application.
-
-The back-end is the Node.js application that you were presented
-previously and at this point, we&apos;re going to look at the front-end, which is going to be the
-website.
-
+The back-end is the Node.js application that you were presented previously 
+and at this point, we&apos;re going to look at the front-end, which is going to 
+be the website.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 228  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image228.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 This website will also contain JavaScript and JavaScript will be used to
-query our
-API for the relationships of these characters, which we&apos;ll then return
-them as JSON data.
-
-And once we have it, we&apos;ll try to visualize it nicely.
-
+query our API for the relationships of these characters, which we&apos;ll then return
+them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 229  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image229.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into an HTML file that will be displayed in a web browser.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 230  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image230.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Then, with the help of JavaScript, we will create the backend server and
 get the data from there.
 
-So, let&apos;s take a look at the code you were provided before. In the
-views folder of the app,
-you can find four files.
-
-You can think of these <b>pug</b> files as building blocks for the web
-site.
-
-These templates will be put together and then compiled into HTML.
+Let&apos;s take a look at the code you were provided before. In the views folder 
+of the app, you can find four files. You can think of these <b>pug</b> files as 
+building blocks for the web site. These templates will be put together and then 
+compiled into HTML.
 
 For example, the navigation file contains the navigation bar, obviously,
 which can then be referenced in other parts, for example, in the base file. 
-We don&apos;t have to include the code for navigation in every site.
-
-The <b>visualization.pug</b> file is where the content for our visualization 
+We don&apos;t have to include the code for navigation in every site. The 
+<b>visualization.pug</b> file is where the content for our visualization 
 page will be hosted and we&apos;ll try to have a look at that in a second.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 231  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image231.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-So here it is.
-It looks quite complicated on the first glance, but, basically, what it has 
-are three major parts:
-
-It has a block for meta data, as in the head of the HTML file and it has a block for the content.
-
-And right on top, it also says extends base.
-
-This means, it will adhere to the basic structure that is defined in the
-<b>base.pug</b> file and then only check the content in the relevant areas.
-
-We have in the styles block linked a style.css file.
-
+So here it is. It looks quite complicated on the first glance, but, basically, 
+what it has are three major parts: It has a block for meta data, as in the head 
+of the HTML file and it has a block for the content. And right on top, it also 
+says extends base. This means, it will adhere to the basic structure that is 
+defined in the <b>base.pug</b> file and then only check the content in the 
+relevant areas. We have in the styles block linked a style.css file.
 We&apos;ll talk about that later.
 
 Right on the button, there are two JavaScript files.
-
 For one, we used the D3 library. So, we have that one linked and then we
-have another JavaScript
-file linked that will host the code for data retrieval and
+have another JavaScript file linked that will host the code for data retrieval and
 visualization.
 
-But let&apos;s take a closer look at the content itself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 231  (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image231.png" 
+  title=""
+  alt=" ."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-There are three parts here.
-
-The title itself will be provided by the API or at the router of our
+But let&apos;s take a closer look at the content itself. There are three parts 
+here. The title itself will be provided by the API or at the router of our
 application.
 
 We have a button. This button when clicked calls on the JavaScript file
 and will call the loadData function. Within this function, we will define code that will
 create direct request to our API, receive the data and then create the visualization.
-And, finally, we have one more div with the ID root.
-
-This is where we&apos;ll inject the visualization using JavaScript and D3.
-
-So, this is what the page looks like.
+And, finally, we have one more div with the ID root. This is where we&apos;ll 
+inject the visualization using JavaScript and D3. So, this is what the page looks like.
 
 Again, it has the navigation bar on top, it has a title.
 
@@ -6109,5 +6306,6 @@ Burkhard Rost, bye bye.
 <!-- date first editted 6/22/2024 Sat 5+pm -->
 <!-- date last editted 6/24/2024 Mon 12+pm -->
 <!-- date last editted 6/25/2024 Tue 7+pm -->
+<!-- date last editted 6/26/2024 Wed 4+am -->
 
 ...The end...
