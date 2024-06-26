@@ -21,53 +21,87 @@ output:
   alt="TUM logo." />
 </p>
 
-1.  **Introduction -- Language Basics**
+## [**Module 1: Introduction -- Language Basics **](#ch1)
+>### 1.0 [**JavaScript Overview (7:41)**](#ch1-0)
+>### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
+>### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
+>### 1.3 [**Data Types (6:58)**](#ch1-3)
+>### 1.4 [**Scoping &amp; Hoisting (3:41)**](#ch1-4)
+>### 1.5 [**Loops (3:16)**](#ch1-5)
+>### 1.6 [**Conditional Statements (3:09)**](#ch1-6)
+>### 1.7 [**Summary (Module 1) (1:08)**](#ch1-7)
 
-2.  **Functions and Objects**
+## [**Module 2: Functions and Objects**](#ch2)
+>### 2.0 [**Intro: Functions and Objects (1:14) **](#ch2-0)
+>### 2.1 [**Functions, part 1 (3:06) **](#ch2-1)
+>### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
+>### 2.3 [**Functions, part 2 (5:19) **](#ch2-3)
+>### 2.4 [**Objects, part 2 (mm:ss)**](#ch2-4)
+>### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
+>### 2.6 [**Summary (Module 2) (mm:ss)**](#ch2-6)
 
-3.  **Server-side JavaScript**
+## [**Module 3: Server-side JavaScript**](#ch3)
+>### 3.0 [**Server-side JavaScript (1:31)**](#ch3-0)
+>### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
+>### 3.2 [** Node.js and NPM (9:28)**](#ch3-2)
+>### 3.3 [** What is needed for a web app? (5:07)**](#ch3-3)
+>### 3.4 [** Our example application (7:32)**](#ch3-4)
+>### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
+>### 3.6 [**Views (5:54)**](#ch3-6)
+>### 3.7 [**Summary (Module 3) (m:s)**](#ch3-7)
+>### 3.8 [**Demo 1: Working with an Example Application (14:44)**](#ch3-8)
+>### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
 
-4.  **API calls and data visualization**
+## [**Module 4: API calls and data visualization**](#ch4)
+>### 4.0 [** (mm:ss)**](#ch4-0)
+>### 4.1 [** (mm:ss)**](#ch4-1)
+>### 4.2 [** (mm:ss)**](#ch4-2)
 
-5.  **Conclusion -- Putting it all together**
+## [**Module 5: Conclusion -- Putting it all together**](#ch5)
+>### 5.0 [** (mm:ss)**](#ch5-0)
+>### 5.1 [** (mm:ss)**](#ch5-1)
+>### 5.2 [** (mm:ss)**](#ch5-2)
 
 <h3 id="about">About</h3>
 
-Learn to use the powerful Node.js framework to bring your web
+<p>Learn to use the powerful Node.js framework to bring your web
 application to life and develop end-to-end applications in JavaScript.
 JavaScript is the most trending programming language on the web today!
 Facebook, Google, Uber and countless so-called Unicorn startups have now
-made JavaScript a cornerstone of their technology stack.\
-This online course requires no prior knowledge of the JavaScript
+made JavaScript a cornerstone of their technology stack.</p>
+
+<p>This online course requires no prior knowledge of the JavaScript
 language. In the first week of the course, you will explore the
-language\'s basic concepts and fundamentals, and during the second week
-we will dive into advanced topics such as functions and objects.\
+language&apos;s basic concepts and fundamentals, and during the second week
+we will dive into advanced topics such as functions and objects.
 While JavaScript is recognized primarily for making web pages
 interactive within web browsers, this course covers the use of the
 Node.js library - a platform that enables running JavaScript code
 outside the browser and allows the development of an end-to-end
-applications in JavaScript.
+applications in JavaScript.</p>
 
-In week three, we will cover the basic architecture of a web application
+<p>In week three, we will cover the basic architecture of a web application
 by getting an up-close view of the different parts that make up this
 application. You will see how data is being exchanged over an
 Application Programming Interface (API) and what are the different tools
-and libraries that will allow you to construct such an application.
+and libraries that will allow you to construct such an application.</p>
 
-The course will then cover the basic steps required to set up a Node.js
+<p>The course will then cover the basic steps required to set up a Node.js
 server that can process web requests and interact with various set of
 databases. In the process, you will also be introduced to the Model View
 Controller (MVC) pattern, a software architecture that organizes the
-JavaScript application into modules.\
-Finally, in week four, you will also learn how incredibly easy it is to
+JavaScript application into modules.</p>
+
+<p>Finally, in week four, you will also learn how incredibly easy it is to
 create beautiful data visualizations that your boss will be proud of.
 You will gain a basic understanding of the technologies used to present
 data on the web and will learn how to visualize interactive data using
-the popular Data Driven Documents (D3) data library.\
-Whether you are considering a career as a full-stack web developer,
+the popular Data Driven Documents (D3) data library.</p>
+
+<p>Whether you are considering a career as a full-stack web developer,
 pondering developing a mobile app for your next startup or just want to
 pad your toolbox with a highly sought out skill, this course is
-definitely for you!
+definitely for you!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-0">1.0 Introduction: JavaScript Overview (7:41)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -79,37 +113,38 @@ definitely for you!
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Hey there and welcome to developing a web app with the power of Node!
+<p>Hey there and welcome to developing a web app with the power of Node!</p>
 
-My name is Guy Yachdav and I\'m a postdoctoral researcher at the
+<p>My name is Guy Yachdav and I&apos;m a postdoctoral researcher at the
 department for Bioinformatics and Computational Biology at the TU Munich
 (Technical University of Munich). I am also the leader for this course.
 For the past 10 years I ran multiple JavaScript software development
-projects in both industry and academia. I\'m a Google Summer of Code
-mentor and I\'m also a JavaScript lecturer at the TU Munich.
+projects in both industry and academia. I&apos;m a Google Summer of Code
+mentor and I&apos;m also a JavaScript lecturer at the TU Munich.</p>
 
-The second mentor in this course is Dr. Tatyana Goldberg who is also a
+<p>The second mentor in this course is Dr. Tatyana Goldberg who is also a
 postdoctoral researcher and a true open-source enthusiast. Tatyana is
 also a Google Summer of Code mentor and she has organized events to
-teach JavaScript to beginners.
+teach JavaScript to beginners.</p>
 
-Our third mentor Dmitrii Nechaev is a Master\'s student who has vast
+<p>Our third mentor Dmitrii Nechaev is a Master&apos;s student who has vast
 experience in JavaScript development. Dmitrii is a gifted JavaScript
 guru who can take you through all the tricks and hidden shortcuts of the
-language. He has been teaching JavaScript for over five years.
+language. He has been teaching JavaScript for over five years.</p>
 
-The fourth mentor, Christian Dallago is also a Master\'s student and an
+<p>The fourth mentor, Christian Dallago is also a Master&apos;s student and an
 expert full stack developer who knows the ins and outs of JavaScript
 back-end technologies. Christian has been involved in JavaScript as a
-developer and as a teacher for over two years. Dennis Schwartz, our
-fifth mentor, is a Master\'s student in Bioinformatics who is passionate
-about open-source development and community building.
+developer and as a teacher for over two years.</p>
 
-The sixth mentor, Sebastian Wilzbach, is also a Master\'s Bioinformatics
+<p>Dennis Schwartz, our fifth mentor, is a Master&apos;s student in Bioinformatics 
+who is passionate about open-source development and community building.</p>
+
+<p>The sixth mentor, Sebastian Wilzbach, is also a Master&apos;s Bioinformatics
 student and a JavaScript wonder kid. Sebastian has developed countless
-open-source tools, some of which got published in scientific journals.
+open-source tools, some of which got published in scientific journals.</p>
 
-All of us are part of the department for Bioinformatics and
+<p>All of us are part of the department for Bioinformatics and
 Computational Biology. We always strive to make the biological data we
 work with easy to understand. So, a few years ago we started working on
 developing JavaScript tools to visualize biological data. We joined
@@ -118,11 +153,11 @@ creation of tools that visualize Genomics data. We also got so
 interested in JavaScript and its application that we started giving a
 course at our university. You might have even heard about our course as
 it made international headlines when we worked with our students to
-develop \"A Song of Ice and Data\", a web app that uses data about the
+develop &quot;A Song of Ice and Data&quot;, a web app that uses data about the
 Game of Thrones books and TV show. We had a lot of fun working on this
 project and hope you will enjoy learning web app development using
 JavaScript, while working on the Game of Thrones project we assigned for
-this course.
+this course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -132,7 +167,7 @@ this course.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-And here are more reasons to learn JavaScript.
+<p>And here are more reasons to learn JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -150,8 +185,8 @@ And here are more reasons to learn JavaScript.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-First, JavaScript has been consistently the most popular language on
-GitHub, the world\'s most popular code repository.
+<p>First, JavaScript has been consistently the most popular language on
+GitHub, the world&apos;s most popular code repository.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -161,9 +196,9 @@ GitHub, the world\'s most popular code repository.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Second, JavaScript has the fastest growing and by far the largest
-library repository called Node Package Management. We\'ll talk about
-that more in module number four.
+<p>Second, JavaScript has the fastest growing and by far the largest
+library repository called Node Package Management. We&apos;ll talk about
+that more in module number four.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -173,13 +208,13 @@ that more in module number four.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Third, JavaScript is everywhere. More vendors are adopting JavaScript
+<p>Third, JavaScript is everywhere. More vendors are adopting JavaScript
 and you can now run the same JavaScript code across many devices and
-platforms.
+platforms.</p>
 
-Maybe these are the reasons why JavaScript has become the number one
+<p>Maybe these are the reasons why JavaScript has become the number one
 technology choice of so-called unicorns. Unicorns are startups, valued
-at more than 1 billion dollars.
+at more than 1 billion dollars.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -189,9 +224,9 @@ at more than 1 billion dollars.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-And because javascript is such a hot language, JavaScript developers are
+<p>And because javascript is such a hot language, JavaScript developers are
 in high demand. It is now easier than ever to find work as a JavaScript
-developer and the salaries offered are competitive.
+developer and the salaries offered are competitive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -201,77 +236,74 @@ developer and the salaries offered are competitive.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Before we begin, let\'s take a look at the history of JavaScript.
+<p>Before we begin, let&apos;s take a look at the history of JavaScript.
 JavaScript was first developed in ten days, back in 1995, by Brandon
 Eich who was at the Netscape Corporation. It was first called Mocha, but
 was quickly renamed to JavaScript for marketing purposes, even though it
-has nothing to do with language called Java.
+has nothing to do with language called Java.</p>
 
-The first official standards for JavaScript ECMAScript 1 appeared in
-1997.
-
-Then, between 1997 to 2005, competing standards for JavaScript appeared
+<p>The first official standards for JavaScript ECMAScript 1 appeared in
+1997. Then, between 1997 to 2005, competing standards for JavaScript appeared
 and this has resulted in several different versions of JavaScript that
-were not fully supported by major browsers.
+were not fully supported by major browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, #2 (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, #2 (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image010.png" 
-  title=""
-  alt=""
+  title="2005-2015; Evolution of JavaScript"
+  alt="2005-2015; Evolution of JavaScript."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In 2005, a new set of technologies, called Ajax, were developed. AJAX
-allowed JavaScript to load data in the background without the need to do
-a full page reload and enabled more dynamic JavaScript-based
-applications to be developed. This resulted in a JavaScript renaissance,
-led by open-source communities, which started releasing many libraries.
+<p>In 2005, a new set of technologies, called Ajax, were developed. 
+<a href="https://api.jquery.com/Jquery.ajax/">AJAX</a> allowed JavaScript to 
+load data in the background without the need to do a full page reload and enabled 
+more dynamic JavaScript-based applications to be developed. This resulted in a 
+JavaScript renaissance, led by open-source communities, which started releasing 
+many libraries.</p>
 
-The new libraries enabled the development of a new generation of
-JavaScript applications and overall accelerated the functionality,
-acceptance and popularity of the language.
+<p>The new libraries enabled the development of a new generation of JavaScript 
+applications and overall accelerated the functionality, acceptance and popularity 
+of the language.</p>
 
-Yet in 2007, the standardization battles were still raging. Microsoft
-promoted their own ECMAScript 3.1, while Mozilla and others worked on
-creating ECMAScript 4.
+<p>Yet in 2007, the standardization battles were still raging. Microsoft promoted 
+their own ECMAScript 3.1, while Mozilla and others worked on creating ECMAScript 4.</p>
 
-Finally, in 2009, all parties came together and decided to move from
-ECMAScript 3.1 to a unified standard called ES 5 Harmony. All this then
-brings us to today with JavaScript entering a completely new phase.
+<p>Finally, in 2009, all parties came together and decided to move from ECMAScript 
+3.1 to a unified standard called ES 5 Harmony. All this then brings us to today 
+with JavaScript entering a completely new phase.</p>
 
-The **Node.js** (<https://nodejs.org/en>) platform allows JavaScript to
-be run on the server side and Angular.js provides an easy way to create
-powerful JavaScript-based web application.
+<p>The <a href="https://nodejs.org/en">Node.js</a> platform allows JavaScript to
+be run on the server side and Angular.js provides an easy way to create powerful 
+JavaScript-based web application.</p>
 
-**D3** (<https://d3js.org/>) allows data to be easily visualized and
-made interactive.
+<a href="https://d3js.org/>">D3</a> allows data to be easily visualized and made 
+interactive.</p>
 
-There are many more applications and now is an exciting time to learn
-JavaScript.
+<p>There are many more applications and now is an exciting time to learn JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image011.png" 
-  title="What you will learn in this course"
-  alt="What you will learn in this course."
+  title="What you will learn in this course. Hands-on experience developing a 
+    full-stack JS application"
+  alt="What you will learn in this course. Hands-on experience developing a 
+    full-stack JS application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s see what is ahead of us and what we will cover over the next few
-modules.
-
-First, you will get a crash course in JavaScript. It is important to
+<p>Let&apos;s see what is ahead of us and what we will cover over the next few
+modules. First, you will get a crash course in JavaScript. It is important to
 remember that we adapted it as lectures and code examples to be
-compatible with ECMAScript 6, the latest JavaScript standard.
+compatible with ECMAScript 6, the latest JavaScript standard.</p>
 
-Then, we will cover the basics of writing JavaScript code on the server
-using **Node.js**, **Express** and **MongoDB**.
+<p>Then, we will cover the basics of writing JavaScript code on the server
+using **Node.js**, **Express** and **MongoDB**.</p>
 
-Finally, in the last part of the course, you will learn how to bring
+<p>Finally, in the last part of the course, you will learn how to bring
 data to life using a stack of data visualization techniques. All parts
 of the course are accompanied with hands-on exercises that will help you
-put your new skills to practice.
+put your new skills to practice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12 course overview (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -281,34 +313,32 @@ put your new skills to practice.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Now, looking at the schedule -- in the next module number two, Tatyana
+<p>Now, looking at the schedule -- in the next module number two, Tatyana
 will show you how easy it is to get started with JavaScript and she will
 introduce you to the language fundamentals. After completing this
 module, you will be well on your way to write simple JavaScript
-programs.
+programs.</p>
 
-Next is the object and function modules, in which Dimitri will show you
-how you can take advantage of one of JavaScript\'s most powerful
-features - its flexibility.
+<p>Next is the object and function modules, in which Dimitri will show you how you 
+can take advantage of one of JavaScript&apos;s most powerful features - its 
+flexibility. JavaScript flexibility gives you the freedom to write JavaScript
+object-oriented code, as well as use functional programming.</p>
 
-JavaScript flexibility gives you the freedom to write JavaScript
-object-oriented code, as well as use functional programming.
-
-In module number four, Christian will introduce the wonders of Node.js
+<p>In module number four, Christian will introduce the wonders of Node.js
 and show you how you can quickly and easily write JavaScript code that
-will run on the server.
+will run on the server.</p>
 
-Then, in the data visualization module, Dennis will introduce you to the
+<p>Then, in the data visualization module, Dennis will introduce you to the
 most relevant technologies we use today to visualize data on the web. At
 the final module, we will meet Professor Rost who will describe a few
-applications of JavaScript in the Life Sciences.
+applications of JavaScript in the Life Sciences.</p>
 
-I then will summarize this course before we part. Right now, I\'m sure,
-you\'re already excited about learning how to work with JavaScript. So,
-let\'s not waste any time and head straight to the next module language
-fundamentals.
+<p>I then will summarize this course before we part. Right now, I&apos;m sure,
+you&apos;re already excited about learning how to work with JavaScript. So,
+let&apos;s not waste any time and head straight to the next module language
+fundamentals.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-1">Language Basics -- Introduction (1:02)</h3>
+<h3 id="ch1-1">1.1 Language Basics -- Introduction (1:02)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -344,10 +374,10 @@ In this module (1), we will make our first steps and learn the basics of the
 language. Tatyana will first show how to edit and run your code. She
 will then survey some of the most essential parts of the JavaScript
 language. Tatyana is an experienced data scientist and a JavaScript
-developer. She uses JavaScript\'ing at work researching bacteria\'s role
+developer. She uses JavaScript&apos;ing at work researching bacteria&apos;s role
 in disease.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-1">1.1 Lexical structure (6:56)</h3>
+<h3 id="ch1-2">1.2 Lexical Structure (6:56)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15 how to access the web console (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -456,7 +486,7 @@ comments. Namely, any text written after two slash characters up to the
 end of a line is treated as a single line comment and is ignored by
 JavaScript. Also, text written between slash star and star slash
 characters is also treated as a comment. You can span these comments
-over multiple lines. You can\'t, however, nest comments, as it will
+over multiple lines. You can&apos;t, however, nest comments, as it will
 result in a syntax error shown in your console.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -571,7 +601,7 @@ literally provided to a variable is called a literal. There are several
 types of literals, including integer floating-point, string, boolean,
 regular expression, array and object literals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2">1.2 Data Types (6:58)</h3>
+<h3 id="ch1-3">1.3 Data Types (6:58)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to data types, the second lecture of the JavaScript language basics module.
 
@@ -592,7 +622,7 @@ can be initialized with.
 JavaScript is an un-typed language. This means that unlike in other
 languages, such as Java and C, in JavaScript we do not declare the data
 type of variables explicitly. JavaScript automatically converts one data
-type to another when it\'s needed. For example, it can append numbers
+type to another when it&apos;s needed. For example, it can append numbers
 and strings by automatically converting numbers to strings. **Data
 types** in JavaScript can be divided in **two groups** - **primitive**
 types and **reference** types. **String, number, boolean, undefined and
@@ -603,7 +633,7 @@ While primitive data types have a fixed size and memory, for example, a
 single number occupies 8 bytes in memory, reference data types do not
 have a fixed size. For example, arrays can contain any number of
 elements and therefore an array cannot be stored in 8 bytes of memory.
-Instead, it can hold a reference to the values and that\'s why it is
+Instead, it can hold a reference to the values and that&apos;s why it is
 called a reference type.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 27 number type; 64-bit floating-point number (19) ~~~~~~~~~~~~~~~~~~~~-->
@@ -614,7 +644,7 @@ called a reference type.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s have a closer look at the primitive data types.
+Let&apos;s have a closer look at the primitive data types.
 **Numbers** are a basic data type. All numbers in JavaScript
 are represented as one type floating point values.
 
@@ -761,7 +791,7 @@ new value.
 
 An **array** is another reference data type, which also stores
 a collection of values. While each value in an object has a name -
-that\'s the key name - as we saw in the previous slide, the values in an
+that&apos;s the key name - as we saw in the previous slide, the values in an
 array are indexed by a number. The first value in an array has index 0,
 the second value has index 1 and so on.
 
@@ -772,22 +802,22 @@ shown in the example, after declaration and initiation. Any value in an
 array can be changed and new values can be added. The length of an array
 can be printed using the property called length.
 
-<h4 id="ch1-2-1">1.2.1 Errata corrige</h4>
+<h4 id="ch1-3-1">1.3.1 Errata corrige</h4>
 
 As some viewers pointed out, in this video, there is a mistake in one
 code snippet example. The following:
 
 ```
-> var king = { firstName: \"Ned\", lastName:\"Stark\", age:40};
-> Object.keys(king);
-> **\< \[\"Ned\", \"Stark\", \"age\"\]**
-> should actually state:
-> var king = { firstName: \"Ned\", lastName:\"Stark\", age:40};
-> Object.keys(king);
-> **\< \[\"firstName\", \"lastName\", \"age\"\]**
+var king = { firstName: "Ned", lastName:"Stark", age:40};
+Object.keys(king);
+< ["Ned", "Stark", "age"]
+should actually state:
+var king = { firstName: "Ned", lastName:"Stark", age:40};
+Object.keys(king);
+< ["firstName", "lastName", "age"]
 ```
 
-<h3 id="ch1-3">1.3 Scoping & Hoisting (3:41)</h3>
+<h3 id="ch1-4">1.4 Scoping & Hoisting (3:41)</h3>
 
 Welcome to our third lecture of the language basics module! In this
 lecture, we will learn the fundamental aspects of the JavaScript
@@ -810,8 +840,7 @@ invoked by its name, followed by the comma-separated list of arguments
 within parentheses. For example, the variable x invokes function
 sumFunction with arguments 3 and 4.
 
-Once x is executed, its result, which equals 7, is returned to the
-console.
+Once x is executed, its result, which equals 7, is returned to the console.
 
 We will get back to functions in a few moments. Now, let us take a look
 at the concept of scoping.
@@ -859,7 +888,7 @@ printed.
 
 Local variables are declared with the keywords let or var. In contrast to global 
 variables that are accessible and modifiable from anywhere in the code, local 
-variables are only available within the function they are declared. Let\'s have 
+variables are only available within the function they are declared. Let&apos;s have 
 a look at the code example.
 
 Printing x at the bottom of the code will return 1, because x has a global scope. 
@@ -903,7 +932,7 @@ function being assigned to a variable and, therefore, the rules for variable
 hosting apply. Namely, that the variable declaration is moved to the top, but 
 not the variable initialization.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4">1.4 Loops (3:16)</h3>
+<h3 id="ch1-5">1.5 Loops (3:16)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to our fourth lecture of the language basics module!
 
@@ -1029,13 +1058,13 @@ It first executes the code and then evaluates the condition.
 Because the condition is evaluated only after the code is executed, the
 code is executed at least once even if the condition is false.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5">Conditional Statements (3:09)</h3>
+<h3 id="ch1-6">1.6 Conditional Statements (3:09)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to the fifth and the last lecture of the language basics module!
 In this module, we will learn about conditional statements. An example
 for conditional statement could be the following:
 
-\"If you know Java script, you can implement a web app\". Conditional
+&quot;If you know Java script, you can implement a web app&quot;. Conditional
 statements are used to perform different actions based on different
 conditions.
 
@@ -1092,8 +1121,8 @@ It also includes a block of code to be executed in case the condition is
 false. In the example, the program evaluates if the variable x is larger
 than zero.
 
-If true, the variable text is set to \"x is a positive number\".
-Otherwise, text is set to \"x is zero or a negative number\".
+If true, the variable text is set to &quot;x is a positive number&quot;.
+Otherwise, text is set to &quot;x is zero or a negative number&quot;.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50 if else if statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1109,13 +1138,13 @@ conditional is evaluated to true, then the block of code that follows
 this else if statement is executed. In the example, the program
 evaluates if the variable x is larger than zero.
 
-If true, the variable text is set to \"x is a positive number\".
+If true, the variable text is set to &quot;x is a positive number&quot;.
 
 If the value of x is smaller than zero, the program sets the variable
-text to \"x is a negative number\".
+text to &quot;x is a negative number&quot;.
 
 If both if conditions are false, the program sets the variable text to
-\"x is zero\".
+&quot;x is zero&quot;.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51 switch statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1146,7 +1175,7 @@ very end on the switch statement.
 Finally, the default keyword can be used within a switch block to
 specify a block of code that executes if no matches are found.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-6">1.6 Module 1 -- Summary (1:08)</h3>
+<h3 id="ch1-7">1.7 Module 1 -- Summary (1:08)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Tatyana, for this comprehensive lecture about the language
 basics!
@@ -1163,7 +1192,7 @@ As we mentioned at the introduction to this module, JavaScript may
 resemble general-purpose programming languages, but it is also very
 different.
 
-As we\'ve seen, JavaScript is un-typed, which means that you can assign
+As we&apos;ve seen, JavaScript is un-typed, which means that you can assign
 any data type to variables and convert them during runtime. As Tatyana
 also pointed out, JavaScript has a distinct feature, called hoisting,
 which calls variable declarations to the top of the function or to the
@@ -1199,7 +1228,7 @@ effectively write JavaScript code.
 In the next module, Dimitrii will talk about functions and objects, and
 show you how you can use those to structure your Javascript program.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2">Module 2: Functions and Objects (1:14)</h2>
+<h2 id="ch2-0">2.0 Module 2: Functions and Objects (1:14)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1233,13 +1262,13 @@ and closures are used to scope and structure our code. Dimitrii is a
 master Informatics student at the TU of Munich. In his recent past, he
 has worked on processing massive amount of data and became passionate
 about turning data into knowledge. Dimitrii has five years' experience
-in JavaScript development and he\'s also a tutor of the introduction to
+in JavaScript development and he&apos;s also a tutor of the introduction to
 JavaScript course in the TUM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-1">2.1 Functions, part 1 (3:06)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We will now take a closer look at working with functions and objects in
-JavaScript. Let\'s start!
+JavaScript. Let&apos;s start!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57 function declaration (2.1) (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1249,12 +1278,12 @@ JavaScript. Let\'s start!
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-To declare a function use keyword function followed by function\'s name,
-a list of parameters in parentheses and function\'s body that is
+To declare a function use keyword function followed by function&apos;s name,
+a list of parameters in parentheses and function&apos;s body that is
 manipulations that this function does in curly braces. Another way to
 create a function is by using a function expression. A function
 expression consists of the keyword function, list of parameters and a
-function\'s body. A name is not mandatory. We can assign a function
+function&apos;s body. A name is not mandatory. We can assign a function
 created with a function expression to a variable. Although, a name in a
 function expression is not mandatory, we still can use it. However, in
 such a case, we will only be able to invoke a function by its name
@@ -1276,7 +1305,7 @@ function expression does not. We have also seen in the previous module
 that function declarations are hoisted; that is, they are moved to the
 top of the script.
 
-Finally, we can\'t use function declarations inside loops, conditionals
+Finally, we can&apos;t use function declarations inside loops, conditionals
 and other control statements, while function expressions have no such
 limits. Working with arguments is the same for functions created with
 function declarations and function expressions.
@@ -1289,7 +1318,7 @@ function declarations and function expressions.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s first make our language clear here. A function has parameters and
+Let&apos;s first make our language clear here. A function has parameters and
 takes arguments. When we define a function, we list its parameters.
 
 When we invoke a function, we pass arguments. JavaScript allows us to
@@ -1308,7 +1337,7 @@ corresponding argument will have value undefined.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Still, we don\'t always have to pass an argument for each parameter.
+Still, we don&apos;t always have to pass an argument for each parameter.
 JavaScript allows us to specify a default value for a parameter. Here,
 we have defined a function that performs an exponentiation operation and
 has two parameters - a base and a power. If we do not pass an argument
@@ -1382,7 +1411,7 @@ Having created an object, we can add desired properties one by one.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s create an object that describes our online class.
+Let&apos;s create an object that describes our online class.
 
 First, we invoke the object constructor, then we define properties -
 name and year.
@@ -1390,7 +1419,7 @@ name and year.
 If we type the name of our variable in the browser console and hit
 enter, we will get a representation of our object.
 
-We don\'t have to add properties one by one to an empty object, though.
+We don&apos;t have to add properties one by one to an empty object, though.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 66 object literal (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1401,7 +1430,7 @@ We don\'t have to add properties one by one to an empty object, though.
 </p>
 
 An object literal that is a list of properties in curly braces allows us
-to specify object\'s properties at once.
+to specify object&apos;s properties at once.
 
 An object property has a name and a value.
 
@@ -1457,7 +1486,7 @@ This keyword allows us to manipulate object properties in its methods.
 Here, we define an object that describes our class. It has properties
 name, year and print.
 
-Print is a method that prints object\'s name and the year together.
+Print is a method that prints object&apos;s name and the year together.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 70 working with properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1553,7 +1582,7 @@ JavaScript will look for that property in the prototype. We can say that
 object inherits its prototype properties. Special object
 **object.prototype** is a prototype of all objects created via an object
 literal or an object constructor. **Object.prototype** has
-**hasOwnProperty** methods and that\'s exactly what we have invoked.
+**hasOwnProperty** methods and that&apos;s exactly what we have invoked.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1568,8 +1597,8 @@ A prototype is an object and we know how to add properties to an object.
 So, what happens when we add a property to a prototype?
 
 All objects inheriting from this prototype get immediate access to the
-new property. Let\'s add a new property called **easterEgg** with a
-value \"Hello, world!\" to the **Object.prototype.**
+new property. Let&apos;s add a new property called **easterEgg** with a
+value &quot;Hello, world!&quot; to the **Object.prototype.**
 
 Having done that, we can immediately access **easterEgg** property from
 our **cls object**, which was created via an object literal and inherits
@@ -1588,7 +1617,7 @@ to our cls object?
 
 Will it have any effect on the Object.prototype?
 
-Let\'s try it. As we can see from this example, adding such a property
+Let&apos;s try it. As we can see from this example, adding such a property
 to one specific object does not effect that prototype and, consequently,
 does not affect all other objects inheriting from the same prototype.
 
@@ -1621,7 +1650,7 @@ hold data, are data.
 
 We also want to define groups of similar objects, objects that have
 similar attributes and behavior. For details about object-oriented
-programming paradigm, visit the following link. Now, let\'s return to
+programming paradigm, visit the following link. Now, let&apos;s return to
 our objects and our concerns. So, we know how to create objects that
 combine data and behavior.
 
@@ -1638,7 +1667,7 @@ We also know that we can add methods to the Object.prototype.
 
 Hmm, that is dangerous and is actually considered an anti-pattern.
 
-Let\'s say, first we add our attack with a sword method to the
+Let&apos;s say, first we add our attack with a sword method to the
 Object.prototype.
 
 Then, we decide, we also want to have archers and add shooting arrow
@@ -1689,7 +1718,7 @@ The value of constructor function special property, called prototype,
 becomes the prototype of the newly created object.
 
 The keyword this returns our new object inside the constructor function,
-allowing us to define and initialize object\'s properties.
+allowing us to define and initialize object&apos;s properties.
 
 Each function has a prototype property.
 
@@ -1721,7 +1750,7 @@ Why?
 Can you imagine what will happen if we make hitPoints a property of a
 prototype?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3">Functions, part 2 (5:19)</h3>
+<h3 id="ch2-3">2.3 Functions, part 2 (5:19)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 84 functions & objects; functions, part 2 (51) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1745,7 +1774,7 @@ functions.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s look again at the arguments object.
+Let&apos;s look again at the arguments object.
 
 It contains arguments passed to a function.
 
@@ -1764,7 +1793,7 @@ Arguments object looks like an array, but, remember, it is not an array.
 </p>
 
 Arguments object does not have array methods. We can see in this example
-that attempting to invoke an array\'s method indexOf results in a
+that attempting to invoke an array&apos;s method indexOf results in a
 TypeErrorpart 2.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1797,7 +1826,7 @@ parameter.
 Automatic semicolon insertion is one of the most controversial features
 of JavaScript.
 
-It is described by a somewhat intimidating specification, but we don\'t
+It is described by a somewhat intimidating specification, but we don&apos;t
 really have to know it by heart. However, please remember that we have
 to put the returned value on the same line as return keyword.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1820,7 +1849,7 @@ which means that a function will return undefined.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Now, let\'s look into scoping.
+Now, let&apos;s look into scoping.
 
 Each function creates a new scope.
 
@@ -1835,7 +1864,7 @@ scopes.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s rephrase: inside a function we can access all of the variables
+Let&apos;s rephrase: inside a function we can access all of the variables
 declared in these functions outer scope.
 
 We can both read and write such variables.
@@ -1876,7 +1905,7 @@ outer scope variable.
 </p>
 
 Higher-order functions are one of the most powerful tools in
-JavaScript\'s arsenal.
+JavaScript&apos;s arsenal.
 
 What exactly is a higher-order function? Well, a higher-order function
 is a function that takes a function as an argument or returns a function
@@ -1884,7 +1913,7 @@ as a return value.
 
 Here, we see a function that returns another function.
 
-Let\'s take a closer look at this example. What exactly is going on
+Let&apos;s take a closer look at this example. What exactly is going on
 here?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1916,16 +1945,16 @@ we immediately invoke it passing 5 as an argument.
 </p>
 
 Wait a minute! We invoke innerAdd after add function has been invoked,
-right? It\'s done, it\'s over. So, how can innerAdd access variable X?
+right? It&apos;s done, it&apos;s over. So, how can innerAdd access variable X?
 
 To understand that we need to understand the idea of closures.
 
 JavaScript inner function has access to outer variables even when an
 outer function has been run.
 
-We can say that a function \*encloses\* its environment.
+We can say that a function &ast;encloses&ast; its environment.
 
-Thus, a closure is function plus function\'s context. Immediately
+Thus, a closure is function plus function&apos;s context. Immediately
 invoked function expressions are very often used together with closures
 in JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1937,7 +1966,7 @@ in JavaScript.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-What is it? Well, it\'s simply a function expression that is immediately
+What is it? Well, it&apos;s simply a function expression that is immediately
 invoked!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (57) ~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1961,7 +1990,7 @@ returns it.
 There is no other way to access counter value, but through this
 function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4">2.4 Objects, part 2</h3>
+<h3 id="ch2-4">2.4 Objects, part 2 (mm:ss)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (57) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1985,7 +2014,7 @@ But we have a problem.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We can\'t control access to objects properties. Our swordsman\'s
+We can&apos;t control access to objects properties. Our swordsman&apos;s
 properties are exposed to the outside world.
 
 And that is a problem, because any piece of code can directly change hit
@@ -1993,7 +2022,7 @@ points.
 
 Consider this example:
 
-Let\'s say, we\'ve been exposing swordsman\'s hit points and directly
+Let&apos;s say, we&apos;ve been exposing swordsman&apos;s hit points and directly
 changing it from other parts of our code, subtracting damage from hit
 points directly.
 
@@ -2023,7 +2052,7 @@ Indeed, there is and we have already seen it.
 Closures allow us to create variables that can only be accessed by an
 enclosing function.
 
-We\'re going to use closure now to hide swordsman\'s damage and attacks
+We&apos;re going to use closure now to hide swordsman&apos;s damage and attacks
 from the outside.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2142,10 +2171,10 @@ The first found method is used.
 We started this lecture praising constructors and saying that thanks to
 them we can create groups of similar objects.
 
-Unfortunately, it\'s not all roses.
+Unfortunately, it&apos;s not all roses.
 
 Now we will mention dangers of constructors. These dangers stem from the
-fact that constructor functions are still functions. So, it\'s easy to
+fact that constructor functions are still functions. So, it&apos;s easy to
 confuse a constructor function and a regular function.
 
 Calling a constructor function without a new keyword and conversely
@@ -2190,7 +2219,7 @@ We have already seen prototype property.
 
 Functions also have name and length properties.
 
-The value of the name property is function\'s name.
+The value of the name property is function&apos;s name.
 
 In case of an anonymous function, it is an empty string.
 
@@ -2207,7 +2236,7 @@ The value of the length property is an amount of parameters.
 We know that objects have prototypes and we know that functions are
 objects.
 
-It\'s not surprising then that each function object is connected to a
+It&apos;s not surprising then that each function object is connected to a
 prototype as well.
 
 Function.prototype is the prototype of functions.
@@ -2266,7 +2295,7 @@ Since apply takes an array and turns it into arguments for function, we
 can use apply when we are stuck with an array.
 
 In this example, we want to get the maximum value of an array of numbers
-Math.max method doesn\'t work with arrays, but we can easily solve this
+Math.max method doesn&apos;t work with arrays, but we can easily solve this
 problem with apply.
 
 A mnemonic allows to remember which of two methods takes an array. apply
@@ -2280,7 +2309,7 @@ and array start and end with the same letters.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-That\'s nice, but we have an even simpler way of unpacking an array of
+That&apos;s nice, but we have an even simpler way of unpacking an array of
 arguments.
 
 Spread operator allows us to turn an array into arguments for function.
@@ -2289,9 +2318,9 @@ Its syntax is very simple - three dots before an argument.
 
 Please do not confuse it with rest parameters.
 
-If we are defining a function, it\'s rest parameters.
+If we are defining a function, it&apos;s rest parameters.
 
-If we are calling a function, it\'s a spread operator.
+If we are calling a function, it&apos;s a spread operator.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2301,16 +2330,16 @@ If we are calling a function, it\'s a spread operator.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s take a look at argument subject one more time, just one more
+Let&apos;s take a look at argument subject one more time, just one more
 time.
 
-We know that it\'s not an array, but now we know that we can create an
+We know that it&apos;s not an array, but now we know that we can create an
 array with the same contents as arguments using call method.
 
 Slice is an array method that returns a copy of an array.
 
-Passing an argument\'s object to slice by a call or apply, returns an
-array containing the same elements as argument\'s object.
+Passing an argument&apos;s object to slice by a call or apply, returns an
+array containing the same elements as argument&apos;s object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2320,7 +2349,7 @@ array containing the same elements as argument\'s object.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In JavaScript we can call one object\'s methods on another object using
+In JavaScript we can call one object&apos;s methods on another object using
 apply and call, or we can simply add methods to another object, as in
 the current example.
 
@@ -2335,7 +2364,7 @@ called late binding.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-What\'s it about?
+What&apos;s it about?
 
 Well, late binding means that keyword this becomes bound to an object at
 the invocation time.
@@ -2372,12 +2401,12 @@ The value returned by this keyword is decided at invocation time.
 
 Hmm, but is there a default value?
 
-In other words, what does this return if a function hasn\'t been bound
+In other words, what does this return if a function hasn&apos;t been bound
 to an object and is not invoked as a method, or via apply or call?
 
 By default, this returns the global object.
 
-In the browser, it\'s the window object.
+In the browser, it&apos;s the window object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 121  (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2408,7 +2437,7 @@ For example, that or self and access it from an inner function.
 In this example, we decided to use that.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6">2.6 Chapter 2 - Summary</h3>
+<h3 id="ch2-6">2.6 Chapter 2 - Summary (mm:ss)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Thank you, Dimitrii, for covering functions and objects.
@@ -2524,10 +2553,10 @@ examples we provide.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to this lecture about anatomy of HTTP transactions!
 
-In this lecture, we\'re going to see how requests are made and what URL
+In this lecture, we&apos;re going to see how requests are made and what URL
 stands for.
 
-Let\'s look at the first example.
+Let&apos;s look at the first example.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 128  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2544,7 +2573,7 @@ It tries to access the route and asks the server: do you have something
 to deliver to me?
 
 The server will answer to the browser: yes, I have something for you and
-it\'s an HTML file, which is called index.html.
+it&apos;s an HTML file, which is called index.html.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 129  (75) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2596,7 +2625,7 @@ In this case, the image is located at example.dallago.us/image.png.
 Most likely, in modern web pages, you see href references like this.
 
 What these are, are relative paths. So, what we are saying here is: if
-we\'re executing our
+we&apos;re executing our
 
 HTML file, which is located in the root, we want to access the image in
 the same location, which is again the root.
@@ -2605,9 +2634,9 @@ We want to access the image at example.dallago.us/image.png.
 
 This is different if the HTML was, for example, loaded from a subfolder
 of a web server, which could be, for example, the public sub folder. So,
-if we\'re executing an HTML file, which is located in
+if we&apos;re executing an HTML file, which is located in
 example.dot.dallago.us/public and we have an img tag, like this one,
-which is trying to access image.png, what we\'re actually asking for is
+which is trying to access image.png, what we&apos;re actually asking for is
 the image at example.dallago.us/public/image.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 132  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2623,7 +2652,7 @@ The ones that we have seen up until now, are ***get*** requests. They
 are what your browser usually always performs. There are also other
 types of requests, which are, for example, ***post*** requests.
 
-They are used to create and update resources, and they\'re usually found
+They are used to create and update resources, and they&apos;re usually found
 in web forms on your web pages.
 
 Third type of request are ***put*** requests. These are conceptually
@@ -2631,7 +2660,7 @@ similar to post requests, but they are mainly used for updating. You can
 also use them to create resources, but you have to specify a precise URL
 where you want to put this resource in.
 
-If we\'re trying to, for example, upload an image of a cat, which is
+If we&apos;re trying to, for example, upload an image of a cat, which is
 called cat.png, what we would say is: we want to put our image at the
 location xample.dallago.us/cat.png.
 
@@ -2639,7 +2668,7 @@ The last type of requests that we are going to talk about are
 ***delete*** requests.
 
 These requests are used to delete resources as the name says, so that we
-don\'t have them anymore on our web server.
+don&apos;t have them anymore on our web server.
 
 There are other types of requests, but we are not going to discuss about
 them, because they are not relevant to the slide set.
@@ -2652,17 +2681,17 @@ them, because they are not relevant to the slide set.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-The next thing that we\'re going to talk about are URLs. There are
+The next thing that we&apos;re going to talk about are URLs. There are
 different things you want to look at when you see a URL.
 
 The first part is the ***protocol***.
 
-It\'s https in this case, but usually you see also http. There are
+It&apos;s https in this case, but usually you see also http. There are
 actually two different kinds of protocols.
 
 HTTPs stands for secure HTTP.
 
-It ensures that when you\'re accessing a resource, the resource comes
+It ensures that when you&apos;re accessing a resource, the resource comes
 exactly from the server that you are requesting it from.
 
 So, that you are not put in a situation of having someone between you
@@ -2675,11 +2704,11 @@ which we are going to see in the next slide.
 
 The first part that we see here is the ***location*** or ***path***.
 
-These are usually subfolders on your web server and it\'s just as if you
+These are usually subfolders on your web server and it&apos;s just as if you
 were opening sub folders on your computer.
 
-The last part is the ***resource*** that you\'re going to ask and in
-this specific case is a png image and it\'s called protein.png.
+The last part is the ***resource*** that you&apos;re going to ask and in
+this specific case is a png image and it&apos;s called protein.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 134  (79) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2697,11 +2726,11 @@ This is actually the way addresses are thought of on the web, but you
 can view them similarly as the address of where you are standing right
 now: your home or work address.
 
-It\'s just within computer science. We like numbers, so we put them
+It&apos;s just within computer science. We like numbers, so we put them
 everywhere.
 
 The second part that we see are subfolders. In this specific case,
-we\'re accessing assets and then we\'re accessing images.
+we&apos;re accessing assets and then we&apos;re accessing images.
 
 The last part is a resource that we want to access, which is the image
 of this protein, which is called protein.png.
@@ -2719,7 +2748,7 @@ front-end. It is used to extend normal HTML code to allow us to perform
 some nice and better functionalities with our code.
 
 JavaScript, in these cases, is executed within the browser or the
-browser\'s console.
+browser&apos;s console.
 
 What we are interested in looking at next is, actually, JavaScript for
 back-end development. What this means is that we want to see how
@@ -2736,7 +2765,7 @@ to discuss in the next videos.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-2">3.2 Node.js and NPM (9:28)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to this session about Node.js and NPM! Let\'s start right away
+Welcome to this session about Node.js and NPM! Let&apos;s start right away
 with Node.js.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 136  (81) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2748,7 +2777,7 @@ with Node.js.
 </p>
 
 What is it? Node.js allows you to interpret JavaScript in your computer.
-It\'s similar at the way JavaScript is interpreted in your browser, but
+It&apos;s similar at the way JavaScript is interpreted in your browser, but
 it allows you to access things, which are usually not accessible from
 within your browser. So, for example, it allows you to access files, you
 can read and write files on your system, and it allows you to access
@@ -2758,7 +2787,7 @@ is used by Node.js
 if you build a web application. It provides you with the tool to use the
 same language and concepts that you have already used to build
 JavaScript for the front-end, which means the language is still an
-event-based, it\'s still asynchronous, it uses callbacks and things like
+event-based, it&apos;s still asynchronous, it uses callbacks and things like
 these. When you run Node, it actually runs on a single thread, which has
 1.8 Gigabytes of RAM allocated to it. As I said, it provides you with
 different libraries that, for example, let you read and write files on
@@ -2767,7 +2796,7 @@ your system. With Node, you can build many things.
 The most important ones are three: you can build command line scripts,
 you can
 
-build **API**\'s or web applications with back- and front-end. Command
+build **API**&apos;s or web applications with back- and front-end. Command
 line scripts are what you would usually write with bash, C, Java,
 Python. You can write scripts that allow you to read files on your
 system and then produce some output, always in the system.
@@ -2781,7 +2810,7 @@ they all communicate with the server. And this communication happens
 over **API** calls. **API** calls, as I said before, is just a means of
 sending and receiving data.
 
-And with **Node.JS**, you\'re able to write very quickly and very nice
+And with **Node.JS**, you&apos;re able to write very quickly and very nice
 APIs. The last thing that you can build with Node is a web application -
 a complete web application. That means a web application that has both
 back-end as well as front-end. It is as if you were to build an API, but
@@ -2789,7 +2818,7 @@ you were to extend it with some views. Views, specifically, are things
 that you see. So, when you connect to, for example, an address on
 example.dallago.us, you see a web page.
 
-And that\'s exactly what a front-end is! It provides you with the tools
+And that&apos;s exactly what a front-end is! It provides you with the tools
 to build these views, to reuse them and to use the code from the server
 to, for example, give meaningful objects meaningful data to the view
 itself.
@@ -2810,7 +2839,7 @@ request. So, the request is the code of where the request is executed
 linearly as we see above - one request one function after the other.
 
 And once it terminates, it answers back to the requester with some data.
-Node\'s approach instead is to run the entire Node engine on one single
+Node&apos;s approach instead is to run the entire Node engine on one single
 thread.
 
 If requests come to this one single thread, the Node engine puts them in
@@ -2858,7 +2887,7 @@ can download specifically extensions, which are the things that you use
 when you build applications using Node.
 
 As with every App Store you have to be very careful: there are some good
-apps and there\'s some bad apps.
+apps and there&apos;s some bad apps.
 
 You can easily find what is a good application, and what is a bad
 application by looking at the documentation of this app.
@@ -2873,12 +2902,12 @@ Same thing is for NPM.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s look at the growth of NPM over the years: you can definitely see
-by the red line that it\'s above everything else. Specifically here, we
+Let&apos;s look at the growth of NPM over the years: you can definitely see
+by the red line that it&apos;s above everything else. Specifically here, we
 have a package manager for Ruby on Rails, a package manager for PHP, a
 package manager for GO, which is a Google initiative and a package
 manager for CPAN, which is Perl. There is nothing growing as NPM. So,
-you\'re on the safe side if you start coding now with Node.
+you&apos;re on the safe side if you start coding now with Node.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 140  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2910,9 +2939,9 @@ same objects, but in JSON format.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-What is actually JSON? JSON stands for JavaScript Object Notation. It\'s
-a way to represent objects in JavaScript. It\'s actually not just used
-in JavaScript, it\'s a very commonly used for data exchange on the web.
+What is actually JSON? JSON stands for JavaScript Object Notation. It&apos;s
+a way to represent objects in JavaScript. It&apos;s actually not just used
+in JavaScript, it&apos;s a very commonly used for data exchange on the web.
 So, as I was saying before, many APIs provide you with messages and
 these messages are encoded in JavaScript notation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2951,7 +2980,7 @@ package.json has a set of key and values, which are necessary for it to
 exist, for example, the name, the version, the description of the
 application, the author and the license.
 
-There\'s another set of attributes, which are the dependencies and these
+There&apos;s another set of attributes, which are the dependencies and these
 are very important.
 
 This is where NPM comes in the game. Here you define the dependencies
@@ -2960,8 +2989,8 @@ an application, which has a back-end and which needs a front-end as
 well, these three dependencies, which we define here, which are:
 express, pug and mongoose. They are the other ones that you, for
 example, would like to go with. What this tells is that once you start
-running Node, if you don\'t have these dependencies downloaded in the
-same folder, your application won\'t run.
+running Node, if you don&apos;t have these dependencies downloaded in the
+same folder, your application won&apos;t run.
 
 So, you really need these dependencies.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2982,7 +3011,7 @@ What we have seen in this video, in this session, are what Node is -
 Node.js and what NPM is, how we can use them to create APIs, how we can
 use them to create scripts.
 
-In the next sessions we\'re going to discuss more specifically how to
+In the next sessions we&apos;re going to discuss more specifically how to
 build your first API and how to create a full stack application, which
 means both the API and also the front-end part with the views.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2998,13 +3027,13 @@ means both the API and also the front-end part with the views.
 </p>
 
 Welcome back to our videos about server-side JavaScript. In this one
-we\'re going to talk about what is needed for a web application. So,
-let\'s start right off with the most important part of a web
+we&apos;re going to talk about what is needed for a web application. So,
+let&apos;s start right off with the most important part of a web
 application, which is a **request handler**. A **request handler** is
 something that takes on requests and answers them, and gives you the
 power to answer them in a meaningful way. We have seen what requests are
 in previous videos. So, I invite you to look back at previous videos if
-you don\'t know what we are talking about.
+you don&apos;t know what we are talking about.
 
 The first **request handler** that I would like to talk to you about is
 **Express.js** (https://expressjs.com/). It is de facto standard for
@@ -3012,9 +3041,9 @@ The first **request handler** that I would like to talk to you about is
 alternatives and we just listed another two of them. The first
 alternative is **koa** (https://koajs.com/), which is a simplified
 version of **Express.js (**. It stems from the same developers as
-**Express.js**, but it\'s a much lighter version. Another request
+**Express.js**, but it&apos;s a much lighter version. Another request
 handler is **Restify** (http://restify.com/). **Restify** focuses only
-on constructing APIs. So, you would not have views, which we\'re gonna
+on constructing APIs. So, you would not have views, which we&apos;re gonna
 explain in a moment. **Restify** is also heavily based on
 **Express.js**. So, as you see, **Express.js** always comes in.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3043,7 +3072,7 @@ for example, if the key is age, in my case it would be 23. So, key-value
 stores are maybe thought for smaller applications, but nonetheless you
 always need a database. MongoDB as well as Redis are non-relational
 databases and if you want to know more about these, I invite you to look
-at the web. There\'s plenty of guides.
+at the web. There&apos;s plenty of guides.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 147 node.js as back-end - view engines (90) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3053,14 +3082,14 @@ at the web. There\'s plenty of guides.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 The last component that you might need to build a web application is
-called a view engine. I say might because it\'s actually not necessary.
+called a view engine. I say might because it&apos;s actually not necessary.
 View engines are only necessary if you build a full application with
-front- and back-end. But if you only want to build an API, you won\'t
+front- and back-end. But if you only want to build an API, you won&apos;t
 need a view engine.
 
 Here is a list of a couple of view engines, which we think you might
 find interesting. Starting with **Angular.js**
-(https://v17.angular.io/start), **Angular** is important because it\'s
+(https://v17.angular.io/start), **Angular** is important because it&apos;s
 part of something called the **MEAN stack**, which stands for **Mongo,
 Express, Angular** and **Node**. As we have seen, Mongo would be the
 database part of our application, while **Express** would handle every
@@ -3068,19 +3097,19 @@ request, incoming and outgoing. Angular would in this case be the view
 engine, while Node is the base of our application.
 
 Another popular framework is **React** (https://react.dev/learn). It was
-developed by Facebook and it\'s widely used. **Pug**
+developed by Facebook and it&apos;s widely used. **Pug**
 (<https://pugjs.org/api/getting-started.html>) is another framework and
-it\'s maybe one of the best if you\'re starting with Node.js. This is
-because it\'s very similar in syntax to plain HTML. So, if you are used
+it&apos;s maybe one of the best if you&apos;re starting with Node.js. This is
+because it&apos;s very similar in syntax to plain HTML. So, if you are used
 to writing HTML files, **Pug** might be the choice for you. It was
 previously called Jade, but due to some copyright issues, developers had
 to rename it into **Pug** and it is actually a fun name. So, why not?
 **Ember** (<https://emberjs.com/>) is another choice among small
-communities of developers. It\'s very nice in my opinion. So, that is
+communities of developers. It&apos;s very nice in my opinion. So, that is
 why we chose to also put it into this list.
 
 What we have seen in the previous slides and in this one, are the
-components that you would need to build your web application. You don\'t
+components that you would need to build your web application. You don&apos;t
 need all of them. As we have already discussed, you might not need view
 engines if you, for example, want to build an **API**. A database is
 also not always needed if you want to build something simple or just
@@ -3089,7 +3118,7 @@ complete overview of what you might need to build your application. And,
 actually, these three components we are going to use in an example. The
 example is coming in the next videos and the next lectures. And there is
 actually two of them. The first one is only an **API** example. So, it
-won\'t have views. In the second example, which we call complete, we
+won&apos;t have views. In the second example, which we call complete, we
 will also provide some views, which are done using the **Pug**
 templating engine.
 
@@ -3122,7 +3151,7 @@ examples, one with Pug and one without Pug.
 </p>
 
 In the first example, we 
-won\'t use Pug, because it\'s simply an API. So, it only uses the other
+won&apos;t use Pug, because it&apos;s simply an API. So, it only uses the other
 three components, which are express, MongoDB and Node. We use MongoDB to
 store our information and to be able to retrieve it in a later stage. We
 use Node as the base of our application, as it allows us to interpret
@@ -3136,7 +3165,7 @@ our JavaScript and present everything that we have discussed so far.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s actually look at our examples. They are two, as already said: the 
+Let&apos;s actually look at our examples. They are two, as already said: the 
 first example is only an API example. So, it does not have use. You can 
 download it following the first link,
 which is example.dallago.us/public/api.zip. The complete example, on the
@@ -3178,7 +3207,7 @@ So, here is the folder structure of a
 first example application, which is the API example. We have the first
 folder, which is the app folder where we have our controllers, our
 models and our views. These are also folders, but the views folder is
-empty, because we don\'t have any views in an API. On the other hand, in
+empty, because we don&apos;t have any views in an API. On the other hand, in
 the controller and in the models, we find two files, which are about the
 relationships between Game of Thrones characters in one specific book of
 Game of Thrones.
@@ -3188,7 +3217,7 @@ which allow us for example to connect to the database, which, in this
 case, is the database.js file. The router.js, which takes care of
 knowing which requests are incoming and how to answer them. The
 package.json, which we have already discussed in a previous video and I
-urge you to look at this video if you don\'t know what we are talking
+urge you to look at this video if you don&apos;t know what we are talking
 about. And, the index.js, which is the starting point of our
 application. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3200,7 +3229,7 @@ application.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 The folder structure for the complete example is a little
-bit larger. Here you can actually see that there\'s more files, but most
+bit larger. Here you can actually see that there&apos;s more files, but most
 of these files are either executed in the browser or just there to give
 views, which are things that you actually see in the application. 
 
@@ -3250,7 +3279,7 @@ your computer. Later, you have to make sure that you have installed
 Node.js and NPM. When your install Node.js, you automatically install
 NPM as well.
 
-So, don\'t worry, it\'s not two separate things. You can install Node.js
+So, don&apos;t worry, it&apos;s not two separate things. You can install Node.js
 by following the link on the slide, which is nodejs.org. You then have to use the command
 line to navigate to the folder where the applications are and you will know
 when you are in this folder if you can open the index.js file, which is
@@ -3293,17 +3322,17 @@ are two of the components of our example applications.
 
 Firstly, I want to talk to
 you about express. We have already seen what request handlers are. So,
-if you\'re not familiar with them, please go back to the previous videos. Express,
-in short, allows you to react to incoming requests and send responses. It\'s
+if you&apos;re not familiar with them, please go back to the previous videos. Express,
+in short, allows you to react to incoming requests and send responses. It&apos;s
 possible to extend express by putting some layers between the incoming requests and
 the final function, which is going to execute to produce a response. These layers can, 
 for example, distinguish between a user, which has authentication and a user that has 
 not. So, that the final response is different for someone that is identified and 
-different for someone who\'s not. 
+different for someone who&apos;s not. 
 
 Express can also be extended using other packages, but for our simple
-applications we didn\'t need to use them. So, we\'re not going to discuss about
-these. If you\'d like to know more about these, please go on the web, there\'s
+applications we didn&apos;t need to use them. So, we&apos;re not going to discuss about
+these. If you&apos;d like to know more about these, please go on the web, there&apos;s
 plenty of guides to find out more about these. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 156 express.js in our first example application (97) ~~~~~~~~~~~~~~~~~~~-->
@@ -3318,7 +3347,7 @@ In our API example, you will find express in
 the files that are highlighted on the left side. You will find also express
 in the same files on the complete example, but for the reference of these two
 components and what we are going to discuss in this video, we use the
-API. You will find express starting in the index.js and that\'s the first
+API. You will find express starting in the index.js and that&apos;s the first
 file we are going to look at. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 157 express.js: index.js (98) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3331,16 +3360,16 @@ file we are going to look at.
 
 In the index.js, we define express. We actually have to require it.
 The first thing that we do is we require express and we define it as
-a constant variable, because it won\'t change during the execution of our
+a constant variable, because it won&apos;t change during the execution of our
 code. 
 
 The second thing that we do is we define our application, which is app
-and it\'s an express application. So, we define it as an express app. With express
+and it&apos;s an express application. So, we define it as an express app. With express
 we can set values and, specifically, in the third line of code, which will be
 compiled, we will see that you can define the port number on which our application is
 going to be listening. And this port number is by default going to be 3,000.
 
-Later, we\'ll see that we can define a router, which is the logic that
+Later, we&apos;ll see that we can define a router, which is the logic that
 stands behind knowing which requests are coming in and what output or response to
 produce. In the last lines of code, what we see, is that we actually listen to
 incoming requests and we do so by listening on the port that we defined earlier.
@@ -3365,7 +3394,7 @@ has to perform a function, which is relationships.
 This function is defined as below. So, relationships is a function, which accepts 
 a request, an incoming request, and has as a second object, the response, the 
 outgoing response. What we do is we find objects in the relationships model,
-which we are going to explain shortly, so, don\'t worry. If the find is
+which we are going to explain shortly, so, don&apos;t worry. If the find is
 successful, we will return the results of defined in the last
 meaningful line of code of this example, which is - response dot status
 200 dot send results. Notice that status 200 in HTTP protocol, status 200 means
@@ -3386,8 +3415,8 @@ and that we are sending back an error object as well.
 The next thing that we will look at is MongoDB. We have already discussed about
 databases before, but, specifically, we will use MongoDB in our example.
 As already said, MongoDB is a document-oriented database management
-system and it\'s non-relational, which brings us to the most important part of
-non-relational database management systems, which is they don\'t have a
+system and it&apos;s non-relational, which brings us to the most important part of
+non-relational database management systems, which is they don&apos;t have a
 schema.
 
 A schema allows you to say that whenever you have an object from a
@@ -3396,7 +3425,7 @@ Specifically, if we have a relational database system, we always know that we ar
 to find the same fields when we ask for the same data. 
 
 If, for example, I have an object, which contains my name and my age, and I have 
-a schema, which defines that there\'s always the need of my name, my surname and 
+a schema, which defines that there&apos;s always the need of my name, my surname and 
 my age, all objects will always look like this. They can not differ. On the other 
 hand, in MongoDB objects can differ. They can have more fields. For example, there 
 could be name, age and location from where I come from, or there can be less fields. 
@@ -3448,7 +3477,7 @@ you firstly, to connect to the database and handle connection events.
 The second important thing is that it allows you to define models.
 Models allow you to enforce some type of a schema, which is the thing
 that we have discussed before. So, through mongoose you could define that 
-your objects always have to set the same structure and that Mongoose won\'t 
+your objects always have to set the same structure and that Mongoose won&apos;t 
 accept objects if they are not of the structure that you have defined them in.
 
 The other thing that mongoose allows you to do is to perform queries.
@@ -3462,9 +3491,9 @@ So, you can find objects, create objects, update and remove items.
   alt="Mongoose in our first example application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Let\'s see some code examples. First, we will find mongoose in these
+Let&apos;s see some code examples. First, we will find mongoose in these
 files. As you see, there is one file, which is highlighted a little bit
-differently than the other ones. This is because we\'re not directly using mongoose,
+differently than the other ones. This is because we&apos;re not directly using mongoose,
 but we are using the mongoose model, created in the relationships model in the
 controller. So, to produce a meaningful response, when an incoming
 request is coming. 
@@ -3477,14 +3506,14 @@ request is coming.
   alt="Mongoose: models/relationships.js (model: define)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Let\'s look at the model for the relationships. Here, we define
+Let&apos;s look at the model for the relationships. Here, we define
 the model of our relationships. Firstly, we require mongoose, as we did, we did
 with express in our previous example. The second thing that we do is we
 define our relationships model. 
 
 Here, we have three fields, which are compulsory. So, they are always required. 
-If you will try to create new objects, which don\'t have one of these fields, 
-it won\'t work. Mongoose will complain. The three fields that we are going to 
+If you will try to create new objects, which don&apos;t have one of these fields, 
+it won&apos;t work. Mongoose will complain. The three fields that we are going to 
 need in our objects are source, target and weight. The first two source and 
 target are of type string, while weight is a number-typed object.
 
@@ -3500,8 +3529,8 @@ The second location in which we find mongoose is our relationships
 controller. Here, we can find objects in our model, as seen from the
 fourth line of code. So, we have our relationships model and we perform
 a find without filtering for results. Filtering for results would be
-something like: if I\'m only interested in those objects in which the
-source is equal to, for example, \'me\', I would put this as a filtering
+something like: if I&apos;m only interested in those objects in which the
+source is equal to, for example, &apos;me&apos;, I would put this as a filtering
 before I perform the find. You can look at how filtering is done in the 
 examples on the mongoose website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3514,8 +3543,8 @@ examples on the mongoose website.
 </p>
 Mongoose allows us to do also other things. It allows us to create
 objects, as already set before. So, in this specific case, we are creating a new
-object, which has a source \'me\', as target \'you\' and as weight
-\'6\'.
+object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weight
+&apos;6&apos;.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (105) ~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3552,10 +3581,10 @@ objects.
 Be careful, we are only finding and removing one object. This
 is very important, because you can easily remove many items from your
 database and maybe it is not what you want to do. You have to be very 
-careful when you\'re coding these parts of your application. 
+careful when you&apos;re coding these parts of your application. 
 
 Here, what we are doing is we are finding one object, which is the
-first object in which the source is \'me\' and we are removing it.
+first object in which the source is &apos;me&apos; and we are removing it.
 If the removal is successful, we will log into console the removed
 object.
 
@@ -3572,10 +3601,10 @@ to pay attention, because the updates function out-of-the-box will only update
 the first filtered item that is defined in a database. 
 
 In this case, the first time it will find an object, which has a source 
-\'me\', it will update it and put or set the target as \'Tommen\'. So, if 
+&apos;me&apos;, it will update it and put or set the target as &apos;Tommen&apos;. So, if 
 we only have one object, which is the one that we created two slides back, 
-instead of having source \'me\' and target \'you\', it would have source \'me\' 
-and target \'Tommen\'. The weight will always be the same.
+instead of having source &apos;me&apos; and target &apos;you&apos;, it would have source &apos;me&apos; 
+and target &apos;Tommen&apos;. The weight will always be the same.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3598,7 +3627,7 @@ within your data.
 So, we have seen two of the components of our example applications and
 in the next video we are going to discuss the missing component, which
 is the view. We decided to split these three components into the first two and 
-the last component, which is the view, because sometimes you don\'t need the last
+the last component, which is the view, because sometimes you don&apos;t need the last
 component as already explained in previous videos.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-6">3.6 Views (5:54)</h3>
@@ -3624,9 +3653,9 @@ What this means is that you have to view web pages as pieces, a set of
 pieces. So, there is the navigation, there are different menus, there is the actual content
 of the page and, for example, the footer. You can use Pug to define all of these
 components and use them dynamically in the different views. Pug has a simplified
-syntax. It\'s very close to the syntax that you would ordinarily see in
-your normal HTML files, but it\'s simpler in the sense that you don\'t have
-the closing brackets and you don\'t have all of this major and minor signs.
+syntax. It&apos;s very close to the syntax that you would ordinarily see in
+your normal HTML files, but it&apos;s simpler in the sense that you don&apos;t have
+the closing brackets and you don&apos;t have all of this major and minor signs.
 
 In Pug, you can also use control statements, like each and if, which allow you
 to, for example, handle variables that you pass the view through the controller.
@@ -3641,14 +3670,14 @@ that location.
   alt="pug; Where do you find it?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Let\'s look at where we can find Pug in our complete example. 
+Let&apos;s look at where we can find Pug in our complete example. 
 We can find Pug in our complete example in the four highlighted files. These are 
 the base.pug, the home.pug, the navigation.pug and the visualization.pug. They 
 are inside the views folder, which again is inside the app folder on the
 root of our application. We take a look now at the base, home and
 **navigation.pug**. There are simplified versions of these files, but
 the actual files are pretty similar and the concepts are definitely the
-same. Let\'s look at them. 
+same. Let&apos;s look at them. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (110) ~~~~~~~~~~~~~~~~~~~~-->
@@ -3669,7 +3698,7 @@ The **base.pug** starts with
 an HTML tag, which is the starting point of every HTML file. It then has a head part,
 which contains, for example, metadata about the encoding of our HTML file,
 which in this case is utf-8. It contains also a link to a stylesheet,
-which in this case is public/style.css and it contains a title of the page. As I\'ve said, you
+which in this case is public/style.css and it contains a title of the page. As I&apos;ve said, you
 can pass variables to the pug files and in this case, we pass the
 variable title as the title of the page. So, when we construct the
 **pug** file, we actually pass it this variable and I encourage you to
@@ -3678,9 +3707,9 @@ look at the controller for the front-end where this is very visible.
 The next thing that we are going to look at is the body. I just see that
 there is a dot wrapper. This is similar to CSS notation, which means dot
 wrapper represents a div or a dividing item of class wrapper. Similarly,
-in UL hash tag navigation we have a UL element of id navigation. We\'re
+in UL hash tag navigation we have a UL element of id navigation. We&apos;re
 going to see more what CSS is used for and how it works in later
-sessions. So, let\'s look at include navigation. This is an important
+sessions. So, let&apos;s look at include navigation. This is an important
 directive. It tells Pug that when you are loading this file, which is
 the **base.pug**, it has to include a **navigation.pug** precisely in
 that location. It will then include everything that is in
@@ -3706,7 +3735,7 @@ for the paragraph, a nice paragraph.
   alt="pug; home.pug + base.pug + navigation.pug, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Let\'s look at the outcome of
+Let&apos;s look at the outcome of
 these three files combined. If we connect to the home, which means
 example.dallago.us, this is pretty much what we see. As you see, the
 navigation has been loaded as an unordered list with one list item and
@@ -3718,7 +3747,7 @@ previous videos we have seen the models and the controls. I invite you
 to look more at our code together with me in the demonstration, which is
 going to follow this video.
 
-<h3 id="ch3-7">3.7 Chapter 3 - Summary</h3>
+<h3 id="ch3-7">3.7 Chapter 3 - Summary (mm:ss)</h3>
 
 Thank you, Chris, for covering server-side JavaScript. 
 
@@ -3755,7 +3784,7 @@ visualization in JavaScript.
 
 <h3 id="ch3-8">3.8 Demo 1: Working with an Example Application (14:44)</h3>
 
-Welcome back! In this video lecture, I\'m going to demonstrate you the
+Welcome back! In this video lecture, I&apos;m going to demonstrate you the
 code that me and Dennis are using in our previous video lectures.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 178 webstore, api code (113) ~~~~~~~~~~~~~~~~~-->
@@ -3775,11 +3804,11 @@ So, first of all, what we need to do is actually download the code.
 So, we navigate: we want to open up a browser window and navigate to
 example dot dallago dot us slash public slash API dot zip and then we 
 press enter and this will download, as you have seen from the animation, the API
-code onto my computer. So, let\'s minimize Safari again, go into the
+code onto my computer. So, let&apos;s minimize Safari again, go into the
 downloads and here we see API folder. And we just drag this onto the 
-desktop, so that it\'s here.
+desktop, so that it&apos;s here.
 
-Good, now we can use our favorite editing tool. In my specific case I\'m
+Good, now we can use our favorite editing tool. In my specific case I&apos;m
 going to use WebStorm. It is an IDE. So, it has some nice features,
 like code highlights, it tells me if, for example, I mistyped the name
 of a variable, that this variable has never been declared before; so, maybe I
@@ -3802,7 +3831,7 @@ his videos.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-But, again, I\'m going to use WebStorm. So, let\'s fire that up.
+But, again, I&apos;m going to use WebStorm. So, let&apos;s fire that up.
 
 Good, so, now that webstorm is open, we can start opening up our
 application just by clicking open, navigate into the desktop and
@@ -3819,7 +3848,7 @@ application.
 
 What we see then on the left side is our folder and all of the files
 that are contained in it. The same thing is reflected if we just open up our
-folder with Finder and these are the same files that we\'re going to find in
+folder with Finder and these are the same files that we&apos;re going to find in
 WebStorm here. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3836,13 +3865,13 @@ open up a Node application is the package dot JSON file I talked about. This
 also in my video lectures and there are some nice and mention-worthy things to look
 at, like the scripts section, the dependencies and the main. So, the main
 tells us which is the most important script usually and in our application. In this
-specific case it\'s index dot js. It is this file. The scripts section tells us how to
+specific case it&apos;s index dot js. It is this file. The scripts section tells us how to
 start our application. So, it says we need to have Node installed and we start by
 calling Node and then starting from the index dot js file, which is again this
 one. And then there is the list of dependencies, which are expressed in
 Mongoose.
 
-It\'s only two dependencies. it\'s a quite easy application and both of
+It&apos;s only two dependencies. it&apos;s a quite easy application and both of
 the dependencies are at the latest version. So, when we see actually that there are
 dependencies, we know that to run our application, we first have to install the
 dependencies that are specified here and we do that by calling NPM install from a
@@ -3869,14 +3898,14 @@ folder.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We know that we are there because we\'re doing ls, we see the
+We know that we are there because we&apos;re doing ls, we see the
 exact same files as we see here on the left side and then we can run npm install
 and this will install all of the dependencies. While the two dependencies that
 are specified here, but also a lot of co-dependencies, because Express, to actually
 perform its function, will need some core dependencies, which are for example
 these accepts, array-flatten and so on and so forth. 
 
-There\'s actually a bunch of these, which come with express and mongoose. 
+There&apos;s actually a bunch of these, which come with express and mongoose. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ 185  (117) ~~~~~~~~~~~~~~~~~-->
@@ -3902,8 +3931,8 @@ is actually to look at index.js.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s open up that file and what we see is that in the very first two 
-lines we have two requirements: the first requirement is express. It\'s 
+Let&apos;s open up that file and what we see is that in the very first two 
+lines we have two requirements: the first requirement is express. It&apos;s 
 a dependency we have just seen it in a package dot JSON and we have just 
 installed it with NPM install. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3916,12 +3945,12 @@ installed it with NPM install.
 </p>
 
 The second thing that we require is database and this is actually a file and we see
-it from this dot slash at the beginning of the name. We don\'t have to
+it from this dot slash at the beginning of the name. We don&apos;t have to
 specify the extension, which in this case is js, as we see here, simply because Node
 is able to automatically get the extension if there is only one file with
 that name, and we only have one file, which is called database, and the file is
 either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
-the case we only have one file it\'s called a database and it is of the
+the case we only have one file it&apos;s called a database and it is of the
 extension dot JavaScript. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3933,11 +3962,11 @@ extension dot JavaScript.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We don\'t really need to specify the dot and js here. It
+We don&apos;t really need to specify the dot and js here. It
 is good practice to actually see what this database file does. 
 
 
-Let\'s go ahead and open up the database dot js file. Again, here, at the very beginning we
+Let&apos;s go ahead and open up the database dot js file. Again, here, at the very beginning we
 have two requirements: the second one is just a dependency again, as we have seen
 it before. It is defined in the package dot JSON and the first one is again
 a file and we see this again from the dot slash here and it is the config file,
@@ -3946,7 +3975,7 @@ few seconds ago, Node is able to automatically guess the extension if there is o
 file with that name and if that file has either the extension dot JavaScript or
 dot JSON.
 
-In our case we only have one file. It\'s dot JSON. So, we don\'t need to specify 
+In our case we only have one file. It&apos;s dot JSON. So, we don&apos;t need to specify 
 here dot JSON, but if we wanted to, we could. Again, it is good practice to see 
 what actually this file contains. 
 
@@ -3959,7 +3988,7 @@ what actually this file contains.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s open config.JSON. In the config.JSON we have only one object. We
+Let&apos;s open config.JSON. In the config.JSON we have only one object. We
 might have an array of objects if, for example, we started our file like
 this. This would then be a JavaScript JSON file with an array of objects. 
 
@@ -4015,12 +4044,12 @@ use.
 </p>
 The next important bit we are going to look at is the module dot
 exports. This is an API of Node and it basically tells us that when this file is being
-required by another file, so for example it\'s being required in index dot js, what
+required by another file, so for example it&apos;s being required in index dot js, what
 is actually being required is what comes after this equal sign and what we
 are requiring in this case is a function that accepts a callback and that
 executes some code when the function is being called.
 
-Let\'s look at what happens when a function is actually being called. The first 
+Let&apos;s look at what happens when a function is actually being called. The first 
 thing we do is we connect to our database connection string. So, Mongoose 
 connected to this connection and then we assign the database object to a variable, 
 which is called db. 
@@ -4045,19 +4074,19 @@ database, we want to log this into the console, telling there was some kind of a
 error.
 
 Here is the stack and the next thing we want to do is we want to exit
-our application, because it wouldn\'t make sense to start our application if
-we cannot connect to the database, as most of the data that we\'re going to
+our application, because it wouldn&apos;t make sense to start our application if
+we cannot connect to the database, as most of the data that we&apos;re going to
 require to answer some routes comes from the database. So, there might be some
 inconsistency if we keep the application running, so we want to exit it.
 
 The next thing that we want to do is to react on disconnected. If we
 were connected to the database, but then for some mysterious reason the
 connection gets dropped, we want to log this into the console, saying, hey, 
-we\'ve been disconnected and we closed our application just because it\'s safer 
+we&apos;ve been disconnected and we closed our application just because it&apos;s safer 
 to do so. 
 
 Last but not least, is the on open event and this is similar to connect, though 
-it\'s slightly different, because open actually means that we are connected to 
+it&apos;s slightly different, because open actually means that we are connected to 
 the database and we are able to query the database at the time that this event 
 is happening. So, this is every time the connection is open. This is the most 
 important event that we have to react on and because of that, this is where we 
@@ -4075,7 +4104,7 @@ executing it when we are sure that the database connection is up.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let\'s go back to our index dot js and let\'s see what happens after we require 
+Let&apos;s go back to our index dot js and let&apos;s see what happens after we require 
 the database.js file. We are only going to look at the database connection here 
 for a moment and in the next video I am going to talk to you about the rest of 
 this code, how the router calls controllers and what the models stands for, but 
@@ -4123,8 +4152,8 @@ this ensures us. Now we can go ahead and start the application.
 </p>
 
 We can do that either by opening up a terminal window here or for the NPM tab here and
-click on start or from the terminal, just run NPM start, and what we\'ll see is
-that it will tell us we are going into node index dot js, because that\'s what we
+click on start or from the terminal, just run NPM start, and what we&apos;ll see is
+that it will tell us we are going into node index dot js, because that&apos;s what we
 have specified in the package dot JSON to be the start of our application.
 
 Then, it will log to console that Mongoose has connected, which is the event
@@ -4158,7 +4187,7 @@ open up this website and see some content.
 What we will actually do is we will open up this website. So, I copy it, I open 
 up Safari, I paste it in here and what we see is we have all of our JSON objects
 representing our relationships here, which is exactly what we expected
-from calling that specific route. So, thank you! In the next video I\'m going
+from calling that specific route. So, thank you! In the next video I&apos;m going
 to talk about the router, the controllers, the models and the flow of our
 application.
 
@@ -4179,7 +4208,7 @@ actually work!
 In the previous video, I have explained briefly what the database file looks 
 like and how it works, and what this function down here actually executes, and 
 that it only executes once we are really connected to the database and we are able to
-query the database. And in this video, we\'re going to see what the router is,
+query the database. And in this video, we&apos;re going to see what the router is,
 what the controller is and what the models are. And we are going to implement a 
 new route into our application. 
 
@@ -4191,7 +4220,7 @@ new route into our application.
   alt="."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-First of all, let\'s again go and start the application. We can do this again, as
+First of all, let&apos;s again go and start the application. We can do this again, as
 I showed it in a previous video, through the terminal emulator from our
 computer or you can do it from the terminal here. My preferred way is actually to
 just click on the NPM tab and then press on the start script and you will see
@@ -4199,13 +4228,13 @@ down here that this is the same output that you get if you run this on a
 terminal.
 
 I did this in my previous video just to show that it actually is
-working. I\'m copying this link over here. Let me just hide these sections, open
+working. I&apos;m copying this link over here. Let me just hide these sections, open
 Safari, paste, enter and this is exactly what we want to see. So, our
 application is running and this are the relationships that I get back from our
 application. 
 
 So, back here and our application is running. This code is loaded into a
-process and let\'s actually see what these lines of code now do. So, we
+process and let&apos;s actually see what these lines of code now do. So, we
 have seen that at the very beginning, we are requiring some files and
 some components of our app and next line of code, that we want to look at, is
 this one.
@@ -4213,113 +4242,75 @@ this one.
 We define our application, so our app to be an express application and
 later we set some some variables and we add some components to it.
 One of the variables that we want to assign is the port number on which
-our application is going to be listening and we have seen, I\'m going to
+our application is going to be listening and we have seen, I&apos;m going to
 switch back to Safari right now, that we are listening on port 3000 here. So, this is
 exactly what we are telling here that if there is no port specified in the
-environment variables, then by default it will fall back and that\'s but what the
+environment variables, then by default it will fall back and that&apos;s but what the
 and and stands for here, sorry the or or stands for here. 
 
 The default fall back is the board 3000. This is also an important bit to talk 
-about one second and it\'s the environment variables, because here we can specify 
-some variables, for example, the port number that might differ when we\'re executing 
-our code on our production servers, for example. So, it\'s always good practice to
+about one second and it&apos;s the environment variables, because here we can specify 
+some variables, for example, the port number that might differ when we&apos;re executing 
+our code on our production servers, for example. So, it&apos;s always good practice to
 have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
-default values. And next thing that we\'re going to talk about is the router and
+default values. And next thing that we&apos;re going to talk about is the router and
 we see that here we create a router and we create router by requiring a file. I
 have already explained earlier that we can omit the extension here. So, when
-we are requiring this file, we\'re actually requiring the file that is called
-router.js, because we see it here, it\'s router.js. And since it\'s good practice,
-let\'s go ahead and look what is actually contained in our files.
+we are requiring this file, we&apos;re actually requiring the file that is called
+router.js, because we see it here, it&apos;s router.js. And since it&apos;s good practice,
+let&apos;s go ahead and look what is actually contained in our files.
 
 So, we fire up router.js and we see, this file is very short, it starts
 with two requirements, well sorry, just one requirement and one assignment. We
 require express again here on top and then we define our router, which
-is a new express router. That\'s what we do in this line here. And then
+is a new express router. That&apos;s what we do in this line here. And then
 we can assign some routes to it. For example, get requests or we can also
 assign post requests, put request, delete requests. These are the requests that
 I talked about in my video lectures. 
 
-But before that, let\'s see here, we are actually requiring something else and 
+But before that, let&apos;s see here, we are actually requiring something else and 
 we call it the relationships controller and this file is actually located somewhere, 
-not right at the root of our application. It\'s located in the folder app, that 
-we see here on top, so let\'s expand that. Then we go into controllers
+not right at the root of our application. It&apos;s located in the folder app, that 
+we see here on top, so let&apos;s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
 
-So, let\'s double click on that and open it up and what we see here is again, first
-of all, that we are requiring something else. It\'s again the file and now the
+So, let&apos;s double click on that and open it up and what we see here is again, first
+of all, that we are requiring something else. It&apos;s again the file and now the
 two dots tell us that we have to look one folder before the folder we are in. So,
 we are in controllers and we need to look at app and then we want to look at
 models. So, we open up the models and then there should be a file, which is
-
-called relationships. And, in fact, there is and we\'re going to open up
+called relationships. And, in fact, there is and we&apos;re going to open up
 that.
 
 And now here, we actually see an entire code - that there is no
-requirement of other
+requirement of other files within our file tree. So, we can start reading this file and from
+here work backwards and see how a router and power application works. So,
+let&apos;s get started on that and the first line again - we require mongoose and
+that&apos;s because we want to create a model, which is the relationships model, that is a
+mongoose model, and we call this model relationships. And it has some fields
+that we want to specify that our model has to adhere to. 
 
-files within our file tree. So, we can start reading this file and from
-here
-
-work backwards and see how a router and power application works. So,
-let\'s get
-
-started on that and the first line again - we require mongoose and
-that\'s because
-
-we want to create a model, which is the relationships model, that is a
-mongoose
-
-model, and we call this model relationships. And it has some fields
-
-that we want to specify that our model has to adhere to. So,
-specifically, we want
-
-our objects inside the relationships database to have a source, to have
-
+So, specifically, we want our objects inside the relationships database to have a source, to have
 a target and to have a weight. The source is of type string, the target
-is also of
-
-type string, while the weight is of type number, which might mean - now
-we can store
-
-integer numbers or double or float numbers. All of the three fields are
-
+is also of type string, while the weight is of type number, which might mean - now
+we can store integer numbers or double or float numbers. All of the three fields are
 required. So, we cannot insert elements into our database, which
-
 do not adhere to the standard, to say so. All of
-
 the objects need to have a field, which is source of that string, a
-field which
+field which is target of type string and a weight of type number. The last line is
+the module exports. This we have seen before. This is what happens when we actually
+require this specific file. And what we&apos;re exporting here is exactly the model.
 
-is target of type string and a weight of type number. The last line is
-the module
-
-exports. This we have seen before. This is what happens when we actually
-require
-
-this specific file. And what we\'re exporting here is exactly the model.
-
-So, the model that we defined over here is what
-
-we are exporting down here. And when we go back to our controllers, we
-see that
-
-we are requiring it here and we are actually requiring the relationships
-
+So, the model that we defined over here is what we are exporting down here. And when we go back to our controllers, we
+see that we are requiring it here and we are actually requiring the relationships
 model. So, inside the relationships controller, what we are exporting is
-an
-
-object and this object has an attribute, which is called relationships
-and this
-
-attribute actually executes a function, which accepts two parameters.
-The first
-
-one being the request and the second one being the response. These are
+an object and this object has an attribute, which is called relationships
+and this attribute actually executes a function, which accepts two parameters.
+The first one being the request and the second one being the response. These are
 two
 
-parameters, which are passed by let\'s say to confirm to the express way
+parameters, which are passed by let&apos;s say to confirm to the express way
 
 of dealing with requests. So, when you have an incoming request, there
 are some
@@ -4336,7 +4327,7 @@ the next
 one is response and this is actually what we are going to answer back to
 the
 
-user that performed the request. So, let\'s go into this function and
+user that performed the request. So, let&apos;s go into this function and
 what we do
 
 here is we have a relationships model, that is the one defined over
@@ -4348,10 +4339,10 @@ we want
 to find the objects inside the model and we do not just want to find a
 specific
 
-object, we want to find all of the objects. So, we\'re not specifying
+object, we want to find all of the objects. So, we&apos;re not specifying
 anything
 
-more. We\'re just saying from our relationships model: I want to find
+more. We&apos;re just saying from our relationships model: I want to find
 
 everything and once relationship model returns all of the
 
@@ -4367,7 +4358,7 @@ error in finding the objects inside my database, then I want to return a
 response, which contains our results and of status 200, which in HTTP
 means it was
 
-a successful request and I\'m returning some results or I\'m returning
+a successful request and I&apos;m returning some results or I&apos;m returning
 what you
 
 expect me to return. On the other hand, if there was an error, so, if
@@ -4427,16 +4418,16 @@ what
 we see here now is that if we navigate to these API relationships, as I
 said
 
-before, we\'re executing this function and you might have noticed that
+before, we&apos;re executing this function and you might have noticed that
 at the end
 
-here, we\'re actually not calling the function. So, we\'re not
+here, we&apos;re actually not calling the function. So, we&apos;re not
 specifying one
 
-specific call of the function but we\'re just specifying let\'s so say
+specific call of the function but we&apos;re just specifying let&apos;s so say
 the
 
-blueprint of the function. We\'re specifying what needs to be called if
+blueprint of the function. We&apos;re specifying what needs to be called if
 a
 
 user is trying to open up this route and this is because when this code
@@ -4450,7 +4441,7 @@ I start
 my server. This code gets executed after I start my server. It performs
 this
 
-request and this will be stored, let\'s say her,e and then every time
+request and this will be stored, let&apos;s say her,e and then every time
 someone
 
 calls this call, the same object will always be returned. So, the same
@@ -4461,7 +4452,7 @@ database
 the data might change over time. So, what we want to say is every time a
 user is
 
-calling this request, I don\'t want my application to just return the
+calling this request, I don&apos;t want my application to just return the
 result of
 
 the first time I execute the code and I execute this function, but I
@@ -4478,7 +4469,7 @@ necessary
 
 for the other files requiring this file to know what would
 
-we actually want to achieve by requiring this file. And what I\'m
+we actually want to achieve by requiring this file. And what I&apos;m
 exporting here is
 
 exactly the router object, which is the one that we have defined over
@@ -4525,7 +4516,7 @@ start listening to incoming requests. And the way we do that is,
 basically, we say:
 
 we start listening on a port that has been specified before. So,
-app.get(\'port\')
+app.get(&apos;port&apos;)
 
 will get this variable, which we have set here and then once the server
 is
@@ -4547,7 +4538,7 @@ have
 just seen. But, now, what we want to do is we want to specify that we
 want to have
 
-a request where we are getting data, but we\'re only getting the
+a request where we are getting data, but we&apos;re only getting the
 
 relationships for the source, that is, for example, Aemon.
 
@@ -4555,24 +4546,24 @@ So, how do we do that? We go back to our webstore and we start
 implementing a new
 
 route. So, we know that the routes are defined into the router. So, we
-don\'t have
+don&apos;t have
 
 to modify index, but we have to modify a router first and a router
 specified
 
-exactly here. So, we can come up with any name that we want. I\'m going
+exactly here. So, we can come up with any name that we want. I&apos;m going
 to delete
 
-the semicolon at the end of this line. I\'m going to copy paste this
+the semicolon at the end of this line. I&apos;m going to copy paste this
 line one line
 
-below. It\'s not the gap request, because we\'re getting data and we
+below. It&apos;s not the gap request, because we&apos;re getting data and we
 want to get
 
 the relationships for the character Aemon and we obviously change the
 type
 
-of the function that we\'re going to call. So, we want the relationships
+of the function that we&apos;re going to call. So, we want the relationships
 only for
 
 Aemon and we also have to add the semicolon here, because I deleted it
@@ -4590,7 +4581,7 @@ key that has the name relationships Aemon and defined. So, if I hover
 over it, it
 
 actually tells me there is an unresolved variable relationship Aemon. It
-doesn\'t
+doesn&apos;t
 
 happen here, because this is obviously defined. So, what we have to do
 now is
@@ -4626,41 +4617,19 @@ code and there is no reason why not to reuse it. So, we can just copy
 what
 
 we have over there and if we look at the documentation of mongoose, we
-will
-
-see that in the find function of a model, we can specify as the first
-parameter an
-
-object. So, let\'s put an object in and then we put a comma, and we
-leave the
-
-callback as it is. And in this object, I\'m going to now return just to
-have
-
-more space here, in this object we can specify what filters to apply on
-our
-
-data before we get it out. So, the filters we want to apply, as we said
-before, are
-
-that the source must equal Aemon. So, this is all we
-
+will see that in the find function of a model, we can specify as the first
+parameter an object. So, let&apos;s put an object in and then we put a comma, and we
+leave the callback as it is. And in this object, I&apos;m going to now return just to
+have more space here, in this object we can specify what filters to apply on
+our data before we get it out. So, the filters we want to apply, as we said
+before, are that the source must equal Aemon. So, this is all we
 have to do now to be sure that when we perform the find operation on our
-
 relationships model, we only filter out those elements of which the
-source is
-
-Aemon. The rest, as I said before, the callback is actually working
-pretty well,
-
-because we will have a very similar result of what we have above
-
+source is Aemon. The rest, as I said before, the callback is actually working
+pretty well, because we will have a very similar result of what we have above
 here. If we have an error, then we just return there was some kind
-
 of an error. So, this is the error. And if there was no error, we will
-have some
-
-results, which are most likely and hopefully going to be those elements
+have some results, which are most likely and hopefully going to be those elements
 
 in which the source is Aemon and we will return this element to the
 user.
@@ -4669,16 +4638,16 @@ So, now, I am saving this and as you have noticed, there is no
 
 need for me to change the model, because the model is the same.
 
-There\'s no difference there, the only thing again that I\'m changing
+There&apos;s no difference there, the only thing again that I&apos;m changing
 here is
 
-just I\'m filtering out the relationships, such that what I get is that
+just I&apos;m filtering out the relationships, such that what I get is that
 the source
 
 of our relationships is Aemon. Now I have saved this file, I have saved
 this
 
-file, there is no modification here, so there\'s no need to save
+file, there is no modification here, so there&apos;s no need to save
 anything here.
 
 If I go back to my run tab here, I can restart the process and this is
@@ -4705,7 +4674,7 @@ control+C and
 then you can just type in NPM start again. So, just for the sake here, I
 press
 
-run again and the output is going to be the same, because I\'m not
+run again and the output is going to be the same, because I&apos;m not
 logging
 
 anything new. But when I go to Safari now and I
@@ -4726,7 +4695,7 @@ also
 confirm that by going back, looking at our complete relationships root
 with all
 
-of our relationships data and you will see that at the very top there\'s
+of our relationships data and you will see that at the very top there&apos;s
 
 only two objects, which are of a source Aemon and they are exactly the
 same ones that
@@ -4734,7 +4703,7 @@ same ones that
 we get if we navigate back to this root. So, yes, this is exactly what I
 wanted to
 
-show you. You have seen that it\'s actually really really easy to
+show you. You have seen that it&apos;s actually really really easy to
 implement
 
 a new root. Probably, you want to do this in a more systematic and a
@@ -4743,7 +4712,7 @@ more a
 reusable way. So, instead of defining really specific names for
 characters,
 
-since we\'re dealing with a database and names might change, you can
+since we&apos;re dealing with a database and names might change, you can
 define a
 
 variable here. So, basically I can say column name, source name, is even
@@ -4765,7 +4734,7 @@ of
 
 hard-coding in the name, I can use something like - sourcename. There is
 
-more to that, it\'s actually not that easy. You have to define a couple
+more to that, it&apos;s actually not that easy. You have to define a couple
 of things
 
 here and there, but it this is just to give an idea of how to make this
@@ -4784,7 +4753,7 @@ if you
 
 navigate to index.js, there will be some new lines of code, which you
 
-should look into. They are interesting and I\'m very sure that if you
+should look into. They are interesting and I&apos;m very sure that if you
 understand
 
 those lines of code, you actually understand how the application works.
@@ -4826,31 +4795,31 @@ student for
 bioinformatics. He has developed several JavaScript-based visualization
 tools and
 
-he\'s passionate about open-source communities.
+he&apos;s passionate about open-source communities.
 
 ### Data retrieval using HTTP requests
 
 Welcome everyone to this part of our course!
 
-This part will deal with data visualization and we\'ll start off with
+This part will deal with data visualization and we&apos;ll start off with
 data retrieval using
 
 HTTP requests.
 
-So, let\'s take a look at what we plan to do. At this part
+So, let&apos;s take a look at what we plan to do. At this part
 
-we\'re going to create a simple web site and retrieve data from the
+we&apos;re going to create a simple web site and retrieve data from the
 Node.js application
 
 that you built in previous lectures.
 
 That means, we are moving away from the back-end now and towards the
-front-end. We\'ll use data
+front-end. We&apos;ll use data
 
 from a dataset called the Network of Thrones dataset and that contains a
 number of character
 
-interactions from the novel of \"Storm of Swords\".
+interactions from the novel of &quot;Storm of Swords&quot;.
 
 That is the third book in The Game of Thrones series.
 
@@ -4867,21 +4836,21 @@ in the last part
 of this course to create the site and then use the D3.js library for the
 visualization itself.
 
-Let\'s take another look at the architecture of this application.
+Let&apos;s take another look at the architecture of this application.
 
 The back-end is the Node.js application that you were presented
 previously and at this
 
-point, we\'re going to look at the front-end, which is going to be the
+point, we&apos;re going to look at the front-end, which is going to be the
 website.
 
 This website will also contain JavaScript and JavaScript will be used to
 query our
 
-API for the relationships of these characters, which we\'ll then return
+API for the relationships of these characters, which we&apos;ll then return
 them as JSON data.
 
-And once we have it, we\'ll try to visualize it nicely.
+And once we have it, we&apos;ll try to visualize it nicely.
 
 The first step in this is to use the **Pug** templating and engine and
 compile template into
@@ -4891,7 +4860,7 @@ an HTML file that will be displayed in a web browser.
 Then, with the help of JavaScript, we will create the backend server and
 get the data from there.
 
-So, let\'s take a look at the code you were provided before. In the
+So, let&apos;s take a look at the code you were provided before. In the
 views folder of the app,
 
 you can find four files.
@@ -4906,13 +4875,13 @@ which
 
 can then be referenced in other parts,
 
-for example, in the base file. So, we don\'t have to include the code
+for example, in the base file. So, we don&apos;t have to include the code
 for navigation in every site.
 
 The **visualization.pug** file is where the content for our
 visualization page will
 
-be hosted and we\'ll try to have a look at that in a second.
+be hosted and we&apos;ll try to have a look at that in a second.
 
 So here it is.
 
@@ -4933,7 +4902,7 @@ check the content in the relevant areas.
 
 So, we have in the styles block linked a style.css file.
 
-We\'ll talk about that later.
+We&apos;ll talk about that later.
 
 Right on the button, there are two JavaScript files.
 
@@ -4943,7 +4912,7 @@ have another JavaScript
 file linked that will host the code for data retrieval and
 visualization.
 
-But let\'s take a closer look at the content itself.
+But let&apos;s take a closer look at the content itself.
 
 There are three parts here.
 
@@ -4961,7 +4930,7 @@ And, finally, we have
 
 one more div with the ID root.
 
-This is where we\'ll inject the visualization using JavaScript and D3.
+This is where we&apos;ll inject the visualization using JavaScript and D3.
 
 So, this is what the page looks like.
 
@@ -4972,7 +4941,7 @@ initialize the
 
 visualization and data retrieval.
 
-So, let\'s have a look at what the data retrieval actually looks like.
+So, let&apos;s have a look at what the data retrieval actually looks like.
 This will happen in the
 
 JavaScript file.
@@ -4982,7 +4951,7 @@ the public folder of our application.
 
 The script.js will host all the code we need.
 
-So, let\'s talk about that code. Creating HTTP requests is a classic
+So, let&apos;s talk about that code. Creating HTTP requests is a classic
 application of front-end and even back-end JavaScript.
 
 There are many libraries out there, which try to make this a very simple
@@ -5002,12 +4971,12 @@ data. And it is also the object,
 which supports a number of events that will be fired at various stages
 of this process.
 
-For example, when the request arrives at the back-end, there\'s an event
+For example, when the request arrives at the back-end, there&apos;s an event
 for that.
 
 When it starts sending data,
 
-there\'s a second event for that. And there\'s another event when it is
+there&apos;s a second event for that. And there&apos;s another event when it is
 finished with transferring the
 
 data back to the front-end.
@@ -5048,7 +5017,7 @@ with function, in this case.
 And, lastly, we need to tell the request object what kind of HTTP
 request it is.
 
-In this case, it\'s a GET request and we have to tell it where to send
+In this case, it&apos;s a GET request and we have to tell it where to send
 it off to.
 
 In this case, our API - the relationship end-point.
@@ -5065,7 +5034,7 @@ onload function presented before.
 
 ### Data visualization with D3
 
-Hi and welcome to the next part of this lecture! In this part, we\'re
+Hi and welcome to the next part of this lecture! In this part, we&apos;re
 going to
 
 discuss data visualization. Now, that we have the data retrieved from an
@@ -5074,20 +5043,20 @@ API, we
 will try and create a nice-looking graph from the character interactions
 of the
 
-Storm of Swords novel. Let\'s talk about visualization in general.
+Storm of Swords novel. Let&apos;s talk about visualization in general.
 
 Why visualization? Technically, all the information that is displayed by
 
 visualization is already available in the data itself, but a good
 example for
 
-why visualization is important is the so-called Anscombe\'s quartet. You
+why visualization is important is the so-called Anscombe&apos;s quartet. You
 can see it on the
 
 left side here. So, what you see is a bunch of data, what you see is
 that you
 
-can\'t see much at first glance. However, luckily, we have some
+can&apos;t see much at first glance. However, luckily, we have some
 mathematical tools
 
 to analyze these four two-dimensional distributions. However, in this
@@ -5128,11 +5097,11 @@ number of JavaScript libraries for web-based data visualization
 available,
 
 such as the ones you can see listed on the left side of the slide.
-Today, we\'ll
+Today, we&apos;ll
 
-be using D3 and we\'ll talk a little bit about why we will be using
+be using D3 and we&apos;ll talk a little bit about why we will be using
 
-D3 in a minute. First, let\'s talk about ways in which we can visualize
+D3 in a minute. First, let&apos;s talk about ways in which we can visualize
 data in
 
 the browser in general. There are three major ways, basically. The most
@@ -5171,13 +5140,13 @@ work to HTML elements.
 They provide DOM-handling ability,
 because they are basically part of the HTML file. That means that you
 can create events and callbacks when clicking on them, which means they are very
-good for interactive graphs and visualizations. And because SVG doesn\'t actually
+good for interactive graphs and visualizations. And because SVG doesn&apos;t actually
 place any pixels anywhere, but rather provides a description of how a shape
-should look like, it\'s completely resolution-independent. The problem, however, is that if 
+should look like, it&apos;s completely resolution-independent. The problem, however, is that if 
 you have a lot of elements and shapes to draw, as in thousands, it can become very 
 slow and we would probably need to move to a WebGL or canvas-based visualization. 
 
-Let\'s talk about why we want to use D3. If you go to the website at d3js.org, 
+Let&apos;s talk about why we want to use D3. If you go to the website at d3js.org, 
 you will see that most of the examples are some form of graph or bar chart, or 
 in some other form of craft-based visualization. However, D3 is not just a 
 graphing library, like some of the other ones that we have listed on a few 
@@ -5187,7 +5156,7 @@ data-driven transformation to them.
 
 And those can be, for example, SVG graphics. They can also be tables or text 
 elements or any other kind of HTML elements. So, the main point for D3 is the 
-way that data binding works with D3 and let\'s talk about what that actually 
+way that data binding works with D3 and let&apos;s talk about what that actually 
 means. 
 
 Data binding in web development refers to the assignment of data to specific
@@ -5215,7 +5184,7 @@ graph using D3.
 
 Welcome to the next part of our lesson on data visualization!
 
-This time we\'re going to talk about DOM and SVG.
+This time we&apos;re going to talk about DOM and SVG.
 
 DOM stands for the Document Object Model
 
@@ -5248,7 +5217,7 @@ the pointy brackets.
 
 And this tag has an ID, for example, html.
 
-And for each tag, there\'s also a corresponding closing tag, which has
+And for each tag, there&apos;s also a corresponding closing tag, which has
 the same ID preceded
 
 by a slash.
@@ -5262,9 +5231,9 @@ web page contained within it.
 
 For all the other tags, it works in a similar way.
 
-In the way that there\'s an opening tag,
+In the way that there&apos;s an opening tag,
 
-then there is more content and then there\'s a closing tag.
+then there is more content and then there&apos;s a closing tag.
 
 This example here is actually the compiled version
 
@@ -5313,7 +5282,7 @@ complicated structure.
 You could also call it the model for all the objects that are contained
 in the document.
 
-So, that\'s why, this tree structure is what we mean when we refer to
+So, that&apos;s why, this tree structure is what we mean when we refer to
 the document object
 
 model or DOM for short.
@@ -5340,7 +5309,7 @@ Again, in this example on the left
 right now, we have a bunch of names and a bunch of relationships, which
 is going back
 
-to the data we got from our novel from the \"Network of Thrones\"
+to the data we got from our novel from the &quot;Network of Thrones&quot;
 dataset.
 
 Technically, as I said before,
@@ -5353,7 +5322,7 @@ But in our case we would like to have a nice looking graphics.
 
 So, we are going to use Scalable Vector Graphics.
 
-We\'re going to talk about them next.
+We&apos;re going to talk about them next.
 
 What are Scalable Vector Graphics?
 
@@ -5383,13 +5352,13 @@ a button or as a link, the elements register when they get clicked on.
 
 And besides drawing shapes, you can also render text in SVG.
 
-Let\'s have a look at how it works.
+Let&apos;s have a look at how it works.
 
 You can see a much more simplified HTML version.
 
 At the body, we added a simple SVG element.
 
-The element itself again has a tag ID, in this case it\'s
+The element itself again has a tag ID, in this case it&apos;s
 
 svg, and as a closing tag slash svg.
 
@@ -5400,7 +5369,7 @@ then the child
 
 nodes of this element contain the actual shapes to draw.
 
-In this case, it\'s a single path element and path element
+In this case, it&apos;s a single path element and path element
 
 our freestyle shapes, so to say, where the shape of the element is
 defined by the user,
@@ -5426,7 +5395,7 @@ Three of them are circles, three of them lines and
 
 you can see the result on the bottom right.
 
-It\'s a simple graph with three nodes and three links.
+It&apos;s a simple graph with three nodes and three links.
 
 Now, the color and the shape of all these objects
 
@@ -5452,7 +5421,7 @@ shapes and graphics.
 
 Welcome back to our lecture about data visualization!
 
-In this part, we\'ll take a
+In this part, we&apos;ll take a
 
 closer look onto data binding with D3 and we will also create a graph
 model
@@ -5461,7 +5430,7 @@ that will then translate into a visualization on our site.
 
 First off, to create a graph visualization we need
 
-two parts. We need a mathematical model of a graph that we\'ll use to
+two parts. We need a mathematical model of a graph that we&apos;ll use to
 calculate
 
 aesthetically pleasing positions for the notes on our graphic and then
@@ -5472,10 +5441,10 @@ actual visualization.
 
 So, this is where the data binding part comes in.
 
-We\'ll bind the node position to the position of the shapes in our graph
+We&apos;ll bind the node position to the position of the shapes in our graph
 visualization.
 
-So, to start off, we\'ll start off with the graph model itself and D3
+So, to start off, we&apos;ll start off with the graph model itself and D3
 provides a number of
 
 layouts for graphs right out of the box. We will be using a force
@@ -5521,10 +5490,10 @@ set the dimension of the area in which the nodes can move and we
 obviously want
 
 this to be the same size as our graphic on the screen later on. So,
-we\'ll use two
+we&apos;ll use two
 
-variables for width and height, which we\'ll pass to the size function
-and we\'ll
+variables for width and height, which we&apos;ll pass to the size function
+and we&apos;ll
 
 also reuse them later for the size of our graphic.
 
@@ -5536,16 +5505,16 @@ graph
 layout provided by D3 has two more functions we can call to actually
 pass
 
-that data. They are called nodes and links, and we\'ll pass a set of
+that data. They are called nodes and links, and we&apos;ll pass a set of
 data that
 
-you\'ve already seen before the one about the characters in Game of
+you&apos;ve already seen before the one about the characters in Game of
 Thrones and
 
 their interactions. In this case, the characters are nodes. In terms of
 data,
 
-it\'s just an array of names, basically, and the links, which are the
+it&apos;s just an array of names, basically, and the links, which are the
 interactions between those.
 
 Finally, to actually start the simulation, we have to call the start
@@ -5557,9 +5526,9 @@ things internally and we will kind of come back to that in a later
 slide.
 
 So, now, that we have the data model for our graph layout initialized,
-we\'ll move on
+we&apos;ll move on
 
-to actually initialize the visualization and then we\'ll try to bind the
+to actually initialize the visualization and then we&apos;ll try to bind the
 model and
 
 the position of the nodes to the graphics and the position of the shapes
@@ -5581,16 +5550,16 @@ And now we need to talk about something else as well, because the way
 that D3
 
 actually selects elements from the DOM is by using CSS selectors and
-we\'ll talk
+we&apos;ll talk
 
 about CSS a little bit later, but generally if you want to learn more
 
-about CSS, there are great resources online for that as well. We\'ll
+about CSS, there are great resources online for that as well. We&apos;ll
 only go to the basics for now.
 
 So, basically, in CSS, you have different ways of selecting
 
-different types of DOM elements. There are three, actually. We\'ll only
+different types of DOM elements. There are three, actually. We&apos;ll only
 use two for
 
 now. You can select an element by its ID and to do that, you use a pound
@@ -5601,7 +5570,7 @@ tag in front of the ID, so if you look at the top row here, if I want to
 select the HTML element with the ID root, I can use the JavaScript
 function on the
 
-right ,which is provided by D3. I can say D3.select(\"#root\") and that
+right ,which is provided by D3. I can say D3.select(&quot;#root&quot;) and that
 
 means that the SVG, one on the left, will actually hold the ID equals
 root element on the left.
@@ -5611,7 +5580,7 @@ Similarly, I can also use the full-stop.
 In this case, this will select any element that has the class root
 attached
 
-to it. So, in this case, instead of selected by ID, I\'m selecting by
+to it. So, in this case, instead of selected by ID, I&apos;m selecting by
 CSS
 
 class and we talk a little bit more about that later as well. But for
@@ -5620,16 +5589,16 @@ now, if
 you see #root that just means I want to select the DOM element, which
 has the ID root.
 
-So, this is what we\'re actually going to do now. We\'ll take
+So, this is what we&apos;re actually going to do now. We&apos;ll take
 
-D3, we\'ll select the root ID from our HTML file and then we\'ll tell
+D3, we&apos;ll select the root ID from our HTML file and then we&apos;ll tell
 
 it - now that you have it, please append a child element of the type
 SVG, which
 
-we\'ll do using the append function and then we\'ll also set
+we&apos;ll do using the append function and then we&apos;ll also set
 
-a number of attributes on this SVG. In this case, we\'ll set the
+a number of attributes on this SVG. In this case, we&apos;ll set the
 dimensions.
 
 And, as I mentioned before, these dimensions need to be the same as the
@@ -5651,12 +5620,12 @@ with shapes
 
 corresponding to our graph model.
 
-So, let\'s take a look at this slide. On the
+So, let&apos;s take a look at this slide. On the
 
 left you can see some demo data. Think of the top ones as characters
 from the
 
-books. In this case, they\'re just called ABC. And the bottom on the
+books. In this case, they&apos;re just called ABC. And the bottom on the
 left, will have
 
 a number of connections between those and now, remember, when we call
@@ -5682,7 +5651,7 @@ handle
 cases where, for example, in our case, two characters might have the
 same name and
 
-to distinguish them, instead of calling them A and B, we\'ll call them
+to distinguish them, instead of calling them A and B, we&apos;ll call them
 name 0 and name 1.
 
 If we now try to add this data to our visualization, we would like
@@ -5703,12 +5672,12 @@ are other circle or line shapes on our graphic that do not necessarily
 
 represent a node or link of the graph.
 
-But what we\'re actually trying to do here in
+But what we&apos;re actually trying to do here in
 
 terms of data binding is, we would like to represent the data we have on
 the
 
-left in the same fashion in our UI or in our graphic, and we\'d like to
+left in the same fashion in our UI or in our graphic, and we&apos;d like to
 keep those consistent as well.
 
 Data binding in this case refers to the consistency that if
@@ -5724,7 +5693,7 @@ this
 
 information back to our data and keep it consistent.
 
-Now let\'s take a look how we
+Now let&apos;s take a look how we
 
 can use D3 to add new elements to our graphic.
 
@@ -5781,7 +5750,7 @@ would like to now represent those on the right on our graphic as well.
 If you think in terms of sets, this is only one of three possible
 outcomes. You could, for
 
-example, also imagine that we have elements on our data, I\'m sorry, on
+example, also imagine that we have elements on our data, I&apos;m sorry, on
 our
 
 graphic on the right, but not in our data or you could imagine that we
@@ -5844,11 +5813,11 @@ changed.
 So, if we actually do this, you can see, we get the desired outcome on
 the right. So, on
 
-the left, let\'s go through it again, we select all the links or all the
+the left, let&apos;s go through it again, we select all the links or all the
 elements
 
 that have a link class in our SVG, which will return an empty set.
-We\'ll also use
+We&apos;ll also use
 
 the data function to provide the data points on the bottom of the screen
 
@@ -5858,7 +5827,7 @@ function to deal
 with all the data points that are not yet on our page. In this case, the
 three
 
-links below, and then we\'ll say, for each of the data points we have,
+links below, and then we&apos;ll say, for each of the data points we have,
 append the
 
 new line element to our SVG and then also set the attribute class to
@@ -5878,7 +5847,7 @@ how to actually do this in code.
 
 Now, that we actually created a graph model and we
 
-created a graph visualization using SVG, we\'ll take a bit of a closer
+created a graph visualization using SVG, we&apos;ll take a bit of a closer
 look into
 
 how to control the look of this SVG using CSS and style elements in the
@@ -5886,13 +5855,13 @@ next lecture.
 
 ### Controlling element styles
 
-In this part of our data visualization lecture, we\'ve been talking
+In this part of our data visualization lecture, we&apos;ve been talking
 about
 
 controlling element styles using D3. Chris mentioned CSS a couple of
 times before
 
-in this lecture. So, now we\'re going to take a closer look into what it
+in this lecture. So, now we&apos;re going to take a closer look into what it
 is
 
 and how we can use D3 to actually use it. So, CSS stands for cascading
@@ -5941,10 +5910,10 @@ go back to our code, you can see on the right
 that the class link has been attached to the links between the nodes and
 the
 
-color of these links is actually gray and it\'s slightly opaque. Also,
+color of these links is actually gray and it&apos;s slightly opaque. Also,
 as
 
-you can see it here on the nodes, the links don\'t actually touch the
+you can see it here on the nodes, the links don&apos;t actually touch the
 nodes
 
 directly. This is due to the fact that the node has a 1.5 width stroke
@@ -5956,7 +5925,7 @@ actually
 see a white line around the nodes, which we have set in the CSS file up
 here. So,
 
-now let\'s imagine, we would like to change around the width of our
+now let&apos;s imagine, we would like to change around the width of our
 links. We
 
 could go back into CSS and actually change the stroke width in the CSS
@@ -5975,7 +5944,7 @@ It takes two parameters: it takes the style to be influenced as the
 first
 
 parameter and then the value to set it to as a second. So, in this case,
-we\'re
+we&apos;re
 
 setting the stroke width to two points and as you can see in comparison
 to the
@@ -5991,12 +5960,12 @@ each to a
 different width? Usually, you would have to create a new CSS class for
 each width
 
-you\'d like to have, which sounds like a lot of effort and
+you&apos;d like to have, which sounds like a lot of effort and
 
-requires a lot of redundancy. So, instead let\'s take another look into
+requires a lot of redundancy. So, instead let&apos;s take another look into
 our data. We
 
-have two links data that you\'ve seen before. What you haven\'t seen
+have two links data that you&apos;ve seen before. What you haven&apos;t seen
 before is
 
 that there are some ellipses here and if we expand that in a single data
@@ -6085,13 +6054,13 @@ influence the
 
 style and appearance of our visualizations and graphics, in the next
 
-part we\'ll talk about how we can make them interactive using event
+part we&apos;ll talk about how we can make them interactive using event
 handling.
 
 ### Event handling in D3
 
 Welcome to this part of our data visualization lesson! In this part,
-we\'re
+we&apos;re
 
 going to talk about event handling in D3 and how we can use events to
 keep
@@ -6107,7 +6076,7 @@ number
 of shapes in our SVGs. Now, if you would look into our example, what you
 could
 
-see is that you can\'t see much. All you can see is little quarter shape
+see is that you can&apos;t see much. All you can see is little quarter shape
 on the
 
 top left of the visualization and if you look into the code of the DOM,
@@ -6145,7 +6114,7 @@ meaning every time a new position is calculated for a node, this tick
 event is called on every node, and finally, an end-event that is called
 as
 
-soon as the simulation is stopped. We\'ll be taking advantage of the
+soon as the simulation is stopped. We&apos;ll be taking advantage of the
 tick event for
 
 now and we will tell the force layout to do something as soon as there
@@ -6207,7 +6176,7 @@ maybe
 drag them around, maybe transform the shape of a graph by clicking
 around.
 
-That\'s why we\'re going to use the on click event in D3, because SVG
+That&apos;s why we&apos;re going to use the on click event in D3, because SVG
 elements
 
 are DOM elements, they do already implement a click event, just like
@@ -6223,7 +6192,7 @@ that the node selection actually contains every node on our graphic and
 the click event, so, the function we define here, will be called on the
 node
 
-that is clicked on. That is why we have to use the \'this\' keyword down
+that is clicked on. That is why we have to use the &apos;this&apos; keyword down
 here to
 
 select the current node that has been clicked on using D3. So, D3
@@ -6232,7 +6201,7 @@ selects this
 and then we can change any attribute, we can assign new attributes to
 this node
 
-itself. In this case, we\'ll change the radius attribute, meaning the
+itself. In this case, we&apos;ll change the radius attribute, meaning the
 size of the
 
 circle to 20. In our case, this will increase the size of the node to 20
@@ -6262,7 +6231,7 @@ attribute value, we tell D3 that we wanted animated, they call in the
 
 transition function and we will also then specify a duration
 
-for this transition. In this case, we\'ll use 750 milliseconds. So, if
+for this transition. In this case, we&apos;ll use 750 milliseconds. So, if
 you then go
 
 back to our example and click on the red node, it will slowly increase
@@ -6312,16 +6281,16 @@ then summarize the course and say a few parting words.
 Hello everyone! Welcome to the first demo video accompanying the API
 calls and
 
-data visualization lecture. In this first video, we\'re going to look at
-what we\'re
+data visualization lecture. In this first video, we&apos;re going to look at
+what we&apos;re
 
 going to build in this lecture, the tools we use, some of the code
 structure of
 
-what is provided and we\'re going to make our first HTTP requests to our
+what is provided and we&apos;re going to make our first HTTP requests to our
 API to
 
-get some data to visualize. So, after this lecture, this is what we\'re
+get some data to visualize. So, after this lecture, this is what we&apos;re
 gonna have - a
 
 simple website. It has very a simple menu appear on navigation, the home
@@ -6346,45 +6315,45 @@ represents a character and the links between them represent their
 relationships. And at the end, we guys, are going to add a little bit of
 interactivity.
 
-So, if I click any of the nodes, they\'ll
+So, if I click any of the nodes, they&apos;ll
 
 change their color and increase in size. And on a double click, they
 should back down
 
-again and become red. So, that\'s what we\'re going to build now. Let\'s
+again and become red. So, that&apos;s what we&apos;re going to build now. Let&apos;s
 take a
 
-look at what we\'re going to need first. So, let\'s close this one for
-now. We\'re
+look at what we&apos;re going to need first. So, let&apos;s close this one for
+now. We&apos;re
 
-going to need a couple of tools. We\'re going to the browser.
+going to need a couple of tools. We&apos;re going to the browser.
 
-I\'m using Chrome, but Firefox and Safari will work just fine. You\'ll
+I&apos;m using Chrome, but Firefox and Safari will work just fine. You&apos;ll
 need a text
 
-editor. I\'m using Atom and if you\'re just starting out developing,
+editor. I&apos;m using Atom and if you&apos;re just starting out developing,
 especially in
 
-JavaScript, Atom is definitely a good way to go. It\'s a free and
+JavaScript, Atom is definitely a good way to go. It&apos;s a free and
 open-source editor.
 
-It\'s actually built in JavaScript and yeah it has tons of themes and
+It&apos;s actually built in JavaScript and yeah it has tons of themes and
 
-extensions on plugins. Give it a go if you\'re not sure what to use.
+extensions on plugins. Give it a go if you&apos;re not sure what to use.
 
-And then, I\'m also going to use a terminal emulator, or you know, a
+And then, I&apos;m also going to use a terminal emulator, or you know, a
 shell.
 
-I\'m using iterm2 at the moment, but any terminal that comes with OSX or
+I&apos;m using iterm2 at the moment, but any terminal that comes with OSX or
 any
 
 Linux distribution will work just fine. Make sure you have Node
 installed,
 
-however. So, let\'s take a little look at the code that is provided from
+however. So, let&apos;s take a little look at the code that is provided from
 previous
 
-lectures. So, I\'m in the folder right now and there\'s a bunch of loose
+lectures. So, I&apos;m in the folder right now and there&apos;s a bunch of loose
 files and
 
 two folders app and public. The first thing to look at is the
@@ -6411,24 +6380,24 @@ models and the views. These views are template files that will be
 rendered
 
 into HTML and then displayed in the browser. Just a quick recap about
-what\'s
+what&apos;s
 
 in the template of our visualization page - it extends the base view,
 which
 
-means they\'ll include things like the navigation and we don\'t have to
+means they&apos;ll include things like the navigation and we don&apos;t have to
 type
 
 that code in any page that wants to use navigation, which is provided
 once and
 
-then we extend the other by using the other views. We\'re linking a
+then we extend the other by using the other views. We&apos;re linking a
 stylesheet.
 
 That is just a simple CSS file that defines things like the color of the
 
 links between the nodes and we have the content block that has the title
-you\'ve
+you&apos;ve
 
 seen before in the visualization on top, it defines the button and we
 have an empty
@@ -6456,12 +6425,12 @@ holds all the client-side JavaScript code. So, we have a lib folder that
 holds
 
 all the dependencies or the libraries you want to use. In this case,
-it\'s only
+it&apos;s only
 
 the D3 library, if I actually need to look at that. We have a
 visualization
 
-folder that has anything to do with visualization. In this case, it\'s
+folder that has anything to do with visualization. In this case, it&apos;s
 our little
 
 stylesheet, just defining what the nodes and the links look like and it
@@ -6470,7 +6439,7 @@ has the
 visualization.js, which is where all the magic is going to happen. So,
 this is
 
-what we\'re going to get later from the API and then create a
+what we&apos;re going to get later from the API and then create a
 visualization.
 
 So, we have two very empty functions at the moment. The first one is the
@@ -6479,7 +6448,7 @@ loadData
 function and, remember, this gets called whenever we click our button.
 So, we
 
-gonna load data from the backend in this one and then we\'re going to
+gonna load data from the backend in this one and then we&apos;re going to
 send that
 
 data to the second function that will create the visualization on our
@@ -6491,9 +6460,9 @@ already
 have. You need to run the server, so the client-side code gets
 
 executed and provides us with the API, so, we can get some data in this
-part here. So, let\'s
+part here. So, let&apos;s
 
-go to our terminal. I\'m already in the folder that holds all the code.
+go to our terminal. I&apos;m already in the folder that holds all the code.
 So, I can
 
 list it here. I actually have a little shortcut for
@@ -6503,10 +6472,10 @@ What we
 
 need to do is basically run the index.js that will create a server and
 
-provide the API, so we can work with it. However, there\'s a little
+provide the API, so we can work with it. However, there&apos;s a little
 problem, though.
 
-If I run this, it\'ll crash, because it cannot find the express module
+If I run this, it&apos;ll crash, because it cannot find the express module
 it needs
 
 to run. So, let me just clear my screen here. What we need to do first
@@ -6517,7 +6486,7 @@ can
 
 just run npm install, because if you remember, taking a look back here,
 
-the package.json defines all the dependencies we need. So, I\'m going to
+the package.json defines all the dependencies we need. So, I&apos;m going to
 run
 
 npm install. Actually, npm i is enough, because if you type that a lot
@@ -6539,7 +6508,7 @@ already get our
 little page, because the server is running. And, these, what you can see
 here, are rendered
 
-templates that we defined in the server\'s code. The visualization page
+templates that we defined in the server&apos;s code. The visualization page
 
 exists as well. It has the button. However, when I click, nothing
 happens, which make sense.
@@ -6569,22 +6538,22 @@ can see up
 here, we have a little message. And if I keep clicking this button, we
 will get
 
-more messages. So far, so good. Let\'s take a look at what we need to do
+more messages. So far, so good. Let&apos;s take a look at what we need to do
 
 to actually get some data from our API.
 
 We will be using the classic native JavaScript way to do it with an xml
 
-http request object. If you\'re lucky enough to develop only for modern
+http request object. If you&apos;re lucky enough to develop only for modern
 browsers, the
 
 upcoming version of JavaScript actually has a new API, called Fetch. If
 you are working
 
-in Node, you can also use it already, but for now we\'re just going to
+in Node, you can also use it already, but for now we&apos;re just going to
 use the
 
-classic way and as you can see for our little example here, it\'s really
+classic way and as you can see for our little example here, it&apos;s really
 easy to
 
 use. So, to actually get going, we need three steps. We need to create
@@ -6596,13 +6565,13 @@ what are
 we going to do with the data that we received, and in the third step, we
 just
 
-need to send it off. So, let\'s start at the beginning. We\'ll create a
+need to send it off. So, let&apos;s start at the beginning. We&apos;ll create a
 new
 
 variable that holds our request and it holds an instance of a XMLHttp
 Request
 
-Right. That\'s the first step - done. Now we need to define
+Right. That&apos;s the first step - done. Now we need to define
 
 what we actually want to do if the request was successful. And, the
 
@@ -6619,9 +6588,9 @@ there is also
 
 an event that gets fired as soon as the request successfully has
 
-transferred all the data from the backend and that\'s the one
+transferred all the data from the backend and that&apos;s the one
 
-we\'ll be looking at. We can define the onload event now. What we\'re
+we&apos;ll be looking at. We can define the onload event now. What we&apos;re
 doing here
 
 is basically find a function that gets called every time the request is
@@ -6636,7 +6605,7 @@ we need to
 access the request. In this case, we can access access this with the
 this keyword
 
-and then we\'ll get the responseText. So, that\'s all that we need.
+and then we&apos;ll get the responseText. So, that&apos;s all that we need.
 
 However, this response text, as it says, is a string and in our case,
 because we
@@ -6648,16 +6617,16 @@ do
 
 JSON.parse(this.responseText). And now here, is where we find what we
 
-actually want to do with the data. In this first video, we\'re not going
+actually want to do with the data. In this first video, we&apos;re not going
 to do
 
-anything with it. The next one, we\'re gonna transform it in a way that
+anything with it. The next one, we&apos;re gonna transform it in a way that
 we can
 
-use it with D3 later on, but for now, let\'s just log it to the console,
+use it with D3 later on, but for now, let&apos;s just log it to the console,
 so we
 
-can take a look at it. That\'s all we need to define here.
+can take a look at it. That&apos;s all we need to define here.
 
 The third step and the final step of sending an HTTP request is, we need
 to instantiate
@@ -6668,7 +6637,7 @@ of HTTP request
 type we are sending. We will be sending a get request. You will also
 have to define the
 
-URL that we\'re sending request to. In our case, we are
+URL that we&apos;re sending request to. In our case, we are
 
 staying in the same domain that we are running currently. So, on the
 localhost:3000.
@@ -6678,16 +6647,16 @@ So, obviously, those define the route on that domain for the API
 and on the endpoints relationships. And the server is defined, if there
 is a get
 
-request coming to that route, it\'ll return the relationship data. And,
+request coming to that route, it&apos;ll return the relationship data. And,
 finally,
 
-we have to send it off. That\'s it. It\'s all we need to get data from
+we have to send it off. That&apos;s it. It&apos;s all we need to get data from
 the
 
 backend using HTTP request in JavaScript. The native way, no external
 libraries are
 
-needed. So, let\'s get back to our browser, reload the page and click
+needed. So, let&apos;s get back to our browser, reload the page and click
 the button
 
 again. As you can see, we get returned an array of objects and if we
@@ -6705,8 +6674,8 @@ target
 of the interactions, or two characters, and the weight as well. And,
 these are all
 
-different interactions. So, that\'s it for this video. In the next
-video, I\'ll
+different interactions. So, that&apos;s it for this video. In the next
+video, I&apos;ll
 
 show you how we can transform these interactions, so we can create a
 graph
@@ -6721,7 +6690,7 @@ visualization
 lecture. In the first video, we talked about how we can use HTTP calls
 to
 
-retrieve data from an API. In this video, we\'ll be taking a look at how
+retrieve data from an API. In this video, we&apos;ll be taking a look at how
 to
 
 transform that data, so we can use it in the next video to create a
@@ -6741,33 +6710,33 @@ this, we need
 two things - we need the list of relationships, so the links, we also
 need
 
-the characters themselves who would represent the nodes. So, what we\'re
+the characters themselves who would represent the nodes. So, what we&apos;re
 going
 
-to do now is you\'re going to go through the list of relationships and
+to do now is you&apos;re going to go through the list of relationships and
 extract a
 
 unique list of names, so we can connect them, as you can see here. So,
-let\'s take
+let&apos;s take
 
-another look at what we did in the last video. I\'m going to go back to
+another look at what we did in the last video. I&apos;m going to go back to
 the
 
 terminal and in the folder where all our code is housed. Especially, in
 the
 
-top folder that has the index.js file. Now, I\'m going to start running
+top folder that has the index.js file. Now, I&apos;m going to start running
 our server
 
 again using the command node index.js. So, our back-end is running on
 port 3000.
 
-I\'m going to close this one and go to localhost:3000, go back to our
+I&apos;m going to close this one and go to localhost:3000, go back to our
 
 visualization page and, as you can remember, when I click the button, we
 will
 
-get data from the back-end, but no visualization is generated yet. I\'m
+get data from the back-end, but no visualization is generated yet. I&apos;m
 going
 
 to use the alt+command+J shortcut again to open up the developer console
@@ -6788,21 +6757,21 @@ interaction or the relationship. And then the values for
 
 these attributes are names of characters from the Game of Thones novels.
 
-So, let\'s go back and look at the code that we generated in the first
+So, let&apos;s go back and look at the code that we generated in the first
 
-video. We\'re in our visualization.js file in the public section of our
+video. We&apos;re in our visualization.js file in the public section of our
 code
 
 and we populated this loadData function by generating a HTTP request,
 defining
 
-what we\'re going to do with it after it successfully loaded the data
+what we&apos;re going to do with it after it successfully loaded the data
 and then
 
-sending it off. And now, we\'re going to start working a bit more with
+sending it off. And now, we&apos;re going to start working a bit more with
 this
 
-onload function and we\'re going to transform the response data that we
+onload function and we&apos;re going to transform the response data that we
 had
 
 in a way that we can use it with D3 later on. So, D3 for generating
@@ -6815,37 +6784,37 @@ the list of relationships or link objects. So, we already have a list of
 relationship objects and the first thing we need to do now is to extract
 a unique
 
-list of node names. So, what we\'re going to do is to take another look
+list of node names. So, what we&apos;re going to do is to take another look
 at our browser.
 
-We\'re going to go through all of the link objects of this list and
+We&apos;re going to go through all of the link objects of this list and
 
-for each of the source and target names we\'re going to check if this
+for each of the source and target names we&apos;re going to check if this
 name is
 
-already part of our unique name list and if it\'s not, we\'re going to
+already part of our unique name list and if it&apos;s not, we&apos;re going to
 add it and
 
-then do the same for the target. I\'m going to do this for all of the
+then do the same for the target. I&apos;m going to do this for all of the
 objects.
 
 So, first thing to do is to create a new variable called names and this
 list of names is
 
 going to be extracted from the array of relationships, which is stored
-in our response object. So, I\'m going to use the functional approach
+in our response object. So, I&apos;m going to use the functional approach
 here using an array function that is native to JavaScript, called
-reduce. So, I\'m going to call this reduce function on the response
+reduce. So, I&apos;m going to call this reduce function on the response
 object, or this array of relationships, which is stored in this
 variable. And what reduce does is it goes over an array of object and
 applies a function to it, to each and one of those, and it also keeps an
 accumulator variable that gets filled up as we go along.
 
-So, what we\'re going to do is we\'re going to create a function and
+So, what we&apos;re going to do is we&apos;re going to create a function and
 this function will be applied to each of those objects. In this case,
 this function will extract the names and then, back here, we have an
-empty array. This is our list of names in the beginning. It\'s empty and
-as we go along, I\'m going to put names in there if they don\'t already
+empty array. This is our list of names in the beginning. It&apos;s empty and
+as we go along, I&apos;m going to put names in there if they don&apos;t already
 exist. And by the end of the reduced function, this variable will hold
 to fill up array back here, which is the list of names. And this
 function up here, we are just going to create an anonymous function,
@@ -6853,76 +6822,76 @@ right here in place.
 
 So, this reduce function is a higher-order function calling this
 anonymous function on the element of the array and this function gets
-two parameters. The first one is the accumulator. In our case, that\'s
+two parameters. The first one is the accumulator. In our case, that&apos;s
 going to be an array and the first step is the empty one and then the
-second step it\'s going to be whatever we did with it in the first step.
-And it also gets a value. In our case, that\'s going to be a
+second step it&apos;s going to be whatever we did with it in the first step.
+And it also gets a value. In our case, that&apos;s going to be a
 relationship that is stored in this response array.
 
 So, now, what we need to do is we need to check if the target and source
 names of our relationship are already part of our names object, or list
 of names. And the list of names, the current one, is going to be stored
-in our accumulator. So, what we\'re going to do is to check if this
-accumulator already has this name as part of it. So, I\'m going to use
+in our accumulator. So, what we&apos;re going to do is to check if this
+accumulator already has this name as part of it. So, I&apos;m going to use
 the **indexOf** function on the **val.target**. So, this checks if the
-name that\'s stored in the target attributes of our relationship object
+name that&apos;s stored in the target attributes of our relationship object
 is found anywhere in our list of names and if it does, it will return
 the position of it in the array. And if it is not already in there, it
 will return -1. So, if
 
-the name is not already part of a list, we\'re going to add it. So,
-we\'re going to
+the name is not already part of a list, we&apos;re going to add it. So,
+we&apos;re going to
 
 push the name to our accumulator array, which is the list of names, and
 then
 
-we\'re going to do the exact same thing except for the source name.
+we&apos;re going to do the exact same thing except for the source name.
 source equals -1.
 
-Then, we\'re gonna push this source name as well. We potentially
+Then, we&apos;re gonna push this source name as well. We potentially
 
 now modify this accumulator array by adding one or maybe two names. In
 any case, we want to return this accumulator. So, in the second step, or
 in the following step, this is now the new list in which there are any
-names that we added in this step. That\'s already enough to get a list
+names that we added in this step. That&apos;s already enough to get a list
 of unique names from our array of responses. Just going to save the file
-and I\'m going to put log it to the console, so we can take a look at
+and I&apos;m going to put log it to the console, so we can take a look at
 it.
 
-Going back to the browser, I\'m going to reload the page, press our
+Going back to the browser, I&apos;m going to reload the page, press our
 button. As you can see, we get a nice list of unique names. So, one more
 thing that D3 is a bit unique with - we already have a list of
 interactions or links between names, which are the relationships, except
 that D3 cannot work with the names themselves. Instead, it needs IDs and
 the IDs are going to correspond to the position of the names in this
-array. So, the next thing we\'re going to do is we\'re going to go over
+array. So, the next thing we&apos;re going to do is we&apos;re going to go over
 the response array, which holds our relationships one more time and
-we\'re going to replace the actual names with the position of those
-names in the names array. So, we\'re going to use, in this case, we\'re
+we&apos;re going to replace the actual names with the position of those
+names in the names array. So, we&apos;re going to use, in this case, we&apos;re
 going to say new variable and these are going to be our links we are
-going to use in our visualization later and that\'s going to be a
-response.map()**.** This is another JavaScript array function and it\'s
+going to use in our visualization later and that&apos;s going to be a
+response.map()**.** This is another JavaScript array function and it&apos;s
 very similar to the reduce, except, in this case, we are not going to
-keep any accumulator. It\'s just going to pass this anonymous function
+keep any accumulator. It&apos;s just going to pass this anonymous function
 that will be applied to each of the relationships. In this case, this
 function only gets the value of the current position in the array and
 what
 
-we\'re going to do is we\'re going to replace the source with the
+we&apos;re going to do is we&apos;re going to replace the source with the
 position of
 
-this name in the names array. It\'s going to be another names.indexOf
+this name in the names array. It&apos;s going to be another names.indexOf
 val.source.
 
-We\'re going to check where in the list of names is this name and then
+We&apos;re going to check where in the list of names is this name and then
 
-replace the name with that number and we\'re going to do the same for
+replace the name with that number and we&apos;re going to do the same for
 the target as well.
 
-And then, we\'re going to return this modified relationship, so it will
+And then, we&apos;re going to return this modified relationship, so it will
 be replaced in the array of relationships.
 
-Now, we\'re going to take another look at what that looks like and I\'m
+Now, we&apos;re going to take another look at what that looks like and I&apos;m
 going to log both the names and the links. Reload our data. So, now, we
 have the list of names up here and we have a list of relationships.
 Except, this time instead of actually having the name Grenn here or
@@ -6932,42 +6901,42 @@ is position 0, which will be Grenn. So, that looks pretty good.
 
 Now, we need one more thing to work with D3. As I mentioned before, D3
 actually needs a list of objects that represent the nodes. Currently, we
-have a list of strings that are the names. Now, we\'re going to need to
+have a list of strings that are the names. Now, we&apos;re going to need to
 transform those names one more time into a list of arrays. So,
-basically, the list of nodes looks like this. It\'s an array and this
-array has a list of objects and we\'re going to give it just one
+basically, the list of nodes looks like this. It&apos;s an array and this
+array has a list of objects and we&apos;re going to give it just one
 attribute called name. At the end of our next transformation, we want to
 have an array of objects with where the name attribute corresponds to
-the name. And this time, we\'re going to go through the names using the
+the name. And this time, we&apos;re going to go through the names using the
 forEach function, another JavaScript array function, and this one also
 takes an anonymous function and that gets the current value.
 
 In this case, its name and actually whatever you call this variable is
-relevant, you can call it X if you want, but in this case we\'re going
+relevant, you can call it X if you want, but in this case we&apos;re going
 through a list of names.
 
 So, name seems appropriate and now for each of those names we need to
 create a new object. So, we need one more variable, which are going to
-be our nodes. That\'s going to be an array and for each of the names
-we\'re going to create a new object. So, new node object that has one
+be our nodes. That&apos;s going to be an array and for each of the names
+we&apos;re going to create a new object. So, new node object that has one
 attribute called names and that would be the name variable from up here.
-And then, we\'re gonna add this node object to our list of nodes that
-we\'re going to use later. Now, this is all we need. I\'m going to take
+And then, we&apos;re gonna add this node object to our list of nodes that
+we&apos;re going to use later. Now, this is all we need. I&apos;m going to take
 another look at that just to make sure. So, our nodes now look like
 this.
 
-It\'s an array of objects now and each object has one name attribute.
+It&apos;s an array of objects now and each object has one name attribute.
 So, we have now a list of node objects, which hold our names and the
-list of links, which holds relationships between those nodes and that\'s
-already enough for us to start to get to work with D3. And we\'re going
+list of links, which holds relationships between those nodes and that&apos;s
+already enough for us to start to get to work with D3. And we&apos;re going
 to do this in this createVisualization function in the next video.
 
-So, just to finish this off, what we\'re going to do is we\'re going to
+So, just to finish this off, what we&apos;re going to do is we&apos;re going to
 pass this data, which is gathered from our API and transform in the
-correct format. I\'m going to pass it to this createVisualisation
-function down there that\'s just calling the function with the nodes as
-nodes and the links as links. And that\'s it! That\'s already enough in
-terms of data transformation. In the next video, we\'re going to take a
+correct format. I&apos;m going to pass it to this createVisualisation
+function down there that&apos;s just calling the function with the nodes as
+nodes and the links as links. And that&apos;s it! That&apos;s already enough in
+terms of data transformation. In the next video, we&apos;re going to take a
 closer look at D3 and how to you use this data to create our graph.
 Thank you very much for watching, see you in the next video!
 
@@ -6981,49 +6950,49 @@ using an HTTP request and in the second video we transformed that data.
 
 So, we can start using it for our visualization.
 
-Just a quick reminder: this is what we\'re building, this is a D3 graph
+Just a quick reminder: this is what we&apos;re building, this is a D3 graph
 visualization that depicts relationships between Game of Thrones
-characters. Now, let\'s start getting into it taking a look at our code.
+characters. Now, let&apos;s start getting into it taking a look at our code.
 We have the functions that we are looking at before.
 
 This is the load data function that we dealt with in the first two
-videos. Now, we\'re going to spend some time to fill the
+videos. Now, we&apos;re going to spend some time to fill the
 createVisualization function down here where all the actual
 visualization will be built. Taking another look at the visualization
 view in our app views folder, we can see that we already imported the d3
 library.
 
 So, because of that, we can start using d3 in our own visualization
-file, which has the createVisualization method. So, let\'s get right
-into it. There\'s a couple of steps we need to do: we need to create the
+file, which has the createVisualization method. So, let&apos;s get right
+into it. There&apos;s a couple of steps we need to do: we need to create the
 physical simulation of the graph that d3 does for us and then we have to
-start adding elements to the website to our DOM. So, we\'ll start off
+start adding elements to the website to our DOM. So, we&apos;ll start off
 with the first bit. We need a couple of settings for our visualization.
-We\'re going just set a fixed height and width for it. I\'m going to
+We&apos;re going just set a fixed height and width for it. I&apos;m going to
 just use 800 pixels, you can use whatever fits your screen best and just
-play around with it a little bit. So that\'s two things we need straight
+play around with it a little bit. So that&apos;s two things we need straight
 away and then we also need our nodes and links that we got from the
 previous function and that we initially got from our API and then
 transformed.
 
-So, we\'ll create another variable and we call it force, because it\'s
+So, we&apos;ll create another variable and we call it force, because it&apos;s
 going to be a force directed graph layout and now we can start using d3
 by just typing d3 and we want a layout and it should be a force layout.
-And now we\'ll use function chaining that d3 uses a lot to set some
-settings on this. So, we\'re going to set the charge, which is basically
+And now we&apos;ll use function chaining that d3 uses a lot to set some
+settings on this. So, we&apos;re going to set the charge, which is basically
 the gravity settings and the gravity in this case should be minus 220.
 This is the force with which the nodes will repel each other. So, if you
-set this to a lower value or actually a higher value, say that\'s minus
-10, the nodes would stay closer together and if it\'s something higher
-or more negative, like minus 220, in this case, they\'ll be further
+set this to a lower value or actually a higher value, say that&apos;s minus
+10, the nodes would stay closer together and if it&apos;s something higher
+or more negative, like minus 220, in this case, they&apos;ll be further
 apart, because the links act like springs and the nodes are actually
-like magnets repelling each other. And then, there\'s also the link
+like magnets repelling each other. And then, there&apos;s also the link
 distance: this basically tells us how long our springs are going to be
 between those repelling magnets and now you need to set the dimensions.
 
 This actually takes an array of two numbers height and width and we
 could just write some numbers in here, but we already set them up there
-and it\'s always a good practice to keep settings like these that you
+and it&apos;s always a good practice to keep settings like these that you
 might need in several places outside of the actual code right here and
 put them at the top or somewhere you can just change them in one place.
 It needs some more things; it needs the nodes and we already generated
@@ -7033,51 +7002,51 @@ are coming from up here.
 It also need the links and it is the same deal here. And then, finally,
 we have to start the simulation. This is enough to tell d3 to create a
 forced directed layout for us using the nodes and links provided and
-start a simulation. And we go back to our site. This one\'s actually
+start a simulation. And we go back to our site. This one&apos;s actually
 currently empty, because I still need to start our web server. This
-one\'s the demo of the finished version. We\'re going to look at our
+one&apos;s the demo of the finished version. We&apos;re going to look at our
 current state. Again, localhost 3000 the visualization is going to run
-it and, as you can see, it\'s the old state from before.
+it and, as you can see, it&apos;s the old state from before.
 
 Now, in the background, d3 is already calculating node positions and the
-graph in itself. However, we haven\'t actually told d3 yet how to
+graph in itself. However, we haven&apos;t actually told d3 yet how to
 display it. So, the next step we need to do is we need to start adding
 SVG elements to the page and if you remember in our visualization view,
-there\'s this empty element with the ID root. And if you take a look at
+there&apos;s this empty element with the ID root. And if you take a look at
 our browser and using the developer tools, we can look at the website.
 
-There\'s this root element, it\'s currently empty. It just has the
-attribute root. So, we can identify it and other than that there\'s
-nothing in there. So, we\'re now going to start using d3 to manipulate
+There&apos;s this root element, it&apos;s currently empty. It just has the
+attribute root. So, we can identify it and other than that there&apos;s
+nothing in there. So, we&apos;re now going to start using d3 to manipulate
 the DOM by adding elements depending on that data.
 
-So, because it\'s going to be an SVG element, we\'re going to call the
-variable SVG. I\'m going to use d3 select and this will allow us to
+So, because it&apos;s going to be an SVG element, we&apos;re going to call the
+variable SVG. I&apos;m going to use d3 select and this will allow us to
 select a DOM element; in this case, the root element, and because it has
 the ID root, it has the prefix of a hash tag (a pound symbol) and then
 we want to add a new element, which is an SVG element for our
-visualization. We\'re going to append an element of type SVG. It has
+visualization. We&apos;re going to append an element of type SVG. It has
 several attributes. It has a width and again you can just use a variable
-and another attribute that\'s the height. If we now take a look at our
+and another attribute that&apos;s the height. If we now take a look at our
 site, reload the site (press the button). We have now added a new SVG
 element of our defined width and height.
 
 Now, the next thing you need to do is to add a number of elements that
 represent a graph depending on our data and, in this case, we need a
 number of links and nodes. We want to define what a link should look
-like and for that, if you can remember our lecture, we\'re going to use
+like and for that, if you can remember our lecture, we&apos;re going to use
 the d3 way of adding data, which is by selecting all elements with the
 class link attached to them (which will be none at the beginning) and
-we\'re going to compare that to our data. Our data, which are stored in
+we&apos;re going to compare that to our data. Our data, which are stored in
 the links variable and this we will now do a comparison between the
 elements found up here and the elements found in here and that will be
 like a Venn diagram.
 
 Comparing these two sets and then we have three subsets that we can
-access and we want to access anything that\'s in here that doesn\'t have
+access and we want to access anything that&apos;s in here that doesn&apos;t have
 a representation in the links already in the page and for that we use
 the enter function. And for each one of those elements we want to append
-a new element to our graph and it\'s going to be an element of type line
+a new element to our graph and it&apos;s going to be an element of type line
 and that will already append a line. Now, we already gave you a
 visualization.css file that has two simple classes; one for the style of
 the link and one for the style of the node and it just has the color for
@@ -7085,9 +7054,9 @@ the stroke and a bit of opacity. And the node also has a color and again
 for the stroke and the settings for the width of the stroke to get a
 nice little wide stroke around it.
 
-So, we\'re going to set this one as well. We\'re going to set any line
-element. We\'ll get a class attribute with a value link and that\'s
-going to be enough to define the link. Now, we\'re going to do the same
+So, we&apos;re going to set this one as well. We&apos;re going to set any line
+element. We&apos;ll get a class attribute with a value link and that&apos;s
+going to be enough to define the link. Now, we&apos;re going to do the same
 for the nodes variable node svg.selectAll elements with the class node
 attached to them. And
 
@@ -7100,25 +7069,25 @@ node. Realize that this function to be a class attribute is not just
 important for the style of the class, but also because we are selecting
 any node element here, so any element with the class node.
 
-So, it\'s not just for the styling the CSS, but it\'s also a label.
+So, it&apos;s not just for the styling the CSS, but it&apos;s also a label.
 Then, because, these nodes are circles and the circle is a defined SVG
 element that needs another attribute, and this attribute is the radius
 of the circle we want to have and this one is actually defined by the r
-attribute and r needs a number and that\'s going to be pixels. So, I can
-technically put five here, but, as we said before, that\'s maybe not the
-best practice. Instead, I\'m going to pretend there\'s a new variable
+attribute and r needs a number and that&apos;s going to be pixels. So, I can
+technically put five here, but, as we said before, that&apos;s maybe not the
+best practice. Instead, I&apos;m going to pretend there&apos;s a new variable
 called nodeRadius
 
-and I\'m going to go back up to my settings and actually create that
+and I&apos;m going to go back up to my settings and actually create that
 variable nodeRadius and set it to five. So, now, we defined the style
 and, in this case, also the radius for the nodes and we told d3 that we
 want a bunch of links for our links and a bunch of circles for our
-nodes. Now, let\'s go back to our website, refresh the page, so the
+nodes. Now, let&apos;s go back to our website, refresh the page, so the
 JavaScript gets reloaded and click the button again. As you can see,
 something has happened. If I take a look into the root element again, we
 now actually have added a bunch of lines and, further down, circles to
 our SVG visualization. Now, if you look closely, you might be able to
-see there\'s like a little something on the top left of our screen and
+see there&apos;s like a little something on the top left of our screen and
 these are
 
 actually our nodes. So, this is like a quarter circle and it is because
@@ -7129,7 +7098,7 @@ position zero,
 which in the visualization world means the top-left corner of the
 screen.
 
-So, it\'s like the classic Cartesian coordinate system that you probably
+So, it&apos;s like the classic Cartesian coordinate system that you probably
 know
 
 from your Math classes. Except zero, zero is actually on the top
@@ -7143,23 +7112,23 @@ and links
 and start a forced layout simulation of the positions, and we told it
 for every
 
-link we want the line of every node. What we didn\'t do yet is actually
+link we want the line of every node. What we didn&apos;t do yet is actually
 connect those together, meaning we now need to tell d3 actually the
 position for these links and nodes should be whatever you are
 calculating over here. And in this case, we actually start looking into
-events. So, what we\'re going to do, and we need to do this down here,
-because we\'re going to need the nodes and the link, so we need to do it
-after we define those, we\'re going to go back to our force simulation,
+events. So, what we&apos;re going to do, and we need to do this down here,
+because we&apos;re going to need the nodes and the link, so we need to do it
+after we define those, we&apos;re going to go back to our force simulation,
 which is stored in the force variable. force.on() and on is the
 JavaScript way of dealing with events. So, whenever a tick event is
 fired, I want the following function to be called, and tick is the event
 that gets called every step of the simulation of this force layout. So,
-whenever it\'s calculating new positions, this function
+whenever it&apos;s calculating new positions, this function
 
-will be called. So, what we\'re going to do now, every time d3
+will be called. So, what we&apos;re going to do now, every time d3
 calculates
 
-new position for nodes, we\'re going to start adding attributes to our
+new position for nodes, we&apos;re going to start adding attributes to our
 nodes. So,
 
 in this node variable, we still have stored any element with class node
@@ -7167,13 +7136,13 @@ in this node variable, we still have stored any element with class node
 and after calling this, there will be a class node element for any of
 our nodes
 
-in the data. So, what we\'re going to do now on every tick, we\'re going
+in the data. So, what we&apos;re going to do now on every tick, we&apos;re going
 to update
 
 two attributes of our nodes and those two attributes are defining the
 position.
 
-So, the first one is cx at the position in the x-direction and it\'s
+So, the first one is cx at the position in the x-direction and it&apos;s
 going to be
 
 defined by a function and in this case, this gets a data point and that
@@ -7183,7 +7152,7 @@ convention. This data point is actually going to be our node s
 
 calculated in the force layout up here.
 
-So what\'s happening in this calculation is that we have our node
+So what&apos;s happening in this calculation is that we have our node
 element that you can
 
 remember from the lecture before and that one has a source and a
@@ -7191,26 +7160,26 @@ remember from the lecture before and that one has a source and a
 target - in the case of the links and just the name in the case of the
 nodes.
 
-So, what we\'re going to do every time this function is called, we can
+So, what we&apos;re going to do every time this function is called, we can
 access the
 
 node element used in our force layout using this d variable. So, what
-we\'re going to
+we&apos;re going to
 
 do is going to set the x position of our node to whatever d3 have
 calculated for
 
 the x-position in the graph simulation, in the physics simulation
 
-that calculates the position. So, with now doing this, we\'re going to
+that calculates the position. So, with now doing this, we&apos;re going to
 connect the x
 
 position of the node on the screen to the x position to the node in the
 
-physics simulation and we\'re going to do the same thing for the y
+physics simulation and we&apos;re going to do the same thing for the y
 position, return
 
-this time dy. Let\'s try it and see if that works.
+this time dy. Let&apos;s try it and see if that works.
 
 Aha! And now all the nodes get the position that d3 has calculated
 
@@ -7219,23 +7188,23 @@ same thing
 
 for the links and let me just make that look a bit nicer. In the same
 
-tick event function, we\'re going to also do the same to our links,
+tick event function, we&apos;re going to also do the same to our links,
 except this
 
 time, we need to define four different positions, because the link has a
 
-beginning and an end position and then there\'ll be a line between
-those. So, I\'m
+beginning and an end position and then there&apos;ll be a line between
+those. So, I&apos;m
 
 going to start off using x1 which is the x position of the beginning of
 the line
 
-and it\'s going to be the same thing function d and this time our link 
+and it&apos;s going to be the same thing function d and this time our link 
 element has a source and the target and those get separate positions
 calculated 
-by the physics simulation. So, we\'re going to say source.x, and then
+by the physics simulation. So, we&apos;re going to say source.x, and then
 next one 
-it\'s going to be the y position of the beginning of the line, and this
+it&apos;s going to be the y position of the beginning of the line, and this
 one is 
 going to be source.y, target is going to come next.
 
@@ -7249,22 +7218,22 @@ the target of the link. So, after saving that file, gone back to our
 simulations, reload the page, hit the button, et voila! We do have a nice 
 graph with nodes and links in between them. 
 
-Now, it doesn\'t quite look like our demo in the beginning yet, because
-that doesn\'t have any colors and also nothing is happening when I click on
-any of the nodes. So, there\'s going to be a couple of more things we\'re going to
+Now, it doesn&apos;t quite look like our demo in the beginning yet, because
+that doesn&apos;t have any colors and also nothing is happening when I click on
+any of the nodes. So, there&apos;s going to be a couple of more things we&apos;re going to
 do just for fun. So, we added some styling using the classes node and link in our
 visualization file over here, but all they define is a stroke and now
-we\'re going to try it and define the colors of the nodes depending on the name
+we&apos;re going to try it and define the colors of the nodes depending on the name
 of the characters. And for colors d3 provides a number of functions. The first
-thing we need is a scale. We\'re going to define this one up here again just by
+thing we need is a scale. We&apos;re going to define this one up here again just by
 going var color equals d3.scale.category20. So, what this does is, it returns a
-scale of 20 different values, discrete values, and we\'re going to use those to
+scale of 20 different values, discrete values, and we&apos;re going to use those to
 select 20 different colors depending on the name of our characters. 
 
 So, this returns a function, so we can now call this color function with any
 string and it will just return us a color. So, going down to our node again
 
-and now we\'re going to call another function on this one, called
+and now we&apos;re going to call another function on this one, called
 
 style. And you want to fill the node with a certain value and this again
 takes the
@@ -7281,7 +7250,7 @@ has this
 names element, because we defined that in the last lecture that all the
 nodes are
 
-objects with this name attribute. Click on back to the site, we\'re
+objects with this name attribute. Click on back to the site, we&apos;re
 loading it again.
 
 Now, all the nodes have different colors depending on the name of the
@@ -7290,10 +7259,10 @@ character
 and you can see that some of them appear multiple times like the red one
 for
 
-example here. That\'s because we have about around 100 characters, but
+example here. That&apos;s because we have about around 100 characters, but
 only 20
 
-different colors in our scale. So, they\'re not all going to be the
+different colors in our scale. So, they&apos;re not all going to be the
 same, but if
 
 you really want to have unique ones, you can also write your own color
@@ -7304,95 +7273,95 @@ around a bit
 if you like. So, there are two more things that have been in the demo
 that we
 
-haven\'t done yet. So, one thing I\'m going to do is I\'m going to
+haven&apos;t done yet. So, one thing I&apos;m going to do is I&apos;m going to
 define the width
 
 of our links dynamically depending on the weight of the relationship
 object
 
-that we got returned from the API. So, again, we\'re going to use the
+that we got returned from the API. So, again, we&apos;re going to use the
 style
 
-function, but in this case I\'m going to fill. It\'s actually going to
+function, but in this case I&apos;m going to fill. It&apos;s actually going to
 be the
 
-stroke width so we\'re going to define the width of the line between two
+stroke width so we&apos;re going to define the width of the line between two
 nodes.
 
 Again, function receives the current data point and then this gets
 called for any element that has the class link attached to it. So, this
 function returns. And we can just return the d.weight here because all of the link, all of
 the relationships that we got from the API actually have a weight attribute.
-Now, if you take a look at that. Well, it doesn\'t really look too nice,
-because there\'s a big difference between some of the smaller ones and
+Now, if you take a look at that. Well, it doesn&apos;t really look too nice,
+because there&apos;s a big difference between some of the smaller ones and
 the bigger ones and some of them are quite large, so it becomes a bit ungainly. So,
-what I\'m going to do is I\'m actually going to use another built-in JavaScript
-function from the math library, which is the square root. So, I\'m just going to
+what I&apos;m going to do is I&apos;m actually going to use another built-in JavaScript
+function from the math library, which is the square root. So, I&apos;m just going to
 square the weight and now it looks a lot nicer. As you can see, the characters that
 are having more intensive relationships have now wider links between them
 than those that have like a less close relationship.
 
 If you remember the demo I showed you in the beginning of this video and the in 
 last few videos as well, we also can define an interactive behavior of the
-graph. There is a couple of things we can do. If you\'d like to see some more 
+graph. There is a couple of things we can do. If you&apos;d like to see some more 
 advanced examples, go online and you can see things like dragging them around, 
-so they respond nicely to input. For now, we\'re going to focus on making them 
-clickable. For that, we are going to add two more event functions. So, we\'re 
-going to take a look at the node and this time you\'re gonna implement an event 
+so they respond nicely to input. For now, we&apos;re going to focus on making them 
+clickable. For that, we are going to add two more event functions. So, we&apos;re 
+going to take a look at the node and this time you&apos;re gonna implement an event 
 on the node itself. So, the node is a DOM element and as such it responds to 
-click events, so if I click on it, it get registered by the browser and we\'ll 
-fire this click event on this node element. So, I can define what\'s going to
-happen whenever this click event is fired, and I\'m going to use d3
-again and what I\'m going to do is I\'m going to select this specific node
-using d3 and change some of its attributes. So, I\'m going to do it
+click events, so if I click on it, it get registered by the browser and we&apos;ll 
+fire this click event on this node element. So, I can define what&apos;s going to
+happen whenever this click event is fired, and I&apos;m going to use d3
+again and what I&apos;m going to do is I&apos;m going to select this specific node
+using d3 and change some of its attributes. So, I&apos;m going to do it
 d3.select and this time because this function is called on the node itself,
 
-I\'m going to select this and now I can start transforming whichever
-node I or the user has clicked on. And what I\'m going to do is, I\'m going to
+I&apos;m going to select this and now I can start transforming whichever
+node I or the user has clicked on. And what I&apos;m going to do is, I&apos;m going to
 set the attribute radius to 20. Actually, because, we already have our node
-radius, let\'s just set it to whatever the node radius was times 4. If I save that, go
-back, reload, run the visualization and I\'ll click on any of the links, they are four
-times the size then before. Now, that\'s nice but looks a bit abrupt. One of
+radius, let&apos;s just set it to whatever the node radius was times 4. If I save that, go
+back, reload, run the visualization and I&apos;ll click on any of the links, they are four
+times the size then before. Now, that&apos;s nice but looks a bit abrupt. One of
 the things that d3 is really good at is making transitions look smooth and nice.
 
-So, we\'re going to add a little bit more to this and then add a transition
+So, we&apos;re going to add a little bit more to this and then add a transition
 and this transition function needs to be called before the actual change of
-attributes. So, I\'m going to just tell it to transition and then I also
+attributes. So, I&apos;m going to just tell it to transition and then I also
 need to define how long that transition period is going to be and
-that\'s in milliseconds and I\'m going to make it nice and slow, so you
+that&apos;s in milliseconds and I&apos;m going to make it nice and slow, so you
 can see it, so 750 milliseconds. So, save the file and go back and
 reload our graph again. If I now click any of the nodes, get it a little
 nice and slowly transition from one setting of radius size to the next.
 And we can also just for the fun of it maybe add another transition. So,
-let\'s say you want to change the fill color and I\'m just going to
+let&apos;s say you want to change the fill color and I&apos;m just going to
 change to red so whenever I click on it, it will increase its radius by
 times 4 and it fill the color red. And you could take a look at the d3
-documentation, there\'s a whole number of things you can do with this
-and it\'s a lot of fun to play around. So, just spend some time with it
-if you\'re interested. Now, this is fine, but what if you want to go
-back. So there\'s a number of things we could do. We could for example start 
+documentation, there&apos;s a whole number of things you can do with this
+and it&apos;s a lot of fun to play around. So, just spend some time with it
+if you&apos;re interested. Now, this is fine, but what if you want to go
+back. So there&apos;s a number of things we could do. We could for example start 
 storing the previous size or color, you know node itself, and then on a different 
-event go back to that. So, now we\'re going to keep it simple and just going to 
+event go back to that. So, now we&apos;re going to keep it simple and just going to 
 define another event on the nodes. A node on double-click I want something else 
 to happen.
 
 More specifically, again, I want to select the current node using d3 and
-again I\'d like it to transition nicely to the same duration and I\'m just 
+again I&apos;d like it to transition nicely to the same duration and I&apos;m just 
 going to return the attribute to its original radius, so node radius again, 
-and I\'m just gonna set the color to white to say okay I\'ve been here before,
+and I&apos;m just gonna set the color to white to say okay I&apos;ve been here before,
 this one has been clicked.
 
 So, now I can click it. It will get big and red on a double-click it will go 
-back to white. So now, with a few simple steps and a few lines of code we\'ve
-created a nice and interactive graph visualization using d3. There\'s a number 
-of things you can add to that. Play around with it and it\'s a lot of fun. 
-There\'s a whole bunch of documentation and tutorials available on d3 online. 
+back to white. So now, with a few simple steps and a few lines of code we&apos;ve
+created a nice and interactive graph visualization using d3. There&apos;s a number 
+of things you can add to that. Play around with it and it&apos;s a lot of fun. 
+There&apos;s a whole bunch of documentation and tutorials available on d3 online. 
 So, take a look at it. 
 
-We have been using the version 3 of d3. There\'s an upcoming version 4 that
+We have been using the version 3 of d3. There&apos;s an upcoming version 4 that
 changes some of the functions and the way to interact with it.
 So, take a look at that if you see this video in a couple of months from
-now or so, but the basic principles are all the same. It\'s just that
+now or so, but the basic principles are all the same. It&apos;s just that
 some of the functions have been simplified or moved around a little bit.
 This is all we need to create this visualization: we have our forced
 layout physics simulation that calculates our node positions, we created
@@ -7429,7 +7398,7 @@ lectures and we wish you good luck working with JavaScript!
 
 ### JavaScript in Bioinformatics (optional)
 
-Hello! My name is Burkhard Rost. I\'m the Chair of Computational Biology
+Hello! My name is Burkhard Rost. I&apos;m the Chair of Computational Biology
 in the department of Computational Biology and Bioinformatics at the
 Technical University in Munich at TUM. I got into Computational Biology,
 into Life Sciences, as a physicist, because I was fascinated by watching
@@ -7437,7 +7406,7 @@ seeing protein structures in 3D. The intricate details of these shapes
 of protein 3D structures, something that I just found so absolutely
 fascinating.
 
-And I saw them on SGI\'s, then on screens that, in fact, I had 3D
+And I saw them on SGI&apos;s, then on screens that, in fact, I had 3D
 glasses, I could look at the protein, I could look at what is behind
 this protein. And it absolutely fascinated me. It took over 20 years
 before we could do something, such as what I then saw on very expensive
@@ -7447,8 +7416,8 @@ Today, we all are used to seeing 3D information on our home screens, on
 our computers, but the moment until we got to the point, so it needed
 something, in order to, really span between making it simple and using
 biological data, and the thing that connects these two extreme points
-really is JavaScript. It\'s the language, it\'s the bridge. JavaScript
-is extremely easy to share, it\'s extremely easy to write, is extremely
+really is JavaScript. It&apos;s the language, it&apos;s the bridge. JavaScript
+is extremely easy to share, it&apos;s extremely easy to write, is extremely
 easy to learn quickly. You need, in order to use it, just a browser and
 it allows a very easy interpretation of data, it allows easy writing.
 
@@ -7456,7 +7425,7 @@ Now, it is important to use JavaScript as a means of visualizing very
 complex data. In Biology, data is complex. Well, complex data we also
 find in other fields. We find it in Astrophysics, we find it in Physics,
 we find it in Finances, for instance, and other examples. The difference
-really is that in Biology, in some sense, the data, I\'d argue, is even
+really is that in Biology, in some sense, the data, I&apos;d argue, is even
 more complex. Another issue is that in Biology data is constantly
 changing. What today is the top data, tomorrow nobody will care for.
 
@@ -7478,8 +7447,8 @@ us a new idea how to in fact look at protein interaction visualizers.
 
 So, JavaScript also allows you to come up with a quick solution and then
 that quick solution may give you a new idea where to go. This again is
-an interactive way of using visualization, in a way that we haven\'t had
-before and it\'s really easy for everybody to use. I hope you will enjoy
+an interactive way of using visualization, in a way that we haven&apos;t had
+before and it&apos;s really easy for everybody to use. I hope you will enjoy
 the JavaScript course. I hope you will enjoy programming JavaScript and
 I hope you will contribute to the growing body of things that will help
 Science and Life Science in particular. Thanks for being with us!
