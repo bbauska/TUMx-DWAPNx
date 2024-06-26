@@ -3633,7 +3633,6 @@ root of our application. We take a look now at the base, home and
 **navigation.pug**. There are simplified versions of these files, but
 the actual files are pretty similar and the concepts are definitely the
 same. Let&apos;s look at them. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (110) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3681,7 +3680,6 @@ every element that follows that block content statement will be put
 exactly where the block content is in the <b>base.pug</b>. So, in this
 case, we will put there an h1, which will be here is a title and that p
 for the paragraph, a nice paragraph. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (111) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3705,7 +3703,6 @@ going to follow this video.
 <h3 id="ch3-7">3.7 Summary Module 3 - Server-side JavaScript (1:00)</h3>
 
 Thank you, Chris, for covering server-side JavaScript. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176 advantages of node.js (112) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4130,7 +4127,7 @@ application.
 <!--~~~~~~ 201 validate port listening, database connection and application running (127) ~~~~~~-->
 <p align="center">
   <img src="./images/image201.png" 
-  title=""
+  title="Validate port listening, database connection, and application running"
   alt="Validate port listening, database connection, and application running."
   style="border: 2px solid #000000; width:40%;" />
 </p>
@@ -4157,346 +4154,209 @@ terminal.
 
 I did this in my previous video just to show that it actually is
 working. I&apos;m copying this link over here. Let me just hide these sections, open
-Safari, paste, enter and this is exactly what we want to see. So, our
-application is running and this are the relationships that I get back from our
-application. 
+Safari, paste, enter and this is exactly what we want to see. 
 
-So, back here and our application is running. This code is loaded into a
-process and let&apos;s see what these lines of code now do. So, we
-have seen that at the very beginning, we are requiring some files and
-some components of our app and next line of code, that we want to look at, is
-this one.
+<image>
+Our application is running and this are the relationships that I get back from 
+our application. Back here and our application is running. This code is loaded 
+into a process and let&apos;s see what these lines of code now do. We have seen 
+that at the very beginning, we are requiring some files and some components of 
+our app and next line of code, that we want to look at, is this one.
 
-We define our application, so our app to be an express application and
-later we set some variables and we add some components to it.
-One of the variables that we want to assign is the port number on which
-our application is going to be listening and we have seen, I&apos;m going to
-switch back to Safari right now, that we are listening on port 3000 here. So, this is
-exactly what we are telling here that if there is no port specified in the
-environment variables, then by default it will fall back and that&apos;s but what the
-and and stands for here, sorry the or or stands for here. 
+We define our application, so our app to be an express application and later we 
+set some variables and we add some components to it. One of the variables that 
+we want to assign is the port number on which our application is going to be 
+listening and we have seen, I&apos;m going to switch back to Safari right now, 
+that we are listening on port 3000 here. This is exactly what we are telling here 
+that if there is no port specified in the environment variables, then by default 
+it will fall back and that&apos;s but what the and and stands for here, sorry 
+the or or stands for here. 
 
 The default fall back is the board 3000. This is also an important bit to talk 
 about one second and it&apos;s the environment variables, because here we can specify 
 some variables, for example, the port number that might differ when we&apos;re executing 
-our code on our production servers, for example. So, it&apos;s always good practice to
+our code on our production servers, for example. It&apos;s always good practice to
 have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
-default values. And next thing that we&apos;re going to talk about is the router and
-we see that here we create a router and we create router by requiring a file. I
-have already explained earlier that we can omit the extension here. So, when
-we are requiring this file, we&apos;re actually requiring the file that is called
-router.js, because we see it here, it&apos;s router.js. And since it&apos;s good practice,
-let&apos;s go ahead and look what is actually contained in our files.
+default values. 
 
-So, we fire up router.js and we see, this file is very short, it starts
+And next thing that we&apos;re going to talk about is the router and
+we see that here we create a router and we create router by requiring a file. 
+I have already explained earlier that we can omit the extension here. When we 
+are requiring this file, we&apos;re actually requiring the file that is called
+router.js, because we see it here, it&apos;s router.js. And since it&apos;s 
+good practice, let&apos;s go ahead and look what is actually contained in our 
+files.
+
+We fire up router.js and we see, this file is very short, it starts
 with two requirements, well sorry, just one requirement and one assignment. We
 require express again here on top and then we define our router, which
 is a new express router. That&apos;s what we do in this line here. And then
 we can assign some routes to it. For example, get requests or we can also
-assign post requests, put request, delete requests. These are the requests that
-I talked about in my video lectures. 
+assign post requests, put request, delete requests. 
 
-But before that, let&apos;s see here, we are actually requiring something else and 
-we call it the relationships controller and this file is actually located somewhere, 
-not right at the root of our application. It&apos;s located in the folder app, that 
-we see here on top, so let&apos;s expand that. Then we go into controllers
+These are the requests that I talked about in my lectures. But before that, 
+let&apos;s see here, we are actually requiring something else and we call it 
+the relationships controller and this file is actually located somewhere, 
+not right at the root of our application. It&apos;s located in the folder app, 
+that we see here on top, so let&apos;s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
 
-So, let&apos;s double click on that and open it up and what we see here is again, first
+Let&apos;s double click on that and open it up and what we see here is again, first
 of all, that we are requiring something else. It&apos;s again the file and now the
 two dots tell us that we have to look one folder before the folder we are in. So,
 we are in controllers and we need to look at app and then we want to look at
 models. So, we open up the models and then there should be a file, which is
 called relationships. And, in fact, there is and we&apos;re going to open up
-that.
+that. And now here, we actually see an entire code - that there is no
+requirement of other files within our file tree. 
 
-And now here, we actually see an entire code - that there is no
-requirement of other files within our file tree. So, we can start reading this file and from
+We can start reading this file and from
 here work backwards and see how a router and power application works. So,
 let&apos;s get started on that and the first line again - we require mongoose and
 that&apos;s because we want to create a model, which is the relationships model, that is a
 mongoose model, and we call this model relationships. And it has some fields
 that we want to specify that our model has to adhere to. 
 
-So, specifically, we want our objects inside the relationships database to have a source, to have
-a target and to have a weight. The source is of type string, the target
-is also of type string, while the weight is of type number, which might mean - now
-we can store integer numbers or double or float numbers. All of the three fields are
-required. So, we cannot insert elements into our database, which
-do not adhere to the standard, to say so. All of
-the objects need to have a field, which is source of that string, a
-field which is target of type string and a weight of type number. The last line is
-the module exports. This we have seen before. This is what happens when we actually
+Specifically, we want our objects inside the relationships database to have a 
+source, to have a target and to have a weight. The source is of type string, 
+the target is also of type string, while the weight is of type number, which 
+might mean - now we can store integer numbers or double or float numbers. 
+
+All of the three fields are required. So, we cannot insert elements into our 
+database, which do not adhere to the standard, to say so. All of the objects 
+need to have a field, which is source of that string, a field which is target 
+of type string and a weight of type number. The last line is the module exports. 
+This we have seen before. This is what happens when we actually
 require this specific file. And what we&apos;re exporting here is exactly the model.
 
-So, the model that we defined over here is what we are exporting down here. And when we go back to our controllers, we
-see that we are requiring it here and we are actually requiring the relationships
-model. So, inside the relationships controller, what we are exporting is
-an object and this object has an attribute, which is called relationships
-and this attribute actually executes a function, which accepts two parameters.
-The first one being the request and the second one being the response. These are
-two
+The model that we defined over here is what we are exporting down here. And 
+when we go back to our controllers, we see that we are requiring it here and we 
+are actually requiring the relationships model. Inside the relationships controller, 
+what we are exporting is an object and this object has an attribute, which is called 
+relationships and this attribute actually executes a function, which accepts two 
+parameters. The first one being the request and the second one being the response. 
+These are two parameters, which are passed by let&apos;s say to confirm to the 
+express way of dealing with requests. 
 
-parameters, which are passed by let&apos;s say to confirm to the express way
+When you have an incoming request, there
+are some attributes, which you can read off. For example, where does the request
+come from, from which IP address, who is the user.
+If the user is using Safari, is the user using Chrome, is the user using Firefox 
+or something like that. And then the next one is response and this is actually 
+what we are going to answer back to the user that performed the request. So, 
+let&apos;s go into this function and what we do here is we have a relationships 
+model, that is the one defined over here, the one required from this file and 
+what we do is we want to perform a find. 
 
-of dealing with requests. So, when you have an incoming request, there
-are some
+We want to find the objects inside the model and we do not just want to find a 
+specific object, we want to find all of the objects. We&apos;re not specifying 
+anything more. We&apos;re just saying from our relationships model: I want to 
+find everything and once relationship model returns all of the object that it 
+contains, we want to execute a certain callback function, which is this one 
+here, which accepts error and result. 
 
-attributes, which you can read off. For example, where does the request
-come from,
+This is the type of callback function returned from a defined operation and if 
+there is no error in finding the objects inside my database, then I want to 
+return a response, which contains our results and of status 200, which in HTTP 
+means it was a successful request and I&apos;m returning some results or I&apos;m 
+returning what you expect me to return. 
 
-from which IP address, who is the user. So, is the user using Safari, is
-the user
+On the other hand, if there was an error, so, if there is an error, what I want 
+to return is a response with the status of 500, which again in HTTP means there 
+has been an error on the server side and I want to send my error back to the user, 
+so that the user knows of what kind of problem might have happened. 
 
-using Chrome, is the user using Firefox or something like that. And then
-the next
-
-one is response and this is actually what we are going to answer back to
-the
-
-user that performed the request. So, let&apos;s go into this function and
-what we do
-
-here is we have a relationships model, that is the one defined over
-here, the one
-
-required from this file and what we do is we want to perform a find. So,
-we want
-
-to find the objects inside the model and we do not just want to find a
-specific
-
-object, we want to find all of the objects. So, we&apos;re not specifying
-anything
-
-more. We&apos;re just saying from our relationships model: I want to find
-
-everything and once relationship model returns all of the
-
-object that it contains, we want to execute a certain callback function,
-
-which is this one here, which accepts error and result. This is the type
-of
-
-callback function returned from a defined operation and if there is no
-
-error in finding the objects inside my database, then I want to return a
-
-response, which contains our results and of status 200, which in HTTP
-means it was
-
-a successful request and I&apos;m returning some results or I&apos;m returning
-what you
-
-expect me to return. On the other hand, if there was an error, so, if
-there is an
-
-error, what I want to return is a response with the
-
-status of 500, which again in HTTP means there has been an error on the
-server
-
-side and I want to send my error back to the user, so that the user
-knows of what
-
-kind of problem might have happened. So, now, we have seen what calling
-this
-
-relationships function actually does. It will answer to
-
-a certain request with a response that is either an error or a
-
+Now, we have seen what calling this relationships function actually does. It 
+will answer to a certain request with a response that is either an error or a
 successful response, and it will return the results of finding all of
-the
+the objects in our relationships model. 
 
-objects in our relationships model. So, we go back to the router and we
-were here
+We go back to the router and we were here on this line where we actually required 
+our relationships controller. And, as I said before, in the router we can specify 
+requests that we want to be
+available from a router. So, for example, here, we specify that if an incoming
+request is a get request and it matches this URL, then we perform the function 
+from the relationships controller, which is called relationships, which is the 
+function that we have just seen one second ago. 
 
-on this line where we actually required our relationships controller.
-And, as I
+We can also change the get to, for example, post. And this would then be a post
+request or or a put request, or a delete request. And this obviously depends on
+what you actually want to do. But, in our specific case, what we want is we want
+to get data. We want to specify a get request and the difference
+between get, put, post and delete requests I have explained in my video lectures. 
+What we see here now is that if we navigate to these API relationships, as I
+said before, we&apos;re executing this function and you might have noticed that
+at the end here, we&apos;re actually not calling the function. We&apos;re not
+specifying one specific call of the function but we&apos;re just specifying let&apos;s 
+so say the blueprint of the function. We&apos;re specifying what needs to be called if
+a user is trying to open up this route and this is because when this code gets 
+executed for the first time, if we had something like this here, we would actually 
+execute the function at on that moment. 
 
-said before, in the router we can specify requests that we want to be
-
-available from a router. So, for example, here, we specify that if an
-incoming
-
-request is a get request and it matches this URL, then we perform the
-
-function from the relationships controller, which is called
-relationships,
-
-which is the function that we have just seen one second ago. We can
-
-also change the get to, for example, post. And this would then be a post
-request or
-
-or a put request, or a delete request. And this obviously depends on
-what you
-
-actually want to do. But, in our specific case, what we want is we want
-to
-
-get data. So, we want to specify a get request and the difference
-between get,
-
-put, post and delete requests I have explained in my video lectures. So,
-what
-
-we see here now is that if we navigate to these API relationships, as I
-said
-
-before, we&apos;re executing this function and you might have noticed that
-at the end
-
-here, we&apos;re actually not calling the function. So, we&apos;re not
-specifying one
-
-specific call of the function but we&apos;re just specifying let&apos;s so say
-the
-
-blueprint of the function. We&apos;re specifying what needs to be called if
-a
-
-user is trying to open up this route and this is because when this code
-gets
-
-executed for the first time, if we had something like this here,
-
-we would actually execute the function at on that moment. So, say, today
-I start
-
-my server. This code gets executed after I start my server. It performs
-this
-
-request and this will be stored, let&apos;s say her,e and then every time
-someone
-
-calls this call, the same object will always be returned. So, the same
-
+Say, today I start my server. This code gets executed after I start my server. It performs
+this request and this will be stored, let&apos;s say her,e and then every time
+someone calls this call, the same object will always be returned. So, the same
 array of relationships will always be returned. But obviously, in our
-database
-
-the data might change over time. So, what we want to say is every time a
-user is
-
-calling this request, I don&apos;t want my application to just return the
-result of
-
-the first time I execute the code and I execute this function, but I
-want to
-
-execute a function on the spot at the moment for that user
-
+database the data might change over time. What we want to say is every time a
+user is calling this request, I don&apos;t want my application to just return the
+result of the first time I execute the code and I execute this function, but I
+want to execute a function on the spot at the moment for that user
 and I want to answer to that user exactly the data that we get back
+from the database at that specific point in time. 
 
-from the database at that specific point in time. The last
+The last thing that we see here is that we are exporting again because this is
+necessary for the other files requiring this file to know what would we actually 
+want to achieve by requiring this file. And what I&apos;m exporting here is
+exactly the router object, which is the one that we have defined over here and
+to which we have assigned a route. I get requests over here. 
 
-thing that we see here is that we are exporting again because this is
-necessary
-
-for the other files requiring this file to know what would
-
-we actually want to achieve by requiring this file. And what I&apos;m
-exporting here is
-
-exactly the router object, which is the one that we have defined over
-here and
-
-to which we have assigned a route. I get requests over here. So, now, we
-can go back
-
-into the index.json or we actually require the router and we assign it
-to
-
-this variable here. And we can say that our router is listening on the
-route
-
-here and we are using the route of our application. And if an incoming
-request
-
-gets on the route and it matches one of the routers specified, incoming
-requests,
-
-for example, /api/relationships, as we have seen here, then
-
-you have to answer oh sorry you have to answer with this call
-
-of this function, which is but basically we are telling the application
-here.
+Now, we can go back into the index.json or we actually require the router and we 
+assign it to this variable here. And we can say that our router is listening on 
+the route here and we are using the route of our application. And if an incoming
+request gets on the route and it matches one of the routers specified, incoming
+requests, for example, /api/relationships, as we have seen here, then you have 
+to answer oh sorry you have to answer with this call of this function, which is 
+but basically we are telling the application here.
 
 The last part of the code in our index.js is what we have already
-mentioned
+mentioned in the previous video. Basically, what we do here is we actually start
+listening. This is the most important part, this is really where we say now we have
+loaded all of our controllers, we have loaded all of our roots, we have
+executed all of our logic that we need to bootstrap our application and now we actually
+want to start listening to incoming requests. And the way we do that is,
+basically, we say: we start listening on a port that has been specified before. So,
+app.get(&apos;port&apos;) will get this variable, which we have set here and then once the server
+is actually listening, we execute a callback function and we print on the
+log that the express server is listening on the port that we have specified and
+the application is running, and we should be able to connect to localhost +
+port number + /api/relationships and we should be able to get back the data that
+we see here. 
 
-in the previous video. Basically, what we do here is we actually start
-listening.
-
-This is the most important part, this is really where we say now we have
-loaded
-
-all of our controllers, we have loaded all of our roots, we have
-executed all of
-
-our logic that we need to bootstrap our application and now we actually
-want to
-
-start listening to incoming requests. And the way we do that is,
-basically, we say:
-
-we start listening on a port that has been specified before. So,
-app.get(&apos;port&apos;)
-
-will get this variable, which we have set here and then once the server
-is
-
-actually listening, we execute a callback function and we print on the
-log that
-
-the express server is listening on the port that we have specified and
-the
-
-application is running, and we should be able to connect to localhost +
-port number +
-
-/api/relationships and we should be able to get back the data that
-
-we see here. So, this is exactly the flow of our application what we
-have
-
-just seen. But, now, what we want to do is we want to specify that we
-want to have
-
+So, this is exactly the flow of our application what we
+have just seen. But, now, what we want to do is we want to specify that we
+want to have 
 a request where we are getting data, but we&apos;re only getting the
-
 relationships for the source, that is, for example, Aemon.
 
 So, how do we do that? We go back to our webstore and we start
 implementing a new
-
 route. So, we know that the routes are defined into the router. So, we
 don&apos;t have
-
 to modify index, but we have to modify a router first and a router
 specified
-
 exactly here. So, we can come up with any name that we want. I&apos;m going
 to delete
-
 the semicolon at the end of this line. I&apos;m going to copy paste this
 line one line
-
 below. It&apos;s not the gap request, because we&apos;re getting data and we
 want to get
-
 the relationships for the character Aemon and we obviously change the
 type
-
 of the function that we&apos;re going to call. So, we want the relationships
 only for
-
 Aemon and we also have to add the semicolon here, because I deleted it
 from
-
 here before. What you can actually immediately notice is that the color
 of these two
 
@@ -6505,91 +6365,42 @@ event. When the backend starts sending data, there will be an event and
 there is also
 
 an event that gets fired as soon as the request successfully has
-
 transferred all the data from the backend and that&apos;s the one
-
 we&apos;ll be looking at. We can define the onload event now. What we&apos;re
-doing here
-
-is basically find a function that gets called every time the request is
-done
-
-loading data from the backend. And now we can create a new variable
-called
-
-response that will hold the data sent from the back-end. To access it,
-we need to
-
-access the request. In this case, we can access access this with the
-this keyword
-
-and then we&apos;ll get the responseText. So, that&apos;s all that we need.
+doing here is basically find a function that gets called every time the request is
+done loading data from the backend. And now we can create a new variable
+called response that will hold the data sent from the back-end. To access it,
+we need to access the request. In this case, we can access access this with the
+this keyword and then we&apos;ll get the responseText. So, that&apos;s all that we need.
 
 However, this response text, as it says, is a string and in our case,
-because we
-
-know the API is sending JSON data, this text is actually a JSON string.
+because we know the API is sending JSON data, this text is actually a JSON string.
 
 So, what we need to do to use it as a JavaScript object, is we need to
-do
-
-JSON.parse(this.responseText). And now here, is where we find what we
-
+do JSON.parse(this.responseText). And now here, is where we find what we
 actually want to do with the data. In this first video, we&apos;re not going
-to do
-
-anything with it. The next one, we&apos;re gonna transform it in a way that
-we can
-
-use it with D3 later on, but for now, let&apos;s just log it to the console,
-so we
-
-can take a look at it. That&apos;s all we need to define here.
-
+to do anything with it. The next one, we&apos;re gonna transform it in a way that
+we can use it with D3 later on, but for now, let&apos;s just log it to the console,
+so we can take a look at it. That&apos;s all we need to define here.
 The third step and the final step of sending an HTTP request is, we need
-to instantiate
-
-it using the open function. We need the open function to know what kind
-of HTTP request
-
-type we are sending. We will be sending a get request. You will also
-have to define the
-
-URL that we&apos;re sending request to. In our case, we are
-
+to instantiate it using the open function. We need the open function to know what kind
+of HTTP request type we are sending. We will be sending a get request. You will also
+have to define the URL that we&apos;re sending request to. In our case, we are
 staying in the same domain that we are running currently. So, on the
 localhost:3000.
 
-So, obviously, those define the route on that domain for the API
+Obviously, those define the route on that domain for the API and on the endpoints 
+relationships. And the server is defined, if there is a get request coming to that 
+route, it&apos;ll return the relationship data. And, finally, we have to send it 
+off. That&apos;s it. It&apos;s all we need to get data from the backend using HTTP 
+request in JavaScript. The native way, no external libraries are needed. 
 
-and on the endpoints relationships. And the server is defined, if there
-is a get
-
-request coming to that route, it&apos;ll return the relationship data. And,
-finally,
-
-we have to send it off. That&apos;s it. It&apos;s all we need to get data from
-the
-
-backend using HTTP request in JavaScript. The native way, no external
-libraries are
-
-needed. So, let&apos;s get back to our browser, reload the page and click
-the button
-
+Let&apos;s get back to our browser, reload the page and click the button 
 again. As you can see, we get returned an array of objects and if we
-look a bit
-
-closer, these objects are relationships of characters. So, we have an
-object that
-
-has a couple of attributes. Some of them are for internal use of the API
-and here
-
-are the interesting bits, which is the source of the interaction and the
-target
-
-of the interactions, or two characters, and the weight as well. And,
+look a bit closer, these objects are relationships of characters. So, we have an
+object that has a couple of attributes. Some of them are for internal use of the API
+and here are the interesting bits, which is the source of the interaction and the
+target of the interactions, or two characters, and the weight as well. And,
 these are all
 
 different interactions. So, that&apos;s it for this video. In the next
@@ -6688,47 +6499,34 @@ and then
 
 sending it off. And now, we&apos;re going to start working a bit more with
 this
-
 onload function and we&apos;re going to transform the response data that we
 had
-
 in a way that we can use it with D3 later on. So, D3 for generating
-
 a graph visualization actually expects two things - a list of Node
 objects and
-
 the list of relationships or link objects. So, we already have a list of
-
 relationship objects and the first thing we need to do now is to extract
 a unique
-
 list of node names. So, what we&apos;re going to do is to take another look
 at our browser.
 
 We&apos;re going to go through all of the link objects of this list and
-
 for each of the source and target names we&apos;re going to check if this
-name is
-
-already part of our unique name list and if it&apos;s not, we&apos;re going to
-add it and
-
-then do the same for the target. I&apos;m going to do this for all of the
+name is already part of our unique name list and if it&apos;s not, we&apos;re going to
+add it and then do the same for the target. I&apos;m going to do this for all of the
 objects.
 
-So, first thing to do is to create a new variable called names and this
-list of names is
+First thing to do is create a new variable called names and this list of names 
+is going to be extracted from the array of relationships, which is stored in 
+our response object. So, I&apos;m going to use the functional approach here 
+using an array function that is native to JavaScript, called reduce. I&apos;m 
+going to call this reduce function on the response object, or this array of 
+relationships, which is stored in this variable. And what reduce does is it 
+goes over an array of object and applies a function to it, to each and one of 
+those, and it also keeps an accumulator variable that gets filled up as we go 
+along.
 
-going to be extracted from the array of relationships, which is stored
-in our response object. So, I&apos;m going to use the functional approach
-here using an array function that is native to JavaScript, called
-reduce. So, I&apos;m going to call this reduce function on the response
-object, or this array of relationships, which is stored in this
-variable. And what reduce does is it goes over an array of object and
-applies a function to it, to each and one of those, and it also keeps an
-accumulator variable that gets filled up as we go along.
-
-So, what we&apos;re going to do is we&apos;re going to create a function and
+What we&apos;re going to do is we&apos;re going to create a function and
 this function will be applied to each of those objects. In this case,
 this function will extract the names and then, back here, we have an
 empty array. This is our list of names in the beginning. It&apos;s empty and
@@ -6738,43 +6536,35 @@ to fill up array back here, which is the list of names. And this
 function up here, we are just going to create an anonymous function,
 right here in place.
 
-So, this reduce function is a higher-order function calling this
-anonymous function on the element of the array and this function gets
-two parameters. The first one is the accumulator. In our case, that&apos;s
-going to be an array and the first step is the empty one and then the
-second step it&apos;s going to be whatever we did with it in the first step.
-And it also gets a value. In our case, that&apos;s going to be a
-relationship that is stored in this response array.
+This reduce function is a higher-order function calling this anonymous function 
+on the element of the array and this function gets two parameters. The first one 
+is the accumulator. In our case, that&apos;s going to be an array and the first 
+step is the empty one and then the second step it&apos;s going to be whatever we 
+did with it in the first step. And it also gets a value. In our case, that&apos;s 
+going to be a relationship that is stored in this response array.
 
-So, now, what we need to do is we need to check if the target and source
-names of our relationship are already part of our names object, or list
-of names. And the list of names, the current one, is going to be stored
-in our accumulator. So, what we&apos;re going to do is to check if this
-accumulator already has this name as part of it. So, I&apos;m going to use
-the <b>indexOf</b> function on the <b>val.target</b>. So, this checks if the
-name that&apos;s stored in the target attributes of our relationship object
-is found anywhere in our list of names and if it does, it will return
-the position of it in the array. And if it is not already in there, it
-will return -1. So, if
+Now, what we need to do is check if the target and source names of our relationship 
+are already part of our names object, or list of names. And the list of names, 
+the current one, is going to be stored in our accumulator. So, what we&apos;re 
+going to do is to check if this accumulator already has this name as part of it. 
+I&apos;m going to use the <b>indexOf</b> function on the <b>val.target</b>. This 
+checks if the name that&apos;s stored in the target attributes of our relationship 
+object is found anywhere in our list of names and if it does, it will return
+the position of it in the array. And if it is not already in there, it will 
+return -1. 
 
-the name is not already part of a list, we&apos;re going to add it. So,
-we&apos;re going to
-
-push the name to our accumulator array, which is the list of names, and
-then
-
-we&apos;re going to do the exact same thing except for the source name.
+If the name is not already part of a list, we&apos;re going to add it. We&apos;re 
+going to push the name to our accumulator array, which is the list of names, and
+then we&apos;re going to do the exact same thing except for the source name.
 source equals -1.
 
-Then, we&apos;re gonna push this source name as well. We potentially
-
-now modify this accumulator array by adding one or maybe two names. In
-any case, we want to return this accumulator. So, in the second step, or
-in the following step, this is now the new list in which there are any
-names that we added in this step. That&apos;s already enough to get a list
-of unique names from our array of responses. Just going to save the file
-and I&apos;m going to put log it to the console, so we can take a look at
-it.
+Then, we&apos;re gonna push this source name as well. We potentially now modify 
+this accumulator array by adding one or maybe two names. In any case, we want to 
+return this accumulator. So, in the second step, or in the following step, this 
+is now the new list in which there are any names that we added in this step. 
+That&apos;s already enough to get a list of unique names from our array of 
+responses. Just going to save the file and I&apos;m going to put log it to the 
+console, so we can take a look at it.
 
 Going back to the browser, I&apos;m going to reload the page, press our
 button. As you can see, we get a nice list of unique names. So, one more
@@ -6793,19 +6583,13 @@ very similar to the reduce, except, in this case, we are not going to
 keep any accumulator. It&apos;s just going to pass this anonymous function
 that will be applied to each of the relationships. In this case, this
 function only gets the value of the current position in the array and
-what
-
-we&apos;re going to do is we&apos;re going to replace the source with the
-position of
-
-this name in the names array. It&apos;s going to be another names.indexOf
-val.source.
+what we&apos;re going to do is we&apos;re going to replace the source with the
+position of this name in the names array. It&apos;s going to be another names.indexOf
+val.source. 
 
 We&apos;re going to check where in the list of names is this name and then
-
 replace the name with that number and we&apos;re going to do the same for
 the target as well.
-
 And then, we&apos;re going to return this modified relationship, so it will
 be replaced in the array of relationships.
 
@@ -6844,7 +6628,7 @@ another look at that just to make sure. So, our nodes now look like
 this.
 
 It&apos;s an array of objects now and each object has one name attribute.
-So, we have now a list of node objects, which hold our names and the
+We have now a list of node objects, which hold our names and the 
 list of links, which holds relationships between those nodes and that&apos;s
 already enough for us to start to get to work with D3. And we&apos;re going
 to do this in this createVisualization function in the next video.
@@ -7048,91 +6832,51 @@ calculates
 
 new position for nodes, we&apos;re going to start adding attributes to our
 nodes. So,
-
 in this node variable, we still have stored any element with class node
-
 and after calling this, there will be a class node element for any of
 our nodes
-
 in the data. So, what we&apos;re going to do now on every tick, we&apos;re going
 to update
-
 two attributes of our nodes and those two attributes are defining the
 position.
 
-So, the first one is cx at the position in the x-direction and it&apos;s
-going to be
+The first one is cx at the position in the x-direction and it&apos;s going to 
+be defined by a function and in this case, this gets a data point and that is 
+d3 convention. This data point is actually going to be our node as calculated in the force layout up here.
 
-defined by a function and in this case, this gets a data point and that
-is d3
-
-convention. This data point is actually going to be our node s
-
-calculated in the force layout up here.
-
-So what&apos;s happening in this calculation is that we have our node
-element that you can
-
+What&apos;s happening in this calculation is that we have our node element that you can
 remember from the lecture before and that one has a source and a
-
 target - in the case of the links and just the name in the case of the
 nodes.
 
-So, what we&apos;re going to do every time this function is called, we can
-access the
+What we&apos;re going to do every time this function is called, we can access 
+the node element used in our force layout using this d variable. So, what 
+we&apos;re going to do is going to set the x position of our node to whatever 
+d3 have calculated for the x-position in the graph simulation, in the physics 
+simulation that calculates the position. So, with now doing this, we&apos;re 
+going to connect the x position of the node on the screen to the x position to 
+the node in the physics simulation and we&apos;re going to do the same thing for 
+the y position, return this time dy. Let&apos;s try it and see if that works.
 
-node element used in our force layout using this d variable. So, what
-we&apos;re going to
+Aha! And now all the nodes get the position that d3 has calculated for them in 
+our physics simulation. Next thing we need to do is do the same thing for the 
+links and let me just make that look a bit nicer. In the same tick event function, 
+we&apos;re going to also do the same to our links, except this time, we need to 
+define four different positions, because the link has a beginning and an end 
+position and then there&apos;ll be a line between those. 
 
-do is going to set the x position of our node to whatever d3 have
-calculated for
-
-the x-position in the graph simulation, in the physics simulation
-
-that calculates the position. So, with now doing this, we&apos;re going to
-connect the x
-
-position of the node on the screen to the x position to the node in the
-
-physics simulation and we&apos;re going to do the same thing for the y
-position, return
-
-this time dy. Let&apos;s try it and see if that works.
-
-Aha! And now all the nodes get the position that d3 has calculated
-
-for them in our physics simulation. Next thing we need to do is do the
-same thing
-
-for the links and let me just make that look a bit nicer. In the same
-
-tick event function, we&apos;re going to also do the same to our links,
-except this
-
-time, we need to define four different positions, because the link has a
-
-beginning and an end position and then there&apos;ll be a line between
-those. So, I&apos;m
-
-going to start off using x1 which is the x position of the beginning of
-the line
-
-and it&apos;s going to be the same thing function d and this time our link 
+I&apos;m going to start off using x1 which is the x position of the beginning of
+the line and it&apos;s going to be the same thing function d and this time our link 
 element has a source and the target and those get separate positions
-calculated 
-by the physics simulation. So, we&apos;re going to say source.x, and then
-next one 
-it&apos;s going to be the y position of the beginning of the line, and this
-one is 
-going to be source.y, target is going to come next.
+calculated by the physics simulation. So, we&apos;re going to say source.x, and then
+next one it&apos;s going to be the y position of the beginning of the line, and this
+one is going to be source.y, target is going to come next.
 
 Now, the third one is x2, x is position of the end of the line.
-
 This time, the target x position and, finally, the y2 attribute function
 d return the d.target y. Now, we set for each of the link elements, we
 set the x and y positions of the source of the link and the x and y
-position of 
-the target of the link. So, after saving that file, gone back to our
+position of the target of the link. So, after saving that file, gone back to our
 simulations, reload the page, hit the button, et voila! We do have a nice 
 graph with nodes and links in between them. 
 
@@ -7150,74 +6894,43 @@ select 20 different colors depending on the name of our characters.
 
 So, this returns a function, so we can now call this color function with any
 string and it will just return us a color. So, going down to our node again
-
 and now we&apos;re going to call another function on this one, called
-
 style. And you want to fill the node with a certain value and this again
-takes the
-
-function and it gets the d element, which is the current data point or
-datum and
-
-we want to set the fill element of that current datum to whatever the
-color
-
-function gives us for the name and we know that our current data point
-has this
-
-names element, because we defined that in the last lecture that all the
-nodes are
-
-objects with this name attribute. Click on back to the site, we&apos;re
+takes the function and it gets the d element, which is the current data point or
+datum and we want to set the fill element of that current datum to whatever the
+color function gives us for the name and we know that our current data point
+has this names element, because we defined that in the last lecture that all the
+nodes are objects with this name attribute. Click on back to the site, we&apos;re
 loading it again.
 
 Now, all the nodes have different colors depending on the name of the
-character
+character and you can see that some of them appear multiple times like the red one
+for example here. That&apos;s because we have about around 100 characters, but
+only 20 different colors in our scale. They&apos;re not all going to be the
+same, but if you really want to have unique ones, you can also write your own color
+function, for example, here, instead of using the d3 one. Just play around a 
+bit if you like. 
 
-and you can see that some of them appear multiple times like the red one
-for
-
-example here. That&apos;s because we have about around 100 characters, but
-only 20
-
-different colors in our scale. So, they&apos;re not all going to be the
-same, but if
-
-you really want to have unique ones, you can also write your own color
-
-function, for example, here, instead of using the d3 one. Just play
-around a bit
-
-if you like. So, there are two more things that have been in the demo
-that we
-
-haven&apos;t done yet. So, one thing I&apos;m going to do is I&apos;m going to
-define the width
-
-of our links dynamically depending on the weight of the relationship
-object
-
-that we got returned from the API. So, again, we&apos;re going to use the
-style
-
+There are two more things that have been in the demo that we haven&apos;t done 
+yet. So, one thing I&apos;m going to do is I&apos;m going to define the width
+of our links dynamically depending on the weight of the relationship object 
+that we got returned from the API. Again, we&apos;re going to use the style 
 function, but in this case I&apos;m going to fill. It&apos;s actually going to
-be the
-
-stroke width so we&apos;re going to define the width of the line between two
+be the stroke width so we&apos;re going to define the width of the line between two
 nodes.
 
 Again, function receives the current data point and then this gets
-called for any element that has the class link attached to it. So, this
-function returns. And we can just return the d.weight here because all of the link, all of
-the relationships that we got from the API actually have a weight attribute.
-Now, if you take a look at that. Well, it doesn&apos;t really look too nice,
-because there&apos;s a big difference between some of the smaller ones and
-the bigger ones and some of them are quite large, so it becomes a bit ungainly. So,
-what I&apos;m going to do is I&apos;m actually going to use another built-in JavaScript
-function from the math library, which is the square root. So, I&apos;m just going to
-square the weight and now it looks a lot nicer. As you can see, the characters that
-are having more intensive relationships have now wider links between them
-than those that have like a less close relationship.
+called for any element that has the class link attached to it. And we can just 
+return the d.weight here because all of the link, all of the relationships that 
+we got from the API actually have a weight attribute. Now, if you take a look at 
+that. Well, it doesn&apos;t really look too nice, because there&apos;s a big 
+difference between some of the smaller ones and the bigger ones and some of them 
+are quite large, so it becomes a bit ungainly. What I&apos;m going to do is I&apos;m 
+actually going to use another built-in JavaScript function from the math library, 
+which is the square root. I&apos;m just going to square the weight and now 
+it looks a lot nicer. As you can see, the characters that are having more intensive 
+relationships have now wider links between them than those that have like a less 
+close relationship.
 
 If you remember the demo I showed you in the beginning of this video and the in 
 last few videos as well, we also can define an interactive behavior of the
@@ -7242,7 +6955,7 @@ back, reload, run the visualization and I&apos;ll click on any of the links, the
 times the size then before. Now, that&apos;s nice but looks a bit abrupt. One of
 the things that d3 is really good at is making transitions look smooth and nice.
 
-So, we&apos;re going to add a little bit more to this and then add a transition
+We&apos;re going to add a little bit more to this and then add a transition
 and this transition function needs to be called before the actual change of
 attributes. So, I&apos;m going to just tell it to transition and then I also
 need to define how long that transition period is going to be and
@@ -7290,9 +7003,9 @@ calculated positions of the physics simulation to our SVG elements on
 the page, and then also added some events for interactivity. I really
 hope you enjoyed these demonstration videos to our visualization
 lecture. Thank you very much for watching!
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-0">5.0 Conclusion -- Putting it all together (1:16)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Course Summary</h3>
 Congratulations on finishing the series of lectures about developing a
 web application using the power of Node.js! The knowledge you acquired
@@ -7312,9 +7025,9 @@ encourage you to continue and explore advanced topics, such as learning
 more on how to use web development frameworks or how to take advantage
 of functional reactive programming. We hope you enjoyed the set of
 lectures and we wish you good luck working with JavaScript!
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5-1">5.1 JavaScript in Bioinformatics (3:53)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello! My name is Burkhard Rost. I&apos;m the Chair of Computational Biology
 in the department of Computational Biology and Bioinformatics at the
 Technical University in Munich at TUM. I got into Computational Biology,
@@ -7355,14 +7068,14 @@ data, which, in fact, I believe, will help us to get a better healthcare
 in the future. More and more Biology, Molecular Biology, modern Biology
 will intrude where we see a physician and I believe this will really
 contribute to helping to get a better treatment for all of us. More
-health for all of us. When we taught JavaScript, one f the examples that
+health for all of us. When we taught JavaScript, one of the examples that
 we used was the Game of Thrones. Initially, we used it, because that was
 a relatively easy data set to use and to motivate students. Biological
 data is more complex, but even from these simple first implementations
 we learned something about how to do JavaScript and something that gave
 us a new idea how to in fact look at protein interaction visualizers.
 
-So, JavaScript also allows you to come up with a quick solution and then
+JavaScript also allows you to come up with a quick solution and then
 that quick solution may give you a new idea where to go. This again is
 an interactive way of using visualization, in a way that we haven&apos;t had
 before and it&apos;s really easy for everybody to use. I hope you will enjoy
