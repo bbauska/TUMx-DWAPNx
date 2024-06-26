@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/25/2024 3+pm"
+date last editted: "6/25/2024 7+pm"
 output: 
   markdown:
     with some style
@@ -22,45 +22,52 @@ output:
 </p>
 
 ## [**Module 1: Introduction -- Language Basics**](#ch1)
->### 1.0 [**JavaScript Overview (7:41)**](#ch1-0)
+>### 1.0 [**Intro: JavaScript Overview (7:41)**](#ch1-0)
 >### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
 >### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
 >### 1.3 [**Data Types (6:58)**](#ch1-3)
 >### 1.4 [**Scoping &amp; Hoisting (3:41)**](#ch1-4)
 >### 1.5 [**Loops (3:16)**](#ch1-5)
 >### 1.6 [**Conditional Statements (3:09)**](#ch1-6)
->### 1.7 [**Summary (Module 1) (1:08)**](#ch1-7)
+>### 1.7 [**Summary Module 1 - JavaScript Basics (1:08)**](#ch1-7)
 
 ## [**Module 2: Functions and Objects**](#ch2)
 >### 2.0 [**Intro: Functions and Objects (1:14)**](#ch2-0)
 >### 2.1 [**Functions, part 1 (3:06)**](#ch2-1)
 >### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
 >### 2.3 [**Functions, part 2 (5:19)**](#ch2-3)
->### 2.4 [**Objects, part 2 (mm:ss)**](#ch2-4)
+>### 2.4 [**Objects, part 2 (5:25)**](#ch2-4)
 >### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
->### 2.6 [**Summary (Module 2) (mm:ss)**](#ch2-6)
+>### 2.6 [**Summary Module 2 - Functions and Objects (1:01)**](#ch2-6)
 
 ## [**Module 3: Server-side JavaScript**](#ch3)
->### 3.0 [**Server-side JavaScript (1:31)**](#ch3-0)
+>### 3.0 [**Intro: Server-side JavaScript (1:31)**](#ch3-0)
 >### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
 >### 3.2 [**Node.js and NPM (9:28)**](#ch3-2)
 >### 3.3 [**What is needed for a web app? (5:07)**](#ch3-3)
 >### 3.4 [**Our example application (7:32)**](#ch3-4)
 >### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
 >### 3.6 [**Views (5:54)**](#ch3-6)
->### 3.7 [**Summary (Module 3) (m:s)**](#ch3-7)
+>### 3.7 [**Summary Module 3 - Server-side JavaScript (1:00)**](#ch3-7)
 >### 3.8 [**Demo 1: Working with an Example Application (14:44)**](#ch3-8)
 >### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
 
-## [**Module 4: API calls and data visualization**](#ch4)
->### 4.0 [**(mm:ss)**](#ch4-0)
->### 4.1 [**(mm:ss)**](#ch4-1)
->### 4.2 [**(mm:ss)**](#ch4-2)
+## [**Module 4: API calls and Data Visualization**](#ch4)
+>### 4.0 [**Intro: API calls and Data Visualization (1:01)**](#ch4-0)
+>### 4.1 [**Data Retrieval using HTTP Requests (7:48)**](#ch4-1)
+>### 4.2 [**Data Visualization with D3 (7:52)**](#ch4-2)
+>### 4.3 [**DOM and SVG (8:01)**](#ch4-3)
+>### 4.4 [**Data Binding with D3 (14:37)**](#ch4-4)
+>### 4.5 [**Controlling Element Styles (8:13)**](#ch4-5)
+>### 4.6 [**Event Handling in D3 (7:18)**](#ch4-6)
+>### 4.7 [**Summary Module 4 - API calls and Data Visualization (0:57)**](#ch4-7)
+>### 4.8 [**Demo 1: Data Visualization (15:06)**](#ch4-8)
+>### 4.9 [**Demo 2: Data Visualization (15:22)**](#ch4-9)
+>### 4.10 [**Demo 3: Data Visualization (35:07)**](#ch4-10)
 
 ## [**Module 5: Conclusion -- Putting it all together**](#ch5)
->### 5.0 [**(mm:ss)**](#ch5-0)
->### 5.1 [**(mm:ss)**](#ch5-1)
->### 5.2 [**(mm:ss)**](#ch5-2)
+>### 5.0 [**Course Summary (Web App Development with Node.js) (1:16)**](#ch5-0)
+>### 5.1 [**JavaScript in Bioinformatics (3:53)**](#ch5-1)
 
 <h3 id="about">About</h3>
 
@@ -815,8 +822,9 @@ Object.keys(king);
 < ["firstName", "lastName", "age"]
 ```
 
-<h3 id="ch1-4">1.4 Scoping & Hoisting (3:41)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch1-4">1.4 Scoping &amp; Hoisting (3:41)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to our third lecture of the language basics module! In this
 lecture, we will learn the fundamental aspects of the JavaScript
 language, namely scoping and hoisting. But before we do that, we first
@@ -1173,7 +1181,7 @@ very end on the switch statement.
 Finally, the default keyword can be used within a switch block to
 specify a block of code that executes if no matches are found.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-7">1.7 Module 1 -- Summary (1:08)</h3>
+<h3 id="ch1-7">1.7 Summary Module 1 -- JavaScript Basics (1:08)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Tatyana, for this comprehensive lecture about the language
 basics!
@@ -1988,7 +1996,7 @@ returns it.
 There is no other way to access counter value, but through this
 function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4">2.4 Objects, part 2 (mm:ss)</h3>
+<h3 id="ch2-4">2.4 Objects, part 2 (5:25)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (57) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2434,7 +2442,7 @@ For example, that or self and access it from an inner function.
 
 In this example, we decided to use that.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6">2.6 Chapter 2 - Summary (mm:ss)</h3>
+<h3 id="ch2-6">2.6 Summary Module 2 - Functions and Objects (1:01)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Dimitrii, for covering functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2487,7 +2495,7 @@ the server-side using Node.js as well as other technologies.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3-0">3.0 Server-side JavaScript (1:31)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Introduction -- </h4>
+<h3>Introduction -- Server-side JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to the server-side JavaScript module! JavaScript was developed
 as a scripting language that can only be run in the web browser.
@@ -3741,7 +3749,7 @@ previous videos we have seen the models and the controls. I invite you
 to look more at our code together with me in the demonstration, which is
 going to follow this video.
 
-<h3 id="ch3-7">3.7 Chapter 3 - Summary (mm:ss)</h3>
+<h3 id="ch3-7">3.7 Summary Module 3 - Server-side JavaScript (1:00)</h3>
 
 Thank you, Chris, for covering server-side JavaScript. 
 
@@ -4754,9 +4762,9 @@ those lines of code, you actually understand how the application works.
 
 So, that is a good test for you to try out and have fun.
 
-### [API calls and data visualization]
+<h3 id="ch4-0">4.0 API calls and data visualization (1:01)</h3>
 
-### Chapter 4 - Introduction
+<h3>Module 4 - Introduction</h3>
 
 Welcome to the data visualization module. Data visualization is an
 important
@@ -4773,25 +4781,15 @@ can start recognizing patterns and trends in our data. Over the past
 couple
 
 of decades, more and more data is communicated online and so JavaScript
-is
-
-playing a unique role in enabling data visualization. In this module,
-Dennis will
-
-survey the current techniques we use to visualize data on the web.
-Dennis
-
-will then show how we can use the powerful JavaScript library D3 to tell
+is playing a unique role in enabling data visualization. In this module,
+Dennis will survey the current techniques we use to visualize data on the web.
+Dennis will then show how we can use the powerful JavaScript library D3 to tell
 
 the story of our data in a web browser. Dennis Schwartz is a master
-student for
+student for bioinformatics. He has developed several JavaScript-based visualization
+tools and he&apos;s passionate about open-source communities.
 
-bioinformatics. He has developed several JavaScript-based visualization
-tools and
-
-he&apos;s passionate about open-source communities.
-
-### Data retrieval using HTTP requests
+<h3 id="ch4-1">4.1 Data retrieval using HTTP requests (7:48)</h3>
 
 Welcome everyone to this part of our course!
 
@@ -5026,7 +5024,7 @@ the demo video that is part of this course.
 I will demonstrate how to exactly use this code and how to build the
 onload function presented before.
 
-### Data visualization with D3
+<h3 id="ch4-2">4.2 Data Visualization with D3 (7:52)</h3>
 
 Hi and welcome to the next part of this lecture! In this part, we&apos;re
 going to
@@ -5174,7 +5172,7 @@ part of this course, we will talk about what it actually means and will
 also look into scalable vector graphics before we go on to actually create a
 graph using D3.
 
-### DOM and SVG
+<h3 id="ch4-3">4.3 DOM and SVG (8:01)</h3>
 
 Welcome to the next part of our lesson on data visualization!
 
@@ -5411,7 +5409,7 @@ take a deeper look into how data binding
 works in D3, and how we can use it to dynamically create these kinds of
 shapes and graphics.
 
-### Data binding with D3
+<h3 id="ch4-4">4.4 Data binding with D3 (14:37)</h3>
 
 Welcome back to our lecture about data visualization!
 
@@ -5847,7 +5845,7 @@ look into
 how to control the look of this SVG using CSS and style elements in the
 next lecture.
 
-### Controlling element styles
+<h3 id="ch4-5">4.5 Controlling Element Styles (8:13)</h3>
 
 In this part of our data visualization lecture, we&apos;ve been talking
 about
@@ -6051,7 +6049,7 @@ style and appearance of our visualizations and graphics, in the next
 part we&apos;ll talk about how we can make them interactive using event
 handling.
 
-### Event handling in D3
+<h3 id="ch4-6">4.6 Event handling in D3 (7:18)</h3>
 
 Welcome to this part of our data visualization lesson! In this part,
 we&apos;re
@@ -6247,7 +6245,7 @@ works in
 
 the code, please refer to our demo video.
 
-### Chapter 4 - Summary
+<h3 id="ch4-7">4.7 Summary Module 4 - API calls and Data Visualization (0:57)</h3>
 
 Thank you, Dennis, for this introduction to data visualization in
 JavaScript!
@@ -6270,7 +6268,7 @@ communications. In the next module, we would hear Professor Rost, as he
 speaks about few applications of JavaScript in the Life Sciences. I will
 then summarize the course and say a few parting words.
 
-### Demo 1: Data Visualization
+<h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
 
 Hello everyone! Welcome to the first demo video accompanying the API
 calls and
@@ -6676,7 +6674,7 @@ graph
 
 using D3. Thanks for watching and see you in the next video.
 
-### Demo 2: Data Visualization
+<h3 id="ch4-9">4.9 Demo 2: Data Visualization (15:22)</h3>
 
 Hello and welcome back! This is the second video for the data
 visualization
@@ -6934,7 +6932,7 @@ terms of data transformation. In the next video, we&apos;re going to take a
 closer look at D3 and how to you use this data to create our graph.
 Thank you very much for watching, see you in the next video!
 
-### Demo 3: Data Visualization
+<h3 id="ch4-10">4.10 Demo 3: Data Visualization (35:07)</h3>
 
 Hello and welcome to the third demo video of the data visualization
 lecture!
@@ -7367,10 +7365,9 @@ the page, and then also added some events for interactivity. I really
 hope you enjoyed these demonstration videos to our visualization
 lecture. Thank you very much for watching!
 
-### Conclusion -- Putting it all together
+<h3 id="ch5-0">5.0 Conclusion -- Putting it all together (1:16)</h3>
 
-### Course Summary
-
+<h3>Course Summary</h3>
 Congratulations on finishing the series of lectures about developing a
 web application using the power of Node.js! The knowledge you acquired
 in the lectures and in the exercises will enable you to develop your own
@@ -7390,7 +7387,7 @@ more on how to use web development frameworks or how to take advantage
 of functional reactive programming. We hope you enjoyed the set of
 lectures and we wish you good luck working with JavaScript!
 
-### JavaScript in Bioinformatics (optional)
+<h3 id="ch5-1">5.1 JavaScript in Bioinformatics (3:53)</h3>
 
 Hello! My name is Burkhard Rost. I&apos;m the Chair of Computational Biology
 in the department of Computational Biology and Bioinformatics at the
@@ -7459,5 +7456,6 @@ Burkhard Rost, bye bye.
 </p>
 <!-- date first editted 6/22/2024 Sat 5+pm -->
 <!-- date last editted 6/24/2024 Mon 12+pm -->
+<!-- date last editted 6/25/2024 Tue 7+pm -->
 
 ...The end...
