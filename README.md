@@ -3986,7 +3986,6 @@ Let&apos;s look at what happens when a function is actually being called. The fi
 thing we do is we connect to our database connection string. So, Mongoose 
 connected to this connection and then we assign the database object to a variable, 
 which is called db. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (121) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4027,7 +4026,6 @@ call our callback function here. Again, we have the function defined up here as
 a parameter of our function and we call it when we are fully connected to the 
 database. This ensures that when we execute this callback function, we are only 
 executing it when we are sure that the database connection is up. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ 194 config.json - database function to connect and start appl'n (123) ~~~~~~~~~~~-->
 <p align="center">
@@ -4170,7 +4168,7 @@ into a process and let&apos;s see what these lines of code now do. We have seen
 that at the very beginning, we are requiring some files and some components of 
 our app and next line of code, that we want to look at, is this one.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204  (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204 idon'tknow.js (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image204.png" 
   title=""
@@ -4194,7 +4192,7 @@ have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
 default values. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205  (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 idon't know.js (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image205.png" 
   title=""
@@ -4243,7 +4241,7 @@ two dots tell us that we have to look one folder before the folder we are in. So
 we are in controllers and we need to look at app and then we want to look at
 models. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image208.png" 
   title=""
@@ -4319,11 +4317,11 @@ to return is a response with the status of 500, which again in HTTP means there
 has been an error on the server side and I want to send my error back to the user, 
 so that the user knows of what kind of problem might have happened. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 210  (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210 relationships.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image210.png" 
-  title=""
-  alt="."
+  title="relationships.js"
+  alt="relationships.js."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We have seen what calling this relationships function actually does. It 
@@ -4481,8 +4479,8 @@ now is actually to define this function over in the controller.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-What we do is, I am copy pasting the name of this function, just out of simplicity, I
-am navigate to controllers/relationships, I append at the end here a comma,
+What we do is, I will copy paste the name of this function, just out of simplicity, I
+will navigate to controllers/relationships, I append at the end here a comma,
 then I specify the new function that I want to implement, a colon and I,
 basically, can copy what is written above here. I say function, then I
 put request and response and automatically webstorm has already put the
@@ -4619,11 +4617,11 @@ points into a graph, we can start recognizing patterns and trends in our data.
 Over the past couple of decades, more and more data is communicated online and 
 so JavaScript is playing a unique role in enabling data visualization. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image224.png" 
-  title=""
-  alt=" ."
+  title="Covered in this module"
+  alt="Covered in this module."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 In this module, Dennis will survey the current techniques we use to visualize 
@@ -4703,7 +4701,6 @@ them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 </p>
 The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into an HTML file that will be displayed in a web browser.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 230 content creation with pug, #2 (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4774,43 +4771,38 @@ create direct request to our API, receive the data and then create the visualiza
 And, finally, we have one more div with the ID root. This is where we&apos;ll 
 inject the visualization using JavaScript and D3. So, this is what the page looks like.
 
-Again, it has the navigation bar on top, it has a title.
+<image>
+Again, it has the navigation bar on top, it has a title. In this case visualization 
+and a button that when pressed will initialize the visualization and data retrieval.
+So, let&apos;s have a look at what the data retrieval actually looks like. This 
+will happen in the JavaScript file. 
 
-In this case visualization and a button that when pressed will
-initialize the visualization and data retrieval.
+<image>
+You can find the file in the visualization folder, which is hosted in the public 
+folder of our application. The script.js will host all the code we need. 
 
-So, let&apos;s have a look at what the data retrieval actually looks like.
-This will happen in the
+<image>
+Let&apos;s talk about that code. Creating HTTP requests is a classic application 
+of front-end and even back-end JavaScript. 
 
-JavaScript file.
+There are many libraries out there, which try to make this a very simple task. 
+jQuery is a very popular one, but we will try to stick with the built-in JavaScript 
+functions for now. One way of doing that is the so-called XMLHttpRequest object that 
+is built into JavaScript. 
 
-You can find the file in the visualization folder, which is hosted in
-the public folder of our application.
+<image>
+When instantiated, this can be sent off to any given URL. In this case, our API 
+end point, which will return the relationship data. And it is also the object, 
+which supports a number of events that will be fired at various stages of this 
+process.
 
-The script.js will host all the code we need.
+For example, when the request arrives at the back-end, there&apos;s an event for 
+that. When it starts sending data, there&apos;s a second event for that. And 
+there&apos;s another event when it is finished with transferring the data back 
+to the front-end. 
 
-So, let&apos;s talk about that code. Creating HTTP requests is a classic
-application of front-end and even back-end JavaScript.
-
-There are many libraries out there, which try to make this a very simple
-task. jQuery is a very popular one, but we will try to stick with the built-in
-JavaScript functions for now.
-
-One way of doing that is the so-called XMLHttpRequest object that is
-built into JavaScript. When instantiated, this can be sent off to any given URL.
-
-In this case, our API end point, which will return the relationship
-data. And it is also the object, which supports a number of events that will be fired at various stages
-of this process.
-
-For example, when the request arrives at the back-end, there&apos;s an event
-for that.
-
-When it starts sending data, there&apos;s a second event for that. And there&apos;s 
-another event when it is finished with transferring the data back to the front-end.
-
+<image>
 And this is the one we will be looking at on the next slide.
-
 Here, we see the code that is needed to send the HTTP request using native 
 JavaScript function. It is rather simple in general. It has three major parts.
 
@@ -4818,26 +4810,19 @@ The first part is instantiating the request object and saving it into a
 variable. Then, we need to define what should happen once this data retrieval 
 is finished. Meaning, as soon as the data has been sent back to the front end, 
 this onload event is called and we now need to define what happens when this 
-onload event is called.
+onload event is called. We do that by defining an anonymous function and since 
+this function is called directly on the request object, we can actually access 
+the request object using the this keyword. And the interesting part in this case 
+is the response text. This is where the data received from our API will be hosted. 
 
-We do that by defining an anonymous function and since this function is
-called directly on the request object, we can actually access the request object using
-the this keyword.
+And then, we can do something with that, symbolized by the doSomethingWith function, 
+in this case. 
 
-And the interesting part in this case is the response text.
-
-This is where the data received from our API will be hosted.
-And then, we can do something with that, symbolized by the do something
-with function, in this case.
-And, lastly, we need to tell the request object what kind of HTTP
-request it is.
-In this case, it&apos;s a GET request and we have to tell it where to send
-it off to.
-In this case, our API - the relationship end-point.
-And, finally, we need to send it away.
-That is all the code is needed to create a JavaScript HTTP request.
-Also, take a look at the demo lesson that is part of this course.
-
+And, lastly, we need to tell the request object what kind of HTTP request 
+it is. In this case, it&apos;s a GET request and we have to tell it where to 
+send it off to. In this case, our API - the relationship end-point. And, finally, 
+we need to send it away. That is all the code is needed to create a JavaScript 
+HTTP request. Also, take a look at the demo lesson that is part of this course.
 I will demonstrate how to exactly use this code and how to build the
 onload function presented before.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4846,69 +4831,74 @@ onload function presented before.
 Hi and welcome to the next part of this lecture! In this part, we&apos;re
 going to discuss data visualization. Now, that we have the data retrieved from an
 API, we will try and create a nice-looking graph from the character interactions
-of the Storm of Swords novel. Let&apos;s talk about visualization in general.
+of the Storm of Swords novel. 
+<image>
+Let&apos;s talk about visualization in general.
+Why visualization? Technically, all the information that is displayed by 
+visualization is already available in the data itself, but a good example for 
+why visualization is important is the so-called Anscombe&apos;s quartet. You
+can see it on the left side here. 
 
-Why visualization? Technically, all the information that is displayed by
-visualization is already available in the data itself, but a good
-example for why visualization is important is the so-called Anscombe&apos;s quartet. You
-can see it on the left side here. So, what you see is a bunch of data, what you see is
-that you can&apos;t see much at first glance. However, luckily, we have some
-mathematical tools to analyze these four two-dimensional distributions. However, in this
-particular case, if you look at the mean distribution and the distribution means
-of X, they are all exactly the same. The same goes for the variance of the X
-distribution. 
+What you see is a bunch of data, what 
+you see is that you can&apos;t see much at first glance. However, luckily, we 
+have some mathematical tools to analyze these four two-dimensional distributions. 
+However, in this particular case, if you look at the mean distribution and the 
+distribution means of X, they are all exactly the same. The same goes for the 
+variance of the X distribution. 
 
 And if you look at the Y part of these distributions, they are also very similar 
 to at least two percentage points and even more complex things, such as a linear 
 regression line are almost identical for all these four distributions. You would 
 assume that they follow a very similar pattern, that they are even mostly identical. 
+<image>
 However, as soon as you bring in a visualization of these data points, you will 
 notice that they are vastly different and definitely follow different patterns. 
-
 This is the reason why visualization is vital for data exploration and by now it 
 has become a very common theme to use visualization on the web, and for that we 
-use JavaScript, obviously. There are a number of JavaScript libraries for web-
+use JavaScript, obviously. 
+<image>
+There are a number of JavaScript libraries for web-
 based data visualization available, such as the ones you can see listed on the 
 left side of the slide.
-
 Today, we&apos;ll be using D3 and we&apos;ll talk a little bit about why we will 
-be using D3 in a minute. First, let&apos;s talk about ways in which we can visualize
+be using D3 in a minute. 
+<image>
+First, let&apos;s talk about ways in which we can visualize
 data in the browser in general. There are three major ways, basically. The most
 simple one are HTML elements. They are actually part of the HTML language. That
 means, they are supported by any browser. They support all the things that any HTML
 element will support. 
+That means DOM-handling and events and callbacks would make it really easy to 
+make it responsive and interactive. However, they only support very simple 
+shapes, such as circles and lines, and to create more complex shapes, it takes 
+a lot of effort to get it done. 
 
-That means DOM-handling and events and callbacks would make it really
-easy to make it responsive and interactive. However, they only support
-very simple shapes, such as circles and lines, and to create more
-complex shapes, it takes a lot of effort to get it done. Secondly, a whole 
-different way of creating graphics in a web page are the Canvas and WebGL elements.
+Secondly, a whole different way of creating 
+graphics in a web page are the Canvas and WebGL elements.
+Now, Canvas and WebGL are different, but these are related, and they work in 
+similar ways. Canvas is for two-dimensional graphics, but WebGL enables three-
+dimensional graphics in a web browser. And if you have a lot of elements and a 
+lot of shapes to draw, they are very fast. However, they also require a lot of 
+effort to get it done, because every shape needs to be explicitly stated by the 
+user itself. 
+That means that they do not natively support events or callbacks, which makes 
+it very hard to create a very nice interactive experience. They also are based 
+on pixels, like a JPEG or a bitmap picture, for example, which means that they 
+are a resolution-dependent and if you would like to zoom into it, the quality 
+may degrade. 
 
-Now, Canvas and WebGL are different, but these are related, and they work in similar
-ways. Canvas is for two-dimensional graphics, but WebGL enables
-three-dimensional graphics in a web browser. And if you have a lot of
-elements and a lot of shapes to draw, they are very fast. However, they
-also require a lot of effort to get it done, because every shape needs to be
-explicitly stated by the user itself. 
-
-That means that they do not
-natively support events or callbacks, which makes it very hard to create a very
-nice interactive experience. They also are based on pixels, like a JPEG or a
-bitmap picture, for example, which means that they are a resolution-dependent
-and if you would like to zoom into it, the quality may degrade. The last
-way to visualize data in the browser is a very common one and these are called
-scalable vector graphics, also known SVG and they are similar in the way they
-work to HTML elements. 
-
-They provide DOM-handling ability,
-because they are basically part of the HTML file. That means that you
-can create events and callbacks when clicking on them, which means they are very
-good for interactive graphs and visualizations. And because SVG doesn&apos;t actually
-place any pixels anywhere, but rather provides a description of how a shape
-should look like, it&apos;s completely resolution-independent. The problem, however, is that if 
-you have a lot of elements and shapes to draw, as in thousands, it can become very 
-slow and we would probably need to move to a WebGL or canvas-based visualization. 
-
+The last way to visualize data in the browser is a very common one 
+and these are called scalable vector graphics, also known SVG and they are similar 
+in the way they work to HTML elements. 
+They provide DOM-handling ability, because they are basically part of the HTML 
+file. That means that you can create events and callbacks when clicking on them, 
+which means they are very good for interactive graphs and visualizations. And 
+because SVG doesn&apos;t actually place any pixels anywhere, but rather provides 
+a description of how a shape should look like, it&apos;s completely resolution-
+independent. The problem, however, is that if you have a lot of elements and 
+shapes to draw, as in thousands, it can become very slow and we would probably 
+need to move to a WebGL or canvas-based visualization.
+<image>
 Let&apos;s talk about why we want to use D3. If you go to the website at d3js.org, 
 you will see that most of the examples are some form of graph or bar chart, or 
 in some other form of craft-based visualization. However, D3 is not just a 
@@ -4918,10 +4908,10 @@ abstract concept of binding arbitrary data to a page element and then applying
 data-driven transformation to them. 
 
 And those can be, for example, SVG graphics. They can also be tables or text 
-elements or any other kind of HTML elements. So, the main point for D3 is the 
+elements or any other kind of HTML elements. The main point for D3 is the 
 way that data binding works with D3 and let&apos;s talk about what that actually 
 means. 
-
+<image>
 Data binding in web development refers to the assignment of data to specific
 elements of a UI or, in our case, a website. So, for example, imagine we have a
 star shape that is displayed on our website and that has an attribute that is
@@ -4931,15 +4921,18 @@ color in this case and it holds the color we want the star to have.
 We can now assign the variable to the color attribute of the star, so that they 
 are bound together, meaning that if either the star color variable in our script
 changes, for example, programmatically, that will also influence the
-color of the star on the website immediately and vice versa as well. If the star
+color of the star on the website immediately and vice versa as well. 
+<image>
+If the star
 color on the website is, for example, through user interaction influenced, this will
-be reflected in our code and data as well. So, the code and UI are kept
-consistent across changes and D3 uses this as its central working paradigm. 
+be reflected in our code and data as well. 
+<image>
+The code and UI are kept consistent across changes and D3 uses this as its central 
+working paradigm. It allows the user to bind arbitrary data to the document object 
+model, for example, when providing graph data to create an SVG visualization. And 
+now, I have already mentioned the document object model or DOM a couple of times. 
 
-It allows the user to bind arbitrary data to the document object model, for example,
-when providing graph data to create an SVG visualization. And now, I have already 
-mentioned the document object model or DOM a couple of times. So, in the next
-part of this course, we will talk about what it actually means and will
+In the next part of this course, we will talk about what it actually means and will
 also look into scalable vector graphics before we go on to actually create a
 graph using D3.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4949,20 +4942,17 @@ Welcome to the next part of our lesson on data visualization!
 This time we&apos;re going to talk about DOM and SVG. DOM stands for the Document 
 Object Model and to talk more about that, we have to look at the structure of 
 an HTML file.
-
-Many of you will know HTML already.
-And if you want to have a closer look at it, there are many great
-resources to learn online.
-We will only take a very topical look at it.
-So, first of all, HTML stands for Hypertext Markup Language and markup
+<image>
+Many of you will know HTML already. And if you want to have a closer look at it, 
+there are many great resources to learn online. We will only take a very topical 
+look at it. First of all, HTML stands for Hypertext Markup Language and markup
 languages are there to structure data.
-
-You might think of HTML as a way to tell the browser of what website
-looks like, but in reality its main focus is there to structure data.
+You might think of HTML as a way to tell the browser of what website looks like, 
+but in reality its main focus is there to structure data.
 
 For example, into pictures or text, and only give a very rough topical structure 
-to the file. Now, as many markup languages, it works using tags, as you can see, in
-the pointy brackets. And this tag has an ID, for example, html.
+to the file. Now, as many markup languages, it works using tags, as you can see, 
+in the pointy brackets. And this tag has an ID, for example, html.
 
 And for each tag, there&apos;s also a corresponding closing tag, which has
 the same ID preceded by a slash. If you can see here, on the top, it starts 
@@ -4973,8 +4963,8 @@ For all the other tags, it works in a similar way. In the way that there&apos;s
 an opening tag, then there is more content and then there&apos;s a closing tag.
 
 This example here is actually the compiled version of our visualization site.
-
-We had discussed in an earlier video using the <b>Pug</b> template, but if
+<image>
+We had discussed in an earlier lesson using the <b>Pug</b> template, but if
 you want to look at it in a different way, you could also see it like this.
 The html data tag itself contains everything else in the website.
 
@@ -4984,104 +4974,80 @@ for example, the title of the page or it links to stylesheets.
 And, again, HTML is there to structure the data and the linked
 stylesheets then decide what it actually should look like in the browser.
 
-Now to the right:
+Now to the right: the body contains the actual content of the HTML page, such 
+as, in this case, script files and a div, like a division element, that is 
+there to group other elements, but it could also easily be a text or an image.
 
-the body contains the actual content of the HTML page, such as, in this
-case, script files and a div, like a division element, that is there to group other
-elements, but it could also easily be a text or an image.
+And, basically, what you see here is what we call a tree structure, because if 
+you turn it on its head, the top part is also called the root and then it branches 
+out into more and more complicated structure. You could also call it the model 
+for all the objects that are contained in the document.
 
-And, basically, what you see here is what we call a tree structure, because if you turn it
-on its head, the top part is also called the root and then it branches out into more and more
-complicated structure.
+that&apos;s why, this tree structure is what we mean when we refer to the document 
+object model or DOM for short. And, then, when we talk about DOM manipulation, 
+we talk about manipulating this object, for example, by changing, deleting or 
+adding new elements to the whole structure.
 
-You could also call it the model for all the objects that are contained
-in the document.
-
-So, that&apos;s why, this tree structure is what we mean when we refer to
-the document object model or DOM for short.
-
-And, then, when we talk about DOM manipulation, we talk about
-manipulating this object, for example, by changing, deleting or adding new elements to the whole
-structure.
-
-For example, we could add more data to this div element, which again
-could be pictures or text or, in our case, the SVG elements for our visualization.
-
-When we talk about data binding in D3, what we actually mean by that
-is that D3 is able to create DOM elements or update, or delete them dynamically
-based on the data it has.
+For example, we could add more data to this div element, which again could be 
+pictures or text or, in our case, the SVG elements for our visualization. When 
+we talk about data binding in D3, what we actually mean by that is that D3 is 
+able to create DOM elements or update, or delete them dynamically based on the 
+data it has.
 
 Again, in this example on the left right now, we have a bunch of names and a 
 bunch of relationships, which is going back to the data we got from our novel 
 from the &quot;Network of Thrones&quot; dataset.
 
-Technically, as I said before, D3 could create all sorts of DOM elements.
-We could create a table from this data and we could create text.
-But in our case we would like to have a nice looking graphics.
-So, we are going to use Scalable Vector Graphics.
-We&apos;re going to talk about them next.
-What are Scalable Vector Graphics?
-First of all, SVG is a flexible solution for drawing on a web site and
-visualizations and it is also very good for graph drawing.
+Technically, as I said before, D3 could create all sorts of DOM elements. We 
+could create a table from this data and we could create text. But in our case 
+we would like to have a nice looking graphics. We are going to use Scalable 
+Vector Graphics. We&apos;re going to talk about them next. What are Scalable 
+Vector Graphics? First of all, SVG is a flexible solution for drawing on a web 
+site and visualizations and it is also very good for graph drawing.
 
-In contrast to a classic picture, like a JPEG or a bitmap that is a
-bunch of pixels, SVG is actually also a XML based markup language similar to HTML in a
-way.
+In contrast to a classic picture, like a JPEG or a bitmap that is a bunch of 
+pixels, SVG is actually also a XML based markup language similar to HTML in a
+way. The great advantage of that is that we can add SVG elements into our HTML 
+file and they become part of the document object model and because they then
+implement all the features of regular HTML elements, it becomes a very animation 
+friendly and it becomes very interactive, because just as a button or as a link, 
+the elements register when they get clicked on.
 
-The great advantage of that is that we can add SVG elements into our
-HTML file and they become part of the document object model and because they then
-implement all the features of regular HTML elements,
-it becomes a very animation friendly and it becomes very interactive,
-because just as a button or as a link, the elements register when they get clicked on.
-
-And besides drawing shapes, you can also render text in SVG.
-
-Let&apos;s have a look at how it works.
-
-You can see a much more simplified HTML version.
-
-At the body, we added a simple SVG element. The element itself again has a tag 
-ID, in this case it&apos;s svg, and as a closing tag slash svg.
+And besides drawing shapes, you can also render text in SVG. Let&apos;s have a 
+look at how it works. You can see a much more simplified HTML version. At the 
+body, we added a simple SVG element. The element itself again has a tag ID, in 
+this case it&apos;s svg, and as a closing tag slash svg.
 
 And it also has a number of attributes. The root SVG element just has the 
 dimensions attribute, such as the height and the width and then the child 
 nodes of this element contain the actual shapes to draw.
 
-In this case, it&apos;s a single path element and path element
-our freestyle shapes, so to say, where the shape of the element is
-defined by the user, in this case through the id attribute.
-
-As you can see, it looks quite complex and complicated, even though the
-resulting shape on the right is a simple triangle.
+In this case, it&apos;s a single path element and path element our freestyle 
+shapes, so to say, where the shape of the element is defined by the user, in 
+this case through the id attribute. As you can see, it looks quite complex and 
+complicated, even though the resulting shape on the right is a simple triangle.
 
 Now, obviously, if you want to create more complex animations and graphics, 
 we would like to automate this process. And this is again where D3 comes in.
 
 Here, you can see a more complex example on the top. You see the SVG element 
-with six sub elements or child elements.
+with six sub elements or child elements. Three of them are circles, three of 
+them lines and you can see the result on the bottom right. It&apos;s a simple 
+graph with three nodes and three links. Now, the color and the shape of all 
+these objects is for one determined by the type of object, such as a line or a 
+circle, but it is also determined by the number of attributes that can be found 
+in these elements. And this is where we can determine most of the features of 
+such a shape, and where D3 can greatly help us.
 
-Three of them are circles, three of them lines and
-you can see the result on the bottom right.
-It&apos;s a simple graph with three nodes and three links.
-Now, the color and the shape of all these objects
-is for one determined by the type of object,
-such as a line or a circle, but it is also determined by the number of
-attributes that can be found in these elements.
-
-And this is where we can determine most of the features
-of such a shape, and where D3 can greatly help us.
-
-In the next section of this lesson, we will take a deeper look into how data binding
-works in D3, and how we can use it to dynamically create these kinds of
+In the next section of this lesson, we will take a deeper look into how data 
+binding works in D3, and how we can use it to dynamically create these kinds of
 shapes and graphics.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4">4.4 Data binding with D3 (14:37)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our lecture about data visualization!
-
-In this part, we&apos;ll take a closer look onto data binding with D3 and we 
-will also create a graph model that will then translate into a visualization 
-on our site.
+Welcome back to our lecture about data visualization! In this part, we&apos;ll 
+take a closer look onto data binding with D3 and we will also create a graph 
+model that will then translate into a visualization on our site.
 
 First off, to create a graph visualization we need two parts. We need a mathematical 
 model of a graph that we&apos;ll use to calculate aesthetically pleasing positions 
@@ -5152,12 +5118,11 @@ which is provided by D3. I can say D3.select(&quot;#root&quot;) and that means
 that the SVG, one on the left, will actually hold the ID equals root element 
 on the left.
 
-Similarly, I can also use the full-stop.
-In this case, this will select any element that has the class root attached to 
-it. So, in this case, instead of selected by ID, I&apos;m selecting by CSS
-class and we talk a little bit more about that later as well. But for
-now, if you see #root that just means I want to select the DOM element, which
-has the ID root.
+Similarly, I can also use the full-stop. In this case, this will select any 
+element that has the class root attached to it. So, in this case, instead of 
+selected by ID, I&apos;m selecting by CSS class and we talk a little bit more 
+about that later as well. But for now, if you see #root that just means I want 
+to select the DOM element, which has the ID root.
 
 This is what we&apos;re actually going to do now. We&apos;ll take D3, we&apos;ll 
 select the root ID from our HTML file and then we&apos;ll tell it - now that you 
@@ -5868,7 +5833,7 @@ lecture!
 In the first of two videos, we spent some time getting data from an API
 using an HTTP request and in the second video we transformed that data.
 
-So, we can start using it for our visualization.
+We can start using it for our visualization.
 
 Just a quick reminder: this is what we&apos;re building, this is a D3 graph
 visualization that depicts relationships between Game of Thrones
@@ -5882,11 +5847,11 @@ visualization will be built. Taking another look at the visualization
 view in our app views folder, we can see that we already imported the d3
 library.
 
-So, because of that, we can start using d3 in our own visualization
-file, which has the createVisualization method. So, let&apos;s get right
+Because of that, we can start using d3 in our own visualization
+file, which has the createVisualization method. Let&apos;s get right
 into it. There&apos;s a couple of steps we need to do: we need to create the
 physical simulation of the graph that d3 does for us and then we have to
-start adding elements to the website to our DOM. So, we&apos;ll start off
+start adding elements to the website to our DOM. We&apos;ll start off
 with the first bit. We need a couple of settings for our visualization.
 We&apos;re going just set a fixed height and width for it. I&apos;m going to
 just use 800 pixels, you can use whatever fits your screen best and just
@@ -5895,13 +5860,13 @@ away and then we also need our nodes and links that we got from the
 previous function and that we initially got from our API and then
 transformed.
 
-So, we&apos;ll create another variable and we call it force, because it&apos;s
+We&apos;ll create another variable and we call it force, because it&apos;s
 going to be a force directed graph layout and now we can start using d3
 by just typing d3 and we want a layout and it should be a force layout.
 And now we&apos;ll use function chaining that d3 uses a lot to set some
-settings on this. So, we&apos;re going to set the charge, which is basically
+settings on this. We&apos;re going to set the charge, which is basically
 the gravity settings and the gravity in this case should be minus 220.
-This is the force with which the nodes will repel each other. So, if you
+This is the force with which the nodes will repel each other. If you
 set this to a lower value or actually a higher value, say that&apos;s minus
 10, the nodes would stay closer together and if it&apos;s something higher
 or more negative, like minus 220, in this case, they&apos;ll be further
