@@ -1689,35 +1689,31 @@ to put the returned value on the same line as return keyword.</p>
 <p>Otherwise, a semicolon will be inserted right after return keyword,
 which means that a function will return undefined.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (53) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image090.png" 
   title="Functions create scope"
   alt="Functions create scope."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Now, let's look into scoping.</p>
-<p>Each function creates a new scope.</p>
-<p>A variable declared in a scope is accessible inside all of the inner
+<p>Now, let's look into scoping. Each function creates a new scope.
+A variable declared in a scope is accessible inside all of the inner
 scopes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (53) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image091.png" 
   title="Inner functions and outer scope"
   alt="Inner functions and outer scope."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Let's rephrase: inside a function we can access all of the variables
-declared in these functions outer scope.</p>
-<p>We can both read and write such variables.</p>
-<p>In this example, a variable is declared and initialized in the outer
-scope.</p>
-<p>Then, it is changed in the inner scope created by a function.</p>
-<p>Of course, this change exists not only in the inner scope, but in the
-outer scope as well.</p>
+<p>Let's rephrase: inside a function we can access all of the variables declared 
+in these functions outer scope. We can both read and write such variables.</p>
+<p>In this example, a variable is declared and initialized in the outer scope. 
+Then, it is changed in the inner scope created by a function. Of course, this 
+change exists not only in the inner scope, but in the outer scope as well.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image092.png" 
   title="Variable shadowing"
@@ -1725,15 +1721,14 @@ outer scope as well.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>Declaring a variable with the same name as a variable in an outer
-scope blocks access to the outer variable in an inner scope.</p>
-<p>Here, we declare and initialize a variable in the outer scope and
+scope blocks access to the outer variable in an inner scope.
+Here, we declare and initialize a variable in the outer scope and
 then declare and initialize a variable with the same name in an inner
-scope.</p>
-<p>An outer scope variable is shadowed by an inner scope variable.</p>
-<p>That is, manipulations with an inner scope variable have no effect on an
+scope. An outer scope variable is shadowed by an inner scope variable.
+That is, manipulations with an inner scope variable have no effect on an
 outer scope variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image093.png" 
   title="Higher order functions"
@@ -1741,30 +1736,27 @@ outer scope variable.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>Higher-order functions are one of the most powerful tools in
-JavaScript's arsenal.</p>
-<p>What exactly is a higher-order function? Well, a higher-order
+JavaScript's arsenal.
+What exactly is a higher-order function? Well, a higher-order
 function is a function that takes a function as an argument or returns a
-function as a return value.</p>
-<p>Here, we see a function that returns another function.</p>
-<p>Let's take a closer look at this example. What exactly is going on here?</p>
+function as a return value.
+Here, we see a function that returns another function.
+Let's take a closer look at this example. What exactly is going on here?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image094.png" 
   title="add(4)(5)"
   alt="add(4)(5)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>We have defined function add that takes an integer as an argument and
-returns another function innerAdd.</p>
-<p>innerAdd also takes an integer as an argument and returns some of
-these integers.</p>
-<p>Do you understand how we invoke this function with two sets of
-parentheses?</p>
-<p>First, we invoke add with four as an argument that returns innerAdd and
-we immediately invoke it passing 5 as an argument.</p>
+<p>We have defined function add that takes an integer as an argument and returns 
+another function innerAdd. innerAdd also takes an integer as an argument and 
+returns some of these integers. Do you understand how we invoke this function 
+with two sets of parentheses? First, we invoke add with four as an argument 
+that returns innerAdd and we immediately invoke it passing 5 as an argument.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image095.png" 
   title="Closures"
@@ -1773,16 +1765,15 @@ we immediately invoke it passing 5 as an argument.</p>
 </p>
 <p>Wait a minute! We invoke innerAdd after add function has been
 invoked, right? It's done, it's over. So, how can innerAdd access
-variable X?</p>
-<p>To understand that we need to understand the idea of closures.</p>
-<p>JavaScript inner function has access to outer variables even when an
-outer function has been run.</p>
-<p>We can say that a function *encloses* its environment.</p>
-<p>Thus, a closure is function plus function's context. Immediately invoked
+variable X? To understand that we need to understand the idea of closures.
+JavaScript inner function has access to outer variables even when an
+outer function has been run.
+We can say that a function *encloses* its environment.
+Thus, a closure is function plus function's context. Immediately invoked
 function expressions are very often used together with closures in
 JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (56) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (55) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image096.png" 
   title="IIFE - Immediately Invoked Function Expression"
@@ -1792,28 +1783,22 @@ JavaScript.</p>
 <p>What is it? Well, it's simply a function expression that is immediately
 invoked!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (57) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (56) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image097.png" 
   title="Classical example - a simple counter"
   alt="Classical example - a simple counter."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Using immediately invoked function expression, we create a function
-in this example, declare counter value variable and initialize it with
-zero.</p>
-<p>Then, we return another function that has access to counter value
-variable.</p>
-<p>Each time we invoke resulting function, it increases counter value
-and returns it.</p>
-<p>There is no other way to access counter value, but through this
-function.</p>
+<p>Using immediately invoked function expression, we create a function in this 
+example, declare counter value variable and initialize it with zero. Then, we 
+return another function that has access to counter value variable. Each time we 
+invoke resulting function, it increases counter value and returns it. There is 
+no other way to access counter value, but through this function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4">
-2.4 Objects, part 2 (5:25)
-</h3>
+<h3 id="ch2-4">2.4 Objects, part 2 (5:25)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (57) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (56) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image098.png" 
   title="Functions and Objects; Objects, part II"
@@ -1822,10 +1807,9 @@ function.</p>
 </p>
 <p>We already know that constructor functions and prototypes allow us to
 create groups of similar objects of objects with similar data and
-similar behavior.</p>
-<p>But we have a problem.</p>
+similar behavior. But we have a problem.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image099.png" 
   title="Access control"
@@ -1843,12 +1827,12 @@ certain percentage. That means, we have to go over all places where we
 directly interact with hit points and take armor into account.</p>
 <p>This problem is solved in languages, such as Java and C++ by declaring
 some attributes as public exposed to the outside and others as private
-that is accessible only by the objects methods.</p>
-<p>Unfortunately, JavaScript has no mechanism of declaring certain
+that is accessible only by the objects methods.
+Unfortunately, JavaScript has no mechanism of declaring certain
 attributes as private. Is there any way to solve this problem? Indeed,
 there is and we have already seen it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image100.png" 
   title="Closures as a solution"
@@ -1860,7 +1844,7 @@ enclosing function.</p>
 <p>We're going to use closure now to hide swordsman's damage and attacks
 from the outside.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image101.png" 
   title="Closures as a solution, #2"
@@ -1878,7 +1862,7 @@ in vain.</p>
 and <b>attacks</b> variables. But there is no other way to access these
 values from the outside. They are safely hidden.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image102.png" 
   title="Access control VS prototypes"
@@ -1892,7 +1876,7 @@ because prototype methods cannot access data hidden within closures.
 Thus, we have to choose between access control with closures and code
 reuse with prototype chains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image103.png" 
   title="Prototype chain?"
@@ -1913,7 +1897,7 @@ constructor, whose Prototype is a Lannister.prototype object. Thus,
 Swordsman object inherit methods from Swordsman.prototype and
 Lannister.prototype.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image104.png" 
   title="Object.create"
@@ -1926,7 +1910,7 @@ prototypes without defining constructors. It takes one object as an
 argument and then returns another object, whose prototype is the first
 object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image105.png" 
   title="Prototypal inheritance"
@@ -1940,7 +1924,7 @@ prototype etc, etc, all the way up to the <b>Object.prototype</b>, which
 is always located at the very root of prototype hierarchy.</p>
 <p>The first found method is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image106.png" 
   title="Dangers of constructors"
@@ -1957,7 +1941,7 @@ confuse a constructor function and a regular function.</p>
 calling a regular function that explicitly returns an object with a new
 keyword are two common mistakes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image107.png" 
   title="Dangers of constructors, #2"
@@ -1967,7 +1951,7 @@ keyword are two common mistakes.</p>
 <p>If we call a constructor function without a new keyword, then this
 keyword returns global object and we end up creating global variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image108.png" 
   title="Dangers of constructors, #3"
@@ -1979,7 +1963,7 @@ new keyword, then our function will still return that object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5">2.5 Functions, part 3 (5:03)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image109.png" 
   title="Functions are objects"
@@ -1993,7 +1977,7 @@ The value of the name property is function's name.
 In case of an anonymous function, it is an empty string.
 The value of the length property is an amount of parameters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image110.png" 
   title="Function.prototype"
@@ -2004,7 +1988,7 @@ The value of the length property is an amount of parameters.</p>
 objects. It's not surprising then that each function object is connected to a
 prototype as well. Function.prototype is the prototype of functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image111.png" 
   title="apply and call"
@@ -2013,19 +1997,20 @@ prototype as well. Function.prototype is the prototype of functions.</p>
 </p>
 <p>Functions inherit apply and call methods from Function.prototype.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image112.png" 
   title="apply and call, #2"
   alt="apply and call, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Do you understand what these methods do in the current example?
-apply and call methods allow to call a function as if it was a method
-of the object that is passed as a first argument.
-In other words, this keyword returns passed object.</p>
+<p>Do you understand what these methods do in the current example?</p>
+
+<p><b>apply</b> and <b>call methods</b> allow to call a function as if it was a 
+method of the object that is passed as a first argument. In other words, this 
+keyword returns passed object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image113.png" 
   title="apply and call, #3"
@@ -2039,7 +2024,7 @@ Remember, call and apply treat them differently. call method takes these
 arguments simply as arguments, while apply method takes an array and
 turns it into arguments.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image114.png" 
   title="Array of arguments with apply"
@@ -2047,14 +2032,14 @@ turns it into arguments.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>Since apply takes an array and turns it into arguments for function,
-we can use apply when we are stuck with an array.
-In this example, we want to get the maximum value of an array of
+we can use apply when we are stuck with an array.</p>
+<p>In this example, we want to get the maximum value of an array of
 numbers Math.max method doesn't work with arrays, but we can easily
 solve this problem with apply.
 A mnemonic allows to remember which of two methods takes an array. apply
 and array start and end with the same letters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image115.png" 
   title="Spread operator"
@@ -2062,43 +2047,39 @@ and array start and end with the same letters.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>That's nice, but we have an even simpler way of unpacking an array of
-arguments.
-Spread operator allows us to turn an array into arguments for
-function.
-Its syntax is very simple - three dots before an argument.
-Please do not confuse it with rest parameters.
-If we are defining a function, it's rest parameters.
-If we are calling a function, it's a spread operator.</p>
+arguments.</p>
+<p><b>Spread operator</b> allows us to turn an array into arguments for function.
+Its syntax is very simple - three dots before an argument. Please do not confuse 
+it with rest parameters. If we are defining a function, it's rest parameters. If 
+we are calling a function, it's a spread operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image116.png" 
-  title="arguments as an array"
-  alt="arguments as an array."
+  title="Arguments as an array"
+  alt="Arguments as an array."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>Let's take a look at argument subject one more time, just one more
-time.
-We know that it's not an array, but now we know that we can create an
-array with the same contents as arguments using call method.
-Slice is an array method that returns a copy of an array.
+time. We know that it's not an array, but now we know that we can create an
+array with the same contents as arguments using call method.</p>
+<p><b>Slice</b> is an array method that returns a copy of an array.
 Passing an argument's object to slice by a call or apply, returns an
 array containing the same elements as argument's object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 117 calling one object's methods on another object (67) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image117.png" 
-  title=""
-  alt="."
+  title="Calling one object's methods on another object"
+  alt="Calling one object's methods on another object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>In JavaScript we can call one object's methods on another object
-using apply and call, or we can simply add methods to another object, as
-in the current example.
-This is possible thanks to a very important feature of JavaScript,
-called late binding.</p>
+<p>In JavaScript we can call one object's methods on another object using apply 
+and call, or we can simply add methods to another object, as in the current example.</p>
+<p>This is possible thanks to a very important feature of JavaScript, called 
+<b>late binding</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118 late binding (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image118.png" 
   title=""
@@ -2106,31 +2087,29 @@ called late binding.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-<p>What's it about?
-Well, late binding means that keyword this becomes bound to an object
-at the invocation time.
-In other words, object returned by this keyword is selected only when
-we invoke a function.
-However, there is one way to change this behavior.</p>
+<p>What's it about? Well, late binding means that keyword this becomes bound to 
+an object at the invocation time. In other words, object returned by this keyword 
+is selected only when we invoke a function. However, there is one way to change 
+this behavior.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 119  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 119 function.prototype.bind (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image119.png" 
-  title=""
-  alt="."
+  title="Function.prototype.bind"
+  alt="Function.prototype.bind."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Function.prototype.bind method returns a new function bound to a
+<p><b>Function.prototype.bind</b> method returns a new function bound to a
 specified object this keyword always returns bound object inside a bound
-function.
-We can see in this example that even if we copy a bound method to
+function.</p>
+<p>We can see in this example that even if we copy a bound method to
 another object, this keyword still returns the bound object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 120 this (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image120.png" 
-  title=""
-  alt="."
+  title="this"
+  alt="this."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>The value returned by this keyword is decided at invocation time.
