@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/26/2024 4+am"
+date last editted: "6/28/2024 11+am"
 output: 
   markdown:
     with some style
@@ -21,53 +21,52 @@ output:
   alt="TUM logo." />
 </p>
 
-## [**Module 1: Introduction -- Language Basics**](#ch1)
->### 1.0 [**Intro: JavaScript Overview (7:41)**](#ch1-0)
->### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
->### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
->### 1.3 [**Data Types (6:58)**](#ch1-3)
->### 1.4 [**Scoping &amp; Hoisting (3:41)**](#ch1-4)
->### 1.5 [**Loops (3:16)**](#ch1-5)
->### 1.6 [**Conditional Statements (3:09)**](#ch1-6)
->### 1.7 [**Summary Module 1 - JavaScript Basics (1:08)**](#ch1-7)
+### [**Module 1: Introduction -- JavaScript Basics**](#ch1)
+>#### 1.0 [**Intro: JavaScript Basics (7:41)**](#ch1-0)
+>#### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
+>#### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
+>#### 1.3 [**Data Types (6:58)**](#ch1-3)
+>#### 1.4 [**Scoping &amp; Hoisting (3:41)**](#ch1-4)
+>#### 1.5 [**Loops (3:16)**](#ch1-5)
+>#### 1.6 [**Conditional Statements (3:09)**](#ch1-6)
+>#### 1.7 [**Summary: JavaScript Basics (1:08)**](#ch1-7)
 
-## [**Module 2: Functions and Objects**](#ch2)
->### 2.0 [**Intro: Functions and Objects (1:14)**](#ch2-0)
->### 2.1 [**Functions, part 1 (3:06)**](#ch2-1)
->### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
->### 2.3 [**Functions, part 2 (5:19)**](#ch2-3)
->### 2.4 [**Objects, part 2 (5:25)**](#ch2-4)
->### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
->### 2.6 [**Summary Module 2 - Functions and Objects (1:01)**](#ch2-6)
+### [**Module 2: Functions and Objects**](#ch2)
+>#### 2.0 [**Intro: Functions and Objects (1:14)**](#ch2-0)
+>#### 2.1 [**Functions, part 1 (3:06)**](#ch2-1)
+>#### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
+>#### 2.3 [**Functions, part 2 (5:19)**](#ch2-3)
+>#### 2.4 [**Objects, part 2 (5:25)**](#ch2-4)
+>#### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
+>#### 2.6 [**Summary: Functions and Objects (1:01)**](#ch2-6)
 
-## [**Module 3: Server-side JavaScript**](#ch3)
->### 3.0 [**Intro: Server-side JavaScript (1:31)**](#ch3-0)
->### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
->### 3.2 [**Node.js and NPM (9:28)**](#ch3-2)
->### 3.3 [**What is needed for a web app? (5:07)**](#ch3-3)
->### 3.4 [**Our example application (7:32)**](#ch3-4)
->### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
->### 3.6 [**Views (5:54)**](#ch3-6)
->### 3.7 [**Summary Module 3 - Server-side JavaScript (1:00)**](#ch3-7)
->### 3.8 [**Demo 1: Working with an Example Application (14:44)**](#ch3-8)
->### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
+### [**Module 3: Server-side JavaScript**](#ch3)
+>#### 3.0 [**Intro: Server-side JavaScript (1:31)**](#ch3-0)
+>#### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
+>#### 3.2 [**Node.js and NPM (9:28)**](#ch3-2)
+>#### 3.3 [**What is needed for a web app? (5:07)**](#ch3-3)
+>#### 3.4 [**Our example application (7:32)**](#ch3-4)
+>#### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
+>#### 3.6 [**Views (5:54)**](#ch3-6)
+>#### 3.7 [**Summary: Server-side JavaScript (1:00)**](#ch3-7)
+>#### 3.8 [**Demo 1: Working with an Example Application (14:44)**](#ch3-8)
+>#### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
 
-## [**Module 4: API calls and Data Visualization**](#ch4)
->### 4.0 [**Intro: API calls and Data Visualization (1:01)**](#ch4-0)
->### 4.1 [**Data Retrieval using HTTP Requests (7:48)**](#ch4-1)
->### 4.2 [**Data Visualization with D3 (7:52)**](#ch4-2)
->### 4.3 [**DOM and SVG (8:01)**](#ch4-3)
->### 4.4 [**Data Binding with D3 (14:37)**](#ch4-4)
->### 4.5 [**Controlling Element Styles (8:13)**](#ch4-5)
->### 4.6 [**Event Handling in D3 (7:18)**](#ch4-6)
->### 4.7 [**Summary Module 4 - API calls and Data Visualization (0:57)**](#ch4-7)
->### 4.8 [**Demo 1: Data Visualization (15:06)**](#ch4-8)
->### 4.9 [**Demo 2: Data Visualization (15:22)**](#ch4-9)
->### 4.10 [**Demo 3: Data Visualization (35:07)**](#ch4-10)
+### [**Module 4: API calls and Data Visualization**](#ch4)
+>#### 4.0 [**Intro: API calls and Data Visualization (1:01)**](#ch4-0)
+>#### 4.1 [**Data Retrieval using HTTP Requests (7:48)**](#ch4-1)
+>#### 4.2 [**Data Visualization with D3 (7:52)**](#ch4-2)
+>#### 4.3 [**DOM and SVG (8:01)**](#ch4-3)
+>#### 4.4 [**Data Binding with D3 (14:37)**](#ch4-4)
+>#### 4.5 [**Controlling Element Styles (8:13)**](#ch4-5)
+>#### 4.6 [**Event Handling in D3 (7:18)**](#ch4-6)
+>#### 4.8 [**Demo 1: Data Visualization (15:06)**](#ch4-8)
+>#### 4.9 [**Demo 2: Data Visualization (15:22)**](#ch4-9)
+>#### 4.10 [**Demo 3: Data Visualization (35:07)**](#ch4-10)
 
-## [**Module 5: Conclusion -- Putting it all together**](#ch5)
->### 5.0 [**Course Summary (Web App Development with Node.js) (1:16)**](#ch5-0)
->### 5.1 [**JavaScript in Bioinformatics (3:53)**](#ch5-1)
+### [**Module 5: Conclusion -- Putting it all together**](#ch5)
+>#### 5.0 [**Course Summary: Web App Development with Node.js (1:16)**](#ch5-0)
+>#### 5.1 [**JavaScript in Bioinformatics (3:53)**](#ch5-1)
 
 <h3 id="about">About</h3>
 
@@ -112,7 +111,7 @@ definitely for you!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-0">1.0 Introduction: JavaScript Overview (7:41)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (02) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image002.png" 
   title="1.0 Course Introduction: JavaScript Overview"
@@ -166,7 +165,7 @@ project and hope you will enjoy learning web app development using
 JavaScript, while working on the Game of Thrones project we assigned for
 this course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (1) (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (1) (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image003.png" 
   title="Covered in this module (1)"
@@ -176,7 +175,7 @@ this course.</p>
 
 <p>And here are more reasons to learn JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image004.png" 
   title="MOOCs for Masters logo"
@@ -184,7 +183,7 @@ this course.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05 why learn javascript? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05 why learn javascript? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image005.png" 
   title="Why Learn JavaScript? Most popular language"
@@ -195,7 +194,7 @@ this course.</p>
 <p>First, JavaScript has been consistently the most popular language on GitHub, 
 the world&apos;s most popular code repository.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image006.png" 
   title="Why Learn JavaScript #2? Largest library repository"
@@ -207,7 +206,7 @@ the world&apos;s most popular code repository.</p>
 repository called <b>Node Package Management</b>. We&apos;ll talk about that 
 more in module four.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image007.png" 
   title="Why Learn JavaScript, #3? It's everywhere"
@@ -222,7 +221,7 @@ can now run the same JavaScript code across many devices and platforms.</p>
 choice of so-called unicorns. Unicorns are startups, valued at more than 1 billion 
 dollars.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image008.png" 
   title="Why Learn JavaScript, #4?"
@@ -234,7 +233,7 @@ dollars.</p>
 high demand. It is now easier than ever to find work as a JavaScript developer 
 and the salaries offered are competitive.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript, may 1995 - 2005 (07) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript, may 1995 - 2005 (08) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image009.png" 
   title="The Evolution of JavaScript, 1995-2005"
@@ -253,7 +252,7 @@ has nothing to do with language called Java.</p>
 and this has resulted in several different versions of JavaScript that
 were not fully supported by major browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, 2005-2015 (08) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, 2005-2015 (09) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image010.png" 
   title="Evolution of JavaScript, 2005-2015"
@@ -288,7 +287,7 @@ interactive.</p>
 
 <p>There are many more applications and now is an exciting time to learn JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image011.png" 
   title="What you will learn in this course. Hands-on experience developing a 
@@ -313,7 +312,7 @@ data to life using a stack of data visualization techniques. All parts
 of the course are accompanied with hands-on exercises that will help you
 put your new skills to practice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12 course overview (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12 course overview (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image012.png" 
   title="Course Overview"
@@ -348,7 +347,7 @@ fundamentals.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-1">1.1 Language Basics -- Introduction (1:02)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image013.png" 
   title="JavaScript Overview"
@@ -369,7 +368,7 @@ such as C, for instance, it still has very distinct features.</p>
 <p>For instance, it is an interpreted language that does not require data
 typing and its code is being evaluated during program execution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14 covered in this module (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14 covered in this module (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image014.png" 
   title="Covered in this module (1)"
@@ -386,7 +385,7 @@ in disease.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1-2">1.2 Lexical Structure (6:56)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15 how to access the web console (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15 how to access the web console (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image015.png" 
   title="How to access the web console"
@@ -419,7 +418,7 @@ find developer tools, which will open the web console for you.</p>
 command line, framed in the blue box on the figure, will be ready for
 you to enter the JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16 hello world (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16 hello world (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image016.png" 
   title="Hello World"
@@ -441,7 +440,7 @@ practice to do so.</p>
 <p>Semicolons allow your code to be more readable and they also make sure
 that your code is free from side-effects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17 js character set (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17 js character set (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image017.png" 
   title="JavaScript Character Set"
@@ -463,7 +462,7 @@ The standard Unicode set supports virtually every language currently
 used on the planet, making JavaScript independent of the operating
 platform and the language used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18 whitespace and new lines (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18 whitespace and new lines (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image018.png" 
   title="Whitespace and new lines"
@@ -479,7 +478,7 @@ consistent way. And, in general, it is a very good idea to format your
 programs, because formatting makes your programs easy to read and
 understand.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19 comments (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19 comments (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image019.png" 
   title="Comments"
@@ -495,7 +494,7 @@ characters is also treated as a comment. You can span these comments
 over multiple lines. You can&apos;t, however, nest comments, as it will
 result in a syntax error shown in your console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20 variables (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20 variables (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image020.png" 
   title="Variables"
@@ -512,7 +511,7 @@ Identifiers are always case-sensitive and, finally, identifiers cannot
 match any of JavaScript reserved words and what they are we will see on
 the next slide.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21 reserved words (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21 reserved words (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image021.png" 
   title="Reserved words"
@@ -531,7 +530,7 @@ that are reserved for future versions of JavaScript and therefore should
 also not be used. Please refer to other sources for the complete list of
 these keywords.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22 declaring variables (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22 declaring variables (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image022.png" 
   title="Variables"
@@ -558,7 +557,7 @@ the whole program.</p>
 tells the program that the variable is only available within the block
 scope of its declaration.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23 constants (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23 constants (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image023.png" 
   title="Constants"
@@ -573,7 +572,7 @@ with a const keyword and have to be initialized upon declaration.
 Trying to re-declare the constant with a different type or trying to
 assign a new value to it, will result in a type error printed in your console.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 24 printing out variables to the console (17) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 24 printing out variables to the console (18) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image024.png" 
   title="Printing out variables to the console"
@@ -590,7 +589,7 @@ undefined. And, if a variable is declared and initialized, for example,
 the variable C is initialized with the value of 3, then accessing the
 variable will result in no error message printed to the console.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25 literals (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25 literals (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image025.png" 
   title="Literals"
@@ -616,7 +615,7 @@ needs to be declared and ideally initialized with a value. In the
 current lecture, we will learn different types of values that a variable
 can be initialized with.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 26 data types; primitive and reference data types (19) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 26 data types; primitive and reference data types (20) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image026.png" 
   title="Data Types; Primitive and Reference data types"
@@ -641,7 +640,7 @@ elements and therefore an array cannot be stored in 8 bytes of memory.
 Instead, it can hold a reference to the values and that&apos;s why it is
 called a reference type.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 27 number type; 64-bit floating-point number (19) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 27 number type; 64-bit floating-point number (21) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image027.png" 
   alt="Number type; 64-bit floating-point number"
@@ -660,7 +659,7 @@ decimals or exponent notation are integers. Integers can be as large as
 integers outside this range may lead to a lower precision in the
 representation of your number.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 28 number type ii; standard number & special value (20) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 28 number type ii; standard number & special value (21) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image028.png" 
   title="Number type II; Standard Number &amp; Special values"
@@ -679,7 +678,7 @@ these, JavaScript prints infinity. If the outcome of a mathematical
 operation is an undefined result or an error, then JavaScript prints not
 a number value, also known as NaN.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~ 29 number type iii; Floating arithmetics and math object for more complex operations (21) -->
+<!--~ 29 number type iii; Floating arithmetics and math object for more complex operations (22) -->
 <p align="center">
   <img src="./images/image029.png" 
   title="Number type III; Floating arithmetics and math object for more complex operations"
@@ -696,7 +695,7 @@ of a single Math object. So, you always need to use the object name Math
 to access them. For example, to compute 2 to the power of 10, you can
 use the power function of Math.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ 30 string type; strings, special characters, indexed start at 0 (21) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ 30 string type; strings, special characters, indexed start at 0 (22) ~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image030.png" 
   title="String type; Strings, Special characters, indexed start at 0"
@@ -711,7 +710,7 @@ escape backslash character. Finally, the length of a string corresponds
 to the number of characters in it. Like in many other programming
 languages, the first character in a string has position index 0.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 31 Boolean type; yes, no, 1, 0, true, false (22) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 31 Boolean type; yes, no, 1, 0, true, false (23) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image031.png" 
   title="Boolean type; yes, no, 1, 0, true, false"
@@ -731,7 +730,7 @@ their values and data types are equal or not, or if one value is larger
 or smaller than the other value. Another important data type is called
 <b>undefined</b>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 32 Undefined type; non-initialized variable = 'undefined' (22) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 32 undefined type; non-initialized variable = 'undefined' (24) ~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image032.png" 
   title="Undefined type; non-initialized variable = 'undefined'"
@@ -743,7 +742,7 @@ or smaller than the other value. Another important data type is called
 never initialized. That means, it never got a value assigned to it. It
 is also possible to manually assign undefined to a variable as a value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 33 null type; means 'nothing'. absence of value (23) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 33 null type; means 'nothing'. absence of value (24) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image033.png" 
   title="Null type; means 'nothing'. absence of value"
@@ -765,7 +764,7 @@ returned.
 
 However, if both values and types are compared, then false is returned.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 34 object - a collection of named values (23) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 34 object - a collection of named values (25) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image034.png" 
   title="Object - a collection of named values"
@@ -786,7 +785,7 @@ and the key name of the property.
 Additionally, the value of any property can be changed by assigning it a
 new value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 35 array - an indexed collection of values (24) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 35 array - an indexed collection of values (25) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image035.png" 
   title="Array - an indxed collection of values"
@@ -830,7 +829,7 @@ lecture, we will learn the fundamental aspects of the JavaScript
 language, namely scoping and hoisting. But before we do that, we first
 need to introduce JavaScript functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 36 function - block of code which performs a particular task (25) ~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 36 function - block of code which performs a particular task (26) ~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image036.png" 
   title="Function; block of code that performs a particular task"
@@ -851,7 +850,7 @@ Once x is executed, its result, which equals 7, is returned to the console.
 We will get back to functions in a few moments. Now, let us take a look
 at the concept of scoping.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~ 37 scoping; defines the context in which variables and functions can be accessed (25) ~~-->
+<!--~~~ 37 scoping; defines the context in which variables and functions can be accessed (27) ~~-->
 <p align="center">
   <img src="./images/image037.png" 
   title="Scoping; Defines the context in which variables and functions can be accessed"
@@ -868,7 +867,7 @@ contrast, a variable declared within a function, has a local scope.
 Local variables can only be accessed and modified within that function.
 Global variables are declared with a keyword var.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38 scoping - global variables (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38 scoping - global variables (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image038.png" 
   title="Scoping - Global variables"
@@ -878,13 +877,15 @@ Global variables are declared with a keyword var.
 
 If a variable is initialized without being declared, it is automatically
 considered to be global. Global variables are available to any code in a
-JavaScript program. For example, the variable x declared outside the
+JavaScript program. 
+
+For example, the variable x declared outside the
 function printVar(), in the example, has a global scope and can
 therefore be accessed and modified from anywhere in the code. Calling
 the function printVar in the console will result in the value 1 to be
 printed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39 scoping - local variables (26) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39 scoping - local variables (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image039.png" 
   title="Scoping - Local variables"
@@ -901,7 +902,7 @@ Printing x at the bottom of the code will return 1, because x has a global scope
 However, printing y at the bottom of the code will return a y is undefined error, 
 because y has a local of scope.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 40 variable hoisting - moving variable declaration to top of script (27) ~~~~~~~~~~-->
+<!--~~~~~~~~ 40 variable hoisting - moving variable declaration to top of script (28) ~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image040.png" 
   title="Variable Hoisting - moving variable declaration to the top of a script"
@@ -916,7 +917,7 @@ keyword var can be hoisted. Hoisted variables return undefined. It is
 important to mention that only the variable declarations are hoisted, not
 variable initializations or assignments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 41 function hoisting - 'lifts' variable declaration to top of block (27) ~~~~~~~~~~-->
+<!--~~~~~~~~ 41 function hoisting - 'lifts' variable declaration to top of block (29) ~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image041.png" 
   title="Function Hoisting - 'lifts' variable declaration to top of block"
@@ -946,7 +947,7 @@ In this lecture, we will learn about the concept of loops. Loops are
 used to execute the same block of code repeatedly until a certain
 condition is met.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42 what are loops? (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42 what are loops? (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image042.png" 
   title="What are Loops?"
@@ -956,43 +957,34 @@ condition is met.
 
 For example, one way of printing all integers from 0 to 9 can be to use
 10 statements of console.log.
-
 A shorter way is to use a for loop with a variable that changes with
 each iteration of the loop.
-
 There are several options of how a block of code can be repeatedly run
 in JavaScript.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43 for loop (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43 for loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image043.png" 
   title="For loop"
   alt="For loop"
   style="border: 2px solid #000000; width:40%;" />
 
-The for loop is probably the most frequently used loop in any
-programming language.
+The for loop is probably the most frequently used loop in any programming 
+language. It consists of three segments separated by a semicolon.
 
-It consists of three segments separated by a semicolon.
+The first statement initializes one or several values and is executed exactly 
+once. In the example below, statement 1 is the initiation of the loop counter
+i. 
 
-The first statement initializes one or several values and is executed
-exactly once.
-
-In the example below, statement 1 is the initiation of the loop counter
-i. The second statement is the loop termination condition, which is i
-less than 5 in the example.
-
-Once this statement evaluates to false, the loop terminates.
+The second statement is the loop termination condition, which is i less than 5 
+in the example. Once this statement evaluates to false, the loop terminates.
 
 Finally, the third statement is the updater i++ in the example.
-
 This statement is invoked after each loop iteration.
-
 Typically, it increments or decrements the counter. All three statements
 are usually written in one line and each of them is optional.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44 for/in loop (29) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44 for/in loop (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image044.png" 
   title="For/in are loop"
@@ -1004,26 +996,21 @@ A <b>["for in"]</b> loop is especially useful when working with
 objects. It iterates over the properties of an object and returns the
 name of each of the properties. In the example, at each iteration of the
 loop, the variable i is set to the name of each property of the object
-king.
-
-At each iteration, the value of <b>[i]</b> is printed to the
+king. At each iteration, the value of <b>[i]</b> is printed to the
 console.
 
-As a result, we have the strings:
+As a result, we have the strings: first name, last name and age printed. 
 
-first name, last name and age printed. While the "for-in" loop is great
-for iterating over object properties,
-
+While the "for-in" loop is great for iterating over object properties,
 the <b>["for of"]</b> loop should be the choice when iterating over
 array values.
-
 As a matter of fact, using for of for other referenced types fails with
 a type error.
 
 If using the for in loop for an array, then the indices instead of
 values are printed, as shown in the second example.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 45 while loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 45 while loop (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image045.png" 
   title="While loop"
@@ -1037,18 +1024,15 @@ is met. A while loop works by first evaluating its condition.
 
 If it is true, the code block within the while loop is executed until
 the condition evaluates to false. Once false, the while loop terminates.
-
 Note, it is very easy to create an infinite loop if the condition never
 evaluates to false.
 
 In the example, we print the numbers from 0 to 4 by initializing the
 counter i and incrementing it by 1 in each iteration step. We check if i
 is smaller than 5.
-
 If this is the case, then the program prints the updated value of i.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 46 do/while loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 46 do/while loop (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image046.png" 
   title="Do/While loop"
@@ -1057,10 +1041,10 @@ If this is the case, then the program prints the updated value of i.
 </p>
 
 The while loop first evaluates the condition and then executes the code
-if the condition is true. The do while loop does it in the opposite way.
+if the condition is true. 
 
+The do while loop does it in the opposite way.
 It first executes the code and then evaluates the condition.
-
 Because the condition is evaluated only after the code is executed, the
 code is executed at least once even if the condition is false.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1073,9 +1057,8 @@ for conditional statement could be the following:
 &quot;If you know Java script, you can implement a web app&quot;. Conditional
 statements are used to perform different actions based on different
 conditions.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 47 types of conditional statements (31) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 47 types of conditional statements (33) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image047.png" 
   title="Types of conditional statements"
@@ -1098,7 +1081,7 @@ Finally, a switch statement compares the values of the switch expression
 with the values to the switch cases and executes a code block associated
 with a match.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 48 if statement (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 48 if statement (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image048.png" 
   title="If statement"
@@ -1112,7 +1095,7 @@ block of code to be executed in case the condition is true.
 In the example, the code block is executed in case the variable x holds
 the value larger than zero.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49 if/else statement (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49 if/else statement (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image049.png" 
   title="If/else statement"
@@ -1130,7 +1113,7 @@ than zero.
 If true, the variable text is set to &quot;x is a positive number&quot;.
 Otherwise, text is set to &quot;x is zero or a negative number&quot;.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50 if else if statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50 if else if statement (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image050.png" 
   title="If/else/if statement"
@@ -1145,15 +1128,12 @@ this else if statement is executed. In the example, the program
 evaluates if the variable x is larger than zero.
 
 If true, the variable text is set to &quot;x is a positive number&quot;.
-
 If the value of x is smaller than zero, the program sets the variable
 text to &quot;x is a negative number&quot;.
-
 If both if conditions are false, the program sets the variable text to
 &quot;x is zero&quot;.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51 switch statement (33) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51 switch statement (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image051.png" 
   title="Switch statement"
@@ -1167,17 +1147,13 @@ match. A switch expression is specified at the top of the switch
 statement.
 
 Switch cases are evaluated from top to bottom.
-
 Once a match is found, the block of code following the match is
 executed.
-
 If there is a break statement within this block code, then the whole
 switch statement is terminated and the program moves on.
-
 Now, attention, in case there is no break statement, execution goes
 through all consequent code blocks until a break statement or until the
 very end on the switch statement.
-
 Finally, the default keyword can be used within a switch block to
 specify a block of code that executes if no matches are found.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1186,7 +1162,7 @@ specify a block of code that executes if no matches are found.
 Thank you, Tatyana, for this comprehensive lecture about the language
 basics!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52 module 1 recap (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52 module 1 recap (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image052.png" 
   title="Module 1 recap"
@@ -1210,9 +1186,8 @@ languages and we will find out more about that in the next module.
 Remember that JavaScript is a very forgiving language that will allow
 you to do many things without complaining. This gives the programmer a
 lot of power, but can also lead to many mistakes.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 53 additional reading; javascript (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 53 additional reading; javascript (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image053.png" 
   title="Additional reading; JavaScript"
@@ -1223,7 +1198,7 @@ lot of power, but can also lead to many mistakes.
 These fine references provide great guidance on how to properly and
 effectively write JavaScript code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 54 in the next module; functions, objects, etc (35) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 54 in the next module; functions, objects, etc (37) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image054.png" 
   title="In the next module; functions, objects, prototypes, properties, inheritance"
@@ -1236,7 +1211,7 @@ show you how you can use those to structure your Javascript program.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="ch2-0">2.0 Module 2: Functions and Objects (1:14)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image055.png" 
   title="The Two Pillars of JavaScript"
@@ -1248,12 +1223,14 @@ Welcome to the functions and objects module! As we mentioned in the
 intro to the previous module, JavaScript has a similar syntax to other
 multi-purpose programming languages. However, JavaScript is also
 different in the way that it allows developers to use different
-programming styles. JavaScript allows developers to take advantage of
+programming styles. 
+
+JavaScript allows developers to take advantage of
 two programming paradigms. Namely, the prototypal inheritance and
 functional programming. These two programming paradigms are called by
 Eric Elliott the two pillars of JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56 covered in this module (2) (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56 covered in this module (2) (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image056.png" 
   title="Covered in this module (2)"
@@ -1276,7 +1253,7 @@ JavaScript course in the TUM.
 We will now take a closer look at working with functions and objects in
 JavaScript. Let&apos;s start!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57 function declaration (2.1) (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57 function declaration (2.1) (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image057.png" 
   title="2.1 Functions, part 1"
@@ -1289,13 +1266,15 @@ a list of parameters in parentheses and function&apos;s body that is
 manipulations that this function does in curly braces. Another way to
 create a function is by using a function expression. A function
 expression consists of the keyword function, list of parameters and a
-function&apos;s body. A name is not mandatory. We can assign a function
+function&apos;s body. 
+
+A name is not mandatory. We can assign a function
 created with a function expression to a variable. Although, a name in a
 function expression is not mandatory, we still can use it. However, in
 such a case, we will only be able to invoke a function by its name
 inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 58 function expression with a name (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 58 function expression with a name (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image058.png" 
   title="Function Expression with a name"
@@ -1316,14 +1295,13 @@ and other control statements, while function expressions have no such
 limits. Working with arguments is the same for functions created with
 function declarations and function expressions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59 working with arguments (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59 working with arguments (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image059.png" 
   title="Working with arguments"
   alt="Working with arguments."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-
 Let&apos;s first make our language clear here. A function has parameters and
 takes arguments. When we define a function, we list its parameters.
 
@@ -1335,7 +1313,7 @@ In this example, we have defined a function with two parameters and
 invoked it with only one argument. As we can see, parameters with no
 corresponding argument will have value undefined.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 60 working with arguments, #2 (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 60 working with arguments, #2 (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image060.png" 
   title="Working with arguments, #2"
@@ -1349,7 +1327,7 @@ we have defined a function that performs an exponentiation operation and
 has two parameters - a base and a power. If we do not pass an argument
 for the power parameter, it will be equal to its default value - 10.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61 working with arguments, #3 (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61 working with arguments, #3 (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image061.png" 
   title="Working with arguments, #3"
@@ -1364,9 +1342,8 @@ simply will not be used. However, they are not discarded and we still
 can access them thanks to a special variable - arguments. An argument
 object contains all the arguments passed to a function. JavaScript
 functions always have a return value.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62 function return value (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62 function return value (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image062.png" 
   title="Function return value"
@@ -1380,7 +1357,7 @@ keyword.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-2">2.2 Objects, part 1 (9:04)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 63 function and objects: objects, part 1 (2.2) (40) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 63 function and objects: objects, part 1 (2.2) (42) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image063.png" 
   title="2.2 Functions and Objects: Objects, part 1"
@@ -1391,7 +1368,7 @@ keyword.
 In the previous module, we have learned that a JavaScript object is a
 set of properties of Key, Value pairs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64 objects, recap (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64 objects, recap (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image064.png" 
   title="Objects, recap"
@@ -1403,13 +1380,11 @@ JavaScript objects are mutable, passed by reference and they can have
 arbitrary properties with values of any type.
 
 Arrays, functions, regular expressions and dates are objects as well.
-
 We can create an object by invoking the standard object constructor with
 a keyword new.
-
 Having created an object, we can add desired properties one by one.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65 creating an object (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65 creating an object (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image065.png" 
   title="Creating an object"
@@ -1421,13 +1396,11 @@ Let&apos;s create an object that describes our online class.
 
 First, we invoke the object constructor, then we define properties -
 name and year.
-
 If we type the name of our variable in the browser console and hit
 enter, we will get a representation of our object.
-
 We don&apos;t have to add properties one by one to an empty object, though.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 66 object literal (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 66 object literal (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image066.png" 
   title="Object literal"
@@ -1435,15 +1408,12 @@ We don&apos;t have to add properties one by one to an empty object, though.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-An object literal that is a list of properties in curly braces allows us
-to specify object&apos;s properties at once.
-
-An object property has a name and a value.
-
-We can use valid JavaScript identifiers as property names and access
+An object literal that is a list of properties in curly braces allows us to 
+specify object&apos;s properties at once. An object property has a name and 
+a value. We can use valid JavaScript identifiers as property names and access
 such properties via dot notations.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 67 property names (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 67 property names (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image067.png" 
   title="Property names"
@@ -1452,10 +1422,9 @@ such properties via dot notations.
 </p>
 
 Remember, a valid identifier starts with a letter, an underscore or a dollar sign.
-
 Subsequent characters can be letters, digits, underscores and dollar signs.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68 property names, #2 (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68 property names, #2 (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image068.png" 
   title="Property names, #2"
@@ -1469,7 +1438,7 @@ JavaScript allows us to use any string as a property name. If a string
 is not a valid identifier, we have to quote it. To access such a
 property, we have to use square bracket notation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 69 property values (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 69 property values (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image069.png" 
   title="Property values"
@@ -1478,21 +1447,16 @@ property, we have to use square bracket notation.
 </p>
 
 A property value can be of any type, including functions.
-
 Functions that are properties of an object are called methods.
-
 Inside of a method, this keyword refers to the object the method is
 invoked on. However, beware of pitfalls of late binding that trip many beginning
 JavaScript programmers. We will cover it in details in lesson five.
-
 This keyword allows us to manipulate object properties in its methods.
-
 Here, we define an object that describes our class. It has properties
 name, year and print.
-
 Print is a method that prints object&apos;s name and the year together.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 70 working with properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 70 working with properties (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image070.png" 
   title="Working with properties"
@@ -1500,23 +1464,15 @@ Print is a method that prints object&apos;s name and the year together.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-We have already seen defining and accessing properties.
-
-We can also change and delete them. To change your property, we simply
-assign a new value.
-
-Delete operator allows us to remove a property from an object.
-
-Remember, using delete operator is not the same as assigning undefined
-to a property.
-
-When we assign undefined to a certain property, it is not removed.
-
-So, an object still has property with its name and value undefined.
-
-Delete, on the other hand, completely removes a property from an object.
+We have already seen defining and accessing properties. We can also change and 
+delete them. To change your property, we simply assign a new value. Delete 
+operator allows us to remove a property from an object. Remember, using delete 
+operator is not the same as assigning undefined to a property. When we assign 
+undefined to a certain property, it is not removed. An object still has property 
+with its name and value undefined. Delete, on the other hand, completely removes 
+a property from an object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71 iterating over properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71 iterating over properties (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image071.png" 
   title="Iterating over properties"
@@ -1528,7 +1484,7 @@ For in loop allows us to iterate over objects properties names. Once we
 have a name, we can get a corresponding value by using the square
 bracket notation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72 checking property existence (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72 checking property existence (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image072.png" 
   title="Checking property existence"
@@ -1542,7 +1498,7 @@ method.
 This method takes a name of a property as an argument and returns true
 if such a property exists. Otherwise, it returns false.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73 comparing objects (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73 comparing objects (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image073.png" 
   title="Comparing objects"
@@ -1558,7 +1514,7 @@ hold a reference to the same object. It will return false in all other
 cases, even if objects have the same set of properties with the same
 names and the same values.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74 prototypes (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74 prototypes (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image074.png" 
   title="Prototypes"
@@ -1573,7 +1529,7 @@ objects. Yet, we still are able to invoke it. Why? Because prototypes!
 In JavaScript, each object has a special connection to another object -
 to a prototype.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 75 prototypal inheritance (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 75 prototypal inheritance (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image075.png" 
   title="Prototypal inheritance"
@@ -1588,7 +1544,7 @@ object inherits its prototype properties. Special object
 literal or an object constructor. <b>Object.prototype</b> has
 <b>hasOwnProperty</b> methods and that&apos;s exactly what we have invoked.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image076.png" 
   title="Prototypal inheritance, #2"
@@ -1597,8 +1553,7 @@ literal or an object constructor. <b>Object.prototype</b> has
 </p>
 
 A prototype is an object and we know how to add properties to an object.
-
-So, what happens when we add a property to a prototype?
+What happens when we add a property to a prototype?
 
 All objects inheriting from this prototype get immediate access to the
 new property. Let&apos;s add a new property called <b>easterEgg</b> with a
@@ -1608,7 +1563,7 @@ Having done that, we can immediately access **easterEgg** property from
 our **cls object**, which was created via an object literal and inherits
 from **Object.prototype**.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77 prototypal inheritance, #3 (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77 prototypal inheritance, #3 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image077.png" 
   title="Prototypal inheritance, #3"
@@ -1616,19 +1571,16 @@ from **Object.prototype**.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-So, what will happen if we add a property with the same name easterEgg
-to our cls object?
-
-Will it have any effect on the Object.prototype?
+What will happen if we add a property with the same name easterEgg to our cls 
+object? Will it have any effect on the Object.prototype?
 
 Let&apos;s try it. As we can see from this example, adding such a property
 to one specific object does not effect that prototype and, consequently,
 does not affect all other objects inheriting from the same prototype.
-
 As we have seen, JavaScript allows us to write programs in
 object-oriented way.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image078.png" 
   title="Object Oriented Programming in JavaScript"
@@ -1642,7 +1594,7 @@ of objects. Objects are a combination of data and behavior.
 Methods represent behavior, while attributes, these are properties that
 hold data, are data.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image079.png" 
   title="Objects with similar behavior"
@@ -1657,28 +1609,22 @@ our objects and our concerns. So, we know how to create objects that
 combine data and behavior.
 
 How can we create groups of similar objects? Consider this example.
-
 Imagine swordsmen in a video game. They all have hit points and they all
 can attack with a sword. We want to be able to create several swordsmen.
 How can we do that in JavaScript?
 
 We know that we can create how a swordsman with an object literal
 explicitly defining attributes and methods each time. That is tedious!
-
 We also know that we can add methods to the Object.prototype.
-
 Hmm, that is dangerous and is actually considered an anti-pattern.
-
 Let&apos;s say, first we add our attack with a sword method to the
 Object.prototype.
 
-Then, we decide, we also want to have archers and add shooting arrow
-method to the Object.prototype.
-
-Now, swordsmen have shooting arrow method and archers have attack with a
-sword method. Is there a better way?
+Then, we decide, we also want to have archers and add shooting arrow method to 
+the Object.prototype. Now, swordsmen have shooting arrow method and archers have 
+attack with a sword method. Is there a better way?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image080.png" 
   title="Constructor functions, #1"
@@ -1686,12 +1632,10 @@ sword method. Is there a better way?
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Yes! There is!
-
-With constructor functions we can create groups of objects. Each object
-belonging to a group, has similar contents and behavior.
+Yes! There is! With constructor functions we can create groups of objects. Each 
+object belonging to a group, has similar contents and behavior.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image081.png" 
   title="Constructor functions, #2, #2"
@@ -1699,13 +1643,10 @@ belonging to a group, has similar contents and behavior.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-How exactly does a constructor function work?
-
-First, we invoke it with a new keyword.
-
-New keyword creates a new object.
+How exactly does a constructor function work? First, we invoke it with a new 
+keyword. New keyword creates a new object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image082.png" 
   title="Constructor functions"
@@ -1713,21 +1654,16 @@ New keyword creates a new object.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-The value of constructor function special property, called prototype,
-becomes the prototype of the newly created object.
-
-The keyword this returns our new object inside the constructor function,
-allowing us to define and initialize object&apos;s properties.
-
-Each function has a prototype property.
-
-The value of prototype property is an object.
+The value of constructor function special property, called prototype, becomes 
+the prototype of the newly created object. The keyword this returns our new 
+object inside the constructor function, allowing us to define and initialize 
+object&apos;s properties. Each function has a prototype property. The value 
+of prototype property is an object.
 
 This object becomes the prototype of every object created by a
 corresponding constructor function. As we can see in this example, once
 we add methods getTotalDamage to Swordsman.prototype, object Swordsman
 created by Swordsman constructor function inherits this method.
-
 Thus, constructor functions allow us to easily create groups of objects
 with similar behavior and data.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1750,7 +1686,7 @@ prototype?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3">2.3 Functions, part 2 (5:19)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 84 functions & objects; functions, part 2 (51) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 84 functions & objects; functions, part 2 (53) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image084.png" 
   title="Functions &amp; Objects; Functions, part 2"
@@ -1763,7 +1699,7 @@ at working with functions arguments, scopes and variable shadowing, and
 one of the most powerful features of JavaScript - higher-order
 functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 85 working with arguments object (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 85 working with arguments object (53) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image085.png" 
   title="Working with arguments object"
@@ -1771,17 +1707,12 @@ functions.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Let&apos;s look again at the arguments object.
-
-It contains arguments passed to a function.
-
-We can access a specific argument by index.
-
-We can use length property to get number of passed arguments.
-
-Arguments object looks like an array, but, remember, it is not an array.
+Let&apos;s look again at the arguments object. It contains arguments passed to 
+a function. We can access a specific argument by index. We can use length 
+property to get number of passed arguments. Arguments object looks like an 
+array, but, remember, it is not an array.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 86 working with arguments object, #2 (52) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 86 working with arguments object, #2 (54) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image086.png" 
   title="Working with arguments object, #2"
@@ -1793,7 +1724,7 @@ Arguments object does not have array methods. We can see in this example
 that attempting to invoke an array&apos;s method indexOf results in a
 TypeErrorpart 2.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image087.png" 
   title="Rest parameters"
@@ -1812,7 +1743,7 @@ invoke it with four arguments. First and second arguments are assigned
 to respective parameters, while the rest are assigned to third
 parameter.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image088.png" 
   title="ASI - Automatic Semicolon Insertion"
@@ -1827,7 +1758,7 @@ It is described by a somewhat intimidating specification, but we don&apos;t
 really have to know it by heart. However, please remember that we have
 to put the returned value on the same line as return keyword.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 89 automatic semicolon insertion (asi) (53) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 89 automatic semicolon insertion (asi) (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image089.png" 
   title="Automatic Semicolon Insertion (ASI)"
@@ -1838,7 +1769,7 @@ to put the returned value on the same line as return keyword.
 Otherwise, a semicolon will be inserted right after return keyword,
 which means that a function will return undefined.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image090.png" 
   title="Functions create scope"
@@ -1846,14 +1777,11 @@ which means that a function will return undefined.
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Now, let&apos;s look into scoping.
-
-Each function creates a new scope.
-
+Now, let&apos;s look into scoping. Each function creates a new scope.
 A variable declared in a scope is accessible inside all of the inner
 scopes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image091.png" 
   title="Inner functions and outer scope"
@@ -1862,19 +1790,14 @@ scopes.
 </p>
 
 Let&apos;s rephrase: inside a function we can access all of the variables
-declared in these functions outer scope.
-
-We can both read and write such variables.
+declared in these functions outer scope. We can both read and write such variables.
 
 In this example, a variable is declared and initialized in the outer
-scope.
-
-Then, it is changed in the inner scope created by a function.
-
+scope. Then, it is changed in the inner scope created by a function.
 Of course, this change exists not only in the inner scope, but in the
 outer scope as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image092.png" 
   title="Variable shadowing"
@@ -1893,7 +1816,7 @@ An outer scope variable is shadowed by an inner scope variable.
 That is, manipulations with an inner scope variable have no effect on an
 outer scope variable.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image093.png" 
   title="Higher order functions"
@@ -1913,7 +1836,7 @@ Here, we see a function that returns another function.
 Let&apos;s take a closer look at this example. What exactly is going on
 here?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image094.png" 
   title="add(4)(5)"
@@ -1933,7 +1856,7 @@ parentheses?
 First, we invoke add with four as an argument that returns innerAdd and
 we immediately invoke it passing 5 as an argument.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image095.png" 
   title="Closures"
@@ -1955,7 +1878,7 @@ Thus, a closure is function plus function&apos;s context. Immediately
 invoked function expressions are very often used together with closures
 in JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (56) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (59) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image096.png" 
   title="IIFE - Immediately Invoked Function Expression"
@@ -1966,7 +1889,7 @@ in JavaScript.
 What is it? Well, it&apos;s simply a function expression that is immediately
 invoked!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (57) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (59) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image097.png" 
   title="Classical example - a simple counter"
@@ -1976,20 +1899,14 @@ invoked!
 
 Using immediately invoked function expression, we create a function in
 this example, declare counter value variable and initialize it with
-zero.
-
-Then, we return another function that has access to counter value
-variable.
-
-Each time we invoke resulting function, it increases counter value and
-returns it.
-
-There is no other way to access counter value, but through this
+zero. Then, we return another function that has access to counter value
+variable. Each time we invoke resulting function, it increases counter value and
+returns it. There is no other way to access counter value, but through this
 function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-4">2.4 Objects, part 2 (5:25)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (57) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (59) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image098.png" 
   title="Functions and Objects; Objects, part II"
@@ -2003,7 +1920,7 @@ similar behavior.
 
 But we have a problem.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image099.png" 
   title="Access control"
@@ -2032,7 +1949,7 @@ that is accessible only by the objects methods.</p>
 attributes as private. Is there any way to solve this problem?
 Indeed, there is and we have already seen it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image100.png" 
   title="Closures as a solution"
@@ -2046,7 +1963,7 @@ enclosing function.</p>
 <p>We&apos;re going to use closure now to hide swordsman&apos;s damage and attacks
 from the outside.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image101.png" 
   title="Closures as a solution, #2"
@@ -2065,7 +1982,7 @@ parameter name <b>dmg</b> and variable name <b>damage</b>, but all in vain.</p>
 <b>attacks</b> variables. But there is no other way to access these values from 
 the outside. They are safely hidden.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image102.png" 
   title="Access control VS prototypes"
@@ -2081,7 +1998,7 @@ because prototype methods cannot access data hidden within closures.
 Thus, we have to choose between access control with closures and code reuse with 
 prototype chains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image103.png" 
   title="Prototype chain?"
@@ -2103,7 +2020,7 @@ Swordsman object is an object created with a Lannister constructor, whose
 Prototype is a Lannister.prototype object. Thus, Swordsman object inherit methods 
 from Swordsman.prototype and Lannister.prototype.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image104.png" 
   title="Object.create"
@@ -2117,7 +2034,7 @@ from Swordsman.prototype and Lannister.prototype.</p>
 without defining constructors. It takes one object as an argument and
 then returns another object, whose prototype is the first object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image105.png" 
   title="Prototypal inheritance"
@@ -2134,7 +2051,7 @@ the very root of prototype hierarchy.</p>
 
 <p>The first found method is used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image106.png" 
   title="Dangers of constructors"
@@ -2153,7 +2070,7 @@ confuse a constructor function and a regular function.</p>
 a regular function that explicitly returns an object with a new keyword are two 
 common mistakes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image107.png" 
   title="Dangers of constructors, #2"
@@ -2164,7 +2081,7 @@ common mistakes.</p>
 <p>If we call a constructor function without a new keyword, then this keyword 
 returns global object and we end up creating global variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image108.png" 
   title="Dangers of constructors, #3"
@@ -2177,7 +2094,7 @@ new keyword, then our function will still return that object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-5">2.5 Functions, part 3 (5:03)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image109.png" 
   title="Functions are objects"
@@ -2197,7 +2114,7 @@ In case of an anonymous function, it is an empty string.
 
 The value of the length property is an amount of parameters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image110.png" 
   title="Function.prototype"
@@ -2213,7 +2130,7 @@ prototype as well.
 
 Function.prototype is the prototype of functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image111.png" 
   title="apply and call"
@@ -2223,7 +2140,7 @@ Function.prototype is the prototype of functions.
 
 Functions inherit apply and call methods from Function.prototype.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image112.png" 
   title="apply and call, #2"
@@ -2238,7 +2155,7 @@ the object that is passed as a first argument.
 
 In other words, this keyword returns passed object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image113.png" 
   title="apply and call, #3"
@@ -2255,7 +2172,7 @@ Remember, call and apply treat them differently. call method takes these
 arguments simply as arguments, while apply method takes an array and
 turns it into arguments.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image114.png" 
   title="Array of arguments with apply"
@@ -2273,7 +2190,7 @@ problem with apply.
 A mnemonic allows to remember which of two methods takes an array. apply
 and array start and end with the same letters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image115.png" 
   title="Spread operator"
@@ -2294,7 +2211,7 @@ If we are defining a function, it&apos;s rest parameters.
 
 If we are calling a function, it&apos;s a spread operator.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image116.png" 
   title="arguments as an array"
@@ -2313,11 +2230,11 @@ Slice is an array method that returns a copy of an array.
 Passing an argument&apos;s object to slice by a call or apply, returns an
 array containing the same elements as argument&apos;s object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 117  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 117 calling one object's methods on another object (70) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image117.png" 
-  title=""
-  alt="."
+  title="Calling one object's methods on another object"
+  alt="Calling one object's methods on another object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2328,11 +2245,11 @@ the current example.
 This is possible thanks to a very important feature of JavaScript,
 called late binding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 118  (68) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 118 late binding (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image118.png" 
-  title=""
-  alt="."
+  title="Late binding"
+  alt="Late binding."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2346,22 +2263,24 @@ invoke a function.
 
 However, there is one way to change this behavior.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 119  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 119 function.protype.bind (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image119.png" 
-  title=""
-  alt="."
+  title="Function.prototype.bind - returns a new function bound to a specified object. 
+    this keyword will always return bound object inside a bound function"
+  alt="Function.prototype.bind - returns a new function bound to a specified object. 
+    this keyword will always return bound object inside a bound function."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-Function.prototype.bind method returns a new function bound to a
+<p><b>Function.prototype.bind</b> method returns a new function bound to a
 specified object this keyword always returns bound object inside a bound
-function.
+function.</p>
 
 We can see in this example that even if we copy a bound method to
 another object, this keyword still returns the bound object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (69) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (72) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image120.png" 
   title=""
@@ -2370,20 +2289,17 @@ another object, this keyword still returns the bound object.
 </p>
 
 The value returned by this keyword is decided at invocation time.
-
 Hmm, but is there a default value?
 
 In other words, what does this return if a function hasn&apos;t been bound
 to an object and is not invoked as a method, or via apply or call?
-
 By default, this returns the global object.
-
 In the browser, it&apos;s the window object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 121 this (70) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121 this: function checkthisout (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image121.png" 
-  title=""
+  title="this: In an inner function 'this' by default returns the global object"
   alt="this: In an inner function 'this' by default returns the global object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
@@ -2391,7 +2307,7 @@ In the browser, it&apos;s the window object.
 This also returns the global object in an inner function that is in a
 function that is called by a method.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 122 this and that (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 122 this: let cls (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image122.png" 
   title="this and that"
@@ -2412,7 +2328,7 @@ In this example, we decided to use that.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you, Dimitrii, for covering functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 123 covered in this module; working with functions (71) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 123 covered in this module; working with functions (74) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image123.png" 
   title="Covered in this module; Working with functions"
@@ -2429,7 +2345,7 @@ indirect invocation.
 These different invocations lend flexibility to the language when
 working with functions and objects.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 124 covered in this module; working with modules (71) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 124 covered in this module; working with modules (74) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image124.png" 
   title="Covered in this module; Working with objects"
@@ -2448,7 +2364,7 @@ closures. This module showed the basics of using objects and functions,
 and would allow you to better understand how to structure your
 JavaScript code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 125 in the next module, writing code on the server side (72) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 125 in the next module, writing code on the server side (75) ~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image125.png" 
   title="In the next module, writing code on the server side, using node.js &amp; an example"
@@ -2482,7 +2398,7 @@ Since the first version of Node appeared, many developers have found it
 useful and have chosen to build the back-end of their applications using
 JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 126 about the instructor - christian dallago (73) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 126 about the instructor - christian dallago (76) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image126.png" 
   title="About the instructor - Christian Dallago"
@@ -2492,26 +2408,23 @@ JavaScript.
 
 <p>Chris is a master student in Informatics with a solid background in
 Software Engineering. He has over three years' experience developing
-full-stack applications in JavaScript.</p>
-
-<p>He is also a mentor in the Google Summer of Code program and the tutor of the 
+full-stack applications in JavaScript.
+He is also a mentor in the Google Summer of Code program and the tutor of the 
 Intro to JavaScript course, given at the TU of Munich. By his own admission, 
 Chris really likes to turn pizza into code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 127  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 127 what we will learn in this session (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image127.png" 
-  title=""
-  alt="."
+  title="What we will learn in this session"
+  alt="What we will learn in this session."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 In this module, Chris will take you through the first steps of building
-a back-end JavaScript application.
-
+a back-end JavaScript application. 
 Chris will review some of the technologies we use to handle data,
 control requests and present the results on the web.
-
 You will also get a chance to experiment with node.js using code
 examples we provide.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2524,7 +2437,7 @@ stands for.
 
 Let&apos;s look at the first example.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128 requests (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image128.png" 
   title=""
@@ -2536,12 +2449,10 @@ What we see here is the browser that is trying to access a location on
 the web, which is example.dallago.us.
 
 It tries to access the route and asks the server: do you have something
-to deliver to me?
-
-The server will answer to the browser: yes, I have something for you and
-it&apos;s an HTML file, which is called index.html.
+to deliver to me? The server will answer to the browser: yes, I have something 
+for you and it&apos;s an HTML file, which is called index.html.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129  (75) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129 requests ii (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image129.png" 
   title=""
@@ -2561,7 +2472,7 @@ called image.png.
 If everything went according to plan, the server will then answer to the
 browser: yes, I have these files and there you are.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 130  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 130 requests iii (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image130.png" 
   title=""
@@ -2574,13 +2485,10 @@ these.
 
 This is a png or image tag, which stands for a location in which we want
 to load an image.
-
 What we see later in the href, is a URL of where the image is to be
-taken from.
-
-In this case, the image is located at example.dallago.us/image.png.
+taken from. In this case, the image is located at example.dallago.us/image.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 131  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 131 requests iv (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image131.png" 
   title=""
@@ -2592,10 +2500,8 @@ Most likely, in modern web pages, you see href references like this.
 
 What these are, are relative paths. So, what we are saying here is: if
 we&apos;re executing our
-
 HTML file, which is located in the root, we want to access the image in
 the same location, which is again the root.
-
 We want to access the image at example.dallago.us/image.png.
 
 This is different if the HTML was, for example, loaded from a subfolder
@@ -2605,61 +2511,53 @@ example.dot.dallago.us/public and we have an img tag, like this one,
 which is trying to access image.png, what we&apos;re actually asking for is
 the image at example.dallago.us/public/image.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 132  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 132 types of requests (79) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image132.png" 
-  title=""
-  alt="."
+  title="Types of requests"
+  alt="Types of requests."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 There are different types of requests that you can perform on the web.
 The ones that we have seen up until now, are ***get*** requests. They
-are what your browser usually always performs. There are also other
-types of requests, which are, for example, ***post*** requests.
+are what your browser usually always performs. 
 
-They are used to create and update resources, and they&apos;re usually found
-in web forms on your web pages.
+There are also other types of requests, which are, for example, ***post*** 
+requests. They are used to create and update resources, and they&apos;re 
+usually found in web forms on your web pages.
 
 Third type of request are ***put*** requests. These are conceptually
 similar to post requests, but they are mainly used for updating. You can
 also use them to create resources, but you have to specify a precise URL
 where you want to put this resource in.
-
 If we&apos;re trying to, for example, upload an image of a cat, which is
 called cat.png, what we would say is: we want to put our image at the
 location xample.dallago.us/cat.png.
 
-The last type of requests that we are going to talk about are
-***delete*** requests.
-
-These requests are used to delete resources as the name says, so that we
-don&apos;t have them anymore on our web server.
+The last type of requests that we are going to talk about are ***delete*** 
+requests. These requests are used to delete resources as the name says, so that 
+we don&apos;t have them anymore on our web server.
 
 There are other types of requests, but we are not going to discuss about
 them, because they are not relevant to the slide set.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 133  (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 133 urls (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image133.png" 
-  title=""
-  alt="."
+  title="URLs"
+  alt="URLs."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
 The next thing that we&apos;re going to talk about are URLs. There are
 different things you want to look at when you see a URL.
 
-The first part is the ***protocol***.
-
-It&apos;s https in this case, but usually you see also http. There are
-actually two different kinds of protocols.
-
+The first part is the ***protocol***. It&apos;s https in this case, but usually 
+you see also http. There are actually two different kinds of protocols.
 HTTPs stands for secure HTTP.
-
 It ensures that when you&apos;re accessing a resource, the resource comes
 exactly from the server that you are requesting it from.
-
 So, that you are not put in a situation of having someone between you
 and the web server, which can read the information that is flowing
 between you or your browser and the web server.
@@ -2667,20 +2565,18 @@ between you or your browser and the web server.
 The second part is the ***hostname.*** This is a friendly name for a
 server on the web, which is usually addressed with a set of numbers,
 which we are going to see in the next slide.
-
 The first part that we see here is the ***location*** or ***path***.
-
 These are usually subfolders on your web server and it&apos;s just as if you
 were opening sub folders on your computer.
 
 The last part is the ***resource*** that you&apos;re going to ask and in
 this specific case is a png image and it&apos;s called protein.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 134  (79) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 134 urls ii (81) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image134.png" 
-  title=""
-  alt="."
+  title="URLs II"
+  alt="URLs II."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2701,11 +2597,11 @@ we&apos;re accessing assets and then we&apos;re accessing images.
 The last part is a resource that we want to access, which is the image
 of this protein, which is called protein.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 135  (80) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 135 javascript for back-end development (82) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image135.png" 
-  title=""
-  alt="."
+  title="JavaScript for back-end development"
+  alt="JavaScript for back-end development."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2734,11 +2630,11 @@ to discuss in the next videos.
 Welcome to this session about Node.js and NPM! Let&apos;s start right away
 with Node.js.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 136  (81) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 136 node.js - javascript interpreter (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image136.png" 
-  title=""
-  alt="."
+  title="Node.js - JavaScript Interpreter"
+  alt="Node.js - JavaScript Interpreter."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2789,15 +2685,15 @@ to build these views, to reuse them and to use the code from the server
 to, for example, give meaningful objects meaningful data to the view
 itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 137  (82) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 137 asynchronous, non-binding execution (84) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image137.png" 
-  title=""
-  alt="."
+  title="Asynchronous, non-binding execution"
+  alt="Asynchronous, non-binding execution."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-So how is Node different from things that we have already seen in the
+How is Node different from things that we have already seen in the
 past? The traditional approach of -- for example PHP and Apache - is
 that whenever a request is coming into the server, Apache starts a new a
 new thread, a new process, on your machine to answer exactly this
@@ -2810,26 +2706,22 @@ thread.
 
 If requests come to this one single thread, the Node engine puts them in
 an event queue.
-
 This event queue basically executes the function and once the function
 is terminated, it runs a callback function.
-
 We have already seen this in previous lectures.
-
 When a request comes in, as I said, it gets put in the event queue.
 
 The first function gets executed, then the second function gets
 executed, which is the callback, and then the third and so on, until a
 response is provided to the requester.
-
 Once this response is provided, the callback will terminate and the
 request will have been answered.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 138  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 138 npm - node package manager (85) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image138.png" 
-  title=""
-  alt="."
+  title="NPM - Node Package Manager"
+  alt="NPM - Node Package Manager."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2838,14 +2730,12 @@ stands for Node Package Manager.
 
 It is a set of tools, libraries and packages that allow you to expand
 your application or to download, for example, some nice scripts.
-
 As I said, it provides the packages for both front-end as well as
 back-end and it provides you a library of scripts.
 
 You can imagine Node to be your smartphone where when you buy it, you
 have a phone app and a messaging app, and NPM to be your App Store where
 you can download every kind of application.
-
 NPM, though, is not like an application on itself.
 
 You can download applications, which are scripts in this case, but you
@@ -2854,17 +2744,15 @@ when you build applications using Node.
 
 As with every App Store you have to be very careful: there are some good
 apps and there&apos;s some bad apps.
-
 You can easily find what is a good application, and what is a bad
 application by looking at the documentation of this app.
-
 Same thing is for NPM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 139  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 139 npm growth (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image139.png" 
-  title=""
-  alt="."
+  title="NPM growth"
+  alt="NPM growth."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2875,11 +2763,11 @@ package manager for GO, which is a Google initiative and a package
 manager for CPAN, which is Perl. There is nothing growing as NPM. So,
 you&apos;re on the safe side if you start coding now with Node.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 140  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 140 node.js as a scripting language (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image140.png" 
-  title=""
-  alt="."
+  title="Node.js as a scripting language"
+  alt="Node.js as a scripting language."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2897,11 +2785,11 @@ allows you to do is to say I have a file with comma separated values,
 please translate it into a JSON file with an array of all the exactly
 same objects, but in JSON format.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 141  (85) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 141 the javascript object notation (json) (87) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image141.png" 
-  title=""
-  alt="."
+  title="The JavaScript Object Notation (JSON)"
+  alt="The JavaScript Object Notation (JSON)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2911,11 +2799,11 @@ in JavaScript, it&apos;s a very commonly used for data exchange on the web.
 So, as I was saying before, many APIs provide you with messages and
 these messages are encoded in JavaScript notation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 142  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 142 the javascript object notation (json) ii (88) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image142.png" 
-  title=""
-  alt="."
+  title="The JavaScript Object Notation (JSON) II"
+  alt="The JavaScript Object Notation (JSON) II."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2929,7 +2817,7 @@ locations, where you have an array of different strings. Availability
 and price, instead, are JavaScript data types, which we have already
 seen like, for example, a float and a boolean.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 143  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 143 defining dependencies to npm package using package.json (88) ~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image143.png" 
   title=""
@@ -2960,7 +2848,7 @@ same folder, your application won&apos;t run.
 
 So, you really need these dependencies.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 144 installing npm packages using command line (87) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 144 installing npm packages using command line (89) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image144.png" 
   title="Installing NPM packages using command line"
@@ -2984,7 +2872,7 @@ means both the API and also the front-end part with the views.
 <h3 id="ch3-3">3.3 What is needed for a web app? (5:07)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- last image as of 6/24/2024 -->
-<!--~~~~~~~~~~~~~~~~~~~~~ 145 node.js as back-end - request handling (88) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 145 node.js as back-end - request handling (90) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image145.png" 
   title="Node.js as back-end - Request handling"
@@ -3015,7 +2903,7 @@ on constructing APIs. So, you would not have views, which we&apos;re gonna
 explain in a moment. <b>Restify</b> is also heavily based on
 <b>Express.js</b>. So, as you see, <b>Express.js</b> always comes in.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 146 node.js as back-end - databases (89) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 146 node.js as back-end - databases (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image146.png" 
   title="Node.js as back-end - Databases"
@@ -3042,7 +2930,7 @@ always need a database. MongoDB as well as Redis are non-relational
 databases and if you want to know more about these, I invite you to look
 at the web. There&apos;s plenty of guides.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 147 node.js as back-end - view engines (90) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 147 node.js as back-end - view engines (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image147.png" 
   title="Node.js as back-end - View engines"
@@ -3095,7 +2983,7 @@ templating engine.
 Welcome back to our lectures on server-side JavaScript! In this video,
 we are going to talk about our example application. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 148 node.js as back-end in our example (91) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 148 node.js as back-end in our example (93) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image148.png" 
   title="Node.js as back-end in our example"
@@ -3110,7 +2998,7 @@ express.js to be able to interpret the incoming requests and produce
 meaningful answers. We use Pug for the views, but actually, we have prepared two
 examples, one with Pug and one without Pug. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 149 node.js as back-end in our example ii (92) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 149 node.js as back-end in our example ii (94) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image149.png" 
   title="Node.js as back-end in our example II"
@@ -3125,7 +3013,7 @@ store our information and to be able to retrieve it in a later stage. We
 use Node as the base of our application, as it allows us to interpret
 our JavaScript and present everything that we have discussed so far. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150 reference example (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150 reference example (94) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image150.png" 
   title="Reference examples"
@@ -3163,7 +3051,7 @@ blog post, we want to see in the same location both the information
 about the user, the information about some previous posts and
 information about the comments. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151 folder structure (93) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151 folder structure (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image151.png" 
   title="Folder structure"
@@ -3189,7 +3077,7 @@ urge you to look at this video if you don&apos;t know what we are talking
 about. And, the index.js, which is the starting point of our
 application.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 152 folder structure, #2 (94) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 152 folder structure, #2 (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image152.png" 
   title="Folder structure, #2"
@@ -3223,7 +3111,7 @@ to be executed on your machine, but only in the browser of the machines
 connecting to your application. Here we also find the style sheets, or
 cascading style sheets, which are in orange in our representation. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 153 reference examples (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 153 reference examples (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image153.png" 
   title="Reference examples"
@@ -3233,7 +3121,7 @@ cascading style sheets, which are in orange in our representation.
 Now, another important part is how do you get these applications to run on
 your computer. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 154 how to get the examples running (96) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 154 how to get the examples running (98) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image154.png" 
   title="How to get the examples running"
@@ -3280,7 +3168,7 @@ Welcome back to our videos about Server-side JavaScript development.
 In this video, we are going to talk about controllers and models, which
 are two of the components of our example applications. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 155 express framework (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 155 express framework (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image155.png" 
   title="Express framework"
@@ -3303,7 +3191,7 @@ applications we didn&apos;t need to use them. So, we&apos;re not going to discus
 these. If you&apos;d like to know more about these, please go on the web, there&apos;s
 plenty of guides to find out more about these. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 156 express.js in our first example application (97) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 156 express.js in our first example application (100) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image156.png" 
   title="Express.js in our first example application"
@@ -3318,7 +3206,7 @@ components and what we are going to discuss in this video, we use the
 API. You will find express starting in the index.js and that&apos;s the first
 file we are going to look at. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 157 express.js: index.js (98) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 157 express.js: index.js (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image157.png" 
   title="Express.js: index.js"
@@ -3345,7 +3233,7 @@ incoming requests and we do so by listening on the port that we defined earlier.
 We also have a function, which is a callback and this function tells us
 that our express server is listening on the port that we defined earlier. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158 express.js: index.js (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158 express.js: index.js (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image158.png" 
   title="Express.js: index.js"
@@ -3369,7 +3257,7 @@ are answering back: ok, we have the data. On the other hand, if there was an
 error, we are sending a status 500, which in HTTP means that there was an error
 and that we are sending back an error object as well. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 159 mongodb (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 159 mongodb (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image159.png" 
   title="MongoDB; non-relational"
@@ -3398,7 +3286,7 @@ in, and the age. MongoDB actually stores objects in binary JSON format. It does 
 because binary JSON allows you to store not only the usual JSON files, but it also 
 allows you to store music and images. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 160 mongodb: json example (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 160 mongodb: json example (103) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image160.png" 
   title="MongoDB; JSON example"
@@ -3416,7 +3304,7 @@ and are of the same age, then we would not know which objects we actually want
 to get. But thanks to the id, which is a randomly generated information, we 
 always have just one field, which is for that specific object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 161 mongodb: json example, #2 (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 161 mongodb: json example, #2 (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image161.png" 
   title="MongoDB; JSON example, #2"
@@ -3426,7 +3314,7 @@ always have just one field, which is for that specific object.
 The other things, which you see on the bottom, are the same fields that
 we have already seen above, which are the name the surname and the age. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 162 mongoose; mongodb driver (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 162 mongoose; mongodb driver (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image162.png" 
   title="Mongoose; mongoDB driver"
@@ -3446,7 +3334,7 @@ accept objects if they are not of the structure that you have defined them in.
 The other thing that mongoose allows you to do is to perform queries.
 So, you can find objects, create objects, update and remove items.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 163 mongoose in our first example application (103) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 163 mongoose in our first example application (105) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image163.png" 
   title="Mongoose in our first example application"
@@ -3460,7 +3348,7 @@ but we are using the mongoose model, created in the relationships model in the
 controller. So, to produce a meaningful response, when an incoming
 request is coming. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 164 mongoose: models/relationships.js (model:define) (103) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 164 mongoose: models/relationships.js (model:define) (105) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image164.png" 
   title="Mongoose: models/relationships.js (model: define)"
@@ -3478,7 +3366,7 @@ it won&apos;t work. Mongoose will complain. The three fields that we are going t
 need in our objects are source, target and weight. The first two source and 
 target are of type string, while weight is a number-typed object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 165 mongoose: controllers/relationships.js (model:find items) (104) ~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 165 mongoose: controllers/relationships.js (model:find items) (106) ~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image165.png" 
   title="Mongoose: controllers/relationships.js (model: find items)"
@@ -3494,7 +3382,7 @@ source is equal to, for example, &apos;me&apos;, I would put this as a filtering
 before I perform the find. You can look at how filtering is done in the 
 examples on the mongoose website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 166 mongoose: what else can you do? (105) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 166 mongoose: what else can you do? (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image166.png" 
   title="Mongoose: what else can you do?"
@@ -3506,7 +3394,7 @@ objects, as already set before. So, in this specific case, we are creating a new
 object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weight
 &apos;6&apos;.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (105) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (107) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image167.png" 
   title="Mongoose: what else can you do, #2?"
@@ -3518,7 +3406,7 @@ object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weig
 callback function, which will log the created object, as we see below
 here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 168 mongoose: what else can you do, #3? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 168 mongoose: what else can you do, #3? (108) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image168.png" 
   title="Mongoose: what else can you do, #3?"
@@ -3528,7 +3416,7 @@ here.</p>
 The next thing that we can do in mongoose is to find and remove
 objects. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 169 mongoose: what else can you do, #4? (106) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 169 mongoose: what else can you do, #4? (108) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image169.png" 
   title="Mongoose: what else can you do, #4?"
@@ -3545,7 +3433,7 @@ first object in which the source is &apos;me&apos; and we are removing it.
 If the removal is successful, we will log into console the removed
 object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 170 mongoose: what else can you do, #5? (107) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 170 mongoose: what else can you do, #5? (109) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image170.png" 
   title="Mongoose: what else can you do, #5?"
@@ -3563,7 +3451,7 @@ instead of having source &apos;me&apos; and target &apos;you&apos;, it would
 have source &apos;me&apos; and target &apos;Tommen&apos;. The weight will always 
 be the same.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image171.png" 
   title="Mongoose: CRUD, create, read, update &amp; delete"
@@ -3593,7 +3481,7 @@ are going to see the last component that you need to build a complete
 application, which means an application, which has also a view
 component. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172 pug (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172 pug (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image172.png" 
   title="pug; a view engine"
@@ -3619,7 +3507,7 @@ So, for example, through the controller you pass the title. You can specify a
 location that if the title is defined, you want to show the title at
 that location. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173 pug: where do you find it? (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173 pug: where do you find it? (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image173.png" 
   title="pug; Where do you find it?"
@@ -3635,7 +3523,7 @@ root of our application. We take a look now at the base, home and
 the actual files are pretty similar and the concepts are definitely the
 same. Let&apos;s look at them. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (110) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (112) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image174.png" 
   title="pug; home.pug + base.pug + navigation.pug"
@@ -3682,7 +3570,7 @@ exactly where the block content is in the <b>base.pug</b>. So, in this
 case, we will put there an h1, which will be here is a title and that p
 for the paragraph, a nice paragraph. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (111) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (113) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image175.png" 
   title="pug; home.pug + base.pug + navigation.pug, #2"
@@ -3705,7 +3593,7 @@ going to follow this lesson.
 
 Thank you, Chris, for covering server-side JavaScript. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176 advantages of node.js (112) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176 advantages of node.js (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image176.png" 
   title="Advantages of Node.JS"
@@ -3723,7 +3611,7 @@ development and how those could be found and integrated using NPM. Finally, we s
 a code example for a small app that pulls data from an API and
 visualizes it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 177 in the next module; data visualization using d3 (112) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 177 in the next module; data visualization using d3 (114) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image177.png" 
   title="In the next module; Data visualization using D3"
@@ -3740,7 +3628,7 @@ visualization in JavaScript.
 <p>Welcome back! In this lecture, I&apos;m going to demonstrate the code that 
 Dennis &amp; I used in our previous lectures.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 178 webstorm, an ide for api code (113) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 178 webstorm, an ide for api code (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image178.png" 
   title="WebStorm, an IDE for API code"
@@ -3765,7 +3653,7 @@ of a variable or many JavaScript reserved words. There are other free tools, for
 example, Brackets. Or you can also download Atom, which is going to be used by 
 Dennis in his lesson.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 179/180 folder of web code and api; webstorm (114) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 179/180 folder of web code and api; webstorm (116) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image179.png" 
   title="Folder of website on Mac"
@@ -3782,7 +3670,7 @@ Good, so, now that WebStorm is open, we can start opening up our application
 just by clicking open, navigate into the desktop and selecting the folder. Then, 
 we select open again and WebStorm will open up our application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 181 app directory with .js and .json files (114) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 181 app directory with .js and .json files (116) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image181.png" 
   title="app directory with .js and .json files"
@@ -3795,7 +3683,7 @@ that are contained in it. The same thing is reflected if we just open up our
 folder with Finder and these are the same files that we&apos;re going to find in
 WebStorm.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 182 package.json - scripts section (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 182 package.json - scripts section (117) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image182.png" 
   title="package.json - scripts section"
@@ -3819,7 +3707,7 @@ dependencies, we know that to run our application, we must first install the
 dependencies that are specified here and we do that by calling NPM install from a
 terminal window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 183 api folder of website; run cli $npm install (116) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 183 api folder of website; run cli $npm install (118) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image183.png" 
   title="API folder; run cli $npm install"
@@ -3832,7 +3720,7 @@ WebStorm, we can just open up a terminal window from the terminal
 emulator from our computer, navigate to the desktop and then navigate to the API
 folder. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 184 list of npm install dependencies/co-dependencies (116) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 184 list of npm install dependencies/co-dependencies (118) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image184.png" 
   title="List of npm installed dependencies/co-dependencies"
@@ -3848,12 +3736,11 @@ perform its function, will need some core dependencies, which are for example
 these accepts, array-flatten and so on and so forth. 
 
 There&apos;s actually a bunch of these, which come with express and mongoose. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 185 new folder created: node_modules (117) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 185 new folder created: node_modules (119) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image185.png" 
-  title=""
+  title="New folder; node_modules created by npm install"
   alt="New folder; node_modules created by npm install."
   style="border: 2px solid #000000; width:40%;" />
 </p>
@@ -3863,7 +3750,7 @@ is a new folder, called node_modules which will collect all of the different
 dependencies that we just installed. Good, so, next thing we want to do
 is look at index.js.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 186 index.js; two requirements; express and database  (117) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 186 index.js; two requirements; express and database  (119) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image186.png" 
   title="index.js with 2 requirements; express and database"
@@ -3876,7 +3763,7 @@ lines we have two requirements: the first requirement is express. It&apos;s
 a dependency we have just seen it in a <b>package.JSON</b> and we have just 
 installed it with NPM install. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187 require database.js (118) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187 require database.js (120) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image187.png" 
   title="Require database.js"
@@ -3895,7 +3782,7 @@ extension dot JavaScript.
 <p>We don&apos;t really need to specify the dot and js here. It is good practice 
 to actually see what this database file does.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 188 database.js - two requirements to start (118) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 188 database.js - two requirements to start (120) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image188.png" 
   title="database.js - first two requirements"
@@ -3916,7 +3803,7 @@ dot JSON.</p>
 to specify here dot JSON, but if we wanted to, we could. Again, it is good practice 
 to see what actually this file contains.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 189 config.json - with one object (119) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 189 config.json - with one object (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image189.png" 
   title="config.json - with one object"
@@ -3935,7 +3822,7 @@ to that object. So, when we require the config file here, what we actually
 require is the object that we just saw there and we can look at our database 
 connection string here. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 190 config.json database parameters = config.database (120) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 190 config.json database parameters = config.database (122) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image190.png" 
   title="config.JSON database parameters = config.database file"
@@ -3947,7 +3834,7 @@ And, what we do here is assigning to this database parameters: the
 config.database key. We are assigning to this value this constant value - the 
 database object here, so all of the values that we see in this object. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 191 config.json - create database connection (120) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 191 config.json - create database connection (122) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image191.png" 
   title="config.json - create database connection"
@@ -3968,7 +3855,7 @@ string or well not too specific but something similar to this where we have
 user name password, the host name, the port and the collection that we want to
 use.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 192  config.json - module.exports callback function (121) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 192 config.json - module.exports callback function (123) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image192.png" 
   title="config.json - module.exports callback function"
@@ -3987,7 +3874,7 @@ thing we do is we connect to our database connection string. So, Mongoose
 connected to this connection and then we assign the database object to a variable, 
 which is called db. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (121) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (123) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image193.png" 
   title="Four events associated with connecting to mongoose database"
@@ -4027,7 +3914,7 @@ a parameter of our function and we call it when we are fully connected to the
 database. This ensures that when we execute this callback function, we are only 
 executing it when we are sure that the database connection is up. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 194 config.json - database function to connect and start appl'n (123) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 194 config.json - database function to connect and start appl'n (125) ~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image194.png" 
   title="config.json - database function - connect and start application"
@@ -4042,7 +3929,7 @@ this code, how the router calls controllers and what the models stands for, but
 for this leson we are only going to see that we connect to the database and that 
 we start our application.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 195 only execute application if database connection is valid (123) ~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ 195 only execute application if database connection is valid (125) ~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image195.png" 
   title="Only execute application if database connection is running and valid"
@@ -4060,7 +3947,7 @@ when the connection is open. So, we are assuring that our application is
 going to listen to incoming requests only when the database connection is open.
 This is very important. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 196 if database connection is open, start application (124) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 196 if database connection is open, start application (126) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image196.png" 
   title="If database connection is open, start application"
@@ -4071,7 +3958,7 @@ Again, because, obviously, we only want to answer to requests once the connectio
 is open, because otherwise we have no access to the data and this is exactly what
 this ensures us. Now we can go ahead and start the application. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 197 $npm start using index.js, connecting to mongoose (125) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 197 $npm start using index.js, connecting to mongoose (127) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image197.png" 
   title="$npm start using index.js, connecting to mongoose"
@@ -4087,7 +3974,7 @@ have specified in the package.JSON to be the start of our application.
 Then, it will log to console that Mongoose has connected, which is the event
 connected that we see here - mongoose connected. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 198/199 verify listening on port 3000 & appl'n is running (126) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 198/199 verify listening on port 3000 & appl'n is running (128) ~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="./images/image198.png" 
   title=""
@@ -4104,7 +3991,7 @@ this callback function and our Express server is now listening in our specific
 port and it is running and our application is running and we should be able to 
 open up this website and see some content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 200 relationship entries for database (126) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 200 relationship entries for database (128) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image200.png" 
   title="Relationship entries for mongoose database"
@@ -4122,7 +4009,7 @@ application.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Welcome back to our demonstration about how our demo applications actually work!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~ 201 validate port listening, database connection and application running (127) ~~~~~~-->
+<!--~~~~~~ 201 validate port listening, database connection and application running (129) ~~~~~~-->
 <p align="center">
   <img src="./images/image201.png" 
   title="Validate port listening, database connection, and application running"
@@ -4137,7 +4024,7 @@ query the database. And in this lesson, we&apos;re going to see what the router 
 what the controller is and what the models are. And we are going to implement a 
 new route into our application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 202 $npm start - starts application (127) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 202 $npm start - starts application (129) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image202.png" 
   title="$npm start - starts application"
@@ -4155,7 +4042,7 @@ I did this in my previous lesson just to show that it actually is
 working. I&apos;m copying this link over here. Let me just hide these sections, open
 Safari, paste, enter and this is exactly what we want to see. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 203 data for mongoose database (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 203 data for mongoose database (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image203.png" 
   title="Data dump for mongoose database"
@@ -4168,7 +4055,7 @@ into a process and let&apos;s see what these lines of code now do. We have seen
 that at the very beginning, we are requiring some files and some components of 
 our app and next line of code, that we want to look at, is this one.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204 idon'tknow.js (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204 .js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image204.png" 
   title=""
@@ -4192,7 +4079,7 @@ have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
 default values. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 idon't know.js (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 .js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image205.png" 
   title=""
@@ -4207,7 +4094,7 @@ router.js, because we see it here, it&apos;s router.js. And since it&apos;s
 good practice, let&apos;s go ahead and look what is actually contained in our 
 files.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image206.png" 
   title=""
@@ -4228,7 +4115,7 @@ not right at the root of our application. It&apos;s located in the folder app,
 that we see here on top, so let&apos;s expand that. Then we go into controllers
 and then we are requiring relationships, which is this file over here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image207.png" 
   title="router.js"
@@ -4241,7 +4128,7 @@ two dots tell us that we have to look one folder before the folder we are in. So
 we are in controllers and we need to look at app and then we want to look at
 models. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image208.png" 
   title=""
@@ -4275,7 +4162,7 @@ happens when we actually require this specific file. And what we&apos;re
 exporting here is exactly the model. The model that we defined over here 
 is what we are exporting down here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 209 controllers/relationships.js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 209 controllers/relationships.js (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image209.png" 
   title="controllers/relationships.js"
@@ -4317,7 +4204,7 @@ to return is a response with the status of 500, which again in HTTP means there
 has been an error on the server side and I want to send my error back to the user, 
 so that the user knows of what kind of problem might have happened. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210 relationships.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210 relationships.js (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image210.png" 
   title="relationships.js"
@@ -4368,7 +4255,7 @@ want to achieve by requiring this file. And what I&apos;m exporting here is
 exactly the router object, which is the one that we have defined over here and
 to which we have assigned a route. I get requests over here. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 211  (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 211  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image211.png" 
   title=""
@@ -4379,7 +4266,7 @@ Now, we can go back into the index.json or we actually require the router and we
 assign it to this variable here. And we can say that our router is listening on 
 the route here and we are using the route of our application.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 212  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 212  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image212.png" 
   title=""
@@ -4391,7 +4278,7 @@ specified, incoming requests, for example, /api/relationships, as we have seen
 here, then you have to answer oh sorry you have to answer with this call of this 
 function, which is but basically we are telling the application here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 213  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 213  (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image213.png" 
   title=""
@@ -4407,7 +4294,7 @@ want to start listening to incoming requests. And the way we do that is,
 basically, we say: we start listening on a port that has been specified before. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 214  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 214  (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image214.png" 
   title=""
@@ -4428,7 +4315,7 @@ where we are getting data, but we&apos;re only getting the relationships for the
 source, that is, for example, Aemon. How do we do that? 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 215  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 215  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image215.png" 
   title=""
@@ -4438,7 +4325,7 @@ source, that is, for example, Aemon. How do we do that?
 We go back to our webstore and we start
 implementing a new route. We know that the routes are defined into the router. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 216  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 216  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image216.png" 
   title=""
@@ -4455,7 +4342,7 @@ type of the function that we&apos;re going to call. We want the relationships
 only for Aemon and we also have to add the semicolon here, because I deleted it
 from here before. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image217.png" 
   title=""
@@ -4471,7 +4358,7 @@ over it, it actually tells me there is an unresolved variable relationship Aemon
 doesn&apos;t happen here, because this is obviously defined. So, what we have to do
 now is actually to define this function over in the controller. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image218.png" 
   title=""
@@ -4516,7 +4403,7 @@ relationships, such that what I get is that the source of our relationships is
 Aemon. Now I have saved this file, there is no modification here, so there&apos;s 
 no need to save anything here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 219 restart process with $npm start (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 219 restart process with $npm start (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image219.png" 
   title="Restart process with $NPM start"
@@ -4535,7 +4422,7 @@ control+C and then you can just type in $NPM start again.
 Just for the sake here, I press run again and the output is going to be the same, 
 because I&apos;m not logging anything new. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 220 relationship data with two objects (139) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 220 relationship data with two objects (142) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image220.png" 
   title="Relationship data with two objects"
@@ -4548,7 +4435,7 @@ what I will get is a new array. So, this is the array of objects with only two
 objects and the two objects that I get are with the source Aemon. These are the 
 only two objects that I have in my database, which have this source. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 221 relationship data with multiple objects (139) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 221 relationship data with multiple objects (142) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image221.png" 
   title="Relationship data with multiple objects"
@@ -4562,7 +4449,7 @@ only two objects, which are of a source Aemon and they are exactly the
 same ones that we get if we navigate back to this root. So, yes, this is exactly what I
 wanted to show you. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222 relationships.js (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222 relationships.js (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image222.png" 
   title=""
@@ -4602,7 +4489,7 @@ That is a good test for you to try out and have fun.
 
 Welcome to the data visualization module. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 223 data visualization turn information to knowledge (141) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 223 data visualization turn information to knowledge (145) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image223.png" 
   title="Data visualization turn information to knowledge"
@@ -4612,7 +4499,7 @@ Welcome to the data visualization module.
 Data visualization is an important aspect of data analysis. Creating images, 
 diagrams and animations help us in the process of analysis and data communication. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image224.png" 
   title="Covered in this module"
@@ -4637,7 +4524,7 @@ Welcome everyone to this part of our course!
 This part will deal with data visualization and we&apos;ll start off with
 data retrieval using HTTP requests.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~ 225 Outlook - Web-based visualization with relationship data from a novel (143) ~~~~~-->
+<!--~~~~~~ 225 Outlook - Web-based visualization with relationship data from a novel (146) ~~~~~-->
 <p align="center">
   <img src="./images/image225.png" 
   title="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API"
@@ -4657,7 +4544,7 @@ You might have heard of it. We will then use this data that we retrieved from
 the API and create a nice graph visualization of the interactions of these 
 characters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 226 outlook - web-based visualization using d3 and pug (143) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 226 outlook - web-based visualization using d3 and pug (146) ~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image226.png" 
   title="Outlook - Web-based visualization using D3 and Pug"
@@ -4668,7 +4555,7 @@ We will use the <b>Pug</b> templating engine that you have been presented
 in the last part of this course to create the site and then use the D3.js library for the
 visualization itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227 data retrieval, #1 (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227 data retrieval, #1 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image227.png" 
   title="Data retrieval, #1"
@@ -4681,7 +4568,7 @@ The back-end is the Node.js application that you were presented previously
 and at this point, we&apos;re going to look at the front-end, which is going to 
 be the website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 228 data retrieval, #2 (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 228 data retrieval, #2 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image228.png" 
   title="Data retrieval, #2"
@@ -4692,7 +4579,7 @@ This website will also contain JavaScript and JavaScript will be used to
 query our API for the relationships of these characters, which we&apos;ll then return
 them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 229 content creation with pug, #1 (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 229 content creation with pug, #1 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image229.png" 
   title="Content creation with Pug, #1"
@@ -4702,7 +4589,7 @@ them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into an HTML file that will be displayed in a web browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 230 content creation with pug, #2 (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 230 content creation with pug, #2 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image230.png" 
   title="Content creation with Pug, #2"
@@ -4713,7 +4600,7 @@ compile template into an HTML file that will be displayed in a web browser.
 Then, with the help of JavaScript, we will create the backend server and
 get the data from there.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 231 creating a page for the visualization (145) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 231 creating a page for the visualization (148) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image231.png" 
   title="Creating a page for the visualization"
@@ -4731,7 +4618,7 @@ We don&apos;t have to include the code for navigation in every site. The
 <b>visualization.pug</b> file is where the content for our visualization 
 page will be hosted and we&apos;ll try to have a look at that in a second.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 232 creating a simple page for the visualization, #1 (146) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 232 creating a simple page for the visualization, #1 (149) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image232.png" 
   title="Creating a simple plage for the visualization, #1"
@@ -4751,9 +4638,8 @@ Right on the button, there are two JavaScript files.
 For one, we used the D3 library. So, we have that one linked and then we
 have another JavaScript file linked that will host the code for data retrieval and
 visualization.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 233 creating a simple page for the visualization, #2 (147) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 233 creating a simple page for the visualization, #2 (150) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image233.png" 
   title="Creating a simple page for the visualization, #2"
@@ -4771,7 +4657,7 @@ create direct request to our API, receive the data and then create the visualiza
 And, finally, we have one more div with the ID root. This is where we&apos;ll 
 inject the visualization using JavaScript and D3. So, this is what the page looks like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 234 creating a simple page for the visualization (147) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 234 creating a simple page for the visualization (150) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image234.png" 
   title=""
@@ -4780,10 +4666,11 @@ inject the visualization using JavaScript and D3. So, this is what the page look
 </p>
 Again, it has the navigation bar on top, it has a title. In this case visualization 
 and a button that when pressed will initialize the visualization and data retrieval.
-So, let&apos;s have a look at what the data retrieval actually looks like. This 
+
+Let&apos;s have a look at what the data retrieval actually looks like. This 
 will happen in the JavaScript file. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 235  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 235  (151) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image235.png" 
   title=""
@@ -4793,7 +4680,7 @@ will happen in the JavaScript file.
 You can find the file in the visualization folder, which is hosted in the public 
 folder of our application. The script.js will host all the code we need. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 236  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 236  (152) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image236.png" 
   title=""
@@ -4809,7 +4696,7 @@ functions for now. One way of doing that is the so-called XMLHttpRequest object 
 is built into JavaScript. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 237  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 237  (152) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image237.png" 
   title=""
@@ -4827,7 +4714,7 @@ there&apos;s another event when it is finished with transferring the data back
 to the front-end. 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 238  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 238  (153) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image238.png" 
   title=""
@@ -4865,7 +4752,7 @@ going to discuss data visualization. Now, that we have the data retrieved from a
 API, we will try and create a nice-looking graph from the character interactions
 of the Storm of Swords novel. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 239  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 239  (154) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image239.png" 
   title=""
@@ -4891,7 +4778,7 @@ to at least two percentage points and even more complex things, such as a linear
 regression line are almost identical for all these four distributions. You would 
 assume that they follow a very similar pattern, that they are even mostly identical. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 240  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 240 why visualization? (155) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image240.png" 
   title=""
@@ -4905,11 +4792,11 @@ This is the reason why visualization is vital for data exploration and by now it
 has become a very common theme to use visualization on the web, and for that we 
 use JavaScript, obviously. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 241  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 241 visualization on the web (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image241.png" 
-  title=""
-  alt="."
+  title="Visualization on the web"
+  alt="Visualization on the web."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4919,11 +4806,11 @@ left side of the slide.
 Today, we&apos;ll be using D3 and we&apos;ll talk a little bit about why we will 
 be using D3 in a minute. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 242  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 242 three ways to visualize data in the browser (156) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image242.png" 
-  title=""
-  alt="."
+  title="Three ways to visualize data in the browser"
+  alt="Three ways to visualize data in the browser."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4963,11 +4850,11 @@ independent. The problem, however, is that if you have a lot of elements and
 shapes to draw, as in thousands, it can become very slow and we would probably 
 need to move to a WebGL or canvas-based visualization.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 243  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 243 data-driven documents (d3) (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image243.png" 
-  title=""
-  alt="."
+  title="Data-Drive Documents (D3)"
+  alt="Data-Drive Documents (D3)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4984,11 +4871,11 @@ elements or any other kind of HTML elements. The main point for D3 is the
 way that data binding works with D3 and let&apos;s talk about what that actually 
 means. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 244  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 244 data binding starcolor == 'blue' (157) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image244.png" 
-  title=""
-  alt="."
+  title="Data binding; var starColor == 'blue'"
+  alt="Data binding; var starColor == 'blue'."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -5003,11 +4890,11 @@ are bound together, meaning that if either the star color variable in our script
 changes, for example, programmatically, that will also influence the
 color of the star on the website immediately and vice versa as well. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 245  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 245 data binding starcolor == 'red' (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image245.png" 
-  title=""
-  alt="."
+  title="Data binding; var starColor == 'red'"
+  alt="Data binding; var starColor == 'red'."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -5015,11 +4902,11 @@ If the star
 color on the website is, for example, through user interaction influenced, this will
 be reflected in our code and data as well. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 246  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246 data binding in d3 (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image246.png" 
-  title=""
-  alt="."
+  title="Data binding in D3"
+  alt="Data binding in D3."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -5039,7 +4926,7 @@ This time we&apos;re going to talk about DOM and SVG. DOM stands for the Documen
 Object Model and to talk more about that, we have to look at the structure of 
 an HTML file.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 247  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 247  (159) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image247.png" 
   title=""
@@ -6392,5 +6279,6 @@ Burkhard Rost, bye bye.
 <!-- date last editted 6/24/2024 Mon 12+pm -->
 <!-- date last editted 6/25/2024 Tue 7+pm -->
 <!-- date last editted 6/26/2024 Wed 4+am -->
+<!-- date last editted 6/28/2024 Fri 11+am -->
 
 ...The end...
