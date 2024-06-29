@@ -2280,11 +2280,11 @@ function.</p>
 We can see in this example that even if we copy a bound method to
 another object, this keyword still returns the bound object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 120  (72) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 120 this (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image120.png" 
-  title=""
-  alt="."
+  title="this"
+  alt="this."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2296,7 +2296,7 @@ to an object and is not invoked as a method, or via apply or call?
 By default, this returns the global object.
 In the browser, it&apos;s the window object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 121 this: function checkthisout (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 121 this: function checkthisout (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image121.png" 
   title="this: In an inner function 'this' by default returns the global object"
@@ -2437,11 +2437,11 @@ stands for.
 
 Let&apos;s look at the first example.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 128 requests (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 128 requests (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image128.png" 
-  title=""
-  alt="."
+  title="Requests"
+  alt="Requests."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2452,11 +2452,11 @@ It tries to access the route and asks the server: do you have something
 to deliver to me? The server will answer to the browser: yes, I have something 
 for you and it&apos;s an HTML file, which is called index.html.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 129 requests ii (77) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 129 requests ii (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image129.png" 
-  title=""
-  alt="."
+  title="Requests II"
+  alt="Requests II."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2472,11 +2472,11 @@ called image.png.
 If everything went according to plan, the server will then answer to the
 browser: yes, I have these files and there you are.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 130 requests iii (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 130 requests iii (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image130.png" 
-  title=""
-  alt="."
+  title="Requests III"
+  alt="Requests III."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -2488,11 +2488,11 @@ to load an image.
 What we see later in the href, is a URL of where the image is to be
 taken from. In this case, the image is located at example.dallago.us/image.png.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 131 requests iv (78) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 131 requests iv (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image131.png" 
-  title=""
-  alt="."
+  title="Requests IV"
+  alt="Requests IV."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4055,11 +4055,11 @@ into a process and let&apos;s see what these lines of code now do. We have seen
 that at the very beginning, we are requiring some files and some components of 
 our app and next line of code, that we want to look at, is this one.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 204 .js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 204 const express and database required (131) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image204.png" 
-  title=""
-  alt="Express application."
+  title="Define constants express and database"
+  alt="Define constants express and database."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We define our application, so our app to be an express application and later we 
@@ -4079,11 +4079,11 @@ have this variable things, like, for example, the port number or the database
 connection string to be environment variable friendly or to pull back on some
 default values. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 .js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 set var router required (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image205.png" 
-  title=""
-  alt="."
+  title="Set var router, required"
+  alt="Set var router, required."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 And next thing that we&apos;re going to talk about is the router and
@@ -4094,15 +4094,15 @@ router.js, because we see it here, it&apos;s router.js. And since it&apos;s
 good practice, let&apos;s go ahead and look what is actually contained in our 
 files.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js - assign routes (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image206.png" 
-  title=""
-  alt="router.js."
+  title="router.js - assign routes"
+  alt="router.js - assign routes."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We fire up router.js and we see, this file is very short, it starts
-with two requirements, well sorry, just one requirement and one assignment. We
+with one requirement and one assignment. We
 require express again here on top and then we define our router, which
 is a new express router. That&apos;s what we do in this line here. And then
 we can assign some routes to it. For example, get requests or we can also
@@ -4255,7 +4255,7 @@ want to achieve by requiring this file. And what I&apos;m exporting here is
 exactly the router object, which is the one that we have defined over here and
 to which we have assigned a route. I get requests over here. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 211  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 211 models/relationships.js (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image211.png" 
   title=""
@@ -6279,6 +6279,6 @@ Burkhard Rost, bye bye.
 <!-- date last editted 6/24/2024 Mon 12+pm -->
 <!-- date last editted 6/25/2024 Tue 7+pm -->
 <!-- date last editted 6/26/2024 Wed 4+am -->
-<!-- date last editted 6/28/2024 Fri 11+am -->
+<!-- date last editted 6/28/2024 Fri 11+pm -->
 
 ...The end...
