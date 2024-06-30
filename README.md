@@ -5099,7 +5099,7 @@ complex animations and graphics, we would like to automate this process.
 
 And this again is where D3 comes in.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 258 scalable vector graphics (svg), iii (164) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 258 scalable vector graphics (svg), iii (165) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image258.png" 
   title="Scalable Vector Graphics (SVG) III"
@@ -5126,7 +5126,7 @@ shapes and graphics.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome back to our lecture about data visualization! 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 259 data visualization - data binding with d3 (165) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 259 data visualization - data binding with d3 (166) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image259.png" 
   title="4.4 Data Visualization - Data binding with D3"
@@ -5138,9 +5138,9 @@ In this part, we&apos;ll
 take a closer look onto data binding with D3 and we will also create a graph 
 model that will then translate into a visualization on our site.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 260 graph layout calculation requires a graph model (165) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 260 graph layout calculation requires a graph model (166) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image259.png" 
+  <img src="./images/image260.png" 
   title="Graph layout calculation requires a graph model"
   alt="Graph layout calculation requires a graph model."
   style="border: 2px solid #000000; width:40%;" />
@@ -5153,6 +5153,7 @@ positions to the shapes of our actual visualization.
 
 This is where the data binding part comes in. We&apos;ll bind the node position 
 to the position of the shapes in our graph visualization.
+
 
 To start off, we&apos;ll start off with the graph model itself and D3
 provides a number of layouts for graphs right out of the box. We will be using a force
@@ -5176,6 +5177,8 @@ obviously want this to be the same size as our graphic on the screen later on.
 We&apos;ll use two variables for width and height, which we&apos;ll pass to the 
 size function and we&apos;ll also reuse them later for the size of our graphic.
 
+
+
 One more thing we actually need for our graph model is obviously the data 
 itself and the graph layout provided by D3 has two more functions we can call 
 to actually pass that data. They are called nodes and links, and we&apos;ll 
@@ -5189,12 +5192,16 @@ function. The start function will cause D3 to initialize a number of
 things internally and we will kind of come back to that in a later
 slide.
 
+
+
 Now, that we have the data model for our graph layout initialized, we&apos;ll 
 move on to actually initialize the visualization and then we&apos;ll try to 
 bind the model and the position of the nodes to the graphics and the position 
 of the shapes on that graphic.
 
-First thing first, what we need to do to initialize the visualization is we now 
+
+
+What we need to do to initialize the visualization is we now 
 have to use D3 to manipulate our DOM. In this case, we would like to set or 
 select the root div that we have created in our template, if you remember, and 
 then we would like to use D3 to append a child element to this root div, in this 
@@ -5221,6 +5228,8 @@ selected by ID, I&apos;m selecting by CSS class and we talk a little bit more
 about that later as well. But for now, if you see #root that just means I want 
 to select the DOM element, which has the ID root.
 
+
+
 This is what we&apos;re actually going to do now. We&apos;ll take D3, we&apos;ll 
 select the root ID from our HTML file and then we&apos;ll tell it - now that you 
 have it, please append a child element of the type SVG, which we&apos;ll do using 
@@ -5231,33 +5240,30 @@ And, as I mentioned before, these dimensions need to be the same as the
 ones of our actual mathematical simulation of the node positions. So, we will
 reuse the width and height variables that we set before. 
 
-And if you actually execute this, we get
-what you wanted. We created a new DOM element, in this case, this SVG
-element as a child element of our root div with the correct dimensions.
+And if you execute this, we get what you wanted. We created a new DOM element, 
+in this case, this SVG element as a child element of our root div with the 
+correct dimensions.
+
 
 The next thing we need to do is we need to populate this SVG elements
 with shapes corresponding to our graph model.
 
-So, let&apos;s take a look at this slide. On the 
-left you can see some demo data. Think of the top ones as characters
-from the books. In this case, they&apos;re just called ABC. And the bottom on the
-left, will have a number of connections between those and now, remember, when we call
-the start function on our layout, I told you that a number of initializations
-happen, this is what you see on the bottom, on the links data points, that the links
-actually connect numbers and not necessarily the names like the ABC on top.
-
-This is because as soon as you initialize the layout in D3, D3 will
-replace all the names with the indices. That means that all the names will be replaced
-by the position of this name in the name array and, obviously, that is a way to
-handle cases where, for example, in our case, two characters might have the
-same name and to distinguish them, instead of calling them A and B, we&apos;ll call them
-name 0 and name 1.
+Let&apos;s take a look at this slide. On the left you can see some demo data. 
+Think of the top ones as characters from the books. In this case, they&apos;re 
+just called ABC. And the bottom on the left, will have a number of connections 
+between those and now, remember, when we call the start function on our layout, 
+I told you that a number of initializations happen, this is what you see on the 
+bottom, on the links data points, that the links actually connect numbers and 
+not necessarily the names like the ABC on top. This is because as soon as you 
+initialize the layout in D3, D3 will replace all the names with the indices. 
+That means that all the names will be replaced by the position of this name in 
+the name array and, obviously, that is a way to handle cases where, for example, 
+in our case, two characters might have the same name and to distinguish them, 
+instead of calling them A and B, we&apos;ll call them name 0 and name 1.
 
 If we now try to add this data to our visualization, we would like
 to see something like we see on the right. So, we would like to create a
-child element for SVG.
-
-One circle element for each node and one line
+child element for SVG. One circle element for each node and one line
 element for each link, and we would also like to attach a class to them,
 so we can label them as links and nodes, because you could possibly imagine that there
 are other circle or line shapes on our graphic that do not necessarily
@@ -5266,29 +5272,35 @@ represent a node or link of the graph.
 But what we&apos;re actually trying to do here in
 terms of data binding is, we would like to represent the data we have on
 the left in the same fashion in our UI or in our graphic, and we&apos;d like to
-keep those consistent as well. Data binding in this case refers to the consistency that if
+keep those consistent as well. 
+
+Data binding in this case refers to the consistency that if
 we remove a node, for example, and the data on the left, this should
 also be represented in our graphic on the right and if, for example, the user
 could remove nodes on the graph in our graphic, we would then like to relay
 this information back to our data and keep it consistent.
+
+
 Now let&apos;s take a look how we can use D3 to add new elements to our graphic.
+Potentially you could think that we could use the same technique that we used 
+to create the SVG element before to also create the shapes on the SVG itself. 
+We could possibly select the SVG and append a line element by hand. That would 
+of course mean that we have to repeat this process for every line and for every 
+circle element that we would like to add. But instead, D3 provides a smarter 
+way to do it. 
 
-Potentially you could think that we could use the same technique that we used to create the SVG element
-before to also create the shapes on the SVG itself. So, we could possibly select
-the SVG and append a line element by hand.
-
-That would of course mean that we have to repeat this process for every line and for every circle element that we
-would like to add. But instead, D3 provides a smarter way to do it. D3 is a
-lot about selections and sets of elements and how to join them together.
-
+D3 is a lot about selections and sets of elements and how to join them together.
 So, when we try to add elements to the SVG using D3, we will actually
 try to select all the child elements of SVG that have the class link. And, as you can see on the
 right, there are none at the moment. So, this selection will actually return an empty
 set on an empty array of elements.
 
-We can now pass our data to this selection using the data function of D3. So, this basically passes all three links or three
-data points to the selection and compares them, and we now have two sets of elements. We have the empty set of elements in the
-SVG and we have a set of three data points in our data.
+We can now pass our data to this selection using the data function of D3. This 
+basically passes all three links or three data points to the selection and 
+compares them, and we now have two sets of elements. We have the empty set 
+of elements in the SVG and we have a set of three data points in our data.
+
+
 
 Now, we would like to combine those together, so that for each data point we also have an element on
 our graphic. So, again, the links on the left side - three data points we
@@ -5299,45 +5311,46 @@ outcomes. You could, for example, also imagine that we have elements on our data
 our graphic on the right, but not in our data or you could imagine that we
 already have the same elements on both, the right side and the left.
 
-So, these are actually the three outcomes that you could have when
-comparing two sets: on the left in yellow, you have the set of data points and on the right you have the
-set of elements on our page.
 
-And D3 provides a function for each of the three cases
-that can happen if we combine or compare these two sets.
+These are three outcomes that you could have when comparing two sets: on the 
+left in yellow, you have the set of data points and on the right you have the 
+set of elements on our page. And D3 provides a function for each of the three 
+cases that can happen if we combine or compare these two sets.
 
-If we want to deal with all the data points that are not yet on the
-screen, we can use the enter function.
-
-If you want to deal with all the elements on the webpage that do not
-have any representation in our data, for example, because we move that data
-programmatically, we use the access function and if you want to just
-deal with all the data points that are already in data and our elements, but,
-for example, have been updated in the data or the website, we use the update
+If we want to deal with all the data points that are not yet on the screen, we 
+can use the enter function. If you want to deal with all the elements on the 
+webpage that do not have any representation in our data, for example, because 
+we move that data programmatically, we use the access function and if you want 
+to just deal with all the data points that are already in data and our elements, 
+but, for example, have been updated in the data or the website, we use the update
 function.
+
+
 
 To have it again in text: we use the enter function of D3 to deal with
 every data point that does not have a corresponding DOM element yet, and we can
-use this to add new elements to our SVG. On the other hand, the exit function does
-the exact opposite, if you want. If we call the exit function,
-it will return us every element that is on the site, but does not have a
-corresponding data point. This is mainly used to remove elements from
-the webpage that are not in the data anymore.
+use this to add new elements to our SVG. 
 
-And then, if we have a number of elements that are in the data and on the site as well, we use
-the update function, for example, to update any attributes that might have
-changed.
+On the other hand, the exit function does the exact opposite, if you want. If we 
+call the exit function, it will return us every element that is on the site, but 
+does not have a corresponding data point. This is mainly used to remove elements 
+from the webpage that are not in the data anymore.
 
-So, if we actually do this, you can see, we get the desired outcome on
-the right. So, on the left, let&apos;s go through it again, we select all the links or all the
-elements that have a link class in our SVG, which will return an empty set.
+And then, if we have a number of elements that are in the data and on the site 
+as well, we use the update function, for example, to update any attributes that 
+might have changed.
 
-We&apos;ll also use the data function to provide the data points on the bottom of the screen
-of the slide. So these are three sets. And then, we use the enter
-function to deal with all the data points that are not yet on our page. In this case, the
-three links below, and then we&apos;ll say, for each of the data points we have,
-append the new line element to our SVG and then also set the attribute class to
-link, so we can actually label these lines as links.
+
+
+If we do this, you can see, we get the desired outcome on the right. On the left, 
+let&apos;s go through it again, we select all the links or all the elements that 
+have a link class in our SVG, which will return an empty set. We&apos;ll also use 
+the data function to provide the data points on the bottom of the screen of the 
+slide. These are three sets. And then, we use the enter function to deal with all 
+the data points that are not yet on our page. In this case, the three links below, 
+and then we&apos;ll say, for each of the data points we have, append the new line 
+element to our SVG and then also set the attribute class to link, so we can actually 
+label these lines as links.
 
 Now, we would also like to do the same thing with the nodes. In this case, for 
 circular elements, but we will skip this for now. You can take a look at our 
@@ -5350,92 +5363,104 @@ next lecture.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-5">4.5 Controlling Element Styles (8:13)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this part of our data visualization lecture, we&apos;ve been talking
-about controlling element styles using D3. Chris mentioned CSS a couple of
-times before in this lecture. So, now we&apos;re going to take a closer look into what it
-is and how we can use D3 to actually use it. So, CSS stands for cascading
-style sheets. 
 
-And while HTML is responsible for structuring the data on a website, CSS
-is actually responsible for how it looks. And if you take a look into the
-code provided to you during the Node.js example in the visualization folder,
-you will find a style CSS file. You can see the content of that on the
-right. 
 
-In the previous example, we used CSS classes as a label to denote a line
-element as a link. You can see it here. So, while we attached this attribute class
+In this part of our data visualization lecture, we&apos;ve been talking about 
+controlling element styles using D3. Chris mentioned CSS a couple of times before 
+in this lecture. So, now we&apos;re going to take a closer look into what it is 
+and how we can use D3 to actually use it. 
+
+
+CSS stands for cascading style sheets. And while HTML is responsible for structuring 
+the data on a website, CSS is actually responsible for how it looks. And if you 
+take a look into the code provided to you during the Node.js example in the 
+visualization folder, you will find a style CSS file. You can see the content of 
+that on the right. In the previous example, we used CSS classes as a label to 
+denote a line element as a link. 
+
+
+You can see it here. So, while we attached this attribute class
 and set it to link to our line element in the SVG, besides labeling it as a link,
-we also attached all the styles to find in the CSS class linked to it. In this
-case, as you can see down here, we set a stroke of the color gray because this
+we also attached all the styles to find in the CSS class linked to it. 
+
+
+In this case, as you can see down here, we set a stroke of the color gray because this
 hashtag 999 is a hex code for the curve for the gray color. And we also set a stroke
 opacity, meaning this stroke, or the color of the line, should be slightly
-transparent. 
+transparent. And on top, you can also see with a similar CSS class for nodes. In this
+case, we also set a stroke with a white color with the width of 1.5 points. 
 
-And on top, you can also see with a similar CSS class for nodes. In this
-case, we also set a stroke with a white color with the width of 1.5 points. So, if we
-go back to our code, you can see on the right that the class link has been attached to the links between the nodes and
-the color of these links is actually gray and it&apos;s slightly opaque. Also,
-as you can see it here on the nodes, the links don&apos;t actually touch the
-nodes directly. This is due to the fact that the node has a 1.5 width stroke
-of the white color. 
 
-If we would have a black background, you would
-actually see a white line around the nodes, which we have set in the CSS file up
-here. So, now let&apos;s imagine, we would like to change around the width of our
+If we go back to our code, you can see on the right that the class link has been 
+attached to the links between the nodes and the color of these links is actually 
+gray and it&apos;s slightly opaque. Also, as you can see it here on the nodes, 
+the links don&apos;t actually touch the nodes directly. This is due to the fact 
+that the node has a 1.5 width stroke of the white color. 
+
+
+If we would have a black background, you would actually see a white line around 
+the nodes, which we have set in the CSS file up here. 
+
+
+Now let&apos;s imagine, we would like to change around the width of our
 links. We could go back into CSS and actually change the stroke width in the CSS
 file. But, it would be much nicer to be able to have access to these sort of
 styles directly in our code. And luckily, D3 provides a number of ways to do
 it. One way is the style function, in which we can set CSS styles directly in
-the code.
-
-It takes two parameters: it takes the style to be influenced as the
+the code. It takes two parameters: it takes the style to be influenced as the
 first parameter and then the value to set it to as a second. So, in this case,
 we&apos;re setting the stroke width to two points and as you can see in comparison
 to the slide before, the width of the connections between the nodes has
 doubled. 
 
-How about we would like to change the width of these
-connections depending on something we have in our data, for example? Or set them
-each to a different width? Usually, you would have to create a new CSS class for
-each width you&apos;d like to have, which sounds like a lot of effort and
-requires a lot of redundancy. So, instead let&apos;s take another look into
-our data. We have two links data that you&apos;ve seen before. What you haven&apos;t seen
-before is that there are some ellipses here and if we expand that in a single data
+How about we would like to change the width of these connections depending on 
+something we have in our data, for example? Or set them each to a different 
+width? Usually, you would have to create a new CSS class for each width you&apos;d 
+like to have, which sounds like a lot of effort and requires a lot of redundancy.
+
+
+Instead let&apos;s take another look into our data. We have two links data that 
+you&apos;ve seen before. What you haven&apos;t seen before is that there are some 
+ellipses here and if we expand that in a single data
 point, you can see that behind those ellipses we actually have hidden the
-weight attribute of a connection. In terms of a graph, many graphs are
-weighted, meaning the links between the nodes have a certain weight associated
-with them. 
+weight attribute of a connection. 
 
-In our Game of Thrones example, the weight refers to the intensity of
-interactions between two characters, for example. And it would be great if you could
-now set the connections between two nodes to do width depending on the weight of
-this connection, meaning the more intensive the interaction between two
-characters is, the thicker the line between those two nodes, representing those
-characters should be. 
+In terms of a graph, many graphs are weighted, meaning the links between the 
+nodes have a certain weight associated with them.  In our Game of Thrones example, 
+the weight refers to the intensity of interactions between two characters, for 
+example. And it would be great if you could now set the connections between two 
+nodes to do width depending on the weight of this connection, meaning the more 
+intensive the interaction between two characters is, the thicker the line between 
+those two nodes, representing those characters should be. 
 
-So, instead of directly setting the width of all the links
+Instead of directly setting the width of all the links
 to two, we would like to access the data directly, extract the weight
 value and set it to this one. Luckily, in D3, this link variable 
-up here contains every link element that is in our SVG graphic. That
-means that as soon as we call the enter function here, anything that comes below this
-will actually be applied to every single link element in our data. This
-means, we can also access whatever data is stored in this link element.
+up here contains every link element that is in our SVG graphic. 
 
+
+
+That means that as soon as we call the enter function here, anything that comes 
+below this will actually be applied to every single link element in our data. 
+This means, we can also access whatever data is stored in this link element.
 In this case, the weight down here. We can now set the stroke width depending on
 the weight stored in the data point by passing an anonymous function.
 
-D3 will pass the current data point to this function as a parameter and
+D3 will pass the current dataPoint to this function as a parameter and
 all we now need to do is we need to extract the weight attribute from the
 parameter and set the stroke width to this parameter. As you can see, on the right, we
 now have a different stroke width for all the links depending on how intensive
-the interaction between the nodes or characters actually is. One more thing
-you would usually like to do in a case like this, is you would like to
-normalize the data to a certain degree, because the weight can differ drastically,
-but we would like to keep the thickness of the line within reasonable limits.
+the interaction between the nodes or characters actually is. 
 
-So, you would apply, for example, the square root to each of the data points.
 
-You would say: always take the square root of the weight. Or you could also use
+
+One more thing you would usually like to do in a case like this, is you would 
+like to normalize the data to a certain degree, because the weight can differ 
+drastically, but we would like to keep the thickness of the line within reasonable 
+limits.
+
+You would apply, for example, the square root to each of the data points. You 
+would say: always take the square root of the weight. Or you could also use
 the logarithm for that. So, it is then more naturally-looking width for the
 connections.
 
@@ -5446,54 +5471,64 @@ handling.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6">4.6 Event handling in D3 (7:18)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
 Welcome to this part of our data visualization lesson! In this part,
 we&apos;re going to talk about event handling in D3 and how we can use events to
 keep updated with changes in the code and create interactivity for the user.
 
 In the last part, we created a graph model, which calculates the node positions
 dynamically and we also connect these positions to the graphics and the
-number of shapes in our SVGs. Now, if you would look into our example, what you
-could see is that you can&apos;t see much. All you can see is little quarter shape
-on the top left of the visualization and if you look into the code of the DOM,
-you will see that all the shapes are present. However, they are all located in
-the default position of (0,0) in terms of coordinates, even though the
-layout is calculating new positions constantly. 
+number of shapes in our SVGs. 
 
-Now, we have connected them, but
-we are not keeping up with the changed position of the layouts. So, what we now
-need to do is we need to take advantage of the events functionality of D3 to tell the
+
+
+Now, if you would look into our example, what you could see is that you can&apos;t 
+see much. All you can see is little quarter shape on the top left of the visualization 
+and if you look into the code of the DOM, you will see that all the shapes are present. 
+However, they are all located in the default position of (0,0) in terms of coordinates, 
+even though the layout is calculating new positions constantly. 
+Now, we have connected them, but we are not keeping up with the changed position of the layouts. 
+
+What we need to do is take advantage of the events functionality of D3 to tell the
 shapes of our SVG to be updated in terms of position every time our layout is 
-calculating a new position for a certain node. This is handled by the
-tick event that is implemented by the force layout. 
+calculating a new position for a certain node. 
 
-The force layout in D3 actually
-implements three different events: a start event that is called when the
-event is first started, the tick event is called on every step of the
-simulation, meaning every time a new position is calculated for a node, this tick
-event is called on every node, and finally, an end-event that is called
-as soon as the simulation is stopped. We&apos;ll be taking advantage of the
-tick event for now and we will tell the force layout to do something as soon as there
-is a new simulation step completed, and this is something we are going to do.
+
+This is handled by the tick event that is implemented by the force layout. The 
+force layout in D3 actually implements three different events: a start event 
+that is called when the event is first started, the tick event is called on 
+every step of the simulation, meaning every time a new position is calculated 
+for a node, this tick event is called on every node, and finally, an end-event 
+that is called as soon as the simulation is stopped. 
+
+We&apos;ll be taking advantage of the tick event for now and we will tell the 
+force layout to do something as soon as there is a new simulation step completed.
+
 
 We are are going to take the positions for the nodes, calculated by this
 layout, and attach them to our SVG shapes, so the actual position on our graphic
 gets updated. Now, the position of the node, calculated by the
 simulation by the layout, is stored in an attribute on the data point called x, as you can
-see back here and y. So, these are the coordinates, calculated by the
+see back here and y. These are the coordinates, calculated by the
 layout. However, SVG uses a different attribute to define the position
-on the SVG graphics. 
+on the SVG graphics. These are called cx and cy. All we need to do now, is 
+assign the cx attribute the value of the data point x back here. 
 
-These are called cx and cy. So, all we need to do now, is
-we need to assign the cx attribute the value of the data point x back here. This is
-working the same way that we used a function to assign the line thickness
+This is working the same way that we used a function to assign the line thickness
 depending on the data in the previous video, and the same thing is working for the
 link down here, except, this time, we have four coordinates: two coordinates
 for the starting point of the line and two for the end point of the line. 
 
+
+
 And, if we now take a look again at our example, you can see there is a nice-looking
 graph that gets updated dynamically as soon as the node positions change in the
 layout and if you want to see this in action and actually move around, please take a
-look at our demo videos. Now, one more thing, we would like to add in this
+look at our demo lesson. 
+
+
+Now, one more thing, we would like to add in this
 and which is also a great example for the use of events is some sort of user 
 interactivity, meaning, we can click around the graph, maybe drag them around, 
 maybe transform the shape of a graph by clicking around.
@@ -5510,12 +5545,14 @@ here to select the current node that has been clicked on using D3. So, D3
 selects this and then we can change any attribute, we can assign new attributes to
 this node itself. In this case, we&apos;ll change the radius attribute, meaning the
 size of the circle to 20. In our case, this will increase the size of the node to 20
-from 5 as it was before. If you click on the red node, it will change 
-its shape from what you see on the left to what you see on the right.
+from 5 as it was before. 
 
-However, this would happen instantly. Sometimes, it would be nice to create a
-smoother transition and have a bit of a nicer animation. Luckily, D3 also
-supports animations. 
+If you click on the red node, it will change its shape from what you see on the 
+left to what you see on the right. However, this would happen instantly. Sometimes, 
+it would be nice to create a smoother transition and have a bit of a nicer animation. 
+Luckily, D3 also supports animations. 
+
+
 
 Of course, it would sometimes be nice to have a bit of a
 smoother transition between the two sizes. This is where animations come in. D3
@@ -5524,29 +5561,36 @@ the new attribute value, we tell D3 that we wanted animated, they call in the
 transition function and we will also then specify a duration
 for this transition. In this case, we&apos;ll use 750 milliseconds. 
 
-So, if you then go back to our example and click on the red node, it will slowly increase
+
+
+If you then go back to our example and click on the red node, it will slowly increase
 its size over the course of seven hundred and fifty milliseconds until it stops
 when we have the right configuration. 
-
 This has shown you how events can be used to keep track with internal changes 
-and also provide some interactive features. If you would like to know more, 
+and also provide some interactive features. 
+
+If you would like to know more, 
 see more examples of different events that you can implement and get a bit 
 more detail of how it actually works in the code, please refer to our demo video.
 
-<h3 id="ch4-7">4.7 Summary Module 4 - API calls and Data Visualization (0:57)</h3>
+<h3 id="ch4-7">4.7 Summary - API calls and Data Visualization (0:57)</h3>
+
+
 
 Thank you, Dennis, for this introduction to data visualization in
 JavaScript!
+
+
 
 Summing up this module, we can use data visualization to effectively
 communicate data.
 
 Currently, there are three dominant techniques to visualize data on the
-web.
-
-These are HTML elements, canvas and SVG. One of the most popular
+web. These are HTML elements, canvas and SVG. One of the most popular
 libraries to visualize data with JavaScript is D3. It allows us to bind data to
 visual elements and then draw and transform these elements.
+
+
 
 Before we conclude this module, we recommend to remember these
 principles of data visualizations for more effective data
@@ -5556,64 +5600,76 @@ then summarize the course and say a few parting words.
 
 <h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
 
-Hello everyone! Welcome to the first demo video accompanying the API
-calls and
 
-data visualization lecture. In this first video, we&apos;re going to look at
-what we&apos;re 
-going to build in this lecture, the tools we use, some of the code
-structure of what is provided and we&apos;re going to make our first HTTP requests to our
-API to get some data to visualize. So, after this lecture, this is what we&apos;re
+Hello everyone! Welcome to the first demo video accompanying the API
+calls and data visualization lecture. In this first video, we&apos;re going to 
+look at what we&apos;re going to build in this lecture, the tools we use, some 
+of the code structure of what is provided and we&apos;re going to make our first 
+HTTP requests to our API to get some data to visualize. 
+
+
+
+After this lecture, this is what we&apos;re
 gonna have - a simple website. It has very a simple menu appear on navigation, the home
 page has some text, this is where we are at at the moment and a visualization
-page. 
-
-This one has a button and when I click this button, there will be an API called 
+page. This one has a button and when I click this button, there will be an API called 
 using HTTP requests that returns relationship data from characters of the Game of
-Thrones novels. If I click it, it will release that data and create a network
+Thrones novels. 
+
+
+If I click it, it will release that data and create a network
 visualization using the D3 library. And in this visualization, each of
 the nodes represents a character and the links between them represent their
 relationships. And at the end, we guys, are going to add a little bit of
 interactivity.
 
+
 If I click any of the nodes, they&apos;ll change their color and increase 
 in size. And on a double click, they should back down again and become red. 
 That&apos;s what we&apos;re going to build now. Let&apos;s take a
-look at what we&apos;re going to need first. So, let&apos;s close this one for
+look at what we&apos;re going to need first. Let&apos;s close this one for
 now. We&apos;re going to need a couple of tools. We&apos;re going to the browser.
-I&apos;m using Chrome, but Firefox and Safari will work just fine. You&apos;ll
-need a text editor. I&apos;m using Atom and if you&apos;re just starting out developing,
-especially in JavaScript, Atom is definitely a good way to go. It&apos;s a free and
-open-source editor.
+I&apos;m using Chrome, but Firefox and Safari will work just fine. 
 
-It&apos;s actually built in JavaScript and yeah it has tons of themes and
+
+You&apos;ll need a text editor. I&apos;m using Atom (https://atom-editor.css/) 
+and if you&apos;re just starting out developing, especially in JavaScript, Atom 
+is definitely a good way to go. It&apos;s a free and open-source editor.
+It&apos;s actually built in JavaScript and has tons of themes and
 extensions on plugins. Give it a go if you&apos;re not sure what to use.
 And then, I&apos;m also going to use a terminal emulator, or you know, a
 shell. I&apos;m using iterm2 at the moment, but any terminal that comes with OSX or
 any Linux distribution will work just fine. Make sure you have Node
-installed, however. So, let&apos;s take a little look at the code that is provided from
+installed, however. Let&apos;s take a little look at the code that is provided from
 previous lectures. 
+
 
 I&apos;m in the folder right now and there&apos;s a bunch of loose
 files and two folders app and public. The first thing to look at is the
 package.json, which is the heart of any Node application. It has a couple of things,
 like the name, the version and the description and it has some
 dependencies as well, which are very important, because we gonna need those to run
-our local server. The server itself is in the index.js. It is an express server.
+our local server. 
 
-So, all we gonna do later is type node in index.js and that will run the server for
-us. Now, all the server-side code is in the app folder. It has the
-controllers, the models and the views. These views are template files that will be
-rendered into HTML and then displayed in the browser. Just a quick recap about
-what&apos;s in the template of our visualization page - it extends the base view,
-which means they&apos;ll include things like the navigation and we don&apos;t have to
-type that code in any page that wants to use navigation, which is provided
-once and then we extend the other by using the other views. We&apos;re linking a
-stylesheet.
+The server itself is in the index.js. It is an express server. All we going
+to do later is type node in index.js and that will run the server for
+us. 
 
-That is just a simple CSS file that defines things like the color of the
-links between the nodes and we have the content block that has the title
-you&apos;ve seen before in the visualization on top, it defines the button and we
+Now, all the server-side code is in the app folder. It has the controllers, the 
+models and the views. These views are template files that will be rendered into 
+HTML and then displayed in the browser. 
+
+
+
+Just a quick recap about what&apos;s in the template of our visualization page 
+- it extends the base view, which means they&apos;ll include things like the 
+navigation and we don&apos;t have to type that code in any page that wants to 
+use navigation, which is provided once and then we extend the other by using 
+the other views. 
+
+We&apos;re linking a stylesheet. That is a simple CSS file that defines things 
+like the color of the links between the nodes and we have the content block that 
+has the title you&apos;ve seen before in the visualization on top, it defines the button and we
 have an empty root element that we will later populate using D3 with our
 visualization. And then for that to work, we also include some JavaScript 
 files down here. First one is a D3 library and then the second one is our
@@ -5621,32 +5677,38 @@ visualization.js where we will put our own code. One thing to note here is
 that this button has an attribute called onclick. So, anytime you click this 
 button, the following code is executed. In our case, it calls the loadData function.
 
-Now, to get to that loadData function, take a look at the public folder. This
-folder holds all the client-side JavaScript code. So, we have a lib folder that
-holds all the dependencies or the libraries you want to use. In this case,
-it&apos;s only the D3 library, if I actually need to look at that. 
 
-We have a visualization folder that has anything to do with visualization. In this case, it&apos;s
-our little stylesheet, just defining what the nodes and the links look like and it
-has the visualization.js, which is where all the magic is going to happen. So,
-this is what we&apos;re going to get later from the API and then create a
+
+Now, to get to that loadData function, take a look at the public folder. This
+folder holds all the client-side JavaScript code. We have a lib folder that
+holds all the dependencies or the libraries you want to use. In this case,
+it&apos;s only the D3 library, if I actually need to look at that.
+
+
+
+We have a visualization folder that has anything to do with visualization. In 
+this case, it&apos;s our little stylesheet, just defining what the nodes and 
+the links look like.
+
+
+And it has the visualization.js, which is where all the magic is going to happen. 
+This is what we&apos;re going to get later from the API and then create a
 visualization.
 
-So, we have two very empty functions at the moment. The first one is the
+We have two very empty functions at the moment. The first one is the
 loadData function and, remember, this gets called whenever we click our button.
 So, we gonna load data from the backend in this one and then we&apos;re going to
 send that data to the second function that will create the visualization on our
-page using D3. So, in order to get started, we need to use the code that we
-already have. 
+page using D3. 
 
-You need to run the server, so the client-side code gets
-executed and provides us with the API, so, we can get some data in this
-part here. Let&apos;s go to our terminal. I&apos;m already in the folder that holds all the code.
-I can list it here. I actually have a little shortcut for that command. So, if 
-you see me typing l, that is just the one above.
-What we need to do is basically run the index.js that will create a server and
-provide the API, so we can work with it. However, there&apos;s a little
-problem, though.
+In order to get started, we need to use the code that we already have. You need 
+to run the server, so the client-side code gets executed and provides us with 
+the API, so, we can get some data in this part here. Let&apos;s go to our 
+terminal. I&apos;m already in the folder that holds all the code. I can list it 
+here. I actually have a little shortcut for that command. If you see me typing l, 
+that is just the one above. What we need to do is run the index.js that will 
+create a server and provide the API, so we can work with it. However, 
+there&apos;s a little problem, though.
 
 If I run this, it&apos;ll crash, because it cannot find the express module
 it needs to run. So, let me just clear my screen here. What we need to do first
@@ -5655,12 +5717,11 @@ can just run npm install, because if you remember, taking a look back here,
 the package.json defines all the dependencies we need. So, I&apos;m going to
 run npm install. 
 
-Actually, npm i is enough, because if you type that a lot
-that actually saves some time. And after a short moment, we have all our
-dependencies installed. As I clear the screen again, you can see here, I
-can now type node index.js, run it. Mongoose connected to the database, the
-Express server is running and we can start getting some data from our
-API.
+Actually, npm is enough, because if you type that a lot that actually saves some 
+time. And after a short moment, we have all our dependencies installed. As I clear 
+the screen again, you can see here, I can now type node index.js, run it. Mongoose 
+connected to the database, the Express server is running and we can start getting 
+some data from our API.
 
 If we go back to the browser now, navigate to localhost:3000, we will
 already get our little page, because the server is running. And, these, what you can see
@@ -5681,6 +5742,8 @@ can see up here, we have a little message. And if I keep clicking this button, w
 will get more messages. So far, so good. Let&apos;s take a look at what we need to do
 to actually get some data from our API.
 
+
+
 We will be using the classic native JavaScript way to do it with an xml
 http request object. If you&apos;re lucky enough to develop only for modern
 browsers, the upcoming version of JavaScript actually has a new API, called Fetch. If
@@ -5688,29 +5751,28 @@ you are working in Node, you can also use it already, but for now we&apos;re jus
 use the classic way and as you can see for our little example here, it&apos;s really
 easy to use. 
 
-To actually get going, we need three steps. We need to create
+To get going, we need three steps. We need to create
 the HTTP request, then we need to define behavior after a successful request, so
 what are we going to do with the data that we received, and in the third step, we
 just need to send it off. Let&apos;s start at the beginning. We&apos;ll create a
 new variable that holds our request and it holds an instance of a XMLHttp
 Request Right. That&apos;s the first step - done. 
 
-Now we need to define what we actually want to do if the request was successful. And, the
+Now we need to define what we want to do if the request was successful. And, the
 request object implement a number of events. Those will be called at
 different times of the request and then the interaction with the backend. 
-For example, when the request makes first contact with the backend, there
-will be an event. 
 
-When the backend starts sending data, there will be an event and
+For example, when the request makes first contact with the backend, there will 
+be an event. When the backend starts sending data, there will be an event and
 there is also an event that gets fired as soon as the request successfully has
 transferred all the data from the backend and that&apos;s the one
-we&apos;ll be looking at. We can define the onload event now. What we&apos;re
-doing here is basically find a function that gets called every time the request is
+we&apos;ll be looking at. We can define the onload event now. 
+
+What we&apos;re doing here is find a function that gets called every time the request is
 done loading data from the backend. And now we can create a new variable
 called response that will hold the data sent from the back-end. To access it,
 we need to access the request. In this case, we can access access this with the
 this keyword and then we&apos;ll get the responseText. So, that&apos;s all that we need.
-
 However, this response text, as it says, is a string and in our case,
 because we know the API is sending JSON data, this text is actually a JSON string.
 
@@ -5720,6 +5782,8 @@ actually want to do with the data. In this first video, we&apos;re not going
 to do anything with it. The next one, we&apos;re gonna transform it in a way that
 we can use it with D3 later on, but for now, let&apos;s just log it to the console,
 so we can take a look at it. That&apos;s all we need to define here.
+
+
 
 The third step and the final step of sending an HTTP request is, we need
 to instantiate it using the open function. We need the open function to know what kind
@@ -5734,11 +5798,12 @@ route, it&apos;ll return the relationship data. And, finally, we have to send it
 off. That&apos;s it. It&apos;s all we need to get data from the backend using HTTP 
 request in JavaScript. The native way, no external libraries are needed. 
 
+<2 images>
+
 Let&apos;s get back to our browser, reload the page and click the button 
 again. As you can see, we get returned an array of objects and if we
 look a bit closer, these objects are relationships of characters. We have an
 object that has a couple of attributes. 
-
 Some of them are for internal use of the API and here are the interesting bits, 
 which is the source of the interaction and the target of the interactions, or 
 two characters, and the weight as well. And, these are all different interactions. 
@@ -5754,15 +5819,16 @@ to transform that data, so we can use it in the next lesson to create a
 graph visualization, like the one you can see here. The data is retrieved from
 our API in the first video was a list of relationships between characters in the
 Game of Thrones novels and you can actually see these relationships as
-the links between those points in this graph. Now, to build a graph like
-this, we need two things - we need the list of relationships, so the links, we also
-need the characters themselves who would represent the nodes. 
+the links between those points in this graph. 
 
-What we&apos;re going to do now is you&apos;re going to go through the list of relationships and
-extract a unique list of names, so we can connect them, as you can see here. 
-Let&apos;s take another look at what we did in the last video. I&apos;m going to go back to
-the terminal and in the folder where all our code is housed. Especially, in
-the top folder that has the index.js file. Now, I&apos;m going to start running
+Now, to build a graph like this, we need two things - we need the list of 
+relationships, so the links, we also need the characters themselves who would 
+represent the nodes. What we&apos;re going to do now is you&apos;re going to go 
+through the list of relationships and extract a unique list of names, so we can 
+connect them, as you can see here. Let&apos;s take another look at what we did 
+in the last video. I&apos;m going to go back to the terminal and in the folder 
+where all our code is housed. Especially, in the top folder that has the index.js 
+file. Now, I&apos;m going to start running
 our server again using the command node index.js. Our back-end is running on
 port 3000. I&apos;m going to close this one and go to localhost:3000, go back to our
 visualization page and, as you can remember, when I click the button, we
