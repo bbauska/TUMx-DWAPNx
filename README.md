@@ -109,7 +109,7 @@ pondering developing a mobile app for your next startup or just want to
 pad your toolbox with a highly sought out skill, this course is
 definitely for you!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-0">1.0 Introduction: JavaScript Overview (7:41)</h3>
+<h3 id="ch1-0">1.0 Introduction -- JavaScript Overview (7:41)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1209,7 +1209,7 @@ effectively write JavaScript code.
 In the next module, Dimitrii will talk about functions and objects, and
 show you how you can use those to structure your Javascript program.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2-0">2.0 Module 2: Functions and Objects (1:14)</h2>
+<h2 id="ch2-0">2.0 Introduction -- Functions and Objects (1:14)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -2375,9 +2375,7 @@ JavaScript code.
 <p>In the next module, Chris will show you how we can create JavaScript on
 the server-side using Node.js as well as other technologies.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-0">3.0 Server-side JavaScript (1:31)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Introduction -- Server-side JavaScript</h3>
+<h3 id="ch3-0">3.0 Introduction -- Server-side JavaScript (1:31)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Welcome to the server-side JavaScript module! JavaScript was developed
 as a scripting language that can only be run in the web browser.
@@ -3589,7 +3587,7 @@ previous lesson we have seen the models and the controls. I invite you
 to look more at our code together with me in the demonstration, which is
 going to follow this lesson.
 
-<h3 id="ch3-7">3.7 Summary Module 3 - Server-side JavaScript (1:00)</h3>
+<h3 id="ch3-7">3.7 Summary - Server-side JavaScript (1:00)</h3>
 
 Thank you, Chris, for covering server-side JavaScript. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4475,42 +4473,53 @@ this code more reusable. That's it.
 Dennis is going to talk to you about the visual part of our application. In his example 
 application, there will be also views defined inside of the code, which I am 
 missing in this code, simply because out of simplicity. This is just an API. 
-
 In the views part, even if you navigate to index.js, there will be some new 
 lines of code, which you should look into. They are interesting and I&apos;m 
 very sure that if you understand those lines of code, you actually understand 
 how the application works.
-
 That is a good test for you to try out and have fun.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-0">4.0 API calls and Data Visualization (1:01)</h3>
+<h3 id="ch4-0">4.0 Introduction -- API calls and Data Visualization (1:01)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Module 4 - Introduction</h3>
-
-Welcome to the data visualization module. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 223 data visualization turn information to knowledge (145) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 223 data visualization introduction (4.0) (143) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image223.png" 
   title="Data visualization turn information to knowledge"
   alt="Data visualization turn information to knowledge."
   style="border: 2px solid #000000; width:40%;" />
 </p>
+
+Welcome to the data visualization module. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 what is data visualization? (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image224.png" 
+  title="What is data visualization?"
+  alt="What is data visualization?"
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Data visualization is an important aspect of data analysis. Creating images, 
 diagrams and animations help us in the process of analysis and data communication. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 covered in this module (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 225 data visualization turns information to knowledge (144) ~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image224.png" 
-  title="Covered in this module"
-  alt="Covered in this module."
+  <img src="./images/image225.png" 
+  title="Data visualization turns information to knowledge"
+  alt="Data visualization turns information to knowledge."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 In this example, we can see that by simply visualizing a large number of data 
 points into a graph, we can start recognizing patterns and trends in our data. 
 Over the past couple of decades, more and more data is communicated online and 
 so JavaScript is playing a unique role in enabling data visualization. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 226 covered in this module (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image226.png" 
+  title="Covered in this module"
+  alt="Covered in this module."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 In this module, Dennis will survey the current techniques we use to visualize 
 data on the web. Dennis will then show how we can use the powerful JavaScript 
 library D3 to tell the story of our data in a web browser. Dennis Schwartz is a 
@@ -4519,14 +4528,21 @@ visualization tools and he&apos;s passionate about open-source communities.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-1">4.1 Data Retrieval using HTTP Requests (7:48)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 227 data visualization - data retrieval using http requests (145) ~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image227.png" 
+  title="4.1 Data Retrieval using HTTP Requests"
+  alt="4.1 Data Retrieval using HTTP Requests."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Welcome everyone to this part of our course!
 
 This part will deal with data visualization and we&apos;ll start off with
 data retrieval using HTTP requests.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~ 225 Outlook - Web-based visualization with relationship data from a novel (146) ~~~~~-->
+<!--~~~~~~ 228 outlook - web-based visualization with relationship data from a novel (146) ~~~~~-->
 <p align="center">
-  <img src="./images/image225.png" 
+  <img src="./images/image228.png" 
   title="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API"
   alt="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API."
   style="border: 2px solid #000000; width:40%;" />
@@ -4544,9 +4560,9 @@ You might have heard of it. We will then use this data that we retrieved from
 the API and create a nice graph visualization of the interactions of these 
 characters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 226 outlook - web-based visualization using d3 and pug (146) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 229 outlook - web-based visualization using d3 and pug (146) ~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image226.png" 
+  <img src="./images/image229.png" 
   title="Outlook - Web-based visualization using D3 and Pug"
   alt="Outlook - Web-based visualization using D3 and Pug."
   style="border: 2px solid #000000; width:40%;" />
@@ -4555,9 +4571,9 @@ We will use the <b>Pug</b> templating engine that you have been presented
 in the last part of this course to create the site and then use the D3.js library for the
 visualization itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 227 data retrieval, #1 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 230 data retrieval, #1 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image227.png" 
+  <img src="./images/image230.png" 
   title="Data retrieval, #1"
   alt="Data retrieval, #1."
   style="border: 2px solid #000000; width:40%;" />
@@ -4568,9 +4584,9 @@ The back-end is the Node.js application that you were presented previously
 and at this point, we&apos;re going to look at the front-end, which is going to 
 be the website.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 228 data retrieval, #2 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 231 data retrieval, #2 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image228.png" 
+  <img src="./images/image231.png" 
   title="Data retrieval, #2"
   alt="Data retrieval, #2."
   style="border: 2px solid #000000; width:40%;" />
@@ -4579,9 +4595,9 @@ This website will also contain JavaScript and JavaScript will be used to
 query our API for the relationships of these characters, which we&apos;ll then return
 them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 229 content creation with pug, #1 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 232 content creation with pug, #1 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image229.png" 
+  <img src="./images/image232.png" 
   title="Content creation with Pug, #1"
   alt="Content creation with Pug, #1."
   style="border: 2px solid #000000; width:40%;" />
@@ -4589,9 +4605,9 @@ them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
 The first step in this is to use the <b>Pug</b> templating and engine and
 compile template into an HTML file that will be displayed in a web browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 230 content creation with pug, #2 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 233 content creation with pug, #2 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image230.png" 
+  <img src="./images/image233.png" 
   title="Content creation with Pug, #2"
   alt="Content creation with Pug, #2."
   style="border: 2px solid #000000; width:40%;" />
@@ -4600,9 +4616,9 @@ compile template into an HTML file that will be displayed in a web browser.
 Then, with the help of JavaScript, we will create the backend server and
 get the data from there.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 231 creating a page for the visualization (148) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 234 creating a page for the visualization (148) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image231.png" 
+  <img src="./images/image234.png" 
   title="Creating a page for the visualization"
   alt="Creating a page for the visualization."
   style="border: 2px solid #000000; width:40%;" />
@@ -4618,9 +4634,9 @@ We don&apos;t have to include the code for navigation in every site. The
 <b>visualization.pug</b> file is where the content for our visualization 
 page will be hosted and we&apos;ll try to have a look at that in a second.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 232 creating a simple page for the visualization, #1 (149) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 235 creating a simple page for the visualization, #1 (149) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image232.png" 
+  <img src="./images/image235.png" 
   title="Creating a simple plage for the visualization, #1"
   alt="Creating a simple plage for the visualization, #1."
   style="border: 2px solid #000000; width:40%;" />
@@ -4639,9 +4655,9 @@ For one, we used the D3 library. So, we have that one linked and then we
 have another JavaScript file linked that will host the code for data retrieval and
 visualization.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 233 creating a simple page for the visualization, #2 (150) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 236 creating a simple page for the visualization, #2 (150) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image233.png" 
+  <img src="./images/image236.png" 
   title="Creating a simple page for the visualization, #2"
   alt="Creating a simple page for the visualization, #2."
   style="border: 2px solid #000000; width:40%;" />
@@ -4657,11 +4673,11 @@ create direct request to our API, receive the data and then create the visualiza
 And, finally, we have one more div with the ID root. This is where we&apos;ll 
 inject the visualization using JavaScript and D3. So, this is what the page looks like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 234 creating a simple page for the visualization (150) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 237 creating a simple page for the visualization, #3 (150) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image234.png" 
-  title=""
-  alt="."
+  <img src="./images/image237.png" 
+  title="Creating a simple page for the visualization, #3"
+  alt="Creating a simple page for the visualization, #3."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Again, it has the navigation bar on top, it has a title. In this case visualization 
@@ -4670,21 +4686,22 @@ and a button that when pressed will initialize the visualization and data retrie
 Let&apos;s have a look at what the data retrieval actually looks like. This 
 will happen in the JavaScript file. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 235  (151) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 238 data retrieval from an api (151) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image235.png" 
-  title=""
-  alt="."
+  <img src="./images/image238.png" 
+  title="Data retrieval from an API"
+  alt="Data retrieval from an API."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-You can find the file in the visualization folder, which is hosted in the public 
-folder of our application. The script.js will host all the code we need. 
+You can find the javascript file (script.js) in the visualization folder, which 
+is hosted in the public folder of our application. The script.js will host all 
+the code we need. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 236  (152) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 239 creating http-requests using javascript (151) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image236.png" 
-  title=""
-  alt="."
+  <img src="./images/image239.png" 
+  title="Creating HTTP-Requests using JavaScript"
+  alt="Creating HTTP-Requests using JavaScript."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Let&apos;s talk about that code. Creating HTTP requests is a classic application 
@@ -4694,11 +4711,10 @@ There are many libraries out there, which try to make this a very simple task.
 jQuery is a very popular one, but we will try to stick with the built-in JavaScript 
 functions for now. One way of doing that is the so-called XMLHttpRequest object that 
 is built into JavaScript. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 237  (152) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 240 creating http-requests using javascript, #2 (152) ~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image237.png" 
+  <img src="./images/image240.png" 
   title=""
   alt="."
   style="border: 2px solid #000000; width:40%;" />
@@ -4712,13 +4728,12 @@ For example, when the request arrives at the back-end, there&apos;s an event for
 that. When it starts sending data, there&apos;s a second event for that. And 
 there&apos;s another event when it is finished with transferring the data back 
 to the front-end. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 238  (153) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 241 a common xmlhttprequest application (153) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image238.png" 
-  title=""
-  alt="."
+  <img src="./images/image241.png" 
+  title="A common XMLHttpRequest application"
+  alt="A common XMLHttpRequest application."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 And this is the one we will be looking at on the next slide.
@@ -4747,16 +4762,23 @@ onload function presented before.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-2">4.2 Data Visualization with D3 (7:52)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 242 data visualization with d3 (4.2) (154) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image242.png" 
+  title="4.2 Data Visualization with D3"
+  alt="4.2 Data Visualization with D3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Hi and welcome to the next part of this lecture! In this part, we&apos;re
 going to discuss data visualization. Now, that we have the data retrieved from an
 API, we will try and create a nice-looking graph from the character interactions
 of the Storm of Swords novel. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 239  (154) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 243 why visualization? (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image239.png" 
-  title=""
-  alt="."
+  <img src="./images/image243.png" 
+  title="Why visualization?"
+  alt="Why visualization?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4778,11 +4800,11 @@ to at least two percentage points and even more complex things, such as a linear
 regression line are almost identical for all these four distributions. You would 
 assume that they follow a very similar pattern, that they are even mostly identical. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 240 why visualization? (155) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 244 why visualization, #2? (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image240.png" 
-  title=""
-  alt="."
+  <img src="./images/image244.png" 
+  title="Why visualization, #2?"
+  alt="Why visualization, #2?"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4792,9 +4814,9 @@ This is the reason why visualization is vital for data exploration and by now it
 has become a very common theme to use visualization on the web, and for that we 
 use JavaScript, obviously. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 241 visualization on the web (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245 visualization on the web (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image241.png" 
+  <img src="./images/image245.png" 
   title="Visualization on the web"
   alt="Visualization on the web."
   style="border: 2px solid #000000; width:40%;" />
@@ -4806,9 +4828,9 @@ left side of the slide.
 Today, we&apos;ll be using D3 and we&apos;ll talk a little bit about why we will 
 be using D3 in a minute. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 242 three ways to visualize data in the browser (156) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 246 three ways to visualize data in the browser (156) ~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image242.png" 
+  <img src="./images/image246.png" 
   title="Three ways to visualize data in the browser"
   alt="Three ways to visualize data in the browser."
   style="border: 2px solid #000000; width:40%;" />
@@ -4850,9 +4872,9 @@ independent. The problem, however, is that if you have a lot of elements and
 shapes to draw, as in thousands, it can become very slow and we would probably 
 need to move to a WebGL or canvas-based visualization.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 243 data-driven documents (d3) (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 247 data-driven documents (d3) (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image243.png" 
+  <img src="./images/image247.png" 
   title="Data-Drive Documents (D3)"
   alt="Data-Drive Documents (D3)."
   style="border: 2px solid #000000; width:40%;" />
@@ -4871,9 +4893,9 @@ elements or any other kind of HTML elements. The main point for D3 is the
 way that data binding works with D3 and let&apos;s talk about what that actually 
 means. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 244 data binding starcolor == 'blue' (157) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 248 data binding starcolor == 'blue' (157) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image244.png" 
+  <img src="./images/image248.png" 
   title="Data binding; var starColor == 'blue'"
   alt="Data binding; var starColor == 'blue'."
   style="border: 2px solid #000000; width:40%;" />
@@ -4890,9 +4912,9 @@ are bound together, meaning that if either the star color variable in our script
 changes, for example, programmatically, that will also influence the
 color of the star on the website immediately and vice versa as well. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 245 data binding starcolor == 'red' (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 249 data binding starcolor == 'red' (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image245.png" 
+  <img src="./images/image249.png" 
   title="Data binding; var starColor == 'red'"
   alt="Data binding; var starColor == 'red'."
   style="border: 2px solid #000000; width:40%;" />
@@ -4902,11 +4924,11 @@ If the star
 color on the website is, for example, through user interaction influenced, this will
 be reflected in our code and data as well. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 246 data binding in d3 (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250 data binding in d3 (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image246.png" 
-  title="Data binding in D3"
-  alt="Data binding in D3."
+  <img src="./images/image250.png" 
+  title="Data binding in D3: D3 allows the user to bind arbitrary data to the DOM"
+  alt="Data binding in D3: D3 allows the user to bind arbitrary data to the DOM."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4921,16 +4943,24 @@ graph using D3.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-3">4.3 DOM and SVG (8:01)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 251 data visualization - dom and svg (4.3) (159) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image251.png" 
+  title="4.3 DOM and SVG"
+  alt="4.3 DOM and SVG."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
 Welcome to the next part of our lesson on data visualization!
 This time we&apos;re going to talk about DOM and SVG. DOM stands for the Document 
 Object Model and to talk more about that, we have to look at the structure of 
 an HTML file.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 247  (159) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 252 the document object model (dom) (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image247.png" 
-  title=""
-  alt="."
+  <img src="./images/image252.png" 
+  title="The Document Object Model (DOM)"
+  alt="The Document Object Model (DOM)."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4955,11 +4985,11 @@ an opening tag, then there is more content and then there&apos;s a closing tag.
 
 This example here is actually the compiled version of our visualization site.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 248  (14x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 253 the dom - html, head, body (160) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-  <img src="./images/image248.png" 
-  title=""
-  alt="."
+  <img src="./images/image253.png" 
+  title="The DOM - html, head and body"
+  alt="The DOM - html, head and body."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -4968,10 +4998,20 @@ you want to look at it in a different way, you could also see it like this.
 The html data tag itself contains everything else in the website.
 
 On the first level, the head and body tags, which themselves also
-contain more data. The head contains the meta data for the website;
+contain more data. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 254 the dom - html, head, body, title, link, div & script (161) ~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image254.png" 
+  title="The DOM Tree Structure - html, head, body, title, link, div &amp; script"
+  alt="The DOM Tree Structure - html, head, body, title, link, div &amp; script."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+The head contains the meta data for the website;
 for example, the title of the page or it links to stylesheets.
 And, again, HTML is there to structure the data and the linked
-stylesheets then decide what it actually should look like in the browser.
+stylesheets then decide what it should look like in the browser.
 
 Now to the right: the body contains the actual content of the HTML page, such 
 as, in this case, script files and a div, like a division element, that is 
@@ -4982,14 +5022,22 @@ you turn it on its head, the top part is also called the root and then it branch
 out into more and more complicated structure. You could also call it the model 
 for all the objects that are contained in the document.
 
-that&apos;s why, this tree structure is what we mean when we refer to the document 
+That&apos;s why, this tree structure is what we mean when we refer to the document 
 object model or DOM for short. And, then, when we talk about DOM manipulation, 
 we talk about manipulating this object, for example, by changing, deleting or 
 adding new elements to the whole structure.
 
 For example, we could add more data to this div element, which again could be 
-pictures or text or, in our case, the SVG elements for our visualization. When 
-we talk about data binding in D3, what we actually mean by that is that D3 is 
+pictures or text or, in our case, the SVG elements for our visualization. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 255 data binding in d3 (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image255.png" 
+  title="Data binding in D3"
+  alt="Data binding in D3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+When we talk about data binding in D3, what we actually mean by that is that D3 is 
 able to create DOM elements or update, or delete them dynamically based on the 
 data it has.
 
@@ -5000,43 +5048,75 @@ from the &quot;Network of Thrones&quot; dataset.
 Technically, as I said before, D3 could create all sorts of DOM elements. We 
 could create a table from this data and we could create text. But in our case 
 we would like to have a nice looking graphics. We are going to use Scalable 
-Vector Graphics. We&apos;re going to talk about them next. What are Scalable 
-Vector Graphics? First of all, SVG is a flexible solution for drawing on a web 
-site and visualizations and it is also very good for graph drawing.
+Vector Graphics. We&apos;re going to talk about them next. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 256 what are scalable vector graphics (svg)? (162) ~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image256.png" 
+  title="What are Scalable Vector Graphics (SVG)?"
+  alt="What are Scalable Vector Graphics (SVG)?."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+<h4>What are Scalable Vector Graphics?</h4>
+
+First of all, SVG is a flexible solution for drawing on a web 
+site and visualizations and it is also very good for graph drawing.
 In contrast to a classic picture, like a JPEG or a bitmap that is a bunch of 
 pixels, SVG is actually also a XML based markup language similar to HTML in a
-way. The great advantage of that is that we can add SVG elements into our HTML 
+way. 
+
+The great advantage of that is that we can add SVG elements into our HTML 
 file and they become part of the document object model and because they then
 implement all the features of regular HTML elements, it becomes a very animation 
 friendly and it becomes very interactive, because just as a button or as a link, 
-the elements register when they get clicked on.
+the elements register when they get clicked on. And besides drawing shapes, you 
+can also render text in SVG. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 257 scalable vector graphics (svg), ii (163) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image257.png" 
+  title="Scalable Vector Graphics (SVG) II"
+  alt="Scalable Vector Graphics (SVG) II."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-And besides drawing shapes, you can also render text in SVG. Let&apos;s have a 
-look at how it works. You can see a much more simplified HTML version. At the 
-body, we added a simple SVG element. The element itself again has a tag ID, in 
-this case it&apos;s svg, and as a closing tag slash svg.
+Let&apos;s have a look at how it works. You can see a much more simplified HTML 
+version. At the body, we added a simple SVG element. 
 
-And it also has a number of attributes. The root SVG element just has the 
-dimensions attribute, such as the height and the width and then the child 
-nodes of this element contain the actual shapes to draw.
-
+The element itself again has a tag ID, in this case it&apos;s svg, and as a 
+closing tag slash svg. And it also has a number of attributes. The root SVG 
+element just has the dimensions attribute, such as the height and the width 
+and then the child nodes of this element contain the actual shapes to draw.
 In this case, it&apos;s a single path element and path element our freestyle 
 shapes, so to say, where the shape of the element is defined by the user, in 
-this case through the id attribute. As you can see, it looks quite complex and 
-complicated, even though the resulting shape on the right is a simple triangle.
+this case through the id attribute. 
 
-Now, obviously, if you want to create more complex animations and graphics, 
-we would like to automate this process. And this is again where D3 comes in.
+As you can see, it looks quite complex and complicated, even though the resulting 
+shape on the right is a simple triangle. Now, obviously, if you want to create more 
+complex animations and graphics, we would like to automate this process. 
+
+And this again is where D3 comes in.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 258 scalable vector graphics (svg), iii (164) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image258.png" 
+  title="Scalable Vector Graphics (SVG) III"
+  alt="Scalable Vector Graphics (SVG) III."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Here, you can see a more complex example on the top. You see the SVG element 
 with six sub elements or child elements. Three of them are circles, three of 
 them lines and you can see the result on the bottom right. It&apos;s a simple 
-graph with three nodes and three links. Now, the color and the shape of all 
-these objects is for one determined by the type of object, such as a line or a 
-circle, but it is also determined by the number of attributes that can be found 
-in these elements. And this is where we can determine most of the features of 
-such a shape, and where D3 can greatly help us.
+graph with three nodes and three links. 
+
+Now, the color and the shape of all these objects is for one determined by the 
+type of object, such as a line or a circle, but it is also determined by the 
+number of attributes that can be found in these elements. And this is where we 
+can determine most of the features of such a shape, and where D3 can greatly 
+help us.
 
 In the next section of this lesson, we will take a deeper look into how data 
 binding works in D3, and how we can use it to dynamically create these kinds of
@@ -5044,9 +5124,27 @@ shapes and graphics.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-4">4.4 Data binding with D3 (14:37)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our lecture about data visualization! In this part, we&apos;ll 
+Welcome back to our lecture about data visualization! 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 259 data visualization - data binding with d3 (165) ~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image259.png" 
+  title="4.4 Data Visualization - Data binding with D3"
+  alt="4.4 Data Visualization - Data binding with D3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+In this part, we&apos;ll 
 take a closer look onto data binding with D3 and we will also create a graph 
 model that will then translate into a visualization on our site.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ 260 graph layout calculation requires a graph model (165) ~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image259.png" 
+  title="Graph layout calculation requires a graph model"
+  alt="Graph layout calculation requires a graph model."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 First off, to create a graph visualization we need two parts. We need a mathematical 
 model of a graph that we&apos;ll use to calculate aesthetically pleasing positions 
