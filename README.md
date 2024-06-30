@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/28/2024 11+am"
+date last editted: "6/29/2024 8+pm"
 output: 
   markdown:
     with some style
@@ -5134,9 +5134,9 @@ Welcome back to our lecture about data visualization!
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
-In this part, we&apos;ll 
-take a closer look onto data binding with D3 and we will also create a graph 
-model that will then translate into a visualization on our site.
+<p>In this part, we&apos;ll take a closer look onto data binding with D3 and we 
+will also create a graph model that will then translate into a visualization 
+on our site.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 260 graph layout calculation requires a graph model (166) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -5153,7 +5153,14 @@ positions to the shapes of our actual visualization.
 
 This is where the data binding part comes in. We&apos;ll bind the node position 
 to the position of the shapes in our graph visualization.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 261 creating an empty graph model (167) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image261.png" 
+  title="Creating an empty graph model"
+  alt="Creating an empty graph model."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 To start off, we&apos;ll start off with the graph model itself and D3
 provides a number of layouts for graphs right out of the box. We will be using a force
@@ -5170,15 +5177,20 @@ For this to happen, we need to set a number of options on our force
 layout. You can see them down here on the bottom. There are things such as the
 charge, which is the force, which interacts for the strength of the force
 between the nodes, the link distance, meaning the default length of connection
-between nodes, and it will also have to give the whole simulation the size. So,
-we need to set the dimension of the area in which the nodes can move and we
-obviously want this to be the same size as our graphic on the screen later on. 
+between nodes, and it will also have to give the whole simulation the size. 
 
+We need to set the dimension of the area in which the nodes can move and we
+obviously want this to be the same size as our graphic on the screen later on. 
 We&apos;ll use two variables for width and height, which we&apos;ll pass to the 
 size function and we&apos;ll also reuse them later for the size of our graphic.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262 adding data to the model (168) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image262.png" 
+  title="Adding data to the model"
+  alt="Adding data to the model."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 One more thing we actually need for our graph model is obviously the data 
 itself and the graph layout provided by D3 has two more functions we can call 
 to actually pass that data. They are called nodes and links, and we&apos;ll 
@@ -5191,15 +5203,27 @@ Finally, to actually start the simulation, we have to call the start
 function. The start function will cause D3 to initialize a number of
 things internally and we will kind of come back to that in a later
 slide.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 263 initializing the visualization (169) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image263.png" 
+  title="Initializing the visualization"
+  alt="Initializing the visualization."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Now, that we have the data model for our graph layout initialized, we&apos;ll 
 move on to actually initialize the visualization and then we&apos;ll try to 
 bind the model and the position of the nodes to the graphics and the position 
 of the shapes on that graphic.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 264 initializing the visualization, #2 (169) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image264.png" 
+  title="Initializing the visualization, #2. D3 supports CSS3 selectors"
+  alt="Initializing the visualization, #2. D3 supports CSS3 selectors."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 What we need to do to initialize the visualization is we now 
 have to use D3 to manipulate our DOM. In this case, we would like to set or 
@@ -5227,8 +5251,14 @@ element that has the class root attached to it. So, in this case, instead of
 selected by ID, I&apos;m selecting by CSS class and we talk a little bit more 
 about that later as well. But for now, if you see #root that just means I want 
 to select the DOM element, which has the ID root.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 265 initializing the visualization, #3 (170) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image265.png" 
+  title="Initializing the visualization, #3. D3 supports CSS3 selectors"
+  alt="Initializing the visualization, #3. D3 supports CSS3 selectors."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 This is what we&apos;re actually going to do now. We&apos;ll take D3, we&apos;ll 
 select the root ID from our HTML file and then we&apos;ll tell it - now that you 
@@ -5239,11 +5269,26 @@ SVG. In this case, we&apos;ll set the dimensions.
 And, as I mentioned before, these dimensions need to be the same as the
 ones of our actual mathematical simulation of the node positions. So, we will
 reuse the width and height variables that we set before. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 266 initializing the visualization, #4 (171) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image266.png" 
+  title="Initializing the visualization, #4. D3 supports CSS3 selectors"
+  alt="Initializing the visualization, #4. D3 supports CSS3 selectors."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 And if you execute this, we get what you wanted. We created a new DOM element, 
 in this case, this SVG element as a child element of our root div with the 
 correct dimensions.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 267 initializing the visualization, #5 (171) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image267.png" 
+  title="Initializing the visualization, #5. D3 works with selectors and joins"
+  alt="Initializing the visualization, #5. D3 works with selectors and joins."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 The next thing we need to do is we need to populate this SVG elements
 with shapes corresponding to our graph model.
@@ -5279,8 +5324,14 @@ we remove a node, for example, and the data on the left, this should
 also be represented in our graphic on the right and if, for example, the user
 could remove nodes on the graph in our graphic, we would then like to relay
 this information back to our data and keep it consistent.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 268 selections in d3 (173) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image268.png" 
+  title="Selections in D3"
+  alt="Selections in D3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now let&apos;s take a look how we can use D3 to add new elements to our graphic.
 Potentially you could think that we could use the same technique that we used 
 to create the SVG element before to also create the shapes on the SVG itself. 
@@ -5300,8 +5351,14 @@ basically passes all three links or three data points to the selection and
 compares them, and we now have two sets of elements. We have the empty set 
 of elements in the SVG and we have a set of three data points in our data.
 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 269 selections in d3, #2 (174) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image269.png" 
+  title="Selections in D3, #2"
+  alt="Selections in D3, #2."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, we would like to combine those together, so that for each data point we also have an element on
 our graphic. So, again, the links on the left side - three data points we
 would like to now represent those on the right on our graphic as well.
@@ -5310,8 +5367,14 @@ If you think in terms of sets, this is only one of three possible
 outcomes. You could, for example, also imagine that we have elements on our data, I&apos;m sorry, on
 our graphic on the right, but not in our data or you could imagine that we
 already have the same elements on both, the right side and the left.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 270 selections in d3, #3 (174) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image270.png" 
+  title="Selections in D3, #3"
+  alt="Selections in D3, #3."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 These are three outcomes that you could have when comparing two sets: on the 
 left in yellow, you have the set of data points and on the right you have the 
 set of elements on our page. And D3 provides a function for each of the three 
@@ -5325,7 +5388,14 @@ to just deal with all the data points that are already in data and our elements,
 but, for example, have been updated in the data or the website, we use the update
 function.
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 271 selections in d3, #4 (175) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image271.png" 
+  title="Selections in D3, #4"
+  alt="Selections in D3, #4."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 To have it again in text: we use the enter function of D3 to deal with
 every data point that does not have a corresponding DOM element yet, and we can
@@ -5339,9 +5409,14 @@ from the webpage that are not in the data anymore.
 And then, if we have a number of elements that are in the data and on the site 
 as well, we use the update function, for example, to update any attributes that 
 might have changed.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 272 selections in d3, #5 (176) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image272.png" 
+  title="Selections in D3, #5"
+  alt="Selections in D3, #5."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If we do this, you can see, we get the desired outcome on the right. On the left, 
 let&apos;s go through it again, we select all the links or all the elements that 
 have a link class in our SVG, which will return an empty set. We&apos;ll also use 
@@ -5363,45 +5438,89 @@ next lecture.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-5">4.5 Controlling Element Styles (8:13)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<!--~~~~~~~~~~~~~~~~ 273 data visualization - controlling element styles (177) ~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image273.png" 
+  title="Data Visualization - Controlling element styles"
+  alt="Data Visualization - Controlling element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 In this part of our data visualization lecture, we&apos;ve been talking about 
 controlling element styles using D3. Chris mentioned CSS a couple of times before 
 in this lecture. So, now we&apos;re going to take a closer look into what it is 
 and how we can use D3 to actually use it. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 274 cascading style sheets (css) adding styles to elements (177) ~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image274.png" 
+  title="Cascading Style Sheets (CSS). Adding styles to elements"
+  alt="Cascading Style Sheets (CSS). Adding styles to elements."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 CSS stands for cascading style sheets. And while HTML is responsible for structuring 
 the data on a website, CSS is actually responsible for how it looks. And if you 
 take a look into the code provided to you during the Node.js example in the 
 visualization folder, you will find a style CSS file. You can see the content of 
 that on the right. In the previous example, we used CSS classes as a label to 
 denote a line element as a link. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 275 d3 provides access to element styles (178) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image275.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 You can see it here. So, while we attached this attribute class
 and set it to link to our line element in the SVG, besides labeling it as a link,
 we also attached all the styles to find in the CSS class linked to it. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 274 cascading style sheets (css) adding styles to elements (178) ~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image274.png" 
+  title="Cascading Style Sheets (CSS). Adding styles to elements"
+  alt="Cascading Style Sheets (CSS). Adding styles to elements."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 In this case, as you can see down here, we set a stroke of the color gray because this
 hashtag 999 is a hex code for the curve for the gray color. And we also set a stroke
 opacity, meaning this stroke, or the color of the line, should be slightly
 transparent. And on top, you can also see with a similar CSS class for nodes. In this
 case, we also set a stroke with a white color with the width of 1.5 points. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 276 d3 provides access to element styles (179) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image276.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 If we go back to our code, you can see on the right that the class link has been 
 attached to the links between the nodes and the color of these links is actually 
 gray and it&apos;s slightly opaque. Also, as you can see it here on the nodes, 
 the links don&apos;t actually touch the nodes directly. This is due to the fact 
 that the node has a 1.5 width stroke of the white color. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 277 d3 provides access to element styles (179) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image277.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If we would have a black background, you would actually see a white line around 
 the nodes, which we have set in the CSS file up here. 
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 278 d3 provides access to element styles (180) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image278.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now let&apos;s imagine, we would like to change around the width of our
 links. We could go back into CSS and actually change the stroke width in the CSS
 file. But, it would be much nicer to be able to have access to these sort of
@@ -5417,8 +5536,14 @@ How about we would like to change the width of these connections depending on
 something we have in our data, for example? Or set them each to a different 
 width? Usually, you would have to create a new CSS class for each width you&apos;d 
 like to have, which sounds like a lot of effort and requires a lot of redundancy.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 279 d3 provides access to element styles (181) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image279.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Instead let&apos;s take another look into our data. We have two links data that 
 you&apos;ve seen before. What you haven&apos;t seen before is that there are some 
 ellipses here and if we expand that in a single data
@@ -5437,9 +5562,14 @@ Instead of directly setting the width of all the links
 to two, we would like to access the data directly, extract the weight
 value and set it to this one. Luckily, in D3, this link variable 
 up here contains every link element that is in our SVG graphic. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 280 d3 provides access to element styles (182) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image280.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 That means that as soon as we call the enter function here, anything that comes 
 below this will actually be applied to every single link element in our data. 
 This means, we can also access whatever data is stored in this link element.
@@ -5451,9 +5581,14 @@ all we now need to do is we need to extract the weight attribute from the
 parameter and set the stroke width to this parameter. As you can see, on the right, we
 now have a different stroke width for all the links depending on how intensive
 the interaction between the nodes or characters actually is. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 281 d3 provides access to element styles (182) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image281.png" 
+  title="D3 provides access to element styles"
+  alt="D3 provides access to element styles."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 One more thing you would usually like to do in a case like this, is you would 
 like to normalize the data to a certain degree, because the weight can differ 
 drastically, but we would like to keep the thickness of the line within reasonable 
@@ -5471,7 +5606,13 @@ handling.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-6">4.6 Event handling in D3 (7:18)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<!--~~~~~~~~~~~~~~~~~~~~~~ 282 event handling in d3 (183) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image282.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Welcome to this part of our data visualization lesson! In this part,
 we&apos;re going to talk about event handling in D3 and how we can use events to
@@ -5480,9 +5621,14 @@ keep updated with changes in the code and create interactivity for the user.
 In the last part, we created a graph model, which calculates the node positions
 dynamically and we also connect these positions to the graphics and the
 number of shapes in our SVGs. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 283 responding to events (184) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image283.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, if you would look into our example, what you could see is that you can&apos;t 
 see much. All you can see is little quarter shape on the top left of the visualization 
 and if you look into the code of the DOM, you will see that all the shapes are present. 
@@ -5493,7 +5639,14 @@ Now, we have connected them, but we are not keeping up with the changed position
 What we need to do is take advantage of the events functionality of D3 to tell the
 shapes of our SVG to be updated in terms of position every time our layout is 
 calculating a new position for a certain node. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 284 responding to events ii (184) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image284.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 This is handled by the tick event that is implemented by the force layout. The 
 force layout in D3 actually implements three different events: a start event 
@@ -5504,7 +5657,14 @@ that is called as soon as the simulation is stopped.
 
 We&apos;ll be taking advantage of the tick event for now and we will tell the 
 force layout to do something as soon as there is a new simulation step completed.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 285 responding to events ii, #2 (184) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image285.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 We are are going to take the positions for the nodes, calculated by this
 layout, and attach them to our SVG shapes, so the actual position on our graphic
@@ -5519,15 +5679,26 @@ This is working the same way that we used a function to assign the line thicknes
 depending on the data in the previous video, and the same thing is working for the
 link down here, except, this time, we have four coordinates: two coordinates
 for the starting point of the line and two for the end point of the line. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 286 adding events to nodes (186) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image286.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 And, if we now take a look again at our example, you can see there is a nice-looking
 graph that gets updated dynamically as soon as the node positions change in the
 layout and if you want to see this in action and actually move around, please take a
 look at our demo lesson. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 287 adding events to nodes, #2 (187) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image287.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, one more thing, we would like to add in this
 and which is also a great example for the use of events is some sort of user 
 interactivity, meaning, we can click around the graph, maybe drag them around, 
@@ -5547,22 +5718,40 @@ this node itself. In this case, we&apos;ll change the radius attribute, meaning 
 size of the circle to 20. In our case, this will increase the size of the node to 20
 from 5 as it was before. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 288 adding events to nodes, #3 (188) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image288.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If you click on the red node, it will change its shape from what you see on the 
 left to what you see on the right. However, this would happen instantly. Sometimes, 
 it would be nice to create a smoother transition and have a bit of a nicer animation. 
 Luckily, D3 also supports animations. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 289 adding animations (188) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image289.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Of course, it would sometimes be nice to have a bit of a
 smoother transition between the two sizes. This is where animations come in. D3
 already supports animations. In this case, all we need to do is, before we apply
 the new attribute value, we tell D3 that we wanted animated, they call in the
 transition function and we will also then specify a duration
 for this transition. In this case, we&apos;ll use 750 milliseconds. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 290 adding events to nodes (189) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image290.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If you then go back to our example and click on the red node, it will slowly increase
 its size over the course of seven hundred and fifty milliseconds until it stops
 when we have the right configuration. 
@@ -5574,14 +5763,26 @@ see more examples of different events that you can implement and get a bit
 more detail of how it actually works in the code, please refer to our demo video.
 
 <h3 id="ch4-7">4.7 Summary - API calls and Data Visualization (0:57)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 291 o nodes (189) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image291.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 
 Thank you, Dennis, for this introduction to data visualization in
 JavaScript!
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 292 summing up (190) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image292.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Summing up this module, we can use data visualization to effectively
 communicate data.
 
@@ -5589,9 +5790,14 @@ Currently, there are three dominant techniques to visualize data on the
 web. These are HTML elements, canvas and SVG. One of the most popular
 libraries to visualize data with JavaScript is D3. It allows us to bind data to
 visual elements and then draw and transform these elements.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 293 principles for effective graphical display[1] (190) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image293.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Before we conclude this module, we recommend to remember these
 principles of data visualizations for more effective data
 communications. In the next module, we would hear Professor Rost, as he
@@ -5599,38 +5805,68 @@ speaks about few applications of JavaScript in the Life Sciences. I will
 then summarize the course and say a few parting words.
 
 <h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 294  (191) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image294.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Hello everyone! Welcome to the first demo video accompanying the API
 calls and data visualization lecture. In this first video, we&apos;re going to 
 look at what we&apos;re going to build in this lecture, the tools we use, some 
 of the code structure of what is provided and we&apos;re going to make our first 
 HTTP requests to our API to get some data to visualize. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 295  (192) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image295.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 After this lecture, this is what we&apos;re
 gonna have - a simple website. It has very a simple menu appear on navigation, the home
 page has some text, this is where we are at at the moment and a visualization
 page. This one has a button and when I click this button, there will be an API called 
 using HTTP requests that returns relationship data from characters of the Game of
 Thrones novels. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 296  (192) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image296.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If I click it, it will release that data and create a network
 visualization using the D3 library. And in this visualization, each of
 the nodes represents a character and the links between them represent their
 relationships. And at the end, we guys, are going to add a little bit of
 interactivity.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 297  (193) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image297.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 If I click any of the nodes, they&apos;ll change their color and increase 
 in size. And on a double click, they should back down again and become red. 
 That&apos;s what we&apos;re going to build now. Let&apos;s take a
 look at what we&apos;re going to need first. Let&apos;s close this one for
 now. We&apos;re going to need a couple of tools. We&apos;re going to the browser.
 I&apos;m using Chrome, but Firefox and Safari will work just fine. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 298  (193) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image298.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 You&apos;ll need a text editor. I&apos;m using Atom (https://atom-editor.css/) 
 and if you&apos;re just starting out developing, especially in JavaScript, Atom 
@@ -5642,8 +5878,14 @@ shell. I&apos;m using iterm2 at the moment, but any terminal that comes with OSX
 any Linux distribution will work just fine. Make sure you have Node
 installed, however. Let&apos;s take a little look at the code that is provided from
 previous lectures. 
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 299  (194) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image299.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 I&apos;m in the folder right now and there&apos;s a bunch of loose
 files and two folders app and public. The first thing to look at is the
 package.json, which is the heart of any Node application. It has a couple of things,
@@ -5654,13 +5896,25 @@ our local server.
 The server itself is in the index.js. It is an express server. All we going
 to do later is type node in index.js and that will run the server for
 us. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 300  (195) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image300.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, all the server-side code is in the app folder. It has the controllers, the 
 models and the views. These views are template files that will be rendered into 
 HTML and then displayed in the browser. 
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 301  (195) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image301.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Just a quick recap about what&apos;s in the template of our visualization page 
 - it extends the base view, which means they&apos;ll include things like the 
 navigation and we don&apos;t have to type that code in any page that wants to 
@@ -5676,21 +5930,37 @@ files down here. First one is a D3 library and then the second one is our
 visualization.js where we will put our own code. One thing to note here is 
 that this button has an attribute called onclick. So, anytime you click this 
 button, the following code is executed. In our case, it calls the loadData function.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 302  (196) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image302.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, to get to that loadData function, take a look at the public folder. This
 folder holds all the client-side JavaScript code. We have a lib folder that
 holds all the dependencies or the libraries you want to use. In this case,
 it&apos;s only the D3 library, if I actually need to look at that.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 303  (197) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image303.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We have a visualization folder that has anything to do with visualization. In 
 this case, it&apos;s our little stylesheet, just defining what the nodes and 
 the links look like.
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 304  (197) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image304.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 And it has the visualization.js, which is where all the magic is going to happen. 
 This is what we&apos;re going to get later from the API and then create a
 visualization.
@@ -5741,9 +6011,14 @@ use the shortcuts of just alt+command+J or control+command+J on Windows and you
 can see up here, we have a little message. And if I keep clicking this button, we
 will get more messages. So far, so good. Let&apos;s take a look at what we need to do
 to actually get some data from our API.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 305  (199) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image305.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We will be using the classic native JavaScript way to do it with an xml
 http request object. If you&apos;re lucky enough to develop only for modern
 browsers, the upcoming version of JavaScript actually has a new API, called Fetch. If
@@ -5782,9 +6057,14 @@ actually want to do with the data. In this first video, we&apos;re not going
 to do anything with it. The next one, we&apos;re gonna transform it in a way that
 we can use it with D3 later on, but for now, let&apos;s just log it to the console,
 so we can take a look at it. That&apos;s all we need to define here.
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 306  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image306.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 The third step and the final step of sending an HTTP request is, we need
 to instantiate it using the open function. We need the open function to know what kind
 of HTTP request type we are sending. We will be sending a get request. You will also
@@ -5797,9 +6077,18 @@ relationships. And the server is defined, if there is a get request coming to th
 route, it&apos;ll return the relationship data. And, finally, we have to send it 
 off. That&apos;s it. It&apos;s all we need to get data from the backend using HTTP 
 request in JavaScript. The native way, no external libraries are needed. 
-
-<2 images>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 307/308  (201) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image307.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image308.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Let&apos;s get back to our browser, reload the page and click the button 
 again. As you can see, we get returned an array of objects and if we
 look a bit closer, these objects are relationships of characters. We have an
@@ -5811,6 +6100,7 @@ That&apos;s it for this lesson. In the next lesson, I&apos;ll show you how we
 can transform these interactions, so we can create a graph using D3.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-9">4.9 Demo 2: Data Visualization (15:22)</h3>
+<!-- ended 6/29/2024 - final to come -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello and welcome back! This is the second lesson for the data
 visualization lecture. In the first lesson, we talked about how we can use HTTP calls
@@ -6443,6 +6733,7 @@ Burkhard Rost, bye bye.
 <!-- date last editted 6/24/2024 Mon 12+pm -->
 <!-- date last editted 6/25/2024 Tue 7+pm -->
 <!-- date last editted 6/26/2024 Wed 4+am -->
-<!-- date last editted 6/28/2024 Fri 11+pm -->
+<!-- date last editted 6/28/2024 Fri 11+am -->
+<!-- date last editted 6/29/2024 Sat 8+pm -->
 
 ...The end...
