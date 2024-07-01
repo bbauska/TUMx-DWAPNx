@@ -2,7 +2,7 @@
 title: TUMx - Technical University of Munich 
 author: "bbauska"
 date first editted: "6/22/2024 5+pm"
-date last editted: "6/29/2024 8+pm"
+date last editted: "6/30/2024 11+pm"
 output: 
   markdown:
     with some style
@@ -5804,13 +5804,14 @@ communications. In the next module, we would hear Professor Rost, as he
 speaks about few applications of JavaScript in the Life Sciences. I will
 then summarize the course and say a few parting words.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 294  (191) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 294 spa - home - visualization example d3 (191) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image294.png" 
-  title=""
-  alt="."
+  title="SPA - Home - Visualization Example using D3"
+  alt="SPA - Home - Visualization Example using D3."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Hello everyone! Welcome to the first demo video accompanying the API
@@ -5819,11 +5820,11 @@ look at what we&apos;re going to build in this lecture, the tools we use, some
 of the code structure of what is provided and we&apos;re going to make our first 
 HTTP requests to our API to get some data to visualize. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 295  (192) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295 home page - visualization (192) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image295.png" 
-  title=""
-  alt="."
+  title="Home Page - Visualization"
+  alt="Home Page - Visualization."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 After this lecture, this is what we&apos;re
@@ -5833,11 +5834,11 @@ page. This one has a button and when I click this button, there will be an API c
 using HTTP requests that returns relationship data from characters of the Game of
 Thrones novels. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 296  (192) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 296 network visualization using d3 library (192) ~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image296.png" 
-  title=""
-  alt="."
+  title="Network Visualization using D3 library"
+  alt="Network Visualization using D3 library."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 If I click it, it will release that data and create a network
@@ -5846,11 +5847,11 @@ the nodes represents a character and the links between them represent their
 relationships. And at the end, we guys, are going to add a little bit of
 interactivity.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 297  (193) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 297 click node to increase in size (193) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image297.png" 
-  title=""
-  alt="."
+  title="Click any node to increase in size"
+  alt="Click any node to increase in size."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 If I click any of the nodes, they&apos;ll change their color and increase 
@@ -5860,11 +5861,11 @@ look at what we&apos;re going to need first. Let&apos;s close this one for
 now. We&apos;re going to need a couple of tools. We&apos;re going to the browser.
 I&apos;m using Chrome, but Firefox and Safari will work just fine. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 298  (193) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 298 atom text editor for web dev (193) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image298.png" 
-  title=""
-  alt="."
+  title="Atom Text Editor for web development"
+  alt="Atom Text Editor for web development."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 
@@ -5879,11 +5880,11 @@ any Linux distribution will work just fine. Make sure you have Node
 installed, however. Let&apos;s take a little look at the code that is provided from
 previous lectures. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 299  (194) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 299 package.json (194) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image299.png" 
-  title=""
-  alt="."
+  title="package.json"
+  alt="package.json"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 I&apos;m in the folder right now and there&apos;s a bunch of loose
@@ -5897,22 +5898,22 @@ The server itself is in the index.js. It is an express server. All we going
 to do later is type node in index.js and that will run the server for
 us. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 300  (195) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 300 package.json, again (195) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image300.png" 
-  title=""
-  alt="."
+  title="package.json, again"
+  alt="package.json, again."
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Now, all the server-side code is in the app folder. It has the controllers, the 
 models and the views. These views are template files that will be rendered into 
 HTML and then displayed in the browser. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 301  (195) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 301 visualization.pug (195) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image301.png" 
-  title=""
-  alt="."
+  title="visualization.pug"
+  alt="visualization.pug"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Just a quick recap about what&apos;s in the template of our visualization page 
@@ -5931,11 +5932,11 @@ visualization.js where we will put our own code. One thing to note here is
 that this button has an attribute called onclick. So, anytime you click this 
 button, the following code is executed. In our case, it calls the loadData function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 302  (196) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 302 d3.js (196) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image302.png" 
-  title=""
-  alt="."
+  title="d3.js"
+  alt="d3.js"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 Now, to get to that loadData function, take a look at the public folder. This
@@ -5943,22 +5944,22 @@ folder holds all the client-side JavaScript code. We have a lib folder that
 holds all the dependencies or the libraries you want to use. In this case,
 it&apos;s only the D3 library, if I actually need to look at that.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 303  (197) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 303 visualization.css (197) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image303.png" 
-  title=""
-  alt="."
+  title="visualization.css"
+  alt="visualization.css"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 We have a visualization folder that has anything to do with visualization. In 
 this case, it&apos;s our little stylesheet, just defining what the nodes and 
 the links look like.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 304  (197) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 304 visualization.js (197) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image304.png" 
-  title=""
-  alt="."
+  title="visualization.js"
+  alt="visualization.js"
   style="border: 2px solid #000000; width:40%;" />
 </p>
 And it has the visualization.js, which is where all the magic is going to happen. 
@@ -6058,7 +6059,7 @@ to do anything with it. The next one, we&apos;re gonna transform it in a way tha
 we can use it with D3 later on, but for now, let&apos;s just log it to the console,
 so we can take a look at it. That&apos;s all we need to define here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 306  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 306  (199) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image306.png" 
   title=""
@@ -6078,7 +6079,7 @@ route, it&apos;ll return the relationship data. And, finally, we have to send it
 off. That&apos;s it. It&apos;s all we need to get data from the backend using HTTP 
 request in JavaScript. The native way, no external libraries are needed. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 307/308  (201) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 307/308  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
   <img src="./images/image307.png" 
   title=""
@@ -6100,8 +6101,14 @@ That&apos;s it for this lesson. In the next lesson, I&apos;ll show you how we
 can transform these interactions, so we can create a graph using D3.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-9">4.9 Demo 2: Data Visualization (15:22)</h3>
-<!-- ended 6/29/2024 - final to come -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 309  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image309.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Hello and welcome back! This is the second lesson for the data
 visualization lecture. In the first lesson, we talked about how we can use HTTP calls
 to retrieve data from an API. In this lesson, we&apos;ll be taking a look at how
@@ -6115,11 +6122,34 @@ Now, to build a graph like this, we need two things - we need the list of
 relationships, so the links, we also need the characters themselves who would 
 represent the nodes. What we&apos;re going to do now is you&apos;re going to go 
 through the list of relationships and extract a unique list of names, so we can 
-connect them, as you can see here. Let&apos;s take another look at what we did 
+connect them, as you can see here. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 310  (201) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image310.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Let&apos;s take another look at what we did 
 in the last video. I&apos;m going to go back to the terminal and in the folder 
 where all our code is housed. Especially, in the top folder that has the index.js 
 file. Now, I&apos;m going to start running
-our server again using the command node index.js. Our back-end is running on
+our server again using the command node index.js. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 311/312  (202) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image311.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image312.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+Our back-end is running on
 port 3000. I&apos;m going to close this one and go to localhost:3000, go back to our
 visualization page and, as you can remember, when I click the button, we
 will get data from the back-end, but no visualization is generated yet. I&apos;m
@@ -6132,26 +6162,50 @@ actually an object. It has a number of attributes and the ones we are
 most interested in here, are source and target, which are the source and
 target of the interaction or the relationship. And then the values for
 these attributes are names of characters from the Game of Thones novels.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 313  (202) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image313.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
 Let&apos;s go back and look at the code that we generated in the first
 video. We&apos;re in our visualization.js file in the public section of our
 code and we populated this loadData function by generating a HTTP request,
 defining what we&apos;re going to do with it after it successfully loaded the data
-and then sending it off. And now, we&apos;re going to start working a bit more with
+and then sending it off. 
+
+And now, we&apos;re going to start working a bit more with
 this onload function and we&apos;re going to transform the response data that we
 had in a way that we can use it with D3 later on. D3 for generating
 a graph visualization actually expects two things - a list of Node
 objects and the list of relationships or link objects. We already have a list of
 relationship objects and the first thing we need to do now is to extract
-a unique list of node names. What we&apos;re going to do is to take another look
-at our browser.
-
-We&apos;re going to go through all of the link objects of this list and
+a unique list of node names. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 314  (203) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image314.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+What we&apos;re going to do is to take another look at our browser. We&apos;re 
+going to go through all of the link objects of this list and
 for each of the source and target names we&apos;re going to check if this
 name is already part of our unique name list and if it&apos;s not, we&apos;re going to
 add it and then do the same for the target. I&apos;m going to do this for all of the
 objects.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 315  (204) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image315.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 First thing to do is create a new variable called names and this list of names 
 is going to be extracted from the array of relationships, which is stored in 
 our response object. So, I&apos;m going to use the functional approach here 
@@ -6188,7 +6242,6 @@ checks if the name that&apos;s stored in the target attributes of our relationsh
 object is found anywhere in our list of names and if it does, it will return
 the position of it in the array. And if it is not already in there, it will 
 return -1. 
-
 If the name is not already part of a list, we&apos;re going to add it. We&apos;re 
 going to push the name to our accumulator array, which is the list of names, and
 then we&apos;re going to do the exact same thing except for the source name.
@@ -6199,19 +6252,38 @@ this accumulator array by adding one or maybe two names. In any case, we want to
 return this accumulator. So, in the second step, or in the following step, this 
 is now the new list in which there are any names that we added in this step. 
 That&apos;s already enough to get a list of unique names from our array of 
-responses. Just going to save the file and I&apos;m going to put log it to the 
+responses. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 316  (205) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image316.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Just going to save the file and I&apos;m going to put log it to the 
 console, so we can take a look at it.
-
+<image with data on sidebar>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 317  (206) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image317.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Going back to the browser, I&apos;m going to reload the page, press our
 button. As you can see, we get a nice list of unique names. So, one more
 thing that D3 is a bit unique with - we already have a list of
 interactions or links between names, which are the relationships, except
 that D3 cannot work with the names themselves. Instead, it needs IDs and
 the IDs are going to correspond to the position of the names in this
-array. So, the next thing we&apos;re going to do is we&apos;re going to go over
+array. 
+
+The next thing we&apos;re going to do is we&apos;re going to go over
 the response array, which holds our relationships one more time and
 we&apos;re going to replace the actual names with the position of those
-names in the names array. So, we&apos;re going to use, in this case, we&apos;re
+names in the names array. We&apos;re going to use, in this case, we&apos;re
 going to say new variable and these are going to be our links we are
 going to use in our visualization later and that&apos;s going to be a
 <b>response.map().</b> This is another JavaScript array function and it&apos;s
@@ -6225,10 +6297,16 @@ val.source.
 
 We&apos;re going to check where in the list of names is this name and then
 replace the name with that number and we&apos;re going to do the same for
-the target as well.
-And then, we&apos;re going to return this modified relationship, so it will
-be replaced in the array of relationships.
-
+the target as well. And then, we&apos;re going to return this modified 
+relationship, so it will be replaced in the array of relationships.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 318  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image318.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, we&apos;re going to take another look at what that looks like and I&apos;m
 going to log both the names and the links. Reload our data. So, now, we
 have the list of names up here and we have a list of relationships.
@@ -6240,8 +6318,16 @@ is position 0, which will be Grenn. So, that looks pretty good.
 Now, we need one more thing to work with D3. As I mentioned before, D3
 actually needs a list of objects that represent the nodes. Currently, we
 have a list of strings that are the names. Now, we&apos;re going to need to
-transform those names one more time into a list of arrays. So,
-basically, the list of nodes looks like this. It&apos;s an array and this
+transform those names one more time into a list of arrays. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 319  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image319.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Basically, the list of nodes looks like this. It&apos;s an array and this
 array has a list of objects and we&apos;re going to give it just one
 attribute called name. At the end of our next transformation, we want to
 have an array of objects with where the name attribute corresponds to
@@ -6251,25 +6337,42 @@ takes an anonymous function and that gets the current value.
 
 In this case, its name and actually whatever you call this variable is
 relevant, you can call it X if you want, but in this case we&apos;re going
-through a list of names.
-
-So, name seems appropriate and now for each of those names we need to
+through a list of names. Name seems appropriate and now for each of those names we need to
 create a new object. So, we need one more variable, which are going to
 be our nodes. That&apos;s going to be an array and for each of the names
 we&apos;re going to create a new object. So, new node object that has one
 attribute called names and that would be the name variable from up here.
 And then, we&apos;re gonna add this node object to our list of nodes that
 we&apos;re going to use later. Now, this is all we need. I&apos;m going to take
-another look at that just to make sure. So, our nodes now look like
-this.
+another look at that just to make sure. 
+<two images>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 320/321  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image320.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image321.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-It&apos;s an array of objects now and each object has one name attribute.
-We have now a list of node objects, which hold our names and the 
-list of links, which holds relationships between those nodes and that&apos;s
+Our nodes now look like this. It&apos;s an array of objects now and each object 
+has one name attribute. We now have a list of node objects, which hold our names 
+and the list of links, which holds relationships between those nodes and that&apos;s
 already enough for us to start to get to work with D3. And we&apos;re going
 to do this in this createVisualization function in the next video.
-
-So, just to finish this off, what we&apos;re going to do is we&apos;re going to
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 322  (208) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image322.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Just to finish this off, what we&apos;re going to do is we&apos;re going to
 pass this data, which is gathered from our API and transform in the
 correct format. I&apos;m going to pass it to this createVisualisation
 function down there that&apos;s just calling the function with the nodes as
@@ -6277,9 +6380,9 @@ nodes and the links as links. And that&apos;s it! That&apos;s already enough in
 terms of data transformation. In the next video, we&apos;re going to take a
 closer look at D3 and how to you use this data to create our graph.
 Thank you very much for watching, see you in the next video!
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-10">4.10 Demo 3: Data Visualization (35:07)</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hello and welcome to the third demo video of the data visualization
 lecture!
 
@@ -6287,21 +6390,57 @@ In the first of two videos, we spent some time getting data from an API
 using an HTTP request and in the second video we transformed that data.
 
 We can start using it for our visualization.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 323  (210) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image323.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Just a quick reminder: this is what we&apos;re building, this is a D3 graph
 visualization that depicts relationships between Game of Thrones
 characters. Now, let&apos;s start getting into it taking a look at our code.
 We have the functions that we are looking at before.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 324/325  (210) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image324.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image325.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 This is the load data function that we dealt with in the first two
 videos. Now, we&apos;re going to spend some time to fill the
 createVisualization function down here where all the actual
-visualization will be built. Taking another look at the visualization
-view in our app views folder, we can see that we already imported the d3
-library.
+visualization will be built. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 327  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image326.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 
-Because of that, we can start using d3 in our own visualization
-file, which has the createVisualization method. Let&apos;s get right
+Taking another look at the visualization
+view in our app views folder, we can see that we already imported the d3
+library. Because of that, we can start using d3 in our own visualization
+file, which has the createVisualization method. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 327  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image327.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+
+Let&apos;s get right
 into it. There&apos;s a couple of steps we need to do: we need to create the
 physical simulation of the graph that d3 does for us and then we have to
 start adding elements to the website to our DOM. We&apos;ll start off
@@ -6312,7 +6451,14 @@ play around with it a little bit. So that&apos;s two things we need straight
 away and then we also need our nodes and links that we got from the
 previous function and that we initially got from our API and then
 transformed.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 328  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image328.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 We&apos;ll create another variable and we call it force, because it&apos;s
 going to be a force directed graph layout and now we can start using d3
 by just typing d3 and we want a layout and it should be a force layout.
@@ -6328,27 +6474,45 @@ like magnets repelling each other. And then, there&apos;s also the link
 distance: this basically tells us how long our springs are going to be
 between those repelling magnets and now you need to set the dimensions.
 
-This actually takes an array of two numbers height and width and we
+This takes an array of two numbers height and width and we
 could just write some numbers in here, but we already set them up there
 and it&apos;s always a good practice to keep settings like these that you
 might need in several places outside of the actual code right here and
 put them at the top or somewhere you can just change them in one place.
 It needs some more things; it needs the nodes and we already generated
 those in the previous video. So, we can just give them the nodes that
-are coming from up here.
-
-It also need the links and it is the same deal here. And then, finally,
-we have to start the simulation. This is enough to tell d3 to create a
+are coming from up here. It also need the links and it is the same deal 
+here. And then, finally, we have to start the simulation. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 329  (213) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image329.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+This is enough to tell d3 to create a
 forced directed layout for us using the nodes and links provided and
 start a simulation. And we go back to our site. This one&apos;s actually
 currently empty, because I still need to start our web server. This
 one&apos;s the demo of the finished version. We&apos;re going to look at our
 current state. Again, localhost 3000 the visualization is going to run
 it and, as you can see, it&apos;s the old state from before.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 330/331  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image330.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+<img src="./images/image331.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
 Now, in the background, d3 is already calculating node positions and the
 graph in itself. However, we haven&apos;t actually told d3 yet how to
-display it. So, the next step we need to do is we need to start adding
+display it. The next step we need to do is we need to start adding
 SVG elements to the page and if you remember in our visualization view,
 there&apos;s this empty element with the ID root. And if you take a look at
 our browser and using the developer tools, we can look at the website.
@@ -6357,8 +6521,15 @@ There&apos;s this root element, it&apos;s currently empty. It just has the
 attribute root. So, we can identify it and other than that there&apos;s
 nothing in there. So, we&apos;re now going to start using d3 to manipulate
 the DOM by adding elements depending on that data.
-
-So, because it&apos;s going to be an SVG element, we&apos;re going to call the
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 332  (214) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image332.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Because it&apos;s going to be an SVG element, we&apos;re going to call the
 variable SVG. I&apos;m going to use d3 select and this will allow us to
 select a DOM element; in this case, the root element, and because it has
 the ID root, it has the prefix of a hash tag (a pound symbol) and then
@@ -6392,13 +6563,11 @@ the stroke and a bit of opacity. And the node also has a color and again
 for the stroke and the settings for the width of the stroke to get a
 nice little wide stroke around it.
 
-So, we&apos;re going to set this one as well. We&apos;re going to set any line
+We&apos;re going to set this one as well. We&apos;re going to set any line
 element. We&apos;ll get a class attribute with a value link and that&apos;s
 going to be enough to define the link. Now, we&apos;re going to do the same
 for the nodes variable node svg.selectAll elements with the class node
-attached to them. And
-
-compare them to the data and nodes. It needs to be a function, so they
+attached to them. And compare them to the data and nodes. It needs to be a function, so they
 need the period infront of them, and then give me anything that is in
 the data, but not in the page and for any of those append a new element
 to our SVG graphics. In this case, a circle element and this one will
@@ -6407,7 +6576,7 @@ node. Realize that this function to be a class attribute is not just
 important for the style of the class, but also because we are selecting
 any node element here, so any element with the class node.
 
-So, it&apos;s not just for the styling the CSS, but it&apos;s also a label.
+It&apos;s not just for the styling the CSS, but it&apos;s also a label.
 Then, because, these nodes are circles and the circle is a defined SVG
 element that needs another attribute, and this attribute is the radius
 of the circle we want to have and this one is actually defined by the r
@@ -6415,42 +6584,38 @@ attribute and r needs a number and that&apos;s going to be pixels. So, I can
 technically put five here, but, as we said before, that&apos;s maybe not the
 best practice. Instead, I&apos;m going to pretend there&apos;s a new variable
 called nodeRadius
-
 and I&apos;m going to go back up to my settings and actually create that
 variable nodeRadius and set it to five. So, now, we defined the style
 and, in this case, also the radius for the nodes and we told d3 that we
 want a bunch of links for our links and a bunch of circles for our
-nodes. Now, let&apos;s go back to our website, refresh the page, so the
+nodes. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ 333  (214) ~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center">
+  <img src="./images/image333.png" 
+  title=""
+  alt="."
+  style="border: 2px solid #000000; width:40%;" />
+</p>
+Now, let&apos;s go back to our website, refresh the page, so the
 JavaScript gets reloaded and click the button again. As you can see,
 something has happened. If I take a look into the root element again, we
 now actually have added a bunch of lines and, further down, circles to
-our SVG visualization. Now, if you look closely, you might be able to
+our SVG visualization. 
+<image>
+Now, if you look closely, you might be able to
 see there&apos;s like a little something on the top left of our screen and
-these are
-
-actually our nodes. So, this is like a quarter circle and it is because
-
+these are actually our nodes. So, this is like a quarter circle and it is because
 these are our circle elements, but all of them are positioned at
-position zero,
-
-which in the visualization world means the top-left corner of the
+position zero, which in the visualization world means the top-left corner of the
 screen.
 
-So, it&apos;s like the classic Cartesian coordinate system that you probably
-know
-
-from your Math classes. Except zero, zero is actually on the top
-
-left. So, one more thing we need to do. Because in the beginning, we
-created our
-
-forced layout that is this bit here that tells d3 to take these nodes
-and links
-
-and start a forced layout simulation of the positions, and we told it
-for every
-
-link we want the line of every node. What we didn&apos;t do yet is actually
+It&apos;s like the classic Cartesian coordinate system that you probably
+know from your Math classes. Except zero, zero is actually on the top
+left. One more thing we need to do. Because in the beginning, we
+created our forced layout that is this bit here that tells d3 to take these nodes
+and links and start a forced layout simulation of the positions, and we told it
+for every link we want the line of every node. What we didn&apos;t do yet is actually
 connect those together, meaning we now need to tell d3 actually the
 position for these links and nodes should be whatever you are
 calculating over here. And in this case, we actually start looking into
@@ -6462,21 +6627,15 @@ JavaScript way of dealing with events. So, whenever a tick event is
 fired, I want the following function to be called, and tick is the event
 that gets called every step of the simulation of this force layout. So,
 whenever it&apos;s calculating new positions, this function
-
-will be called. So, what we&apos;re going to do now, every time d3
-calculates
-
-new position for nodes, we&apos;re going to start adding attributes to our
-nodes. So,
-in this node variable, we still have stored any element with class node
+will be called. What we&apos;re going to do now, every time d3
+calculates new position for nodes, we&apos;re going to start adding attributes to our
+nodes. In this node variable, we still have stored any element with class node
 and after calling this, there will be a class node element for any of
-our nodes
-in the data. So, what we&apos;re going to do now on every tick, we&apos;re going
-to update
-two attributes of our nodes and those two attributes are defining the
-position.
+our nodes in the data. 
 
-The first one is cx at the position in the x-direction and it&apos;s going to 
+What we&apos;re going to do now on every tick, we&apos;re going
+to update two attributes of our nodes and those two attributes are defining the
+position. The first one is cx at the position in the x-direction and it&apos;s going to 
 be defined by a function and in this case, this gets a data point and that is 
 d3 convention. This data point is actually going to be our node as calculated in the force layout up here.
 
@@ -6528,7 +6687,7 @@ going var color equals d3.scale.category20. So, what this does is, it returns a
 scale of 20 different values, discrete values, and we&apos;re going to use those to
 select 20 different colors depending on the name of our characters. 
 
-So, this returns a function, so we can now call this color function with any
+This returns a function, so we can now call this color function with any
 string and it will just return us a color. So, going down to our node again
 and now we&apos;re going to call another function on this one, called
 style. And you want to fill the node with a certain value and this again
@@ -6734,6 +6893,6 @@ Burkhard Rost, bye bye.
 <!-- date last editted 6/25/2024 Tue 7+pm -->
 <!-- date last editted 6/26/2024 Wed 4+am -->
 <!-- date last editted 6/28/2024 Fri 11+am -->
-<!-- date last editted 6/29/2024 Sat 8+pm -->
+<!-- date last editted 6/30/2024 Sun 11+pm -->
 
 ...The end...
