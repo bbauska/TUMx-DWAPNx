@@ -1,6898 +1,28750 @@
 ---
-title: TUMx - Technical University of Munich 
+title: |
+  CSS Notes for Professionals
+  by web@petercv.com, PDF https://goalkicker.com/CSSBook
 author: "bbauska"
-date first editted: "6/22/2024 5+pm"
-date last editted: "6/30/2024 11+pm"
+date last editted: "7/1/2024 Mon 2+am"
 output: 
   markdown:
     with some style
 ---
-<!-- DWAPNx -- Web App Development with the Power of Node.js -->
-<h1 align="center">Web App Development with the Power of node.js</h1>
-<h6 align="center">(by T Goldberg, Lecturer - Technical University of Munich)</h6>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ readme.md of TUMx-DWAPNx in bbauska.github.io ~~~~~~~~~~~~~~~~~~~~~~-->
+<h1>CSS-Notes4Pros</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01 tech un of munich logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>CSS Notes For Professionals - intermediate level CSS learning course.  
+All on-line.  No money, unless you'd like to donate. I'm game for that.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1 align="center">Advanced CSS Notes for Professionals</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h6 align="center">(by web@petercs.com, lecturer - PDF @https://goalkicker.com)</h6>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ readme.md of CSS Advanced - Notes for Professionals ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS-Notes4Pros.bauska.github.io ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01/02. javascript/css logos (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="./images/image001.png"
-  style="width:40%"
-  title="TUM logo"
-  alt="TUM logo." />
+<img src="./images/image001.jpg"
+  style="width:20%"
+  title="JavaScript coffee cup logo version"
+  alt="JavaScript coffee cup logo version." />
+<img src="./images/image002.jpg"
+  style="width:20%"
+  title="CSS logo"
+  alt=" logo." />
 </p>
 
-### [**Module 1: Introduction -- JavaScript Basics**](#ch1)
->#### 1.0 [**Intro: JavaScript Basics (7:41)**](#ch1-0)
->#### 1.1 [**Language Basics -- Introduction (1:02)**](#ch1-1)
->#### 1.2 [**Lexical Structure (6:56)**](#ch1-2)
->#### 1.3 [**Data Types (6:58)**](#ch1-3)
->#### 1.4 [**Scoping &amp; Hoisting (3:41)**](#ch1-4)
->#### 1.5 [**Loops (3:16)**](#ch1-5)
->#### 1.6 [**Conditional Statements (3:09)**](#ch1-6)
->#### 1.7 [**Summary: JavaScript Basics (1:08)**](#ch1-7)
+<h2 id="about">About</h2>
 
-### [**Module 2: Functions and Objects**](#ch2)
->#### 2.0 [**Intro: Functions and Objects (1:14)**](#ch2-0)
->#### 2.1 [**Functions, part 1 (3:06)**](#ch2-1)
->#### 2.2 [**Objects, part 1 (9:04)**](#ch2-2)
->#### 2.3 [**Functions, part 2 (5:19)**](#ch2-3)
->#### 2.4 [**Objects, part 2 (5:25)**](#ch2-4)
->#### 2.5 [**Functions, part 3 (5:03)**](#ch2-5)
->#### 2.6 [**Summary: Functions and Objects (1:01)**](#ch2-6)
+<p align="center">Please feel free to share this Markdown &amp; website with anyone, latest
+version of this book can be downloaded from:<br>
+<a href="https://goalkicker.com/CSSBook">https://goalkicker.com/CSSBook</a></p>
 
-### [**Module 3: Server-side JavaScript**](#ch3)
->#### 3.0 [**Intro: Server-side JavaScript (1:31)**](#ch3-0)
->#### 3.1 [**Anatomy of HTTP transactions (6:19)**](#ch3-1)
->#### 3.2 [**Node.js and NPM (9:28)**](#ch3-2)
->#### 3.3 [**What is needed for a web app? (5:07)**](#ch3-3)
->#### 3.4 [**Our example application (7:32)**](#ch3-4)
->#### 3.5 [**Controllers and Models (11:24)**](#ch3-5)
->#### 3.6 [**Views (5:54)**](#ch3-6)
->#### 3.7 [**Summary: Server-side JavaScript (1:00)**](#ch3-7)
->#### 3.8 [**Demo 1: Working with an Example Application (14:44)**](#ch3-8)
->#### 3.9 [**Demo 2: Running an Example Application (22:56)**](#ch3-9)
+<p align="center">This <i>CSS Notes for Professionals</i> book is compiled from 
+<a href="https://archive.org/details/documentation-dump.7z">Stack Overflow 
+Documentation</a>, the content is written by the beautiful people at Stack Overflow.<br/>
+Text content is released under Creative Commons BY-SA, see credits at
+the end of this book whom contributed to the various chapters. Images
+may be copyright of their respective owners unless otherwise specified.</p>
 
-### [**Module 4: API calls and Data Visualization**](#ch4)
->#### 4.0 [**Intro: API calls and Data Visualization (1:01)**](#ch4-0)
->#### 4.1 [**Data Retrieval using HTTP Requests (7:48)**](#ch4-1)
->#### 4.2 [**Data Visualization with D3 (7:52)**](#ch4-2)
->#### 4.3 [**DOM and SVG (8:01)**](#ch4-3)
->#### 4.4 [**Data Binding with D3 (14:37)**](#ch4-4)
->#### 4.5 [**Controlling Element Styles (8:13)**](#ch4-5)
->#### 4.6 [**Event Handling in D3 (7:18)**](#ch4-6)
->#### 4.8 [**Demo 1: Data Visualization (15:06)**](#ch4-8)
->#### 4.9 [**Demo 2: Data Visualization (15:22)**](#ch4-9)
->#### 4.10 [**Demo 3: Data Visualization (35:07)**](#ch4-10)
+<p align="center">This is an unofficial free book created for educational purposes and
+is not affiliated with official CSS group(s) or company(s) nor Stack
+Overflow. All trademarks and registered trademarks are the property of
+their respective company owners.</p>
 
-### [**Module 5: Conclusion -- Putting it all together**](#ch5)
->#### 5.0 [**Course Summary: Web App Development with Node.js (1:16)**](#ch5-0)
->#### 5.1 [**JavaScript in Bioinformatics (3:53)**](#ch5-1)
+<p align="center">The information presented in this book is not guaranteed to be correct
+nor accurate, use at your own risk.</p>
 
-<h3 id="about">About</h3>
-
-<p>Learn to use the powerful Node.js framework to bring your web
-application to life and develop end-to-end applications in JavaScript.
-JavaScript is the most trending programming language on the web today!
-Facebook, Google, Uber and countless so-called Unicorn startups have now
-made JavaScript a cornerstone of their technology stack.</p>
-
-<p>This online course requires no prior knowledge of the JavaScript
-language. In the first week of the course, you will explore the
-language&apos;s basic concepts and fundamentals, and during the second week
-we will dive into advanced topics such as functions and objects.
-While JavaScript is recognized primarily for making web pages
-interactive within web browsers, this course covers the use of the
-Node.js library - a platform that enables running JavaScript code
-outside the browser and allows the development of an end-to-end
-applications in JavaScript.</p>
-
-<p>In week three, we will cover the basic architecture of a web application
-by getting an up-close view of the different parts that make up this
-application. You will see how data is being exchanged over an
-Application Programming Interface (API) and what are the different tools
-and libraries that will allow you to construct such an application.</p>
-
-<p>The course will then cover the basic steps required to set up a Node.js
-server that can process web requests and interact with various set of
-databases. In the process, you will also be introduced to the Model View
-Controller (MVC) pattern, a software architecture that organizes the
-JavaScript application into modules.</p>
-
-<p>Finally, in week four, you will also learn how incredibly easy it is to
-create beautiful data visualizations that your boss will be proud of.
-You will gain a basic understanding of the technologies used to present
-data on the web and will learn how to visualize interactive data using
-the popular Data Driven Documents (D3) data library.</p>
-
-<p>Whether you are considering a career as a full-stack web developer,
-pondering developing a mobile app for your next startup or just want to
-pad your toolbox with a highly sought out skill, this course is
-definitely for you!</p>
+<p align="center">Please send feedback and corrections to <a href="web@petercv.com">web@petercv.com</a></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-0">1.0 Introduction -- JavaScript Overview (7:41)</h3>
+<h2>Chapter 1: Getting started with CSS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02 javascript overview (7:41) (04) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image002.png" 
-  title="1.0 Course Introduction: JavaScript Overview"
-  alt="1.0 Course Introduction: JavaScript Overview."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Hey there and welcome to developing a web app with the power of Node!</p>
-
-<p>My name is Guy Yachdav and I&apos;m a postdoctoral researcher at the
-department for Bioinformatics and Computational Biology at the TU Munich
-(Technical University of Munich). I am also the leader for this course.
-For the past 10 years I ran multiple JavaScript software development
-projects in both industry and academia. I&apos;m a Google Summer of Code
-mentor and I&apos;m also a JavaScript lecturer at the TU Munich.</p>
-
-<p>The second mentor in this course is Dr. Tatyana Goldberg who is also a
-postdoctoral researcher and a true open-source enthusiast. Tatyana is
-also a Google Summer of Code mentor and she has organized events to
-teach JavaScript to beginners.</p>
-
-<p>Our third mentor Dmitrii Nechaev is a Master&apos;s student who has vast
-experience in JavaScript development. Dmitrii is a gifted JavaScript
-guru who can take you through all the tricks and hidden shortcuts of the
-language. He has been teaching JavaScript for over five years.</p>
-
-<p>The fourth mentor, Christian Dallago is also a Master&apos;s student and an
-expert full stack developer who knows the ins and outs of JavaScript
-back-end technologies. Christian has been involved in JavaScript as a
-developer and as a teacher for over two years.</p>
-
-<p>Dennis Schwartz, our fifth mentor, is a Master&apos;s student in Bioinformatics 
-who is passionate about open-source development and community building.</p>
-
-<p>The sixth mentor, Sebastian Wilzbach, is also a Master&apos;s Bioinformatics
-student and a JavaScript wonder kid. Sebastian has developed countless
-open-source tools, some of which got published in scientific journals.</p>
-
-<p>All of us are part of the department for Bioinformatics and
-Computational Biology. We always strive to make the biological data we
-work with easy to understand. So, a few years ago we started working on
-developing JavaScript tools to visualize biological data. We joined
-forces with BioJS, an open-source community that is dedicated to the
-creation of tools that visualize Genomics data. We also got so
-interested in JavaScript and its application that we started giving a
-course at our university. You might have even heard about our course as
-it made international headlines when we worked with our students to
-develop &quot;A Song of Ice and Data&quot;, a web app that uses data about the
-Game of Thrones books and TV show. We had a lot of fun working on this
-project and hope you will enjoy learning web app development using
-JavaScript, while working on the Game of Thrones project we assigned for
-this course.</p>
+<h3 id="ch1-1">Section 1.1: External Stylesheet</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 03 covered in this module (1) (05) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image003.png" 
-  title="Covered in this module (1)"
-  alt="Covered in this module (1)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>An external CSS stylesheet can be applied to any number of HTML
+documents by placing a <b>&lt;link&gt;</b> element in each HTML document.</p>
 
-<p>And here are more reasons to learn JavaScript.</p>
+<p>The attribute rel of the <b>&lt;link&gt;</b> tag has to be set to &quot; $\color{red}{stylesheet}$ &quot;,
+and the href attribute to the relative or absolute path to the
+stylesheet. While using relative URL paths is generally considered
+good practice, absolute paths can be used, too. In HTML5 the type
+attribute <a href="https://html.spec.whatwg.org/multipage/semantics.html#the-link-element">
+can be omitted</a>.</p>
+
+<p>It is recommended that the <b>&lt;link&gt;</b> tag be placed in the HTML file's <b>&lt;head&gt;</b>
+tag so that the styles are loaded before the elements they style.
+Otherwise, <a href="http://stackoverflow.com/a/1642259/2397327"> 
+users will see a flash of unstyled content</a>.</p>
+
+<h4>Example</h4>
+<h4>hello-world.html</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+    &lt;p&gt;I ♥ CSS&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h4>style.css</h4>
+
+<pre><code>h1 {
+  color: green;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+</code></pre>
+
+<p>Make sure you include the correct path to your CSS file in the href.
+If the CSS file is in the same folder as your HTML file then no path
+is required (like the example above) but if it's saved in a folder,
+then specify it like this;<br>
+href="foldername/style.css"</p>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="foldername/style.css"&gt;</code></pre>
+
+<p>External stylesheets are considered the best way to handle your CSS.
+There&apos;s a very simple reason for this: when you&apos;re managing a site
+of, say, 100 pages, all controlled by a single stylesheet, and you
+want to change your link colors from blue to green, it&apos;s a lot easier
+to make the change in your CSS file and let the changes &quot;cascade&quot;
+throughout all 100 pages than it is to go into 100 separate pages and
+make the same change 100 times. Again, if you want to completely
+change the look of your website, you only need to update this one
+file.</p>
+
+<p>You can load as many CSS files in your HTML page as needed.</p>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="main.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="override.css"&gt;</code></pre>
+
+<p>CSS rules are applied with some basic rules, and order does matter.
+For example, if you have a main.css file with some code in it:</p>
+
+<pre><code>p.green { color: #00ff00; }</code></pre>
+
+<p>All your paragraphs with the &apos;green&apos; class will be written in light
+green, but you can override this with another .css file just by
+including it *after* main.css. You can have override.css with the
+following code follow main.css, for example:</p>
+
+<pre><code>p.green { color: #006600; }</code></pre>
+
+<p>Now all your paragraphs with the &apos;green&apos; class will be written in
+darker green rather than light green.</p>
+
+<p>Other principles apply, such as the &apos;!important&apos; rule, specificity,
+and inheritance.</p>
+
+<p>When someone first visits your website, their browser downloads the
+HTML of the current page plus the linked CSS file. Then when they
+navigate to another page, their browser only needs to download the
+HTML of that page; the CSS file is cached, so it does not need to be
+downloaded again. Since browsers cache the external stylesheet, your
+pages load faster.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04 moocs for masters (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image004.png" 
-  title="MOOCs for Masters logo"
-  alt="MOOCs for Masters logo."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h3 id="ch1-2">Section 1.2: Internal Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05 why learn javascript? (06) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image005.png" 
-  title="Why Learn JavaScript? Most popular language"
-  alt="Why Learn JavaScript? Most popular language."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>CSS enclosed in <b>&ltstyle&gt;&lt;/style&gt;</b> tags within an HTML document 
+function like an external stylesheet, except that it lives in the HTML document it
+styles instead of in a separate file, and therefore can only be applied to the 
+document in which it lives. Note that this element <i>must</i> be inside the 
+<b>&lt;head&gt;</b> element for HTML validation (though it
+will work in all current &lt;head&gt; browsers if placed in body).</p>
 
-<p>First, JavaScript has been consistently the most popular language on GitHub, 
-the world&apos;s most popular code repository.</p>
+<pre><code>&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: green;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 25px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello world!&lt;/h1&gt;
+  &lt;p&gt;I ♥ CSS&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06 why learn javascript, #2? (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image006.png" 
-  title="Why Learn JavaScript #2? Largest library repository"
-  alt="Why Learn JavaScript #2? Largest library repository."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Second, JavaScript has the fastest growing and by far the largest library 
-repository called <b>Node Package Management</b>. We&apos;ll talk about that 
-more in module four.</p>
+<h3 id="ch1-3">Section 1.3: CSS &commat;import rule (one of CSS at-rule)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07 why learn javascript, #3? (07) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image007.png" 
-  title="Why Learn JavaScript, #3? It's everywhere"
-  alt="Why Learn JavaScript, #3? It's everywhere."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>The &commat;import CSS at-rule is used to import style rules from other style 
+sheets. These rules must precede all other types of rules, except &commat;charset 
+rules; as it is not a nested statement, &commat;import cannot be used inside 
+conditional group at-rules <a href="https://developer.mozilla.org/en/docs/Web/CSS/@import">&commat;import</a>.
 
-<p>Third, JavaScript is everywhere. More vendors are adopting JavaScript and you 
-can now run the same JavaScript code across many devices and platforms.</p>
+<h4>How to use &commat;import</h4>
 
-<p>Maybe these are the reasons why JavaScript has become the number one technology 
-choice of so-called unicorns. Unicorns are startups, valued at more than 1 billion 
-dollars.</p>
+<p>You can use &commat;import rule in the following ways:</p>
+
+A.  <b>With internal style tag</b>
+
+<pre><code>  <style>
+    @import url('/css/styles.css');
+  </style></code></pre>
+
+B.  <b>With external stylesheet</b>
+
+<p>The following line imports a CSS file named additional-styles.css in
+the root directory into the CSS file in which it appears:</p>
+
+<pre><code>@import '/additional-styles.css';</code></pre>
+
+<p>Importing external CSS is also possible. A common use case are font
+files.</p>
+
+<pre><code>@import 'https://fonts.googleapis.com/css?family=Lato';</code></pre>
+
+<p>An optional second argument to &commat;import rule is a list of media
+queries:</p>
+
+<pre><code>@import '/print-styles.css' print;
+@import url('landscape.css') screen and (orientation: landscape);</code></pre>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08 why learn javascript, #4? (08) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image008.png" 
-  title="Why Learn JavaScript, #4?"
-  alt="Why Learn JavaScript, #4?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>And because JavaScript is such a hot language, JavaScript developers are in 
-high demand. It is now easier than ever to find work as a JavaScript developer 
-and the salaries offered are competitive.</p>
+<h3 id="ch1-4">Section 1.4: Inline Styles</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 09 the evolution of javascript, may 1995 - 2005 (08) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image009.png" 
-  title="The Evolution of JavaScript, 1995-2005"
-  alt="The Evolution of JavaScript, 1995-2005."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>Use inline styles to apply styling to a specific element. Note that
+this is <b><i>not</i></b> optimal. Placing style rules in a <b>&lt;style&gt;</b> tag or
+external CSS file is encouraged in order to maintain a distinction
+between content and presentation.</p>
 
-<p>Before we begin, let&apos;s take a look at the history of JavaScript.
-JavaScript was first developed in ten days, back in 1995, by Brandon
-Eich who was at the Netscape Corporation. It was first called Mocha, but
-was quickly renamed to JavaScript for marketing purposes, even though it
-has nothing to do with language called Java.</p>
+<p>Inline styles override any CSS in a <b>&lt;style&gt;</b> tag or external style
+sheet. While this can be useful in some circumstances, this fact more
+often than not reduces a project&apos;s maintainability.</p>
 
-<p>The first official standards for JavaScript ECMAScript 1 appeared in
-1997. Then, between 1997 to 2005, competing standards for JavaScript appeared
-and this has resulted in several different versions of JavaScript that
-were not fully supported by major browsers.</p>
+<p>The styles in the following example apply directly to the elements to
+which they are attached.</p>
+
+<pre><code>&lt;h1 style="color: green; text-decoration: underline;"&gt;Hello world!&lt;/h1&gt;
+&lt;p style="font-size: 25px; font-family: 'Trebuchet MS';"&gt;I ♥ CSS&lt;/p&gt;</code></pre>
+
+<p>Inline styles are generally the safest way to ensure rendering
+compatibility across various email clients, programs and devices, but
+can be time-consuming to write and a bit challenging to manage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 10 the evolution of javascript, 2005-2015 (09) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image010.png" 
-  title="Evolution of JavaScript, 2005-2015"
-  alt="Evolution of JavaScript, 2005-2015."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>In 2005, a new set of technologies, called Ajax, were developed. 
-<a href="https://api.jquery.com/Jquery.ajax/">AJAX</a> allowed JavaScript to 
-load data in the background without the need to do a full page reload and enabled 
-more dynamic JavaScript-based applications to be developed. This resulted in a 
-JavaScript renaissance, led by open-source communities, which started releasing 
-many libraries.</p>
-
-<p>The new libraries enabled the development of a new generation of JavaScript 
-applications and overall accelerated the functionality, acceptance and popularity 
-of the language.</p>
-
-<p>Yet in 2007, the standardization battles were still raging. Microsoft promoted 
-their own ECMAScript 3.1, while Mozilla and others worked on creating ECMAScript 4.</p>
-
-<p>Finally, in 2009, all parties came together and decided to move from ECMAScript 
-3.1 to a unified standard called ES 5 Harmony. All this then brings us to today 
-with JavaScript entering a completely new phase.</p>
-
-<p>The <a href="https://nodejs.org/en">Node.js</a> platform allows JavaScript to
-be run on the server side and Angular.js provides an easy way to create powerful 
-JavaScript-based web application.</p>
-
-<a href="https://d3js.org/>">D3</a> allows data to be easily visualized and made 
-interactive.</p>
-
-<p>There are many more applications and now is an exciting time to learn JavaScript.</p>
+<h3 id="#ch1-5">Section 1.5: Changing CSS with JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 11 what you will learn in this course (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image011.png" 
-  title="What you will learn in this course. Hands-on experience developing a 
-    full-stack JS application"
-  alt="What you will learn in this course. Hands-on experience developing a 
-    full-stack JS application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h4>Pure JavaScript</h4>
 
-<p>Let&apos;s see what is ahead of us and what we will cover over the next few
-modules. First, you will get a crash course in JavaScript. It is important to
-remember that we adapted it as lectures and code examples to be
-compatible with ECMAScript 6, the latest JavaScript standard.</p>
+<p>It&apos;s possible to add, remove or change CSS property values with JavaScript 
+through an element&apos;s style property.</p>
 
-<p>Then, we will cover the basics of writing JavaScript code on the server
-using <a href="https://www.educative.io/blog/what-is-nodejs"><b>Node.js</b></a>, 
-<a href="https://expressjs.com/"><b>Express</b></a> and 
-<a href="https://www.mongodb.com/"><b>MongoDB</b></a>.</p>
+<pre><code>var el = document.getElementById("element");
+el.style.opacity = 0.5;
+el.style.fontFamily = 'sans-serif';</code></pre>
 
-<p>Finally, in the last part of the course, you will learn how to bring
-data to life using a stack of data visualization techniques. All parts
-of the course are accompanied with hands-on exercises that will help you
-put your new skills to practice.</p>
+<p>Note that style properties are named in lower camel case style. In the
+example you see that the css property fontfamily becomes fontFamily in
+javascript.</p>
+
+<p>As an alternative to working directly on elements, you can create a 
+<b>&lt;style&gt;</b> or <b>&lt;link&gt;</b> element in JavaScript and append it 
+to the <b>&lt;body&gt;</b> or <b>&lt;head&gt;</b> of the HTML document.</p>
+
+<h4>jQuery</h4>
+
+<p>Modifying CSS properties with jQuery is even simpler.</p>
+
+<pre><code>$('#element').css('margin', '5px');</code></pre>
+
+<p>If you need to change more than one style rule:</p>
+
+<pre><code>$('#element').css({
+  margin:"5px",
+  padding:"10px",
+  color:"black"
+});</code></pre>
+
+<p>jQuery includes two ways to change css rules that have hyphens in them
+(i.e. font-size). You can put them in quotes or camel-case the style
+rule name.</p>
+
+<pre><code>$('.example-class').css({
+  "background-color": "blue", 
+  fontSize: "10px" 
+});</code></pre>
+
+<h4>See also</h4>
+
+<ul>
+  <li>JavaScript documentation - Reading and Changing CSS Style.</li>
+  <li>jQuery documentation - CSS Manipulation</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12 course overview (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image012.png" 
-  title="Course Overview"
-  alt="Course Overview."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Now, looking at the schedule -- in the next module number two, Tatyana
-will show you how easy it is to get started with JavaScript and she will
-introduce you to the language fundamentals. After completing this
-module, you will be well on your way to write simple JavaScript
-programs.</p>
-
-<p>Next is the object and function modules, in which Dimitri will show you how you 
-can take advantage of one of JavaScript&apos;s most powerful features - its 
-flexibility. JavaScript flexibility gives you the freedom to write JavaScript
-object-oriented code, as well as use functional programming.</p>
-
-<p>In module number four, Christian will introduce the wonders of Node.js
-and show you how you can quickly and easily write JavaScript code that
-will run on the server.</p>
-
-<p>Then, in the data visualization module, Dennis will introduce you to the
-most relevant technologies we use today to visualize data on the web. At
-the final module, we will meet Professor Rost who will describe a few
-applications of JavaScript in the Life Sciences.</p>
-
-<p>I then will summarize this course before we part. Right now, I&apos;m sure,
-you&apos;re already excited about learning how to work with JavaScript. So,
-let&apos;s not waste any time and head straight to the next module language
-fundamentals.</p>
+<h3 id="ch1-6">Section 1.6: Styling Lists with CSS</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-1">1.1 Language Basics -- Introduction (1:02)</h3>
+<p>There are three different properties for styling list-items:
+list-style-type, list-style-image, and list-style position, which
+should be declared in that order. The default values are disc,
+outside, and none, respectively. Each property can be declared
+separately, or using the list-style shorthand property.</p>
+
+<p><b>list-style-type</b> defines the shape or type of bullet point used for each list-item.</p>
+<p>Some of the acceptable values for list-style-type:</p>
+
+<ul>
+  <li>disc</li>
+  <li>circle</li>
+  <li>square</li>
+  <li>decimal</li>
+  <li>lower-roman</li>
+  <li>upper-roman</li>
+  <li>none</li>
+</ul>
+
+<p>(For an exhaustive list, see the 
+<a href="https://www.w3.org/wiki/CSS/Properties/list-style-type">W3C specification wiki</a>).</p>
+<p>To use square bullet points for each list-item, for example, you would use 
+the following property-value pair:</p>
+
+<pre><code>li {
+  list-style-type: square;
+}</code></pre>
+
+<p>The <b>list-style-image</b> property determines whether the list-item
+icon is set with an image, and accepts a value of none or a URL that
+points to an image.</p>
+
+<pre><code>li {
+  list-style-image: url (images/bullet.png);
+}</code></pre>
+
+<p>The <b>list-style-position</b> property defines where to position the
+list-item marker, and it accepts one of two values: &quot;inside&quot; or
+&quot;outside&quot;.</p>
+
+<pre><code>li {list-style-position: inside;
+}</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13 javascript overview (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image013.png" 
-  title="JavaScript Overview"
-  alt="JavaScript Overview."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Welcome to the language basics module!</p>
-
-<p>Together with HTML and cascading style sheets, JavaScript is one of the
-core technologies for building websites. However, JavaScript is not only
-for building websites, it can also be used for game development and
-application development.</p>
-
-<p>While JavaScript may resemble general-purpose programming languages,
-such as C, for instance, it still has very distinct features.</p>
-
-<p>For instance, it is an interpreted language that does not require data
-typing and its code is being evaluated during program execution.</p>
+<h2 id="ch2">Chapter 2: Structure and Formatting of a CSS Rule</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14 covered in this module (12) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image014.png" 
-  title="Covered in this module (1)"
-  alt="Covered in this module (1)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>In this module (1), we will make our first steps and learn the basics of the
-language. Tatyana will first show how to edit and run your code. She
-will then survey some of the most essential parts of the JavaScript
-language. Tatyana is an experienced data scientist and a JavaScript
-developer. She uses JavaScript&apos;ing at work researching bacteria&apos;s role
-in disease.</p>
+<h3 id="ch2-1">Section 2.1: Property Lists</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-2">1.2 Lexical Structure (6:56)</h3>
+<p>Some properties can take multiple values, collectively known as a
+<b>property list</b>.
+
+<pre><code>/* Two values in this property list */
+span {
+  text-shadow: yellow 0 0 3px, green 4px 4px 10px;
+}
+
+/* Alternate Formatting */
+span {
+  text-shadow:
+    yellow 0 0 3px,
+    green 4px 4px 10px;
+}</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 15 how to access the web console (13) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image015.png" 
-  title="How to access the web console"
-  alt="How to access the web console."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Welcome to the first lecture of the lexical structure module!</p>
-
-<p>Getting started with JavaScript is easy. All you need is a web console,
-which is included in any modern browser of your choice. It is always a
-good idea to work with the latest version of a web browser to fully
-enjoy the strength of JavaScript.</p>
-
-<p>A web console shows information about the currently loaded page. It also
-provides you with a command line that allows you to execute JavaScript
-directly in the current page.</p>
-
-<p>There are two ways for opening the console: you can either press the
-combination of three keys ctrl shift + I or you can open it through the
-menu of your browser.</p>
-
-<p>In Firefox, you click on menu, select developer menu and then the dev
-console.</p>
-
-<p>In Chrome, you also first click on menu, then select tools, where you
-find developer tools, which will open the web console for you.</p>
-
-<p>The dev console appears at the bottom of the browser window and the
-command line, framed in the blue box on the figure, will be ready for
-you to enter the JavaScript code.</p>
+<h3 id="ch2-2">Section 2.2: Multiple Selectors</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16 hello world (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image016.png" 
-  title="Hello World"
-  alt="Hello World."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>When you group CSS selectors, you apply the same styles to several
+different elements without repeating the styles in your style sheet.
+Use a comma to separate multiple grouped selectors.</p>
 
-<p>You can try out the console by typing the instruction: console.log
-hello world and you will see hello world appearing in the console below
-your command.</p>
+<pre><code>div, p {color: blue }</code></pre>
 
-<p>These instructions are also called statements in JavaScript. Similar to
-C, C++ and Java, JavaScript statements end with a semicolon.</p>
+<p>So the blue color applies to all <b>&lt;div&gt;</b> elements and all <b>&lt;p&gt;</b>
+elements.  Without the comma only <b>&lt;p&gt;</b> elements that are a child of 
+a <b>&lt;div&gt;</b> would be red.</p>
 
-<p>In principle, you can omit the semicolon at the end of your statement.
-JavaScript will add it for you. However, it is considered to be a bad
-practice to do so.</p>
+<p>This also applies to all types of selectors.</p>
 
-<p>Semicolons allow your code to be more readable and they also make sure
-that your code is free from side-effects.</p>
+<pre><code>p, .blue, #first, div span{ color : blue }</code></pre>
+
+<p>This rule applies to:</p>
+
+<ul>
+  <li><b>&lt;p&gt;</b></li>
+  <li>elements of the blue class</li>
+  <li>element with the ID first</li>
+  <li>every <b>&lt;span&gt;</b> inside of a <b>&lt;div&gt;</b>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17 js character set (14) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image017.png" 
-  title="JavaScript Character Set"
-  alt="JavaScript Character Set."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h3 id="ch2-3">Section 2.3: Rules, Selectors, and Declaration Blocks</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A CSS <b>rule</b> consists of a <b>selector</b> (e.g. h1) and <b>declaration block</b> ({}).
 
-<p>JavaScript is a case-sensitive language.</p>
+<pre><code>h1 {}</code></pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch3">Chapter 3: Comments</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-1">Section 3.1: Single Line</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>/* This is a CSS comment */
+div {
+  color: red; /* This is a CSS comment */
+}</code></pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch3-2">Section 3.2: Multiple Line</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>/*
+  This
+  is
+  a
+  CSS
+  comment
+*/
+div {
+  color: red;
+}</code></pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch4">Chapter 4: Selectors</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>CSS selectors identify specific HTML elements as targets for CSS
+styles. This topic covers how CSS selectors target HTML elements.
+Selectors use a wide range of over 50 selection methods offered by the
+CSS language, including elements, classes, IDs, pseudo-elements and
+pseudo-classes, and patterns.</p>
 
-<p>This means that language keywords, variable and function names must
-always be typed with a consistent capitalization of letters.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch4-1">Section 4.1: Basic selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<p>For example, a different capitalization of the name myvar will be
-understood by your program such that if you are using three different
+| Selector     | Description                                         |
+|--------------|-----------------------------------------------------|
+|  &ast;       | Universal selector (all elements) |
+|  div		   | Tag selector (all <b>&lt;div&gt;</b> elements) |
+|  .blue       | Class selector (all elements with class blue) |
+|  .blue.red   | All elements with class blue and red (a type of Compound selector) |
+|  #headline   | ID selector (the element with "id" attribute set to headline) |
+|  :pseudo-class | All Elements with pseudo-class |
+|  ::pseudo-element | Element that matches pseudo-element |
+|  :lang(en)		| Element that matches :lang declaration, for example <b>&lt;span lang="en"&gt;</b> |
+|  div > p			| child selector |
+  
+<blockquote>
+  <b>Note:</b> The value of an ID must be unique in a web page. It is a
+  violation of the <a href="https://www.w3.org/TR/html/dom.html#the-id-attribute">
+  HTML standard</a> to use the value of an ID more than once in the same document tree.
+</blockquote>
+
+<p>A complete list of selectors can be found in the 
+<a href="https://www.w3.org/TR/css3-selectors/#selectors">CSS Selectors Level
+3 specification</a>.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-2">Section 4.2: Attribute Selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Overview</h4>
+
+<p>Attribute selectors can be used with various types of operators that
+change the selection criteria accordingly. They select an element
+using the presence of a given attribute or attribute value.</p>
+
+| Selector(1)     | Matched element            | Selects elements...                |
+|----------------:|----------------------------|------------------------------------|
+| &lbrack;attr&rbrack;          | &lt;div attr&gt;                 | With attribute attr                |
+| &lbrack;attr='val'&rbrack;    | &lt;div attr="val"&gt;           | Where attribute attr has value val |
+| &lbrack;attr~='val'&rbrack;   | &lt;div attr="val val2 val3"&gt; | Where val appears in the           |
+|                 |                            | whitespace-separated list of attr  |
+| &lbrack;attr^='val'&rbrack;   | &lt;div attr="val1 val2"&gt;     | Where attr's value begins with val |
+| &lbrack;attr$='val'&rbrack;   | &lt;div attr="sth aval"&gt;      | Where attr's value ends with val   |
+| &lbrack;attr&ast;='val'&rbrack;    | &lt;div attr="somevalhere"&gt;   | Where attr contains val anywhere   |
+| &lbrack;attr&vert;='val'&rbrack;   | &lt;div attr="val-sth etc"&gt;   | Where attr's value is exactly val, |
+|                 |                            | or starts with val and immediately |
+|                 |                            | followed by - (U+002D) |
+| &lbrack;attr&vert;='val' i&rbrack; | &lt;div attr="val"&gt;           | Where attr has val, |
+|                 |                            | ignoring val's letter casing. |
+
+<b>Notes:</b>
+
+1.  The attribute value can be surrounded by either single-quotes or
+    double-quotes. No quotes at all may also work, but it&apos;s not valid
+    according to the CSS standard, and is discouraged.
+
+2.  There is no single, integrated CSS4 specification, because it is
+    split into separate modules. However, there are &quot;level 4&quot; modules.
+    <a href="http://caniuse.com/#feat=css-case-insensitive">See browser support</a>.
+
+<h4>Details<br>
+&lbrack;<b>attribute</b>&rbrack;</h4>
+
+<p>Selects elements with the given attribute.</p>
+
+<pre><code>div&lbrack;data-color&rbrack; {
+  <b>color</b>: red;
+}
+
+<b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-background="red"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/cezale/1/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute="value"</b>&rbrack;</code></pre>
+
+<p>Selects elements with the given attribute and value.</p>
+
+<pre><code>div&lbrack;data-color="red"&rbrack; {
+  <b>color</b>: red;
+  }
+
+<b>&lt;div data-color="red"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-color="green"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div data-background="blue"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/waxoked/1/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute*="value"</b>&rbrack;</code></pre>
+
+<p>Selects elements with the given attribute and value where the given
+attribute contains the given value anywhere (as a substring).</p>
+
+<pre><code>&lbrack;class*= "foo"&rbrack; {
+  <b>color</b>: red;
+}
+
+<b>&lt;div class="foo-123"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="foo123"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="bar123foo"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="barfooo123"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="barfo0"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/dazige/1/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute~="value"</b>&rbrack;</pre></code>
+
+<p>Selects elements with the given attribute and value where the given
+value appears in a whitespace-separated list.</p>
+
+<pre><code>&lbrack;class~="color-red"&rbrack; {
+  <b>color</b>: red;
+}
+
+<b>&lt;div class="color-red foo-bar the-div"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="color-blue" foo-bar the-div"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/posuhim/1/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute^="value"</b>&rbrack;</code></pre>
+
+<p>Selects elements with the given attribute and value where the given
+attribute begins with the value.</p>
+
+<pre><code>&lbrack;class^="foo-"&rbrack; {
+  <b>color</b>: red;
+}
+
+<b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/yowihi/1/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute$="value"</b>&rbrack;</code></pre>
+
+<p>Selects elements with the given attribute and value where the given
+attribute ends with the given value.</p>
+
+<pre><code>&lbrack;class$="file"&rbrack; {
+  <b>color</b>: red;
+}
+<b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="foobar-file"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div class="foobar-input"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/yowihi/2/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute&vert;="value"</b>&rbrack;</code></pre>
+
+<p>Selects elements with a given attribute and value where the
+attribute&apos;s value can be represented as Value, VALUE, vAlUe 
+or any other case-sensitive possibility.</p>
+
+<pre><code>&lbrack;lang&vert;="<b>EN</b>" i&rbrack; {
+  <b>color</b>: red;
+  }
+<b>&lt;div lang="EN-us"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div lang="EN-gb"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/yowihi/3/edit?html,css,output">Live Demo on JSBin</a>
+
+<pre><code>&lbrack;<b>attribute</b>=<b>"value" i</b>&rbrack;</code></pre>
+
+<p>Selects elements with a given attribute and value where the
+attribute&apos;s value can be represented as Value, VALUE, vAlUe or any
+other case-insensitive possibility.</p>
+
+<pre><code>&lbrack;lang|=<b>"EN"</b>&rbrack; {
+  <b>color</b>: red;
+}
+<b>&lt;div lang="EN-us"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div lang="EN-gb"&gt;</b>This will be red<b>&lt;/div&gt;</b>
+<b>&lt;div lang="PT-pt"&gt;</b>This will NOT be red<b>&lt;/div&gt;</b></code></pre>
+
+<a href="http://jsbin.com/yowihi/4/edit?html,css,output">Live Demo on JSBin</a>
+
+<h4>Specificity of attribute selectors<br>
+0-1-0</h4>
+
+<p>Same as class selector and pseudoclass.</p>
+
+<pre><code>*&lbrack;type=checkbox&rbrack; // 0-1-0</code></pre>
+
+<p>Note that this means an attribute selector can be used to select an
+element by its ID at a lower level of specificity than if it was
+selected with an ID selector: &lbrack;id=<b>"my-ID"</b>&rbrack; targets the same element as <b>#my-ID</b>
+but with lower specificity.</p>
+
+<p>See the Syntax Section for more details.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-3">Section 4.3: Combinators</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<b>Overview</b>
+<b>Selector Description</b>
+
+| Selector  | Description |
+|-----------|-------------------------------------------------------------------------------------|
+| div span |  Descendant selector (all <b>&lt;span&gt;</b>s that are descendants of a <b>&lt;div&gt;</b>) |
+| div &gt; span | Child selector (all <b>&lt;span&gt;</b>s that are direct child of a <b>&lt;div&gt;</b>) |
+| a ~ span | General Sibling selector (all <b>&lt;span&gt;</b>s that are siblings after an <b>&lt;a&gt;</b>) |
+| a + span | Adjacent Sibling selector (all <b>&lt;span&gt;</b> that are immediately after an <b>&lt;a&gt;</b>) |
+
+> <b>Note:</b> Sibling selectors target elements that come after them in
+> the source document. CSS, by its nature (it cascades), cannot target
+> <i>previous</i> or <i>parent</i> elements. However, using the flex order
+> property, a <a href="http://stackoverflow.com/a/36118012/3597276">
+> previous sibling selector can be simulated on visual media</a>.
+
+<h4>Descendant Combinator: selector selector</h4>
+
+<p>A descendant combinator, represented by at least one space character
+(), selects elements that are a descendant of the defined element.
+This combinator selects <b>all</b> descendants of the element (from child
+elements on down).</p>
+
+<pre><code>div p {
+  <b>color</b>: red;
+}
+
+<b>&lt;div&gt;</b>
+  <b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
+  <b>&lt;section&gt;</b>
+    <b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
+  <b>&lt;/section&gt;</b>
+<b>&lt;/div&gt;</b>
+
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></code></pre>
+
+<a href="http://jsbin.com/xonafuz/2/edit?html,css,output">Live Demo on JSBin</a>
+
+<p>In the above example, the first two <b>&lt;p&gt;</b> elements are selected since they are
+both descendants of the <b>&lt;div&gt;</b>.</p>
+<h4>Child Combinator: selector &gt; selector</h4>
+<p>The child (&gt;) combinator is used to select elements that are
+<b>children</b>, or <b>direct descendants</b>, of the specified element.</p>
+<pre><code>div &gt; p {
+  <b>color</b>: <span style='color: red;'>red</span>;
+}
+
+<b>&lt;div&gt;</b>
+  <b>&lt;p&gt;</b>My text is <span style='color: red;'>red</span><b>&lt;/p&gt;</b>
+  <b>&lt;section&gt;</b>
+    <b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b>
+  <b>&lt;/section&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
+<a href="http://jsbin.com/xonafuz/3/edit?html,css,output">Live Demo on JSBin</a>
+<p>The above CSS selects only the first <b>&lt;p&gt;</b> element, as it is the only paragraph directly descended from a <b>&lt;div&gt;</b>.</p>
+<p>The second <b>&lt;p&gt;</b> element is not selected because it is not a direct child of the <b>&lt;div&gt;</b>.</p>
+<h4>Adjacent Sibling Combinator: selector &plus; selector</h4>
+<p>The adjacent sibling (+) combinator selects a sibling element that immediate follows a specified element.</p>
+
+<pre><code>p &plus; p {
+  <b>color: red;</b>
+}
+
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b>
+<b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
+<b>&lt;p&gt;</b>My text is red<b>&lt;/p&gt;</b>
+<b>&lt;hr&gt;</b>
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b></code></pre>
+
+<a href="http://jsbin.com/xonafuz/4/edit?html,css,output">Live Demo on JSBin</a>
+
+<p>The above example selects only those <b>&lt;p&gt;</b> elements which are <i>directly preceded</i> by another <b>&lt;p&gt;</b> element.</p>
+
+<h4>General Sibling Combinator: selector &#126; selector</h4>
+
+<p>The general sibling (&#126;) combinator selects <i>all</i> siblings that follow the specified element.</p>
+
+<pre><code>p &#126; p
+  <b>color</b>: <span style='color: red;'>red</span>;
+}
+
+<b>&lt;p&gt;</b>My text is not red<b>&lt;/p&gt;</b>
+<b>&lt;p&gt;</b>My text is <span style='color: red;'>red</span>&lt;/p&gt;
+<b>&lt;hr&gt;</b>
+<b>&lt;h1&gt;</b>And now a title&lt;/h1&gt;
+<b>&lt;p&gt;</b><span style='color: red;'>My text is red</span><b>&lt;/p&gt;</b></code></pre>
+
+<a href="http://jsbin.com/xonafuz/5/edit?html,css,output">Live Demo on JSBin</a>
+
+The above example selects all <b>&lt;p&gt;</b> elements that are <i>preceded</i> by another <b>&lt;p&gt;</b> element,
+whether or not they are immediately adjacent.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-4">Section 4.4: Pseudo-classes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p><a href="https://www.w3.org/TR/selectors/#pseudo-classes">Pseudo-classes</a> are <b>keywords</b> 
+which allow selection based on information that lies outside of the document tree that cannot 
+be expressed by other selectors or combinators. This information can be associate to a
+certain state (<a href="https://www.w3.org/TR/selectors/#UIstates">state</a> and 
+<a href="https://www.w3.org/TR/selectors/#dynamic-pseudos">dynamic</a> pseudo-classes), to locations 
+(<a href="https://www.w3.org/TR/selectors/#structural-pseudos">structural and 
+<a href="https://www.w3.org/TR/selectors/#target-pseudo">target</a> pseudo-classes), 
+to negations of the former (<a href="https://www.w3.org/TR/selectors/#negation">negation</a> 
+pseudo-class) or the languages (<a href="https://www.w3.org/TR/selectors/#lang-pseudo">lang</a> 
+pseudo-class). Examples include whether or not a link has been followed (:visited), 
+the mouse is over an element (:hover), a checkbox is checked (:checked), etc.</p>
+
+<h4>Syntax</h4>
+
+<pre><code>selector:pseudo-class {
+  property: <b>VALUE</b>;
+}</code></pre>
+
+<b>List of pseudo-classes:</b>
+
+| Name          | Description |
+|---------------|---------------------------------------------------------------------------------|
+| <a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act">:active</a>  | Applies to any element being activated (i.e. clicked) by the user. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any">:any</a> | Allows you to build sets of related selectors by creating groups that |
+|               | included items will match. This is an alternative to repeating an entire selector. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target">:target</a>  | Selects the current active #news element (clicked on a URL |
+|               | containing that anchor name)
+| <a href="https://www.w3.org/TR/css3-selectors/#checked">:checked</a>  | Applies to radio, checkbox, or option elements that are checked |
+|               | or toggled into an "on" state. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:default">:default</a> | Represents any user interface element that is the default among a group of |
+|               | similar elements. |
+| <a href="https://www.w3.org/TR/css3-selectors/#enableddisabled">:disabled</a> | Applies to any UI element which is in a disabled state. |
+| <a href="https://www.w3.org/TR/selectors/#empty-pseudo">:empty</a>   | Applies to any element which has no children. |
+| <a href="https://www.w3.org/TR/css3-selectors/#enableddisabled">:enabled</a>  | Applies to any UI element which is in an enabled state. |
+| <a href="http://tympanus.net/codrops/css_reference/first">:first</a> | Used in conjunction with @page rule, this selects the first page in a |
+|               | printed document. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child">:first-child</a>  | Represents any element that is the first child element of its parent. |
+| <a href="https://www.w3.org/TR/css3-selectors/#first-of-type-pseudo">:first-of-type</a> | Applies when an element is the first of the selected element type |
+|              | inside its parent. This may or may not be the first-child. |
+| <a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act">:focus</a>  | Applies to any element which has the user's focus. This can be given by the |
+|              | user's keyboard, mouse events, or other forms of input. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within">:focus-within</a> | Can be used to highlight a whole section when one element inside it is focused. It matches |
+|              | any element that the :focus pseudo-class matches or that has a descendant focused. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen">:full-screen</a>  | Applies to any element displayed in full-screen mode. It selects the whole stack |
+|              | of elements and not just the top level element. |
+| <a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act">:hover</a> | Applies to any element being hovered by the user&apos;s pointing device, but |
+|              | not activated. |
+| <a href="https://www.w3.org/TR/css3-selectors/#indeterminate">:indeterminate</a> | Applies radio or checkbox UI elements which are neither checked nor |
+|             | unchecked, but are in an indeterminate state. This can be due to an |
+|             | element's attribute or DOM manipulation. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range">:in-range</a>  | The :in-range CSS pseudo-class matches when an element has |
+|             | its value attribute inside the specified range limitations for this element. |
+|             | It allows the page to give a feedback that the value currently defined |
+|             | using the elements is inside the range limits. |
+| <a href="http://tympanus.net/codrops/css_reference/invalid/">:invalid</a>  | Applies to &lt;input&gt; elements whose values are invalid according to |
+|             | the type specified in the type= attribute. |
+| <a href="https://www.w3.org/TR/css3-selectors/#lang-pseudo">:lang</a>  | Applies to any element who&apos;s wrapping &lt;body&gt; element has a properly |
+|             | designated lang= attribute. For the pseudo-class to be valid, it must |
+|             | contain a <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">valid two or three langauge code</a>. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child">:last-child</a>  | Represents any element that is the last child element of its parent. |
+| <a href="https://www.w3.org/TR/css3-selectors/#last-of-type-pseudo">:last-of-type</a>  | Applies when an element is the last of the selected element type inside |
+|             | its parent. This may or may not be the last-child. |
+| <a href="http://tympanus.net/codrops/css_reference/left_pseudo-class/">:left</a> | Used in conjunction with the &commat;page rule, this selects all the left |
+|             | pages in a printed document. |
+| <a href="https://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited">:link | Applies to any links which haven&apos;t been visited by the user. |
+| <a href="https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:not">:not() | Applies to all elements which <b>do not</b> match the value passed to |
+|                 | :not(p) or :not(.class-name) for example. It must have a value to be |
+|                 | valid and it can only contain one selector. However, youi can chain multiple |
+|                 | together.
+| <a href="https://www.w3.org/TR/css3-selectors/#nth-child-pseudo">:nth-child | Applies when an element is the n-th element of its parent, where n |
+|                       | can be an integer, a mathematical expression (e.g n+3) or the keywords |
+|                       | odd or even. |
+| <a href="https://www.w3.org/TR/css3-selectors/#nth-of-type-pseudo">:nth-of-type | Applies when an eleent is the n-th element of its parent of the |
+|                         | same element type, where n can be an integer, a mathematical |
+|                         | expression (e.g n+3) or the keywords odd or even. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child">:only-child | The :only-child CSS pseudo-class represents any element |
+|                        | which is the only child of a parent.  This is the same as |
+|                        | :first-child:last-child or :nth-child(1):nth-last-child(1), |
+|                        | but with a lower specificity. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:optional">:optional | The :optional CSS pseudo-class represents any element |
+|                      | that does not have the required attribute set on it. This allows |
+|                      | forms to easily indicate optional fields and to style them accordingly. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range">:out-of-range | The :out-of-range CSS pseudo-class matches when an element has its |
+|                          | value attribute outside the specified range limitations for this element. |
+|                          | It allows the page to give a feedback that the value currently defined using the |
+|                          | element is outside the range limits. A value can be outside of a range if it is |
+|                          | either smaller or larger than maximum and minimum set values. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown">:placeholder-shown | <b>Experimental:</b> Applies to any form element currently displaying placeholder text. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only">:read-only | Applies to any element which is not editable by the user. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-write">:read-write | Applies to any element that is editable by a user, such as <b>&lt;input&gt;</b> elements. |
+| <a href="http://tympanus.net/codrops/css_reference/right_pseudo-class">:right | Used in conjunction with the @page rule, this selects all the right pages in a |
+|                   | printed document. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">:root | Matches the root element of a tree representing the document. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:scope">:scope | CSS pseudo-class matches the elements that are a reference |
+|                   | point for selectors to match against. |
+| <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target">:target | Selects the current active #news element (clicked on a URL |
+|                    | containing that anchor name). |
+| <a href="https://www.w3.org/TR/css3-selectors/#the-link-pseudo-classes-link-and-visited">:visited | Applies to any links which have been visited by the user. |
+
+> The :visited pseudo-class can't be used for most styling in a lot of modern browsers anymore because
+> it's a security hole. See this <a href="https://hacks.mozilla.org/2010/03/privacy-related-changes-coming-to-css-visited/">link</a> for reference.
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown"><b>Experimental.</b>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-5">Section 4.5: Child Pseudo Class</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+&quot;The :nth-child(an+b) CSS pseudo-class matches an element that has
+an+b-1 siblings before it in the document tree, for a given positive
+<b>or zero value</b> for n&quot; - &lbrack;MDN :nth-child&rbrack;
+
+| <b>pseudo-selector</b>       | <b>1&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;10</b> |
+|------------------------------|---------------------------------------------------------------------------------|
+| :first-child                 |  ✔ |
+| :nth-child (3)                | &nbsp;&nbsp;&nbsp;✔ |
+| :nth-child (n+3)              | &nbsp;&nbsp;✔&nbsp;  ✔&nbsp;  ✔&nbsp;  ✔&nbsp;  ✔&nbsp;  ✔&nbsp;  ✔&nbsp;  ✔ |
+| :nth-child (3n)               |         ✔       ✔       ✔ |
+| :nth-child (3n+1)             | ✔         ✔       ✔       ✔ |
+| :nth-child (-n+3)             | ✔  ✔  ✔ |
+| :nth-child (odd)              | ✔      ✔      ✔     ✔     ✔ |
+| :nth-child (even)             |     ✔      ✔      ✔     ✔        ✔ |
+| :last-child                   | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔ |
+| :nth-last-child(3)            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✔ |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-6">Section 4.6: Class Name Selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The class name selector select all elements with the targeted class
+name. For example, the class name .warning would select the following
+<b>&lt;div&gt;</b> element:
+
+<pre><code>&lt;div class="warning"&gt;
+  &lt;p&gt;This would be some warning copy.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+<p>You can also combine class names to target elements more specifically.
+Let&apos;s build on the example above to showcase a more complicated class
+selection.</p>
+
+<h4>CSS:</h4>
+
+<pre><code>.important {
+  color: orange;
+}
+.warning {
+  color: blue;
+}
+.warning .important {
+  color: red;
+}</code></pre>
+
+<h4>HTML:</h4>
+
+<pre><code><b>&lt;div class="warning"&gt;</b>
+  <b>&lt;p&gt;</b>This would be some warning copy.<b>&lt;/p&gt;</b>
+<b>&lt;/div&gt;</b>
+
+<b>&lt;div class="important warning"&gt;</b>
+  <b>&lt;p class="important"&gt;</b>This is some really important warning copy.<b>&lt;/p&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
+
+<p>In this example, all elements with the .warning class will have a blue
+text color, elements with the .important class with have an orange
+text color, and all elements that have <i>both</i> the .important and
+.warning class name will have a red text color.</p>
+
+<p>Notice that within the CSS, the .warning.important declaration did not have any spaces
+between the two class names. This means it will only find elements
+which contain both class names warning and important in their class
+attribute. Those class names could be in any order on the element.</p>
+
+<p>If a space was included between the two classes in the CSS
+declaration, it would only select elements that have parent elements
+with a .warning class names and child elements with .important class
 names.</p>
-
-<p>All JavaScript programs are written using the Unicode character set.
-The standard Unicode set supports virtually every language currently
-used on the planet, making JavaScript independent of the operating
-platform and the language used.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18 whitespace and new lines (15) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image018.png" 
-  title="Whitespace and new lines"
-  alt="Whitespace and new lines."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>JavaScript ignores white spaces, tabs and newlines that appear in your
-code, except if they are part of a string or a regular expression.</p>
-
-<p>Because of this feature, you can format your programs in the neat and
-consistent way. And, in general, it is a very good idea to format your
-programs, because formatting makes your programs easy to read and
-understand.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19 comments (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image019.png" 
-  title="Comments"
-  alt="Comments"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>JavaScript supports, as some other programming languages, two styles of
-comments. Namely, any text written after two slash characters up to the
-end of a line is treated as a single line comment and is ignored by
-JavaScript. Also, text written between slash star and star slash
-characters is also treated as a comment. You can span these comments
-over multiple lines. You can&apos;t, however, nest comments, as it will
-result in a syntax error shown in your console.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20 variables (16) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image020.png" 
-  title="Variables"
-  alt="Variables"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Variables are symbolic names for values in your code. The names of
-variables are called identifiers and they conform to certain rules.</p>
-
-<p>For example, an identifier can start and contain only letters, numbers,
-underscores or dollar signs. An identifier cannot start with a number.
-Identifiers are always case-sensitive and, finally, identifiers cannot
-match any of JavaScript reserved words and what they are we will see on
-the next slide.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21 reserved words (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image021.png" 
-  title="Reserved words"
-  alt="Reserved words"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>JavaScript reserves a number of identifiers as keywords of the language
-itself.</p>
-
-<p>The words listed on this slide cannot be used as identifiers in your
-programs, because they are part of the JavaScript syntax and have a
-special meaning for JavaScript. These include break, case, catch, class
-and others. There is a number of other keywords not listed on the slide
-that are reserved for future versions of JavaScript and therefore should
-also not be used. Please refer to other sources for the complete list of
-these keywords.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22 declaring variables (17) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image022.png" 
-  title="Variables"
-  alt="Declaring Variables."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Before a variable can be used in JavaScript, it needs to be declared.
-Note that, while declaring a variable is not a requirement, it is
-considered to be a best practice to do so and is highly encouraged.
-Declaring a variable can be done in three ways.</p>
-
-<p>First, by using the keyword <b>var</b>. The keyword var tells the program
-that variable can be used both globally, throughout the whole program,
-if it is declared outside of a function, or locally, meaning that the
-variable can be used within the function it is declared. Note, in our
-example the variable x has no value specified.</p>
-
-<p>Second, we can declare a variable by assigning it a value. Doing so, we
-always declare a global variable that is a variable available throughout
-the whole program.</p>
-
-<p>Finally, we can declare a variable using the keyword <b>let</b>, which
-tells the program that the variable is only available within the block
-scope of its declaration.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23 constants (18) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image023.png" 
-  title="Constants"
-  alt="Constants"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An identifier with an associated constant value, that is a value, that
-cannot be changed anymore, is called a constant. Constants are declared
-with a const keyword and have to be initialized upon declaration.
-
-Trying to re-declare the constant with a different type or trying to
-assign a new value to it, will result in a type error printed in your console.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 24 printing out variables to the console (18) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image024.png" 
-  title="Printing out variables to the console"
-  alt="Printing out variables to the console."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-To print out the declaration of a variable, it is sufficient to just
-enter its identifier name in the console. If the variable is undeclared,
-the console will return the reference error 'error message'. If the
-variable is declared, but, for some reason, not initialized, meaning it
-has no values assigned, then the console will return the value is
-undefined. And, if a variable is declared and initialized, for example,
-the variable C is initialized with the value of 3, then accessing the
-variable will result in no error message printed to the console.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25 literals (19) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image025.png" 
-  title="Literals"
-  alt="Literals"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-So far, we talked about variable names, the identifiers and variable
-declarations using the keywords var, let and const.
-
-Ideally, each variable is assigned with a value. A fixed value that is
-literally provided to a variable is called a literal. There are several
-types of literals, including integer floating-point, string, boolean,
-regular expression, array and object literals.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-3">1.3 Data Types (6:58)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to data types, the second lecture of the JavaScript language basics module.
-
-In the previous lecture, we talked about JavaScript language syntax and
-defined the term variable. We learned that a variable in JavaScript
-needs to be declared and ideally initialized with a value. In the
-current lecture, we will learn different types of values that a variable
-can be initialized with.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 26 data types; primitive and reference data types (20) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image026.png" 
-  title="Data Types; Primitive and Reference data types"
-  alt="Data Types; Primitive and Reference data types."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-JavaScript is an un-typed language. This means that unlike in other
-languages, such as Java and C, in JavaScript we do not declare the data
-type of variables explicitly. JavaScript automatically converts one data
-type to another when it&apos;s needed. For example, it can append numbers
-and strings by automatically converting numbers to strings. <b>Data
-types</b> in JavaScript can be divided in <b>two groups</b> - <b>primitive</b>
-types and <b>reference</b> types. <b>String, number, boolean, undefined and
-null are primitive data types</b>. <b>Objects and arrays are referenced
-data types.</b>
-
-While primitive data types have a fixed size and memory, for example, a
-single number occupies 8 bytes in memory, reference data types do not
-have a fixed size. For example, arrays can contain any number of
-elements and therefore an array cannot be stored in 8 bytes of memory.
-Instead, it can hold a reference to the values and that&apos;s why it is
-called a reference type.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 27 number type; 64-bit floating-point number (21) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image027.png" 
-  alt="Number type; 64-bit floating-point number"
-  alt="Number type; 64-bit floating-point number."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s have a closer look at the primitive data types.
-<b>Numbers</b> are a basic data type. All numbers in JavaScript
-are represented as one type floating point values.
-
-JavaScript numbers can be positive and negative, and can also be
-represented using the scientific exponential notation. Numbers without
-decimals or exponent notation are integers. Integers can be as large as
-2 to the power of 53 and as small as minus 2 to the power of 53. Using
-integers outside this range may lead to a lower precision in the
-representation of your number.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 28 number type ii; standard number & special value (21) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image028.png" 
-  title="Number type II; Standard Number &amp; Special values"
-  alt="Number type II; Standard Number &amp; Special Values."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-JavaScript provides standard arithmetic operators for numbers, such as
-addition, subtraction, multiplication, division and modular. JavaScript
-also provides special numeric values, such as infinity and not a number.
-If a value becomes smaller than the smallest possible number that can be
-represented in JavaScript, then minus infinity is printed for this
-value. The same rule applies to large values that are larger than the
-largest possible number that can be represented in JavaScript. For
-these, JavaScript prints infinity. If the outcome of a mathematical
-operation is an undefined result or an error, then JavaScript prints not
-a number value, also known as NaN.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~ 29 number type iii; Floating arithmetics and math object for more complex operations (22) -->
-<p align="center">
-  <img src="./images/image029.png" 
-  title="Number type III; Floating arithmetics and math object for more complex operations"
-  alt="Number type III; Floating arithmetics and math object for more complex operations."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-One of the drawbacks of JavaScript numbers is that floating arithmetic
-may not always be accurate. To overcome this problem, multiplication and
-division can provide help. In addition to standard arithmetic
-operations, there is also a large number of mathematical functions that
-can be used in JavaScript. All these functions are stored as properties
-of a single Math object. So, you always need to use the object name Math
-to access them. For example, to compute 2 to the power of 10, you can
-use the power function of Math.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ 30 string type; strings, special characters, indexed start at 0 (22) ~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image030.png" 
-  title="String type; Strings, Special characters, indexed start at 0"
-  alt="String type; Strings, Special characters, indexed start at 0."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We can use string literals to represent any text in JavaScript. The text
-can be enclosed in matching pairs of single or double quotation marks.
-It is possible to insert a special character in a string by using the
-escape backslash character. Finally, the length of a string corresponds
-to the number of characters in it. Like in many other programming
-languages, the first character in a string has position index 0.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 31 Boolean type; yes, no, 1, 0, true, false (23) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image031.png" 
-  title="Boolean type; yes, no, 1, 0, true, false"
-  alt="Boolean type; yes, no, 1, 0, true, false."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In contrast to number and string datatypes, the boolean type has only
-two values - true and false. A <b>boolean</b> value represents if
-something is true or not.
-
-In a numeric representation, true evaluates to 1 and false evaluates to 0.
-
-Typically, boolean values are used for comparison in JavaScript
-programs, for example, to check whether two values are equal or not, if
-their values and data types are equal or not, or if one value is larger
-or smaller than the other value. Another important data type is called
-<b>undefined</b>.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 32 undefined type; non-initialized variable = 'undefined' (24) ~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image032.png" 
-  title="Undefined type; non-initialized variable = 'undefined'"
-  alt="Undefined type; non-initialized variable = 'undefined'."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<b>Undefined</b> is returned when the variable was declared, but
-never initialized. That means, it never got a value assigned to it. It
-is also possible to manually assign undefined to a variable as a value.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 33 null type; means 'nothing'. absence of value (24) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image033.png" 
-  title="Null type; means 'nothing'. absence of value"
-  alt="Null type; means 'nothing'. absence of value."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The last primitive data type is called <b>null</b>. Null means
-nothing and is used to indicate an absence of a value. It is considered
-good practice to use null in your code instead of undefined. The
-variable foo in our example is assigned the value null. It means that
-foo has neither type nor value.
-
-So, why to use this data type at all? Well, it can become very handy,
-actually. When used in boolean context, null converts to false. And when
-used in a numeric context, null converts to 0. Note, that null does not
-equal undefined. If the values of both types are compared, then true is
-returned.
-
-However, if both values and types are compared, then false is returned.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 34 object - a collection of named values (25) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image034.png" 
-  title="Object - a collection of named values"
-  alt="Object - a collection of named values."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An <b>object</b> is a reference data type that consists of a
-<b>collection of named values.</b> These named values are also
-called <b>properties,</b> they describe the object. A property is
-a mapping between keys and values. Keys are always represented as
-strings and values can be of any data type. For example, the object king
-holds properties named first name, last name and age. Keys of the
-properties can be listed using the object dot keys function. A value of
-a property can be returned by calling the variable name of the object
-and the key name of the property.
-
-Additionally, the value of any property can be changed by assigning it a
-new value.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 35 array - an indexed collection of values (25) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image035.png" 
-  title="Array - an indxed collection of values"
-  alt="Array - an indxed collection of values."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An <b>array</b> is another reference data type, which also stores
-a collection of values. While each value in an object has a name -
-that&apos;s the key name - as we saw in the previous slide, the values in an
-array are indexed by a number. The first value in an array has index 0,
-the second value has index 1 and so on.
-
-Similar to objects, arrays are dynamic and untyped, meaning that they
-can change their size as needed and can store values of different data
-types, including other arrays and objects. An array can be created, as
-shown in the example, after declaration and initiation. Any value in an
-array can be changed and new values can be added. The length of an array
-can be printed using the property called length.
-
-<h4 id="ch1-3-1">1.3.1 Errata corrige</h4>
-
-As some viewers pointed out, in this video, there is a mistake in one
-code snippet example. The following:
-
-```
-var king = { firstName: "Ned", lastName:"Stark", age:40};
-Object.keys(king);
-< ["Ned", "Stark", "age"]
-should actually state:
-var king = { firstName: "Ned", lastName:"Stark", age:40};
-Object.keys(king);
-< ["firstName", "lastName", "age"]
-```
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-4">1.4 Scoping &amp; Hoisting (3:41)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to our third lecture of the language basics module! In this
-lecture, we will learn the fundamental aspects of the JavaScript
-language, namely scoping and hoisting. But before we do that, we first
-need to introduce JavaScript functions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 36 function - block of code which performs a particular task (26) ~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image036.png" 
-  title="Function; block of code that performs a particular task"
-  alt="Function; block of code that performs a particular task."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A function is a block of code that performs a particular task. In the
-example, we define a function, called sumFunction, with two parameters:
-par1 and par2. The body of the function calculates the sum of par1 and
-par2, and returns the result. Once a function is defined, it can be
-invoked by its name, followed by the comma-separated list of arguments
-within parentheses. For example, the variable x invokes function
-sumFunction with arguments 3 and 4.
-
-Once x is executed, its result, which equals 7, is returned to the console.
-
-We will get back to functions in a few moments. Now, let us take a look
-at the concept of scoping.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~ 37 scoping; defines the context in which variables and functions can be accessed (27) ~~-->
-<p align="center">
-  <img src="./images/image037.png" 
-  title="Scoping; Defines the context in which variables and functions can be accessed"
-  alt="Scoping; Defines the context in which variables and functions can be accessed."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Scope defines the context in which variables and also functions can be
-accessed. The lifetime of a variable starts when it is declared.
-
-A variable declared outside the function has a global scope. Global
-variables can be accessed and modified throughout the program. In
-contrast, a variable declared within a function, has a local scope.
-Local variables can only be accessed and modified within that function.
-Global variables are declared with a keyword var.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38 scoping - global variables (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image038.png" 
-  title="Scoping - Global variables"
-  alt="Scoping - Global variables."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-If a variable is initialized without being declared, it is automatically
-considered to be global. Global variables are available to any code in a
-JavaScript program. 
-
-For example, the variable x declared outside the
-function printVar(), in the example, has a global scope and can
-therefore be accessed and modified from anywhere in the code. Calling
-the function printVar in the console will result in the value 1 to be
-printed.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39 scoping - local variables (28) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image039.png" 
-  title="Scoping - Local variables"
-  alt="Scoping - Local variables."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Local variables are declared with the keywords let or var. In contrast to global 
-variables that are accessible and modifiable from anywhere in the code, local 
-variables are only available within the function they are declared. Let&apos;s have 
-a look at the code example.
-
-Printing x at the bottom of the code will return 1, because x has a global scope. 
-However, printing y at the bottom of the code will return a y is undefined error, 
-because y has a local of scope.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 40 variable hoisting - moving variable declaration to top of script (28) ~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image040.png" 
-  title="Variable Hoisting - moving variable declaration to the top of a script"
-  alt="Variable Hoisting - moving variable declaration to the top of a script."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Hoisting means moving a variable declaration to the top of the script or
-a function. This means that the declaration of a variable is used before
-the variable is actually declared. Only variables declared with the
-keyword var can be hoisted. Hoisted variables return undefined. It is
-important to mention that only the variable declarations are hoisted, not
-variable initializations or assignments.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 41 function hoisting - 'lifts' variable declaration to top of block (29) ~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image041.png" 
-  title="Function Hoisting - 'lifts' variable declaration to top of block"
-  alt="Function Hoisting - 'lifts' variable declaration to top of block."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In our example, the variable x is declared with a var and can be hoisted to 
-before the console log y statement, while the variable y is declared with a let 
-and thus cannot be hoisted. Function declaration is also hoisted. This way, we 
-can invoke a function before it is declared. Hoisting lifts the declaration of 
-a function to the top of the block.
-
-In the first example, the declaration of the function addOne is lifted to the 
-top, which allows us invoking this function without error message being shown. 
-It is important to mention that only function declaration is hoisted and not 
-the function expression. The function expression, basically, corresponds to the 
-function being assigned to a variable and, therefore, the rules for variable 
-hosting apply. Namely, that the variable declaration is moved to the top, but 
-not the variable initialization.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-5">1.5 Loops (3:16)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to our fourth lecture of the language basics module!
-
-In this lecture, we will learn about the concept of loops. Loops are
-used to execute the same block of code repeatedly until a certain
-condition is met.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42 what are loops? (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image042.png" 
-  title="What are Loops?"
-  alt="What are loops?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-For example, one way of printing all integers from 0 to 9 can be to use
-10 statements of console.log.
-A shorter way is to use a for loop with a variable that changes with
-each iteration of the loop.
-There are several options of how a block of code can be repeatedly run
-in JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43 for loop (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image043.png" 
-  title="For loop"
-  alt="For loop"
-  style="border: 2px solid #000000; width:40%;" />
-
-The for loop is probably the most frequently used loop in any programming 
-language. It consists of three segments separated by a semicolon.
-
-The first statement initializes one or several values and is executed exactly 
-once. In the example below, statement 1 is the initiation of the loop counter
-i. 
-
-The second statement is the loop termination condition, which is i less than 5 
-in the example. Once this statement evaluates to false, the loop terminates.
-
-Finally, the third statement is the updater i++ in the example.
-This statement is invoked after each loop iteration.
-Typically, it increments or decrements the counter. All three statements
-are usually written in one line and each of them is optional.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44 for/in loop (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image044.png" 
-  title="For/in are loop"
-  alt="For/in loop."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A <b>["for in"]</b> loop is especially useful when working with
-objects. It iterates over the properties of an object and returns the
-name of each of the properties. In the example, at each iteration of the
-loop, the variable i is set to the name of each property of the object
-king. At each iteration, the value of <b>[i]</b> is printed to the
-console.
-
-As a result, we have the strings: first name, last name and age printed. 
-
-While the "for-in" loop is great for iterating over object properties,
-the <b>["for of"]</b> loop should be the choice when iterating over
-array values.
-As a matter of fact, using for of for other referenced types fails with
-a type error.
-
-If using the for in loop for an array, then the indices instead of
-values are printed, as shown in the second example.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 45 while loop (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image045.png" 
-  title="While loop"
-  alt="While loop."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The for loop is repeated a specific number of times. The while loop in
-contrast, is repeated an unknown number of times as long as a condition
-is met. A while loop works by first evaluating its condition.
-
-If it is true, the code block within the while loop is executed until
-the condition evaluates to false. Once false, the while loop terminates.
-Note, it is very easy to create an infinite loop if the condition never
-evaluates to false.
-
-In the example, we print the numbers from 0 to 4 by initializing the
-counter i and incrementing it by 1 in each iteration step. We check if i
-is smaller than 5.
-If this is the case, then the program prints the updated value of i.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 46 do/while loop (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image046.png" 
-  title="Do/While loop"
-  alt="Do/While loop."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The while loop first evaluates the condition and then executes the code
-if the condition is true. 
-
-The do while loop does it in the opposite way.
-It first executes the code and then evaluates the condition.
-Because the condition is evaluated only after the code is executed, the
-code is executed at least once even if the condition is false.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-6">1.6 Conditional Statements (3:09)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to the fifth and the last lecture of the language basics module!
-In this module, we will learn about conditional statements. An example
-for conditional statement could be the following:
-
-&quot;If you know Java script, you can implement a web app&quot;. Conditional
-statements are used to perform different actions based on different
-conditions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 47 types of conditional statements (33) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image047.png" 
-  title="Types of conditional statements"
-  alt="Types of conditional statements."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-There are four ways to construct a conditional statement in JavaScript.
-
-First, if a specified conditional is true, a code block following an if
-statement is executed.
-
-Second, if a specified condition is false, a block following an else
-statement is executed.
-
-Third, if a specified condition is false, a condition following the else
-if statement is evaluated.
-
-Finally, a switch statement compares the values of the switch expression
-with the values to the switch cases and executes a code block associated
-with a match.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 48 if statement (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image048.png" 
-  title="If statement"
-  alt="If statement."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<b>[If]</b> statement includes the condition to be evaluated and the
-block of code to be executed in case the condition is true.
-
-In the example, the code block is executed in case the variable x holds
-the value larger than zero.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 49 if/else statement (34) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image049.png" 
-  title="If/else statement"
-  alt="If/else statement."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<b>["If else"]</b> statement includes the condition to be evaluated
-and the block of code to be executed in case the condition is true.
-
-It also includes a block of code to be executed in case the condition is
-false. In the example, the program evaluates if the variable x is larger
-than zero.
-
-If true, the variable text is set to &quot;x is a positive number&quot;.
-Otherwise, text is set to &quot;x is zero or a negative number&quot;.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 50 if else if statement (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image050.png" 
-  title="If/else/if statement"
-  alt="If/else/if statement."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An <b>["if else if"]</b> statement evaluates a new if condition, if
-the first if condition is evaluated to false. If a subsequent if
-conditional is evaluated to true, then the block of code that follows
-this else if statement is executed. In the example, the program
-evaluates if the variable x is larger than zero.
-
-If true, the variable text is set to &quot;x is a positive number&quot;.
-If the value of x is smaller than zero, the program sets the variable
-text to &quot;x is a negative number&quot;.
-If both if conditions are false, the program sets the variable text to
-&quot;x is zero&quot;.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 51 switch statement (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image051.png" 
-  title="Switch statement"
-  alt="Switch statement."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A switch statement compares the values of the switch expression with the
-values of the switch cases and executes a code block associated with the
-match. A switch expression is specified at the top of the switch
-statement.
-
-Switch cases are evaluated from top to bottom.
-Once a match is found, the block of code following the match is
-executed.
-If there is a break statement within this block code, then the whole
-switch statement is terminated and the program moves on.
-Now, attention, in case there is no break statement, execution goes
-through all consequent code blocks until a break statement or until the
-very end on the switch statement.
-Finally, the default keyword can be used within a switch block to
-specify a block of code that executes if no matches are found.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch1-7">1.7 Summary Module 1 -- JavaScript Basics (1:08)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Thank you, Tatyana, for this comprehensive lecture about the language
-basics!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52 module 1 recap (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image052.png" 
-  title="Module 1 recap"
-  alt="Module 1 recap."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-As we mentioned at the introduction to this module, JavaScript may
-resemble general-purpose programming languages, but it is also very
-different.
-
-As we&apos;ve seen, JavaScript is un-typed, which means that you can assign
-any data type to variables and convert them during runtime. As Tatyana
-also pointed out, JavaScript has a distinct feature, called hoisting,
-which calls variable declarations to the top of the function or to the
-top of your program.
-
-Finally, JavaScript has more in common with functional programming
-languages and we will find out more about that in the next module.
-
-Remember that JavaScript is a very forgiving language that will allow
-you to do many things without complaining. This gives the programmer a
-lot of power, but can also lead to many mistakes.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 53 additional reading; javascript (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image053.png" 
-  title="Additional reading; JavaScript"
-  alt="Additional reading; JavaScript."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-These fine references provide great guidance on how to properly and
-effectively write JavaScript code.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 54 in the next module; functions, objects, etc (37) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image054.png" 
-  title="In the next module; functions, objects, prototypes, properties, inheritance"
-  alt="In the next module; functions, objects, prototypes, properties, inheritance."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the next module, Dimitrii will talk about functions and objects, and
-show you how you can use those to structure your Javascript program.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2-0">2.0 Introduction -- Functions and Objects (1:14)</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 55 the two pillars of javascript (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image055.png" 
-  title="The Two Pillars of JavaScript"
-  alt="The Two Pillars of JavaScript."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Welcome to the functions and objects module! As we mentioned in the
-intro to the previous module, JavaScript has a similar syntax to other
-multi-purpose programming languages. However, JavaScript is also
-different in the way that it allows developers to use different
-programming styles. 
-
-JavaScript allows developers to take advantage of
-two programming paradigms. Namely, the prototypal inheritance and
-functional programming. These two programming paradigms are called by
-Eric Elliott the two pillars of JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 56 covered in this module (2) (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image056.png" 
-  title="Covered in this module (2)"
-  alt="Covered in this module (2)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In this module, Dimitrii will walk us through the basics of working with
-objects and how we can write object-oriented code in JavaScript.
-Dimitrii will then talk about dynamic use of functions and how functions
-and closures are used to scope and structure our code. Dimitrii is a
-master Informatics student at the TU of Munich. In his recent past, he
-has worked on processing massive amount of data and became passionate
-about turning data into knowledge. Dimitrii has five years' experience
-in JavaScript development and he&apos;s also a tutor of the introduction to
-JavaScript course in the TUM.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-1">2.1 Functions, part 1 (3:06)</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We will now take a closer look at working with functions and objects in
-JavaScript. Let&apos;s start!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 57 function declaration (2.1) (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image057.png" 
-  title="2.1 Functions, part 1"
-  alt="2.1 Functions, part 1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-To declare a function use keyword function followed by function&apos;s name,
-a list of parameters in parentheses and function&apos;s body that is
-manipulations that this function does in curly braces. Another way to
-create a function is by using a function expression. A function
-expression consists of the keyword function, list of parameters and a
-function&apos;s body. 
-
-A name is not mandatory. We can assign a function
-created with a function expression to a variable. Although, a name in a
-function expression is not mandatory, we still can use it. However, in
-such a case, we will only be able to invoke a function by its name
-inside the function.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 58 function expression with a name (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image058.png" 
-  title="Function Expression with a name"
-  alt="Function Expression with a name."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A function declaration and a function expression both define functions.
-What is the difference?
-
-Well, as we have seen, a function declaration requires a name, while a
-function expression does not. We have also seen in the previous module
-that function declarations are hoisted; that is, they are moved to the
-top of the script.
-
-Finally, we can&apos;t use function declarations inside loops, conditionals
-and other control statements, while function expressions have no such
-limits. Working with arguments is the same for functions created with
-function declarations and function expressions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59 working with arguments (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image059.png" 
-  title="Working with arguments"
-  alt="Working with arguments."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s first make our language clear here. A function has parameters and
-takes arguments. When we define a function, we list its parameters.
-
-When we invoke a function, we pass arguments. JavaScript allows us to
-define a function with one number of parameters and invoke it with a
-different number of arguments.
-
-In this example, we have defined a function with two parameters and
-invoked it with only one argument. As we can see, parameters with no
-corresponding argument will have value undefined.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 60 working with arguments, #2 (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image060.png" 
-  title="Working with arguments, #2"
-  alt="Working with arguments, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Still, we don&apos;t always have to pass an argument for each parameter.
-JavaScript allows us to specify a default value for a parameter. Here,
-we have defined a function that performs an exponentiation operation and
-has two parameters - a base and a power. If we do not pass an argument
-for the power parameter, it will be equal to its default value - 10.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 61 working with arguments, #3 (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image061.png" 
-  title="Working with arguments, #3"
-  alt="Working with arguments, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What if the number of variants is larger than the number of parameters?
-
-Well, excessive arguments will not be assigned to any parameters. They
-simply will not be used. However, they are not discarded and we still
-can access them thanks to a special variable - arguments. An argument
-object contains all the arguments passed to a function. JavaScript
-functions always have a return value.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62 function return value (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image062.png" 
-  title="Function return value"
-  alt="Function return value."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-By default, a function returns an undefined. If we want to return a
-different value, we have to explicitly specify it using the return
-keyword.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-2">2.2 Objects, part 1 (9:04)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 63 function and objects: objects, part 1 (2.2) (42) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image063.png" 
-  title="2.2 Functions and Objects: Objects, part 1"
-  alt="2.2 Functions and Objects: Objects, part 1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the previous module, we have learned that a JavaScript object is a
-set of properties of Key, Value pairs.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64 objects, recap (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image064.png" 
-  title="Objects, recap"
-  alt="Objects, recap."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-JavaScript objects are mutable, passed by reference and they can have
-arbitrary properties with values of any type.
-
-Arrays, functions, regular expressions and dates are objects as well.
-We can create an object by invoking the standard object constructor with
-a keyword new.
-Having created an object, we can add desired properties one by one.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 65 creating an object (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image065.png" 
-  title="Creating an object"
-  alt="Creating an object."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s create an object that describes our online class.
-
-First, we invoke the object constructor, then we define properties -
-name and year.
-If we type the name of our variable in the browser console and hit
-enter, we will get a representation of our object.
-We don&apos;t have to add properties one by one to an empty object, though.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 66 object literal (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image066.png" 
-  title="Object literal"
-  alt="Object literal."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An object literal that is a list of properties in curly braces allows us to 
-specify object&apos;s properties at once. An object property has a name and 
-a value. We can use valid JavaScript identifiers as property names and access
-such properties via dot notations.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 67 property names (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image067.png" 
-  title="Property names"
-  alt="Property names."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Remember, a valid identifier starts with a letter, an underscore or a dollar sign.
-Subsequent characters can be letters, digits, underscores and dollar signs.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 68 property names, #2 (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image068.png" 
-  title="Property names, #2"
-  alt="Property names, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-However, we do not have to use only strings that have valid identifiers.
-
-JavaScript allows us to use any string as a property name. If a string
-is not a valid identifier, we have to quote it. To access such a
-property, we have to use square bracket notation.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 69 property values (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image069.png" 
-  title="Property values"
-  alt="Property values."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A property value can be of any type, including functions.
-Functions that are properties of an object are called methods.
-Inside of a method, this keyword refers to the object the method is
-invoked on. However, beware of pitfalls of late binding that trip many beginning
-JavaScript programmers. We will cover it in details in lesson five.
-This keyword allows us to manipulate object properties in its methods.
-Here, we define an object that describes our class. It has properties
-name, year and print.
-Print is a method that prints object&apos;s name and the year together.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 70 working with properties (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image070.png" 
-  title="Working with properties"
-  alt="Working with properties."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We have already seen defining and accessing properties. We can also change and 
-delete them. To change your property, we simply assign a new value. Delete 
-operator allows us to remove a property from an object. Remember, using delete 
-operator is not the same as assigning undefined to a property. When we assign 
-undefined to a certain property, it is not removed. An object still has property 
-with its name and value undefined. Delete, on the other hand, completely removes 
-a property from an object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71 iterating over properties (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image071.png" 
-  title="Iterating over properties"
-  alt="Iterating over properties."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-For in loop allows us to iterate over objects properties names. Once we
-have a name, we can get a corresponding value by using the square
-bracket notation.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 72 checking property existence (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image072.png" 
-  title="Checking property existence"
-  alt="Checking property existence."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We can also check if a certain property exists using hasOwnProperty
-method.
-
-This method takes a name of a property as an argument and returns true
-if such a property exists. Otherwise, it returns false.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73 comparing objects (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image073.png" 
-  title="Comparing objects"
-  alt="Comparing objects."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-An important thing to remember is that an object is only equal to
-itself.
-
-In other words, equality operator returns true only if both variables
-hold a reference to the same object. It will return false in all other
-cases, even if objects have the same set of properties with the same
-names and the same values.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 74 prototypes (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image074.png" 
-  title="Prototypes"
-  alt="Prototypes"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Oh, by the way, just two slides ago we have invoked <b>hasOwnProperty</b>
-method on our objects, right? But we have never added this method to our
-objects. Yet, we still are able to invoke it. Why? Because prototypes!
-
-In JavaScript, each object has a special connection to another object -
-to a prototype.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 75 prototypal inheritance (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image075.png" 
-  title="Prototypal inheritance"
-  alt="Prototypes inheritance."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-When we try to access a certain property that is absent in an object,
-JavaScript will look for that property in the prototype. We can say that
-object inherits its prototype properties. Special object
-<b>object.prototype</b> is a prototype of all objects created via an object
-literal or an object constructor. <b>Object.prototype</b> has
-<b>hasOwnProperty</b> methods and that&apos;s exactly what we have invoked.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 76 prototypal inheritance, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image076.png" 
-  title="Prototypal inheritance, #2"
-  alt="Prototypes inheritance, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-A prototype is an object and we know how to add properties to an object.
-What happens when we add a property to a prototype?
-
-All objects inheriting from this prototype get immediate access to the
-new property. Let&apos;s add a new property called <b>easterEgg</b> with a
-value &quot;Hello, world!&quot; to the <b>Object.prototype.</b>
-
-Having done that, we can immediately access **easterEgg** property from
-our **cls object**, which was created via an object literal and inherits
-from **Object.prototype**.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 77 prototypal inheritance, #3 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image077.png" 
-  title="Prototypal inheritance, #3"
-  alt="Prototypes inheritance, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What will happen if we add a property with the same name easterEgg to our cls 
-object? Will it have any effect on the Object.prototype?
-
-Let&apos;s try it. As we can see from this example, adding such a property
-to one specific object does not effect that prototype and, consequently,
-does not affect all other objects inheriting from the same prototype.
-As we have seen, JavaScript allows us to write programs in
-object-oriented way.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image078.png" 
-  title="Object Oriented Programming in JavaScript"
-  alt="Object Oriented Programming in JavaScript."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Object-oriented programming paradigm means we model our program as a set
-of objects. Objects are a combination of data and behavior.
-
-Methods represent behavior, while attributes, these are properties that
-hold data, are data.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image079.png" 
-  title="Objects with similar behavior"
-  alt="Objects with similar behavior."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We also want to define groups of similar objects, objects that have
-similar attributes and behavior. For details about object-oriented
-programming paradigm, visit the following link. Now, let&apos;s return to
-our objects and our concerns. So, we know how to create objects that
-combine data and behavior.
-
-How can we create groups of similar objects? Consider this example.
-Imagine swordsmen in a video game. They all have hit points and they all
-can attack with a sword. We want to be able to create several swordsmen.
-How can we do that in JavaScript?
-
-We know that we can create how a swordsman with an object literal
-explicitly defining attributes and methods each time. That is tedious!
-We also know that we can add methods to the Object.prototype.
-Hmm, that is dangerous and is actually considered an anti-pattern.
-Let&apos;s say, first we add our attack with a sword method to the
-Object.prototype.
-
-Then, we decide, we also want to have archers and add shooting arrow method to 
-the Object.prototype. Now, swordsmen have shooting arrow method and archers have 
-attack with a sword method. Is there a better way?
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image080.png" 
-  title="Constructor functions, #1"
-  alt="Constructor functions, #1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Yes! There is! With constructor functions we can create groups of objects. Each 
-object belonging to a group, has similar contents and behavior.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (51) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image081.png" 
-  title="Constructor functions, #2, #2"
-  alt="Constructor functions, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-How exactly does a constructor function work? First, we invoke it with a new 
-keyword. New keyword creates a new object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image082.png" 
-  title="Constructor functions"
-  alt="Constructor functions."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The value of constructor function special property, called prototype, becomes 
-the prototype of the newly created object. The keyword this returns our new 
-object inside the constructor function, allowing us to define and initialize 
-object&apos;s properties. Each function has a prototype property. The value 
-of prototype property is an object.
-
-This object becomes the prototype of every object created by a
-corresponding constructor function. As we can see in this example, once
-we add methods getTotalDamage to Swordsman.prototype, object Swordsman
-created by Swordsman constructor function inherits this method.
-Thus, constructor functions allow us to easily create groups of objects
-with similar behavior and data.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 83 adding properties to a prototype (50) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image083.png" 
-  title="Adding properties to a prototype"
-  alt="Adding properties to a prototype."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We can add properties of any type and not just functions. However,
-adding attributes, that is data properties to a prototype, is an
-anti-pattern.
-
-Why?
-
-Can you imagine what will happen if we make hitPoints a property of a
-prototype?
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-3">2.3 Functions, part 2 (5:19)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 84 functions & objects; functions, part 2 (53) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image084.png" 
-  title="Functions &amp; Objects; Functions, part 2"
-  alt="Functions &amp; Objects; Functions, part 2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Welcome back to functions! In this lecture, we will take a detailed look
-at working with functions arguments, scopes and variable shadowing, and
-one of the most powerful features of JavaScript - higher-order
-functions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 85 working with arguments object (53) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image085.png" 
-  title="Working with arguments object"
-  alt="Working with arguments object."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s look again at the arguments object. It contains arguments passed to 
-a function. We can access a specific argument by index. We can use length 
-property to get number of passed arguments. Arguments object looks like an 
-array, but, remember, it is not an array.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 86 working with arguments object, #2 (54) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image086.png" 
-  title="Working with arguments object, #2"
-  alt="Working with arguments object, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Arguments object does not have array methods. We can see in this example
-that attempting to invoke an array&apos;s method indexOf results in a
-TypeErrorpart 2.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image087.png" 
-  title="Rest parameters"
-  alt="Rest parameters."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Working with arguments object is not the only way to handle an
-indefinite number of arguments. Rest parameter syntax, which is very
-simple - three dots before a parameter name - allows us to catch all
-arguments starting at a certain position and assign them as an array to
-a parameter.
-
-In this example, we define a function using rest parameters syntax and
-invoke it with four arguments. First and second arguments are assigned
-to respective parameters, while the rest are assigned to third
-parameter.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 88 asi - automatic semicolon insertion (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image088.png" 
-  title="ASI - Automatic Semicolon Insertion"
-  alt="ASI - Automatic Semicolon Insertion."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Automatic semicolon insertion is one of the most controversial features
-of JavaScript.
-
-It is described by a somewhat intimidating specification, but we don&apos;t
-really have to know it by heart. However, please remember that we have
-to put the returned value on the same line as return keyword.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 89 automatic semicolon insertion (asi) (55) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image089.png" 
-  title="Automatic Semicolon Insertion (ASI)"
-  alt="Automatic Semicolon Insertion (ASI)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Otherwise, a semicolon will be inserted right after return keyword,
-which means that a function will return undefined.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 90 functions create scope (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image090.png" 
-  title="Functions create scope"
-  alt="Functions create scope."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Now, let&apos;s look into scoping. Each function creates a new scope.
-A variable declared in a scope is accessible inside all of the inner
-scopes.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 91 inner functions and outer scope (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image091.png" 
-  title="Inner functions and outer scope"
-  alt="Inner functions and outer scope."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s rephrase: inside a function we can access all of the variables
-declared in these functions outer scope. We can both read and write such variables.
-
-In this example, a variable is declared and initialized in the outer
-scope. Then, it is changed in the inner scope created by a function.
-Of course, this change exists not only in the inner scope, but in the
-outer scope as well.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 92 variable shadowing (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image092.png" 
-  title="Variable shadowing"
-  alt="Variable shadowing."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Declaring a variable with the same name as a variable in an outer scope
-blocks access to the outer variable in an inner scope.
-
-Here, we declare and initialize a variable in the outer scope and then
-declare and initialize a variable with the same name in an inner scope.
-
-An outer scope variable is shadowed by an inner scope variable.
-
-That is, manipulations with an inner scope variable have no effect on an
-outer scope variable.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 93 higher order functions (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image093.png" 
-  title="Higher order functions"
-  alt="Higher order functions."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Higher-order functions are one of the most powerful tools in
-JavaScript&apos;s arsenal.
-
-What exactly is a higher-order function? Well, a higher-order function
-is a function that takes a function as an argument or returns a function
-as a return value.
-
-Here, we see a function that returns another function.
-
-Let&apos;s take a closer look at this example. What exactly is going on
-here?
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 94 add(4)(5) (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image094.png" 
-  title="add(4)(5)"
-  alt="add(4)(5)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We have defined function add that takes an integer as an argument and
-returns another function innerAdd.
-
-innerAdd also takes an integer as an argument and returns some of these
-integers.
-
-Do you understand how we invoke this function with two sets of
-parentheses?
-
-First, we invoke add with four as an argument that returns innerAdd and
-we immediately invoke it passing 5 as an argument.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 95 closures (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image095.png" 
-  title="Closures"
-  alt="Closures."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Wait a minute! We invoke innerAdd after add function has been invoked,
-right? It&apos;s done, it&apos;s over. So, how can innerAdd access variable X?
-
-To understand that we need to understand the idea of closures.
-
-JavaScript inner function has access to outer variables even when an
-outer function has been run.
-
-We can say that a function &ast;encloses&ast; its environment.
-
-Thus, a closure is function plus function&apos;s context. Immediately
-invoked function expressions are very often used together with closures
-in JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 96 iife - immediately invoked function expression (59) ~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image096.png" 
-  title="IIFE - Immediately Invoked Function Expression"
-  alt="IIFE - Immediately Invoked Function Expression."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What is it? Well, it&apos;s simply a function expression that is immediately
-invoked!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 97 classical example - a simple counter (59) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image097.png" 
-  title="Classical example - a simple counter"
-  alt="Classical example - a simple counter."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Using immediately invoked function expression, we create a function in
-this example, declare counter value variable and initialize it with
-zero. Then, we return another function that has access to counter value
-variable. Each time we invoke resulting function, it increases counter value and
-returns it. There is no other way to access counter value, but through this
-function.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-4">2.4 Objects, part 2 (5:25)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 98 functions and objects; objects, part ii (59) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image098.png" 
-  title="Functions and Objects; Objects, part II"
-  alt="Functions and Objects; Objects, part II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We already know that constructor functions and prototypes allow us to
-create groups of similar objects of objects with similar data and
-similar behavior.
-
-But we have a problem.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 99 access control (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image099.png" 
-  title="Access control"
-  alt="Access control."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>We can&apos;t control access to objects properties. Our swordsman&apos;s 
-properties are exposed to the outside world. And that is a problem, because any 
-piece of code can directly change hit points.</p>
-
-<p>Consider this example:<br>
-Let&apos;s say, we&apos;ve been exposing swordsman&apos;s hit points and directly
-changing it from other parts of our code, subtracting damage from hit
-points directly.<br>
-Now, we decide to implement different types of armor with each type
-reducing damage by a certain percentage.
-That means, we have to go over all places where we directly interact
-with hit points and take armor into account.</p>
-
-<p>This problem is solved in languages, such as Java and C++ by declaring
-some attributes as public exposed to the outside and others as private
-that is accessible only by the objects methods.</p>
-
-<p>Unfortunately, JavaScript has no mechanism of declaring certain
-attributes as private. Is there any way to solve this problem?
-Indeed, there is and we have already seen it.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 100 closures as a solution (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image100.png" 
-  title="Closures as a solution"
-  alt="Closures as a solution."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Closures allow us to create variables that can only be accessed by an
-enclosing function.</p>
-
-<p>We&apos;re going to use closure now to hide swordsman&apos;s damage and attacks
-from the outside.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 101 closures as a solution, #2 (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image101.png" 
-  title="Closures as a solution, #2"
-  alt="Closures as a solution, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>We have turned objects properties damage and attacks into variables in a
-constructor function. <b>getTotalDamage</b>, being an inner function, has access 
-to these variables. It keeps access even after constructor invocation has been 
-completed. Can we somehow access them as objects properties?
-Well, in this example, we try to do exactly that - we try to use
-parameter name <b>dmg</b> and variable name <b>damage</b>, but all in vain.</p>
-
-<p>Thus, objects methods <b>getTotalDamage</b> has access to <b>damage</b> and 
-<b>attacks</b> variables. But there is no other way to access these values from 
-the outside. They are safely hidden.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 102 access control vs prototypes (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image102.png" 
-  title="Access control VS prototypes"
-  alt="Access control VS prototypes."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Okay! We know now how to create groups of similar objects and how to
-implement access control. Are we golden now? Unfortunately, we are not!</p>
-
-<p>Prototypes and closures are mutually exclusive in a certain sense,
-because prototype methods cannot access data hidden within closures.
-Thus, we have to choose between access control with closures and code reuse with 
-prototype chains.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 103 prototype chain? (63) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image103.png" 
-  title="Prototype chain?"
-  alt="Prototype chain?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Did I just say prototype chain? Oh yes, I did! We can create an object via 
-constructor function and make this object a prototype of another object, 
-building a chain of prototypes.</p>
-
-<p>In this example, we define a constructor function Lannister. We add battleCry 
-method to the corresponding prototype. Then, we define another constructor function 
-Swordsman and make an object created with the Lannister constructor a corresponding 
-prototype for Swordsmen constructor.</p>
-
-<p>Finally, we create a Swordsman object with a Swordsmen constructor. Prototype of 
-Swordsman object is an object created with a Lannister constructor, whose 
-Prototype is a Lannister.prototype object. Thus, Swordsman object inherit methods 
-from Swordsman.prototype and Lannister.prototype.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 104 object.create (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image104.png" 
-  title="Object.create"
-  alt="Object.create."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>There is an even simpler way to do it.</p>
-
-<p><b>Object.create</b> method allows us to create objects with custom prototypes
-without defining constructors. It takes one object as an argument and
-then returns another object, whose prototype is the first object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 105 prototypal inheritance (64) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image105.png" 
-  title="Prototypal inheritance"
-  alt="Prototypal inheritance."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>When we invoke a specific method on an object, JavaScript first looks for a method 
-with a given name in the object.</p>
-
-<p>Then, in the objects prototype, then in the object's prototypes prototype etc, 
-etc, all the way up to the <b>Object.prototype</b>, which is always located at 
-the very root of prototype hierarchy.</p>
-
-<p>The first found method is used.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 106 dangers of constructors (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image106.png" 
-  title="Dangers of constructors"
-  alt="Dangers of constructors."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>We started this lecture praising constructors and saying that thanks to them we 
-can create groups of similar objects. Unfortunately, it&apos;s not all roses.</p>
-
-<p>Now we will mention dangers of constructors. These dangers stem from the
-fact that constructor functions are still functions. So, it&apos;s easy to
-confuse a constructor function and a regular function.</p>
-
-<p>Calling a constructor function without a new keyword and conversely calling 
-a regular function that explicitly returns an object with a new keyword are two 
-common mistakes.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 107 dangers of constructors, #2 (65) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image107.png" 
-  title="Dangers of constructors, #2"
-  alt="Dangers of constructors, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>If we call a constructor function without a new keyword, then this keyword 
-returns global object and we end up creating global variables.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 108 dangers of constructors, #3 (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image108.png" 
-  title="Dangers of constructors, #3"
-  alt="Dangers of constructors, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>If we call a regular function that explicitly returns an object with a
-new keyword, then our function will still return that object.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-5">2.5 Functions, part 3 (5:03)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 109 functions are objects (66) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image109.png" 
-  title="Functions are objects"
-  alt="Functions are objects."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Functions are objects in JavaScript.
-
-We have already seen prototype property.
-
-Functions also have name and length properties.
-
-The value of the name property is function&apos;s name.
-
-In case of an anonymous function, it is an empty string.
-
-The value of the length property is an amount of parameters.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 110 function.prototype (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image110.png" 
-  title="Function.prototype"
-  alt="Function.prototype."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We know that objects have prototypes and we know that functions are
-objects.
-
-It&apos;s not surprising then that each function object is connected to a
-prototype as well.
-
-Function.prototype is the prototype of functions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 111 apply and call (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image111.png" 
-  title="apply and call"
-  alt="apply and call."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Functions inherit apply and call methods from Function.prototype.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 112 apply and call, #2 (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image112.png" 
-  title="apply and call, #2"
-  alt="apply and call, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Do you understand what these methods do in the current example?
-
-apply and call methods allow to call a function as if it was a method of
-the object that is passed as a first argument.
-
-In other words, this keyword returns passed object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 113 apply and call, #3 (68) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image113.png" 
-  title="apply and call, #3"
-  alt="apply and call, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The first argument passed to apply and call methods becomes the value
-returned by this keyword.
-
-Other arguments become arguments of the function.
-
-Remember, call and apply treat them differently. call method takes these
-arguments simply as arguments, while apply method takes an array and
-turns it into arguments.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 114 array of arguments with apply (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image114.png" 
-  title="Array of arguments with apply"
-  alt="Array of arguments with apply."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Since apply takes an array and turns it into arguments for function, we
-can use apply when we are stuck with an array.
-
-In this example, we want to get the maximum value of an array of numbers
-Math.max method doesn&apos;t work with arrays, but we can easily solve this
-problem with apply.
-
-A mnemonic allows to remember which of two methods takes an array. apply
-and array start and end with the same letters.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 115 spread operator (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image115.png" 
-  title="Spread operator"
-  alt="Spread operator."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-That&apos;s nice, but we have an even simpler way of unpacking an array of
-arguments.
-
-Spread operator allows us to turn an array into arguments for function.
-
-Its syntax is very simple - three dots before an argument.
-
-Please do not confuse it with rest parameters.
-
-If we are defining a function, it&apos;s rest parameters.
-
-If we are calling a function, it&apos;s a spread operator.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 116 arguments as an array (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image116.png" 
-  title="arguments as an array"
-  alt="arguments as an array."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s take a look at argument subject one more time, just one more
-time.
-
-We know that it&apos;s not an array, but now we know that we can create an
-array with the same contents as arguments using call method.
-
-Slice is an array method that returns a copy of an array.
-
-Passing an argument&apos;s object to slice by a call or apply, returns an
-array containing the same elements as argument&apos;s object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 117 calling one object's methods on another object (70) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image117.png" 
-  title="Calling one object's methods on another object"
-  alt="Calling one object's methods on another object."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In JavaScript we can call one object&apos;s methods on another object using
-apply and call, or we can simply add methods to another object, as in
-the current example.
-
-This is possible thanks to a very important feature of JavaScript,
-called late binding.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 118 late binding (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image118.png" 
-  title="Late binding"
-  alt="Late binding."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What&apos;s it about?
-
-Well, late binding means that keyword this becomes bound to an object at
-the invocation time.
-
-In other words, object returned by this keyword is selected only when we
-invoke a function.
-
-However, there is one way to change this behavior.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 119 function.protype.bind (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image119.png" 
-  title="Function.prototype.bind - returns a new function bound to a specified object. 
-    this keyword will always return bound object inside a bound function"
-  alt="Function.prototype.bind - returns a new function bound to a specified object. 
-    this keyword will always return bound object inside a bound function."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p><b>Function.prototype.bind</b> method returns a new function bound to a
-specified object this keyword always returns bound object inside a bound
-function.</p>
-
-We can see in this example that even if we copy a bound method to
-another object, this keyword still returns the bound object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 120 this (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image120.png" 
-  title="this"
-  alt="this."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The value returned by this keyword is decided at invocation time.
-Hmm, but is there a default value?
-
-In other words, what does this return if a function hasn&apos;t been bound
-to an object and is not invoked as a method, or via apply or call?
-By default, this returns the global object.
-In the browser, it&apos;s the window object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 121 this: function checkthisout (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image121.png" 
-  title="this: In an inner function 'this' by default returns the global object"
-  alt="this: In an inner function 'this' by default returns the global object."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-This also returns the global object in an inner function that is in a
-function that is called by a method.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 122 this: let cls (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image122.png" 
-  title="this and that"
-  alt="this and that."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-However, we already know how to deal with such a problem.
-
-We can either bind an inner function or cache value of this keyword in
-another variable.
-
-For example, that or self and access it from an inner function.
-
-In this example, we decided to use that.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch2-6">2.6 Summary Module 2 - Functions and Objects (1:01)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Thank you, Dimitrii, for covering functions and objects.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 123 covered in this module; working with functions (74) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image123.png" 
-  title="Covered in this module; Working with functions"
-  alt="Covered in this module; Working with functions."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In this module, we saw different ways of invoking functions. JavaScript
-has several ways to invoke functions.
-
-We can call functions, invoke them as methods, use the new keyword or do
-indirect invocation.
-
-These different invocations lend flexibility to the language when
-working with functions and objects.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 124 covered in this module; working with modules (74) ~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image124.png" 
-  title="Covered in this module; Working with objects"
-  alt="Covered in this module; Working with objects."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We also saw different ways to create objects.
-
-We can use built-in constructors or we can create our own custom
-constructors.
-
-We learned how to create groups of object with similar behavior and
-data. And we also saw that we can solve access control problems with
-closures. This module showed the basics of using objects and functions,
-and would allow you to better understand how to structure your
-JavaScript code.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 125 in the next module, writing code on the server side (75) ~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image125.png" 
-  title="In the next module, writing code on the server side, using node.js &amp; an example"
-  alt="In the next module, writing code on the server side, using node.js &amp; an example."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>In the next module, Chris will show you how we can create JavaScript on
-the server-side using Node.js as well as other technologies.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-0">3.0 Introduction -- Server-side JavaScript (1:31)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to the server-side JavaScript module! JavaScript was developed
-as a scripting language that can only be run in the web browser.
-
-Yet, modern web applications are not composed of one single component.
-
-In the past, all of these parts could not be written using a single
-language.
-
-For example, we could use PHP on the back-end and flash on the
-front-end.
-
-Today, we can use JavaScript to develop the back-end part of the app
-using the node.js framework, while still using JavaScript to generate
-the dynamic content of the front-end.
-
-Since the first version of Node appeared, many developers have found it
-useful and have chosen to build the back-end of their applications using
-JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 126 about the instructor - christian dallago (76) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image126.png" 
-  title="About the instructor - Christian Dallago"
-  alt="About the instructor - Christian Dallago."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>Chris is a master student in Informatics with a solid background in
-Software Engineering. He has over three years' experience developing
-full-stack applications in JavaScript.
-He is also a mentor in the Google Summer of Code program and the tutor of the 
-Intro to JavaScript course, given at the TU of Munich. By his own admission, 
-Chris really likes to turn pizza into code.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 127 what we will learn in this session (76) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image127.png" 
-  title="What we will learn in this session"
-  alt="What we will learn in this session."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In this module, Chris will take you through the first steps of building
-a back-end JavaScript application. 
-Chris will review some of the technologies we use to handle data,
-control requests and present the results on the web.
-You will also get a chance to experiment with node.js using code
-examples we provide.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-1">3.1 Anatomy of HTTP transactions (6:19)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to this lecture about anatomy of HTTP transactions!
-
-In this lecture, we&apos;re going to see how requests are made and what URL
-stands for.
-
-Let&apos;s look at the first example.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 128 requests (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image128.png" 
-  title="Requests"
-  alt="Requests."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What we see here is the browser that is trying to access a location on
-the web, which is example.dallago.us.
-
-It tries to access the route and asks the server: do you have something
-to deliver to me? The server will answer to the browser: yes, I have something 
-for you and it&apos;s an HTML file, which is called index.html.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 129 requests ii (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image129.png" 
-  title="Requests II"
-  alt="Requests II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Later, when the browser executes the index.html, tt will most likely
-require some further components, which are specified in the HTML file.
-
-These components are usually scripts and images.
-
-In this specific case, we see that the browser is asking the web server
-again for a script, which is called script.js and an image, which is
-called image.png.
-
-If everything went according to plan, the server will then answer to the
-browser: yes, I have these files and there you are.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 130 requests iii (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image130.png" 
-  title="Requests III"
-  alt="Requests III."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the HTML, the locations where we find these requests are tags like
-these.
-
-This is a png or image tag, which stands for a location in which we want
-to load an image.
-What we see later in the href, is a URL of where the image is to be
-taken from. In this case, the image is located at example.dallago.us/image.png.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 131 requests iv (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image131.png" 
-  title="Requests IV"
-  alt="Requests IV."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Most likely, in modern web pages, you see href references like this.
-
-What these are, are relative paths. So, what we are saying here is: if
-we&apos;re executing our
-HTML file, which is located in the root, we want to access the image in
-the same location, which is again the root.
-We want to access the image at example.dallago.us/image.png.
-
-This is different if the HTML was, for example, loaded from a subfolder
-of a web server, which could be, for example, the public sub folder. So,
-if we&apos;re executing an HTML file, which is located in
-example.dot.dallago.us/public and we have an img tag, like this one,
-which is trying to access image.png, what we&apos;re actually asking for is
-the image at example.dallago.us/public/image.png.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 132 types of requests (79) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image132.png" 
-  title="Types of requests"
-  alt="Types of requests."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-There are different types of requests that you can perform on the web.
-The ones that we have seen up until now, are ***get*** requests. They
-are what your browser usually always performs. 
-
-There are also other types of requests, which are, for example, ***post*** 
-requests. They are used to create and update resources, and they&apos;re 
-usually found in web forms on your web pages.
-
-Third type of request are ***put*** requests. These are conceptually
-similar to post requests, but they are mainly used for updating. You can
-also use them to create resources, but you have to specify a precise URL
-where you want to put this resource in.
-If we&apos;re trying to, for example, upload an image of a cat, which is
-called cat.png, what we would say is: we want to put our image at the
-location xample.dallago.us/cat.png.
-
-The last type of requests that we are going to talk about are ***delete*** 
-requests. These requests are used to delete resources as the name says, so that 
-we don&apos;t have them anymore on our web server.
-
-There are other types of requests, but we are not going to discuss about
-them, because they are not relevant to the slide set.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 133 urls (80) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image133.png" 
-  title="URLs"
-  alt="URLs."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The next thing that we&apos;re going to talk about are URLs. There are
-different things you want to look at when you see a URL.
-
-The first part is the ***protocol***. It&apos;s https in this case, but usually 
-you see also http. There are actually two different kinds of protocols.
-HTTPs stands for secure HTTP.
-It ensures that when you&apos;re accessing a resource, the resource comes
-exactly from the server that you are requesting it from.
-So, that you are not put in a situation of having someone between you
-and the web server, which can read the information that is flowing
-between you or your browser and the web server.
-
-The second part is the ***hostname.*** This is a friendly name for a
-server on the web, which is usually addressed with a set of numbers,
-which we are going to see in the next slide.
-The first part that we see here is the ***location*** or ***path***.
-These are usually subfolders on your web server and it&apos;s just as if you
-were opening sub folders on your computer.
-
-The last part is the ***resource*** that you&apos;re going to ask and in
-this specific case is a png image and it&apos;s called protein.png.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 134 urls ii (81) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image134.png" 
-  title="URLs II"
-  alt="URLs II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Here is a different representation of the URL that we had before. We see
-in the first part the protocol and the hostname. The hostname maps to
-this address on the top, which is 10.129.31.45.
-
-This is actually the way addresses are thought of on the web, but you
-can view them similarly as the address of where you are standing right
-now: your home or work address.
-
-It&apos;s just within computer science. We like numbers, so we put them
-everywhere.
-
-The second part that we see are subfolders. In this specific case,
-we&apos;re accessing assets and then we&apos;re accessing images.
-
-The last part is a resource that we want to access, which is the image
-of this protein, which is called protein.png.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 135 javascript for back-end development (82) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image135.png" 
-  title="JavaScript for back-end development"
-  alt="JavaScript for back-end development."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What we have seen up until now is JavaScript as it is used for
-front-end. It is used to extend normal HTML code to allow us to perform
-some nice and better functionalities with our code.
-
-JavaScript, in these cases, is executed within the browser or the
-browser&apos;s console.
-
-What we are interested in looking at next is, actually, JavaScript for
-back-end development. What this means is that we want to see how
-JavaScript can be used to answer requests, which come from the web,
-which is what we have seen up until now.
-
-JavaScript is also able to be interpreted as an ordinary computer
-language, as you would, for example, do with python or C or Java and
-this is also being enabled by the same framework, which is called
-node.js, which we will look at into later videos.
-
-That is used to create web backends or **API**s, which we are also going
-to discuss in the next videos.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-2">3.2 Node.js and NPM (9:28)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to this session about Node.js and NPM! Let&apos;s start right away
-with Node.js.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 136 node.js - javascript interpreter (83) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image136.png" 
-  title="Node.js - JavaScript Interpreter"
-  alt="Node.js - JavaScript Interpreter."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What is it? Node.js allows you to interpret JavaScript in your computer.
-It&apos;s similar at the way JavaScript is interpreted in your browser, but
-it allows you to access things, which are usually not accessible from
-within your browser. So, for example, it allows you to access files, you
-can read and write files on your system, and it allows you to access
-different layers of your system, for example, the network layer, which
-is used by Node.js
-
-if you build a web application. It provides you with the tool to use the
-same language and concepts that you have already used to build
-JavaScript for the front-end, which means the language is still an
-event-based, it&apos;s still asynchronous, it uses callbacks and things like
-these. When you run Node, it actually runs on a single thread, which has
-1.8 Gigabytes of RAM allocated to it. As I said, it provides you with
-different libraries that, for example, let you read and write files on
-your system. With Node, you can build many things.
-
-The most important ones are three: you can build command line scripts,
-you can
-
-build **API**&apos;s or web applications with back- and front-end. Command
-line scripts are what you would usually write with bash, C, Java,
-Python. You can write scripts that allow you to read files on your
-system and then produce some output, always in the system.
-
-An **API** is a web service that allows you to send and receive messages
-on the web. It is what most of your applications use, especially if they
-are cross-platform. So, for example, if you have an application that is
-running on your smartphone, your computer or your tablet, usually the
-programming language of the application itself is very different. But
-they all communicate with the server. And this communication happens
-over **API** calls. **API** calls, as I said before, is just a means of
-sending and receiving data.
-
-And with **Node.JS**, you&apos;re able to write very quickly and very nice
-APIs. The last thing that you can build with Node is a web application -
-a complete web application. That means a web application that has both
-back-end as well as front-end. It is as if you were to build an API, but
-you were to extend it with some views. Views, specifically, are things
-that you see. So, when you connect to, for example, an address on
-example.dallago.us, you see a web page.
-
-And that&apos;s exactly what a front-end is! It provides you with the tools
-to build these views, to reuse them and to use the code from the server
-to, for example, give meaningful objects meaningful data to the view
-itself.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 137 asynchronous, non-binding execution (84) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image137.png" 
-  title="Asynchronous, non-binding execution"
-  alt="Asynchronous, non-binding execution."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-How is Node different from things that we have already seen in the
-past? The traditional approach of -- for example PHP and Apache - is
-that whenever a request is coming into the server, Apache starts a new a
-new thread, a new process, on your machine to answer exactly this
-request. So, the request is the code of where the request is executed
-linearly as we see above - one request one function after the other.
-
-And once it terminates, it answers back to the requester with some data.
-Node&apos;s approach instead is to run the entire Node engine on one single
-thread.
-
-If requests come to this one single thread, the Node engine puts them in
-an event queue.
-This event queue basically executes the function and once the function
-is terminated, it runs a callback function.
-We have already seen this in previous lectures.
-When a request comes in, as I said, it gets put in the event queue.
-
-The first function gets executed, then the second function gets
-executed, which is the callback, and then the third and so on, until a
-response is provided to the requester.
-Once this response is provided, the callback will terminate and the
-request will have been answered.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 138 npm - node package manager (85) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image138.png" 
-  title="NPM - Node Package Manager"
-  alt="NPM - Node Package Manager."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-When you install Node, you also install NPM, which is its companion. NPM
-stands for Node Package Manager.
-
-It is a set of tools, libraries and packages that allow you to expand
-your application or to download, for example, some nice scripts.
-As I said, it provides the packages for both front-end as well as
-back-end and it provides you a library of scripts.
-
-You can imagine Node to be your smartphone where when you buy it, you
-have a phone app and a messaging app, and NPM to be your App Store where
-you can download every kind of application.
-NPM, though, is not like an application on itself.
-
-You can download applications, which are scripts in this case, but you
-can download specifically extensions, which are the things that you use
-when you build applications using Node.
-
-As with every App Store you have to be very careful: there are some good
-apps and there&apos;s some bad apps.
-You can easily find what is a good application, and what is a bad
-application by looking at the documentation of this app.
-Same thing is for NPM.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 139 npm growth (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image139.png" 
-  title="NPM growth"
-  alt="NPM growth."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s look at the growth of NPM over the years: you can definitely see
-by the red line that it&apos;s above everything else. Specifically here, we
-have a package manager for Ruby on Rails, a package manager for PHP, a
-package manager for GO, which is a Google initiative and a package
-manager for CPAN, which is Perl. There is nothing growing as NPM. So,
-you&apos;re on the safe side if you start coding now with Node.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 140 node.js as a scripting language (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image140.png" 
-  title="Node.js as a scripting language"
-  alt="Node.js as a scripting language."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-As I said earlier, you can use Node as a scripting language to create
-scripts on your computer that execute like if they were, for example,
-Python or C programs.
-
-In this case, we took the example of ParseJS, which is actually a tool
-that I have written myself a couple months back.
-
-What ParseJS allows you to do is to translate comma separated values
-into JSON objects. Specifically, an array of JSON objects, because we
-have more than just one comma separated values file. So, what this tool
-allows you to do is to say I have a file with comma separated values,
-please translate it into a JSON file with an array of all the exactly
-same objects, but in JSON format.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 141 the javascript object notation (json) (87) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image141.png" 
-  title="The JavaScript Object Notation (JSON)"
-  alt="The JavaScript Object Notation (JSON)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What is actually JSON? JSON stands for JavaScript Object Notation. It&apos;s
-a way to represent objects in JavaScript. It&apos;s actually not just used
-in JavaScript, it&apos;s a very commonly used for data exchange on the web.
-So, as I was saying before, many APIs provide you with messages and
-these messages are encoded in JavaScript notation.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 142 the javascript object notation (json) ii (88) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image142.png" 
-  title="The JavaScript Object Notation (JSON) II"
-  alt="The JavaScript Object Notation (JSON) II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-You can also store different format types in JSON objects. As we see in
-this example, we can store every primitive JavaScript type and also
-compound types, which is the objects inside the object. An example of
-this is the reference. Reference has an object as its value and this
-object has then another two set of keys, which are name and phone and
-two values, which are Christian and my phone number. Another example is
-locations, where you have an array of different strings. Availability
-and price, instead, are JavaScript data types, which we have already
-seen like, for example, a float and a boolean.
+<h3 id="ch4-7">Section 4.7: Select element using its ID without the high specificity of the ID selector</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 143 defining dependencies to npm package using package.json (88) ~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image143.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>This trick helps you select an element using the ID as a value for an
+attribute selector to avoid the high specificity of the ID selector.</p>
 
-Defining dependencies is a very important part of building your
-application using Node.
+<h4>HTML:</h4>
 
-When you start building an application, you usually start with a file
-called package.json, of which we see an example right here. This
-package.json has a set of key and values, which are necessary for it to
-exist, for example, the name, the version, the description of the
-application, the author and the license.
+<pre><code><b>&lt;div id="element"&gt;</b>. . .<b>&lt;/div&gt;</b></code></pre>
 
-There&apos;s another set of attributes, which are the dependencies and these
-are very important.
+<h4>CSS</h4>
 
-This is where NPM comes in the game. Here you define the dependencies
-that your application has from NPM. So, for example, if you are building
-an application, which has a back-end and which needs a front-end as
-well, these three dependencies, which we define here, which are:
-express, pug and mongoose. They are the other ones that you, for
-example, would like to go with. What this tells is that once you start
-running Node, if you don&apos;t have these dependencies downloaded in the
-same folder, your application won&apos;t run.
-
-So, you really need these dependencies.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 144 installing npm packages using command line (89) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image144.png" 
-  title="Installing NPM packages using command line"
-  alt="Installing NPM packages using command line."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-You can also install NPM packages, which are thought as standalone
-scripts, so as the example that I said before. In this specific case, we
-can install **parsejs** as a global script on your computer, so that you
-can execute it from every location within your computer.
-
-What we have seen in this video, in this session, are what Node is -
-Node.js and what NPM is, how we can use them to create APIs, how we can
-use them to create scripts.
-
-In the next sessions we&apos;re going to discuss more specifically how to
-build your first API and how to create a full stack application, which
-means both the API and also the front-end part with the views.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-3">3.3 What is needed for a web app? (5:07)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- last image as of 6/24/2024 -->
-<!--~~~~~~~~~~~~~~~~~~~~~ 145 node.js as back-end - request handling (90) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image145.png" 
-  title="Node.js as back-end - Request handling"
-  alt="Node.js as back-end - Request handling."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Welcome back to our videos about server-side JavaScript. In this one
-we&apos;re going to talk about what is needed for a web application. So,
-let&apos;s start right off with the most important part of a web
-application, which is a **request handler**. A **request handler** is
-something that takes on requests and answers them, and gives you the
-power to answer them in a meaningful way. We have seen what requests are
-in previous videos. So, I invite you to look back at previous videos if
-you don&apos;t know what we are talking about.
-
-The first <b>request handler</b> that I would like to talk to you about is
-<a href="https://expressjs.com/"><b>Express.js</b></a>. It is de facto standard for
-<a href="https://nodejs.com/"><b>Node.js</b></a>. You would hardly ever find 
-anything else, but there are alternatives and we just listed another two of them. 
-The first alternative is  <a href="https://koajs.com/"><b>koa</b></a>, which is 
-a simplified version of <a href="https://www.geeksforgeeks.org/express-js/">
-<b>Express.js</b></a>(. It stems from the same developers as 
-<a href="https://www.npmjs.com/package/express"><b>Express.js</b></a>, but it&apos;s a 
-much lighter version. Another request handler is <a href="http://restify.com/">
-<b>Restify</b></a>. <b>Restify</b> focuses only
-on constructing APIs. So, you would not have views, which we&apos;re gonna
-explain in a moment. <b>Restify</b> is also heavily based on
-<b>Express.js</b>. So, as you see, <b>Express.js</b> always comes in.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 146 node.js as back-end - databases (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image146.png" 
-  title="Node.js as back-end - Databases"
-  alt="Node.js as back-end - Databases."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The next thing you would probably need when you construct a web
-application is a database. All of the data that you usually see on
-websites is stored in a database and there are two big categories of
-databases. The first category is called relational databases and we see
-a list of three databases of this type in the first line. SQLite,
-PostgreSQL and MySQL are all relational databases and they can be used
-and are actually used with Node.js. But with Node.js it is much more
-common to use a non-relational database system and specifically MongoDB.
-MongoDB allows you to store JSON objects, as we have seen them in
-previous lectures, into a database, which is Mongo. You can then
-retrieve these objects or retrieve only certain fields of these objects.
-Redis is another alternative. Redis is a key-value store, which is now
-again different from MongoDB because you can only store a key. You have
-a key, access this key and you can only store a value by this key. So,
-for example, if the key is age, in my case it would be 23. So, key-value
-stores are maybe thought for smaller applications, but nonetheless you
-always need a database. MongoDB as well as Redis are non-relational
-databases and if you want to know more about these, I invite you to look
-at the web. There&apos;s plenty of guides.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 147 node.js as back-end - view engines (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image147.png" 
-  title="Node.js as back-end - View engines"
-  alt="Node.js as back-end - View engines."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The last component that you might need to build a web application is
-called a view engine. I say might because it&apos;s actually not necessary.
-View engines are only necessary if you build a full application with
-front- and back-end. But if you only want to build an API, you won&apos;t
-need a view engine.
-
-Here is a list of a couple of view engines, which we think you might
-find interesting. Starting with **Angular.js**
-(https://v17.angular.io/start), **Angular** is important because it&apos;s
-part of something called the **MEAN stack**, which stands for **Mongo,
-Express, Angular** and **Node**. As we have seen, Mongo would be the
-database part of our application, while **Express** would handle every
-request, incoming and outgoing. Angular would in this case be the view
-engine, while Node is the base of our application.
-
-Another popular framework is **React** (https://react.dev/learn). It was
-developed by Facebook and it&apos;s widely used. **Pug**
-(<https://pugjs.org/api/getting-started.html>) is another framework and
-it&apos;s maybe one of the best if you&apos;re starting with Node.js. This is
-because it&apos;s very similar in syntax to plain HTML. So, if you are used
-to writing HTML files, **Pug** might be the choice for you. It was
-previously called Jade, but due to some copyright issues, developers had
-to rename it into **Pug** and it is actually a fun name. So, why not?
-**Ember** (<https://emberjs.com/>) is another choice among small
-communities of developers. It&apos;s very nice in my opinion. So, that is
-why we chose to also put it into this list.
-
-What we have seen in the previous slides and in this one, are the
-components that you would need to build your web application. You don&apos;t
-need all of them. As we have already discussed, you might not need view
-engines if you, for example, want to build an **API**. A database is
-also not always needed if you want to build something simple or just
-access files on the file system. Nonetheless, we wanted to give a
-complete overview of what you might need to build your application. And,
-actually, these three components we are going to use in an example. The
-example is coming in the next videos and the next lectures. And there is
-actually two of them. The first one is only an **API** example. So, it
-won&apos;t have views. In the second example, which we call complete, we
-will also provide some views, which are done using the **Pug**
-templating engine.
-
-<h3 id="ch3-4">3.4 Our example application (7:32)</h3>
-
-Welcome back to our lectures on server-side JavaScript! In this video,
-we are going to talk about our example application. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 148 node.js as back-end in our example (93) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image148.png" 
-  title="Node.js as back-end in our example"
-  alt="Node.js as back-end in our exapmle."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-What we used for
-example application are these four components. If you have not seen the
-previous video, you might want to look at it, because we are explaining
-what the components are. Specifically for our application, we use
-express.js to be able to interpret the incoming requests and produce
-meaningful answers. We use Pug for the views, but actually, we have prepared two
-examples, one with Pug and one without Pug. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 149 node.js as back-end in our example ii (94) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image149.png" 
-  title="Node.js as back-end in our example II"
-  alt="Node.js as back-end in our exapmle II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the first example, we 
-won&apos;t use Pug, because it&apos;s simply an API. So, it only uses the other
-three components, which are express, MongoDB and Node. We use MongoDB to
-store our information and to be able to retrieve it in a later stage. We
-use Node as the base of our application, as it allows us to interpret
-our JavaScript and present everything that we have discussed so far. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 150 reference example (94) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image150.png" 
-  title="Reference examples"
-  alt="Reference examples."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s actually look at our examples. They are two, as already said: the 
-first example is only an API example. So, it does not have use. You can 
-download it following the first link,
-which is example.dallago.us/public/api.zip. The complete example, on the
-other hand, you can find on the second link, which is the same as the
-first, just the last part is complete.zip. The running example of the
-complete application is available at example.dallgo.us. At the first
-glance, you might immediately see that example is very easy, both in
-terms of code complexity as well as in terms of the example of the view
-itself, so, what you see on your browser. 
-
-When we developed our example,
-we used a very common pattern which is called the Model-View-Controllers
-pattern.What this pattern tells us to do is to divide our application
-into different parts: first, the models, which are representation of the
-data, which we use in our application. So, if for example, we are going
-to develop an application that deals with a blog, we would have
-different models for the user, which is writing the blog post, the post
-itself, the comments on the blog post and so on. The views, on the other
-hand, are the representation of these data objects. So, there would be a
-view for the blog, there would be a view for the post, a view for the
-comment, there would be view for your own user. The controllers is what
-bring these two things together.
-
-They combine data and they combine the views and calculations to produce
-some meaningful output. Specifically, if, for example, we want to view a
-blog post, we want to see in the same location both the information
-about the user, the information about some previous posts and
-information about the comments. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 151 folder structure (95) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image151.png" 
-  title="Folder structure"
-  alt="Folder structure."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-So, here is the folder structure of a
-first example application, which is the API example. We have the first
-folder, which is the app folder where we have our controllers, our
-models and our views. These are also folders, but the views folder is
-empty, because we don&apos;t have any views in an API. On the other hand, in
-the controller and in the models, we find two files, which are about the
-relationships between Game of Thrones characters in one specific book of
-Game of Thrones.
-
-Also, we see on the root of our example application, some other files,
-which allow us for example to connect to the database, which, in this
-case, is the database.js file. The router.js, which takes care of
-knowing which requests are incoming and how to answer them. The
-package.json, which we have already discussed in a previous video and I
-urge you to look at this video if you don&apos;t know what we are talking
-about. And, the index.js, which is the starting point of our
-application.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 152 folder structure, #2 (96) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image152.png" 
-  title="Folder structure, #2"
-  alt="Folder structure, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The folder structure for the complete example is a little
-bit larger. Here you can actually see that there&apos;s more files, but most
-of these files are either executed in the browser or just there to give
-views, which are things that you actually see in the application. 
-
-As you see in this folder structure, we have four views, which are: the base,
-the home, the navigation and the visualization pug. Views, as already
-said in previous videos, are modular components. So, for example, the
-navigation.pug is going to be used in the base as well as in a home and
-a visualization.pug. 
-
-The public folder, which is a new folder which you
-find in our folder structure, is going to be exported to people
-connecting to our application as is, which means all of the files that
-are in this folder are going to be accessed by people connecting to our
-application. That specifically means that if you are, for example,
-connecting to example.dallago.us/public/libs/d3.js, you will actually
-access the content of this file on our server. You can also do that on
-your own computer and if you just put some files into this public
-folder, they will be exported to your application and you can view them.
-
-In this folder, we only have JavaScript, which is executed in the
-front-end. So, this is a very important distinction. This is not going
-to be executed on your machine, but only in the browser of the machines
-connecting to your application. Here we also find the style sheets, or
-cascading style sheets, which are in orange in our representation. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 153 reference examples (97) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image153.png" 
-  title="Reference examples"
-  alt="Reference examples."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, another important part is how do you get these applications to run on
-your computer. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 154 how to get the examples running (98) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image154.png" 
-  title="How to get the examples running"
-  alt="How to get the examples running."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Well, first of all, you need to download the zip files,
-which we presented in a previous slide and you have to unzip them on
-your computer. Later, you have to make sure that you have installed
-Node.js and NPM. When your install Node.js, you automatically install
-NPM as well.
-
-So, don&apos;t worry, it&apos;s not two separate things. You can install Node.js
-by following the link on the slide, which is nodejs.org. You then have to use the command
-line to navigate to the folder where the applications are and you will know
-when you are in this folder if you can open the index.js file, which is
-the entry point of our application. To run the application, we actually
-need our dependencies, which are described in the package.json, as
-already discussed in previous videos. To install these dependencies, you
-would need to run npm install, which will create a new folder in the
-root of your application or in the root of the application, and this
-folder will contain all of this system elements that Node needs to run
-your application or our application.
-
-To actually run the application then you will need to run node index.js,
-which will output some some lines to your console, saying that it was
-successfully in connecting to the database and that now you can navigate
-to your application. To later view the application, which is being
-serviced from your own computer, you will have to connect to the link,
-which is on the last line of this slide. What localhost means is that
-you are connecting to your own computer. 3000 is the port on which your
-application is running and /api/relationships is the API endpoint in
-which we will expose data about the relationships between the different
-characters in the Game of Thrones. So, we are pretty sure that API and
-relationships, the endpoint api/relationships, will work on both the
-complete applications and the example of the application. So, this is
-just to give you an overview about our example, but we will discuss 
-further in detail about the code in the upcoming video.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-5">3.5 Controllers and Models (11:24)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our videos about Server-side JavaScript development.
-In this video, we are going to talk about controllers and models, which
-are two of the components of our example applications. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 155 express framework (99) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image155.png" 
-  title="Express framework"
-  alt="Express framework."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Firstly, I want to talk to
-you about express. We have already seen what request handlers are. So,
-if you&apos;re not familiar with them, please go back to the previous videos. Express,
-in short, allows you to react to incoming requests and send responses. It&apos;s
-possible to extend express by putting some layers between the incoming requests and
-the final function, which is going to execute to produce a response. These layers can, 
-for example, distinguish between a user, which has authentication and a user that has 
-not. So, that the final response is different for someone that is identified and 
-different for someone who&apos;s not. 
-
-Express can also be extended using other packages, but for our simple
-applications we didn&apos;t need to use them. So, we&apos;re not going to discuss about
-these. If you&apos;d like to know more about these, please go on the web, there&apos;s
-plenty of guides to find out more about these. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 156 express.js in our first example application (100) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image156.png" 
-  title="Express.js in our first example application"
-  alt="Express.js in our first example application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In our API example, you will find express in
-the files that are highlighted on the left side. You will find also express
-in the same files on the complete example, but for the reference of these two
-components and what we are going to discuss in this video, we use the
-API. You will find express starting in the index.js and that&apos;s the first
-file we are going to look at. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 157 express.js: index.js (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image157.png" 
-  title="Express.js: index.js"
-  alt="Express.js: index.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the index.js, we define express. We actually have to require it.
-The first thing that we do is we require express and we define it as
-a constant variable, because it won&apos;t change during the execution of our
-code. 
-
-The second thing that we do is we define our application, which is app
-and it&apos;s an express application. So, we define it as an express app. With express
-we can set values and, specifically, in the third line of code, which will be
-compiled, we will see that you can define the port number on which our application is
-going to be listening. And this port number is by default going to be 3,000.
-
-Later, we&apos;ll see that we can define a router, which is the logic that
-stands behind knowing which requests are coming in and what output or response to
-produce. In the last lines of code, what we see, is that we actually listen to
-incoming requests and we do so by listening on the port that we defined earlier.
-
-We also have a function, which is a callback and this function tells us
-that our express server is listening on the port that we defined earlier. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 158 express.js: index.js (101) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image158.png" 
-  title="Express.js: index.js"
-  alt="Express.js: index.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The other file that we want to look at for express is a router.js and the 
-controllers/relationships.js in our app folder. In the router, we define that if a get
-request is coming at /api/relationships, the relationships controller
-has to perform a function, which is relationships. 
-
-This function is defined as below. So, relationships is a function, which accepts 
-a request, an incoming request, and has as a second object, the response, the 
-outgoing response. What we do is we find objects in the relationships model,
-which we are going to explain shortly, so, don&apos;t worry. If the find is
-successful, we will return the results of defined in the last
-meaningful line of code of this example, which is - response dot status
-200 dot send results. Notice that status 200 in HTTP protocol, status 200 means
-that the request was answered successfully, that there was no problem and that we
-are answering back: ok, we have the data. On the other hand, if there was an
-error, we are sending a status 500, which in HTTP means that there was an error
-and that we are sending back an error object as well. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 159 mongodb (102) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image159.png" 
-  title="MongoDB; non-relational"
-  alt="MongoDB; non-relational."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The next thing that we will look at is MongoDB. We have already discussed about
-databases before, but, specifically, we will use MongoDB in our example.
-As already said, MongoDB is a document-oriented database management
-system and it&apos;s non-relational, which brings us to the most important part of
-non-relational database management systems, which is they don&apos;t have a
-schema.
-
-A schema allows you to say that whenever you have an object from a
-database, it will always have the same look and feel to so say.
-Specifically, if we have a relational database system, we always know that we are going
-to find the same fields when we ask for the same data. 
-
-If, for example, I have an object, which contains my name and my age, and I have 
-a schema, which defines that there&apos;s always the need of my name, my surname and 
-my age, all objects will always look like this. They can not differ. On the other 
-hand, in MongoDB objects can differ. They can have more fields. For example, there 
-could be name, age and location from where I come from, or there can be less fields. 
-There could be only the name without the surname, because someone forgot to put it 
-in, and the age. MongoDB actually stores objects in binary JSON format. It does so
-because binary JSON allows you to store not only the usual JSON files, but it also 
-allows you to store music and images. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 160 mongodb: json example (103) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image160.png" 
-  title="MongoDB; JSON example"
-  alt="MongoDB; JSON example."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-This is the example of a JSON file being stored into a MongoDB entry. On the top, 
-we see an ordinary JSON file and on the bottom we see what we would see if we 
-insert this JSON file into MongoDB. As you see, MongoDB will give an attribute 
-to the object, which is underscore id. This is very important, because you will 
-need an identifier in the object to know that this is the only object of its kind. 
-
-If, for example, we have two people, which have exactly the same name, surname 
-and are of the same age, then we would not know which objects we actually want 
-to get. But thanks to the id, which is a randomly generated information, we 
-always have just one field, which is for that specific object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 161 mongodb: json example, #2 (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image161.png" 
-  title="MongoDB; JSON example, #2"
-  alt="MongoDB; JSON example, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The other things, which you see on the bottom, are the same fields that
-we have already seen above, which are the name the surname and the age. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 162 mongoose; mongodb driver (104) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image162.png" 
-  title="Mongoose; mongoDB driver"
-  alt="Mongoose; mongoDB driver."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-To actually use MongoDB in a Node application, you need something called a
-driver. The most common driver with Node.js is called mongoose. Mongoose allows
-you firstly, to connect to the database and handle connection events.
-
-The second important thing is that it allows you to define models.
-Models allow you to enforce some type of a schema, which is the thing
-that we have discussed before. So, through mongoose you could define that 
-your objects always have to set the same structure and that Mongoose won&apos;t 
-accept objects if they are not of the structure that you have defined them in.
-
-The other thing that mongoose allows you to do is to perform queries.
-So, you can find objects, create objects, update and remove items.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 163 mongoose in our first example application (105) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image163.png" 
-  title="Mongoose in our first example application"
-  alt="Mongoose in our first example application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s see some code examples. First, we will find mongoose in these
-files. As you see, there is one file, which is highlighted a little bit
-differently than the other ones. This is because we&apos;re not directly using mongoose,
-but we are using the mongoose model, created in the relationships model in the
-controller. So, to produce a meaningful response, when an incoming
-request is coming. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 164 mongoose: models/relationships.js (model:define) (105) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image164.png" 
-  title="Mongoose: models/relationships.js (model: define)"
-  alt="Mongoose: models/relationships.js (model: define)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s look at the model for the relationships. Here, we define
-the model of our relationships. Firstly, we require mongoose, as we did, we did
-with express in our previous example. The second thing that we do is we
-define our relationships model. 
-
-Here, we have three fields, which are compulsory. So, they are always required. 
-If you will try to create new objects, which don&apos;t have one of these fields, 
-it won&apos;t work. Mongoose will complain. The three fields that we are going to 
-need in our objects are source, target and weight. The first two source and 
-target are of type string, while weight is a number-typed object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 165 mongoose: controllers/relationships.js (model:find items) (106) ~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image165.png" 
-  title="Mongoose: controllers/relationships.js (model: find items)"
-  alt="Mongoose: controllers/relationships.js (model: find items)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The second location in which we find mongoose is our relationships
-controller. Here, we can find objects in our model, as seen from the
-fourth line of code. So, we have our relationships model and we perform
-a find without filtering for results. Filtering for results would be
-something like: if I&apos;m only interested in those objects in which the
-source is equal to, for example, &apos;me&apos;, I would put this as a filtering
-before I perform the find. You can look at how filtering is done in the 
-examples on the mongoose website.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 166 mongoose: what else can you do? (107) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image166.png" 
-  title="Mongoose: what else can you do?"
-  alt="Mongoose: what else can you do?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Mongoose allows us to do also other things. It allows us to create
-objects, as already set before. So, in this specific case, we are creating a new
-object, which has a source &apos;me&apos;, as target &apos;you&apos; and as weight
-&apos;6&apos;.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 167 mongoose: what else can you do, #2? (107) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image167.png" 
-  title="Mongoose: what else can you do, #2?"
-  alt="Mongoose: what else can you do, #2?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>If the object was successfully created, we will return an anonymous
-callback function, which will log the created object, as we see below
-here.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 168 mongoose: what else can you do, #3? (108) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image168.png" 
-  title="Mongoose: what else can you do, #3?"
-  alt="Mongoose: what else can you do, #3?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The next thing that we can do in mongoose is to find and remove
-objects. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 169 mongoose: what else can you do, #4? (108) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image169.png" 
-  title="Mongoose: what else can you do, #4?"
-  alt="Mongoose: what else can you do, #4?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Be careful, we are only finding and removing one object. This
-is very important, because you can easily remove many items from your
-database and maybe it is not what you want to do. You have to be very 
-careful when you&apos;re coding these parts of your application. 
-
-Here, what we are doing is we are finding one object, which is the
-first object in which the source is &apos;me&apos; and we are removing it.
-If the removal is successful, we will log into console the removed
-object.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 170 mongoose: what else can you do, #5? (109) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image170.png" 
-  title="Mongoose: what else can you do, #5?"
-  alt="Mongoose: what else can you do, #5?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Another thing that we can do is to update objects. Also, here, you have
-to pay attention, because the updates function out-of-the-box will only update
-the first filtered item that is defined in a database. 
-
-In this case, the first time it will find an object, which has a source 
-&apos;me&apos;, it will update it and put or set the target as &apos;Tommen&apos;. 
-If we only have one object, which is the one that we created two slides back, 
-instead of having source &apos;me&apos; and target &apos;you&apos;, it would 
-have source &apos;me&apos; and target &apos;Tommen&apos;. The weight will always 
-be the same.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 171 mongoose: crud (109) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image171.png" 
-  title="Mongoose: CRUD, create, read, update &amp; delete"
-  alt="Mongoose: CRUD, create, read, update &amp; delete."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-What we have seen now, were four basic operations, which are needed in
-every database. They are called the CRUD stack. They stand for create, 
-read, update and delete. We have also seen, which functions you can use 
-to perform these operations, which are, on the model - the create function, 
-on the model - define function, on the model - the update function and on 
-the model - the remove function. I urge you again to pay attention when you implement
-the update and remove function, because you can easily generate mistakes
-within your data.
-
-We have seen two of the components of our example applications and in the next 
-lesson we are going to discuss the missing component, which is the view. We 
-decided to split these three components into the first two and the last 
-component, which is the view, because sometimes you don&apos;t need the last
-component as already explained in previous lesson.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-6">3.6 Views (5:54)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our lesson on server-side JavaScript! In this lesson (3.6), we
-are going to see the last component that you need to build a complete
-application, which means an application, which has also a view
-component. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 172 pug (110) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image172.png" 
-  title="pug; a view engine"
-  alt="pug; a view engine."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The view engine that we used is Pug, as already mentioned in 
-previous lesson. Pug was renamed after a legal matter with the original 
-name, which was called Jade.
-
-Pug gives us a way to define reusable and extendable HTML components.
-What this means is that you have to view web pages as pieces, a set of
-pieces. So, there is the navigation, there are different menus, there is the actual content
-of the page and, for example, the footer. You can use Pug to define all of these
-components and use them dynamically in the different views. Pug has a simplified
-syntax. It&apos;s very close to the syntax that you would ordinarily see in
-your normal HTML files, but it&apos;s simpler in the sense that you don&apos;t have
-the closing brackets and you don&apos;t have all of this major and minor signs.
-
-In Pug, you can also use control statements, like each and if, which allow you
-to, for example, handle variables that you pass the view through the controller.
-So, for example, through the controller you pass the title. You can specify a
-location that if the title is defined, you want to show the title at
-that location. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 173 pug: where do you find it? (111) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image173.png" 
-  title="pug; Where do you find it?"
-  alt="pug; Where do you find it?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s look at where we can find Pug in our complete example. 
-We can find Pug in our complete example in the four highlighted files. These are 
-the base.pug, the home.pug, the navigation.pug and the visualization.pug. They 
-are inside the views folder, which again is inside the app folder on the
-root of our application. We take a look now at the base, home and
-**navigation.pug**. There are simplified versions of these files, but
-the actual files are pretty similar and the concepts are definitely the
-same. Let&apos;s look at them. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 174 pug: home.pug + base.pug + navigation.pug (112) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image174.png" 
-  title="pug; home.pug + base.pug + navigation.pug"
-  alt="pug; home.pug + base.pug + navigation.pug."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-On the top in green, you see the
-**base.pug**, on the bottom in orange you see the **navigation.pug** and
-on the bottom on the left in blue you see the **home.pug.**.
-This is what we want to access when we navigate to the home of our
-application. We are going to load the **home.pug**, but the **home.pug**
-extends the **base.pug**, so we will start from there. 
-
-The <b>base.pug</b> starts with
-an HTML tag, which is the starting point of every HTML file. It then has a head part,
-which contains, for example, metadata about the encoding of our HTML file,
-which in this case is utf-8. It contains also a link to a stylesheet,
-which in this case is public/style.css and it contains a title of the page. As I&apos;ve said, you
-can pass variables to the pug files and in this case, we pass the
-variable title as the title of the page. So, when we construct the
-<b>pug</b> file, we actually pass it this variable and I encourage you to
-look at the controller for the front-end where this is very visible.
-
-The next thing that we are going to look at is the body. I just see that
-there is a dot wrapper. This is similar to CSS notation, which means dot
-wrapper represents a div or a dividing item of class wrapper. Similarly,
-in UL hash tag navigation we have a UL element of id navigation. We&apos;re
-going to see more what CSS is used for and how it works in later
-sessions. So, let&apos;s look at include navigation. This is an important
-directive. It tells Pug that when you are loading this file, which is
-the <b>base.pug</b>, it has to include a <b>navigation.pug</b> precisely in
-that location. It will then include everything that is in
-<b>navigation.pug</b>, which in this case is just a ul or unordered list
-with the hashtag navigation, which means it has the id navigation. One
-list item, which has an a href, which is a link to the home. Also, the
-name of this link will be home itself. 
-
-The next interesting part of our <b>base.pug</b> is the block content. In <b>Pug</b>, 
-we define blocks, which are extendable parts of our HTML file. In this case, we 
-want to extend the base in our <b>home.pug</b> and we want to extend the base based on the
-block content. So, we extend block content by writing block content and
-every element that follows that block content statement will be put
-exactly where the block content is in the <b>base.pug</b>. So, in this
-case, we will put there an h1, which will be here is a title and that p
-for the paragraph, a nice paragraph. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (113) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image175.png" 
-  title="pug; home.pug + base.pug + navigation.pug, #2"
-  alt="pug; home.pug + base.pug + navigation.pug, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s look at the outcome of
-these three files combined. If we connect to the home, which means
-example.dallago.us, this is pretty much what we see. As you see, the
-navigation has been loaded as an unordered list with one list item and
-then h tag to the home and then we have the extension of a base, which
-is the <b>home.pug</b> with the h1 title here is the title and the p
-paragraph, a nice paragraph. With this part, we have covered also
-the last part of our application. We have seen the views and in the
-previous lesson we have seen the models and the controls. I invite you
-to look more at our code together with me in the demonstration, which is
-going to follow this lesson.
-
-<h3 id="ch3-7">3.7 Summary - Server-side JavaScript (1:00)</h3>
-
-Thank you, Chris, for covering server-side JavaScript. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 176 advantages of node.js (114) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image176.png" 
-  title="Advantages of Node.JS"
-  alt="Advantages of Node.JS."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-In this module, we saw that Node makes it easy to write JavaScript code for the server-side
-component of our web application. Thanks to employing a non-blocking I/O
-module, Node.js scales very well to support thousands of simultaneous
-connections. 
-
-In this module, Chris talked about Node.js and the Node package management
-system. Chris introduced some of the components needed for web application
-development and how those could be found and integrated using NPM. Finally, we saw
-a code example for a small app that pulls data from an API and
-visualizes it.
+<pre><code>#element { . . . } /* High specificity will override many selectors */
+&lbrack;id="element"&rbrack; { . . .} /* Low specificity, can be overridden easily */</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 177 in the next module; data visualization using d3 (114) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image177.png" 
-  title="In the next module; Data visualization using D3"
-  alt="In the next module; Data visualization using D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-In the next module, Dennis will show us what are the current techniques
-to visualize data on the web and how we can use the D3 library to do data
-visualization in JavaScript.
-
-<h3 id="ch3-8">3.8 Demo 1: Working with an Example Application (14:44)</h3>
-
-<p>Welcome back! In this lecture, I&apos;m going to demonstrate the code that 
-Dennis &amp; I used in our previous lectures.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 178 webstorm, an ide for api code (115) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image178.png" 
-  title="WebStorm, an IDE for API code"
-  alt="WebStorm, an IDE for API code."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<p>We are going to see in my specific case the API code. Dennis is going 
-to use the complete code in his demonstrations, which come after mine.</p>
-
-<p>First of all, we need to do download the code. So, we navigate: we want to open 
-up a browser window and navigate to example dot dallago dot us slash public slash 
-API dot zip and then we press enter and this will download, as you have seen from 
-the animation, the API code onto my computer. So, let&apos;s minimize Mac's Safari again, 
-go into the downloads and here we see API folder. And we just drag this onto the 
-desktop, so that it&apos;s here.</p>
-
-<p>Good, now we can use our favorite editing tool. In my case I&apos;m
-going to use WebStorm. It is an IDE. So, it has some nice features,
-like code highlights, it tells me if, for example, if I mistyped the name
-of a variable or many JavaScript reserved words. There are other free tools, for
-example, Brackets. Or you can also download Atom, which is going to be used by 
-Dennis in his lesson.</p>
+<h3 id="ch4-8">Section 4.8: The :last-of-type selector</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 179/180 folder of web code and api; webstorm (116) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image179.png" 
-  title="Folder of website on Mac"
-  alt="Folder of website on MacIntosh."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image180.png" 
-  title=Folder using WebStorm on Mac"
-  alt="Folder using WebStorm on MacIntosh."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>The :last-of-type selects the element that is the last child, of a particular type,
+of its parent. In the example below, the css selects the last
+paragraph and the last heading h1.</p>
 
-<p>But, again, I&apos;m going to use WebStorm. So, let&apos;s fire that up.<br>
-Good, so, now that WebStorm is open, we can start opening up our application 
-just by clicking open, navigate into the desktop and selecting the folder. Then, 
-we select open again and WebStorm will open up our application.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 181 app directory with .js and .json files (116) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image181.png" 
-  title="app directory with .js and .json files"
-  alt="app directory with .js and .json files."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<pre><code>p: last-of-type {
+  <b>background: #C5CAE9;</b>
+}
 
-<p>What we see then on the left side is our folder and all of the files
-that are contained in it. The same thing is reflected if we just open up our
-folder with Finder and these are the same files that we&apos;re going to find in
-WebStorm.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 182 package.json - scripts section (117) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image182.png" 
-  title="package.json - scripts section"
-  alt="package.json - scripts section."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+h1: last-of-type {
+  <b>background: #CDDC39;</b>
+}
+<b>&lt;div class="container"&gt;</b>
+  <b>&lt;p&gt;</b>First paragraph<b>&lt;/p&gt;</b>
+  <b>&lt;p&gt;</b>Second paragraph<b>&lt;/p&gt;</b>
+  <b>&lt;p&gt;</b>Last paragraph<b>&lt;/p&gt;</b>
+  <b>&lt;h1&gt;</b>Heading 1<b>&lt;/h1&gt;</b>
+  <b>&lt;h2&gt;</b>First Heading 2<b>&lt;/h2&gt;</b>
+  <b>&lt;h2&gt;</b>Last heading 2<b>&lt;/h2&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
 
-<p>Good, so, the first thing that we want to look at when we
-open up a Node application is the <b>package.JSON</b> file I talked about. This
-also in my lectures and there are some nice and mention-worthy things to look
-at, like the <b>scripts</b> section, the <b>dependencies</b> and the <b>main</b>. 
-The <b>main</b> tells us which is the most important script in our application. In this
-specific case it&apos;s <b>index.js</b>. The scripts section tells us how to
-start our application. It says we need to have Node installed and we start by
-calling Node and then starting from the <b>index.js</b> file. And then there is 
-the list of dependencies, which are expressed in Mongoose.</p>
+<image left justified>
 
-<p>It&apos;s only two dependencies. It&apos;s an easy application and both of
-the dependencies are at the latest version. So, when we see that there are
-dependencies, we know that to run our application, we must first install the
-dependencies that are specified here and we do that by calling NPM install from a
-terminal window.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 183 api folder of website; run cli $npm install (118) ~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image183.png" 
-  title="API folder; run cli $npm install"
-  alt="API folder; run cli $npm install."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We can either do that by opening up a terminal window
-here and NPM install, but just to explain for the people that might not be using
-WebStorm, we can just open up a terminal window from the terminal
-emulator from our computer, navigate to the desktop and then navigate to the API
-folder. 
+<a href="http://jsfiddle.net/MadalinaTn/YmMZZ/113/">jsFiddle</a>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 184 list of npm install dependencies/co-dependencies (118) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image184.png" 
-  title="List of npm installed dependencies/co-dependencies"
-  alt="List of npm installed dependencies/co-dependencies."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We know that we are there because we&apos;re doing ls, we see the
-exact same files as we see here on the left side and then we can run npm install
-and this will install all of the dependencies. While the two dependencies that
-are specified here, but also a lot of co-dependencies, because Express, to actually
-perform its function, will need some core dependencies, which are for example
-these accepts, array-flatten and so on and so forth. 
-
-There&apos;s actually a bunch of these, which come with express and mongoose. 
+<h3 id="ch4-9">Section 4.9: CSS3 :in-range selector example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 185 new folder created: node_modules (119) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image185.png" 
-  title="New folder; node_modules created by npm install"
-  alt="New folder; node_modules created by npm install."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<pre><code><b>&lt;style&gt;</b>
+input:in-range {
+  border: 1px solid blue;
+}
+<b>&lt;/style&gt;</b>
 
-<p>And now if we navigate back to our application here, what we see is that there 
-is a new folder, called node_modules which will collect all of the different
-dependencies that we just installed. Good, so, next thing we want to do
-is look at index.js.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 186 index.js; two requirements; express and database  (119) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image186.png" 
-  title="index.js with 2 requirements; express and database"
-  alt="index.js with 2 requirements; express and database."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<b>&lt;input</b> type="number" min="10" max="20" value="15"&gt;
+<b>&lt;p&gt;</b>The border for this value will be blue<b>&lt;/p&gt;</b></code></pre>
 
-Let&apos;s open up that file and what we see is that in the very first two 
-lines we have two requirements: the first requirement is express. It&apos;s 
-a dependency we have just seen it in a <b>package.JSON</b> and we have just 
-installed it with NPM install. 
+<!-- page 18 -->
+<p>The :in-range CSS pseudo-class matches when an element has its value attribute
+inside the specified range limitations for this element. It allows the
+page to give a feedback that the value currently defined using the
+element is inside the range limits.&lbrack;<a href=https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range">1</a>&rbrack;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 187 require database.js (120) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image187.png" 
-  title="Require database.js"
-  alt="Require database.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The second thing that we require is database and this is actually a file and we see
-it from this dot slash at the beginning of the name. We don&apos;t have to
-specify the extension, which in this case is js, as we see here, simply because Node
-is able to automatically get the extension if there is only one file with
-that name, and we only have one file, which is called database, and the file is
-either of the type JavaScript, so js, or JSON, so dot JSON. And this is exactly
-the case we only have one file it&apos;s called a database and it is of the
-extension dot JavaScript. 
-<p>We don&apos;t really need to specify the dot and js here. It is good practice 
-to actually see what this database file does.</p>
+<h3 id="ch4-10">Section 4.10: A. The :not pseudo-class example & B. :focuswithin CSS pseudo-class</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 188 database.js - two requirements to start (120) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image188.png" 
-  title="database.js - first two requirements"
-  alt="database.js - first two requirements."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+A.  The syntax is presented above.
 
-<p>Let&apos;s open the <b>database.js</b> file. Again, here, at the very beginning 
-we have two requirements: the second one is just a dependency again, as we have 
-seen it before. It is defined in the <b>package.JSON</b> and the first one is again 
-a file and we see this again from the dot slash here and it is the config file,
-but this time a config file is <b>config.JSON</b> and, as I just explained a few
-seconds ago, Node is able to automatically guess the extension if there is only one
-file with that name and if that file has either the extension dot JavaScript or
-dot JSON.</p>
-
-<p>In our case we only have one file. It&apos;s dot JSON. So, we don&apos;t need 
-to specify here dot JSON, but if we wanted to, we could. Again, it is good practice 
-to see what actually this file contains.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 189 config.json - with one object (121) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image189.png" 
-  title="config.json - with one object"
-  alt="config.json - with one object."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>The following selector matches all <b>&lt;input&gt;</b> elements in an HTML document
+that are not disabled and don&apos;t have the class .example:</p>
 
-Let&apos;s open config.JSON. In the config.JSON we have only one object. We
-might have an array of objects if, for example, we started our file like
-this. This would then be a JavaScript JSON file with an array of objects. 
+<h4>HTML:</h4>
 
-In this case, only one object inside the array. But, again, the file as it is 
-is only one object, it has one key, which is the database and this key has value
-associated to it, which is again an object and has a few keys associated
-to that object. So, when we require the config file here, what we actually
-require is the object that we just saw there and we can look at our database 
-connection string here. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 190 config.json database parameters = config.database (122) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image190.png" 
-  title="config.JSON database parameters = config.database file"
-  alt="config.JSON database parameters = config.database file."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<pre><code><b>&lt;form&gt;</b>
+  Phone: <b>&lt;input</b> type="tel" class="example"&gt;
+  E-mail: <b>&lt;input</b> type="email" disabled="disabled"&gt;
+  Pasword: <b>&lt;input</b> type="password"&gt;
+&lt;/form&gt;</code></pre>
 
-And, what we do here is assigning to this database parameters: the 
-config.database key. We are assigning to this value this constant value - the 
-database object here, so all of the values that we see in this object. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 191 config.json - create database connection (122) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image191.png" 
-  title="config.json - create database connection"
-  alt="config.json - create database connection."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We then want to construct a database connection string through these lines of code here 
-and what this will perform at the end, so what we will get after executing this 
-last line of code, we expect to have something like MongoDB column slash slash, 
-which is the first part that we see up here. There, might be a username and a 
-password required to connect to the database. So, username password at some host 
-name, which might be for example, example.com, a port, so 1 2 3 4 and then slash the 
-database collection that we want to use.
+<h4>CSS:</h4>
 
-For example relationships. So, at the end of executing this code and after
-this line of code what we expect this variable to hold is this specific
-string or well not too specific but something similar to this where we have
-user name password, the host name, the port and the collection that we want to
-use.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 192 config.json - module.exports callback function (123) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image192.png" 
-  title="config.json - module.exports callback function"
-  alt="config.json - module.exports callback function."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The next important bit we are going to look at is the module.exports. This is 
-an API of Node and it basically tells us that when this file is being required 
-by another file, so for example it&apos;s being required in index.js, what
-is actually being required is what comes after this equal sign and what we
-are requiring in this case is a function that accepts a callback and that
-executes some code when the function is being called.
+<pre><code>input:not(&lbrack;disabled&rbrack;):not(.example){
+  <b>background-color</b>: #ccc;
+}</code></pre>
 
-Let&apos;s look at what happens when a function is actually being called. The first 
-thing we do is we connect to our database connection string. So, Mongoose 
-connected to this connection and then we assign the database object to a variable, 
-which is called db. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 193 four events connecting to mongoose database (123) ~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image193.png" 
-  title="Four events associated with connecting to mongoose database"
-  alt="Four events associated with connecting to mongoose database."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<p>The :not() pseudo-class will also support comma-separated selectors in
+Selectors Level 4:</p>
 
-We then have four events here. These are four events
-and basically what this does is it reacts to certain things that happen
-onto the database or when we connect to the database. First of all, we want
-to react when there is a connection to the database. So, we are able to connect
-to it and what we want to do is log on to the console that we have been able
-to connect to the database. The next thing that we want to do is to react
-on this if there was an error. So, if we were not able to connect to the
-database, we want to log this into the console, telling there was some kind of an
-error.
+<h4>CSS:</h4>
 
-Here is the stack and the next thing we want to do is we want to exit
-our application, because it wouldn&apos;t make sense to start our application if
-we cannot connect to the database, as most of the data that we&apos;re going to
-require to answer some routes comes from the database. So, there might be some
-inconsistency if we keep the application running, so we want to exit it.
+<pre><code>input:not(&lbrack;disabled&rbrack;):not(.example){
+  <b>background-color</b>: #ccc;
+}</code></pre>
 
-The next thing that we want to do is to react on disconnected. If we
-were connected to the database, but then for some mysterious reason the
-connection gets dropped, we want to log this into the console, saying, hey, 
-we&apos;ve been disconnected and we closed our application just because it&apos;s safer 
-to do so. 
+<a href="http://jsbin.com/japere/edit?html,css,output">Live Demo on JSBin</a>
 
-Last but not least, is the on open event and this is similar to connect, though 
-it&apos;s slightly different, because open actually means that we are connected to 
-the database and we are able to query the database at the time that this event 
-is happening. So, this is every time the connection is open. This is the most 
-important event that we have to react on and because of that, this is where we 
-call our callback function here. Again, we have the function defined up here as 
-a parameter of our function and we call it when we are fully connected to the 
-database. This ensures that when we execute this callback function, we are only 
-executing it when we are sure that the database connection is up. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 194 config.json - database function to connect and start appl'n (125) ~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image194.png" 
-  title="config.json - database function - connect and start application"
-  alt="config.json - database function - connect and start application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+See background syntax here.
 
-Let&apos;s go back to our index.js and let&apos;s see what happens after we require 
-the database.js file. We are only going to look at the database connection here 
-for a moment and in the next lesson I am going to talk to you about the rest of 
-this code, how the router calls controllers and what the models stands for, but 
-for this leson we are only going to see that we connect to the database and that 
-we start our application.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ 195 only execute application if database connection is valid (125) ~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image195.png" 
-  title="Only execute application if database connection is running and valid"
-  alt="Only execute application if database connection is running and valid."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+B.  The :focus-within CSS pseudo-classHTML:
 
-Again, we require a database file here and the next place that we see our
-database variable being used is down here and we are using it as a
-function, because again we exported it. We set module export and we exported a
-function, the function accepted a callback, which is this anonymous function here
-and what this tells us is that this function, these lines of code that we see
-here, are only going to be executed when the database connection is up and running
-when the connection is open. So, we are assuring that our application is
-going to listen to incoming requests only when the database connection is open.
-This is very important. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 196 if database connection is open, start application (126) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image196.png" 
-  title="If database connection is open, start application"
-  alt="If database connection is open, start application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Again, because, obviously, we only want to answer to requests once the connection to the database
-is open, because otherwise we have no access to the data and this is exactly what
-this ensures us. Now we can go ahead and start the application. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 197 $npm start using index.js, connecting to mongoose (127) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image197.png" 
-  title="$npm start using index.js, connecting to mongoose"
-  alt="$npm start using index.js, connecting to mongoose."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h4>HTML:</h4>
 
-We can do that either by opening up a terminal window here or for the NPM tab here and
-click on start or from the terminal, just run NPM start, and what we&apos;ll see is
-that it will tell us we are going into node index.js, because that&apos;s what we
-have specified in the package.JSON to be the start of our application.
+<pre><code>  <b>&lt;h3&gt;</b>Background is blue if the input is focused.<b>&lt;/p&gt;</b>
+  <b>&lt;div&gt;</b>
+    <b>&lt;input</b> type="text"&gt;
+  <b>&lt;/div&gt;</b></code></pre>
 
-Then, it will log to console that Mongoose has connected, which is the event
-connected that we see here - mongoose connected. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 198/199 verify listening on port 3000 & appl'n is running (128) ~~~~~~~~~~~~~~-->
-<p align="center">
-<img src="./images/image198.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image199.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And, then, we see these other logs, which stem from these lines of code, which 
-tell us ok that we are fully connected to the database. So, we are executing 
-this callback function and our Express server is now listening in our specific 
-port and it is running and our application is running and we should be able to 
-open up this website and see some content.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 200 relationship entries for database (128) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image200.png" 
-  title="Relationship entries for mongoose database"
-  alt="Relationship entries for mongoose database."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-What we will actually do is we will open up this website. So, I copy it, I open 
-up Safari, I paste it in here and what we see is we have all of our JSON objects
-representing our relationships here, which is exactly what we expected
-from calling that specific route. So, thank you! In the next lesson I&apos;m going
-to talk about the router, the controllers, the models and the flow of our
-application.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch3-9">3.9 Demo 2: Running an Example Application (22:56)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Welcome back to our demonstration about how our demo applications actually work!</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~ 201 validate port listening, database connection and application running (129) ~~~~~~-->
-<p align="center">
-  <img src="./images/image201.png" 
-  title="Validate port listening, database connection, and application running"
-  alt="Validate port listening, database connection, and application running."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h4>CSS:</h4>
 
-<p>In the previous lesson, I explained briefly what the database file looks 
-like and how it works, and what this function down here actually executes, and 
-that it only executes once we are connected to the database and we are able to
-query the database. And in this lesson, we&apos;re going to see what the router is,
-what the controller is and what the models are. And we are going to implement a 
-new route into our application.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 202 $npm start - starts application (129) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image202.png" 
-  title="$npm start - starts application"
-  alt="$npm start - starts application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-First of all, let&apos;s go and start the application. We can do this again, as
-I showed it in a previous lesson, through the terminal emulator from our
-computer or you can do it from the terminal here. My preferred way is actually to
-just click on the NPM tab and then press on the start script and you will see
-down here that this is the same output that you get if you run this on a
-terminal.
+<pre><code>div {
+  <b>height</b>: 80px;
+}
+input {
+  <b>margin</b>: 30px;
+}
+div:focus-within {
+  <b>background-color</b>: #1565C0;
+}</code></pre>
 
-I did this in my previous lesson just to show that it actually is
-working. I&apos;m copying this link over here. Let me just hide these sections, open
-Safari, paste, enter and this is exactly what we want to see. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 203 data for mongoose database (130) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image203.png" 
-  title="Data dump for mongoose database"
-  alt="Data dump for mongoose database."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Our application is running and this are the relationships that I get back from 
-our application. Back here and our application is running. This code is loaded 
-into a process and let&apos;s see what these lines of code now do. We have seen 
-that at the very beginning, we are requiring some files and some components of 
-our app and next line of code, that we want to look at, is this one.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 204 const express and database required (131) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image204.png" 
-  title="Define constants express and database"
-  alt="Define constants express and database."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We define our application, so our app to be an express application and later we 
-set some variables and we add some components to it. One of the variables that 
-we want to assign is the port number on which our application is going to be 
-listening and we have seen, I&apos;m going to switch back to Safari right now, 
-that we are listening on port 3000 here. This is exactly what we are telling here 
-that if there is no port specified in the environment variables, then by default 
-it will fall back and that&apos;s but what the and and stands for here, sorry 
-the or or stands for here. 
 
-The default fall back is the board 3000. This is also an important bit to talk 
-about one second and it&apos;s the environment variables, because here we can specify 
-some variables, for example, the port number that might differ when we&apos;re executing 
-our code on our production servers, for example. It&apos;s always good practice to
-have this variable things, like, for example, the port number or the database
-connection string to be environment variable friendly or to pull back on some
-default values. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 205 set var router required (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image205.png" 
-  title="Set var router, required"
-  alt="Set var router, required."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And next thing that we&apos;re going to talk about is the router and
-we see that here we create a router and we create router by requiring a file. 
-I have already explained earlier that we can omit the extension here. When we 
-are requiring this file, we&apos;re actually requiring the file that is called
-router.js, because we see it here, it&apos;s router.js. And since it&apos;s 
-good practice, let&apos;s go ahead and look what is actually contained in our 
-files.
+<image about 7x7>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 206 router.js - assign routes (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image206.png" 
-  title="router.js - assign routes"
-  alt="router.js - assign routes."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We fire up router.js and we see, this file is very short, it starts
-with one requirement and one assignment. We
-require express again here on top and then we define our router, which
-is a new express router. That&apos;s what we do in this line here. And then
-we can assign some routes to it. For example, get requests or we can also
-assign post requests, put request, delete requests. 
-
-These are the requests that I talked about in my lectures. But before that, 
-let&apos;s see here, we are actually requiring something else and we call it 
-the relationships controller and this file is actually located somewhere, 
-not right at the root of our application. It&apos;s located in the folder app, 
-that we see here on top, so let&apos;s expand that. Then we go into controllers
-and then we are requiring relationships, which is this file over here.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image207.png" 
-  title="router.js"
-  alt="router.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s double click on that and open it up and what we see here is again, first
-of all, that we are requiring something else. It&apos;s again the file and now the
-two dots tell us that we have to look one folder before the folder we are in. So,
-we are in controllers and we need to look at app and then we want to look at
-models. 
+<!-- page 19 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image208.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We open up the models and then there should be a file, which is
-called relationships. And, in fact, there is and we&apos;re going to open up
-that. And now here, we actually see an entire code - that there is no
-requirement of other files within our file tree. 
-
-We can start reading this file and from here work backwards and see how a router 
-and power application works. Let&apos;s get started on that and the first line 
-again - we require mongoose and that&apos;s because we want to create a model, 
-which is the relationships model, that is a mongoose model, and we call this 
-model relationships. And it has some fields that we want to specify that our 
-model has to adhere to.
-
-Specifically, we want our objects inside the relationships database to have a 
-source, to have a target and to have a weight. The source is of type string, 
-the target is also of type string, while the weight is of type number, which 
-might mean - now we can store integer numbers or double or float numbers. 
-
-All of the three fields are required. So, we cannot insert elements into our 
-database, which do not adhere to the standard, to say so. All of the objects 
-need to have a field, which is source of that string, a field which is target 
-of type string and a weight of type number. 
-
-The last line is the module exports. This we have seen before. This is what 
-happens when we actually require this specific file. And what we&apos;re 
-exporting here is exactly the model. The model that we defined over here 
-is what we are exporting down here.
+<h3 id="ch4-11">Section 4.11: Global boolean with checkbox:checked and &#126; (general sibling combinator)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 209 controllers/relationships.js (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image209.png" 
-  title="controllers/relationships.js"
-  alt="controllers/relationships.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And when we go back to our controllers, we see that we are requiring it here and we 
-are actually requiring the relationships model. Inside the relationships controller, 
-what we are exporting is an object and this object has an attribute, which is called 
-relationships and this attribute actually executes a function, which accepts two 
-parameters. The first one being the request and the second one being the response. 
-These are two parameters, which are passed by let&apos;s say to confirm to the 
-express way of dealing with requests. 
+<p>With the &#126; selector, you can easily implement a global accessible
+boolean without using JavaScript.</p>
 
-When you have an incoming request, there are some attributes, which you can read 
-off. For example, where does the request come from, from which IP address, who 
-is the user. If the user is using Safari, is the user using Chrome, is the user 
-using Firefox or something like that. And then the next one is response and this 
-is actually what we are going to answer back to the user that performed the request. 
-Let&apos;s go into this function and what we do here is we have a relationships 
-model, that is the one defined over here, the one required from this file and 
-what we do is we want to perform a find. 
+<h4>Add boolean as a checkbox</h4>
 
-We want to find the objects inside the model and we do not just want to find a 
-specific object, we want to find all of the objects. We&apos;re not specifying 
-anything more. We&apos;re just saying from our relationships model: I want to 
-find everything and once relationship model returns all of the object that it 
-contains, we want to execute a certain callback function, which is this one 
-here, which accepts error and result. 
-
-This is the type of callback function returned from a defined operation and if 
-there is no error in finding the objects inside my database, then I want to 
-return a response, which contains our results and of status 200, which in HTTP 
-means it was a successful request and I&apos;m returning some results or I&apos;m 
-returning what you expect me to return. 
-
-On the other hand, if there was an error, so, if there is an error, what I want 
-to return is a response with the status of 500, which again in HTTP means there 
-has been an error on the server side and I want to send my error back to the user, 
-so that the user knows of what kind of problem might have happened. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210 relationships.js (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image210.png" 
-  title="relationships.js"
-  alt="relationships.js."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We have seen what calling this relationships function actually does. It 
-will answer to a certain request with a response that is either an error or a
-successful response, and it will return the results of finding all of
-the objects in our relationships model. 
+<p>To the very beginning of your document, add as much booleans as you
+want with a unique id and the hidden attribute set:</p>
 
-We go back to the router and we were here on this line where we actually required 
-our relationships controller. And, as I said before, in the router we can specify 
-requests that we want to be
-available from a router. So, for example, here, we specify that if an incoming
-request is a get request and it matches this URL, then we perform the function 
-from the relationships controller, which is called relationships, which is the 
-function that we have just seen one second ago. We can also change the get to, 
-for example, post. 
+<pre><code>&lt;input type="checkbox" dis="sidebarShown" hidden /&gt;
+&lt;input type="checkbox" dis="darkThemeUsed" hidden /&gt;
 
-And this would then be a post request or or a put request, or a delete request. 
-And this obviously depends on what you actually want to do. But, in our specific 
-case, what we want is we want to get data. We want to specify a get request and 
-the difference between get, put, post and delete requests I have explained in my lectures.
+/* here begins actual content, for example: */
+&lt;div id="container"&gt;
+  &lt;div id="sider"&gt;
+    /* Menu, Search, ... */
+  &lt;/div&gt;
+ &lt;/div&gt;
  
-What we see here now is that if we navigate to these API relationships, as I
-said before, we&apos;re executing this function and you might have noticed that
-at the end here, we&apos;re actually not calling the function. We&apos;re not
-specifying one specific call of the function but we&apos;re just specifying let&apos;s 
-so say the blueprint of the function. We&apos;re specifying what needs to be called if
-a user is trying to open up this route and this is because when this code gets 
-executed for the first time, if we had something like this here, we would actually 
-execute the function at on that moment. Say, today I start my server. 
+ &lt;div id="footer"&gt;
+   <!-- ... -->
+ &lt;/div&gt;</code></pre>
 
-This code gets executed after I start my server. It performs this request and this 
-will be stored, let&apos;s say her,e and then every time someone calls this call, 
-the same object will always be returned. So, the same array of relationships will 
-always be returned. But obviously, in our database the data might change over time. 
-What we want to say is every time a user is calling this request, I don&apos;t want 
-my application to just return the result of the first time I execute the code and I 
-execute this function, but I want to execute a function on the spot at the moment 
-for that user and I want to answer to that user exactly the data that we get back
-from the database at that specific point in time. 
+<h4>Change the boolean&apos;s value</h4>
+<!-- page 20 -->
+<p>You can toggle the boolean by adding a label with the for attribute set:</p>
 
-The last thing that we see here is that we are exporting again because this is
-necessary for the other files requiring this file to know what would we actually 
-want to achieve by requiring this file. And what I&apos;m exporting here is
-exactly the router object, which is the one that we have defined over here and
-to which we have assigned a route. I get requests over here. 
+<pre><code><b>&lt;label</b> for=&quot;sidebarShown&quot;&gt;Show/Hide the sidebar!<b>&lt;/label&gt;</b></code></pre>
+
+<h4>Accessing boolean value with CSS</h4>
+
+The normal selector (like .color-red) specifies the default
+properties. They can be overridden by following true / false
+selectors:
+
+<pre><code>/* true: */
+&lt;checkbox&gt;:checked &bsim; &lbrack;sibling of checkbox & parent of target&rbrack; &lt;target&gt;
+
+/* false: */
+&lt;checkbox*gt;:not(:checked) ~ &lbrack;sibling of checkbox & parent of target&rbrack; &lt;target&gt;</code></pre>
+
+Note that &lt;checkbox&gt;, &lbrack;sibling ...&rbrack; and &lt;target&gt; should be replaced by the proper selectors. &lbrack;sibling ...&rbrack;
+can be a specific selector, (often if you're lazy) simply * or nothing if the target is already a sibling of the checkbox.
+
+Examples for the above HTML structure would be:
+
+<pre><code>#sidebarShown:checked ~ #container #sidebar {
+  margin-left: 300px;
+}
+
+#darkThemeUsed:checked ~ #container,
+#darkThemeUsed:checked ~ #footer {
+  background: #333;
+}</code></pre>
+
+<h4>In action</h4>
+
+See <a href="https://jsfiddle.net/yokosbm0/1/">this fiddle</a> for
+an implementation of these global booleans.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 211 models/relationships.js (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image211.png" 
+<h3 id="ch4-12">Section 4.12: ID selectors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+ID selectors select DOM elements with the targeted ID. To select an
+element by a specific ID in CSS, the &num; prefix is used.
+
+For example, the following HTML div element...
+
+<pre><code>&lt;div id="exampleID"&gt;
+  &lt;p&gt;Example&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+<p>...can be selected by #exampleID in CSS as shown below:</p>
+
+<pre><code>#exampleID {
+  width: 20px;
+}</code></pre>
+
+<b>Note</b>: The HTML specs do not allow multiple elements with the same ID
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-13">Section 4.13: How to style a Range input</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- page 21 -->
+<h4>HTML</h4>
+
+<pre><code>&lt;input type="range"&gt;&lt;/input&gt;</code></pre>
+
+<h4>CSS</h4>
+
+| <b>Effect</b>  | <b>Pseudo Selector</b>                             |
+|----------------|----------------------------------------------------|
+| Thumb          | input&lbrack;type=range&rbrack;::-webkit-slider-thumb, input&lbrack;type=range&rbrack;::-moz-range-thumb, |
+|                | input&lbrack;type=range&rbrack;::-ms-thumb               |
+| Track          | input&lbrack;type=range&rbrack;::-webkit-slider-runnable-track, input&lbrack;type=range&rbrack;::-moz-range-track, |
+|                | input&lbrack;type=range&rbrack;::-ms-track |
+| OnFocus        | input&lbrack;type=range&rbrack;:focus |
+| Lower part of  | input&lbrack;type=range&rbrack;::-moz-range-progress, input&lbrack;type=range&rbrack;::-mx-fill-lower(not possible |
+| the track      | in WebKit browsers currently -JS needed) |
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-14">Section 4.14: The :only-child pseudo-class selector example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The :only-child CSS pseudo-class represents any element which is the only 
+child of its parent.</p>
+
+<h4>HTML:</h4>
+
+<pre><code>&lt;div&gt;
+  &lt;p>This paragraph is the only child of the div, it will have the color blue&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;p&gt;This paragraph is one of the two children of the div&lt;/p&gt;
+  &lt;p&gt;This paragraph is one of the two children of its parent&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h4>CSS:</h4>
+
+<pre><code>p:only-child {
+  color: blue;
+}</code></pre>
+
+<p>The above example selects the &lt;p&gt; element that is the unique child from its 
+parent, in this case a &lt;div&gt;.</p>
+
+<a href="https://jsbin.com/dizosi/edit?html,css">Live Demo on JSBin</a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch5">Chapter 5: Backgrounds</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- page 22 -->
+<p>With CSS you can set colors, gradients, and images as the background
+of an element.</p>
+
+<p>It is possible to specify various combinations of images, colors, and
+gradients, and adjust the size, positioning, and repetition (among
+others) of these.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-1">Section 5.1: Background Color</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The background-color property sets the background color of an element
+using a color value or through keywords, such as transparent, inherit
+or initial.</p>
+
+<ul>
+  <li><b>transparent</b>, specifies that the background color should be
+    transparent. This is default.</li>
+  <li><b>inherit</b>, inherits this property from its parent element.</li>
+  <li><b>initial</b>, sets this property to its default value.</li>
+</ul>
+
+This can be applied to all elements, and ::first-letter/::first-line pseudo-elements.
+
+Colors in CSS can be specified by different methods.
+
+<h4>Color names</h4>
+
+<h4>CSS</h4>
+
+<pre><code>div {
+  background-color: red; /* red */
+}</code></pre>
+
+<h4>HTML</h4>
+
+<pre><code>&lt;div&gt;This will have a red background&lt;/div&gt;</code></pre>
+
+<ul>
+  <li>The example used above is one of several ways that CSS has to represent
+    a single color.</li>
+</ul>
+
+<h4>Hex color codes</h4>
+
+Hex code is used to denote RGB components of a color in base-16
+hexadecimal notation. &num;ff0000, for example, is bright red, where the
+red component of the color is 256 bits (ff) and the corresponding
+green and blue portions of the color is 0 (00).
+
+If both values in each of the three RGB pairings (R, G, and B) are the
+same, then the color code can be shortened into three characters (the
+first digit of each pairing). &num;ff0000 can be shortened to &num;f00, and
+&num;ffffff can be shortened to &num;fff.
+
+Hex notation is case-insensitive.
+
+<pre><code>body {
+  background-color: #de1205; /* red */
+}
+
+.main {
+  background-color: #00f; /* blue */
+}</code></pre>
+
+<h4>RGB / RGBa</h4>
+
+Another way to declare a color is to use RGB or RGBa.
+
+RGB stands for Red, Green and Blue, and requires of three separate
+values between 0 and 255, put between brackets, that correspond with
+the decimal color values for respectively red, green and blue.
+
+RGBa allows you to add an additional alpha parameter between 0.0 and
+1.0 to define opacity.
+
+<pre><code>header {
+  background-color: rgb(0, 0, 0); /* black */
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+}</code></pre>
+
+<h4>HSL / HSLa</h4>
+
+Another way to declare a color is to use HSL or HSLa and is similar to
+RGB and RGBa.
+
+HSL stands for hue, saturation, and lightness, and is also often
+called HLS:
+
+<ul>
+  <li>Hue is a degree on the color wheel (from 0 to 360).</li>
+  <li>Saturation is a percentage between 0% and 100%.</li>
+  <li>Lightness is also a percentage between 0% and 100%.</li>
+</ul>
+
+HSLa allows you to add an additional alpha parameter between 0.0 and
+1.0 to define opacity.
+
+</code></pre>li a {
+<b>background-color</b>: hsl(120, 100&percnt;, 50&percnt;); /* green */
+}
+#p1 {
+<b>background-color</b>: hsla(120, 100&percnt;, 50&percnt;, .3); /* green with 30% opacity */
+}</code></pre>
+
+<b>Interaction with background-image</b>
+
+<p>The following statements are all equivalent:</p>
+
+</code></pre>body {
+  background: red;
+  background-image: url (
+partiallytransparentimage.png
+);
+}
+body {
+  background-color: red;
+  background-image: url (
+    partiallytransparentimage.png);
+}
+body {
+  background-image: url(
+    partiallytransparentimage.png);
+  background-color: red;
+}
+body {
+  background: redurl (
+    partiallytransparentimage.png);
+}</code></pre>
+<!-- page 24 -->
+They will all lead to the red color being shown underneath the image,
+where the parts of the image are transparent, or the image is not
+showing (perhaps as a result of background-repeat).
+
+Note that the following is not equivalent:
+
+</code></pre>body {
+<b>background-image</b>: url(partiallytransparentimage.png);
+<b>background</b>: red;
+}</code></pre>
+
+Here, the value of background overrides your background-image.
+
+For more info on the background property, see Background Shorthand
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-2">Section 5.2: Background Gradients</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+Gradients are new image types, added in CSS3. As an image, gradients
+are set with the background-image property, or the background
+shorthand.
+
+There are two types of gradient functions, linear and radial. Each
+type has a non-repeating variant and a repeating variant:
+
+<ul>
+  <li>linear-gradient()</li>
+  <li>repeating-linear-gradient()</li>
+  <li>radial-gradient()</li>
+  <li>repeating-radial-gradient()</li>
+</ul>
+
+<h4>linear-gradient()</h4>
+
+<p>A linear-gradient has the following syntax</p>
+
+<b>background</b>: inear-gradient( &lt;direction&gt;?, &lt;color-stop-1&gt;, &lt;color-stop-2&gt;, ...);
+
+| Value             | Meaning |
+|:-----------------:|-----------------------------------------------|
+| &lt;direction&gt; | Could be an argument like to top, to bottom, to right or to left; or an angle as 0deg, |
+|                   | 90deg... . The angle starts from top and rotates clockwise. Can be specified in deg, grad, rad, |
+|                   | or turn. If omitted, the gradient flows from top to bottom. |
+| &lt;color-stop-list&gt; | List of colors, optionally followed each one by a percentage or length to display it at. For |
+|                   | example, yellow 10%, rgba(0,0,0,.5) 40px, #fff 100%... |
+
+
+Can be specified in
+<ul>
+  <li><a href="https://www.w3.org/TR/css3-values/#deg">deg</a>,</li>
+  <li><a href="https://www.w3.org/TR/css3-values/#grad">grad</a>,</li>
+  <li><a href="https://www.w3.org/TR/css3-values/#rad">rad</a>, or</li>
+  <li><a href="https://www.w3.org/TR/css3-values/#turn">turn</a>.</li>
+</ul>
+
+For example, this creates a linear gradient that starts from the right and transitions from red to blue.
+
+<pre><code>.linear-gradient {
+  <b>background</b>: linear-gradient (to left top, red, blue); /* you can also use 270deg */
+}</code></pre>
+
+You can create a diagonal gradient by declaring both a horizontal and vertical starting position.
+
+<pre><code>.diagonal-linear-gradient {
+  <b>background</b>: linear-gradient (to left top, red, yellow 10&percnt;);
+}</code></pre>
+<!-- page 25 -->
+
+It is possible to specify any number of color stops in a gradient by
+separating them with commas. The following examples will create a
+gradient with 8 color stops
+
+<pre><code>.linear-gradient-rainbow {
+  <b>background</b>: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet)
+}</code></pre>
+
+<h4>radial-gradient()</h4>
+
+<pre><code><b>.radial-gradient-simple {
+  <b>background</b>: radial-gradient(red, blue);
+}
+.radial-gradient {
+  <b>background</b>: radial-gradient(circle farthest-corner at top left, red, blue);
+}</code></pre>
+
+| Value    | Meaning   |
+|----------|----------------------------------------------------------------------|
+| circle   | Shape of gradient. Values are circle or ellipse, default is ellipse. |
+| farthest-corner | Keywords describing how big the ending shape must be. Values  |
+|                 | are closest-side, farthest-side, closest-corner, farthest-corner |
+| top left   | Sets the position of the gradient center, in the same way as |
+|            | background-position. |
+
+<h4>Repeating gradients</h4>
+
+Repeating gradient functions take the same arguments as the above
+examples, but tile the gradient across the background of the element.
+
+<pre><code>.bullseye {
+  <b>background</b>: repeating-radial-gradient(red, red 10&percnt;, white 10&percnt;, white 20&percnt;);
+}
+.warning {
+  <b>background</b>: repeating-linear-gradient(-45deg, yellow, yellow 10&percnt;, black 10&percnt;, black 20&percnt; );
+}</code/</pre>
+
+| <b>Value</b>   | <b>Meaning</b>  |
+|----------------|-----------------|
+| -45deg         | Angle unit. The angle starts from the top and rotates clockwise. Can be specified in deg, grad, rad, or |
+|                | turn. |
+| to left        | Direction of gradient, default is to bottom. Syntax: to &lbrack;y-axis(top or bottom)&rbrack; &lbrackx-asis(left OR
+|                | right)&rbrack; ie to top right.
+| yellow 10%     | Color, optionally followed by a percentage or length to display it at. Repeated two or more times. |
+
+
+Angle unit(https://www.w3.org/TR/css3-values/#angles)
+degres (https://www.w3.org/TR/css3-values/#deg),
+grad (https://www.w3.org/TR/css3-values/#grad),
+rad(https://www.w3.org/TR/css3-values/#rad),
+turn(https://www.w3.org/TR/css3-values/#turn).
+
+Note that HEX, RGB, RGBa, HSL, and HSLa color codes may be used instead of color names. Color names were used
+for the sake of illustration. Also note that the radial-gradient syntax is much more complex than linear-gradient, 
+and a simplified version is shown here. For a full explanation and specs, see the 
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">MDN Docs</a>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-3">Section 5.3: Background Image</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The background-image property is used to specify a background image to
+be applied to all matched elements. By default, this image is tiled to
+cover the entire element, excluding margin.</p>
+
+<pre><code..myClass {
+  <b>background-image</b>: url (&apos;/path/to/image.jpg&apos;);
+}</code></pre>
+
+<p>To use multiple images as background-image, define comma separated url()</p>
+
+<pre><code>.myClass {
+  <b>background-image</b>: url 
+  (&apos;/path/to/image.jpg&apos;), url (
+  &apos;/path/to/image2.jpg&apos;);
+}</code></pre>
+
+<p>The images will stack according to their order with the first declared
+image on top of the others and so on.</p>
+
+| <b>Value</b>  |   <b>Result</b>    |
+|---------------|--------------------|
+| url (&apos;/path/to/image.jpg&apos;) | Specify background image&apos;s path(s) or an image resource specified with data URI |
+|                                      | schema (apostrophes can be omitted), separate multiples by comma |
+| none | No backgound image |
+| initial   | Default value |
+| inherit | Inherit parent's value |
+
+<h4>More CSS for Background Image</h4>
+
+This following attributes are very useful and almost essential too.
+
+<b>background-size</b>: xpx ypx &vertbar; x% y%; 
+<b>background-repeat</b>: no-repeat &vertbar; repeat &vertbar; repeat-x &vertbar; repeat-y; 
+<b>background-position</b>: left offset (px/%) right offset (px/%) &vertbar; center center &vertbar; left top &vertbar; right 
+bottom;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-4">Section 5.4: Background Shorthand</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The background property can be used to set one or more background
+related properties:
+
+| <b>Value</b> | <b>Description</b>                                  |
+|--------------|--------------------------------------------------|
+| back         | Background image to use                          |
+| ground-image |                                                  |
+|--------------|--------------------------------------------------|
+| back         | Background color to apply                        |
+| ground-color |                                                  |
+|--------------|--------------------------------------------------|
+| backgro      | Background image&apos;s position                 |
+| und-position |                                                  |
+|--------------|--------------------------------------------------|
+| bac          | Background image&apos;s size                     |
+| kground-size |                                                  |
+|--------------|--------------------------------------------------|
+| backg        | How to repeat background image                   |
+| round-repeat |                                                  |
+|--------------|--------------------------------------------------|
+| backg        | How the background is positioned (ignored when   |
+| round-origin | background-attachment is fixed)                  |
+|--------------|--------------------------------------------------|
+| bac          | How the background is painted relative to the    |
+| kground-clip | content-box, border-box, or the padding-box      |
+|--------------|--------------------------------------------------|
+| How the      |                                                  |
+| background   |                                                  |
+| image        |                                                  |
+| behaves,     |                                                  |
+| whether it   |                                                  |
+| scrolls      |                                                  |
+| along with   |                                                  |
+| its          |                                                  |
+| containing   |                                                  |
+|              |                                                  |
+| backgroun    |                                                  |
+| d-attachment |                                                  |
+| block or has |                                                  |
+| a fixed      |                                                  |
+| position     |                                                  |
+| within the   |                                                  |
+| viewport     |                                                  |
+|--------------|--------------------------------------------------|
+| initial Sets |                                                  |
+| the property |                                                  |
+| to value to  |                                                  |
+| default      |                                                  |
+|--------------|--------------------------------------------------|
+| inherit      |                                                  |
+| Inherits     |                                                  |
+| property     |                                                  |
+| value from   |                                                  |
+| parent       |                                                  |
+
+> The order of the values does not matter and every value is optional
+> <b>Syntax</b>
+>
+> The syntax of the background shorthand declaration is:
+>
+> <b>background</b>: &lbrack;&lt;background-image&gt;&rbrack; &lbrack;&lt;background-color&gt;&rbrack;
+> &lbrack;&lt;background-position&gt;&rbrack;/&lbrack;&lt;background-size&gt;&rbrack;
+>
+> &lbrack;&lt;background-repeat&gt;&rbrack; &lbrack;&lt;background-origin&gt;&rbrack;
+> &lbrack;&lt;background-clip&gt;&rbrack; &lbrack;&lt;background-attachment&gt;&rbrack;
+> &lbrack;&lt;initial&vertbar;inherit&gt;&rbrack;;
+>
+> <b>Examples</b>
+
+```
+<b>background</b>: red;
+```
+
+Simply setting a background-color with the redvalue.
+
+```
+<b>background</b>: border-box red;
+```
+
+Setting a background-clip to border-box and a background-color to red.
+
+```
+<b>background</b>: no-repeat center url(&quot;somepng.jpg&quot;);
+```
+
+> Sets a background-repeat to no-repeat, background-origin to center and
+> a background-image to an image.
+
+```
+<b>background</b>: url(&apos;pattern.png&apos;)
+  green;
+```
+
+> In this example, the background-color of the element would be set to
+> green with pattern.png, if it is available, overlayed on the colour,
+> repeating as often as necessary to fill the element. If pattern.png
+> includes any transparency then the green colour will be visible behind
+> it. <b>background</b>: #000000 url(&quot;picture.png&quot;) top left / 600px auto
+> no-repeat;
+>
+> In this example we have a black background with an image
+> &apos;picture.png&apos; on top, the image does not repeat in either axis and
+> is positioned in the top left corner. The / after the position is to
+> be able to include the size of the background image which in this case
+> is set as 600px width and auto for the height. This example could work
+> well with a feature image that can fade into a solid colour.
+>
+> <b>NOTE:</b> Use of the shorthand background property resets all
+> previously set background property values, even if a value is not
+> given. If you wish only to modify a background property value
+> previously set, use a longhand property instead.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-5">Section 5.5: Background Size</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> <b>General overview</b>
+>
+> The
+> &lbrack;&lbrack;background-size&rbrack;&rbrack;(https://www.w3.org/TR/2014/CR-css3-background-20140909/#the-background-size)
+> property enables one to control the scaling of the background-image.
+> It takes up to two values, which determine the scale/size of the
+> resulting image in vertical and and horizontal direction. If the
+> property is missing, its deemed auto in both width and height.
+>
+> auto will keep the image&apos;s aspect ratio, if it can be determined. The
+> height is optional and can be considered auto. Therefore, on a 256 px
+> × 256 px image, all the following background-size settings would yield
+> an image with height and width of 50 px:
+
+```
+<b>background-size</b>: 50px;
+<b>background-size</b>: 50px auto;
+/* same as above */
+<b>background-size</b>: auto 50px;
+<b>background-size</b>: 50px 50px;
+```
+
+> So if we started with the following picture (which has the mentioned
+> size of 256 px × 256 px),
+>
+> we&apos;ll end up with a 50 px × 50 px on the user&apos;s screen, contained in
+> the background of our element:
+>
+> One can also use percentage values to scale the image with respect of
+> the element. The following example would yield a 200 px × 133 px drawn
+> image:
+
+```
+#withbackground {
+  <b>background-image</b>: url(*to/some/background.png*);
+  <b>background-size</b>: 100&percnt; 66&percnt;;
+  <b>width</b>:200px;
+  <b>height</b>: 200px;
+  <b>padding</b>: 0;
+  <b>margin</b>: 0; 
+}
+```
+
+The behaviour depends on the
+
+&lbrack;background-origi&rbrack;
+
+(https://www.w3.org/TR/2014/CR-css3-background-20140909/#the-background-origin)
+
+> <b>Keeping the aspect ratio</b>
+>
+> The last example in the previos section lost its original aspect
+> ratio. The circle got into an ellipse, the square into a rectangle,
+> the triangle into another triangle.
+>
+> The length or percentage approach isn&apos;t flexible enough to keep the
+> aspect ratio at all times. auto doesn&apos;t help, since you might not
+> know which dimension of your element will be larger. However, to cover
+> certain areas with an image (and correct aspect ratio) completely or
+> to contain an image with correct aspect ratio completely in a
+> background area, the values, contain and cover provide the additional
+> functionality.
+>
+> <b>Eggsplanation for contain and cover</b>
+>
+> Sorry for the bad pun, but we&apos;re going to use a &lbrack;&lbrack;picture of the day
+> by Biswarup
+> Ganguly&rbrack;&rbrack;(https://commons.wikimedia.org/wiki/File:Chicken_Egg_without_Eggshell_5859.jpg)
+> for demonstration. Lets say that this is your screen, and the gray
+> area is outside of your visible screen. For demonstration, We&apos;re
+> going to assume a 16 × 9 ratio.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image007.png"
+  style="width:50%"
   title=""
-  alt="index.js ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-Now, we can go back into the index.json or we actually require the router and we 
-assign it to this variable here. And we can say that our router is listening on 
-the route here and we are using the route of our application.
+<!-- [image007.png 4.95x2.79](./images/image007.png) -->
+
+> We want to use the aforementioned picture of the day as a background.
+> However, we cropped the image to 4x3 for some reason. We could set the
+> background-size property to some fixed length, but we will focus on
+> contain and cover. Note that I also assume that we didn&apos;t mangle the
+> width and/or height of body.
+
+<b>contain</b>
+
+contain
+
+Scale the image, while preserving its intrinsic aspect ratio (if any),
+to the largest size such that both its
+
+width and its height can fit inside the background positioning area.
+
+> This makes sure that the background image is always completely
+> contained in the background positioning area, however, there could be
+> some empty space filled with your background-color in this case:
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 212  (137) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image212.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image009.png"
+  style="width:50%"
   title=""
-  alt="index.js ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-And if an incoming request gets on the route and it matches one of the routers 
-specified, incoming requests, for example, /api/relationships, as we have seen 
-here, then you have to answer oh sorry you have to answer with this call of this 
-function, which is but basically we are telling the application here.
+
+<b>cover</b>
+
+cover
+
+Scale the image, while preserving its intrinsic aspect ratio (if any),
+to the smallest size such that both its
+
+width and its height can completely cover the background positioning
+area.
+
+> This makes sure that the background image is covering everything.
+> There will be no visible background-color, however depending on the
+> screen&apos;s ratio a great part of your image could be cut off:
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 213  (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image213.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image011.png"
+  style="width:50%"
   title=""
-  alt="index.js ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-The last part of the code in our index.js is what we have already
-mentioned in the previous lesson. Basically, what we do here is we actually start
-listening. This is the most important part, this is really where we say now we have
-loaded all of our controllers, we have loaded all of our roots, we have
-executed all of our logic that we need to bootstrap our application and now we actually
-want to start listening to incoming requests. And the way we do that is,
-basically, we say: we start listening on a port that has been specified before. 
+<!-- {width="4.958333333333333in" height="2.7916666666666665in"} -->
+
+<b>Demonstration with actual code</b>
+
+```
+div &gt; div {
+  <b>background-image</b>: url(http://i.stack.imgur.com/r5CAq.jpg);
+  <b>background-repeat</b>: no-repeat;
+  <b>background-position</b>: center center;
+  <b>background-color</b>: #ccc;
+  <b>border</b>: 1px solid;
+  <b>width</b>: 20em;
+  <b>height</b>: 10em;
+}
+div .contain {
+  <b>background-size</b>: contain;
+}
+div .cover {
+  <b>background-size</b>: cover;
+}
+```
+
+<i>Additional styles for the explanation boxes</i>
+
+```
+div &gt; div {
+  <b>margin</b>: 0 1 ex 1 ex 0;
+  <b>float</b>: left;
+}
+div &plus; div {
+  <b>clear</b>: both;
+  <b>border-top</b>: 1px dashed silver;
+  <b>padding-top</b>: 1ex;
+}
+div &gt; div::after {
+  <b>background-color</b>: #000;
+  <b>color</b>: #fefefe;
+  <b>margin</b>: 1ex;
+  <b>padding</b>: 1ex;
+  <b>opacity</b>: 0.8;
+  <b>display</b>: block;
+  <b>width</b>: 10ex;
+  <b>font-size</b>: 0.7em;
+  <b>content</b>: attr (
+    class 
+  );
+}
+  <b>&lt;div&gt;</b>
+  <b>&lt;div class = &quot;contain&quot;</b>
+  <b>&gt;/div&lt;&gt;</b>
+  <b>&lt;p&gt;</b>
+```
+
+Note the grey background. The image does not cover the whole region, but
+it&apos;s fully
+
+```
+<b>&lt;</b>
+<b>em</b>
+<b>&gt;</b>
+contained
+<b>&lt;</b>
+<b>/em</b>
+<b>&gt;</b>
+.
+<b>/p</b>
+<b>&lt;</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class = &quot;cover&quot;
+<b>&gt;</b>
+<b>/div</b>
+<b>&lt;</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+```
+
+Note the ducks/geese at the bottom of the image. Most of the water is
+cut, as well as a part of the sky. You don&apos;t see the complete 
+image anymore, but neither do you see any background color;
+
+```
+the image
+<b>&lt;</b>
+<b>em</b>
+<b>&gt;</b>
+covers
+<b>&lt;</b>
+<b>/em</b>
+<b>&gt;</b>
+all of the
+<b>&lt;</b>
+<b>code</b>
+<b>&gt;</b>
+&lt;
+div
+&gt;
+<b>&lt;</b>
+<b>/code</b>
+<b>&gt;</b>
+.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 214  (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image214.png" 
+<h3 id="ch5-6">Section 5.6: Background Position</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The
+> &lbrack;&lbrack;background-position&rbrack;&rbrack;(https://drafts.csswg.org/css-backgrounds-3/#background-position)
+> property is used to specify the starting position for a background
+> image or gradient
+
+```
+.myClass
+{
+<b>background-image</b>
+:
+url
+(
+&apos;path/to/image.jpg&apos;
+)
+;
+<b>background-position</b>
+:
+50
+&percnt;
+50
+&percnt;
+;
+}
+```
+
+> The position is set using an <b>X</b> and <b>Y</b> co-ordinate and be set
+> using any of the units used within CSS.
+
+<b>Unit Description</b>
+
+> A percentage for the horizontal offset is relative to *(width of
+> background positioning area - width of background image)*.
+>
+> *value*% *value*% A percentage for the vertical offset is relative to
+> *(height of background positioning area - height of background image)*
+>
+> The size of the image is the size given by background-size.
+>
+> Offsets background image by a length given in pixels relative to the
+> top left of the background *value*px *value*px positioning area
+>
+> Units in CSS can be specified by different methods (see here).
+>
+> <b>Longhand Background Position Properties</b>
+>
+> In addition to the shorthand property above, one can also use the
+> longhand background properties backgroundposition-x and
+> background-position-y. These allow you to control the x or y positions
+> separately.
+>
+> <b>NOTE:</b> This is supported in all browsers except Firefox (versions
+> 31-48)
+> &lbrack;&lbrack;2&rbrack;&rbrack;(http://caniuse.com/#search=background-position-x).
+> Firefox 49, to be released September 2016, *will* support these
+> properties. Until then, &lbrack;&lbrack;there is a Firefox hack within this
+> Stack&rbrack; &lbrack;Overflow
+> answer.&rbrack;&rbrack;(http://stackoverflow.com/questions/14844407/background-position-y-doesnt-work-in-firefox-via-css/29282573#29282573)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-7">Section 5.7: The background-origin property</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+> The background-origin property specifies where the background image is
+> positioned.
+>
+> Note: If the background-attachment property is set to fixed, this
+> property has no effect. Default value: padding-box
+>
+> Possible values:
+>
+> padding-box - The position is relative to the padding box border-box -
+> The position is relative to the border box content-box - The position
+> is relative to the content box initial inherit
+>
+
+<h4>CSS</h4>
+
+<pre><code>
+.example
+{
+<b>width</b>: 300px;
+<b>border</b>: 20px solid black;
+<b>padding</b>: 50px;
+<b>background</b>: url (
+*https://static.pexels.com/photos/6440/magazines-desk-work-workspace-medium.jpg*
+);
+<b>background-repeat</b>: no-repeat;
+}
+
+.example1 {
+}
+.example2 {
+<b>background-origin</b>: border-box;
+}
+.example3 {
+<b>background-origin</b>: content-box;
+}</code></pre>
+
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+No background-origin (padding-box is default):
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;div</b> class=&quot;example example1&quot;<b>&gt;</b>
+
+<b>&lt;h2&gt;</b>Lorem Ipsum Dolor<b>&lt;/h2&gt;</b> <b>&lt;p&gt;</b>Lorem ipsum dolor sit
+amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.<b>&lt;/p&gt;</b>
+<b>&lt;p&gt;</b>Ut wisi enim ad minim veniam, quis nostrud exerci tation
+ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+consequat.<b>&lt;/p&gt; &lt;/div&gt;</b>
+
+**&lt;p&gt;**background-origin: border-box:**&lt;/p&gt;**
+
+**&lt;div** class=&quot;example example2&quot;**&gt;**
+
+**&lt;h2&gt;**Lorem Ipsum Dolor**&lt;/h2&gt;** **&lt;p&gt;**Lorem ipsum dolor sit
+amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.**&lt;/p&gt;**
+**&lt;p&gt;**Ut wisi enim ad minim veniam, quis nostrud exerci tation
+ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+consequat.**&lt;/p&gt; &lt;/div&gt;**
+
+**&lt;p&gt;**background-origin: content-box:**&lt;/p&gt;**
+
+**&lt;div** class=&quot;example example3&quot;**&gt;**
+
+**&lt;h2&gt;**Lorem Ipsum Dolor**&lt;/h2&gt;** **&lt;p&gt;**Lorem ipsum dolor sit
+amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.**&lt;/p&gt;**
+**&lt;p&gt;**Ut wisi enim ad minim veniam, quis nostrud exerci tation
+ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+consequat.**&lt;/p&gt; &lt;/div&gt;** 
+```
+
+Result:
+
+[image013](./images/image013.jpg)
+
+> More:
+
+&lbrack;&lbrack;https://www.w3.org/TR/css3-background/#the-background-origin&rbrack;&rbrack;(https://www.w3.org/TR/css3-background/#the-background-origin)
+&lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-8">Section 5.8: Multiple Background Image</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> In CSS3, we can stack multiple background in the same element.
+
+```
+#mydiv {
+  **background-image**: url(img_1.png), /* top image */
+url (img_2.png), /* middle image */
+url (img_3.png); /* bottom image */
+  **background-position**: right bottom, left top, right top;
+  **background-repeat**: no-repeat, repeat, no-repeat;
+}
+```
+
+Images will be stacked atop one another with the first background on
+top and the last background in the back. img_1 will be on top, the
+img_2 and img_3 is on bottom.
+
+We can also use background shorthand property for this:
+
+```
+#mydiv {
+  **background**: 
+  url(img_1.png) right bottom no-repeat,
+  url(img_2.png) left top repeat,
+  url(img_3.png) right top no-repeat;
+}
+```
+
+We can also stack images and gradients:
+
+```
+#mydiv {
+  **background**:
+url(*image.png*) right bottom no-repeat,
+linear-gradient (
+  to bottom,
+  #fff 0 &percnt;
+,
+  #000 100 &percnt;
+);
+}
+```
+
+[jsFiddle ](https://jsfiddle.net/z30up2un/)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-9">Section 5.9: Background Attachment</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The background-attachment property sets whether a background image is
+> fixed or scrolls with the rest of the page.
+
+```
+body {
+**background-image**: url(&apos;img.jpg&apos;);
+**background-attachment**: fixed;
+}
+```
+
+**Value Description**
+> scroll The background scrolls along with the element. This is default.
+> fixed The background is fixed with regard to the viewport. local The
+> background scrolls along with the element&apos;s contents. initial Sets
+> this property to its default value. inherit Inherits this property
+> from its parent element.
+>
+> **Examples**
+***background-attachment: scroll***
+> The default behaviour, when the body is scrolled the background
+> scrolls with it:
+
+```
+body {
+**background-image**: url(&apos;image.jpg&apos;);
+**background-attachment**: scroll;
+}
+```
+
+***background-attachment: fixed***
+> The background image will be fixed and will not move when the body is
+> scrolled:
+
+```
+body {
+  **background-image**: url(&apos;image.jpg&apos;);
+  **background-attachment**: fixed;
+}
+```
+
+***background-attachment: local***
+> The background image of the div will scroll when the contents of the
+> div is scrolled.
+
+```
+div {
+  **background-image**: url(&apos;image.jpg&apos;);
+  **background-attachment**: local;
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-10">Section 5.10: Background Clip</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Definition and Usage: The background-clip property specifies the
+> painting area of the background.
+>
+> Default value: border-box
+>
+> Values
+>
+> border-box is the default value. This allows the background to extend
+> all the way to the outside edge of the element&apos;s border. padding-box
+> clips the background at the outside edge of the element&apos;s padding and
+> does not let it extend into the border; content-box clips the
+> background at the edge of the content box.
+>
+> inherit applies the setting of the parent to the selected element.
+>
+
+<h4>CSS</h4>
+
+```
+.example {
+  **width**:300px;
+  **border**:20px solid black;
+  **padding**:50px;
+  **background**:url (
+    https://static.pexels.com/photos/6440/magazines-desk-work-workspace-medium.jpg
+  );
+  **background-repeat**: no-repeat;
+}
+.example1 {
+}
+.example2 {
+  **background-origin**: border-box;
+}
+.example3 {
+  **background-origin**: content-box;
+}
+```
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**p**
+**&gt;**
+No background-origin (padding-box is default):
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;example example1&quot;
+**&gt;**
+**&lt;**
+**h**
+**2**
+**&gt;**
+Lorem Ipsum Dolor
+**&lt;**
+**/h**
+**2**
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+suscipit lobortis nisl ut
+aliquip ex ea commodo consequat.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+background-origin: border-box:
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class = &quot;example example2&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>h</b>
+<b>2</b>
+<b>&gt;</b>
+Lorem Ipsum Dolor
+<b>&lt;</b>
+<b>/h</b>
+<b>2</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+nonummy nibh euismod
+tincidunt ut laoreet dolore magna aliquam erat volutpat.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+suscipit lobortis nisl ut
+aliquip ex ea commodo consequat.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+background-origin: content-box:
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;example example3&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>h</b>
+<b>2</b>
+<b>&gt;</b>
+Lorem Ipsum Dolor
+<b>&lt;</b>
+<b>/h</b>
+<b>2</b>
+<b>&gt;</b>
+> <b>&lt;p&gt;</b>There once was a man fron Sash. His balls were made of glass
+> When he rubbed them together, he made stormy weather.
+> And lightning struck out of his ass.<b>&lt;/p&gt;</b> <b>&lt;p&gt;</b>And more goes here, as
+> well. It beats Latin. I don't know Latin so better for me
+> the end.<b>&lt;/p&gt; &lt;/div&gt;</b>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-11">Section 5.11: Background Repeat</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The background-repeat property sets if/how a background image will be repeated.
+
+By default, a background-image is repeated both vertically and horizontally.
+
+```
+div {
+  <b>background-image</b>: url (
+    &quot;img.jpg&quot;
+  );
+  <b>background-repeat</b>: repeat-y;
+}
+  <b>background-repeat</b>: repeat-y
+```
+
+<h4>Here&apos;s how it looks:</h4>
+
+[image014.jpg](./images/image014.jpg)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-12">Section 5.12: background-blend-mode Property</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+.my-div
+{
+<b>width</b>:300px;
+<b>height</b>:200px;
+<b>background-size</b>:100&percnt;;
+<b>background-repeat</b>:no-repeat;
+<b>background-image</b>:linear-gradient
+(
+to right, black 0&percnt;
+,white 100&percnt;
+),
+url
+(
+&apos;https://static.pexels.com/photos/54624/strawberry-fruit-red-sweet-54624-medium.jpeg&apos;
+);
+<b>background-blend-mode</b>:saturation;
+}
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;my-div&quot;
+<b>&gt;</b>
+Lorem ipsum
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<a href="https://jsfiddle.net/MadalinaTn/y69d28Lb/&rbrack;&rbrack;(https://jsfiddle.net/MadalinaTn/y69d28Lb/">See results here</a>.
+
+> CSS Syntax: background-blend-mode: normal &vertbar; multiply &vertbar; screen &vertbar;
+> overlay &vertbar; darken &vertbar; lighten &vertbar; color-dodge &vertbar; saturation &vertbar; color &vertbar;
+> luminosity;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5-13">Section 5.13: Background Color with Opacity</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> If you set opacity on an element it will affect all its child
+> elements. To set an opacity just on the background of an element you
+> will have to use RGBA colors. Following example will have a black
+> background with 0.6 opacity.
+
+/* Fallback for web browsers that don&apos;t support RGBa */
+
+```
+<b>background-color</b>:rgb (
+  0,0,0
+  );
+/* RGBa with 0.6 opacity */
+<b>background-color</b>:rgba (
+  0,0,0,0.6
+);
+/* For IE 5.5 - 7 */
+<b>filter</b>: progid: DXImageTransform.Microsoft.gradient
+(
+startColorstr = #99000000,
+endColorstr = #99000000 
+);
+/* For IE 8 */
+&minus;
+ms-filter:
+&quot;progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
+endColorstr=#99000000)&quot;;
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch6">Chapter 6: Centering</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-1">Section 6.1: Using Flexbox</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>HTML:</h4>
+
+```
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;container&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>img</b>
+src
+=
+&quot;http://lorempixel.com/400/200&quot;
+<b>/&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<h4>CSS:</h4>
+
+```
+html, body, .container
+{
+<b>height</b>:100&percnt;;
+}
+.container {
+<b>display</b>: flex;
+<b>justify-content</b>: center;
+/* horizontal center */
+}
+img {
+<b>align-self</b>:center;
+/* vertical center */
+}
+```
+
+&lbrack;&lbrack;View Result&rbrack;&rbrack;(https://jsfiddle.net/aLu05kjy/1/) 
+
+<h4>HTML:</h4>
+
+```
+<b>&lt;</b>
+<b>img</b>
+src = &quot;http://lorempixel.com/400/200&quot;
+<b>/&gt;</b>
+> <b>CSS:</b>
+html, body {
+<b>height</b>:100&percnt;;
+}
+body {
+<b>display</b>:flex;
+<b>justify-content</b>:center;
+*/&ast; horizontal center &ast;/*
+<b>align-items</b>:center;
+/* vertical center */
+}
+```
+
+&lbrack;&lbrack;View Result&rbrack;&rbrack;(https://jsfiddle.net/ttp0bzfm/1/)
+
+> See Dynamic Vertical and Horizontal Centering under the Flexbox
+> documentation for more details on flexbox and what the styles mean.
+>
+> <b>Browser Support</b>
+>
+> Flexbox is supported by all major browsers, &lbrack;&lbrack;except IE versions
+> before 10&rbrack;&rbrack;(http://caniuse.com/#search=flex).
+>
+> Some recent browser versions, such as Safari 8 and IE10, require
+> &lbrack;&lbrack;vendor
+> prefixes&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
+>
+> For a quick way to generate prefixes there is
+> &lbrack;&lbrack;Autoprefixer&rbrack;&rbrack;(https://autoprefixer.github.io/), a
+> third-party tool.
+>
+> For older browsers (like IE 8 & 9) a &lbrack;&lbrack;Polyfill is
+> available&rbrack;&rbrack;(https://github.com/jonathantneal/flexibility).
+>
+> For a more detailed look at flexbox browser support, see &lbrack;&lbrack;this
+> answer&rbrack;&rbrack;(http://stackoverflow.com/a/35137869/3597276).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-2">Section 6.2: Using CSS transform</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> CSS transforms are based on the size of the elements so if you don&apos;t
+> know how tall or wide your element is, you can position it absolutely
+> 50% from the top and left of a relative container and translate it by
+> 50% left and upwards to center it vertically and horizontally.
+>
+> Keep in mind that with this technique, the element could end being
+> rendered at a non-integer pixel boundary, making it look blurry. See
+> &lbrack;&lbrack;this answer in
+> SO&rbrack;&rbrack;(http://stackoverflow.com/a/32329785/1385678) for a
+> workaround.
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;container&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;element&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<h4>CSS</h4>
+
+```
+.container
+{
+<b>position</b>
+:
+relative
+;
+}
+.element
+{
+<b>position</b>
+:
+absolute
+;
+<b>top</b>
+:
+50
+&percnt;
+;
+<b>left</b>
+:
+50
+&percnt;
+;
+<b>transform</b>
+:
+translate
+(
+-50
+&percnt;
+,
+-50
+&percnt;
+)
+;
+}
+```
+
+&lbrack;&lbrack;View example in
+JSFiddle&rbrack;&rbrack;(https://jsfiddle.net/webtiki/rz3p3ufs/)
+
+> <b>CROSS BROWSER COMPATIBILITY</b>
+>
+> The transform property needs prefixes to be supported by older
+> browsers. Prefixes are needed for Chrome&lt;=35, Safari&lt;=8, Opera&lt;=22,
+> Android Browser&lt;=4.4.4, and IE9. CSS transforms are not supported by
+> IE8 and older versions.
+>
+> Here is a common transform declaration for the previous example:
+>
+> -webkit-transform: translate(-50%, -50%); */&ast; Chrome, Safari, Opera,
+> Android &ast;/*
+>
+> -ms-transform: translate(-50%, -50%); */&ast; IE 9 &ast;/* <b>transform</b>:
+> translate(-50%, -50%);
+>
+> For more information see
+> &lbrack;&lbrack;canIuse&rbrack;&rbrack;(http://caniuse.com/#feat=transforms2d).
+>
+> <b>MORE INFORMATION</b>
+
+  <b>position</b>                    :   relative
+
+> The element is being positioned according to the first non-static
+> parent ( , absolute, or fixed). Explore more in this
+> &lbrack;&lbrack;fiddle&rbrack;&rbrack;(https://jsfiddle.net/siavasfiroozbakht/ox8kyypa/)
+> and this documentation topic.
+
+  <b>left</b>   :   50%     and     <b>transform</b>    :   translateX          (   -50%
+
+  </b>top</b>   :   50%     and     <b>transform</b>    :   translateY           (   -50%
+
+> For horizontal-only centering, use ). The same goes for verticalonly
+> centering: center with ).
+
+  <b>right</b>   :   -50%       ; and      <b>margin-bottom</b>          :   -50%
+
+
+> Using a non-static width/height elements with this method of centering
+> can cause the centered element to appear squished. This mostly happens
+> with elements containing text, and can be fixed by adding:
+> <b>margin</b>;. View this
+> &lbrack;&lbrack;fiddle&rbrack;&rbrack;(https://jsfiddle.net/4xxmxca0/) for more
+> information.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-3">Section 6.3: Using margin: 0 auto;</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+| <b>margin</b>: 0                         | > auto;                      |
+
+> Objects can be centered by using if they are block elements and have a
+> defined width.
+>
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;containerDiv&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+id
+=
+&quot;centeredDiv&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;containerDiv&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>p</b>
+id
+=
+&quot;centeredParagraph&quot;
+<b>&gt;</b>
+This is a centered paragraph.
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;containerDiv&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>img</b>
+id
+=
+&quot;centeredImage&quot;
+src
+=
+&quot;https://i.kinja-img.com/gawker-media/image/upload/s&minus;-c7Q9b4Eh&minus;-/c_scale,fl_progressive,q_80,w&lowbar;
+800
+/qqyvc3bkpyl3mfhr8all.jpg&quot;
+<b>/&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<h4>CSS</h4>
+
+```
+.containerDiv {
+  <b>width</b>: 100&percnt;;
+  <b>height</b>: 100px;
+  <b>padding-bottom</b>: 40px;
+}
+#centeredDiv {
+  <b>margin</b>: 0 auto;
+  <b>width</b>: 200px;
+  <b>height</b>: 100px;
+  <b>border</b>: 1px solid #000;
+}
+#centeredParagraph {
+  <b>width</b>: 200px;
+  <b>margin</b>: 0 auto;
+}
+#centeredImage {
+  <b>display</b>: block;
+  <b>width</b>: 200px;
+  <b>margin</b>: 0 auto;
+}
+```
+
+> Result:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image015.jpg"
+  style="width:50%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
+<!-- [image015.jpg](./images/image015.jpg) -->
 
-So, app.get(&apos;port&apos;) will get this variable, which we have set here and then once the server
-is actually listening, we execute a callback function and we print on the
-log that the express server is listening on the port that we have specified and
-the application is running, and we should be able to connect to localhost +
-port number + /api/relationships and we should be able to get back the data that
-we see here. This is exactly the flow of our application what we
-have just seen. 
-
-But, now, what we want to do is we want to specify that we want to have a request 
-where we are getting data, but we&apos;re only getting the relationships for the 
-source, that is, for example, Aemon. How do we do that? 
+JSFiddle example: &lbrack;&lbrack;Centering objects with margin: 0
+auto <a href="https://jsfiddle.net/xf1ze3v9/">Demo</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 215  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image215.png" 
+<h3 id="ch6-4">Section 6.4: Using text-align</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <b>text-align</b>
+
+> The most common and easiest type of centering is that of lines of text
+> in an element. CSS has the rule :
+>
+> center for this purpose:
+>
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>p</b>
+<b>&gt;</b>
+Lorem ipsum
+<b>&lt;</b>
+<b>/p</b>
+<b>&gt;</b>
+```
+
+<h4>CSS</h4>
+
+```
+p {
+  <b>text-align</b>: center;
+}
+```
+
+> *This does not work for centering entire block elements*. text-align
+> controls only alignment of inline content like text in its parent
+> block element.
+>
+> See more about text-align in Typography section.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-5">Section 6.5: Using position: absolute</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> *Working in old browsers (IE &gt;= 8)*
+>
+> Automatic margins, paired with values of zero for the left and right
+> or top and bottom offsets, will center an absolutely positioned
+> elements within its parent.
+
+&lbrack;&lbrack;View Result&rbrack;&rbrack;(https://jsfiddle.net/stuttufu/sj2m0oo2/1/)
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b> <b>div</b> class=&quot;parent&quot;<b>&gt;</b>
+<b>&lt;</b> <b>img</b> class=&quot;center&quot; src=&quot;http://lorempixel.com/400/200/&quot;<b>/&gt;</b>
+<b>&lt;</b> <b>/div</b>
+<b>&gt;</b>
+```
+
+<h4>CSS</h4>
+
+```
+.parent {
+  <b>position</b>: relative;
+  <b>height</b>: 500px;
+}
+.center
+{
+  <b>position</b>: absolute;
+  <b>margin</b>: auto;
+  <b>top</b>: 0;
+  <b>right</b>: 0;
+  <b>bottom</b>: 0;
+  <b>left</b>: 0;
+}
+```
+
+Elements that don&apos;t have their own implicit width and height like
+images do, will need those values defined.
+
+Other resources: &lbrack;&lbrack;Absolute Centering in
+CSS&rbrack;&rbrack;(http://codepen.io/shshaw/details/gEiDt)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-6">Section 6.6: Using calc()</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  calc              (    100% - 80px
+
+The calc() function is the part of a new syntax in CSS3 in which you
+can calculate (mathematically) what size/position your element
+occupies by using a variety of values like pixels, percentages, etc.
+Note: Whenever you use this function, always take care of the space
+between two values ). 
+
+<h4>CSS</h4>
+
+```
+.center {
+  <b>position</b>: absolute;
+  <b>height</b>: 50px;
+  <b>width</b>: 50px;
+  <b>background</b>: red;
+  <b>top</b>: calc (50&percnt; &minus; 50px/2
+);
+/* height divided by 2 */
+  <b>left</b>: calc (50&percnt; &minus; 50px / 2);
+/* width divided by 2 */
+}
+```
+
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;center&quot;
+<b>&gt;</b>
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-7">Section 6.7: Using line-height</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+You can also use line-height to center vertically a single line of
+text inside a container :
+
+<h4>CSS</h4>
+
+```
+div {
+  <b>height</b>: 200px;
+  <b>line-height</b>: 200px;
+}
+  <b>&lt;input</b> <b>/&gt;</b>
+```
+
+That&apos;s quite ugly, but can be useful inside an element. The
+line-height property works only when the text to be centered spans a
+single line. If the text wraps into multiple lines, the resulting
+output won&apos;t be centered.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-8">Section 6.8: Vertical align anything with 3 lines of code</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+Supported by IE11+ (http://caniuse.com/#search=transform)
+
+View Result (https://jsfiddle.net/bnqrLgk9/1/)
+
+Use these 3 lines to vertical align practically everything. Just make
+sure the div/image you apply the code to has a parent with a height.
+
+<h4>CSS</h4>
+
+```
+div
+.vertical
+{
+<b>position</b>
+:
+relative
+;
+<b>top</b>
+:
+50
+&percnt;
+;
+<b>transform</b>
+:
+translateY
+(
+-50
+&percnt;
+)
+;
+}
+```
+
+<h4>HTML</h4>
+
+```
+<b>&lt;</b>
+<b>div</b>
+class
+=
+&quot;vertical&quot;
+<b>&gt;</b>
+Vertical aligned text!
+<b>&lt;</b>
+<b>/div</b>
+<b>&gt;</b>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-9">Section 6.9: Centering in relation to another item</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> We will see how to center content based on the height of a near
+> element.
+>
+> Compatibility: IE8+, all other modern browsers.
+>
+> <h4>HTML</h4>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;content&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;position-container&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;thumb&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>img</b>
+
+src
+
+=
+
+&quot;http://lorempixel.com/400/200/&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;details&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>p</b>
+
+class
+
+=
+
+&quot;banner-title&quot;
+
+<b>&gt;</b>
+
+text 1
+
+<b>&lt;</b>
+
+<b>/p</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>p</b>
+
+class
+
+=
+
+&quot;banner-text&quot;
+
+<b>&gt;</b>
+
+content content content content content content content content
+
+content content content content content content
+
+<b>&lt;</b>
+
+<b>/p</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>button</b>
+
+class
+
+=
+
+&quot;btn&quot;
+
+<b>&gt;<b>
+
+button
+
+<b>&lt;</b>
+
+<b>/button</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+> <h4>CSS</h4>
+
+.content
+
+&ast;
+
+{
+
+<b>box-sizing</b>
+
+:
+
+border-box
+
+;
+
+}
+
+.content
+
+.position-container
+
+{
+
+<b>display</b>
+
+:
+
+table
+
+;
+
+}
+
+.content
+
+.details
+
+{
+
+<b>display</b>
+
+:
+
+table-cell
+
+;
+
+<b>vertical-align</b>
+
+:
+
+middle
+
+;
+
+<b>width</b>
+
+:
+
+33.333333
+
+&percnt;
+
+;
+
+<b>padding</b>
+
+:
+
+30
+
+px
+
+;
+
+<b>font-size</b>
+
+:
+
+17
+
+px
+
+;
+
+<b>text-align</b>
+
+:
+
+center
+
+;
+
+}
+
+.content
+
+.thumb
+
+{
+
+<b>width</b>
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+.content
+
+.thumb
+
+img
+
+{
+
+<b>width</b>
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+> Link to
+> &lbrack;&lbrack;JSFiddle&rbrack;&rbrack;(https://jsfiddle.net/gasp10/6bv92mko/4/)
+>
+> The main points are the 3 .thumb, .details and .position-container
+> containers:
+
+  <b>display</b>                         :     table
+
+
+  <b>width</b>   :   &period;...   and    <b>display</b>   :   table-cell      ,   <b>vertical-align</b>
+
+
+> The .position-container must have .
+>
+> The .details must have the real width set : middle.
+
+  <b>width</b>                        :      100%
+
+> The .thumb must have if you want that it will take all the remaining
+> space and it will be influenced by the .details width.
+
+  <b>width</b>                        :      100%
+
+> The image (if you have an image) inside .thumb should have , but it is
+> not necessary if you have correct proportions.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-10">Section 6.10: Ghost element technique (Michał Czernow&apos;s hack)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> This technique works even when the container&apos;s dimensions are
+> unknown.
+
+  <b>vertical-align</b>
+
+> Set up a &quot;ghost&quot; element inside the container to be centered that is
+> 100% height, then use :
+>
+> middle on both that and the element to be centered.
+>
+> <h4>CSS</h4>
+
+*/&ast; This parent can be any width and height &ast;/*
+
+.block
+
+{
+
+<b>text-align</b>
+
+:
+
+center
+
+;
+
+*/&ast; May want to do this if there is risk the container may be narrower
+than the element inside &ast;/*
+
+<b>white-space</b>
+
+:
+
+nowrap
+
+;
+
+}
+
+*/&ast; The ghost element &ast;/*
+
+.block
+
+:
+
+before
+
+{
+
+<b>content</b>
+
+:
+
+&apos;&apos;
+
+;
+
+<b>display</b>
+
+:
+
+inline-block
+
+;
+
+<b>height</b>
+
+:
+
+100
+
+&percnt;
+
+;
+
+<b>vertical-align</b>
+
+:
+
+middle
+
+;
+
+*/&ast; There is a gap between ghost element and .centered,*
+
+*caused by space character rendered. Could be eliminated by*
+
+*nudging .centered (nudge distance depends on font family),*
+
+*or by zeroing font-size in .parent and resetting it back*
+
+*(probably to 1rem) in .centered. &ast;/*
+
+<b>margin-right</b>
+
+:
+
+-0.25
+
+em
+
+;
+
+}
+
+*/&ast; The element to be centered, can also be of any width and height
+&ast;/*
+
+.centered
+
+{
+
+<b>display</b>
+
+:
+
+inline-block
+
+;
+
+<b>vertical-align</b>
+
+:
+
+middle
+
+;
+
+<b>width</b>
+
+:
+
+300
+
+px
+
+;
+
+<b>white-space</b>
+
+:
+
+normal
+
+;
+
+*/&ast; Resetting inherited nowrap behavior &ast;/*
+
+}
+
+> <h4>HTML</h4>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;block&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>div</b>
+
+class
+
+=
+
+&quot;centered&quot;
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+<b>&lt;</b>
+
+<b>/div</b>
+
+<b>&gt;</b>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="6-11">Section 6.11: Centering vertically and horizontally without worrying about height or width</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The following technique allows you to add your content to an HTML
+> element and center it both horizontally and vertically **without
+> worrying about its height or width**.
+
+  **display**: table;
+
+> **The outer container** should have
+>
+> **The inner container**
+
+  **display**: table-cell;
+
+  **vertical-align**: middle;
+
+  **text-align**: center;
+
+> should have should have should have
+>
+> **The content box**
+
+  **display**: inline-block;
+
+  **text-align**: left;           or    **text-align**: right;
+
+> should have
+>
+> should re-adjust the horizontal text-alignment to eg. , unless you
+> want text to be centered
+>
+> **Demo**
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;outer-container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;inner-container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;centered-content&quot;
+
+**&gt;**
+
+You can put anything here!
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+body
+
+{
+
+**margin**
+
+:
+
+0
+
+;
+
+}
+
+.outer-container
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**display**
+
+:
+
+table
+
+;
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+*/&ast; This could be ANY width &ast;/*
+
+**height**
+
+:
+
+100
+
+&percnt;
+
+;
+
+*/&ast; This could be ANY height &ast;/*
+
+**background**
+
+:
+
+#ccc
+
+;
+
+}
+
+.inner-container
+
+{
+
+**display**
+
+:
+
+table-cell
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+.centered-content
+
+{
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**text-align**
+
+:
+
+left
+
+;
+
+**background**
+
+:
+
+#fff
+
+;
+
+**padding**
+
+:
+
+20
+
+px
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+#000
+
+;
+
+}
+
+See also &lbrack;**&lbrack;this
+Fiddle&rbrack;**&rbrack;(http://jsfiddle.net/WXLsY/621/)!
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-12">Section 6.12: Vertically align an image inside div</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrap&quot;
+
+**&gt;**
+
+**&lt;**
+
+**img**
+
+src
+
+=
+
+&quot;http://lorempixel.com/400/200/&quot;
+
+**/&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.wrap
+
+{
+
+**height**
+
+:
+
+50
+
+px
+
+;
+
+*/&ast; max image height &ast;/*
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+blue
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+.wrap
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**height**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+**width**
+
+:
+
+1
+
+px
+
+;
+
+}
+
+img
+
+{
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-13">Section 6.13: Centering with fixed size</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> If the size of your content is fixed, you can use absolute positioning
+> to 50% with margin that reduces half of your content&apos;s width and
+> height:
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;center&quot;
+
+**&gt;**
+
+Center vertically and horizontally
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.center
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**background**
+
+:
+
+#ccc
+
+;
+
+**left**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**margin-left**
+
+:
+
+-75
+
+px
+
+;
+
+*/&ast; width &ast; -0.5 &ast;/*
+
+**top**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**margin-top**
+
+:
+
+-100
+
+px
+
+;
+
+*/&ast; height &ast; -0.5 &ast;/*
+
+}
+
+> **Horizontal centering with only fixed width**
+>
+> You can center the element horizontally even if you don&apos;t know the
+> height of the content:
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;center&quot;
+
+**&gt;**
+
+Center only horizontally
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.center
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**background**
+
+:
+
+#ccc
+
+;
+
+**left**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**margin-left**
+
+:
+
+-75
+
+px
+
+;
+
+*/&ast; width &ast; -0.5 &ast;/*
+
+}
+
+> **Vertical centering with fixed height**
+>
+> You can center the element vertically if you know the element&apos;s
+> height:
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;center&quot;
+
+**&gt;**
+
+Center only vertically
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.center
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**background**
+
+:
+
+#ccc
+
+;
+
+**top**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**margin-top**
+
+:
+
+-100
+
+px
+
+;
+
+*/&ast; width &ast; -0.5 &ast;/*
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-14">Section 6.14: Vertically align dynamic height elements</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Applying css intuitively doesn&apos;t produce the desired results because
+
+  **vertical-align**:middle
+
+  **margin-top**:auto          and      **margin-bottom**:auto
+
+  **margin-top**:-50%
+
+
+> &lbrack;***&lbrack;isn&apos;t&rbrack;*** &lbrack;applicable to block-level
+> elements&rbrack;&rbrack;(http://www.w3.org/TR/CSS21/visudet.html#propdef-vertical-align)
+> &lbrack;&lbrack;used values would compute as&rbrack;
+> ***&lbrack;zero&rbrack;***&rbrack;(http://www.w3.org/TR/CSS2/visudet.html#Computing_heights_and_margins)
+>
+> &lbrack;&lbrack;percentage-based margin values are calculated relative to
+> the&rbrack; ***&lbrack;width&rbrack;*** &lbrack;of containing
+> block&rbrack;&rbrack;(http://www.w3.org/TR/CSS2/box.html#margin-properties)
+>
+> For widest browser support, a workaround with helper elements:
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;vcenter&minus;-container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;vcenter&minus;-helper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;vcenter&minus;-content&quot;
+
+**&gt;**
+
+*&lt;!&minus;-*
+
+*stuff*
+
+*&minus;-&gt;*
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.vcenter
+
+&minus;-
+
+container
+
+{
+
+**display**
+
+:
+
+table
+
+;
+
+**height**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+.vcenter
+
+&minus;-
+
+helper
+
+{
+
+**display**
+
+:
+
+table-cell
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+}
+
+.vcenter
+
+&minus;-
+
+content
+
+{
+
+**margin**
+
+:
+
+0
+
+auto
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+&lbrack;&lbrack;jsfiddle&rbrack;&rbrack;(http://jsfiddle.net/ovfiddle/yVAW9/) from
+&lbrack;&lbrack;original
+question&rbrack;&rbrack;(http://stackoverflow.com/a/12417336/1081234).
+This approach
+
+> works with dynamic height elements respects content flow is supported
+> by legacy browsers
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch6-15">Section 6.15: Horizontal and Vertical centering using table layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+One could easily center a child element using table display property.
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;parent&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;child&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.wrapper
+
+{
+
+**display**
+
+:
+
+table
+
+;
+
+**vertical-align**
+
+:
+
+center
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**background-color**
+
+:
+
+#9e9e9e
+
+;
+
+}
+
+.parent
+
+{
+
+**display**
+
+:
+
+table-cell
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+.child
+
+{
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background-color**
+
+:
+
+teal
+
+;
+
+}
+
+# Chapter 7: The Box Model
+
+**Parameter Detail**
+
+> content-box Width and height of the element only includes content
+> area. padding-box Width and height of the element includes content and
+> padding. border-box Width and height of the element includes content,
+> padding and border. initial Sets the box model to its default state.
+> inherit Inherits the box model of the parent element.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch7-1">Section 7.1: What is the Box Model?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>The Edges</h4>
+
+> The browser creates a rectangle for each element in the HTML document.
+> The Box Model describes how the padding, border, and margin are added
+> to the content to create this rectangle.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image016.png"
+  style="width:50%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-We go back to our webstore and we start
-implementing a new route. We know that the routes are defined into the router. 
+<!-- [image016.png](./images/image016.png)  <!-- 4.7" -->
+
+Diagram from CSS2.2 Working Draft <a href="https://www.w3.org/TR/CSS22/box.html#mpb-examples">Demo</a>.
+
+> The perimeter of each of the four areas is called an *edge*. Each edge
+> defines a *box.*
+>
+> The innermost rectangle is the **content box**. The width and height
+> of this depends on the element&apos;s rendered content (text, images and
+> any child elements it may have).
+>
+> Next is the **padding box**, as defined by the padding property. If
+> there is no padding width defined, the padding edge is equal to the
+> content edge.
+>
+> Then we have the **border box**, as defined by the border property. If
+> there is no border width defined, the border edge is equal to the
+> padding edge.
+>
+> The outermost rectangle is the **margin box**, as defined by the
+> margin property. If there is no margin width defined, the margin edge
+> is equal to the border edge.
+>
+> **Example** div {
+
+```
+**border**: 5px solid red;
+**margin**: 50px;
+**padding**: 20px;
+}
+```
+
+> This CSS styles all div elements to have a top, right, bottom and left
+> border of 5px in width; a top, right, bottom and left margin of 50px;
+> and a top, right, bottom, and left padding of 20px. Ignoring content,
+> our generated box will look like this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 216  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image216.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image017.jpg"
+  style="width:20%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
+<!--[image017.jpg](./images/image017.jpg) <!-- 1.8" -->
 
-We don&apos;t have to modify index, but we have to modify a router first and a router
-specified exactly here. We can come up with any name that we want. I&apos;m going
-to delete the semicolon at the end of this line. I&apos;m going to copy paste this
-line one line below. It&apos;s not the gap request, because we&apos;re getting data and we
-want to get the relationships for the character Aemon and we obviously change the
-type of the function that we&apos;re going to call. We want the relationships
-only for Aemon and we also have to add the semicolon here, because I deleted it
-from here before. 
+> *Screenshot of Google Chrome&apos;s Element Styles panel*
+>
+> As there is no content, the content region (the blue box in the
+> middle) has no height or width (0px by 0px). The padding box by
+> default is the same size as the content box, plus the 20px width on
+> all four edges we&apos;re defining above with the padding property (40px
+> by 40px).
+>
+> The border box is the same size as the padding box, plus the 5px width
+> we&apos;re defining above with the border property (50px by 50px).
+>
+> Finally the margin box is the same size as the border box, plus the
+> 50px width we&apos;re defining above with the margin property (giving our
+> element a total size of 150px by 150px).
+>
+> Now lets give our element a sibling with the same style. The browser
+> looks at the Box Model of both elements to work out where in relation
+> to the previous element&apos;s content the new element should be
+> positioned:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 217  (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image217.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image018.jpg"
+  style="width:30%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
+<!-- [image018.jpg 3.6" width, 1.5" height](./images/image018.jpg) -->
 
-What you can actually immediately notice is that the color
-of these two blueprints of the function is different and this is because webstorm
-automatically knows that in the file controllers/relationships there is
-no key that has the name relationships Aemon and defined. If I hover
-over it, it actually tells me there is an unresolved variable relationship Aemon. It
-doesn&apos;t happen here, because this is obviously defined. So, what we have to do
-now is actually to define this function over in the controller. 
+> The content of each of element is separated by a 150px gap, but the
+> two elements&apos; boxes touch each other.
+>
+> If we then modify our first element to have no right margin, the right
+> margin edge would be in the same position as the right border edge,
+> and our two elements would now look like this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 218  (140) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image218.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image019.jpg"
+  style="width:30%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
+<!-- [image019.jpg 3.45" x 1.54"](./images/image019.jpg) -->
 
-What we do is, I will copy paste the name of this function, just out of simplicity, I
-will navigate to controllers/relationships, I append at the end here a comma,
-then I specify the new function that I want to implement, a colon and I,
-basically, can copy what is written above here. I say function, then I
-put request and response and automatically webstorm has already put the
-parentheses for me. Just to be consistent with the way I have written them over
-here, I will delete some of the spaces and then what we want to do here is we want to
-find in our relationships model only those objects, which have as a
-source Aemon. We can copy what is over here, because this is
-actually good code and there is no reason why not to reuse it. We can just copy
-what we have over there and if we look at the documentation of mongoose, we
-will see that in the find function of a model, we can specify as the first
-parameter an object. 
-
-Let&apos;s put an object in and then we put a comma, and we
-leave the callback as it is. And in this object, I&apos;m going to now return just to
-have more space here, in this object we can specify what filters to apply on
-our data before we get it out. The filters we want to apply, as we said
-before, are that the source must equal Aemon. 
-
-This is all we have to do now to be sure that when we perform the find operation on our
-relationships model, we only filter out those elements of which the
-source is Aemon. The rest, as I said before, the callback is actually working
-pretty well, because we will have a very similar result of what we have above
-here. If we have an error, then we just return there was some kind
-of an error. This is the error. And if there was no error, we will
-have some results, which are most likely and hopefully going to be those elements
-in which the source is Aemon and we will return this element to the
-user.
-
-Now, I am saving this and as you have noticed, there is no need for me to change 
-the model, because the model is the same. There&apos;s no difference there, the 
-only thing again that I&apos;m changing here is just I&apos;m filtering out the 
-relationships, such that what I get is that the source of our relationships is 
-Aemon. Now I have saved this file, there is no modification here, so there&apos;s 
-no need to save anything here.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 219 restart process with $npm start (141) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image219.png" 
-  title="Restart process with $NPM start"
-  alt="Restart process with $NPM start."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If I go back to my run tab here, I can restart the process and this is
-needed, because, as I just mentioned, we have modified files here and when we
-start the process here, what actually happens inside your PC or inside your
-Mac or Linux machine is that the files that you have here, they are being
-collected inside the process and the process contains a copy of the files. So,
-since the copy is outdated, I need to restart my server and I can do that by
-pressing this button. If I was using the terminal, you would have to press
-control+C and then you can just type in $NPM start again. 
+<h3 id="ch7-2">Section 7.2: box-sizing</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Just for the sake here, I press run again and the output is going to be the same, 
-because I&apos;m not logging anything new. 
+> The default box model (content-box) can be counter-intuitive, since
+> the width / height for an element will not represent its actual width
+> or height on screen as soon as you start adding padding and border
+> styles to the element.
+>
+> The following example demonstrates this potential issue with
+> content-box:
+
+```
+textarea {
+  <b>width</b>: 100&percnt;;
+  <b>padding</b>: 3px;
+  <b>box-sizing</b>: content-box; /* default value */
+}
+```
+
+<p>Since the padding will be added to the width of the textarea, the
+resulting element is a textarea that is wider than 100%.</p>
+
+<p>Fortunately, CSS allows us to change the box model with the box-sizing
+property for an element. There are three different values for the
+property available:</p>
+
+<ul>
+  <li>content-box: The common box model - width and height only includes the
+    content, not the padding or border.</li>
+  <li>padding-box: Width and height includes the content and the padding, but 
+    not the border.</li>
+  <li>border-box: Width and height includes the content, the padding as well as 
+    the border.</li>
+</ul>
+
+<image here>
+
+<p>To solve the textarea problem above, you could just change the
+box-sizing property to padding-box or borderbox. border-box is most
+commonly used.</p>
+
+```
+textarea {
+  <b>width</b>: 100&percnt;;
+  <b>padding</b>: 3px;
+  <b>box-sizing</b>: border-box;
+}
+```
+
+<p>To apply a specific box model to every element on the page, use the following 
+snippet:</p>
+
+```
+html {
+  <b>box-sizing</b>: border-box;
+}
+
+&ast;, &ast;:before, &ast;:after {
+  <b>box-sizing</b>: inherit;
+}
+```
+
+<p>In this box-sizing: border-box; is not directly applied to &ast;, so you can easily
+overwrite this property on individual elements.</p>
+
+<h2 id="ch8">Chapter 8: Margins</h2>
+
+| <b>Parameter</b>  | <b>Details</b> |
+|-------------------|------------------------------------------------------------------|
+| 0                 | set margin to none. |
+| auto              | used for centering, by evenly setting values on each side units. |
+| (e.g. px)         | see parameter section in Units for a list of valid units.
+| inherit           | inherit margin value from parent element. 
+| initial           | restore to initial value. |
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 220 relationship data with two objects (142) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image220.png" 
-  title="Relationship data with two objects"
-  alt="Relationship data with two objects."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-But when I go to Safari now and I
-have my API relationships root, if I now append Aemon, as you see here,
-what I will get is a new array. So, this is the array of objects with only two
-objects and the two objects that I get are with the source Aemon. These are the 
-only two objects that I have in my database, which have this source. 
+<h3 id="ch8-1">Section 8.1: Margin Collapsing</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 221 relationship data with multiple objects (142) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image221.png" 
-  title="Relationship data with multiple objects"
-  alt="Relationship data with multiple objects."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We were successful in implementing this route and we can
-also confirm that by going back, looking at our complete relationships root
-with all of our relationships data and you will see that at the very top there&apos;s
-only two objects, which are of a source Aemon and they are exactly the
-same ones that we get if we navigate back to this root. So, yes, this is exactly what I
-wanted to show you. 
+<p>When two margins are touching each other vertically, they are
+collapsed. When two margins touch horizontally, they do not collapse.</p>
+
+<h4>Example of adjacent vertical margins:</h4>
+
+<p>Consider the following styles and markup:</p>
+
+```
+div {
+  <b>margin</b>: 10px;
+}
+
+<b>&lt;div&gt;</b>
+  some content
+<b>&lt;/div&gt;</b>
+<b>&lt;div&gt;</b>
+  some more content
+<b>&lt;/div&gt;</b>
+```
+
+<p>They will be 10px apart since vertical margins collapse over one and
+other. (The spacing will not be the sum of two margins.)</p>
+
+<h4>Example of adjacent horizontal margins:</h4>
+
+<p>Consider the following styles and markup:</p>
+
+```
+span {
+  <b>margin</b>: 10px;
+}
+
+<b>&lt;span&gt;</b>some<b>&lt;/span&gt;&lt;span&gt;</b>content<b>&lt;/span&gt;</b>
+```
+
+They will be 20px apart since horizontal margins don&apos;t collapse over
+one and other. (The spacing will be the sum of two margins.)
+
+<h4>Overlapping with different sizes</h4>
+
+<pre><code>.top {
+  <b>margin</b>: 10px;
+}
+.bottom {
+ <b>margin</b>: 15px;
+}
+**&lt;****div** class = &quot;top&quot;**&gt;**
+  some content
+**&lt;****/div****&gt;**
+**&lt;****div** class = &quot;bottom&quot;**&gt;**
+  some more content
+**&lt;****/div****&gt;**</code></pre>
+
+> These elements will be spaced 15px apart vertically. The margins
+> overlap as much as they can, but the larger margin will determine the
+> spacing between the elements.
+>
+> **Overlapping margin gotcha**
+
+<pre><code>.outer-top {
+  **margin**: 10px;
+}
+.inner-top {
+  **margin**: 15px;
+}
+.outer-bottom {
+  **margin**: 20px;
+}
+.inner-bottom {
+  **margin**: 25px;
+}
+**&lt;****div** class = &quot;outer-top&quot;**&gt;**
+    **&lt;****div** class=&quot;inner-top&quot;**&gt;**
+      some content
+    **&lt;****/div****&gt;**
+  **&lt;****/div****&gt;**
+  **&lt;****div** class=&quot;outer-bottom&quot;**&gt;**
+    **&lt;****div** class=&quot;inner-bottom&quot;**&gt;**
+      some more content
+  **&lt;****/div****&gt;**
+**&lt;****/div****&gt;**</code></pre>
+
+> What will be the spacing between the two texts? (hover to see answer)
+>
+> The spacing will be 25px. Since all four margins are touching each
+> other, they will collapse, thus using the largest margin of the four.
+>
+> Now, what about if we add some borders to the markup above.
+
+<pre><code>div {
+  **border**: 1px solid red;
+}</code></pre>
+
+> What will be the spacing between the two texts? (hover to see answer)
+>
+> The spacing will be 59px! Now only the margins of .outer-top and
+> .outer-bottom touch each other, and are the only collapsed margins.
+> The remaining margins are separated by the borders. So we have 1px +
+>
+> 10px + 1px + 15px + 20px + 1px + 25px + 1px. (The 1px&apos;s are the
+> borders&period;..)
+>
+> **Collapsing Margins Between Parent and Child Elements:**
+>
+<h4>HTML:</h4>
+
+<pre><code.**&lt;****h****1****&gt;**Title**&lt;****/h****1****&gt;**
+**&lt;****div****&gt;**
+  **&lt;****p****&gt;**Paragraph**&lt;****/p****&gt;**
+**&lt;****/div****&gt;**</code></pre>
+
+
+<h4>CSS:</h4>
+
+<pre><code>h1 {
+  **margin**: 0;
+  **background**: #cff;
+}
+  div {
+  **margin**: 50px 0 0 0;
+  **background**: #cfc;
+}
+  p {
+  **margin**: 25px 0 0 0;
+  **background**: #cf9;
+}</code></pre>
+
+> In the example above, only the largest margin applies. You may have
+ expected that the paragraph would be located 60px from the h1 (since
+> the div element has a margin-top of 40px and the p has a 20px
+> margin-top). This does not happen because the margins collapse
+> together to form one margin.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222 relationships.js (142) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image222.png" 
+<h3 id="ch8-2">Section 8.2: Apply Margin on a Given Side</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>Direction-Specific Properties</h4>
+
+CSS allows you to specify a given side to apply margin to. The four
+properties provided for this purpose are:
+
+<ul>
+  <li>margin-left</li>
+  <li>margin-right</li>
+  <li>margin-top</li>
+  <li>margin-bottom</li>
+</ul>
+
+The following code would apply a margin of 30 pixels to the left side
+of the selected div. <a href="https://jsfiddle.net/wm0100x9/1/">View Result</a>.
+
+<h4>HTML</h4>
+
+```
+**&lt;****div** id=&quot;myDiv&quot;**&gt;****&lt;****/div****&gt;**
+```
+
+<h4>CSS:</h4>
+
+```
+#myDiv {
+  **margin-left**: 30px;
+  **height**: 40px;
+  **width**: 40px;
+  **background-color**: red;
+}
+```
+
+| <b>Parameter</b> | <b>Details</b> |
+|------------------|-------------------------------------------------|
+| margin-left | The direction in which the margin should be applied. |
+| 30px | The width of the margin. |
+
+<h4>Specifying Direction Using Shorthand Property</h4>
+
+The standard margin property can be expanded to specify differing
+widths to each side of the selected elements. The syntax for doing
+this is as follows:
+
+```
+**margin**: &lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;;
+```
+
+> The following example applies a zero-width margin to the top of the
+> div, a 10px margin to the right side, a 50px margin to the left side,
+> and a 100px margin to the left side. <a href="https://jsfiddle.net/1979c947/">View
+> Result.
+>
+<h4>HTML</h4>
+
+```
+**&lt;****div**id=&quot;myDiv&quot;**&gt;****&lt;****/div****&gt;**
+```
+
+<h4>CSS</h4>
+
+```
+#myDiv {
+  **margin**: 0 10px 50px 100px;
+  **height**: 40px;
+  **width**: 40px;
+  **background-color**: red;
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-3">Section 8.3: Margin property simplification</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+p {
+  **margin**: 1px; /* 1px margin in all directions */
+
+  /* equals to: */
+  **margin**: 1px 1px;
+
+  /* equals to: */
+  **margin**: 1px 1px 1px;
+
+  /* equals to: */
+  **margin**: 1px 1px 1px 1px;
+}
+```
+
+> Another exapmle:
+
+<pre><code>p {
+  **margin**: 10px 15px; /* 10px margin-top & bottom And 15px margin-right & left */
+
+  /* equals to: */
+  **margin**: 10px 15px 10px 15px;
+
+  /* equals to: */
+  **margin**: 10px 15px 10px;
+
+  /* margin left will be calculated from the margin right value (=15px) */
+}</code></pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-4">Section 8.4: Horizontally center elements on a page using margin</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> As long as the element is a **block**, and it has an **explicitly set
+> width value**, margins can be used to center block elements on a page
+> horizontally.
+>
+> We add a width value that is lower than the width of the window and
+> the auto property of margin then distributes the remaining space to
+> the left and the right:
+
+```
+#myDiv {
+  **width**:80&percnt;;
+  **margin**:0 auto;
+}
+```
+
+> In the example above we use the shorthand margin declaration to first
+> set 0 to the top and bottom margin values (although this could be any
+> value) and then we use auto to let the browser allocate the space
+> automatically to the left and right margin values.
+>
+> In the example above, the #myDiv element is set to 80% width which
+> leaves use 20% leftover. The browser distributes this value to the
+> remaining sides so:
+
+```
+(100% - 80%) / 2 = 10%
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-5">Section 8.5: Example 1:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+It is obvious to assume that the percentage value of margin to
+margin-left and margin-right would be relative to its parent element.
+
+```
+.parent {
+  **width**: 500px;
+  **height**: 300px;
+}
+.child {
+  **width**: 100px;
+  **height**: 100px;
+  **margin-left**: 10&percnt;; /* (parentWidth &ast; 10/100) =&gt; 50px */
+}
+```
+
+> But that is not the case, when comes to margin-top and margin-bottom.
+> Both these properties, in percentages, aren&apos;t relative to the height
+> of the parent container but to the **width** of the parent container.
+>
+> So,
+
+<pre><code>.parent {
+  <b>width</b>: 500px;
+  <b>height</b>: 300px;
+}
+.child {
+  <b>width</b>: 100px;
+  <b>height</b>: 100px;
+  <b>margin-left</b>: 10&percnt;;  /* (parentWidth &ast; 10/100) =&gt; 50px */
+  <b>margin-top</b>: 20&percnt;;  /* (parentWidth &ast; 20/100) =&gt; 100px */
+}</code></pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch8-6">Section 8.6: Negative margins</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Margin is one of a few CSS properties that can be set to negative
+values. This property can be used to <b>overlap elements without
+absolute positioning</b>.</p>
+
+<pre><code>div {
+  **display**: inline;
+}
+#over {
+  **margin-left**: -20px;
+}
+&lt;div&gt;Base div&lt;/div&gt;
+&lt;div id=&quot;over&quot;&gt;Overlapping div&lt;/div&gt;</code></pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch9">Chapter 9: Padding</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch9-1">Section 9.1: Padding Shorthand</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The padding property sets the padding space on all sides of an
+> element. The padding area is the space between the content of the
+> element and its border. Negative values are not allowed.
+>
+> To save adding padding to each side individually (using padding-top,
+> padding-left etc) can you write it as a shorthand, as below:
+>
+
+<h4>Four values:</h4>
+
+```
+**&lt;**
+**style**
+**&gt;**
+.myDiv {
+padding: 25px 50px 75px 100px; /&ast; top right bottom left; &ast;/
+}
+**&lt;**
+**/style**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;myDiv&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>Three values:</h4>
+
+```
+**&lt;**
+**style**
+**&gt;**
+.myDiv
+{
+padding: 25px 50px 75px; /&ast; top left/right bottom &ast;/
+}
+**&lt;**
+**/style**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;myDiv&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+</h4>Two values:</h4>
+
+```
+**&lt;**
+**style**
+**&gt;**
+.myDiv
+{
+padding: 25px 50px; /&ast; top/bottom left/right &ast;/
+}
+**&lt;**
+**/style**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;myDiv&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>One value:</h4>
+
+```
+**&lt;**
+**style**
+**&gt;**
+.myDiv
+{
+padding: 25px; /&ast; top/right/bottom/left &ast;/
+}
+**&lt;**
+**/style**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;myDiv&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch9-2">Section 9.2: Padding on a given side</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The padding property sets the padding space on all sides of an
+element. The padding area is the space between the content of the
+element and its border. Negative values are not allowed.
+
+You can specify a side individually:
+
+<ul>
+  <li>padding-top </li>
+  <li>padding-right</li>
+  <li>padding-bottom</li>
+  <li>padding-left</li>
+</ul>
+
+The following code would add a padding of 5px to the top of the div:
+
+<pre><code>**&lt;****style****&gt;**
+  .myClass {
+    padding-top: 5px;
+}
+**&lt;****/style****&gt;**
+**&lt;****div** class=&quot;myClass&quot;**&gt;****&lt;****/div****&gt;**</code></pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch10">Chapter 10: Border</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch10-1">Section 10.1: border-radius</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The border-radius property allows you to change the shape of the basic
+> box model.
+>
+> Every corner of an element can have up to two values, for the vertical
+> and horizontal radius of that corner (for a maximum of 8 values).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image025.jpg"
+  style="width:60%"
   title=""
-  alt=" ."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-You have seen that it&apos;s actually really easy to implement a new root. 
-Probably, you want to do this in a more systematic and a 
-more a reusable way. Instead of defining really specific names for
-characters, since we&apos;re dealing with a database and names might change, you can
-define a variable here. Basically I can say column name, source name, is even
-better. Source name. And this way I can use this variable later inside my 
-relationships controller to just filter out those sources, sorry, those objects
-of which the source is the name that I specify here. 
+<!-- [image025.jpg 6.14 x 1.93](./images/image025.jpg) -->
 
-For example, I might write ABC here and then what this value will hold is ABC. 
-Somewhere in the roots over here, sorry, in the controllers over here, I can 
-instead of hard-coding in the name, I can use something like - sourcename. There 
-is more to that, it&apos;s actually not that easy. You have to define a couple 
-of things here and there, but it this is just to give an idea of how to make 
-this code more reusable. That's it.
+> The first set of values defines the horizontal radius. The optional
+> second set of values, preceded by a '/' , defines the vertical radius.
+> If only one set of values is supplied, it is used for both the
+> vertical and horizontal radius.
 
-Dennis is going to talk to you about the visual part of our application. In his example 
-application, there will be also views defined inside of the code, which I am 
-missing in this code, simply because out of simplicity. This is just an API. 
-In the views part, even if you navigate to index.js, there will be some new 
-lines of code, which you should look into. They are interesting and I&apos;m 
-very sure that if you understand those lines of code, you actually understand 
-how the application works.
-That is a good test for you to try out and have fun.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-0">4.0 Introduction -- API calls and Data Visualization (1:01)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 223 data visualization introduction (4.0) (143) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image223.png" 
-  title="Data visualization turn information to knowledge"
-  alt="Data visualization turn information to knowledge."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+```
+**border-radius**: 10px 5&percnt; / 20px 25em 30px 35em;
+```
 
-Welcome to the data visualization module. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 224 what is data visualization? (144) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image224.png" 
-  title="What is data visualization?"
-  alt="What is data visualization?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Data visualization is an important aspect of data analysis. Creating images, 
-diagrams and animations help us in the process of analysis and data communication. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 225 data visualization turns information to knowledge (144) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image225.png" 
-  title="Data visualization turns information to knowledge"
-  alt="Data visualization turns information to knowledge."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-In this example, we can see that by simply visualizing a large number of data 
-points into a graph, we can start recognizing patterns and trends in our data. 
-Over the past couple of decades, more and more data is communicated online and 
-so JavaScript is playing a unique role in enabling data visualization. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 226 covered in this module (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image226.png" 
-  title="Covered in this module"
-  alt="Covered in this module."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-In this module, Dennis will survey the current techniques we use to visualize 
-data on the web. Dennis will then show how we can use the powerful JavaScript 
-library D3 to tell the story of our data in a web browser. Dennis Schwartz is a 
-master student for bioinformatics. He has developed several JavaScript-based 
-visualization tools and he&apos;s passionate about open-source communities.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-1">4.1 Data Retrieval using HTTP Requests (7:48)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 227 data visualization - data retrieval using http requests (145) ~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image227.png" 
-  title="4.1 Data Retrieval using HTTP Requests"
-  alt="4.1 Data Retrieval using HTTP Requests."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Welcome everyone to this part of our course!
+> The 10px is the horizontal radius of the top-left-and-bottom-right.
+> And the 5% is the horizontal radius of the topright-and-bottom-left.
+> The other four values after &apos;/&apos; are the vertical radii for top-left,
+> top-right, bottom-right and bottom-left.
+>
+> As with many CSS properties, shorthands can be used for any or all
+> possible values. You can therefore specify anything from one to eight
+> values. The following shorthand allows you to set the horizontal and
+> vertical radius of every corner to the same value:
+>
 
-This part will deal with data visualization and we&apos;ll start off with
-data retrieval using HTTP requests.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~ 228 outlook - web-based visualization with relationship data from a novel (146) ~~~~~-->
-<p align="center">
-  <img src="./images/image228.png" 
-  title="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API"
-  alt="Outlook - Web-based visualization with relationship data from a novel. Retrieved from our API."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h4>HTML:</h4>
 
-Let&apos;s take a look at what we plan to do. At this part we&apos;re going 
-to create a simple web site and retrieve data from the Node.js application that 
-you built in previous lectures.
+```
+**&lt;**
+**div**
+class
+=
+&apos;box&apos;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
 
-That means, we are moving away from the back-end now and towards the front-end. 
-We&apos;ll use data from a dataset called the Network of Thrones dataset and 
-that contains a number of character interactions from the novel of &quot;Storm 
-of Swords&quot;. That is the third book in The Game of Thrones series.
-You might have heard of it. We will then use this data that we retrieved from 
-the API and create a nice graph visualization of the interactions of these 
-characters.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 229 outlook - web-based visualization using d3 and pug (146) ~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image229.png" 
-  title="Outlook - Web-based visualization using D3 and Pug"
-  alt="Outlook - Web-based visualization using D3 and Pug."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We will use the <b>Pug</b> templating engine that you have been presented
-in the last part of this course to create the site and then use the D3.js library for the
-visualization itself.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 230 data retrieval, #1 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image230.png" 
-  title="Data retrieval, #1"
-  alt="Data retrieval, #1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+<h4>CSS:</h4>
 
-Let&apos;s take another look at the architecture of this application.
-The back-end is the Node.js application that you were presented previously 
-and at this point, we&apos;re going to look at the front-end, which is going to 
-be the website.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 231 data retrieval, #2 (147) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image231.png" 
-  title="Data retrieval, #2"
-  alt="Data retrieval, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-This website will also contain JavaScript and JavaScript will be used to
-query our API for the relationships of these characters, which we&apos;ll then return
-them as JSON data. And once we have it, we&apos;ll try to visualize it nicely.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 232 content creation with pug, #1 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image232.png" 
-  title="Content creation with Pug, #1"
-  alt="Content creation with Pug, #1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The first step in this is to use the <b>Pug</b> templating and engine and
-compile template into an HTML file that will be displayed in a web browser.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 233 content creation with pug, #2 (148) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image233.png" 
-  title="Content creation with Pug, #2"
-  alt="Content creation with Pug, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+```
+.box {
+  **width**: 250px;
+  **height**: 250px;
+  **background-color**: black;
+  **border-radius**: 10px;
+}
+```
 
-Then, with the help of JavaScript, we will create the backend server and
-get the data from there.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 234 creating a page for the visualization (148) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image234.png" 
-  title="Creating a page for the visualization"
-  alt="Creating a page for the visualization."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s take a look at the code you were provided before. In the views folder 
-of the app, you can find four files. You can think of these <b>pug</b> files as 
-building blocks for the web site. These templates will be put together and then 
-compiled into HTML.
+> Border-radius is most commonly used to convert box elements into
+> circles. By setting the border-radius to half of the length of a
+> square element, a circular element is created:
 
-For example, the navigation file contains the navigation bar, obviously,
-which can then be referenced in other parts, for example, in the base file. 
-We don&apos;t have to include the code for navigation in every site. The 
-<b>visualization.pug</b> file is where the content for our visualization 
-page will be hosted and we&apos;ll try to have a look at that in a second.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 235 creating a simple page for the visualization, #1 (149) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image235.png" 
-  title="Creating a simple plage for the visualization, #1"
-  alt="Creating a simple plage for the visualization, #1."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+```
+.circle {
+  **width**: 200px;
+  **height**: 200px;
+  **border-radius**: 100px;
+}
+```
 
-So here it is. It looks quite complicated on the first glance, but, basically, 
-what it has are three major parts: It has a block for meta data, as in the head 
-of the HTML file and it has a block for the content. And right on top, it also 
-says extends base. This means, it will adhere to the basic structure that is 
-defined in the <b>base.pug</b> file and then only check the content in the 
-relevant areas. We have in the styles block linked a style.css file.
-We&apos;ll talk about that later.
+> Because border-radius accepts percentages, it is common to use 50% to
+> avoid manually calculating the borderradius value:
 
-Right on the button, there are two JavaScript files.
-For one, we used the D3 library. So, we have that one linked and then we
-have another JavaScript file linked that will host the code for data retrieval and
-visualization.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 236 creating a simple page for the visualization, #2 (150) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image236.png" 
-  title="Creating a simple page for the visualization, #2"
-  alt="Creating a simple page for the visualization, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+```
+.circle {
+  **width**: 150px;
+  **height**: 150px;
+  **border-radius**: 50&percnt;;
+}
+```
 
-Let&apos;s take a closer look at the content itself. There are three parts 
-here. The title itself will be provided by the API or at the router of our
-application.
+> If the width and height properties are not equal, the resulting shape
+> will be an oval rather than a circle.
+>
 
-We have a button. This button when clicked calls on the JavaScript file
-and will call the loadData function. Within this function, we will define code that will
-create direct request to our API, receive the data and then create the visualization.
-And, finally, we have one more div with the ID root. This is where we&apos;ll 
-inject the visualization using JavaScript and D3. So, this is what the page looks like.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 237 creating a simple page for the visualization, #3 (150) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image237.png" 
-  title="Creating a simple page for the visualization, #3"
-  alt="Creating a simple page for the visualization, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Again, it has the navigation bar on top, it has a title. In this case visualization 
-and a button that when pressed will initialize the visualization and data retrieval.
+<h4>Browser specific border-radius example:</h4>
 
-Let&apos;s have a look at what the data retrieval actually looks like. This 
-will happen in the JavaScript file. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 238 data retrieval from an api (151) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image238.png" 
-  title="Data retrieval from an API"
-  alt="Data retrieval from an API."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-You can find the javascript file (script.js) in the visualization folder, which 
-is hosted in the public folder of our application. The script.js will host all 
-the code we need. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 239 creating http-requests using javascript (151) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image239.png" 
-  title="Creating HTTP-Requests using JavaScript"
-  alt="Creating HTTP-Requests using JavaScript."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s talk about that code. Creating HTTP requests is a classic application 
-of front-end and even back-end JavaScript. 
+```
+-webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+-moz-border-radius-bottomleft: 0;
+-moz-border-radius-topleft: 0;
 
-There are many libraries out there, which try to make this a very simple task. 
-jQuery is a very popular one, but we will try to stick with the built-in JavaScript 
-functions for now. One way of doing that is the so-called XMLHttpRequest object that 
-is built into JavaScript. 
+  **border-top-right-radius**: 4px;
+  **border-bottom-right-radius**: 4px;
+  **border-bottom-left-radius**: 0;
+  **border-top-left-radius**: 0;
+```
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 240 creating http-requests using javascript, #2 (152) ~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image240.png" 
+<h3 id="ch10-2">Section 10.2: border-style</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The border-style property sets the style of an element&apos;s border. This
+> property can have from one to four values (for every side of the
+> element one value.) Examples:
+
+```
+**border-style**: dotted;
+**border-style**: dotted solid double dashed;
+```
+
+> border-style can also have the values none and hidden. They have the
+> same effect, except hidden works for <b>&lt;table&gt;</b> elements. In a
+> <b>&lt;table&gt;</b> with multiple borders, none has the lowest priority 
+> (meaning in a conflict, the border would show), and hidden has the
+> highest priority (meaning in a conflict, the border would not show).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch10-3">Section 10.3: Multiple Borders</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Using outline:
+
+```
+.div1
+{
+**border**
+:
+3
+px
+solid
+black
+;
+**outline**
+:
+6
+px
+solid
+blue
+;
+**width**
+:
+100
+px
+;
+**height**
+:
+100
+px
+;
+**margin**
+:
+20
+px
+;
+}
+```
+
+> Using box-shadow:
+
+```
+.div2 {
+
+**border**
+
+:
+
+5
+
+px
+
+solid
+
+green
+
+;
+
+**box-shadow**
+
+:
+
+0
+
+px
+
+0
+
+px
+
+0
+
+px
+
+4
+
+px
+
+#000
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**margin**
+
+:
+
+20
+
+px
+
+;
+
+}
+```
+
+> Using a pseudo element:
+
+```
+.div3 {
+  **position**: relative;
+  **border**: 5px solid #000;
+  **width**: 100px;
+  **height**: 100px;
+  **margin**: 20px;
+}
+.div3:before {
+  **content**: &quot; &quot;;
+  **position**: absolute;
+  **border**: 5px solid blue;
+  **z-index**: &minus;1;
+  **top**: 5px;
+  **left**: 5px;
+  **right**: 5px;
+  **bottom**: 5px;
+}
+```
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image027.jpg"
+  style="width:20%"
   title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
-When instantiated, this can be sent off to any given URL. In this case, our API 
-end point, which will return the relationship data. And it is also the object, 
-which supports a number of events that will be fired at various stages of this 
-process.
+<!-- [image027.jpg 1.458 x 4.021](./images/image027.jpg) -->
 
-For example, when the request arrives at the back-end, there&apos;s an event for 
-that. When it starts sending data, there&apos;s a second event for that. And 
-there&apos;s another event when it is finished with transferring the data back 
-to the front-end. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 241 a common xmlhttprequest application (153) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image241.png" 
-  title="A common XMLHttpRequest application"
-  alt="A common XMLHttpRequest application."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And this is the one we will be looking at on the next slide.
-Here, we see the code that is needed to send the HTTP request using native 
-JavaScript function. It is rather simple in general. It has three major parts.
-
-The first part is instantiating the request object and saving it into a
-variable. Then, we need to define what should happen once this data retrieval 
-is finished. Meaning, as soon as the data has been sent back to the front end, 
-this onload event is called and we now need to define what happens when this 
-onload event is called. We do that by defining an anonymous function and since 
-this function is called directly on the request object, we can actually access 
-the request object using the this keyword. And the interesting part in this case 
-is the response text. This is where the data received from our API will be hosted. 
-
-And then, we can do something with that, symbolized by the doSomethingWith function, 
-in this case. 
-
-And, lastly, we need to tell the request object what kind of HTTP request 
-it is. In this case, it&apos;s a GET request and we have to tell it where to 
-send it off to. In this case, our API - the relationship end-point. And, finally, 
-we need to send it away. That is all the code is needed to create a JavaScript 
-HTTP request. Also, take a look at the demo lesson that is part of this course.
-I will demonstrate how to exactly use this code and how to build the
-onload function presented before.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-2">4.2 Data Visualization with D3 (7:52)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 242 data visualization with d3 (4.2) (154) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image242.png" 
-  title="4.2 Data Visualization with D3"
-  alt="4.2 Data Visualization with D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Hi and welcome to the next part of this lecture! In this part, we&apos;re
-going to discuss data visualization. Now, that we have the data retrieved from an
-API, we will try and create a nice-looking graph from the character interactions
-of the Storm of Swords novel. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 243 why visualization? (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image243.png" 
-  title="Why visualization?"
-  alt="Why visualization?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s talk about visualization in general.
-Why visualization? Technically, all the information that is displayed by 
-visualization is already available in the data itself, but a good example for 
-why visualization is important is the so-called Anscombe&apos;s quartet. You
-can see it on the left side here. 
-
-What you see is a bunch of data, what 
-you see is that you can&apos;t see much at first glance. However, luckily, we 
-have some mathematical tools to analyze these four two-dimensional distributions. 
-However, in this particular case, if you look at the mean distribution and the 
-distribution means of X, they are all exactly the same. The same goes for the 
-variance of the X distribution. 
-
-And if you look at the Y part of these distributions, they are also very similar 
-to at least two percentage points and even more complex things, such as a linear 
-regression line are almost identical for all these four distributions. You would 
-assume that they follow a very similar pattern, that they are even mostly identical. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 244 why visualization, #2? (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image244.png" 
-  title="Why visualization, #2?"
-  alt="Why visualization, #2?"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-However, as soon as you bring in a visualization of these data points, you will 
-notice that they are vastly different and definitely follow different patterns. 
-This is the reason why visualization is vital for data exploration and by now it 
-has become a very common theme to use visualization on the web, and for that we 
-use JavaScript, obviously. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 245 visualization on the web (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image245.png" 
-  title="Visualization on the web"
-  alt="Visualization on the web."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-There are a number of JavaScript libraries for web-
-based data visualization available, such as the ones you can see listed on the 
-left side of the slide.
-Today, we&apos;ll be using D3 and we&apos;ll talk a little bit about why we will 
-be using D3 in a minute. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 246 three ways to visualize data in the browser (156) ~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image246.png" 
-  title="Three ways to visualize data in the browser"
-  alt="Three ways to visualize data in the browser."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-First, let&apos;s talk about ways in which we can visualize
-data in the browser in general. There are three major ways, basically. The most
-simple one are HTML elements. They are actually part of the HTML language. That
-means, they are supported by any browser. They support all the things that any HTML
-element will support. 
-That means DOM-handling and events and callbacks would make it really easy to 
-make it responsive and interactive. However, they only support very simple 
-shapes, such as circles and lines, and to create more complex shapes, it takes 
-a lot of effort to get it done. 
-
-Secondly, a whole different way of creating 
-graphics in a web page are the Canvas and WebGL elements.
-Now, Canvas and WebGL are different, but these are related, and they work in 
-similar ways. Canvas is for two-dimensional graphics, but WebGL enables three-
-dimensional graphics in a web browser. And if you have a lot of elements and a 
-lot of shapes to draw, they are very fast. However, they also require a lot of 
-effort to get it done, because every shape needs to be explicitly stated by the 
-user itself. 
-That means that they do not natively support events or callbacks, which makes 
-it very hard to create a very nice interactive experience. They also are based 
-on pixels, like a JPEG or a bitmap picture, for example, which means that they 
-are a resolution-dependent and if you would like to zoom into it, the quality 
-may degrade. 
-
-The last way to visualize data in the browser is a very common one 
-and these are called scalable vector graphics, also known SVG and they are similar 
-in the way they work to HTML elements. 
-They provide DOM-handling ability, because they are basically part of the HTML 
-file. That means that you can create events and callbacks when clicking on them, 
-which means they are very good for interactive graphs and visualizations. And 
-because SVG doesn&apos;t actually place any pixels anywhere, but rather provides 
-a description of how a shape should look like, it&apos;s completely resolution-
-independent. The problem, however, is that if you have a lot of elements and 
-shapes to draw, as in thousands, it can become very slow and we would probably 
-need to move to a WebGL or canvas-based visualization.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 247 data-driven documents (d3) (157) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image247.png" 
-  title="Data-Drive Documents (D3)"
-  alt="Data-Drive Documents (D3)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s talk about why we want to use D3. If you go to the website at d3js.org, 
-you will see that most of the examples are some form of graph or bar chart, or 
-in some other form of craft-based visualization. However, D3 is not just a 
-graphing library, like some of the other ones that we have listed on a few 
-slides ago. It is a more flexible JavaScript library. It is focused on a more 
-abstract concept of binding arbitrary data to a page element and then applying 
-data-driven transformation to them. 
-
-And those can be, for example, SVG graphics. They can also be tables or text 
-elements or any other kind of HTML elements. The main point for D3 is the 
-way that data binding works with D3 and let&apos;s talk about what that actually 
-means. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 248 data binding starcolor == 'blue' (157) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image248.png" 
-  title="Data binding; var starColor == 'blue'"
-  alt="Data binding; var starColor == 'blue'."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Data binding in web development refers to the assignment of data to specific
-elements of a UI or, in our case, a website. So, for example, imagine we have a
-star shape that is displayed on our website and that has an attribute that is
-defining its color and we also have a variable in our script that is called star
-color in this case and it holds the color we want the star to have. 
-
-We can now assign the variable to the color attribute of the star, so that they 
-are bound together, meaning that if either the star color variable in our script
-changes, for example, programmatically, that will also influence the
-color of the star on the website immediately and vice versa as well. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 249 data binding starcolor == 'red' (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image249.png" 
-  title="Data binding; var starColor == 'red'"
-  alt="Data binding; var starColor == 'red'."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-If the star
-color on the website is, for example, through user interaction influenced, this will
-be reflected in our code and data as well. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 250 data binding in d3 (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image250.png" 
-  title="Data binding in D3: D3 allows the user to bind arbitrary data to the DOM"
-  alt="Data binding in D3: D3 allows the user to bind arbitrary data to the DOM."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The code and UI are kept consistent across changes and D3 uses this as its central 
-working paradigm. It allows the user to bind arbitrary data to the document object 
-model, for example, when providing graph data to create an SVG visualization. And 
-now, I have already mentioned the document object model or DOM a couple of times. 
-
-In the next part of this course, we will talk about what it actually means and will
-also look into scalable vector graphics before we go on to actually create a
-graph using D3.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-3">4.3 DOM and SVG (8:01)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ 251 data visualization - dom and svg (4.3) (159) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image251.png" 
-  title="4.3 DOM and SVG"
-  alt="4.3 DOM and SVG."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Welcome to the next part of our lesson on data visualization!
-This time we&apos;re going to talk about DOM and SVG. DOM stands for the Document 
-Object Model and to talk more about that, we have to look at the structure of 
-an HTML file.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 252 the document object model (dom) (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image252.png" 
-  title="The Document Object Model (DOM)"
-  alt="The Document Object Model (DOM)."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Many of you will know HTML already. And if you want to have a closer look at it, 
-there are many great resources to learn online. We will only take a very topical 
-look at it. First of all, HTML stands for Hypertext Markup Language and markup
-languages are there to structure data.
-You might think of HTML as a way to tell the browser of what website looks like, 
-but in reality its main focus is there to structure data.
-
-For example, into pictures or text, and only give a very rough topical structure 
-to the file. Now, as many markup languages, it works using tags, as you can see, 
-in the pointy brackets. And this tag has an ID, for example, html.
-
-And for each tag, there&apos;s also a corresponding closing tag, which has
-the same ID preceded by a slash. If you can see here, on the top, it starts 
-off with an html and on the bottom it has a closing html as well, with all 
-the rest of the web page contained within it.
-
-For all the other tags, it works in a similar way. In the way that there&apos;s 
-an opening tag, then there is more content and then there&apos;s a closing tag.
-
-This example here is actually the compiled version of our visualization site.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 253 the dom - html, head, body (160) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image253.png" 
-  title="The DOM - html, head and body"
-  alt="The DOM - html, head and body."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We had discussed in an earlier lesson using the <b>Pug</b> template, but if
-you want to look at it in a different way, you could also see it like this.
-The html data tag itself contains everything else in the website.
-
-On the first level, the head and body tags, which themselves also
-contain more data. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 254 the dom - html, head, body, title, link, div & script (161) ~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image254.png" 
-  title="The DOM Tree Structure - html, head, body, title, link, div &amp; script"
-  alt="The DOM Tree Structure - html, head, body, title, link, div &amp; script."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-The head contains the meta data for the website;
-for example, the title of the page or it links to stylesheets.
-And, again, HTML is there to structure the data and the linked
-stylesheets then decide what it should look like in the browser.
-
-Now to the right: the body contains the actual content of the HTML page, such 
-as, in this case, script files and a div, like a division element, that is 
-there to group other elements, but it could also easily be a text or an image.
-
-And, basically, what you see here is what we call a tree structure, because if 
-you turn it on its head, the top part is also called the root and then it branches 
-out into more and more complicated structure. You could also call it the model 
-for all the objects that are contained in the document.
-
-That&apos;s why, this tree structure is what we mean when we refer to the document 
-object model or DOM for short. And, then, when we talk about DOM manipulation, 
-we talk about manipulating this object, for example, by changing, deleting or 
-adding new elements to the whole structure.
-
-For example, we could add more data to this div element, which again could be 
-pictures or text or, in our case, the SVG elements for our visualization. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 255 data binding in d3 (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image255.png" 
-  title="Data binding in D3"
-  alt="Data binding in D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-When we talk about data binding in D3, what we actually mean by that is that D3 is 
-able to create DOM elements or update, or delete them dynamically based on the 
-data it has.
-
-Again, in this example on the left right now, we have a bunch of names and a 
-bunch of relationships, which is going back to the data we got from our novel 
-from the &quot;Network of Thrones&quot; dataset.
-
-Technically, as I said before, D3 could create all sorts of DOM elements. We 
-could create a table from this data and we could create text. But in our case 
-we would like to have a nice looking graphics. We are going to use Scalable 
-Vector Graphics. We&apos;re going to talk about them next. 
+<a href="http://jsfiddle.net/MadalinaTn/bvqpcohm/2/&rbrack;&rbrack;(http://jsfiddle.net/MadalinaTn/bvqpcohm/2/">jsFiddle Demo</a>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 256 what are scalable vector graphics (svg)? (162) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image256.png" 
-  title="What are Scalable Vector Graphics (SVG)?"
-  alt="What are Scalable Vector Graphics (SVG)?."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-<h4>What are Scalable Vector Graphics?</h4>
-
-First of all, SVG is a flexible solution for drawing on a web 
-site and visualizations and it is also very good for graph drawing.
-In contrast to a classic picture, like a JPEG or a bitmap that is a bunch of 
-pixels, SVG is actually also a XML based markup language similar to HTML in a
-way. 
-
-The great advantage of that is that we can add SVG elements into our HTML 
-file and they become part of the document object model and because they then
-implement all the features of regular HTML elements, it becomes a very animation 
-friendly and it becomes very interactive, because just as a button or as a link, 
-the elements register when they get clicked on. And besides drawing shapes, you 
-can also render text in SVG. 
+<h3 id="ch10-4">Section 10.4: border (shorthands)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 257 scalable vector graphics (svg), ii (163) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image257.png" 
-  title="Scalable Vector Graphics (SVG) II"
-  alt="Scalable Vector Graphics (SVG) II."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
 
-Let&apos;s have a look at how it works. You can see a much more simplified HTML 
-version. At the body, we added a simple SVG element. 
+> In most cases you want to define several border properties
+> (border-width, border-style and border-color) for all sides of an
+> element.
+>
+> Instead of writing:
 
-The element itself again has a tag ID, in this case it&apos;s svg, and as a 
-closing tag slash svg. And it also has a number of attributes. The root SVG 
-element just has the dimensions attribute, such as the height and the width 
-and then the child nodes of this element contain the actual shapes to draw.
-In this case, it&apos;s a single path element and path element our freestyle 
-shapes, so to say, where the shape of the element is defined by the user, in 
-this case through the id attribute. 
+**border-width**
 
-As you can see, it looks quite complex and complicated, even though the resulting 
-shape on the right is a simple triangle. Now, obviously, if you want to create more 
-complex animations and graphics, we would like to automate this process. 
+:
 
-And this again is where D3 comes in.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 258 scalable vector graphics (svg), iii (165) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image258.png" 
-  title="Scalable Vector Graphics (SVG) III"
-  alt="Scalable Vector Graphics (SVG) III."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+1
 
-Here, you can see a more complex example on the top. You see the SVG element 
-with six sub elements or child elements. Three of them are circles, three of 
-them lines and you can see the result on the bottom right. It&apos;s a simple 
-graph with three nodes and three links. 
+px
 
-Now, the color and the shape of all these objects is for one determined by the 
-type of object, such as a line or a circle, but it is also determined by the 
-number of attributes that can be found in these elements. And this is where we 
-can determine most of the features of such a shape, and where D3 can greatly 
-help us.
+;
 
-In the next section of this lesson, we will take a deeper look into how data 
-binding works in D3, and how we can use it to dynamically create these kinds of
-shapes and graphics.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4">4.4 Data binding with D3 (14:37)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome back to our lecture about data visualization! 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~ 259 data visualization - data binding with d3 (166) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image259.png" 
-  title="4.4 Data Visualization - Data binding with D3"
-  alt="4.4 Data Visualization - Data binding with D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+**border-style**
 
-<p>In this part, we&apos;ll take a closer look onto data binding with D3 and we 
-will also create a graph model that will then translate into a visualization 
-on our site.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~ 260 graph layout calculation requires a graph model (166) ~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image260.png" 
-  title="Graph layout calculation requires a graph model"
-  alt="Graph layout calculation requires a graph model."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+:
 
-First off, to create a graph visualization we need two parts. We need a mathematical 
-model of a graph that we&apos;ll use to calculate aesthetically pleasing positions 
-for the notes on our graphic and then we will need to translate or mirror these 
-positions to the shapes of our actual visualization.
+solid
 
-This is where the data binding part comes in. We&apos;ll bind the node position 
-to the position of the shapes in our graph visualization.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 261 creating an empty graph model (167) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image261.png" 
-  title="Creating an empty graph model"
-  alt="Creating an empty graph model."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+;
 
-To start off, we&apos;ll start off with the graph model itself and D3
-provides a number of layouts for graphs right out of the box. We will be using a force
-directed layout today, which works in a way that there are forces that are interacting
-between the nodes of a graph. We can think of them as gravity.
+**border-color**
 
-We will then set a negative value for this gravity, which will cause these nodes 
-to repel each other and ideally they would spread out evenly across the surface 
-of our graphic, but because they are connected by the links that will cause them 
-to create a shape that will still accommodate the links, while being as nicely 
-spread out as possible, which will usually result in a very nice looking graph.
+:
 
-For this to happen, we need to set a number of options on our force
-layout. You can see them down here on the bottom. There are things such as the
-charge, which is the force, which interacts for the strength of the force
-between the nodes, the link distance, meaning the default length of connection
-between nodes, and it will also have to give the whole simulation the size. 
+#000
 
-We need to set the dimension of the area in which the nodes can move and we
-obviously want this to be the same size as our graphic on the screen later on. 
-We&apos;ll use two variables for width and height, which we&apos;ll pass to the 
-size function and we&apos;ll also reuse them later for the size of our graphic.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 262 adding data to the model (168) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image262.png" 
-  title="Adding data to the model"
-  alt="Adding data to the model."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-One more thing we actually need for our graph model is obviously the data 
-itself and the graph layout provided by D3 has two more functions we can call 
-to actually pass that data. They are called nodes and links, and we&apos;ll 
-pass a set of data that you&apos;ve already seen before the one about the 
-characters in Game of Thrones and their interactions. In this case, the 
-characters are nodes. In terms of data, it&apos;s just an array of names, 
-basically, and the links, which are the interactions between those.
+;
 
-Finally, to actually start the simulation, we have to call the start
-function. The start function will cause D3 to initialize a number of
-things internally and we will kind of come back to that in a later
-slide.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 263 initializing the visualization (169) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image263.png" 
-  title="Initializing the visualization"
-  alt="Initializing the visualization."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+> You can simply write:
 
-Now, that we have the data model for our graph layout initialized, we&apos;ll 
-move on to actually initialize the visualization and then we&apos;ll try to 
-bind the model and the position of the nodes to the graphics and the position 
-of the shapes on that graphic.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 264 initializing the visualization, #2 (169) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image264.png" 
-  title="Initializing the visualization, #2. D3 supports CSS3 selectors"
-  alt="Initializing the visualization, #2. D3 supports CSS3 selectors."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+**border**
 
-What we need to do to initialize the visualization is we now 
-have to use D3 to manipulate our DOM. In this case, we would like to set or 
-select the root div that we have created in our template, if you remember, and 
-then we would like to use D3 to append a child element to this root div, in this 
-case a SVG element.
+:
 
-And now we need to talk about something else as well, because the way
-that D3 actually selects elements from the DOM is by using CSS selectors and
-we&apos;ll talk about CSS a little bit later, but generally if you want to learn more
-about CSS, there are great resources online for that as well. We&apos;ll
-only go to the basics for now.
+1
 
-Basically, in CSS, you have different ways of selecting different types of 
-DOM elements. There are three, actually. We&apos;ll only use two for now. You 
-can select an element by its ID and to do that, you use a pound or hash tag in 
-front of the ID, so if you look at the top row here, if I want to select the 
-HTML element with the ID root, I can use the JavaScript function on the right, 
-which is provided by D3. I can say D3.select(&quot;#root&quot;) and that means 
-that the SVG, one on the left, will actually hold the ID equals root element 
-on the left.
+px
 
-Similarly, I can also use the full-stop. In this case, this will select any 
-element that has the class root attached to it. So, in this case, instead of 
-selected by ID, I&apos;m selecting by CSS class and we talk a little bit more 
-about that later as well. But for now, if you see #root that just means I want 
-to select the DOM element, which has the ID root.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 265 initializing the visualization, #3 (170) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image265.png" 
-  title="Initializing the visualization, #3. D3 supports CSS3 selectors"
-  alt="Initializing the visualization, #3. D3 supports CSS3 selectors."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+solid
 
-This is what we&apos;re actually going to do now. We&apos;ll take D3, we&apos;ll 
-select the root ID from our HTML file and then we&apos;ll tell it - now that you 
-have it, please append a child element of the type SVG, which we&apos;ll do using 
-the append function and then we&apos;ll also set a number of attributes on this 
-SVG. In this case, we&apos;ll set the dimensions.
+#000
 
-And, as I mentioned before, these dimensions need to be the same as the
-ones of our actual mathematical simulation of the node positions. So, we will
-reuse the width and height variables that we set before. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 266 initializing the visualization, #4 (171) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image266.png" 
-  title="Initializing the visualization, #4. D3 supports CSS3 selectors"
-  alt="Initializing the visualization, #4. D3 supports CSS3 selectors."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+;
 
-And if you execute this, we get what you wanted. We created a new DOM element, 
-in this case, this SVG element as a child element of our root div with the 
-correct dimensions.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 267 initializing the visualization, #5 (171) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image267.png" 
-  title="Initializing the visualization, #5. D3 works with selectors and joins"
-  alt="Initializing the visualization, #5. D3 works with selectors and joins."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+> These shorthands are also available for every side of an element:
+> border-top, border-left, border-right and border-bottom. So you can
+> do:
 
-The next thing we need to do is we need to populate this SVG elements
-with shapes corresponding to our graph model.
+**border-top**
 
-Let&apos;s take a look at this slide. On the left you can see some demo data. 
-Think of the top ones as characters from the books. In this case, they&apos;re 
-just called ABC. And the bottom on the left, will have a number of connections 
-between those and now, remember, when we call the start function on our layout, 
-I told you that a number of initializations happen, this is what you see on the 
-bottom, on the links data points, that the links actually connect numbers and 
-not necessarily the names like the ABC on top. This is because as soon as you 
-initialize the layout in D3, D3 will replace all the names with the indices. 
-That means that all the names will be replaced by the position of this name in 
-the name array and, obviously, that is a way to handle cases where, for example, 
-in our case, two characters might have the same name and to distinguish them, 
-instead of calling them A and B, we&apos;ll call them name 0 and name 1.
+:
 
-If we now try to add this data to our visualization, we would like
-to see something like we see on the right. So, we would like to create a
-child element for SVG. One circle element for each node and one line
-element for each link, and we would also like to attach a class to them,
-so we can label them as links and nodes, because you could possibly imagine that there
-are other circle or line shapes on our graphic that do not necessarily
-represent a node or link of the graph.
+2
 
-But what we&apos;re actually trying to do here in
-terms of data binding is, we would like to represent the data we have on
-the left in the same fashion in our UI or in our graphic, and we&apos;d like to
-keep those consistent as well. 
+px
 
-Data binding in this case refers to the consistency that if
-we remove a node, for example, and the data on the left, this should
-also be represented in our graphic on the right and if, for example, the user
-could remove nodes on the graph in our graphic, we would then like to relay
-this information back to our data and keep it consistent.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 268 selections in d3 (173) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image268.png" 
-  title="Selections in D3"
-  alt="Selections in D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now let&apos;s take a look how we can use D3 to add new elements to our graphic.
-Potentially you could think that we could use the same technique that we used 
-to create the SVG element before to also create the shapes on the SVG itself. 
-We could possibly select the SVG and append a line element by hand. That would 
-of course mean that we have to repeat this process for every line and for every 
-circle element that we would like to add. But instead, D3 provides a smarter 
-way to do it. 
+double
 
-D3 is a lot about selections and sets of elements and how to join them together.
-So, when we try to add elements to the SVG using D3, we will actually
-try to select all the child elements of SVG that have the class link. And, as you can see on the
-right, there are none at the moment. So, this selection will actually return an empty
-set on an empty array of elements.
+#aaaaaa
 
-We can now pass our data to this selection using the data function of D3. This 
-basically passes all three links or three data points to the selection and 
-compares them, and we now have two sets of elements. We have the empty set 
-of elements in the SVG and we have a set of three data points in our data.
+;
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 269 selections in d3, #2 (174) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image269.png" 
-  title="Selections in D3, #2"
-  alt="Selections in D3, #2."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, we would like to combine those together, so that for each data point we also have an element on
-our graphic. So, again, the links on the left side - three data points we
-would like to now represent those on the right on our graphic as well.
-
-If you think in terms of sets, this is only one of three possible
-outcomes. You could, for example, also imagine that we have elements on our data, I&apos;m sorry, on
-our graphic on the right, but not in our data or you could imagine that we
-already have the same elements on both, the right side and the left.
+<h3 id="ch10-5">Section 10.5: border-collapse</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 270 selections in d3, #3 (174) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image270.png" 
-  title="Selections in D3, #3"
-  alt="Selections in D3, #3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-These are three outcomes that you could have when comparing two sets: on the 
-left in yellow, you have the set of data points and on the right you have the 
-set of elements on our page. And D3 provides a function for each of the three 
-cases that can happen if we combine or compare these two sets.
 
-If we want to deal with all the data points that are not yet on the screen, we 
-can use the enter function. If you want to deal with all the elements on the 
-webpage that do not have any representation in our data, for example, because 
-we move that data programmatically, we use the access function and if you want 
-to just deal with all the data points that are already in data and our elements, 
-but, for example, have been updated in the data or the website, we use the update
-function.
+  **display**                         :     table
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 271 selections in d3, #4 (175) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image271.png" 
-  title="Selections in D3, #4"
-  alt="Selections in D3, #4."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+> The border-collapse property applies only to tables (and elements
+> displayed as or inlinetable) and sets whether the table borders are
+> collapsed into a single border or detached as in standard HTML.
 
-To have it again in text: we use the enter function of D3 to deal with
-every data point that does not have a corresponding DOM element yet, and we can
-use this to add new elements to our SVG. 
+table
 
-On the other hand, the exit function does the exact opposite, if you want. If we 
-call the exit function, it will return us every element that is on the site, but 
-does not have a corresponding data point. This is mainly used to remove elements 
-from the webpage that are not in the data anymore.
+{
 
-And then, if we have a number of elements that are in the data and on the site 
-as well, we use the update function, for example, to update any attributes that 
-might have changed.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 272 selections in d3, #5 (176) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image272.png" 
-  title="Selections in D3, #5"
-  alt="Selections in D3, #5."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If we do this, you can see, we get the desired outcome on the right. On the left, 
-let&apos;s go through it again, we select all the links or all the elements that 
-have a link class in our SVG, which will return an empty set. We&apos;ll also use 
-the data function to provide the data points on the bottom of the screen of the 
-slide. These are three sets. And then, we use the enter function to deal with all 
-the data points that are not yet on our page. In this case, the three links below, 
-and then we&apos;ll say, for each of the data points we have, append the new line 
-element to our SVG and then also set the attribute class to link, so we can actually 
-label these lines as links.
+**border-collapse**
 
-Now, we would also like to do the same thing with the nodes. In this case, for 
-circular elements, but we will skip this for now. You can take a look at our 
-accompanying video where we demonstrate how to actually do this in code.
+:
 
-Now, that we actually created a graph model and we
-created a graph visualization using SVG, we&apos;ll take a bit of a closer
-look into how to control the look of this SVG using CSS and style elements in the
-next lecture.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-5">4.5 Controlling Element Styles (8:13)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 273 data visualization - controlling element styles (177) ~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image273.png" 
-  title="Data Visualization - Controlling element styles"
-  alt="Data Visualization - Controlling element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+separate
 
-In this part of our data visualization lecture, we&apos;ve been talking about 
-controlling element styles using D3. Chris mentioned CSS a couple of times before 
-in this lecture. So, now we&apos;re going to take a closer look into what it is 
-and how we can use D3 to actually use it. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 274 cascading style sheets (css) adding styles to elements (177) ~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image274.png" 
-  title="Cascading Style Sheets (CSS). Adding styles to elements"
-  alt="Cascading Style Sheets (CSS). Adding styles to elements."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-CSS stands for cascading style sheets. And while HTML is responsible for structuring 
-the data on a website, CSS is actually responsible for how it looks. And if you 
-take a look into the code provided to you during the Node.js example in the 
-visualization folder, you will find a style CSS file. You can see the content of 
-that on the right. In the previous example, we used CSS classes as a label to 
-denote a line element as a link. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 275 d3 provides access to element styles (178) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image275.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-You can see it here. So, while we attached this attribute class
-and set it to link to our line element in the SVG, besides labeling it as a link,
-we also attached all the styles to find in the CSS class linked to it. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 274 cascading style sheets (css) adding styles to elements (178) ~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image274.png" 
-  title="Cascading Style Sheets (CSS). Adding styles to elements"
-  alt="Cascading Style Sheets (CSS). Adding styles to elements."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-In this case, as you can see down here, we set a stroke of the color gray because this
-hashtag 999 is a hex code for the curve for the gray color. And we also set a stroke
-opacity, meaning this stroke, or the color of the line, should be slightly
-transparent. And on top, you can also see with a similar CSS class for nodes. In this
-case, we also set a stroke with a white color with the width of 1.5 points. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 276 d3 provides access to element styles (179) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image276.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
+;
 
-If we go back to our code, you can see on the right that the class link has been 
-attached to the links between the nodes and the color of these links is actually 
-gray and it&apos;s slightly opaque. Also, as you can see it here on the nodes, 
-the links don&apos;t actually touch the nodes directly. This is due to the fact 
-that the node has a 1.5 width stroke of the white color. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 277 d3 provides access to element styles (179) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image277.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If we would have a black background, you would actually see a white line around 
-the nodes, which we have set in the CSS file up here. 
+*/&ast; default &ast;/*
+
+**border-spacing**
+
+:
+
+2
+
+px
+
+;
+
+*/&ast; Only works if border-collapse is separate &ast;/*
+
+}
+
+> Also see Tables - border-collapse documentation entry
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 278 d3 provides access to element styles (180) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image278.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now let&apos;s imagine, we would like to change around the width of our
-links. We could go back into CSS and actually change the stroke width in the CSS
-file. But, it would be much nicer to be able to have access to these sort of
-styles directly in our code. And luckily, D3 provides a number of ways to do
-it. One way is the style function, in which we can set CSS styles directly in
-the code. It takes two parameters: it takes the style to be influenced as the
-first parameter and then the value to set it to as a second. So, in this case,
-we&apos;re setting the stroke width to two points and as you can see in comparison
-to the slide before, the width of the connections between the nodes has
-doubled. 
-
-How about we would like to change the width of these connections depending on 
-something we have in our data, for example? Or set them each to a different 
-width? Usually, you would have to create a new CSS class for each width you&apos;d 
-like to have, which sounds like a lot of effort and requires a lot of redundancy.
+<h3 id="ch10-6">Section 10.6: border-image</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 279 d3 provides access to element styles (181) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image279.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Instead let&apos;s take another look into our data. We have two links data that 
-you&apos;ve seen before. What you haven&apos;t seen before is that there are some 
-ellipses here and if we expand that in a single data
-point, you can see that behind those ellipses we actually have hidden the
-weight attribute of a connection. 
 
-In terms of a graph, many graphs are weighted, meaning the links between the 
-nodes have a certain weight associated with them.  In our Game of Thrones example, 
-the weight refers to the intensity of interactions between two characters, for 
-example. And it would be great if you could now set the connections between two 
-nodes to do width depending on the weight of this connection, meaning the more 
-intensive the interaction between two characters is, the thicker the line between 
-those two nodes, representing those characters should be. 
+> With the border-image property you have the possibility to set an
+> image to be used instead of normal border styles.
+>
+> A border-image essentially consist of a
+>
+> border-image-source: The path to the image to be used
+> border-image-slice: Specifies the offset that is used to divide the
+> image into **nine regions** (four **corners**, four **edges** and a
+> **middle**)
+>
+> border-image-repeat: Specifies how the images for the sides and the
+> middle of the border image are scaled
+>
+> Consider the following example wheras border.png is a image of 90x90
+> pixels:
 
-Instead of directly setting the width of all the links
-to two, we would like to access the data directly, extract the weight
-value and set it to this one. Luckily, in D3, this link variable 
-up here contains every link element that is in our SVG graphic. 
+  **border-image**     :   url    (   &quot;border.png&quot;       )   30 stretch
+
+> ;
+>
+> The image will be split into nine regions with 30x30 pixels. The edges
+> will be used as the corners of the border while the side will be used
+> in between. If the element is higher / wider than 30px this part of
+> the image will be **stretched**. The middle part of the image defaults
+> to be transparent.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 280 d3 provides access to element styles (182) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image280.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-That means that as soon as we call the enter function here, anything that comes 
-below this will actually be applied to every single link element in our data. 
-This means, we can also access whatever data is stored in this link element.
-In this case, the weight down here. We can now set the stroke width depending on
-the weight stored in the data point by passing an anonymous function.
-
-D3 will pass the current dataPoint to this function as a parameter and
-all we now need to do is we need to extract the weight attribute from the
-parameter and set the stroke width to this parameter. As you can see, on the right, we
-now have a different stroke width for all the links depending on how intensive
-the interaction between the nodes or characters actually is. 
+<h3 id="ch10-7">Section 10.7: Creating a multi-colored border using borderimage</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 281 d3 provides access to element styles (182) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image281.png" 
-  title="D3 provides access to element styles"
-  alt="D3 provides access to element styles."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-One more thing you would usually like to do in a case like this, is you would 
-like to normalize the data to a certain degree, because the weight can differ 
-drastically, but we would like to keep the thickness of the line within reasonable 
-limits.
 
-You would apply, for example, the square root to each of the data points. You 
-would say: always take the square root of the weight. Or you could also use
-the logarithm for that. So, it is then more naturally-looking width for the
-connections.
+<h4>CSS</h4>
 
-Now that we have seen how we can use CSS and D3 to actually
-influence the style and appearance of our visualizations and graphics, in the next
-part we&apos;ll talk about how we can make them interactive using event
-handling.
+```
+.bordered
+{
+**border-image**
+:
+linear-gradient
+(
+to
+right
+,
+red
+20
+&percnt;
+,
+green
+20
+&percnt;
+,
+green
+40
+&percnt;
+,
+blue
+40
+&percnt;
+,
+blue
+60
+&percnt;
+,
+maroon
+60
+&percnt;
+,
+maroon
+80
+&percnt;
+,
+chocolate
+80
+&percnt;
+)
+;
+*/&ast; gradient with required colors &ast;/*
+**border-image-slice**
+:
+1
+;
+}
+```
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&apos;bordered&apos;
+**&gt;**
+Border on all sides
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> The above example would produce a border that comprises of 5 different
+> colors. The colors are defined through a linear-gradient (you can find
+> more information about gradients in the docs). You can find more
+> information about border-image-slice property in the border-image
+> example in same page.
+
+[image028.jpg 3.5"x1.437"](./images/image028.jpg)
+
+> (*Note: Additional properties were added to the element for
+> presentational purpose.*)
+>
+> You&apos;d have noticed that the left border has only a single color (the
+> start color of the gradient) while the right border also has only a
+> single color (the gradient&apos;s end color). This is because of the way
+> that border image property works. It is as though the gradient is
+> applied to the entire box and then the colors are masked from the
+> padding and content areas, thus making it look as though only the
+> border has the gradient.
+
+  to right
+
+  to bottom
+
+> Which border(s) have a single color is dependant on the gradient
+> definition. If the gradient is a gradient, the left border would be
+> the start color of the gradient and right border would be the end
+> color. If it was a to bottom gradient the top border would be the
+> gradient&apos;s start color and bottom border would be end color. Below is
+> the output of a 5 colored gradient.
+
+[image029.jpg 3.489 x 1.40](./images/image029.jpg)
+
+> If the border is required only on specific sides of the element then
+> the border-width property can be used just like with any other normal
+> border. For example, adding the below code would produce a border only
+> on the top of the element.
+
+**border-width**
+
+:
+
+5
+
+px
+
+0
+
+px
+
+0
+
+px
+
+0
+
+px
+
+;
+
+> Note that, any element that has border-image property **won&apos;t respect
+> the** border-radius (that is the border won&apos;t curve). This is based
+> on the below statement in the spec:
+>
+> A box&apos;s backgrounds, but not its border-image, are clipped to the
+> appropriate curve (as determined by 'background-clip').
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-6">4.6 Event handling in D3 (7:18)</h3>
+<h3 id="ch10-8">Section 10.8: border-&lbrack;left&vertbar;right&vertbar;top&vertbar;bottom&rbrack;</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 282 event handling in d3 (183) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image282.png" 
+
+  border-           &lbrack;   left      &vertbar;   right        &vertbar;   top     &vertbar;   bottom
+
+
+> The &rbrack; property is used to add a border to a specific side of an
+> element.
+>
+> For example if you wanted to add a border to the left side of an
+> element, you could do:
+
+&num;
+
+element
+
+{
+
+**border-left**
+
+:
+
+1
+
+px
+
+solid
+
+black
+
+;
+
+}
+
+<h2 id="ch11">Chapter 11: Outlines</h2>
+
+**Parameter Details**
+
+  dotted       dotted outline
+
+  dashed       dashed outline
+
+  solid        solid outline
+
+  double       double outline
+
+  groove       3D grooved outline, depends on the outline-color value
+
+  ridge        3D ridged outline, depends on the outline-color value
+
+  inset        3D inset outline, depends on the outline-color value
+
+  outset       3D outset outline, depends on the outline-color value
+
+  none         no outline
+
+  hidden       hidden outline
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch11-1">Section 11.1: Overview</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Outline is a line that goes around the element, outside of the border.
+> In contrast to border, outlines do not take any space in the box
+> model. So adding an outline to an element does not affect the position
+> of the element or other elements.
+>
+> In addition, outlines can be non-rectangular in some browsers. This
+> can happen if outline is applied on a span element that has text with
+> different font-size properties inside it. Unlike borders, outlines
+> *cannot* have rounded corners.
+>
+> The essential parts of outline are outline-color, outline-style and
+> outline-width.
+>
+> The definition of an outline is equivalent to the definition of a
+> border:
+
+An outline is a line around an element. It is displayed around the
+margin of the element. However, it is
+
+different from the border property.
+
+**outline**
+
+:
+
+1
+
+px
+
+solid
+
+black
+
+;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch11-2">Section 11.2: outline-style</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The outline-style property is used to set the style of the outline of
+> an element.
+
+p
+
+{
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+black
+
+;
+
+**outline-color**
+
+:
+
+blue
+
+;
+
+**line-height**
+
+:
+
+30
+
+px
+
+;
+
+}
+
+.p1
+
+{
+
+**outline-style**
+
+:
+
+dotted
+
+;
+
+}
+
+.p2
+
+{
+
+**outline-style**
+
+:
+
+dashed
+
+;
+
+}
+
+.p3
+
+{
+
+**outline-style**
+
+:
+
+solid
+
+;
+
+}
+
+.p4
+
+{
+
+**outline-style**
+
+:
+
+double
+
+;
+
+}
+
+.p5
+
+{
+
+**outline-style**
+
+:
+
+groove
+
+;
+
+}
+
+.p6
+
+{
+
+**outline-style**
+
+:
+
+ridge
+
+;
+
+}
+
+.p7
+
+{
+
+**outline-style**
+
+:
+
+inset
+
+;
+
+}
+
+.p8
+
+{
+
+**outline-style**
+
+:
+
+outset
+
+;
+
+}
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p1&quot;
+
+**&gt;**
+
+A dotted outline
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p2&quot;
+
+**&gt;**
+
+A dashed outline
+
+**/p**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p3&quot;
+
+**&gt;**
+
+A solid outline
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p4&quot;
+
+**&gt;**
+
+A double outline
+
+**/p**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p5&quot;
+
+**&gt;**
+
+A groove outline
+
+**/p**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p6&quot;
+
+**&gt;**
+
+A ridge outline
+
+**/p**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p7&quot;
+
+**&gt;**
+
+An inset outline
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+class
+
+=
+
+&quot;p8&quot;
+
+**&gt;**
+
+An outset outline
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+<h2 id="ch12">Chapter 12: Overflow</h2>
+
+**Overflow Value Details**
+
+  visible     Shows all overflowing content outside the element
+  scroll      Hides the overflowing content and adds a scroll bar
+
+  hidden      Hides the overflowing content, both scroll bars disappear
+              and the page becomes fixed
+
+  auto        Same as scroll if content overflows, but doesn&apos;t add
+              scroll bar if content fits
+
+  inherit     Inherit&apos;s the parent element&apos;s value for this property
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12-1">Section 12.1: overflow-wrap</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> overflow-wrap tells a browser that it can break a line of text inside
+> a targeted element onto multiple lines in an otherwise unbreakable
+> place. Helpful in preventing an long string of text causing layout
+> problems due to overflowing it&apos;s container.
+>
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**outline**
+
+:
+
+1
+
+px
+
+dashed
+
+#bbb
+
+;
+
+}
+
+#div1
+
+{
+
+**overflow-wrap**
+
+:
+
+normal
+
+;
+
+}
+
+#div2
+
+{
+
+**overflow-wrap**
+
+:
+
+break-word
+
+;
+
+}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div1&quot;
+
+**&gt;**
+
+**&lt;**
+
+**strong**
+
+**&gt;**
+
+#div1
+
+**&lt;**
+
+**/strong**
+
+**&gt;**
+
+:
+
+Small words are displayed normally, but a long word like
+
+**&lt;**
+
+**span**
+
+style
+
+=
+
+&quot;red;&quot;
+
+**&gt;**
+
+supercalifragilisticexpialidocious
+
+**&lt;**
+
+**/span**
+
+**&gt;**
+
+is too long so it will overflow past the
+
+edge of the line-break
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**strong**
+
+**&gt;**
+
+#div2
+
+**&lt;**
+
+**/strong**
+
+**&gt;**
+
+:
+
+Small words are displayed normally, but a long word like
+
+**&lt;**
+
+**span**
+
+style
+
+=
+
+&quot;red;&quot;
+
+**&gt;**
+
+supercalifragilisticexpialidocious
+
+**&lt;**
+
+**/span**
+
+**&gt;**
+
+will be split at the line break and continue
+
+on the next line.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+[image032.jpg 7.48 x 4.27](./images/image032.jpg)
+
+**overflow-wrap** -- **Value Details**
+
+> normal Lets a word overflow if it is longer than the line break-word
+> Will split a word into multiple lines, if necessary inherit Inherits
+> the parent element&apos;s value for this property
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12-2">Section 12.2: overflow-x and overflow-y</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> These two properties work in a similar fashion as the overflow
+> property and accept the same values. The overflow-x parameter works
+> only on the x or left-to-right axis. The overflow-y works on the y or
+> top-to-bottom axis.
+>
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div-x&quot;
+
+**&gt;**
+
+If this div is too small to display its contents,
+
+the content to the left and right will be clipped.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div-y&quot;
+
+**&gt;**
+
+If this div is too small to display its contents,
+
+the content to the top and bottom will be clipped.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+#div-x
+
+{
+
+**overflow-x**
+
+:
+
+hidden
+
+;
+
+}
+
+#div-y
+
+{
+
+**overflow-y**
+
+:
+
+hidden
+
+;
+
+}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12-3">Section 12.3: overflow: scroll</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+This div is too small to display its contents to display the effects of
+the overflow property.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**overflow**
+
+:
+
+scroll
+
+;
+
+}
+
+> **Result**
+
+[image033.jpg 1.16 x 1.18](./images/image033.jpg)
+
+> The content above is clipped in a 100px by 100px box, with scrolling
+> available to view overflowing content.
+>
+> Most desktop browsers will display both horizontal and vertical
+> scrollbars, whether or not any content is clipped. This can avoid
+> problems with scrollbars appearing and disappearing in a dynamic
+> environment. Printers may print overflowing content.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12-4">Section 12.4: overflow: visible</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+Even if this div is too small to display its contents, the content is
+not clipped.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+50
+
+px
+
+;
+
+**height**
+
+:
+
+50
+
+px
+
+;
+
+**overflow**
+
+:
+
+visible
+
+;
+
+}
+
+> **Result**
+
+[image034.jpg .67 x 2.427](./images/image034.jpg)
+
+> Content is not clipped and will be rendered outside the content box if
+> it exceeds its container size.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12-5">Section 12.5: Block Formatting Context Created with Overflow</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Using the overflow property with a value different to visible will
+> create a new **block formatting context**. This is useful for aligning
+> a block element next to a floated element.
+>
+<h4>CSS</h4>
+
+img
+
+{
+
+**float**
+
+:
+
+left
+
+;
+
+**margin-right**
+
+:
+
+10
+
+px
+
+;
+
+}
+
+div
+
+{
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+*/&ast; creates block formatting context &ast;/*
+
+}
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**img**
+
+src
+
+=
+
+&quot;http://placehold.it/100x100&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+Lorem ipsum dolor sit amet, cum no paulo mollis pertinacia.
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+Ad case omnis nam, mutat deseruisse persequeris eos ad, in tollit
+debitis sea.
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **Result**
+
+[imge035.jpg 6.375 x 3.76](./images/image035.jpg)
+
+> This example shows how paragraphs within a div with the overflow
+> property set will interact with a floated image.
+
+<h2 id="ch12">Chapter 13: Media Queries</h2>
+
+| **          | > **Details**                                          |
+|-------------|--------------------------------------------------------|
+| Parameter** |                                                        |
+| mediatype   | (Optional) This is the type of media. Could be         |
+|             | anything in the range of all to screen.                |
+|-------------|--------------------------------------------------------|
+| not         | (Optional) Doesn&apos;t apply the CSS for this particular  |
+|             | media type and applies for everything else.            |
+|-------------|--------------------------------------------------------|
+| media       | Logic to identify use case for CSS. Options outlined   |
+| feature     | below.                                                 |
+|-------------|--------------------------------------------------------|
+| **Media     | **Details**                                            |
+| Feature**   |                                                        |
+|-------------|--------------------------------------------------------|
+| a           | Describes the aspect ratio of the targeted display     |
+| spect-ratio | area of the output device.                             |
+|-------------|--------------------------------------------------------|
+| color       | Indicates the number of bits per color component of    |
+|             | the output device. If the device is not a color        |
+|             | device, this value is zero.                            |
+|-------------|--------------------------------------------------------|
+| color-index | Indicates the number of entries in the color look-up   |
+|             | table for the output device.                           |
+|-------------|--------------------------------------------------------|
+| grid        | Determines whether the output device is a grid device  |
+|             | or a bitmap device.                                    |
+|-------------|--------------------------------------------------------|
+| height      | The height media feature describes the height of the   |
+|             | output device&apos;s rendering surface.                    |
+|-------------|--------------------------------------------------------|
+| max-width   | CSS will not apply on a screen width wider than        |
+|             | specified.                                             |
+|-------------|--------------------------------------------------------|
+| min-width   | CSS will not apply on a screen width narrower than     |
+|             | specified.                                             |
+|-------------|--------------------------------------------------------|
+| max-height  | CSS will not apply on a screen height taller than      |
+|             | specified.                                             |
+|-------------|--------------------------------------------------------|
+| min-height  | CSS will not apply on a screen height shorter than     |
+|             | specified.                                             |
+|-------------|--------------------------------------------------------|
+| monochrome  | Indicates the number of bits per pixel on a monochrome |
+|             | (greyscale) device.                                    |
+|-------------|--------------------------------------------------------|
+| orientation | CSS will only display if device is using specified     |
+|             | orientation. See remarks for more details.             |
+|-------------|--------------------------------------------------------|
+| resolution  | Indicates the resolution (pixel density) of the output |
+|             | device.                                                |
+|-------------|--------------------------------------------------------|
+| scan        | Describes the scanning process of television output    |
+|             | devices.                                               |
+|-------------|--------------------------------------------------------|
+| width       | The width media feature describes the width of the     |
+|             | rendering surface of the output device (such as the    |
+|             | width of the document window, or the width of the page |
+|             | box on a printer).                                     |
+|-------------|--------------------------------------------------------|
+
+> **Deprecated Features Details**
+>
+> **Deprecated** CSS will only display on devices whose height/width
+> ratio matches the specified
+>
+> device-aspect-ratio ratio. This is adeprecatedfeature and is not
+> guaranteed to work.
+>
+> **Deprecated** Same as max-width but measures the physical screen
+> width, rather than the
+>
+> max-device-width display width of the browser.
+>
+> **Deprecated** Same as min-width but measures the physical screen
+> width, rather than the
+>
+> min-device-width display width of the browser.
+>
+> **Deprecated** Same as max-height but measures the physical screen
+> width, rather than the
+>
+> max-device-height display width of the browser.
+>
+> **Deprecated** Same as min-height but measures the physical screen
+> width, rather than the
+>
+> min-device-height
+>
+> display width of the browser.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch13-1">Section 13.1: Terminology and Structure</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **Media queries** allow one to apply CSS rules based on the type of
+> device / media (e.g. screen, print or handheld) called **media type**,
+> additional aspects of the device are described with **media features**
+> such as the availability of color or viewport dimensions.
+>
+> **General Structure of a Media Query**
+
+**&commat;media**
+
+&lbrack;
+
+&period;..
+
+&rbrack;
+
+{
+
+*/&ast; One or more CSS rules to apply when the query is satisfied &ast;/*
+
+}
+
+> **A Media Query containing a Media Type**
+
+**&commat;media**
+
+print
+
+{
+
+*/&ast; One or more CSS rules to apply when the query is satisfied &ast;/*
+
+}
+
+**A Media Query containing a Media Type and a Media Feature**
+
+**&commat;media**
+
+screen and
+
+(
+
+**max-width**
+
+:
+
+600
+
+px
+
+)
+
+{
+
+*/&ast; One or more CSS rules to apply when the query is satisfied &ast;/*
+
+}
+
+**A Media Query containing a Media Feature (and an implicit Media Type
+of &quot;all&quot;)**
+
+**&commat;media**
+
+(
+
+orientation
+
+:
+
+portrait
+
+)
+
+{
+
+*/&ast; One or more CSS rules to apply when the query is satisfied &ast;/*
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch13-2">Section 13.2: Basic Example</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+**&commat;media**
+
+screen and
+
+(
+
+**min-width**
+
+:
+
+720
+
+px
+
+)
+
+{
+
+body
+
+{
+
+**background-color**
+
+:
+
+skyblue
+
+;
+
+}
+
+}
+
+> The above media query specifies two conditions:
+
+1.  The page must be viewed on a normal screen (not a printed page,
+    projector, etc).
+
+2.  The width of the user&apos;s view port must be at least 720 pixels.
+
+> If these conditions are met, the styles inside the media query will be
+> active, and the background color of the page will be sky blue.
+>
+> Media queries are applied dynamically. If on page load the conditions
+> specified in the media query are met, the CSS will be applied, but
+> will be immediately disabled should the conditions cease to be met.
+> Conversely, if the conditions are initially not met, the CSS will not
+> be applied until the specified conditions are met.
+>
+> In our example, if the user&apos;s view port width is initially greater
+> than 720 pixels, but the user shrinks the browser&apos;s width, the
+> background color will cease to be sky blue as soon as the user has
+> resized the view port to less than 720 pixels in width.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch13-3">Section 13.3: mediatype</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  **&commat;media** mediatype
+
+> Media queries have an optional mediatype parameter. This parameter is
+> placed directly after the &commat;media declaration (), for example:
+
+**&commat;media**
+
+print
+
+{
+
+html
+
+{
+
+**background-color**
+
+:
+
+white
+
+;
+
+}
+
+}
+
+> The above CSS code will give the DOM HTML element a white background
+> color when being printed.
+>
+> The mediatype parameter has an optional not or only prefix that will
+> apply the styles to everything except the specified mediatype *or*
+> only the specified media type, respectively. For example, the
+> following code example will apply the style to every media type except
+> print.
+
+**&commat;media**
+
+not
+
+print
+
+{
+
+html
+
+{
+
+**background-color**
+
+:
+
+green
+
+;
+
+}
+
+}
+
+> And the same way, for just showing it only on the screen, this can be
+> used:
+
+**&commat;media**
+
+only screen
+
+{
+
+.fadeInEffects
+
+{
+
+**display**
+
+:
+
+block
+
+;
+
+}
+
+}
+
+> The list of mediatype can be understood better with the following
+> table:
+
+**Media Type Description**
+
+> all Apply to all devices screen Default computers
+>
+> print Printers in general. Used to style print-versions of websites
+> handheld PDA&apos;s, cellphones and hand-held devices with a small screen
+> projection For projected presentation, for example projectors
+
+aural Speech Systems
+
+> braille Braille tactile devices embossed Paged braille printers tv
+> Television-type devices tty Devices with a fixed-pitch character grid.
+> Terminals, portables.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch13-4">Section 13.4: Media Queries for Retina and Non Retina Screens</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Although this works only for WebKit based browsers, this is helpful:
+
+/* Non-Retina Screens */
+
+**&commat;media**
+
+screen
+
+and
+
+(
+
+**min-width**
+
+:
+
+1200
+
+px
+
+)
+
+and
+
+(
+
+**max-width**
+
+:
+
+1600
+
+px
+
+)
+
+and
+
+(
+
+&minus;
+
+webkit-min-device-pixel-ratio
+
+:
+
+1
+
+)
+
+{
+
+}
+
+*/&ast; &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;- Retina Screens &minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;&minus;- &ast;/*
+
+**&commat;media**
+
+screen
+
+and
+
+(
+
+**min-width**
+
+:
+
+1200
+
+px
+
+)
+
+and
+
+(
+
+**max-width**
+
+:
+
+1600
+
+px
+
+)
+
+and
+
+(
+
+&minus;
+
+webkit-min-device-pixel-ratio
+
+:
+
+2
+
+)
+
+and
+
+(
+
+min-resolution
+
+:
+
+192
+
+dpi
+
+)
+
+{
+
+}
+
+> **Background Information**
+>
+> There are two types of pixels in the display. One is the logical
+> pixels and the other is the physical pixels. Mostly, the physical
+> pixels always stay the same, because it is the same for all the
+> display devices. The logical pixels change based on the resolution of
+> the devices to display higher quality pixels. The device pixel ratio
+> is the ratio between physical pixels and logical pixels. For instance,
+> the MacBook Pro Retina, iPhone 4 and above report a device pixel ratio
+> of 2, because the physical linear resolution is double the logical
+> resolution.
+>
+> The reason why this works only with WebKit based browsers is because
+> of:
+>
+> The vendor prefix -webkit- before the rule.
+>
+> This hasn&apos;t been implemented in engines other than WebKit and Blink.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 13.5: Width vs Viewport
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  **&lt;head**
+
+> When we are using &quot;width&quot; with media queries it is important to set
+> the meta tag correctly. Basic meta tag looks like this and it needs to
+> be put inside the **&gt;** tag.
+>
+> **&lt;meta** name=&quot;viewport&quot;
+> content=&quot;width=device-width,initial-scale=1&quot;**&gt;**
+>
+> **Why this is important?**
+>
+> Based on MDN&apos;s definition &quot;width&quot; is
+>
+> The width media feature describes the width of the rendering surface
+> of the output device (such as the width of the document window, or the
+> width of the page box on a printer).
+>
+> What does that mean?
+>
+> View-port is the width of the device itself. If your screen resolution
+> says the resolution is 1280 x 720, your view-port width is &quot;1280px&quot;.
+>
+> More often many devices allocate different pixel amount to display one
+> pixel. For an example iPhone 6 Plus has 1242 x 2208 resolution. But
+> the actual viewport-width and viewport-height is 414 x 736. That means
+> 3 pixels are used to create 1 pixel.
+>
+> But if you did not set the meta tag correctly it will try to show your
+> webpage with its native resolution which results in a zoomed out view
+> (smaller texts and images).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 13.6: Using Media Queries to Target Dierent Screen Sizes0
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Often times, responsive web design involves media queries, which are
+> CSS blocks that are only executed if a condition is satisfied. This is
+> useful for responsive web design because you can use media queries to
+> specify different CSS styles for the mobile version of your website
+> versus the desktop version.
+
+**&commat;media**
+
+only screen and
+
+(
+
+**min-width**
+
+:
+
+300
+
+px
+
+)
+
+and
+
+(
+
+**max-width**
+
+:
+
+767
+
+px
+
+)
+
+{
+
+.site-title
+
+{
+
+**font-size**
+
+:
+
+80
+
+&percnt;
+
+;
+
+}
+
+*/&ast; Styles in this block are only applied if the screen size is atleast
+300px wide, but no more*
+
+*than 767px &ast;/*
+
+}
+
+**&commat;media**
+
+only screen and
+
+(
+
+**min-width**
+
+:
+
+768
+
+px
+
+)
+
+and
+
+(
+
+**max-width**
+
+:
+
+1023
+
+px
+
+)
+
+{
+
+.site-title
+
+{
+
+**font-size**
+
+:
+
+90
+
+&percnt;
+
+;
+
+}
+
+*/&ast; Styles in this block are only applied if the screen size is atleast
+768px wide, but no more*
+
+*than 1023px &ast;/*
+
+}
+
+**&commat;media**
+
+only screen and
+
+(
+
+**min-width**
+
+:
+
+1024
+
+px
+
+)
+
+{
+
+.site-title
+
+{
+
+**font-size**
+
+:
+
+120
+
+&percnt;
+
+;
+
+}
+
+*/&ast; Styles in this block are only applied if the screen size is over
+1024px wide. &ast;/*
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 13.7: Use on link tag
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **&lt;link** rel=&quot;stylesheet&quot; media=&quot;min-width: 600px&quot;
+> href=&quot;example.css&quot; **/&gt;**
+>
+> This stylesheet is still downloaded but is applied only on devices
+> with screen width larger than 600px.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 13.8: Media queries and IE8
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> &lbrack;**&lbrack;Media
+> queries&rbrack;**&rbrack;(http://www.brianhadaway.com/responsive-web-design-using-css3-media-queries/)
+> are not supported at all in IE8 and below.
+>
+> **A Javascript based workaround**
+>
+> To add support for IE8, you could use one of several JS solutions. For
+> example,
+> &lbrack;**&lbrack;Respond&rbrack;**&rbrack;(https://github.com/scottjehl/Respond) can
+> be added to add media query support for IE8 only with the following
+> code :
+
+&lt;!&minus;-
+
+&lbrack;
+
+if lt IE 9
+
+&rbrack;
+
+**&gt;**
+
+**&lt;**
+
+**script**
+
+src
+
+=
+
+&quot;respond.min.js&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/script**
+
+**&gt;**
+
+&lt;!
+
+&lbrack;
+
+endif
+
+&rbrack;
+
+&minus;-
+
+**&gt;**
+
+> &lbrack;**&lbrack;CSS
+> Mediaqueries&rbrack;**&rbrack;(https://code.google.com/p/css3-mediaqueries-js/)
+> is another library that does the same thing. The code for adding that
+> library to your HTML would be identical :
+
+&lt;!&minus;-
+
+&lbrack;
+
+if lt IE 9
+
+&rbrack;
+
+**&gt;**
+
+**&lt;**
+
+**script**
+
+src
+
+=
+
+&quot;css3-mediaqueries.js&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/script**
+
+**&gt;**
+
+&lt;!
+
+&lbrack;
+
+endif
+
+&rbrack;
+
+&minus;-
+
+**&gt;**
+
+> **The alternative**
+>
+> If you don&apos;t like a JS based solution, you should also consider
+> adding an IE&lt;9 only stylesheet where you adjust your styling specific
+> to IE&lt;9. For that, you should add the following HTML to your code:
+
+&lt;!&minus;-
+
+&lbrack;
+
+if lt IE 9
+
+&rbrack;
+
+**&gt;**
+
+**&lt;**
+
+**link**
+
+rel
+
+=
+
+&quot;stylesheet&quot;
+
+type
+
+=
+
+&quot;text/css&quot;
+
+media
+
+=
+
+&quot;all&quot;
+
+href
+
+=
+
+&quot;style-ielt9.css&quot;
+
+**/&gt;**
+
+&lt;!
+
+&lbrack;
+
+endif
+
+&rbrack;
+
+&minus;-
+
+**&gt;**
+
+> **Note :**
+>
+> Technically it&apos;s one more alternative: using &lbrack;**&lbrack;CSS
+> hacks&rbrack;**&rbrack;(http://browserhacks.com/) to target IE&lt;9. It
+> has the same impact as an IE&lt;9 only stylesheet, but you don&apos;t need a
+> separate stylesheet for that. I do not recommend this option, though,
+> as they produce invalid CSS code (which is but one of several reasons
+> why the use of CSS hacks is generally frowned upon today).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch14">Chapter 14: Floats</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-1">Section 14.1: Float an Image Within Text</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The most basic use of a float is having text wrap around an image. The
+> below code will produce two paragraphs and an image, with the second
+> paragraph flowing around the image. Notice that it is always content
+> *after* the floated element that flows around the floated element.
+>
+<h4>HTML:</h4>
+>
+> **&lt;p&gt;**Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+> Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed
+> nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+> Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+> massa. Vestibulum lacinia arcu eget nulla. **&lt;/p&gt; &lt;img**
+> src=&quot;http://lorempixel.com/200/100/&quot; **/&gt;**
+
+**&lt;p&gt;**Class aptent taciti sociosqu ad litora torquent per conubia
+nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed
+dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean
+quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
+tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis
+quis ligula lacinia aliquet. **&lt;/p&gt;** 
+
+<h4>CSS:</h4>
+
+```
+img {
+  **float**: left;
+  **margin-right**: 1rem;
+}
+```
+
+> This will be the output
+
+[image036.jpg 7.48 x 7.05](./images/image036.jpg)
+
+&lbrack;&lbrack;Codepen
+Link&rbrack;&rbrack;(http://codepen.io/vishak-kavalur/pen/pbxvLx)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-2">Section 14.2: clear property</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The clear property is directly related to floats. Property Values:
+
+none - Default. Allows floating elements on both sides
+
+left - No floating elements allowed on the left side
+
+right - No floating elements allowed on the right side
+
+both - No floating elements allowed on either the left or the right side
+
+initial - Sets this property to its default value. Read about initial
+
+inherit - Inherits this property from its parent element. Read about inherit
+
+```
+**&lt;**
+```
+
+<h4>HTML</h4>
+
+```
+**&gt;**
+**&lt;**
+**head**
+**&gt;**
+**&lt;**
+**style**
+**&gt;**
+img {
+float: left;
+}
+p.clear {
+clear: both;
+}
+**&lt;**
+**/style**
+**&gt;**
+**&lt;**
+**/head**
+**&gt;**
+**&lt;**
+**body**
+**&gt;**
+**&lt;**
+**img**
+src
+=
+&quot;https://static.pexels.com/photos/69372/pexels-photo-69372-medium.jpeg&quot;
+width
+=
+&quot;100&quot;
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem
+ipsoum Lorem ipsoum Lorem
+ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**p**
+class
+=
+&quot;clear&quot;
+**&gt;**
+Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem
+ipsoum
+Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem ipsoum Lorem
+ipsoum
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**/body**
+**&gt;**
+**&lt;**
+**/html**
+**&gt;**
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-3">Section 14.3: Clearfix</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+The clearfix hack is a popular way to contain floats (N. Gallagher aka
+&commat;necolas)
+
+> Not to be confused with the clear property, clearfix is a *concept*
+> (that is also related to floats, thus the possible confusion). To
+> *contain floats*, you&apos;ve to add .cf or .clearfix class on the
+> container (**the parent**) and style this class with a few rules
+> described below.
+>
+> 3 versions with slightly different effects (sources :&lbrack;&lbrack;A new micro
+> clearfix
+> hack&rbrack;&rbrack;(http://nicolasgallagher.com/micro-clearfix-hack/)
+> by N. Gallagher and &lbrack;&lbrack;clearfix
+> reloaded&rbrack;&rbrack;(http://yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified/)
+> by T. J. Koblentz):
+>
+> **Clearfix (with top margin collapsing of contained floats still
+> occurring)**
+
+.cf
+
+:
+
+after
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**display**
+
+:
+
+table
+
+;
+
+}
+
+.cf
+
+:
+
+after
+
+{
+
+**clear**
+
+:
+
+both
+
+;
+
+}
+
+> **Clearfix also preventing top margin collapsing of contained floats**
+
+*/&ast;&ast;*
+
+*&ast; For modern browsers*
+
+*&ast; 1. The space content is one way to avoid an Opera bug when the*
+
+*&ast; contenteditable attribute is included anywhere else in the
+document.*
+
+*&ast; Otherwise it causes space to appear at the top and bottom of
+elements*
+
+*&ast; that are clearfixed.*
+
+*&ast; 2. The use of &apos;table&apos; rather than &apos;block&apos; is only necessary if
+using*
+
+*&ast; &apos;:before&apos; to contain the top-margins of child elements.*
+
+*&ast;/*
+
+.cf
+
+:
+
+before
+
+,
+
+.cf
+
+:
+
+after
+
+{
+
+**content**
+
+:
+
+&quot; &quot;
+
+;
+
+*/&ast; 1 &ast;/*
+
+**display**
+
+:
+
+table
+
+;
+
+*/&ast; 2 &ast;/*
+
+}
+
+.cf
+
+:
+
+after
+
+{
+
+**clear**
+
+:
+
+both
+
+;
+
+}
+
+> **Clearfix with support of outdated browsers IE6 and IE7**
+
+.cf
+
+:
+
+before
+
+,
+
+.cf
+
+:
+
+after
+
+{
+
+**content**
+
+:
+
+&quot; &quot;
+
+;
+
+**display**
+
+:
+
+table
+
+;
+
+}
+
+.cf
+
+:
+
+after
+
+{
+
+**clear**
+
+:
+
+both
+
+;
+
+}
+
+*/&ast;&ast;*
+
+*&ast; For IE 6/7 only*
+
+*&ast; Include this rule to trigger hasLayout and contain floats.*
+
+*&ast;/*
+
+.cf
+
+{
+
+&ast;
+
+zoom
+
+:
+
+1
+
+;
+
+}
+
+&lbrack;&lbrack;Codepen showing clearfix
+effect&rbrack;&rbrack;(http://codepen.io/PhilippeVay/pen/OXEqgW?editors=0100)
+
+> Other resource: &lbrack;&lbrack;Everything you know about clearfix is
+> wrong&rbrack;&rbrack;(http://www.cssmojo.com/clearfix_block-formatting-context_and_hasLayout/)
+> (clearfix and BFC - Block Formatting Context while hasLayout relates
+> to outdated browsers IE6 maybe 7)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 14.4: In-line DIV using float
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The div is a block-level element, i.e it occupies the whole of the
+> page width and the siblings are place one below the other irrespective
+> of their width.
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+This is DIV 1
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+This is DIV 2
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> The output of the following code will be
+
+[image037.jpg 7.48 x 3.61](./images/image037.jpg)
+
+> We can make them in-line by adding a float css property to the div.
+>
+> HTML:
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;outer-div&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;inner-div1&quot;
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+This is DIV 1
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;inner-div2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+This is DIV 2
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> CSS
+
+.inner-div1
+
+{
+
+**width**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**margin-right**
+
+:
+
+0
+
+px
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**background**
+
+:
+
+#337ab7
+
+;
+
+**padding**
+
+:
+
+50
+
+px
+
+0
+
+px
+
+;
+
+}
+
+.inner-div2
+
+{
+
+**width**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**margin-right**
+
+:
+
+0
+
+px
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**background**
+
+:
+
+#dd2c00
+
+;
+
+**padding**
+
+:
+
+50
+
+px
+
+0
+
+px
+
+;
+
+}
+
+p
+
+{
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+[image038.jpg 7.48 x .97](./images/image038.jpg)
+
+<a href="http://codepen.io/vishak-kavalur/pen/bZxbBy">Codepen</a>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-5">Section 14.5: Use of overflow property to clear floats</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Setting overflow value to hidden,auto or scroll to an element, will
+> clear all the floats within that element.
+
+  **overflow**:scroll
+
+**Note:** using will always show the scrollbox
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-6">Section 14.6: Simple Two Fixed-Width Column Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> A simple two-column layout consists of two fixed-width, floated
+> elements. Note that the sidebar and content area are not the same
+> height in this example. This is one of the tricky parts with
+> multi-column layouts using floats, and requires workarounds to make
+> multiple columns appear to be the same height.
+>
+<h4>HTML:</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;wrapper&quot;
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;sidebar&quot;
+**&gt;**
+**&lt;**
+**h**
+**2**
+**&gt;**
+Sidebar
+**&lt;**
+**/h**
+**2**
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+odio.
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;content&quot;
+**&gt;**
+**&lt;**
+**h**
+**1**
+**&gt;**
+Content
+**&lt;**
+**/h**
+**1**
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos.
+
+Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+Curabitur tortor. Pellentesque
+
+nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed
+convallis tristique sem. Proin
+
+ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
+suscipit quis, luctus non,
+
+massa. Fusce ac turpis quis ligula lacinia aliquet.
+
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>CSS:</h4>
+
+```
+.wrapper
+{
+**width**
+:
+600
+px
+;
+**padding**
+:
+20
+px
+;
+**background-color**
+:
+pink
+;
+*/&ast; Floated elements don&apos;t use any height. Adding &quot;overflow:hidden;&quot;
+forces the*
+
+*parent element to expand to contain its floated children. &ast;/*
+
+**overflow**
+:
+hidden
+;
+}
+.sidebar
+{
+**width**
+:
+150
+px
+;
+**float**
+:
+left
+;
+**background-color**
+:
+blue
+;
+}
+.content
+{
+**width**
+:
+450
+px
+;
+**float**
+:
+right
+;
+**background-color**
+:
+yellow
+;
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14-7">Section 14.7: Simple Three Fixed-Width Column Layout</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML:</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;wrapper&quot;
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;left-sidebar&quot;
+**&gt;**
+**&lt;**
+**h**
+**1**
+**&gt;**
+Left Sidebar
+**&lt;**
+**/h**
+**1**
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;content&quot;
+**&gt;**
+**&lt;**
+**h**
+**1**
+**&gt;**
+Content
+**&lt;**
+**/h**
+**1**
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+```
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos.
+
+Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.
+Curabitur tortor. Pellentesque
+
+nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed
+convallis tristique sem. Proin
+
+ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel,
+suscipit quis, luctus non,
+
+massa.
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;right-sidebar&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Right Sidebar
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+Fusce ac turpis quis ligula lacinia aliquet.
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> CSS:
+
+.wrapper
+
+{
+
+**width**
+
+:
+
+600
+
+px
+
+;
+
+**background-color**
+
+:
+
+pink
+
+;
+
+**padding**
+
+:
+
+20
+
+px
+
+;
+
+*/&ast; Floated elements don&apos;t use any height. Adding &quot;overflow:hidden;&quot;
+forces the*
+
+*parent element to expand to contain its floated children. &ast;/*
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+}
+
+.left-sidebar
+
+{
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**background-color**
+
+:
+
+blue
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+}
+
+.content
+
+{
+
+**width**
+
+:
+
+300
+
+px
+
+;
+
+**background-color**
+
+:
+
+yellow
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+}
+
+.right-sidebar
+
+{
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**background-color**
+
+:
+
+green
+
+;
+
+**float**
+
+:
+
+right
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 14.8: Two-Column Lazy/Greedy Layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> This layout uses one floated column to create a two-column layout with
+> no defined widths. In this example the left sidebar is &quot;lazy,&quot; in
+> that it only takes up as much space as it needs. Another way to say
+> this is that the left sidebar is &quot;shrink-wrapped.&quot; The right content
+> column is &quot;greedy,&quot; in that it takes up all the remaining space.
+>
+> HTML:
+>
+> **&lt;div** class=&quot;sidebar&quot;**&gt;**
+>
+> **&lt;h1&gt;**Sidebar**&lt;/h1&gt;**
+>
+> **&lt;img** src=&quot;http://lorempixel.com/150/200/&quot; **/&gt;**
+>
+> **&lt;/div&gt;**
+>
+> **&lt;div** class=&quot;content&quot;**&gt;**
+
+**&lt;h1&gt;**Content**&lt;/h1&gt; &lt;p&gt;**Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+**&lt;/p&gt; &lt;p&gt;**Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
+libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.
+Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis
+tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus
+risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis
+quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus,
+ullamcorper vel, tincidunt sed, euismod in, nibh. **&lt;/p&gt; &lt;/div&gt;**
+CSS:
+
+.sidebar
+
+{
+
+*/&ast; &apos;display:table;&apos; shrink-wraps the column &ast;/*
+
+**display**
+
+:
+
+table
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**background-color**
+
+:
+
+blue
+
+;
+
+}
+
+.content
+
+{
+
+*/&ast; &apos;overflow:hidden;&apos; prevents &apos;.content&apos; from flowing under
+&apos;.sidebar&apos; &ast;/*
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+**background-color**
+
+:
+
+yellow
+
+;
+
+}
+
+&lbrack;&lbrack;Fiddle&rbrack;&rbrack;(https://jsfiddle.net/ooprqsL0/)
+
+# Chapter 15: Typography
+
+**Parameter Details**
+
+  *font-style*     italics or oblique
+  *font-variant*   normal or small-caps
+
+  *font-weight*    normal, bold or numeric from 100 to 900.
+
+  *font-size*      The font size given in %, px, em, or any other valid CSS
+                   measurement
+
+  *line-height*    The line height given in %, px, em, or any other valid CSS
+                   measurement
+
+  *font-family*    This is for defining the family&apos;s name.
+  hsl         (   240         ,   100%                ,   50%
+
+*color* Any valid CSS color representation, like red, #00FF00, ) etc.
+
+  *font-stretch*   Whether or not to use a confenced or expanded face from font.
+                   Valid values are normal, ultracondensed, extra-condensed,
+                   condensed, semi-condensed, semi-expanded, expanded,
+                   extraexpanded or ultra-expanded
+  *text-align*     start, end, left, right, center, justify, match-parent
+
+
+> *text-decoration* none, underline, overline, line-through, initial,
+> inherit;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.1: The Font Shorthand
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> With the syntax:
+
+element
+
+{
+
+**font**
+
+:
+
+&lbrack;
+
+font-style
+
+&rbrack;
+
+&lbrack;
+
+font-variant
+
+&rbrack;
+
+&lbrack;
+
+font-weight
+
+&rbrack;
+
+&lbrack;
+
+font-size/line-height
+
+&rbrack;
+
+&lbrack;
+
+font-family
+
+&rbrack;
+
+;
+
+}
+
+> You can have all your font-related styles in one declaration with the
+> font shorthand. Simply use the font property, and put your values in
+> the correct order.
+>
+> For example, to make all p elements bold with a font size of 20px and
+> using Arial as the font family typically you would code it as follows:
+
+p
+
+{
+
+**font-weight**
+
+:
+
+bold
+
+;
+
+**font-size**
+
+:
+
+20
+
+px
+
+;
+
+**font-family**
+
+:
+
+Arial
+
+,
+
+sans-serif
+
+;
+
+}
+
+> However with the font shorthand it can be condensed as follows:
+
+p
+
+{
+
+**font**
+
+:
+
+bold
+
+20
+
+px
+
+Arial
+
+,
+
+sans-serif
+
+;
+
+}
+
+> **Note**: that since font-style, font-variant, font-weight and
+> line-height are optional, the three of them are skipped in this
+> example. It is important to note that using the shortcut **resets**
+> the other attributes not given. Another important point is that the
+> two necessary attributes for the font shortcut to work are font-size
+> and fontfamily. If they are not both included the shortcut is ignored.
+>
+> Initial value for each of the properties:
+
+  **font-style**                          :   normal
+
+  **font-variant**                           :   normal
+  **font-weight**                           :   normal
+
+> ;
+>
+> ;
+>
+> ;
+>
+> ;
+
+  **font-stretch**                           :   normal
+
+
+  **font-size**                         :    medium
+
+  **line-height**                           :   normal
+
+> ;
+>
+> ;
+>
+> font-family -- depends on user agent
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.2: Quotes
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  **&lt;q**
+
+> The quotes property is used to customize the opening and closing
+> quotation marks of the **&gt;** tag.
+
+q
+
+{
+
+**quotes**
+
+:
+
+&quot;
+
+«
+
+&quot;
+
+&quot;
+
+»
+
+&quot;
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.3: Font Size
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;element-one&quot;
+
+**&gt;**
+
+Hello I am some text.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;element-two&quot;
+
+**&gt;**
+
+Hello I am some smaller text.
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+#element-one
+
+{
+
+**font-size**
+
+:
+
+30
+
+px
+
+;
+
+}
+
+#element-two
+
+{
+
+**font-size**
+
+:
+
+10
+
+px
+
+;
+
+}
+
+> The text inside #element-one will be 30px in size, while the text in
+> #element-two will be 10px in size.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.4: Text Direction
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+div
+
+{
+
+**direction**
+
+:
+
+ltr
+
+;
+
+*/&ast; Default, text read read from left-to-right &ast;/*
+
+}
+
+.ex
+
+{
+
+**direction**
+
+:
+
+rtl
+
+;
+
+*/&ast; text read from right-to-left &ast;/*
+
+}
+
+.horizontal-tb
+
+{
+
+**writing-mode**
+
+:
+
+horizontal-tb
+
+;
+
+*/&ast; Default, text read from left-to-right and top-to-bottom. &ast;/*
+
+}
+
+.vertical-rtl
+
+{
+
+**writing-mode**
+
+:
+
+vertical-rl
+
+;
+
+*/&ast; text read from right-to-left and top-to-bottom &ast;/*
+
+}
+
+.vertical-ltr
+
+{
+
+**writing-mode**
+
+:
+
+vertical-rl
+
+;
+
+*/&ast; text read from left-to-right and top to bottom &ast;/*
+
+}
+
+> The direction property is used to change the horizontal text direction
+> of an element.
+
+  **direction**   :   ltr &vertbar; rtl &vertbar; initial &vertbar; inherit
+
+
+> Syntax: ;
+>
+> The writing-mode property changes the alignment of text so it can be
+> read from top-to-bottom or from left-to-right, depending on the
+> language.
+
+  **direction**   :   horizontal-tb &vertbar; vertical-rl &vertbar; vertical-lr
+
+Syntax: ;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.5: Font Stacks
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+**font-family**
+
+:
+
+&apos;Segoe UI&apos;
+
+,
+
+Tahoma
+
+,
+
+sans-serif
+
+;
+
+> The browser will attempt to apply the font face &quot;Segoe UI&quot; to the
+> characters within the elements targeted by the above property. If this
+> font is not available, or the font does not contain a glyph for the
+> required character, the browser will fall back to Tahoma, and, if
+> necessary, any sans-serif font on the user&apos;s computer. Note that any
+> font names with more than one word such as &quot;Segoe UI&quot; need to have
+> single or double quotes around them.
+
+**font-family**
+
+:
+
+Consolas
+
+,
+
+&apos;Courier New&apos;
+
+,
+
+monospace
+
+;
+
+> The browser will attempt to apply the font face &quot;Consolas&quot; to the
+> characters within the elements targeted by the above property. If this
+> font is not available, or the font does not contain a glyph for the
+> required character, the browser will fall back to &quot;Courier New,&quot;
+> and, if necessary, any monospace font on the user&apos;s computer.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.6: Text Overflow
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The text-overflow property deals with how overflowed content should be
+> signaled to users. In this example, the ellipsis represents clipped
+> text.
+
+.text
+
+{
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+**text-overflow**
+
+:
+
+ellipsis
+
+;
+
+}
+
+  **text-overflow**                        :   ellipsis
+
+> Unfortunately, only works on a single line of text. There is no way to
+> support ellipsis on the last line in standard CSS, but it can be
+> achieved with non-standard webkit-only implementation of flexboxes.
+
+.giveMeEllipsis
+
+{
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+**text-overflow**
+
+:
+
+ellipsis
+
+;
+
+**display**
+
+:
+
+-webkit-box
+
+;
+
+-webkit-box-orient
+
+:
+
+vertical
+
+;
+
+-webkit-line-clamp
+
+:
+
+N
+
+;
+
+*/&ast; number of lines to show &ast;/*
+
+**line-height**
+
+:
+
+X
+
+;
+
+*/&ast; fallback &ast;/*
+
+**max-height**
+
+:
+
+X
+
+&ast;
+
+N
+
+;
+
+*/&ast; fallback &ast;/*
+
+}
+
+> Example (open in Chrome or Safari):
+
+&lbrack;&lbrack;http://jsfiddle.net/csYjC/1131/&rbrack;&rbrack;(http://jsfiddle.net/csYjC/1131/)
+
+> Resources:
+
+&lbrack;&lbrack;https://www.w3.org/TR/2012/WD-css3-ui-20120117/#text-overflow0&rbrack;&rbrack;(https://www.w3.org/TR/2012/WD-css3-ui-20120117/#text-overflow0)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.7: Text Shadow
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> To add shadows to text, use the text-shadow property. The syntax is as
+> follows:
+
+**text-shadow**
+
+:
+
+horizontal-offset vertical-offset blur color
+
+;
+
+> **Shadow without blur radius**
+
+h1
+
+{
+
+**text-shadow**
+
+:
+
+2
+
+px
+
+2
+
+px
+
+#0000FF
+
+;
+
+}
+
+> This creates a blue shadow effect around a heading
+>
+> **Shadow with blur radius**
+>
+> To add a blur effect, add an option blur radius argument
+
+h1
+
+{
+
+**text-shadow**
+
+:
+
+2
+
+px
+
+2
+
+px
+
+10
+
+px
+
+#0000FF
+
+;
+
+}
+
+> **Multiple Shadows**
+>
+> To give an element multiple shadows, separate them with commas
+
+h1
+
+{
+
+**text-shadow**
+
+:
+
+0
+
+0
+
+3
+
+px
+
+#FF0000
+
+,
+
+0
+
+0
+
+5
+
+px
+
+#0000FF
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.8: Text Transform
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The text-transform property allows you to change the capitalization of
+> text. Valid values are: uppercase, capitalize, lowercase, initial,
+> inherit, and none
+>
+> <h4>CSS</h4>
+
+.example1
+
+{
+
+**text-transform**
+
+:
+
+uppercase
+
+;
+
+}
+
+.example2
+
+{
+
+**text-transform**
+
+:
+
+capitalize
+
+;
+
+}
+
+.example3
+{
+**text-transform**
+:
+lowercase
+;
+}
+</code></pre>
+
+> <h4>HTML</h4>
+
+<pre><code>
+**&lt;**
+**p**
+class
+=
+&quot;example1&quot;
+**&gt;**
+all letters in uppercase
+*&lt;!&minus;-*
+*&quot;ALL LETTERS IN UPPERCASE&quot;*
+*&minus;-&gt;*
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**p**
+class
+=
+&quot;example2&quot;
+**&gt;**
+all letters in capitalize
+*&lt;!&minus;-*
+*&quot;All Letters In Capitalize (Sentence Case)&quot;*
+*&minus;-&gt;*
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**p**
+class
+=
+&quot;example3&quot;
+**&gt;**
+all letters in lowercase
+*&lt;!&minus;-*
+*&quot;all letters in lowercase&quot;*
+*&minus;-&gt;*
+**&lt;**
+**/p**
+**&gt;**
+</code></pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.9: Letter Spacing
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<pre><code>
+h2
+{
+</code></pre>
+
+*/&ast; adds a 1px space horizontally between each letter;*
+
+*also known as tracking &ast;/*
+
+**letter-spacing**
+
+<pre><code>
+:
+1
+px
+;
+}
+</code></pre>
+
+> The letter-spacing property is used to specify the space between the
+> characters in a text.
+>
+> ! letter-spacing also supports negative values:
+
+<pre><code>
+p
+{
+**letter-spacing**
+:
+-1
+px
+;
+}
+</code></pre>
+
+Resources:
+&lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.10: Text Indent
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<pre><code>
+p
+{
+**text-indent**
+:
+50
+px
+;
+}
+</code></pre>
+
+> The text-indent property specifies how much horizontal space text
+> should be moved before the beginning of the first line of the text
+> content of an element.
+>
+> Resources:
+>
+> &lbrack;&lbrack;Indenting only the first line of text in a
+> paragraph?&rbrack;&rbrack;(http://stackoverflow.com/questions/5856952/indenting-only-the-first-line-of-text-in-a-paragraph)
+
+&lbrack;&lbrack;https://www.w3.org/TR/CSS21/text.html#propdef-text-indent&rbrack;&rbrack;(https://www.w3.org/TR/CSS21/text.html#propdef-text-indent)
+&lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.11: Text Decoration
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The text-decoration property is used to set or remove decorations from
+> text.
+
+<pre><code>
+h1
+{
+**text-decoration**
+:
+none
+;
+}
+h2
+{
+**text-decoration**
+:
+overline
+;
+}
+h3
+{
+**text-decoration**
+:
+line-through
+;
+}
+h4
+{
+**text-decoration**
+:
+underline
+;
+}
+</code></pre>
+
+> text-decoration can be used in combination with text-decoration-style
+> and text-decoration-color as a shorthand property:
+
+<pre><code>
+.title
+{
+**text-decoration**
+:
+underline
+dotted
+blue
+;
+}
+</code></pre>
+
+> This is a shorthand version of
+
+<pre><code>
+.title
+{
+**text-decoration-style**
+:
+dotted
+;
+**text-decoration-line**
+:
+underline
+;
+**text-decoration-color**
+:
+blue
+;
+}
+</code></pre>
+
+> It should be noted that the following properties are only supported in
+> Firefox
+>
+> text-decoration-color text-decoration-line text-decoration-style
+> text-decoration-skip
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.12: Word Spacing
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The word-spacing property specifies the spacing behavior between tags
+> and words.
+>
+> **Possible values**
+>
+> a positive or negative *length* (using em px vh cm etc.) or
+> *percentage* (using %) the keyword normal uses the font&apos;s default
+> word spacing the keyword inherit takes the value from the parent
+> element
+>
+> <h4>CSS</h4>
+
+<pre><code>
+.normal
+{
+**word-spacing**
+:
+normal
+;
+}
+.narrow
+{
+**word-spacing**
+:
+-3
+px
+;
+}
+.extensive
+{
+**word-spacing**
+:
+10
+px
+;
+}
+</code></pre>
+
+> <h4>HTML</h4>
+>
+> **&lt;p&gt;**
+>
+> **&lt;span** class=&quot;normal&quot;**&gt;**This is an example, showing the
+> effect of &quot;word-spacing&quot;.**&lt;/span&gt;&lt;br&gt;**
+>
+> **&lt;span** class=&quot;narrow&quot;**&gt;**This is an example, showing the
+> effect of &quot;word-spacing&quot;.**&lt;/span&gt;&lt;br&gt;** **&lt;span**
+> class=&quot;extensive&quot;**&gt;**This is an example, showing the effect of
+> &quot;word-spacing&quot;.**&lt;/span&gt;&lt;br&gt;**
+>
+> **&lt;/p&gt;**
+>
+> **Online-Demo**
+
+&lbrack;&lbrack;Try it yourself&rbrack;&rbrack;(https://jsfiddle.net/91742Lxt/)
+
+> **Further reading:**
+
+&lbrack;&lbrack;word-spacing&rbrack; &lbrack;--&rbrack;
+&lbrack;MDN&rbrack;&rbrack;(https://developer.mozilla.org/de/docs/Web/CSS/word-spacing)
+&lbrack;&lbrack;word-spacing&rbrack; &lbrack;--&rbrack;
+&lbrack;w3.org&rbrack;&rbrack;(https://www.w3.org/wiki/CSS/Properties/word-spacing)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 15.13: Font Variant
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Attributes:
+
+***normal***
+
+> Default attribute of fonts. ***small-caps***
+>
+> Sets every letter to uppercase, **but** makes the lowercase
+> letters(from original text) smaller in size than the letters that
+> originally uppercase.
+>
+> **CSS:**
+
+<pre><code>
+.smallcaps
+{
+**font-variant**
+:
+small-caps
+;
+}
+</code></pre>
+
+> **HTML:**
+
+<pre><code>
+**&lt;**
+**p**
+class
+=
+&quot;smallcaps&quot;
+**&gt;**
+Documentation about CSS Fonts
+**&lt;**
+**br**
+**&gt;**
+aNd ExAmpLe
+**&lt;**
+**/p**
+**&gt;**
+</code></pre>
+
+> **Output:**
+
+[image039.jpg 2.34 x .375](./images/image039.jpg)
+
+> Note: The font-variant property is a shorthand for the properties:
+> font-variant-caps, font-variant-numeric, fontvariant-alternates,
+> font-variant-ligatures, and font-variant-east-asian.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+# Chapter 16: Flexible Box Layout (Flexbox)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The Flexible Box module, or just &apos;flexbox&apos; for short, is a box model
+> designed for user interfaces, and it allows users to align and
+> distribute space among items in a container such that elements behave
+> predictably when the page layout must accommodate different, unknown
+> screen sizes. A flex container expands items to fill available space
+> and shrinks them to prevent overflow.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 16.1: Dynamic Vertical and Horizontal Centering (alignitems, justify-content)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **Simple Example (centering a single element)**
+>
+> <h4>HTML</h4>
+
+<pre><code>
+**&lt;**
+**div**
+class
+=
+&quot;aligner&quot;
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;aligner-item&quot;
+**&gt;**
+...
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+</code></pre>
+
+> <h4>CSS</h4>
+
+<pre><code>
+.aligner
+{
+**display**
+:
+flex
+;
+**align-items**
+:
+center
+;
+**justify-content**
+:
+center
+;
+}
+.aligner-item
+{
+**max-width**
+:
+50
+&percnt;
+;
+*/&ast;for demo. Use actual width instead.&ast;/*
+}
+</code></pre>
+
+> Here is a
+> &lbrack;&lbrack;demo&rbrack;&rbrack;(http://codepen.io/asim-coder/pen/ZOobqz).
+>
+> **Reasoning**
+
+**Property Value Description**
+
+> This centers the elements along the axis other than the one specified
+> by flex-direction,
+>
+> align-items center i.e., vertical centering for a horizontal flexbox
+> and horizontal centering for a vertical flexbox.
+>
+> This centers the elements along the axis specified by flex-direction.
+> I.e., for a
+
+<pre><code>
+  **flex-direction**                                   :   row
+  **flex-direction**                            :   column
+</code></pre>
+
+> justify-contentcenter horizontal () flexbox, this centers
+> horizontally, and for a vertical flexbox () flexbox, this centers
+> vertically)
+>
+> **Individual Property Examples**
+>
+> All of the below styles are applied onto this simple layout:
+
+<pre><code>
+**&lt;**
+**div**
+id
+=
+&quot;container&quot;
+**&gt;**
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+
+where #container is the flex-box
+.  **justify-content**                            **:**   **center**
+</code></pre>
+
+
+> **Example: on a horizontal flexbox**
+>
+> **CSS:**
+
+<pre><code>
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+row
+;
+**justify-content**
+:
+center
+;
+}
+</code></pre>
+
+> **Outcome:**
+
+[image040.jpg ](./images/image040.jpg)
+
+Here is the <a href="https://jsfiddle.net/d6pc5bmd/">demo jsFiddle</a>.
+
+  **justify-content**                            **:**   **center**
+
+> **Example: on a vertical flexbox**
+>
+> **CSS:**
+
+<pre><code>
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+column
+;
+**justify-content**
+:
+center
+;
+}
+</code></pre>
+
+> **Outcome:**
+
+[image041.jpg](./images/image041.jpg)
+
+Here is a <a href="https://jsfiddle.net/d6pc5bmd/1/">demo jsFiddle</a>.
+
+  **align-content**                           **:**   **center**
+
+> **Example: on a horizontal flexbox**
+>
+> **CSS:**
+
+<pre><code>
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+row
+;
+**align-items**
+:
+center
+;
+}
+</code></pre>
+
+> **Outcome:**
+
+[image042.jpg](./images/image042.jpg)
+
+Here is the <a href="https://jsfiddle.net/d6pc5bmd/2/">demo jsFiddle</a>.
+
+  **align-content**                           **:**   **center**
+
+> **Example: on a vertical flexbox**
+>
+> **CSS:**
+
+<pre><code>
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+column
+;
+**align-items**
+:
+center
+;
+}
+</code></pre>
+
+> **Outcome:**
+
+[image043.jpg 6.97 x 6.15](./images/image043.jpg)
+
+> Here is a &lbrack;&lbrack;demo&rbrack;&rbrack;(https://jsfiddle.net/d6pc5bmd/3/).
+>
+> **Example: Combination for centering both on horizontal flexbox**
+
+```
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+row
+;
+**justify-content**
+:
+center
+;
+**align-items**
+:
+center
+;
+}
+```
+
+> **Outcome:**
+
+[image044.jpog 6.93 x 6.13](./images/image044.jpg)
+
+> Here is a &lbrack;&lbrack;demo&rbrack;&rbrack;(https://jsfiddle.net/d6pc5bmd/4/).
+>
+> **Example: Combination for centering both on vertical flexbox**
+
+```
+div
+#container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+column
+;
+**justify-content**
+:
+center
+;
+**align-items**
+:
+center
+;
+}
+```
+
+> **Outcome:**
+
+[image045.jpg 6.93 x 6.11](./images/image045.jpg)
+
+Here is a <a href="https://jsfiddle.net/d6pc5bmd/5/">demo</a>.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 16.2: Sticky Variable-Height Footer
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+> This code creates a sticky footer. When the content doesn&apos;t reach the
+> end of the viewport, the footer sticks to the bottom of the viewport.
+> When the content extends past the bottom of the viewport, the footer
+> is also pushed out of the viewport. &lbrack;*&lbrack;View
+> Result&rbrack;*&rbrack;(https://jsfiddle.net/0t1f84tL/)
+>
+> **HTML:**
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;header&quot;
+**&gt;**
+**&lt;**
+**h**
+**2**
+**&gt;**
+Header
+**&lt;**
+**/h**
+**2**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;content&quot;
+**&gt;**
+**&lt;**
+**h**
+**1**
+**&gt;**
+Content
+**&lt;**
+**/h**
+**1**
+**&gt;**
+**&lt;**
+**p**
+**&gt;**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+odio. Praesent libero.
+Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+imperdiet. Duis sagittis
+ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+massa. Vestibulum lacinia
+arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos
+himenaeos. Curabitur sodales ligula in libero.
+**&lt;**
+**/p**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;footer&quot;
+**&gt;**
+**&lt;**
+**h**
+**4**
+**&gt;**
+Footer
+**&lt;**
+**/h**
+**4**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> **CSS:**
+
+```
+html, body {
+  <b>height</b>: 100&percnt;;
+}
+body {
+  <b>display</b>: flex;
+  <b>flex-direction</b>: column;
+}
+.content {
+/* Include &apos;0 auto&apos; for best browser compatibility. */
+  <b>flex</b>: 10 auto;
+}
+.header, .footer {
+  <b>background-color</b>: grey;
+  <b>color</b>: white;
+  <b>flex</b>: none;
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch16-3">Section 16.3: Optimally fit elements to their container</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<p>One of the nicest features of flexbox is to allow optimally fitting
+containers to their parent element.</p>
+
+&lbrack;&lbrack;Live demo&rbrack;&rbrack;(https://jsfiddle.net/6gfogoqk/).
+
+> HTML:
+
+```
+&lt;div class = &quot;flex-container&quot;&gt;
+&lt;div class = &quot;flex-item&quot;&gt;1 &lt;/div&gt;
+&lt;div class = &quot;flex-item&quot;&gt;2 &lt;/div&gt;
+&lt;div class = &quot;flex-item&quot;&gt;3 &lt;/div&gt;
+&lt;div class = &quot;flex-item&quot;&gt;4 &lt;/div&gt;
+&lt;div class = &quot;flex-item&quot;&gt;5 &lt;/div&gt;
+&lt;/div
+&gt;
+```
+
+> CSS:
+
+```
+.flex-container
+{
+<b>background-color</b>:#000;
+<b>height</b>:100&percnt;; display: flex; flex-direction: row;
+<b>flex-wrap</b>: wrap; justify-content: flex-start; align-content: stretch;
+<b>align-items</b>: stretch;
+}
+.flex-item {
+  <b>background-color</b>: #ccf;
+  <b>margin</b>:0.1em; <b>flex-grow</b>: 1;
+  <b>flex-shrink</b>:0;
+  <b>flex-basis</b>:200px;
+/* or % could be used to ensure a specific layout */
+}
+```
+
+> **Outcome:**
+>
+> Columns adapt as screen is resized.
+
+!&lbrack;&rbrack;(./images/image046.png){width="7.48037510936133in"
+height="3.182736220472441in"}
+
+<h3 id="ch16-4">Section 16.4: Holy Grail Layout using Flexbox</h3>
+
+> &lbrack;&lbrack;Holy Grail
+> layout&rbrack;&rbrack;(http://alistapart.com/article/holygrail) is a
+> layout with a fixed height header and footer, and a center with 3
+> columns. The 3 columns include a fixed width sidenav, a fluid center,
+> and a column for other content like ads (the fluid center appears
+> first in the markup). CSS Flexbox can be used to achieve this with a
+> very simple markup:
+>
+
+<h4>HTML Markup:</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;container&quot;
+**&gt;**
+**&lt;**
+**header**
+class
+=
+&quot;header&quot;
+**&gt;**
+Header
+**&lt;**
+**/header**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;content-body&quot;
+**&gt;**
+**&lt;**
+**main**
+class
+=
+&quot;content&quot;
+**&gt;**
+Content
+**&lt;**
+**/main**
+**&gt;**
+**&lt;**
+**nav**
+class
+=
+&quot;sidenav&quot;
+**&gt;**
+Nav
+**&lt;**
+**/nav**
+**&gt;**
+**&lt;**
+**aside**
+class
+=
+&quot;ads&quot;
+**&gt;**
+Ads
+**&lt;**
+**/aside**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+*&lt;**
+**footer**
+class
+=
+&quot;footer&quot;
+**&gt;**
+Footer
+**&lt;**
+**/footer**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> CSS:
+
+```
+body
+{
+**margin**
+:
+0
+;
+**padding**
+:
+0
+;
+}
+.container
+{
+**display**
+:
+flex
+;
+**flex-direction**
+:
+column
+;
+**height**
+:
+100
+vh
+;
+}
+.header
+{
+**flex**
+:
+0
+0
+50
+px
+;
+}
+.content-body
+{
+**flex**
+:
+1
+1
+auto
+;
+**display**
+:
+flex
+;
+**flex-direction**
+:
+row
+;
+}
+.content-body
+.content
+{
+**flex**
+:
+1
+1
+auto
+;
+**overflow**
+:
+auto
+;
+}
+.content-body
+.sidenav
+{
+**order**
+:
+&minus;
+1
+;
+**flex**
+:
+0
+0
+100
+px
+;
+**overflow**
+:
+auto
+;
+}
+.content-body
+.ads
+{
+**flex**
+:
+0
+0
+100
+px
+;
+**overflow**
+:
+auto
+;
+}
+.footer
+{
+**flex**
+:
+0
+0
+50
+px
+;
+}
+```
+
+<a href="https://jsfiddle.net/adityarb88/hek6ms0x/">jsFiddle Demo</a>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch16-5">Section 16.5: Perfectly aligned buttons inside cards with flexbox</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> It&apos;s a regular pattern in design these days to vertically align
+> **call to actions** inside its containing cards like this:
+
+!&lbrack;&rbrack;(./images/image047.jpg){width="7.48037510936133in"
+height="3.3848195538057744in"}
+
+> This can be achieved using a special trick with flexbox
+>
+> HTML
+>
+> **&lt;div** class=&quot;cards&quot;**&gt;**
+>
+> **&lt;div** class=&quot;card&quot;**&gt;** **&lt;p&gt;**Lorem ipsum Magna proident ex
+> anim dolor ullamco pariatur reprehenderit culpa esse enim mollit
+> labore dolore voluptate ullamco et ut sed qui minim.**&lt;/p&gt;**
+> **&lt;p&gt;&lt;button&gt;**Action**&lt;/button&gt;&lt;/p&gt;**
+>
+> **&lt;/div&gt;**
+>
+> **&lt;div** class=&quot;card&quot;**&gt;** **&lt;p&gt;**Lorem ipsum Magna proident ex
+> anim dolor ullamco pariatur reprehenderit culpa esse enim mollit
+> labore dolore voluptate ullamco et ut sed qui minim.**&lt;/p&gt;**
+> **&lt;p&gt;**Lorem ipsum Magna proident ex anim dolor ullamco pariatur
+> reprehenderit culpa esse enim mollit labore dolore voluptate ullamco
+> et ut sed qui minim.**&lt;/p&gt;** **&lt;p&gt;**Lorem ipsum Magna proident ex
+> anim dolor ullamco pariatur reprehenderit culpa esse enim mollit
+> labore dolore voluptate ullamco et ut sed qui minim.**&lt;/p&gt;**
+> **&lt;p&gt;**Lorem ipsum Magna proident ex anim dolor ullamco pariatur
+> reprehenderit culpa esse enim mollit labore dolore voluptate ullamco
+> et ut sed qui minim.**&lt;/p&gt;**
+> **&lt;p&gt;&lt;button&gt;**Action**&lt;/button&gt;&lt;/p&gt;**
+>
+> **&lt;/div&gt;**
+>
+> **&lt;/div&gt;**
+
+  **display**                            :     flex
+
+
+> First of all, we use CSS to apply ; to the container. This will create
+> 2 columns equal in height with the content flowing naturally inside it
+>
+> CSS
+
+```
+.cards
+{
+**display**
+:
+flex
+;
+}
+.card
+{
+**border**
+:
+1
+px
+solid
+#ccc
+;
+**margin**
+:
+10
+px
+10
+px
+;
+**padding**
+:
+0
+20
+px
+;
+}
+button
+{
+**height**
+:
+40
+px
+;
+**background**
+:
+#fff
+;
+**padding**
+:
+0
+40
+px
+;
+**border**
+:
+1
+px
+solid
+#000
+;
+}
+p
+:
+last-child
+{
+**text-align**
+:
+center
+;
+}
+```
+
+> The layout will change and become like this:
+
+!&lbrack;&rbrack;(./images/image048.jpg){width="7.48037510936133in"
+height="3.0046391076115486in"}
+
+  **display**                            :     flex
+
+
+> In order to move the buttons to the bottom of the block, we need to
+> apply ; to the card itself with the direction set to column. After
+> that, we should select the last element inside the card and set the
+> margin-top to auto. This will push the last paragraph to the bottom of
+> the card and achieve the required result.
+>
+
+<h4>Final CSS:</h4>
+
+```
+.cards
+{
+**display**
+:
+flex
+;
+}
+.card
+{
+**border**
+:
+1
+px
+solid
+#ccc
+;
+**margin**
+:
+10
+px
+10
+px
+;
+**padding**
+:
+0
+20
+px
+;
+**display**
+:
+flex
+;
+**flex-direction**
+:
+column
+;
+}
+button
+{
+**height**
+:
+40
+px
+;
+**background**
+:
+#fff
+;
+**padding**
+:
+0
+40
+px
+;
+**border**
+:
+1
+px
+solid
+#000
+;
+}
+p
+:
+last-child
+{
+**text-align**
+:
+center
+;
+**margin-top**
+:
+auto
+;
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch16-6">Section 16.6: Same height on nested containers</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> This code makes sure that all nested containers are always the same
+> height. This is done by assuring that all nested elements are the same
+> height as the containing parent div. &lbrack;&lbrack;See working
+> example&rbrack;&rbrack;(https://jsfiddle.net/3wwh7ewp/):
+> &lbrack;&lbrack;https://jsfiddle.net/3wwh7ewp/&rbrack;&rbrack;(https://jsfiddle.net/3wwh7ewp/)
+> This effect is achieved due to the property align-items being set to
+> stretch by default.
+>
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;container&quot;
+**&gt;**
+**&lt;**
+**div**
+style
+=
+&quot;background-color: red&quot;
+**&gt;**
+Some
+**&lt;**
+**br**
+**/&gt;**
+data
+**&lt;**
+**br**
+**/&gt;**
+to make
+**&lt;**
+**br**
+**/&gt;**
+a height
+**&lt;**
+**br**
+**/&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+style
+=
+&quot;background-color: blue&quot;
+**&gt;**
+Fewer
+**&lt;**
+**br**
+**/&gt;**
+lines
+**&lt;**
+**br**
+**/&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>CSS</h4>
+
+```
+.container
+{
+**display**
+:
+flex
+;
+**align-items**
+:
+stretch
+;
+// Default
+value
+}
+```
+
+Note: &lbrack;&lbrack;Does not work on IE versions under 10&rbrack;&rbrack;(http://caniuse.com/#search=flexbox)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="ch17">Chapter 17: Cascading and Specificity</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch17-1">Section 17.1: Calculating Selector Specificity</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Each individual CSS Selector has its own specificity value. Every
+> selector in a sequence increases the sequence&apos;s overall specificity.
+> Selectors fall into one of three different specificity groups: *A*,
+> *B* and *c*. When multiple selector sequences select a given element,
+> the browser uses the styles applied by the sequence with the highest
+> overall specificity.
+
+**Group Comprised of Examples**
+
+A.  id selectors #foo class selectors .bar
+
+  title
+  hover
+  colspan                                       =      &quot;2&quot;
+  nth-child
+
+B.  attribute selectors &lbrack;&rbrack;, &lbrack;&rbrack; pseudo-classes :, :(2)
+
+type selectors div, li
+
+  ::before                 ,   ::first-letter
+
+
+> *c* pseudo-elements
+>
+> Group *A* is the most specific, followed by Group *B*, then finally
+> Group *c*.
+>
+> The universal selector (&ast;) and combinators (like &gt; and &#126;) have no
+> specificity.
+>
+> **Example 1: Specificity of various selector sequences**
+
+#foo
+
+#baz
+
+{
+
+}
+
+*/&ast; a=2, b=0, c=0 &ast;/*
+
+#foo
+
+.bar
+
+{
+
+}
+
+*/&ast; a=1, b=1, c=0 &ast;/*
+
+#foo
+
+{
+
+}
+
+*/&ast; a=1, b=0, c=0 &ast;/*
+
+.bar
+
+:
+
+hover
+
+{
+
+}
+
+*/&ast; a=0, b=2, c=0 &ast;/*
+
+div
+
+.bar
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=1 &ast;/*
+
+:
+
+hover
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+&lbrack;
+
+title
+
+&rbrack;
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+.bar
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+div ul
+
+&plus;
+
+li
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=3 &ast;/*
+
+p
+
+::
+
+after
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=2 &ast;/*
+
+&ast;::
+
+before
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=1 &ast;/*
+
+::
+
+before
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=1 &ast;/*
+
+div
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=1 &ast;/*
+
+&ast;
+
+{
+
+}
+
+*/&ast; a=0, b=0, c=0 &ast;/*
+
+> **Example 2: How specificity is used by the browser**
+>
+> Imagine the following CSS implementation:
+
+#foo
+
+{
+
+**color**
+
+:
+
+blue
+
+;
+
+}
+
+.bar
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+**background**
+
+:
+
+black
+
+;
+
+}
+
+> Here we have an ID selector which declares color as *blue*, and a
+> class selector which declares color as *red* and background as
+> *black*.
+>
+> An element with an ID of #foo and a class of .bar will be selected by
+> both declarations. ID selectors have a Group *A* specificity and class
+> selectors have a Group *B* specificity. An ID selector outweighs any
+> number of class selectors.
+
+  **color**   :   blue   ; from the #foo selector and the      **background**   :   black
+
+> Because of this, ; from the .bar selector will be
+>
+> applied to the element. The higher specificity of the ID selector will
+> cause the browser to ignore the .bar selector&apos;s color declaration.
+>
+> Now imagine a different CSS implementation:
+
+.bar
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+**background**
+
+:
+
+black
+
+;
+
+}
+
+.baz
+
+{
+
+**background**
+
+:
+
+white
+
+;
+
+}
+
+> Here we have two class selectors; one of which declares color as *red*
+> and background as *black*, and the other declares background as
+> *white*.
+>
+> An element with both the .bar and .baz classes will be affected by
+> both of these declarations, however the problem we have now is that
+> both .bar and .baz have an identical Group *B* specificity. The
+> cascading nature of CSS resolves this for us: as .baz is defined
+> *after* .bar, our element ends up with the *red* color from .bar but
+> the *white* background from .baz.
+>
+> **Example 3: How to manipulate specificity**
+>
+> The last snippet from Example 2 above can be manipulated to ensure our
+> .bar class selector&apos;s color declaration is used instead of that of
+> the .baz class selector.
+
+.bar
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+.baz
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+> The most common way to achieve this would be to find out what other
+> selectors can be applied to the .bar selector sequence. For example,
+> if the .bar class was only ever applied to span elements, we could
+> modify the .bar selector to span.bar. This would give it a new Group
+> *C* specificity, which would override the .baz selector&apos;s lack
+> thereof:
+
+span
+
+.bar
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=1 &ast;/*
+
+.baz
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+  .bar.bar
+
+
+> However it may not always possible to find another common selector
+> which is shared between any element which uses the .bar class. Because
+> of this, CSS allows us to duplicate selectors to increase specificity.
+> Instead of just .bar, we can use instead (See &lbrack;&lbrack;The grammar of
+> Selectors, W3C
+> Recommendation&rbrack;&rbrack;(https://www.w3.org/TR/css3-selectors/#grammar)).
+> This still selects any element with a class of .bar, but now has
+> double the Group *B* specificity:
+
+.bar
+
+.bar
+
+{
+
+}
+
+*/&ast; a=0, b=2, c=0 &ast;/*
+
+.baz
+
+{
+
+}
+
+*/&ast; a=0, b=1, c=0 &ast;/*
+
+> **!important and inline style declarations**
+>
+> The !important flag on a style declaration and styles declared by the
+> HTML style attribute are considered to have a greater specificity than
+> any selector. If these exist, the style declaration they affect will
+> overrule other declarations regardless of their specificity. That is,
+> unless you have more than one declaration that contains an !important
+> flag for the same property that apply to the same element. Then,
+> normal specificity rules will apply to those properties in reference
+> to each other.
+>
+> Because they completely override specificity, the use of !important is
+> frowned upon in most use cases. One should use it as little as
+> possible. To keep CSS code efficient and maintainable in the long run,
+> it&apos;s almost always better to increase the specificity of the
+> surrounding selector than to use !important.
+>
+> One of those rare exceptions where !important is not frowned upon, is
+> when implementing generic helper classes like a .hidden or
+> .background-yellow class that are supposed to always override one or
+> more properties wherever they are encountered. And even then, you need
+> to know what you&apos;re doing. The last thing you want, when writing
+> maintainable CSS, is to have !important flags throughout your CSS.
+>
+> **A final note**
+
+  b                    =5,                            c
+
+
+> A common misconception about CSS specificity is that the Group *A*,
+> *B* and *c* values should be combined with each other (a=1,=1 =&gt;
+> 151). This is **not** the case. If this were the case, having 20 of a
+> Group *B* or *c* selector would be enough to override a single Group
+> *A* or *B* selector respectively. The three groups should be regarded
+> as individual levels of specificity. Specificity cannot be represented
+> by a single value.
+>
+> When creating your CSS style sheet, you should maintain the lowest
+> specificity as possible. If you need to make the specificity a little
+> higher to overwrite another method, make it higher but as low as
+> possible to make it higher. You shouldn&apos;t need to have a selector
+> like this:
+
+body
+
+.page
+
+header
+
+.container
+
+nav div
+
+#main-nav
+
+li a
+
+{
+
+}
+
+> This makes future changes harder and pollutes that css page.
+>
+> You can calculate the specificity of your selector
+> &lbrack;&lbrack;here&rbrack;&rbrack;(http://specificity.keegan.st/)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch17-2">Section 17.2: The !important declaration</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The !important declaration is used to override the usual specificity
+> in a style sheet by giving a higher priority to a
+
+  property                :   value !important
+ 
+ 
+> rule. Its usage is: ;
+
+#mydiv
+
+{
+
+**font-weight**
+
+:
+
+bold
+
+!important
+
+;
+
+*/&ast; This property won&apos;t be overridden*
+
+*by the rule below &ast;/*
+
+}
+
+#outerdiv
+
+#mydiv
+
+{
+
+**font-weight**
+
+:
+
+normal
+
+;
+
+*/&ast; #mydiv font-weight won&apos;t be set to normal*
+
+*even if it has a higher specificity because*
+
+*of the !important declaration above &ast;/*
+
+}
+
+> Avoiding the usage of !important is strongly recommended (unless
+> absolutely necessary), because it will disturb the natural flow of css
+> rules which can bring uncertainty in your style sheet. Also it is
+> important to note that when multiple !important declarations are
+> applied to the same rule on a certain element, the one with the higher
+> specificity will be the ona applied.
+>
+> Here are some examples where using !important declaration can be
+> justified:
+>
+> If your rules shouldn&apos;t be overridden by any inline style of the
+> element which is written inside style attribute of the html element.
+>
+> To give the user more control over the web accessibility, like
+> increasing or decreasing size of the font-size, by overriding the
+> author style using !important.
+>
+> For testing and debugging using inspect element.
+>
+> See also:
+
+&lbrack;**&lbrack;W3C - 6 Assigning property values, Cascading, and Inheritance &minus;-
+6.4.2 !important
+rules&rbrack;**&rbrack;(https://www.w3.org/TR/CSS22/cascade.html#important-rules)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 17.3: Cascading
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Cascading and specificity are used together to determine the final
+> value of a CSS styling property. They also define the mechanisms for
+> resolving conflicts in CSS rule sets.
+>
+> **CSS Loading order**
+>
+> Styles are read from the following sources, in this order:
+
+1.  User Agent stylesheet (The styles supplied by the browser vendor)
+
+2.  User stylesheet (The additional styling a user has set on his/her
+    browser)
+
+3.  Author stylesheet (Author here means the creator of the
+    webpage/website)
+
+  **&lt;style**
+ 
+ 
+> Maybe one or more .css files
+>
+> In the **&gt;** element of the HTML document
+
+4.  Inline styles (In the style attribute on an HTML element)
+
+> The browser will lookup the corresponding style(s) when rendering an
+> element.
+>
+> **How are conflicts resolved?**
+>
+> When only one CSS rule set is trying to set a style for an element,
+> then there is no conflict, and that rule set is used.
+>
+> When multiple rule sets are found with conflicting settings, first the
+> Specificty rules, and then the Cascading rules are used to determine
+> what style to use.
+>
+> **Example 1 - Specificity rules**
+
+.mystyle
+
+{
+
+**color**
+
+:
+
+blue
+
+;
+
+}
+
+*/&ast; specificity: 0, 0, 1, 0 &ast;/*
+
+div
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+}
+
+*/&ast; specificity: 0, 0, 0, 1 &ast;/*
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;mystyle&quot;
+
+**&gt;**
+
+Hello World
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> What color will the text be? (hover to see the answer)
+
+blue
+
+> First the specificity rules are applied, and the one with the highest
+> specificity &quot;wins&quot;.
+>
+> **Example 2 - Cascade rules with identical selectors**
+>
+> *External css file*
+
+.class
+
+{
+
+**background**
+
+:
+
+#FFF
+
+;
+
+}
+
+> *Internal css (in HTML file)*
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+.class {
+
+background: #000;
+
+}
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+> In this case, where you have identical selectors, the cascade kicks
+> in, and determines that the last one loaded &quot;wins&quot;.
+
+**Example 3 - Cascade rules after Specificity rules**
+
+body
+
+&gt;
+
+.mystyle
+
+{
+
+**background-color**
+
+:
+
+blue
+
+;
+
+}
+
+*/&ast; specificity: 0, 0, 1, 1 &ast;/*
+
+.otherstyle
+
+&gt;
+
+div
+
+{
+
+**background-color**
+
+:
+
+red
+
+;
+
+}
+
+*/&ast; specificity: 0, 0, 1, 1 &ast;/*
+
+**&lt;**
+
+**body**
+
+class
+
+=
+
+&quot;otherstyle&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;mystyle&quot;
+
+**&gt;**
+
+Hello World
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/body**
+
+**&gt;**
+
+What color will the background be?
+
+red
+
+  .otherstyle                                        &gt;   div
+ 
+ 
+> After applying the specificity rules, there&apos;s still a conflict
+> between blue and red, so the cascading rules are applied on top of the
+> specificity rules. Cascading looks at the load order of the rules,
+> whether inside the same .css file or in the collection of style
+> sources. The last one loaded overrides any earlier ones. In this case,
+> the rule &quot;wins&quot;.
+>
+> **A final note**
+>
+> Selector specificity always take precedence.
+>
+> Stylesheet order break ties.
+>
+> Inline styles trump everything.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 17.4: More complex specificity example
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+div
+
+{
+
+**font-size**
+
+:
+
+7
+
+px
+
+;
+
+**border**
+
+:
+
+3
+
+px
+
+dotted
+
+pink
+
+;
+
+**background-color**
+
+:
+
+yellow
+
+;
+
+**color**
+
+:
+
+purple
+
+;
+
+}
+
+body
+
+.mystyle
+
+&gt;
+
+div
+
+.myotherstyle
+
+{
+
+**font-size**
+
+:
+
+11
+
+px
+
+;
+
+**background-color**
+
+:
+
+green
+
+;
+
+}
+
+#elmnt1
+
+{
+
+**font-size**
+
+:
+
+24
+
+px
+
+;
+
+**border-color**
+
+:
+
+red
+
+;
+
+}
+
+.mystyle
+
+.myotherstyle
+
+{
+
+**font-size**
+
+:
+
+16
+
+px
+
+;
+
+**background-color**
+
+:
+
+black
+
+;
+
+**color**
+
+:
+
+red
+
+;
+
+}
+
+**&lt;**
+
+**body**
+
+class
+
+=
+
+&quot;mystyle&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;elmnt1&quot;
+
+class
+
+=
+
+&quot;myotherstyle&quot;
+
+**&gt;**
+
+Hello, world!
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/body**
+
+**&gt;**
+
+> What borders, colors, and font-sizes will the text be? font-size:
+
+  ------------------------------------------------------------------------------------------
+  **font-size**   :   24   ;, since #elmnt1 rule set has the highest specificity **&lt;div**
+                           for the                                               
+  --------------- --- ---- ----------------------------------------------------- -----------
+
+  ------------------------------------------------------------------------------------------
+
+> **&gt;** in question, every property here is set.
+>
+> border:
+>
+> ;. The border-color red is taken from #elmnt1 rule set, since it has
+> the highest
+
+  ------------------------------------------------------------------------
+  **border**          :   3px dotted red
+  ------------------- --- ------------------------------------------------
+
+  ------------------------------------------------------------------------
+
+> specificity. The other properties of the border, border-thickness, and
+> border-style are from the div rule set.
+>
+> background-color:
+
+  ------------------------------------------------------------------------------------------------------
+  **background-color**   :   green   ;. The background-color is   body.mystyle   &gt;   div.myotherstyle
+                                     set in the div,                                  
+  ---------------------- --- ------- ---------------------------- -------------- ---- ------------------
+
+  ------------------------------------------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  .mystyle .myotherstyle
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> , and rule sets. The specificities are (0, 0, 1) vs. (0, 2, 2) vs. (0,
+> 2, 0), so the middle one &quot;wins&quot;.
+>
+> color:
+
+  **color**   :   red   ;. The color is set in both the div .mystyle .myotherstyle
+                        and                                 
+
+> rule sets. The latter has the higher specificity of (0, 2, 0) and
+> &quot;wins&quot;.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+# Chapter 18: Colors
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.1: currentColor
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> currentColor returns the computed color value of the current element.
+>
+> **Use in same element**
+>
+> Here currentColor evaluates to red since the color property is set to
+> red:
+
+div
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+**border**
+
+:
+
+5
+
+px
+
+solid
+
+currentColor
+
+;
+
+**box-shadow**
+
+:
+
+0
+
+0
+
+5
+
+px
+
+currentColor
+
+;
+
+}
+
+> In this case, specifying currentColor for the border is most likely
+> redundant because omitting it should produce identical results. Only
+> use currentColor inside the border property within the same element if
+> it would be overwritten otherwise due to a more specific selector.
+>
+> Since it&apos;s the computed color, the border will be green in the
+> following example due to the second rule overriding the first:
+
+div
+
+{
+
+**color**
+
+:
+
+blue
+
+;
+
+**border**
+
+:
+
+3
+
+px
+
+solid
+
+currentColor
+
+;
+
+**color**
+
+:
+
+green
+
+;
+
+}
+
+> **Inherited from parent element**
+>
+> The parent&apos;s color is inherited, here currentColor evaluates to
+> &apos;blue&apos;, making the child element&apos;s border-color blue.
+
+.parent-class
+
+{
+
+**color**
+
+:
+
+blue
+
+;
+
+}
+
+.parent-class
+
+.child-class
+
+{
+
+**border-color**
+
+:
+
+currentColor
+
+;
+
+}
+
+> currentColor can also be used by other rules which normally would not
+> inherit from the color property, such as background-color. The example
+> below shows the children using the color set in the parent as its
+> background:
+
+.parent-class
+
+{
+
+**color**
+
+:
+
+blue
+
+;
+
+}
+
+.parent-class
+
+.child-class
+
+{
+
+**background-color**
+
+:
+
+currentColor
+
+;
+
+}
+
+> **Possible Result:**
+
+[image049.png 5.2 x 3.09](./images/image049.png)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.2: Color Keywords
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Most browsers support using color keywords to specify a color. For
+> example, to set the color of an element to blue, use the blue keyword:
+
+```
+.some-class {
+  **color**: blue;
+}
+```
+
+> CSS keywords are not case sensitive---blue, Blue and BLUE will all
+> result in #0000FF.
+>
+> **Color Keywords**
+
+**Color name Hex value RGB values Color**
+
+AliceBlue #F0F8FF rgb(240,248,255)
+
+AntiqueWhite #FAEBD7 rgb(250,235,215)
+
+Aqua #00FFFF rgb(0,255,255)
+
+Aquamarine #7FFFD4 rgb(127,255,212)
+
+Azure #F0FFFF rgb(240,255,255)
+
+Beige #F5F5DC rgb(245,245,220)
+
+Bisque #FFE4C4 rgb(255,228,196)
+
+Black #000000 rgb(0,0,0)
+
+BlanchedAlmond #FFEBCD rgb(255,235,205)
+
+Blue #0000FF rgb(0,0,255)
+
+BlueViolet #8A2BE2 rgb(138,43,226)
+
+Brown #A52A2A rgb(165,42,42)
+
+|   ---                                                          |     |
+|   BurlyWood                  #DEB887                           |     |
+|                              rgb(222,184,135)                  |     |
+|   ---                                                          |     |
+|   CadetBlue                  #5F9EA0                           |     |
+|                              rgb(95,158,160)                   |     |
+|                                                                |     |
+|   Chartreuse                 #7FFF00                           |     |
+|                              rgb(127,255,0)                    |     |
+|                                                                |     |
+|   Chocolate                  #D2691E                           |     |
+|                              rgb(210,105,30)                   |     |
+|                                                                |     |
+|   Coral                      #FF7F50                           |     |
+|                              rgb(255,127,80)                   |     |
+|                                                                |     |
+|   CornflowerBlue             #6495ED                           |     |
+|                              rgb(100,149,237)                  |     |
+|                                                                |     |
+|   Cornsilk                   #FFF8DC                           |     |
+|                              rgb(255,248,220)                  |     |
+|                                                                |     |
+|   Crimson                    #DC143C                           |     |
+|                              rgb(220,20,60)                    |     |
+|                                                                |     |
+|   Cyan                       #00FFFF                           |     |
+|                              rgb(0,255,255)                    |     |
+|                                                                |     |
+|   DarkBlue                   #00008B                           |     |
+|                              rgb(0,0,139)                      |     |
+|                                                                |     |
+|   DarkCyan                   #008B8B                           |     |
+|                              rgb(0,139,139)                    |     |
+|                                                                |     |
+|   DarkGoldenRod              #B8860B                           |     |
+|                              rgb(184,134,11)                   |     |
+|                                                                |     |
+|   DarkGray                   #A9A9A9                           |     |
+|                              rgb(169,169,169)                  |     |
+|                                                                |     |
+|   DarkGrey                   #A9A9A9                           |     |
+|                              rgb(169,169,169)                  |     |
+|                                                                |     |
+|   DarkGreen                  #006400                           |     |
+|                              rgb(0,100,0)                      |     |
+|                                                                |     |
+|   DarkKhaki                  #BDB76B                           |     |
+|                              rgb(189,183,107)                  |     |
+|                                                                |     |
+|   DarkMagenta                #8B008B            rgb(139,0,139) |     |
+|                                                                |     |
+|   DarkOliveGreen             #556B2F            rgb(85,107,47) |     |
+|                                                                |     |
+|   DarkOrange                 #FF8C00            rgb(255,140,0) |     |
+|                                                                |     |
+|                                                                |     |
+|  DarkOrchid                 #9932CC            rgb(153,50,204) |     |
+|                                                                |     |
+|   DarkRed                    #8B0000            rgb(139,0,0)   |     |
+|                                                                |     |
+|                                                                |     |
+| DarkSalmon                 #E9967A            rgb(233,150,122) |     |
+|                                                                |     |
+|                                                                |     |
+| DarkSeaGreen               #8FBC8F            rgb(143,188,143) |     |
+|                                                                |     |
+|   DarkSlateBlue              #483D8B            rgb(72,61,139) |     |
+|                                                                |     |
+|   DarkSlateGray              #2F4F4F            rgb(47,79,79)  |     |
+|                                                                |     |
+|   DarkSlateGrey              #2F4F4F            rgb(47,79,79)  |     |
+|                                                                |     |
+|   DarkTurquoise              #00CED1            rgb(0,206,209) |     |
+|                                                                |     |
+|   DarkViolet                 #9400D3            rgb(148,0,211) |     |
+|   ---                                                          |     |
+
+|   DeepPink                   #FF1493 rgb(255,20,147)           |     |
+|   DeepSkyBlue                #00BFFF rgb(0,191,255)            |     |
+|                                                                |     |
+|   DimGray                    #696969 rgb(105,105,105)          |     |
+|                                                                |     |
+|   DimGrey                    #696969 rgb(105,105,105)          |     |
+|                                                                |     |
+|   DodgerBlue                 #1E90FF rgb(30,144,255)           |     |
+|                                                                |     |
+|   FireBrick                  #B22222 rgb(178,34,34)            |     |
+|                                                                |     |
+|   FloralWhite                #FFFAF0 rgb(255,250,240)          |     |
+|                                                                |     |
+|   ForestGreen                #228B22 rgb(34,139,34)            |     |
+|                                                                |     |
+|   Fuchsia                    #FF00FF rgb(255,0,255)            |     |
+|                                                                |     |
+|   Gainsboro                  #DCDCDC rgb(220,220,220)          |     |
+|                                                                |     |
+|   GhostWhite                 #F8F8FF rgb(248,248,255)          |     |
+|                                                                |     |
+|   Gold                       #FFD700 rgb(255,215,0)            |     |
+|                                                                |     |
+|   GoldenRod                  #DAA520 rgb(218,165,32)           |     |
+|                                                                |     |
+|   Gray                       #808080 rgb(128,128,128)          |     |
+|                                                                |     |
+|   Grey                       #808080 rgb(128,128,128)          |     |
+|                                                                |     |
+|   Green                      #008000 rgb(0,128,0)              |     |
+|                                                                |     |
+|   GreenYellow                #ADFF2F rgb(173,255,47)           |     |
+|                                                                |     |
+|   HoneyDew                   #F0FFF0 rgb(240,255,240)          |     |
+|                                                                |     |
+|   HotPink                    #FF69B4 rgb(255,105,180)          |     |
+|                                                                |     |
+|   IndianRed                  #CD5C5C rgb(205,92,92)            |     |
+|                                                                |     |
+|   Indigo                     #4B0082 rgb(75,0,130)             |     |
+|                                                                |     |
+|   Ivory                      #FFFFF0 rgb(255,255,240)          |     |
+|                                                                |     |
+|   Khaki                      #F0E68C rgb(240,230,140)          |     |
+|                                                                |     |
+|   Lavender                   #E6E6FA rgb(230,230,250)          |     |
+|                                                                |     |
+|   LavenderBlush              #FFF0F5 rgb(255,240,245)          |     |
+|                                                                |     |
+|   LawnGreen                  #7CFC00 rgb(124,252,0)            |     |
+|                                                                |     |
+|   LemonChiffon               #FFFACD rgb(255,250,205)          |     |
+|                                                                |     |
+|   LightBlue                  #ADD8E6 rgb(173,216,230)          |     |
+| | LightCoral #F08080       |                               |   |     |
+| | rgb(240,128,128)         |                               |   |     |
+| |                          |                               |   |     |
+| | LightCyan #E0FFFF        |                               |   |     |
+| | rgb(224,255,255)         |                               |   |     |
+| |                          |                               |   |     |
+| | LightGoldenRodYellow     |                               |   |     |
+| | #FAFAD2 rgb(250,250,210) |                               |   |     |
+| | LightGray                | #D3D3D3 rgb(211,211,211)      |   |     |
+| | LightGrey                | #D3D3D3 rgb(211,211,211)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightGreen               | #90EE90 rgb(144,238,144)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightPink                | #FFB6C1 rgb(255,182,193)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSalmon              | #FFA07A rgb(255,160,122)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSeaGreen            | #20B2AA rgb(32,178,170)       |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSkyBlue             | #87CEFA rgb(135,206,250)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSlateGray           | #778899 rgb(119,136,153)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSlateGrey           | #778899 rgb(119,136,153)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightSteelBlue           | #B0C4DE rgb(176,196,222)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LightYellow              | #FFFFE0 rgb(255,255,224)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | Lime                     | #00FF00 rgb(0,255,0)          |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | LimeGreen                | #32CD32 rgb(50,205,50)        |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | Linen                    | #FAF0E6 rgb(250,240,230)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | Magenta                  | #FF00FF rgb(255,0,255)        |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | Maroon                   | #800000 rgb(128,0,0)          |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumAquaMarine         | #66CDAA rgb(102,205,170)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumBlue               | #0000CD rgb(0,0,205)          |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumOrchid             | #BA55D3 rgb(186,85,211)       |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumPurple             | #9370DB rgb(147,112,219)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumSeaGreen           | #3CB371 rgb(60,179,113)       |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumSlateBlue          | #7B68EE rgb(123,104,238)      |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumSpringGreen        | #00FA9A rgb(0,250,154)        |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumTurquoise          | #48D1CC rgb(72,209,204)       |   |     |
+| |--------------------------|-------------------------------|   |     |
+| | MediumVioletRed          | #C71585 rgb(199,21,133)       |   |     |
+| -------------------------------------------------------------- |     |
+|   MidnightBlue               #191970            rgb(25,25,112) |     |
+|   ---                                                          |     |
+| ----------------------- ------------------ ------------------- |     |
+|                                                                |     |
+| MintCream                  #F5FFFA            rgb(245,255,250) |     |
+|                                                                |     |
+|                                                                |     |
+| MistyRose                  #FFE4E1            rgb(255,228,225) |     |
+|                                                                |     |
+|                                                                |     |
+| Moccasin                   #FFE4B5            rgb(255,228,181) |     |
+|                                                                |     |
+|                                                                |     |
+| NavajoWhite                #FFDEAD            rgb(255,222,173) |     |
+|                                                                |     |
+|   Navy                       #000080            rgb(0,0,128)   |     |
+|                                                                |     |
+|                                                                |     |
+| OldLace                    #FDF5E6            rgb(253,245,230) |     |
+|                                                                |     |
+|   Olive                      #808000            rgb(128,128,0) |     |
+|                                                                |     |
+|                                                                |     |
+|  OliveDrab                  #6B8E23            rgb(107,142,35) |     |
+|                                                                |     |
+|   Orange                     #FFA500            rgb(255,165,0) |     |
+|                                                                |     |
+|   OrangeRed                  #FF4500            rgb(255,69,0)  |     |
+|                                                                |     |
+|   Orchid                     #DA70D6                           |     |
+|                              rgb(218,112,214)                  |     |
+|                                                                |     |
+|   PaleGoldenRod              #EEE8AA                           |     |
+|                              rgb(238,232,170)                  |     |
+|                                                                |     |
+|   PaleGreen                  #98FB98                           |     |
+|                              rgb(152,251,152)                  |     |
+|                                                                |     |
+|   PaleTurquoise              #AFEEEE                           |     |
+|                              rgb(175,238,238)                  |     |
+|                                                                |     |
+|   PaleVioletRed              #DB7093                           |     |
+|                              rgb(219,112,147)                  |     |
+|                                                                |     |
+|   PapayaWhip                 #FFEFD5                           |     |
+|                              rgb(255,239,213)                  |     |
+|                                                                |     |
+|   PeachPuff                  #FFDAB9                           |     |
+|                              rgb(255,218,185)                  |     |
+|                                                                |     |
+|   Peru                       #CD853F                           |     |
+|                              rgb(205,133,63)                   |     |
+|                                                                |     |
+|   Pink                       #FFC0CB                           |     |
+|                              rgb(255,192,203)                  |     |
+|                                                                |     |
+|   Plum                       #DDA0DD                           |     |
+|                              rgb(221,160,221)                  |     |
+|                                                                |     |
+|   PowderBlue                 #B0E0E6                           |     |
+|                              rgb(176,224,230)                  |     |
+|                                                                |     |
+|   Purple                     #800080                           |     |
+|                              rgb(128,0,128)                    |     |
+|                                                                |     |
+|   RebeccaPurple              #663399                           |     |
+|                              rgb(102,51,153)                   |     |
+|                                                                |     |
+|   Red                        #FF0000                           |     |
+|                              rgb(255,0,0)                      |     |
+|                                                                |     |
+|   RosyBrown                  #BC8F8F                           |     |
+|                              rgb(188,143,143)                  |     |
+|                                                                |     |
+|   RoyalBlue                  #4169E1                           |     |
+|                              rgb(65,105,225)                   |     |
+|                                                                |     |
+|   SaddleBrown                #8B4513                           |     |
+|                              rgb(139,69,19)                    |     |
+|   ---                                                          |     |
+
+Salmon #FA8072 rgb(250,128,114)
+
+SandyBrown #F4A460 rgb(244,164,96)
+
+SeaGreen #2E8B57 rgb(46,139,87)
+
+SeaShell #FFF5EE rgb(255,245,238)
+
+Sienna #A0522D rgb(160,82,45)
+
+Silver #C0C0C0 rgb(192,192,192)
+
+SkyBlue #87CEEB rgb(135,206,235)
+
+SlateBlue #6A5ACD rgb(106,90,205)
+
+SlateGray #708090 rgb(112,128,144)
+
+SlateGrey #708090 rgb(112,128,144)
+
+Snow #FFFAFA rgb(255,250,250)
+
+SpringGreen #00FF7F rgb(0,255,127)
+
+SteelBlue #4682B4 rgb(70,130,180)
+
+Tan #D2B48C rgb(210,180,140)
+
+Teal #008080 rgb(0,128,128)
+
+Thistle #D8BFD8 rgb(216,191,216)
+
+Tomato #FF6347 rgb(255,99,71)
+
+Turquoise #40E0D0 rgb(64,224,208)
+
+Violet #EE82EE rgb(238,130,238)
+
+Wheat #F5DEB3 rgb(245,222,179)
+
+White #FFFFFF rgb(255,255,255)
+
+WhiteSmoke #F5F5F5 rgb(245,245,245)
+
+Yellow #FFFF00 rgb(255,255,0)
+
+YellowGreen #9ACD32 rgb(154,205,50)
+
+> In addition to the named colors, there is also the keyword
+> transparent, which represents a fully-transparent black:
+
+  -----------------------------------------------------------------------
+  rgba
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> (0,0,0,0)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.3: Hexadecimal Value
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **Background**
+>
+> CSS colors may also be represented as a hex triplet, where the members
+> represent the red, green and blue components of a color. Each of these
+> values represents a number in the range of 00 to FF, or 0 to 255 in
+> decimal notation. Uppercase and/or lowercase Hexadecimal values may be
+> used (i.e. #3fc = #3FC = #33ffCC). The browser interprets #369 as
+> #336699. If that is not what you intended but rather wanted #306090,
+> you need to specify that explicitly.
+>
+> The total number of colors that can be represented with hex notation
+> is 256 &Hat; 3 or 16,777,216.
+>
+> **Syntax**
+
+**color**
+
+:
+
+#rrggbb
+
+;
+
+**color**
+
+:
+
+&num;
+
+rgb
+
+**Value Description**
+
+rr 00 - FF for the amount of red
+
+gg
+
+00
+
+&minus;
+
+FF
+
+for the amount of green
+
+bb
+
+00
+
+&minus;
+
+FF
+
+for the amount of blue
+
+.some-class
+
+{
+
+*/&ast; This is equivalent to using the color keyword &apos;blue&apos; &ast;/*
+
+**color**
+
+:
+
+#0000FF
+
+;
+
+}
+
+.also-blue
+
+{
+
+*/&ast; If you want to specify each range value with a single number, you
+can!*
+
+*This is equivalent to &apos;#0000FF&apos; (and &apos;blue&apos;) &ast;/*
+
+**color**
+
+:
+
+#00F
+
+;
+
+}
+
+> &lbrack;&lbrack;Hexadecimal
+> notation&rbrack;&rbrack;(https://en.wikipedia.org/wiki/Hexadecimal) is
+> used to specify color values in the RGB color format, per the &lbrack;&lbrack;W3C&apos;s
+> &apos;Numerical color&rbrack;
+> &lbrack;values&apos;&rbrack;&rbrack;(https://www.w3.org/TR/css3-color/#numerical).
+>
+> There are a lot of tools available on the Internet for looking up
+> hexadecimal (or simply hex) color values.
+>
+> Search for &quot;**hex color palette**&quot; or &quot;**hex color picker**&quot; with
+> your favorite web browser to find a bunch of options!
+>
+> Hex values always start with a pound sign (#), are up to six
+> &quot;digits&quot; long, and are case-insensitive: that is, they don&apos;t care
+> about capitalization. #FFC125 and #ffc125 are the same color.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.4: rgb() Notation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> RGB is an additive color model which represents colors as mixtures of
+> red, green, and blue light. In essence, the RGB representation is the
+> decimal equivalent of the Hexadecimal Notation. In Hexadecimal each
+> number ranges from 00-FF which is equivalent to 0-255 in decimal and
+> 0%-100% in percentages.
+
+.some-class
+
+{
+
+*/&ast; Scalar RGB, equivalent to &apos;blue&apos;&ast;/*
+
+**color**
+
+:
+
+rgb
+
+(
+
+0
+
+,
+
+0
+
+,
+
+255
+
+)
+
+;
+
+}
+
+.also-blue
+
+{
+
+*/&ast; Percentile RGB values&ast;/*
+
+**color**
+
+:
+
+rgb
+
+(
+
+0
+
+&percnt;
+
+,
+
+0
+
+&percnt;
+
+,
+
+100
+
+&percnt;
+
+)
+
+;
+
+}
+
+> **Syntax**
+
+rgb
+
+(
+
+&lt;
+
+red
+
+&gt;
+
+,
+
+&lt;green
+
+&gt;
+
+,
+
+&lt;blue
+
+&gt;
+
+)
+
+**Value Description**
+
+  -----------------------------------------------------------------------
+  **&lt;red**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** an integer from 0 - 255 or percentage from 0 - 100%
+
+  -----------------------------------------------------------------------
+  **&lt;green**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **&lt;blue**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** an integer from 0 - 255 or percentage from 0 - 100% **&gt;** an
+> integer from 0 - 255 or percentage from 0 - 100%
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.5: rgba() Notation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Similar to rgb() notation, but with an additional alpha (opacity)
+> value.
+
+.red
+
+{
+
+*/&ast; Opaque red &ast;/*
+
+**color**
+
+:
+
+rgba
+
+(
+
+255
+
+,
+
+0
+
+,
+
+0
+
+,
+
+1
+
+)
+
+;
+
+}
+
+.red-50p
+
+{
+
+*/&ast; Half-translucent red. &ast;/*
+
+**color**
+
+:
+
+rgba
+
+(
+
+255
+
+,
+
+0
+
+,
+
+0
+
+,
+
+.5
+
+)
+
+;
+
+}
+
+> **Syntax**
+
+rgba
+
+(
+
+&lt;
+
+red
+
+&gt;
+
+,
+
+&lt;green
+
+&gt;
+
+,
+
+&lt;blue
+
+&gt;
+
+,
+
+&lt;alpha
+
+&gt;
+
+)
+
+;
+
+**Value Description**
+
+  -----------------------------------------------------------------------
+  **&lt;red**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** an integer from 0 - 255 or percentage from 0 - 100%
+
+  -----------------------------------------------------------------------
+  **&lt;green**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** an integer from 0 - 255 or percentage from 0 - 100%
+
+  -----------------------------------------------------------------------
+  **&lt;blue**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** an integer from 0 - 255 or percentage from 0 - 100%
+
+  -----------------------------------------------------------------------
+  **&lt;alpha**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** a number from 0 - 1, where 0.0 is fully transparent and 1.0 is
+> fully opaque
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.6: hsl() Notation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> HSL stands for **hue** (&quot;which color&quot;), **saturation** (&quot;how much
+> color&quot;) and **lightness** (&quot;how much white&quot;).
+>
+> Hue is represented as an angle from 0° to 360° (without units), while
+> saturation and lightness are represented as percentages.
+
+p
+
+{
+
+**color**
+
+:
+
+hsl
+
+(
+
+240
+
+,
+
+100
+
+&percnt;
+
+,
+
+50
+
+&percnt;
+
+)
+
+;
+
+*/&ast; Blue &ast;/*
+
+}
+
+!&lbrack;&rbrack;(./images/image189.jpg){width="7.48037510936133in"
+height="5.610277777777778in"}
+
+> **Syntax**
+
+**color**
+
+:
+
+hsl
+
+(
+
+&lt;
+
+hue
+
+&gt;
+
+,
+
+&lt;saturation
+
+&gt;
+
+&percnt;
+
+,
+
+&lt;lightness
+
+&gt;
+
+&percnt;
+
+)
+
+;
+
+**Value Description**
+
+  -----------------------------------------------------------------------
+  **&lt;hue**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> specified in degrees around the color wheel (without units), where 0°
+> is red, 60° is yellow, 120° is
+
+  -----------------------------------------------------------------------
+  **&lt;saturation**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** green, 180° is cyan, 240° is blue, 300° is magenta, and 360° is
+> red specified in percentage where 0% is fully desaturated (grayscale)
+> and 100% is fully saturated (vividly **&gt;** colored)
+
+  -----------------------------------------------------------------------
+  **&lt;lightness**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** specified in percentage where 0% is fully black and 100% is
+> fully white
+>
+> **Notes**
+>
+> A saturation of 0% always produces a grayscale color; changing the hue
+> has no effect.
+>
+> A lightness of 0% always produces black, and 100% always produces
+> white; changing the hue or saturation has no effect.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 18.7: hsla() Notation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Similar to hsl() notation, but with an added alpha (opacity) value.
+>
+> hsla(240, 100%, 50%, 0) */&ast; transparent &ast;/* hsla(240, 100%, 50%,
+> 0.5) */&ast; half-translucent blue &ast;/* hsla(240, 100%, 50%, 1) */&ast;
+> fully opaque blue &ast;/*
+>
+> **Syntax**
+
+hsla
+
+(
+
+&lt;
+
+hue
+
+&gt;
+
+,
+
+&lt;saturation
+
+&gt;
+
+&percnt;
+
+,
+
+&lt;lightness
+
+&gt;
+
+&percnt;
+
+,
+
+&lt;alpha
+
+&gt;
+
+)
+
+;
+
+**Value Description**
+
+  -----------------------------------------------------------------------
+  **&lt;hue**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> specified in degrees around the color wheel (without units), where 0°
+> is red, 60° is yellow, 120° is
+>
+> **&gt;** green, 180° is cyan, 240° is blue, 300° is magenta, and 360° is
+> red
+
+  -----------------------------------------------------------------------
+  **&lt;saturation**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **&lt;lightness**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **&gt;** percentage where 0% is fully desaturated (grayscale) and 100%
+> is fully saturated (vividly colored) **&gt;** percentage where 0% is
+> fully black and 100% is fully white
+
+  -----------------------------------------------------------------------
+  **&lt;alpha**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+**&gt;** a number from 0 - 1 where 0 is fully transparent and 1 is fully
+opaque
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+# Chapter 19: Opacity
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 19.1: Opacity Property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> An element&apos;s opacity can be set using the opacity property. Values
+> can be anywhere from 0.0 (transparent) to 1.0 (opaque).
+>
+> **Example Usage**
+
+**&lt;**
+
+**div**
+
+style
+
+=
+
+&quot;opacity:0.8;&quot;
+
+**&gt;**
+
+This is a partially transparent element
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**Property Value Transparency**
+
+  -----------------------------------------------------------------------
+  **opacity**: 1.0;
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Opaque
+
+  -----------------------------------------------------------------------
+  **opacity**: 0.75;
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> 25% transparent (75% Opaque)
+
+  -----------------------------------------------------------------------
+  **opacity**: 0.5;
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> 50% transparent (50% Opaque)
+
+  -----------------------------------------------------------------------
+  **opacity**: 0.25;
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **opacity**: 0.0;
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> 75% transparent (25% Opaque) Transparent
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 19.2: IE Compatibility for &apos;opacity&apos;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+To use
+
+opacity
+
+in all versions of IE, the order is:
+
+.transparent-element
+
+{
+
+*/&ast; for IE 8 & 9 &ast;/*
+
+-ms-filter
+
+:
+
+&quot;progid:DXImageTransform.Microsoft.Alpha(Opacity=60)&quot;
+
+;
+
+// IE8
+
+*/&ast; works in IE 8 & 9 too, but also 5, 6, 7 &ast;/*
+
+**filter**
+
+:
+
+alpha
+
+(
+
+opacity
+
+=
+
+60
+
+)
+
+;
+
+// IE
+
+5
+
+&minus;
+
+7
+
+*/&ast; Modern Browsers &ast;/*
+
+**opacity**
+
+:
+
+0.6
+
+;
+
+}
+
+# Chapter 20: Length Units
+
+**Unit Description**
+
+> &percnt; Define sizes in terms of parent objects or current object dependent
+> on property em Relative to the font-size of the element (2em means 2
+> times the size of the current font) rem Relative to font-size of the
+> root element vw Relative to 1% of the width of the viewport&ast; vh
+> Relative to 1% of the height of the viewport&ast; vmin Relative to 1% of
+> viewport&apos;s&ast; smaller dimension vmax Relative to 1% of viewport&apos;s&ast;
+> larger dimension cm centimeters mm millimeters in inches (1in = 96px =
+> 2.54cm) px pixels (1px = 1/96th of 1in) pt points (1pt = 1/72 of 1in)
+> pc picas (1pc = 12 pt) s seconds (used for animations and transitions)
+> ms milliseconds (used for animations and transitions) ex Relative to
+> the x-height of the current font ch Based on the width of the zero (0)
+> character fr fractional unit (used for CSS Grid Layout)
+>
+> A CSS distance measurement is a number immediately followed by a
+> length unit (px, em, pc, in, ...)
+>
+> CSS supports a number of length measurements units. They are absolute
+> or relative.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 20.1: Creating scalable elements using rems and ems
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+Version ≥ 3
+
+> You can use rem defined by the font-size of your html tag to style
+> elements by setting their font-size to a value of rem and use em
+> inside the element to create elements that scale with your global
+> font-size.
+>
+> **HTML:**
+
+**&lt;**
+
+**input**
+
+type
+
+=
+
+&quot;button&quot;
+
+value
+
+=
+
+&quot;Button&quot;
+
+**&gt;**
+
+**&lt;**
+
+**input**
+
+type
+
+=
+
+&quot;range&quot;
+
+**&gt;**
+
+**&lt;**
+
+**input**
+
+type
+
+=
+
+&quot;text&quot;
+
+value
+
+=
+
+&quot;Text&quot;
+
+**&gt;**
+
+> **Relevant CSS:**
+
+html
+
+{
+
+**font-size**
+
+:
+
+16
+
+px
+
+;
+
+}
+
+input
+
+&lbrack;
+
+type
+
+=
+
+&quot;button&quot;
+
+&rbrack;
+
+{
+
+**font-size**
+
+:
+
+1
+
+rem
+
+;
+
+**padding**
+
+:
+
+0.5
+
+em
+
+2
+
+em
+
+;
+
+}
+
+input
+
+&lbrack;
+
+type
+
+=
+
+&quot;range&quot;
+
+&rbrack;
+
+{
+
+**font-size**
+
+:
+
+1
+
+rem
+
+;
+
+**width**
+
+:
+
+10
+
+em
+
+;
+
+}
+
+input
+
+&lbrack;
+
+type
+
+=
+
+text
+
+&rbrack;
+
+{
+
+**font-size**
+
+:
+
+1
+
+rem
+
+;
+
+**padding**
+
+:
+
+0.5
+
+em
+
+;
+
+}
+
+> **Possible Result:**
+
+!&lbrack;&rbrack;(./images/image190.jpg){width="6.34375in"
+height="2.9583333333333335in"}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 20.2: Font size with rem
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> CSS3 introduces a few new units, including the
+> &lbrack;&lbrack;rem&rbrack;&rbrack;(https://www.w3.org/TR/css-values/#font-relative-lengths)
+> unit, which stands for &quot;root em&quot;. Let&apos;s look at how rem works.
+>
+> First, let&apos;s look at the differences between em and rem.
+
+  -----------------------------------------------------------------------
+  **&lt;html**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> **em**: Relative to the font size of the parent. This causes the
+> compounding issue **rem**: Relative to the font size of the root or
+> **&gt;** element. This means it&apos;s possible to declare a single font
+> size for the html element and define all rem units to be a percentage
+> of that.
+>
+> The main issue with using rem for font sizing is that the values are
+> somewhat difficult to use. Here is an example of some common font
+> sizes expressed in rem units, assuming that the base size is 16px :
+>
+> 10px = 0.625rem 12px = 0.75rem
+>
+> 14px = 0.875rem
+>
+> 16px = 1rem (base)
+>
+> 18px = 1.125rem
+>
+> 20px = 1.25rem
+>
+> 24px = 1.5rem
+>
+> 30px = 1.875rem
+>
+> 32px = 2rem
+>
+> **CODE:**
+
+Version ≥ 3 html {
+
+**font-size**
+
+:
+
+16
+
+px
+
+;
+
+}
+
+h1
+
+{
+
+**font-size**
+
+:
+
+2
+
+rem
+
+;
+
+*/&ast; 32px &ast;/*
+
+}
+
+p
+
+{
+
+**font-size**
+
+:
+
+1
+
+rem
+
+;
+
+*/&ast; 16px &ast;/*
+
+}
+
+li
+
+{
+
+**font-size**
+
+:
+
+1.5
+
+em
+
+;
+
+*/&ast; 24px &ast;/*
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 20.3: vmin and vmax
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **vmin**: Relative to 1 percent of the viewport&apos;s smaller dimension
+> **vmax**: Relative to 1 percent of the viewport&apos;s larger dimension
+>
+> In other words, 1 vmin is equal to the smaller of *1 vh* and *1 vw*
+>
+> 1 vmax is equal to the larger of *1 vh* and *1 vw*
+
+**Note**: vmax is &lbrack;&lbrack;not
+supported&rbrack;&rbrack;(http://caniuse.com/#feat=viewport-units) in:
+
+> any version of Internet Explorer Safari before version 6.1
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 20.4: vh and vw
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+CSS3 introduced two units for representing size.
+
+vh
+
+, which stands for
+
+viewport height
+
+is relative to 1% of the viewport height
+
+vw
+
+, which stands for
+
+viewport width
+
+is relative to 1% of the viewport width
+
+Version
+
+≥
+
+3
+
+div
+
+{
+
+**width**
+
+:
+
+20
+
+vw
+
+;
+
+**height**
+
+:
+
+20
+
+vh
+
+;
+
+}
+
+> Above, the size for the div takes up 20% of the width and height of
+> the viewport
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 20.5: using percent %
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> One of the useful unit when creating a responsive application.
+>
+> Its size depends on its parent container.
+>
+> **Equation:**
+
+( Parent Container&apos;s width ) &ast; ( Percentage(%) ) = Output
+
+> **For Example:**
+>
+> *Parent* has **100px** width while the *Child* has **50%**.
+>
+> **On the output**, the *Child*&apos;s width will be half(50%) of the
+> *Parent*&apos;s, which is **50px**.
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;parent&quot;
+
+**&gt;**
+
+PARENT
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;child&quot;
+
+**&gt;**
+
+CHILD
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+&ast;
+
+{
+
+color: #CCC;
+
+}
+
+.parent
+
+{
+
+background-color: blue;
+
+width: 100px;
+
+}
+
+.child
+
+{
+
+background-color: green;
+
+width: 50%;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+> **OUTPUT**
+
+!&lbrack;&rbrack;(./images/image191.jpg){width="1.40625in" height="0.875in"}
+
+# Chapter 21: Pseudo-Elements
+
+  -------------------------------------------------------------------------
+  **pseudo-element**   **Description**
+  -------------------- ----------------------------------------------------
+
+  -------------------------------------------------------------------------
+
+::after Insert content after the content of an element
+
+::before Insert content before the content of an element
+
+> ::first-letter Selects the first letter of each element
+
+::first-line Selects the first line of each element
+
+::selection Matches the portion of an element that is selected by a user
+
+> Used to create a backdrop that hides the underlying document for an
+> element in the top layer&apos;s ::backdrop stack
+
+::placeholder Allows you to style the placeholder text of a form element
+(Experimental)
+
+::marker For applying list-style attributes on a given element
+(Experimental)
+
+  -----------------------------------------------------------------------
+  ::spelling-error
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Represents a text segment which the browser has flagged as incorrectly
+> spelled (Experimental)
+
+  -----------------------------------------------------------------------
+  ::grammar-error
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Represents a text segment which the browser has flagged as
+> grammatically incorrect (Experimental)
+>
+> Pseudo-elements, just like pseudo-classes, are added to a CSS
+> selectors but instead of describing a special state, they allow you to
+> scope and style certain parts of an html element.
+>
+> For example, the ::first-letter pseudo-element targets only the first
+> letter of a block element specified by the selector.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 21.1: Pseudo-Elements
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Pseudo-elements are added to selectors but instead of describing a
+> special state, they allow you to style certain parts of a document.
+>
+> The content attribute is required for pseudo-elements to render;
+> however, the attribute can have an empty value
+
+  ------------------------------------------------------------------------
+  **content**                                   :      &quot;&quot;
+  --------------------------------------------- ------ -------------------
+
+  ------------------------------------------------------------------------
+
+> (e.g. ).
+
+div
+
+::
+
+after
+
+{
+
+**content**
+
+:
+
+&apos;after&apos;
+
+;
+
+**color**
+
+:
+
+red
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+red
+
+;
+
+}
+
+div
+
+{
+
+**color**
+
+:
+
+black
+
+;
+
+**border**
+
+:
+
+px
+
+1
+
+solid
+
+black
+
+;
+
+**padding**
+
+:
+
+1
+
+px
+
+;
+
+}
+
+div
+
+::
+
+before
+
+{
+
+**content**
+
+:
+
+&apos;before&apos;
+
+;
+
+**color**
+
+:
+
+green
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+green
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 21.2: Pseudo-Elements in Lists
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Pseudo-elements are often used to change the look of lists (mostly for
+> unordered lists, ul).
+>
+> The first step is to remove the default list bullets:
+
+ul
+
+{
+
+**list-style-type**
+
+:
+
+none
+
+;
+
+}
+
+> Then you add the custom styling. In this example, we will create
+> gradient boxes for bullets.
+
+li
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**margin-right**
+
+:
+
+10
+
+px
+
+;
+
+**height**
+
+:
+
+10
+
+px
+
+;
+
+**width**
+
+:
+
+10
+
+px
+
+;
+
+**background**
+
+:
+
+linear-gradient
+
+(
+
+red
+
+,
+
+blue
+
+)
+
+;
+
+}
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Test I
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Test II
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image193.jpg){width="2.4479166666666665in"
+height="1.3125in"}
+
+# Chapter 22: Positioning
+
+**Parameter Details**
+
+> Default value. Elements render in order, as they appear in the
+> document flow. The top, right, bottom, static left and z-index
+> properties do not apply.
+
+  -----------------------------------------------------------------------
+  **left**                        :       20px
+  ------------------------------- ------- -------------------------------
+
+  -----------------------------------------------------------------------
+
+  -------------------------------------------------------------------------
+  relative   LEFT position
+  ---------- --------------------------------------------------------------
+  fixed      The element is positioned relative to the browser window
+
+  absolute   The element is positioned relative to its first positioned
+             (not static) ancestor element
+
+  initial    Sets this property to its default value.
+
+  inherit    Inherits this property from its parent element.
+  -------------------------------------------------------------------------
+
+> The element is positioned relative to its normal position, so adds 20
+> pixels to the element&apos;s
+
+  ------------------------------------------------------------------------
+  **position**                        :    static
+  ----------------------------------- ---- -------------------------------
+
+  ------------------------------------------------------------------------
+
+> Experimental feature. It behaves like within its parent until a given
+> offset threshold sticky
+
+  -----------------------------------------------------------------------
+  **position**                          :    fixed
+  ------------------------------------- ---- ----------------------------
+
+  -----------------------------------------------------------------------
+
+> is reached, then it acts as .
+
+unset Combination of initial and inherit. More info
+&lbrack;&lbrack;here&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/unset).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 22.1: Overlapping Elements with z-index
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> To change the default &lbrack;&lbrack;stack
+> order&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+> positioned elements (position property set to relative, absolute or
+> fixed), use the z-index property.
+>
+> The higher the z-index, the higher up in the stacking context (on the
+> z-axis) it is placed.
+>
+> **Example**
+>
+> In the example below, a z-index value of 3 puts green on top, a
+> z-index of 2 puts red just under it, and a z-index of 1 puts blue
+> under that.
+>
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div1&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div3&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+div
+
+#div1
+
+{
+
+**z-index**
+
+:
+
+1
+
+;
+
+**left**
+
+:
+
+0
+
+px
+
+;
+
+**top**
+
+:
+
+0
+
+px
+
+;
+
+**background-color**
+
+:
+
+blue
+
+;
+
+}
+
+div
+
+#div2
+
+{
+
+**z-index**
+
+:
+
+3
+
+;
+
+**left**
+
+:
+
+100
+
+px
+
+;
+
+**top**
+
+:
+
+100
+
+px
+
+;
+
+**background-color**
+
+:
+
+green
+
+;
+
+}
+
+div
+
+#div3
+
+{
+
+**z-index**
+
+:
+
+2
+
+;
+
+**left**
+
+:
+
+50
+
+px
+
+;
+
+**top**
+
+:
+
+150
+
+px
+
+;
+
+**background-color**
+
+:
+
+red
+
+;
+
+}
+
+> This creates the following effect:
+
+!&lbrack;&rbrack;(./images/image194.jpg){width="3.6458333333333335in"
+height="3.8645833333333335in"}
+
+> See a working example at
+> &lbrack;&lbrack;JSFiddle&rbrack;&rbrack;(https://jsfiddle.net/esnc10tq/).
+>
+> **Syntax**
+
+**z-index**
+
+:
+
+&lbrack;
+
+number
+
+&rbrack;
+
+&vertbar;
+
+auto
+
+;
+
+**Parameter Details**
+
+> An integer value. A higher number is higher on the z-index stack. 0 is
+> the default value. Negative
+>
+> number values are allowed.
+
+auto Gives the element the same stacking context as its parent.
+(**Default**)
+
+> **Remarks**
+>
+> All elements are laid out in a 3D axis in CSS, including a depth axis,
+> measured by the z-index property. z-index only works on positioned
+> elements: (see: &lbrack;&lbrack;Why does z-index need a defined position to
+> work?&rbrack;&rbrack;(https://www.sitepoint.com/community/t/why-does-z-index-need-a-defined-position-to-work/46115)).
+> The only value where it is ignored is the default value, static.
+>
+> Read about the z-index property and Stacking Contexts in the &lbrack;&lbrack;CSS
+> Specification&rbrack;&rbrack;(https://drafts.csswg.org/css-position/#layered-presentation)
+> on layered presentation and at the &lbrack;&lbrack;Mozilla Developer
+> Network&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/z-index).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 22.2: Absolute Position
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> When absolute positioning is used the box of the desired element is
+> taken out of the *Normal Flow* and it no longer affects the position
+> of the other elements on the page. Offset properties:
+
+1.  top
+
+2.  left
+
+3.  right
+
+4.  bottom
+
+> specify the element should appear in relation to its next non-static
+> containing element.
+
+.abspos
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+0
+
+px
+
+;
+
+**left**
+
+:
+
+500
+
+px
+
+;
+
+}
+
+  ------------------------------------------------------------------------
+  class                     =     &quot;abspos&quot;
+  ------------------------- ----- ----------------------------------------
+
+  ------------------------------------------------------------------------
+
+> This code will move the box containing element with attribute down 0px
+> and right 500px relative to its containing element.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 22.3: Fixed position
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Defining position as fixed we can remove an element from the document
+> flow and set its position relatively to the browser window. One
+> obvious use is when we want something to be visible when we scroll to
+> the bottom of a long page.
+
+#stickyDiv
+
+{
+
+**position**
+
+:
+
+fixed
+
+;
+
+**top**
+
+:
+
+10
+
+px
+
+;
+
+**left**
+
+:
+
+10
+
+px
+
+;
+
+}
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 22.4: Relative Position
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Relative positioning moves the element in relation to where it would
+> have been in *normal flow* .Offset properties:
+
+1.  top
+
+2.  left
+
+3.  right
+
+4.  bottom
+
+> are used to indicate how far to move the element from where it would
+> have been in normal flow.
+
+.relpos
+
+{
+
+**position**
+
+:
+
+relative
+
+;
+
+**top**
+
+:
+
+20
+
+px
+
+;
+
+**left**
+
+:
+
+30
+
+px
+
+;
+
+}
+
+> This code will move the box containing element with attribute
+> class=&quot;relpos&quot; 20px down and 30px to the right from where it would
+> have been in normal flow.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 22.5: Static positioning
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The default position of an element is static. To quote
+> &lbrack;&lbrack;MDN&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/position#values):
+
+This keyword lets the element use the normal behavior, that is it is
+laid out in its current position in the
+
+flow. The top, right, bottom, left and z-index properties do not apply.
+
+.element
+
+{
+
+**position**
+
+:
+
+static
+
+;
+
+}
+
+# Chapter 23: Layout Control
+
+**Value Effect**
+
+> none Hide the element and prevent it from occupying space.
+>
+> block Block element, occupy 100% of the available width, break after
+> element.
+>
+> inline Inline element, occupy no width, no break after element.
+>
+> inline-block Taking special properties from both inline and block
+> elements, no break, but can have width. inline-flex Displays an
+> element as an inline-level flex container.
+>
+> inline-table The element is displayed as an inline-level table. grid
+> Behaves like a block element and lays out its content according to the
+> grid model.
+>
+> flex Behaves like a block element and lays out its content according
+> to the flexbox model.
+>
+> inherit Inherit the value from the parent element.
+>
+> Reset the value to the default value taken from behaviors described in
+> the HTML specifications or initial from the browser/user default
+> stylesheet.
+>
+> table Behaves like the HTML table element.
+
+  -----------------------------------------------------------------------
+  **&lt;td**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> table-cell Let the element behave like a **&gt;** element
+
+  -----------------------------------------------------------------------
+  **&lt;col**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **&lt;tr**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **&lt;li**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> table-column Let the element behave like a **&gt;** element table-row
+> Let the element behave like a **&gt;** element list-item Let the element
+> behave like a **&gt;** element.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 23.1: The display property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The display CSS property is fundamental for controlling the layout and
+> flow of an HTML document. Most elements have a default display value
+> of either block or inline (though some elements have other default
+> values).
+>
+> **Inline**
+>
+> An inline element occupies only as much width as necessary. It stacks
+> horizontally with other elements of the same type and may not contain
+> other non-inline elements.
+
+**&lt;**
+
+**span**
+
+**&gt;**
+
+This is some
+
+**&lt;**
+
+**b**
+
+**&gt;**
+
+bolded
+
+**&lt;**
+
+**/b**
+
+**&gt;**
+
+text!
+
+**&lt;**
+
+**/span**
+
+**&gt;**
+
+  -----------------------------------------------------------------------
+  **&lt;span**                   **&gt;** and                     **&lt;b**
+  ---------------------------- ------------------------------ -----------
+
+  -----------------------------------------------------------------------
+
+> As demonstrated above, two inline elements, **&gt;**, are in-line (hence
+> the name) and do not break the flow of the text.
+>
+> **Block**
+>
+> A block element occupies the maximum available width of its&apos; parent
+> element. It starts with a new line and, in contrast to inline
+> elements, it does not restrict the type of elements it may contain.
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+Hello world!
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+This is an example!
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> The div element is block-level by default, and as shown above, the two
+> block elements are vertically stacked and, unlike the inline elements,
+> the flow of the text breaks.
+>
+> **Inline Block**
+>
+> The inline-block value gives us the best of both worlds: it blends the
+> element in with the flow of the text while allowing us to use padding,
+> margin, height and similar properties which have no visible effect on
+> inline elements.
+>
+> Elements with this display value act as if they were regular text and
+> as a result are affected by rules controlling the flow of text such as
+> text-align. By default they are also shrunk to the the smallest size
+> possible to accommodate their content.
+
+*&lt;!&minus;-*
+
+*Inline: unordered list*
+
+*&minus;-&gt;*
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+li {
+
+display : inline;
+
+background : lightblue;
+
+padding:10px;
+
+border-width:2px;
+
+border-color:black;
+
+border-style:solid;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+First Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Second Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Third Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+&lt;!&minus;-
+
+block: unordered list
+
+&minus;-
+
+**&gt;**
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+li
+
+{
+
+display : block;
+
+background : lightblue;
+
+padding:10px;
+
+border-width:2px;
+
+border-color:black;
+
+border-style:solid;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+**ul**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+First Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Second Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Third Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+&lt;!&minus;-
+
+Inline-block: unordered list
+
+&minus;-
+
+**&gt;**
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+li
+
+{
+
+display : inline-block;
+
+background : lightblue;
+
+padding:10px;
+
+border-width:2px;
+
+border-color:black;
+
+border-style:solid;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+**ul**
+
+**&lt;**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+First Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Second Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Third Element
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+> **none**
+>
+> An element that is given the none value to its display property will
+> not be displayed at all.
+>
+> For example let&apos;s create a div-element that has an id of myDiv:
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;myDiv&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> This can now be marked as not being displayed by the following CSS
+> rule:
+
+#myDiv
+
+{
+
+**display**
+
+:
+
+none
+
+;
+
+}
+
+  -----------------------------------------------------------------------
+  **display**                               :     none
+  ----------------------------------------- ----- -----------------------
+
+  -----------------------------------------------------------------------
+
+> When an element has been set to be ; the browser ignores every other
+> layout property for that specific element (both position and float).
+> No box will be rendered for that element and its existence in html
+> does not affect the position of following elements.
+
+  -----------------------------------------------------------------------
+  **visibility**                          :   hidden
+  --------------------------------------- --- ---------------------------
+
+  -----------------------------------------------------------------------
+
+> Note that this is different from setting the visibility property to
+> hidden. Setting ; for an element would not display the element on the
+> page but the element would still take up the space in the rendering
+> process as if it would be visible. This will therefore affect how
+> following elements are displayed on the page.
+>
+> The none value for the display property is commonly used along with
+> JavaScript to show or hide elements at will, eliminating the need to
+> actually delete and re-create them.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 23.2: To get old table structure using div
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> This is the normal HTML table structure
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+table {
+
+width: 100%;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+**&lt;**
+
+**table**
+
+**&gt;**
+
+**&lt;**
+
+**tr**
+
+**&gt;**
+
+**&lt;**
+
+**td**
+
+**&gt;**
+
+I&apos;m a table
+
+**&lt;**
+
+**/td**
+
+**&gt;**
+
+**&lt;**
+
+**/tr**
+
+**&gt;**
+
+**&lt;**
+
+**/table**
+
+**&gt;**
+
+> You can do same implementation like this
+
+**&lt;**
+
+**style**
+
+**&gt;**
+
+.table-div
+
+{
+
+display: table;
+
+}
+
+.table-row-div
+
+{
+
+display: table-row;
+
+}
+
+.table-cell-div
+
+{
+
+display: table-cell;
+
+}
+
+**&lt;**
+
+**/style**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;table-div&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;table-row-div&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;table-cell-div&quot;
+
+**&gt;**
+
+I behave like a table now
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+# Chapter 24: Grid
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Grid layout is a new and powerful CSS layout system that allows to
+> divide a web page content into rows and columns in an easy way.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 24.1: Basic Example
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> **Property Possible Values** display grid / inline-grid
+>
+> The CSS Grid is defined as a display property. It applies to a parent
+> element and its immediate children only.
+>
+> Consider the following markup:
+
+**&lt;**
+
+**section**
+
+class
+
+=
+
+&quot;container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;item1&quot;
+
+**&gt;**
+
+item1
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;item2&quot;
+
+**&gt;**
+
+item2
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;item3&quot;
+
+**&gt;**
+
+item3
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;item4&quot;
+
+**&gt;**
+
+item4
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/section**
+
+**&gt;**
+
+> The easiest way to define the markup structure above as a grid is to
+> simply set its display property to grid:
+
+.container
+
+{
+
+**display**
+
+:
+
+grid
+
+;
+
+}
+
+> However, doing this will invariably cause all the child elements to
+> collapse on top of one another. This is because the children do not
+> currently know how to position themselves within the grid. But we can
+> explicitly tell them.
+>
+> First we need to tell the grid element .container how many rows and
+> columns will make up its structure and we can do this using the
+> grid-columns and grid-rows properties (note the pluralisation):
+
+.container
+
+{
+
+**display**
+
+:
+
+grid
+
+;
+
+**grid-columns**
+
+:
+
+50
+
+px
+
+50
+
+px
+
+50
+
+px
+
+;
+
+**grid-rows**
+
+:
+
+50
+
+px
+
+50
+
+px
+
+;
+
+}
+
+> However, that still doesn&apos;t help us much because we need to give an
+> order to each child element. We can do this by specifying the grid-row
+> and grid-column values which will tell it where it sits in the grid:
+
+.container
+
+.item1
+
+{
+
+**grid-column**
+
+:
+
+1
+
+;
+
+**grid-row**
+
+:
+
+1
+
+;
+
+}
+
+.container
+
+.item2
+
+{
+
+**grid-column**
+
+:
+
+2
+
+;
+
+**grid-row**
+
+:
+
+1
+
+;
+
+}
+
+.container
+
+.item3
+
+{
+
+**grid-column**
+
+:
+
+1
+
+;
+
+**grid-row**
+
+:
+
+2
+
+;
+
+}
+
+.container
+
+.item4
+
+{
+
+**grid-column**
+
+:
+
+2
+
+;
+
+**grid-row**
+
+:
+
+2
+
+;
+
+}
+
+> By giving each item a column and row value it identifies the items
+> order within the container.
+>
+> View a working example on
+> &lbrack;&lbrack;JSFiddle&rbrack;&rbrack;(https://jsfiddle.net/fexfwkkv/3/). You&apos;ll
+> need to view this in IE10, IE11 or Edge for it to work as these are
+> currently the only browsers supporting Grid Layout (with vendor prefix
+> -ms-) or enable a flag in Chrome, Opera and Firefox according to
+> &lbrack;&lbrack;caniuse&rbrack;&rbrack;(http://caniuse.com/#feat=css-grid) in order to
+> test with them.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+# Chapter 25: Tables
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 25.1: table-layout
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The table-layout property changes the algorithm that is used for the
+> layout of a table.
+
+  -----------------------------------------------------------------------
+  **width**                     :     150px
+  ----------------------------- ----- -----------------------------------
+
+  -----------------------------------------------------------------------
+
+> Below an example of two tables both set to :
+
+!&lbrack;&rbrack;(./images/image200.jpg){width="4.625in" height="1.125in"}
+
+  ------------------------------------------------------------------------------------------
+  **table-layout**   :   auto   while the one on the right    **table-layout**   :   fixed
+                                has                                                  
+  ------------------ --- ------ ----------------------------- ------------------ --- -------
+
+  ------------------------------------------------------------------------------------------
+
+> The table on the left has . The former is
+>
+> wider than the specified width (210px instead of 150px) but the
+> contents fit. The latter takes the defined width of 150px, regardless
+> if the contents overflow or not.
+
+**Value Description**
+
+*auto* This is the default value. It defines the layout of the table to
+be determined by the contents of its&apos; cells.
+
+> This value sets the table layout to be determined by the width
+> property provided to the table. If the content
+>
+> fixed of a cell exceeds this width, the cell will not resize but
+> instead, let the content overflow.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 25.2: empty-cells
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The empty-cells property determines if cells with no content should be
+> displayed or not. This has no effect unless border-collapse is set to
+> separate.
+>
+> Below an example with two tables with different values set to the
+> empty-cells property:
+
+!&lbrack;&rbrack;(./images/image201.jpg){width="5.708333333333333in"
+height="0.8854166666666666in"}
+
+  -----------------------------------------------------------------------------------------
+  **empty-cells**   :   show   while the one on the right has  **empty-cells**   :   hide
+  ----------------- --- ------ ------------------------------- ----------------- --- ------
+
+  -----------------------------------------------------------------------------------------
+
+> The table on the left has . The former does display the empty cells
+> whereas the latter does not.
+
+**Value Description**
+
+> *show* This is the default value. It shows cells even if they are
+> empty. hide This value hides a cell altogether if there are no
+> contents in the cell.
+>
+> More Information:
+>
+> &lbrack;&lbrack;https://www.w3.org/TR/CSS21/tables.html#empty-cells&rbrack;&rbrack;(https://www.w3.org/TR/CSS21/tables.html#empty-cells)
+> &lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells)
+> &lbrack;&lbrack;http://codepen.io/SitePoint/pen/yfhtq&rbrack;&rbrack;(http://codepen.io/SitePoint/pen/yfhtq)
+
+&lbrack;&lbrack;https://css-tricks.com/almanac/properties/e/empty-cells/&rbrack;&rbrack;(https://css-tricks.com/almanac/properties/e/empty-cells/)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 25.3: border-collapse
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The border-collapse property determines if a tables&apos; borders should
+> be separated or merged.
+>
+> Below an example of two tables with different values to the
+> border-collapse property:
+
+!&lbrack;&rbrack;(./images/image202.jpg){width="5.666666666666667in"
+height="0.9270833333333334in"}
+
+  --------------------------------------------------------------------------------------------------
+  **border-collapse**   :   separate   while the one on the     **border-collapse**   :   collapse
+                                       right has                                          
+  --------------------- --- ---------- ------------------------ --------------------- --- ----------
+
+  --------------------------------------------------------------------------------------------------
+
+> The table on the left has .
+
+**Value Description**
+
+> separate This is the default value. It makes the borders of the table
+> separate from each other. collapse This value sets the borders of the
+> table to merge together, rather than being distinct.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 25.4: border-spacing
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The border-spacing property determines the spacing between cells. This
+> has no effect unless border-collapse is set to separate.
+>
+> Below an example of two tables with different values to the
+> border-spacing property:
+
+!&lbrack;&rbrack;(./images/image203.jpg){width="6.03125in" height="1.15625in"}
+
+  -----------------------------------------------------------------------------------------------
+  **border-spacing**   :   2px   (default) while the one on the    **border-spacing**   :   8px
+                                 right has                                                  
+  -------------------- --- ----- --------------------------------- -------------------- --- -----
+
+  -----------------------------------------------------------------------------------------------
+
+> The table on the left has .
+
+**Value Description**
+
+*&lt;length&gt;* This is the default behavior, though the exact value can
+vary between browsers.
+
+> &lt;length&gt; &lt;length&gt; This syntax allows specifying separate
+> horizontal and vertical values respectively.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 25.5: caption-side
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  -----------------------------------------------------------------------
+  **&lt;caption**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> The caption-side property determines the vertical positioning of the
+> **&gt;** element within a table. This has no effect if such element does
+> not exist.
+>
+> Below an example with two tables with different values set to the
+> caption-side property:
+
+!&lbrack;&rbrack;(./images/image204.jpg){width="5.729166666666667in"
+height="1.1458333333333333in"}
+
+  ------------------------------------------------------------------------------------------
+  **caption-side**   :   top   while the one on the right    **caption-side**   :   bottom
+                               has                                                  
+  ------------------ --- ----- ----------------------------- ------------------ --- --------
+
+  ------------------------------------------------------------------------------------------
+
+> The table on the left has .
+
+**Value Description**
+
+> *top* This is the default value. It places the caption above the
+> table. bottom This value places the caption below the table.
+
+# Chapter 26: Transitions
+
+**Parameter Details**
+
+> The specific CSS property whose value change needs to be transitioned
+> (or) all, if all the transition-property &lbrack;&lbrack;transitionable
+> properties&rbrack;&rbrack;(https://www.w3.org/TR/css3-transitions/#animatable-properties)
+> need to be transitioned.
+>
+> The duration (or period) in seconds (s) or milliseconds (ms) over
+> which the transition transition-duration must take place.
+
+  -----------------------------------------------------------------------
+  cubic-bezier                               (),        steps
+  ------------------------------------------ ---------- -----------------
+
+  -----------------------------------------------------------------------
+
+> A function that describes how the intermediate values during the
+> transition are calculated. Commonly used values are ease, ease-in,
+> ease-out, ease-in-out, linear, transition-timing-function
+>
+> (). More information about the various timing functions can be
+>
+> found in the &lbrack;&lbrack;W3C
+> specs&rbrack;&rbrack;(https://www.w3.org/TR/css3-transitions/#transition-timing-function).
+>
+> The amount of time that must have elapsed before the transition can
+> start. Can be transition-delay
+>
+> specified in seconds (s) or milliseconds (ms)
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 26.1: Transition shorthand
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**height**
+
+:
+
+150
+
+px
+
+;
+
+**background-color**
+
+:
+
+red
+
+;
+
+**transition**
+
+:
+
+background-color
+
+1
+
+s
+
+;
+
+}
+
+div
+
+:
+
+hover
+
+{
+
+**background-color**
+
+:
+
+green
+
+;
+
+}
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> This example will change the background color when the div is hovered
+> the background-color change will last 1 second.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 26.2: cubic-bezier
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> The cubic-bezier function is a transition timing function which is
+> often used for custom and smooth transitions.
+
+  --------------------------------------------------------------------------------------------
+  **transition-timing-function**   :   cubic-bezier    (   0.1   ,   0.7   ,   1.0   ,   0.1
+  -------------------------------- --- --------------- --- ----- --- ----- --- ----- --- -----
+
+  --------------------------------------------------------------------------------------------
+
+> );
+>
+> The function takes four parameters:
+
+  ----------------------------------------------------------------------------------
+  cubic-bezier             (   P1_x     ,   P1_y       ,   P2_x       ,   P2_y
+  ------------------------ --- -------- --- ---------- --- ---------- --- ----------
+
+  ----------------------------------------------------------------------------------
+
+> )
+
+!&lbrack;&rbrack;(./images/image205.jpg){width="4.395833333333333in"
+height="2.2083333333333335in"}
+
+> These parameters will be mapped to points which are part of a &lbrack;&lbrack;Bézier
+> curve&rbrack;&rbrack;(https://en.wikipedia.org/wiki/B%C3%A9zier_curve#Cubic_B.C3.A9zier_curves):
+
+!&lbrack;&rbrack;(./images/image206.jpg){width="4.96875in"
+height="4.958333333333333in"}
+
+> For CSS Bézier Curves, P0 and P3 are always in the same spot. P0 is at
+> (0,0) and P3 is at (1,1), which menas that the parameters passed to
+> the cubic-bezier function can only be between 0 and 1.
+>
+> If you pass parameters which aren&apos;t in this interval the function
+> will default to a linear transition.
+>
+> Since cubic-bezier is the most flexible transition in CSS, you can
+> translate all other transition timing function to cubic-bezier
+> functions:
+
+  -----------------------------------------------------------------------
+  cubic-bezier
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> linear: (0,0,1,1)
+
+  ------------------------------------------------------------------------------
+  cubic-bezier               (   0.42     ,   0.0      ,   1.0      ,   1.0
+  -------------------------- --- -------- --- -------- --- -------- --- --------
+
+  ------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------
+  cubic-bezier               (   0.0    ,   0.0      ,   0.58        ,   1.0
+  -------------------------- --- ------ --- -------- --- ----------- --- --------
+
+  -------------------------------------------------------------------------------
+
+  -------------------------------------------------------------------------------
+  cubic-bezier              (   0.42     ,   0.0      ,   0.58       ,   1.0
+  ------------------------- --- -------- --- -------- --- ---------- --- --------
+
+  -------------------------------------------------------------------------------
+
+ease-in: ) ease-out: ) ease-in-out: )
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 26.3: Transition (longhand)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>CSS</h4>
+
+div
+
+{
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+;
+
+**transition-property**
+
+:
+
+height
+
+,
+
+width
+
+;
+
+**transition-duration**
+
+:
+
+1
+
+s
+
+,
+
+500
+
+ms
+
+;
+
+**transition-timing-function**
+
+:
+
+linear
+
+;
+
+**transition-delay**
+
+:
+
+0
+
+s
+
+,
+
+1
+
+s
+
+;
+
+}
+
+div
+
+:
+
+hover
+
+{
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+> <h4>HTML</h4>
+>
+> **&lt;div&gt;&lt;/div&gt;**
+>
+> **transition-property**: Specifies the CSS properties the transition
+> effect is for. In this case, the div will expand both horizontally and
+> vertically when hovered.
+>
+> **transition-duration**: Specifies the length of time a transition
+> takes to complete. In the above example, the height and width
+> transitions will take 1 second and 500 milliseconds respectively.
+>
+> **transition-timing-function**: Specifies the speed curve of the
+> transition effect. A *linear* value indicates the transition will have
+> the same speed from start to finish.
+>
+> **transition-delay**: Specifies the amount of time needed to wait
+> before the transition effect starts. In this case, the height will
+> start transitioning immediately, whereas the width will wait 1 second.
+
+<h2 id="ch27">Chapter 27: Animations</h2>
+
+| &gt;             |                                                      |
+| *Transition** |                                                      |
+| Parameter     | > Details                                            |
+|---------------|------------------------------------------------------|
+| property      | > Either the CSS property to transition on, or all,  |
+|               | > which specifies all transition-able properties.    |
+|---------------|------------------------------------------------------|
+| duration      | > Transition time, either in seconds or              |
+|               | > milliseconds.                                      |
+|---------------|------------------------------------------------------|
+| ti            | > Specifies a function to define how intermediate    |
+| ming-function | > values for properties are computed. Common values  |
+|               | > are ease, linear, and step-end. Check out the      |
+|               | > &lbrack;&lbrack;easing function                                  |
+|               | > cheatsheet&rbrack;&rbrack;(http://easings.net/) for  |
+|               | > more.                                              |
+|---------------|------------------------------------------------------|
+| delay         | > Amount of time, in seconds or milliseconds, to     |
+|               | > wait before playing the animation.                 |
+|---------------|------------------------------------------------------|
+|               |                                                      |
+|---------------|------------------------------------------------------|
+| **            |                                                      |
+| &commat;keyframes |                                                      |
+
+  -----------------------------------------------------------------------
+  <b>&lt;percentage</b>
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  10%                        ,        20%
+  -------------------------- -------- -----------------------------------
+
+  -----------------------------------------------------------------------
+
+> You can either specify a set time with a percentage value, or two
+> percentage values, ie
+>
+> &lbrack; from &vertbar; to &vertbar; **&gt;** &rbrack;
+>
+> , for a period of time where the keyframe&apos;s set attributes are set.
+>
+> block Any amount of CSS attributes for the keyframe.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 27.1: Animations with keyframes
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> For multi-stage CSS animations, you can create CSS &commat;keyframes.
+> Keyframes allow you to define multiple animation points, called a
+> keyframe, to define more complex animations.
+>
+> **Basic Example**
+>
+> In this example, we&apos;ll make a basic background animation that cycles
+> between all colors.
+
+**&commat;keyframes**
+
+rainbow-background
+
+{
+
+0
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff0000
+
+;
+
+}
+
+8.333
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff8000
+
+;
+
+}
+
+16.667
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ffff00
+
+;
+
+}
+
+25.000
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#80ff00
+
+;
+
+}
+
+33.333
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#00ff00
+
+;
+
+}
+
+41.667
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#00ff80
+
+;
+
+}
+
+50.000
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#00ffff
+
+;
+
+}
+
+58.333
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#0080ff
+
+;
+
+}
+
+66.667
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#0000ff
+
+;
+
+}
+
+75.000
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#8000ff
+
+;
+
+}
+
+83.333
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff00ff
+
+;
+
+}
+
+91.667
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff0080
+
+;
+
+}
+
+100.00
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff0000
+
+;
+
+}
+
+}
+
+.RainbowBackground
+
+{
+
+**animation**
+
+:
+
+rainbow-background
+
+5
+
+s
+
+infinite
+
+;
+
+}
+
+&lbrack;*&lbrack;View Result&rbrack;*&rbrack;(https://jsfiddle.net/s9m3od3p/6/)
+
+> There&apos;s a few different things to note here. First, the actual
+> &commat;keyframes syntax.
+
+**&commat;keyframes**
+
+rainbow-background
+
+{
+
+> This sets the name of the animation to rainbow-background.
+
+0
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff0000
+
+;
+
+}
+
+> This is the definition for a keyframe within the animation. The first
+> part, the 0% in the case, defines where the keyframe is during the
+> animation. The 0% implies it is 0% of the total animation time from
+> the beginning.
+>
+> The animation will automatically transition between keyframes. So, by
+> setting the next background color at 8.333%, the animation will
+> smoothly take 8.333% of the time to transition between those
+> keyframes.
+
+.RainbowBackground
+
+{
+
+**animation**
+
+:
+
+rainbow-background
+
+5
+
+s
+
+infinite
+
+;
+
+}
+
+> This code attaches our animation to all elements which have the
+> .RainbowBackground class.
+>
+> The actual animation property takes the following arguments.
+>
+> **animation-name**: The name of our animation. In this case,
+> rainbow-background **animation-duration**: How long the animation will
+> take, in this case 5 seconds.
+>
+> **animation-iteration-count (Optional)**: The number of times the
+> animation will loop. In this case, the animation will go on
+> indefinitely. By default, the animation will play once.
+>
+> **animation-delay (Optional)**: Specifies how long to wait before the
+> animation starts. It defaults to 0 seconds, and can take negative
+> values. For example, -2s would start the animation 2 seconds into its
+> loop.
+>
+> **animation-timing-function (Optional)**: Specifies the speed curve of
+> the animation. It defaults to ease, where the animation starts slow,
+> gets faster and ends slow.
+
+  ------------------------------------------------------------------------
+  **background-color**                           :   #ff0000
+  ---------------------------------------------- --- ---------------------
+
+  ------------------------------------------------------------------------
+
+> In this particular example, both the 0% and 100% keyframes specify {;
+> }. Wherever
+>
+> two or more keyframes share a state, one may specify them in a single
+> statement. In this case, the two 0% and 100% lines could be replaced
+> with this single line:
+
+0
+
+&percnt;
+
+,
+
+100
+
+&percnt;
+
+{
+
+**background-color**
+
+:
+
+#ff0000
+
+;
+
+}
+
+> **Cross-browser compatibility**
+>
+> For older WebKit-based browsers, you&apos;ll need to use the vendor prefix
+> on both the &commat;keyframes declaration and the animation property, like
+> so:
+
+**@-webkit-keyframes**
+
+{
+
+}
+
+&minus;
+
+webkit-animation
+
+:
+
+&period;..
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 27.2: Animations with the transition property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Useful for simple animations, the CSS transition property allows
+> number-based CSS properties to animate between states.
+
+**Example**
+
+.Example
+
+{
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+#fff
+
+;
+
+}
+
+.Example
+
+:
+
+hover
+
+{
+
+**height**
+
+:
+
+120
+
+px
+
+;
+
+**background**
+
+:
+
+#ff0000
+
+;
+
+}
+
+&lbrack;*&lbrack;View Result&rbrack;*&rbrack;(https://jsfiddle.net/0kcm6rwo/)
+
+> By default, hovering over an element with the .Example class would
+> immediately cause the element&apos;s height to jump to 120px and its
+> background color to red (#ff0000).
+>
+> By adding the transition property, we can cause these changes to occur
+> over time:
+
+.Example
+
+{
+
+&period;..
+
+**transition**
+
+:
+
+all
+
+400
+
+ms
+
+ease
+
+;
+
+}
+
+&lbrack;*&lbrack;View Result&rbrack;*&rbrack;(https://jsfiddle.net/v2j4ggue/1/)
+
+> The all value applies the transition to all compatible (numbers-based)
+> properties. Any compatible property name (such as height or top) can
+> be substituted for this keyword.
+>
+> 400ms specifies the amount of time the transition takes. In this case,
+> the element&apos;s change in height will take 400 milliseconds to
+> complete.
+>
+> Finally, the value ease is the animation function, which determines
+> how the animation is played. ease means start slow, speed up, then end
+> slow again. Other values are linear, ease-out, and ease-in.
+>
+> **Cross-Browser Compatibility**
+>
+> The transition property is generally well-supported across all major
+> browsers, excepting IE 9. For earlier versions of Firefox and
+> Webkit-based browsers, use vendor prefixes like so:
+
+.Example
+
+{
+
+**transition**
+
+:
+
+all
+
+400
+
+ms
+
+ease
+
+;
+
+-moz-transition
+
+:
+
+all
+
+400
+
+ms
+
+ease
+
+;
+
+-webkit-transition
+
+:
+
+all
+
+400
+
+ms
+
+ease
+
+;
+
+}
+
+> *Note:* The transition property can animate changes between any two
+> numerical values, regardless of unit. It can also transition between
+> units, such as 100px to 50vh. However, it cannot transition between a
+> number and a default or automatic value, such as transitioning an
+> element&apos;s height from 100px to auto.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 27.3: Syntax Examples
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Our first syntax example shows the animation shorthand property using
+> all of the available properties/parameters:
+>
+> **animation**: 3s ease-in 1s 2 reverse both paused slidein;
+>
+> */&ast; duration &vertbar; timing-function &vertbar; delay &vertbar; iteration-count &vertbar;
+> direction &vertbar; fill-mode &vertbar; playstate &vertbar; name &ast;/*
+>
+> Our second example is a little more simple, and shows that some
+> properties can be omitted:
+>
+> **animation**: 3s linear 1s slidein; */&ast; duration &vertbar; timing-function
+> &vertbar; delay &vertbar; name &ast;/*
+>
+> Our third example shows the most minimal declaration. Note that the
+> animation-name and animation-duration must be declared:
+
+**animation**
+
+:
+
+3
+
+s
+
+slidein
+
+;
+
+*/&ast; duration &vertbar; name &ast;/*
+
+> It&apos;s also worth mentioning that when using the animation shorthand
+> the order of the properties makes a difference. Obviously the browser
+> may confuse your duration with your delay.
+>
+> If brevity isn&apos;t your thing, you can also skip the shorthand property
+> and write out each property individually:
+
+**animation-duration**
+
+:
+
+3
+
+s
+
+;
+
+**animation-timing-function**
+
+:
+
+ease-in
+
+;
+
+**animation-delay**
+
+:
+
+1
+
+s
+
+;
+
+**animation-iteration-count**
+
+:
+
+2
+
+;
+
+**animation-direction**
+
+:
+
+reverse
+
+;
+
+**animation-fill-mode**
+
+:
+
+both
+
+;
+
+**animation-play-state**
+
+:
+
+paused
+
+;
+
+**animation-name**
+
+:
+
+slidein
+
+;
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 27.4: Increasing Animation Performance Using the &apos;will-change&apos; Attribute
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> When creating animations and other GPU-heavy actions, it&apos;s important
+> to understand the will-change attribute.
+>
+> Both CSS keyframes and the transition property use GPU acceleration.
+> Performance is increased by offloading calculations to the device&apos;s
+> GPU. This is done by creating paint layers (parts of the page that are
+> individually rendered) that are offloaded to the GPU to be calculated.
+> The will-change property tells the browser what will animate, allowing
+> the browser to create smaller paint areas, thus increasing
+> performance.
+>
+> The will-change property accepts a comma-separated list of properties
+> to be animated. For example, if you plan on transforming an object and
+> changing its opacity, you would specify:
+
+.Example
+
+{
+
+&period;..
+
+**will-change**
+
+:
+
+transform
+
+,
+
+opacity
+
+;
+
+}
+
+> **Note:** Use will-change sparingly. Setting will-change for every
+> element on a page can cause performance problems, as the browser may
+> attempt to create paint layers for every element, significantly
+> increasing the amount of processing done by the GPU.
+
+# Chapter 28: 2D Transforms
+
+**Function/Parameter Details**
+
+  -----------------------------------------------------------------------
+  rotate
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+&lpar;x&rpar; Defines a transformation that moves the element around a fixed
+point on the Z axis
+
+  -----------------------------------------------------------------------
+  translate
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+(x,y) Moves the position of the element on the X and Y axis
+
+  -----------------------------------------------------------------------
+  translateX
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+(x) Moves the position of the element on the X axis
+
+  -----------------------------------------------------------------------
+  translateY
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+(y) Moves the position of the element on the Y axis
+
+  -----------------------------------------------------------------------
+  scale
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+(x,y) Modifies the size of the element on the X and Y axis
+
+  -----------------------------------------------------------------------
+  scaleX
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  scaleY
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> &lpar;x&rpar; Modifies the size of the element on the X axis (y) Modifies the
+> size of the element on the Y axis
+
+  -----------------------------------------------------------------------
+  skew
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Shear mapping, or transvection, distorting each point of an element by
+> a certain angle in
+>
+> (x,y) each direction
+
+  -----------------------------------------------------------------------
+  skewX
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Horizontal shear mapping distorting each point of an element by a
+> certain angle in the
+
+(x) horizontal direction
+
+  -----------------------------------------------------------------------
+  skewY
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Vertical shear mapping distorting each point of an element by a
+> certain angle in the vertical
+
+(y) direction
+
+  -----------------------------------------------------------------------
+  matrix
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+() Defines a 2D transformation in the form of a transformation matrix.
+
+  -----------------------------------------------------------------------
+  skew
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> The angle by which the element should be rotated or skewed (depending
+> on the function with which it is used). Angle can be provided in
+> degrees (deg), gradians (grad), radians (rad) angle or turns (turn).
+> In () function, the second angle is optional. If not provided, there
+> will be no (0) skew in Y-axis.
+>
+> The distance expressed as a length or a percentage by which the
+> element should be
+
+  -----------------------------------------------------------------------
+  translate
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> length-or-percentage translated. In () function, the second
+> length-or-percentage is optional. If not provided, then there would be
+> no (0) translation in Y-axis.
+>
+> A number which defines how many times the element should be scaled in
+> the specified axis.
+
+  -----------------------------------------------------------------------
+  scale
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> scale-factor In () function, the second scale-factor is optional. If
+> not provided, the first scale-factor will be applied for Y-axis also.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 28.1: Rotate
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;rotate&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.rotate
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+teal
+
+;
+
+**transform**
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+}
+
+> This example will rotate the div by 45 degrees clockwise. The center
+> of rotation is in the center of the div, 50% from left and 50% from
+> top. You can change the center of rotation by setting the
+> transform-origin property.
+
+**transform-origin**
+
+:
+
+100
+
+&percnt;
+
+50
+
+&percnt;
+
+;
+
+> The above example will set the center of rotation to the middle of the
+> right side end.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 28.2: Scale
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;scale&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+<h4>CSS</h4>
+
+.scale
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+teal
+
+;
+
+**transform**
+
+:
+
+scale
+
+(
+
+0.5
+
+,
+
+1.3
+
+)
+
+;
+
+}
+
+  --------------------------------------------------------------------------------------
+  100px   &ast;   0.5    =   50px   on the X axis and to    100px   &ast;   1.3    =   130px
+  ------- ---- ------ --- ------ ----------------------- ------- ---- ------ --- -------
+
+  --------------------------------------------------------------------------------------
+
+> This example will scale the div to on the Y axis.
+>
+> The center of the transform is in the center of the div, 50% from left
+> and 50% from top.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 28.3: Skew
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;skew&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.skew
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+teal
+
+;
+
+**transform**
+
+:
+
+skew
+
+(
+
+20
+
+deg
+
+,
+
+-30
+
+deg
+
+)
+
+;
+
+}
+
+> This example will skew the div by 20 degrees on the X axis and by - 30
+> degrees on the Y axis.
+>
+> The center of the transform is in the center of the div, 50% from left
+> and 50% from top.
+
+See the result
+&lbrack;&lbrack;here&rbrack;&rbrack;(https://jsfiddle.net/MadalinaTn/gtt4osms/1/).
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+## Section 28.4: Multiple transforms
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+> Multiple transforms can be applied to an element in one property like
+> this:
+
+**transform**
+
+:
+
+rotate
+
+(
+
+15
+
+deg
+
+)
+
+translateX
+
+(
+
+200
+
+px
+
+)
+
+;
+
+> This will rotate the element 15 degrees clockwise and then translate
+> it 200px to the right.
+>
+> In chained transforms, **the coordinate system moves with the
+> element**. This means that the translation won&apos;t be horizontal but on
+> an axis rotate 15 degrees clockwise as shown in the following image:
+
+!&lbrack;&rbrack;(./images/image207.jpg){width="7.48037510936133in"
+height="2.7919728783902014in"}
+
+> Changing the order of the transforms will change the output. The first
+> example will be different to
+
+**transform**
+
+:
+
+translateX
+
+(
+
+200
+
+px
+
+)
+
+rotate
+
+(
+
+15
+
+deg
+
+)
+
+;
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;transform&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.transform
+
+{
+
+**transform**
+
+:
+
+rotate
+
+(
+
+15
+
+deg
+
+)
+
+translateX
+
+(
+
+200
+
+px
+
+)
+
+;
+
+}
+
+> As shown in this image:
+
+!&lbrack;&rbrack;(./images/image208.jpg){width="7.48037510936133in"
+height="2.7919728783902014in"}
+
+## Section 28.5: Translate
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;translate&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.translate
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+teal
+
+;
+
+**transform**
+
+:
+
+translate
+
+(
+
+200
+
+px
+
+,
+
+50
+
+&percnt;
+
+)
+
+;
+
+}
+
+  ------------------------------------------------------------------------
+  100px                   &ast;   50%                 =   50px
+  ----------------------- ---- ------------------- --- -------------------
+
+  ------------------------------------------------------------------------
+
+> This example will move the div by 200px on the X axis and by on the Y
+> axis.
+>
+> You can also specify translations on a single axis.
+>
+> On the X axis:
+
+.translate
+
+{
+
+**transform**
+
+:
+
+translateX
+
+(
+
+200
+
+px
+
+)
+
+;
+
+}
+
+> On the Y axis:
+
+.translate
+
+{
+
+**transform**
+
+:
+
+translateY
+
+(
+
+50
+
+&percnt;
+
+)
+
+;
+
+}
+
+## Section 28.6: Transform Origin
+
+> Transformations are done with respect to a point which is defined by
+> the transform-origin property.
+
+  ------------------------------------------------------------------------
+  **transform-origin**                                   :   X Y
+  ------------------------------------------------------ --- -------------
+
+  ------------------------------------------------------------------------
+
+> The property takes 2 values : ;
+
+  -----------------------------------------------------------------------
+  **transform-origin**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  ------------------------------------------------------------------------
+  **transform-origin**                              :   100%
+  ------------------------------------------------- --- ------------------
+
+  ------------------------------------------------------------------------
+
+> In the following example the first div (.tl) is rotate around the top
+> left corner with : 0 0; and the second (.tr)is transformed around
+> it&apos;s top right corner with 0. The rotation is applied **on hover** :
+>
+<h4>HTML:</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&quot;transform originl&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+**&lt;**
+**div**
+class
+=
+&quot;transform origin2&quot;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>CSS:</h4>
+
+```
+.transform
+{
+**display**
+:
+inline-block
+;
+**width**
+:
+200
+px
+;
+**height**
+:
+100
+px
+;
+**background**
+:
+teal
+;
+**transition**
+:
+transform
+1
+s
+;
+}
+.origin1
+{
+**transform-origin**
+:
+0
+0
+;
+}
+.origin2
+{
+**transform-origin**
+:
+100
+&percnt;
+0
+;
+}
+.transform
+:
+hover
+{
+**transform**
+:
+rotate
+(
+30
+deg
+)
+;
+}
+```
+
+> The default value for the transform-origin property is which is the
+> center of the element.
+
+<h2 id="ch29">Chapter 29: 3D Transforms</h2>
+
+<h3 id="ch29-1">Section 29.1: Compass pointer or needle shape using 3D transforms</h3>
+
+<h4>CSS</h4>
+
+```
+div
+.needle
+{
+**margin**
+:
+100
+px
+;
+**height**
+:
+150
+px
+;
+**width**
+:
+150
+px
+;
+**transform**
+:
+rotateY
+(
+85
+deg
+)
+rotateZ
+(
+45
+deg
+)
+;
+*/&ast; presentational &ast;/*
+**background-image**
+:
+linear-gradient
+(
+to
+top
+left
+,
+#555
+0
+&percnt;
+,
+#555
+40
+&percnt;
+,
+#444
+50
+&percnt;
+,
+#333
+97
+&percnt;
+)
+;
+**box-shadow**
+:
+inset
+6
+px
+6
+px
+22
+px
+8
+px
+#272727
+;
+}
+```
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**div**
+class
+=
+&apos;needle&apos;
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> In the above example, a needle or compass pointer shape is created
+> using 3D transforms. Generally when we apply the rotate transform on
+> an element, the rotation happens only in the Z-axis and at best we
+> will end up with diamond shapes only. But when a rotateY transform is
+> added on top of it, the element gets squeezed in the Y-axis and thus
+> ends up looking like a needle. The more the rotation of the Y-axis the
+> more squeezed the element looks.
+
+  rotateX           (   85deg        )   rotateZ              (   45deg
+  ----------------- --- ------------ --- -------------------- --- ------------
+
+> The output of the above example would be a needle resting on its tip.
+> For creating a needle that is resting on its base, the rotation should
+> be along the X-axis instead of along Y-axis. So the transform
+> property&apos;s value would have to be something like );.
+>
+> &lbrack;&lbrack;This pen&rbrack;&rbrack;(http://codepen.io/hari_shanx/pen/YXzoBo) uses
+> a similar approach to create something that resembles the Safari logo
+> or a compass dial.
+>
+> **Screenshot of element with no transform:**
+
+!&lbrack;&rbrack;(./images/image209.jpg){width="1.6979166666666667in"
+height="1.6979166666666667in"}
+
+> **Screenshot of element with only 2D transform:**
+
+!&lbrack;&rbrack;(./images/image210.jpg){width="2.3541666666666665in"
+height="2.3645833333333335in"}
+
+> **Screenshot of element with 3D transform:**
+
+!&lbrack;&rbrack;(./images/image211.jpg){width="0.7395833333333334in"
+height="2.4791666666666665in"}
+
+<h3 id="ch29-2">Section 29.2: 3D text eect with shadow</h3>
+
+<h4>HTML:</h4>
+
+```
+**&lt;**
+**div**
+id
+=
+&quot;title&quot;
+**&gt;**
+**&lt;**
+**h**
+**1**
+data-content
+=
+&quot;HOVER&quot;
+**&gt;**
+HOVER
+**&lt;**
+**/h**
+**1**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+<h4>CSS:</h4>
+
+```
+&ast;
+{
+**margin**
+:
+0
+;
+**padding**
+:
+0
+;
+}
+html
+,
+body
+{
+**height**
+:
+100
+&percnt;
+;
+**width**
+:
+100
+&percnt;
+;
+**overflow**
+:
+hidden
+;
+**background**
+:
+#0099CC
+;
+}
+#title
+{
+**position**
+:
+absolute
+;
+**top**
+:
+50
+&percnt;
+;
+**left**
+:
+50
+&percnt;
+;
+**transform**
+:
+translate
+(
+-50
+&percnt;
+,
+-50
+&percnt;
+)
+;
+**perspective-origin**
+:
+50
+&percnt;
+50
+&percnt;
+;
+**perspective**
+:
+300
+px
+;
+}
+h1
+{
+**text-align**
+:
+center
+;
+**font-size**
+:
+12
+vmin
+;
+**font-family**
+:
+&apos;Open Sans&apos;
+,
+sans-serif
+;
+**color**
+:
+rgba
+(
+0
+,
+0
+,
+0
+,
+0.8
+)
+;
+**line-height**
+:
+1
+em
+;
+**transform**
+:
+rotateY
+(
+50
+deg
+)
+;
+**perspective**
+:
+150
+px
+;
+**perspective-origin**
+:
+0
+&percnt;
+50
+&percnt;
+;
+}
+h1
+:
+after
+{
+**content**
+:
+attr
+(
+data-content
+)
+;
+**position**
+:
+absolute
+;
+**left**
+:
+0
+;
+**top**
+:
+0
+;
+**transform-origin**
+:
+50
+&percnt;
+100
+&percnt;
+;
+**transform**
+:
+rotateX
+(
+-90
+deg
+)
+;
+**color**
+:
+#0099CC
+;
+}
+#title
+:
+before
+{
+**content**
+:
+&apos;&apos;
+;
+**position**
+:
+absolute
+;
+**top**
+:
+-150
+&percnt;
+;
+**left**
+:
+-25
+&percnt;
+;
+**width**
+:
+180
+&percnt;
+;
+**height**
+:
+328
+&percnt;
+;
+**background**
+:
+rgba
+(
+255
+,
+255
+,
+255
+,
+0.7
+)
+;
+**transform-origin**
+:
+0
+100
+&percnt;
+;
+**transform**
+:
+translatez
+(
+-200
+px
+)
+rotate
+(
+40
+deg
+)
+skewX
+(
+35
+deg
+)
+;
+**border-radius**
+:
+0
+0
+100
+&percnt;
+0
+;
+}
+```
+
+&lbrack;&lbrack;View example with additional hover
+effect&rbrack;&rbrack;(http://codepen.io/web-tiki/pen/azeKNy)
+
+!&lbrack;&rbrack;(./images/image212.jpg){width="7.48037510936133in"
+height="3.642194881889764in"}
+
+> In this example, the text is transformed to make it look like it is
+> going into the screen away from the user.
+>
+> The shadow is transformed accordingly so it follows the text. As it is
+> made with a pseudo element and the data attribute, it inherits the
+> transforms form it&apos;s parent (the H1 tag).
+>
+> The white &quot;light&quot; is made with a pseudo element on the #title
+> element. It is skewed and uses border-radius for the rounded corner.
+
+## Section 29.3: backface-visibility
+
+> The backface-visibility property relates to 3D transforms.
+>
+> With 3D transforms and the backface-visibility property, you&apos;re able
+> to rotate an element such that the original front of an element no
+> longer faces the screen.
+>
+> For example, this would flip an element away from the screen:
+
+&lbrack;&lbrack;JSFIDDLE&rbrack;&rbrack;(https://jsfiddle.net/3z3z843c/)
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;flip&quot;
+
+**&gt;**
+
+Loren ipsum
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;flip back&quot;
+
+**&gt;**
+
+Lorem ipsum
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.flip
+
+{
+
+-webkit-transform
+
+:
+
+rotateY
+
+(
+
+180
+
+deg
+
+)
+
+;
+
+-moz-transform
+
+:
+
+rotateY
+
+(
+
+180
+
+deg
+
+)
+
+;
+
+-ms-transform
+
+:
+
+rotateY
+
+(
+
+180
+
+deg
+
+)
+
+;
+
+-webkit-backface-visibility
+
+:
+
+visible
+
+;
+
+-moz-backface-visibility
+
+:
+
+visible
+
+;
+
+-ms-backface-visibility
+
+:
+
+visible
+
+;
+
+}
+
+.flip
+
+.back
+
+{
+
+-webkit-backface-visibility
+
+:
+
+hidden
+
+;
+
+-moz-backface-visibility
+
+:
+
+hidden
+
+;
+
+-ms-backface-visibility
+
+:
+
+hidden
+
+;
+
+}
+
+> Firefox 10+ and IE 10+ support backface-visibility without a prefix.
+> Opera, Chrome, Safari, iOS, and Android all need
+> -webkit-backface-visibility.
+>
+> It has 4 values:
+
+1.  **visible** (default) - the element will always be visible even when
+    not facing the screen.
+
+2.  **hidden** - the element is not visible when not facing the screen.
+
+3.  **inherit** - the property will gets its value from the its parent
+    element
+
+4.  **initial** - sets the property to its default, which is visible
+
+## Section 29.4: 3D cube
+
+> 3D transforms can be use to create many 3D shapes. Here is a simple 3D
+> CSS cube example:
+>
+> *HTML:*
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;cube&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;cubeFace&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;cubeFace face2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> *CSS:*
+
+body
+
+{
+
+**perspective-origin**
+
+:
+
+50
+
+&percnt;
+
+100
+
+&percnt;
+
+;
+
+**perspective**
+
+:
+
+1500
+
+px
+
+;
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+}
+
+.cube
+
+{
+
+**position**
+
+:
+
+relative
+
+;
+
+**padding-bottom**
+
+:
+
+20
+
+&percnt;
+
+;
+
+**transform-style**
+
+:
+
+preserve-3d
+
+;
+
+**transform-origin**
+
+:
+
+50
+
+&percnt;
+
+100
+
+&percnt;
+
+;
+
+**transform**
+
+:
+
+rotateY
+
+(
+
+45
+
+deg
+
+)
+
+rotateX
+
+(
+
+0
+
+)
+
+;
+
+}
+
+.cubeFace
+
+{
+
+
+!&lbrack;&rbrack;(./images/image213.png){width="7.486667760279965in"
+height="6.386666666666667in"}
+
+<a href="http://codepen.io/web-tiki/pen/NNwqBa">View this example</a>
+
+> Additional styling is added in the demo and a transform is applied on
+> hover to view the 6 faces of the cube.
+>
+> Should be noted that:
+>
+> 4 faces are made with pseudo elements chained transforms are applied
+
+<h2 id="ch30">Chapter 30: Filter Property</h2>
+
+> **Value Description** blur(x) Blurs the image by x pixels.
+>
+> Brightens the image at any value above 1.0 or 100%. Below that, the
+> image will be brightness(x) darkened.
+>
+> Provides more contrast to the image at any value above 1.0 or 100%.
+> Below that, the contrast(x) image will get less saturated.
+>
+> drop-shadow(h, v, x, y, z) Gives the image a drop-shadow. h and v can
+> have negative values. x, y, and z are optional.
+  | Value         | Description |
+  |---------------|------------------------------------------------------|
+  | greyscale(x)  | Shows the image in greyscale, with a maximum value of |
+  |               | 1.0 or 100%. |
+  | hue-rotate(x) | Applies a hue-rotation to the image. |
+  | invert(x)     | Inverts the color of the image with a maximum value of |
+  |               | 1.0 or 100%. |
+  | opacity(x)    | Sets how opaque/transparent the image is with a |
+  |               | maximum value of 1.0 or 100%. |
+  | saturate(x)   | Saturates the image at any value above 1.0 or 100%. |
+  |               | Below that, the image will start to de-saturate. |
+  | sepia(x)      | Converts the image to sepia with a maximum value of |
+  |               |  1.0 or 100%. |
+
+<h3 id="ch30-1">Section 30.1: Blur</h3>
+
+<h4>HTML</h4>
+
+> **&lt;img** src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald
+> Duck&apos; **/&gt;**
+>
+> <h4>CSS</h4>
+
+img
+
+{
+
+-webkit-filter
+
+:
+
+blur
+
+(
+
+1
+
+px
+
+)
+
+;
+
+**filter**
+
+:
+
+blur
+
+(
+
+1
+
+px
+
+)
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image214.jpg){width="2.2395833333333335in"
+height="2.8125in"}
+
+> Makes you wanna rub your glasses.
+
+<h3 id="ch30-2">Section 30.2: Drop Shadow (use box-shadow instead if possible)</h3>
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+My shadow always follows me.
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+p
+
+{
+
+-webkit-filter
+
+:
+
+drop-shadow
+
+(
+
+10
+
+px
+
+10
+
+px
+
+1
+
+px
+
+green
+
+)
+
+;
+
+**filter**
+
+:
+
+drop-shadow
+
+(
+
+10
+
+px
+
+10
+
+px
+
+1
+
+px
+
+green
+
+)
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image215.jpg){width="2.40625in"
+height="0.5729166666666666in"}
+
+<h3 id="ch30-3">Section 30.3: Hue Rotate</h3>
+
+<h4>HTML</h4>
+>
+> **&lt;img** src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald
+> Duck&apos; **/&gt;**
+>
+> <h4>CSS</h4>
+
+img
+
+{
+
+-webkit-filter
+
+:
+
+hue-rotate
+
+(
+
+120
+
+deg
+
+)
+
+;
+
+**filter**
+
+:
+
+hue-rotate
+
+(
+
+120
+
+deg
+
+)
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image216.jpg){width="2.2604166666666665in"
+height="2.8125in"}
+
+<h3 id="ch30-4">Section 30.4: Multiple Filter Values</h3>
+
+> To use multiple filters, separate each value with a space.
+
+<h4>HTML</h4>
+
+> **&lt;img** src=&apos;donald-duck.png&apos; alt=&apos;Donald Duck&apos; title=&apos;Donald
+> Duck&apos; **/&gt;**
+
+<h4>CSS</h4>
+
+img
+
+{
+
+-webkit-filter
+
+:
+
+brightness
+
+(
+
+200
+
+&percnt;
+
+)
+
+grayscale
+
+(
+
+100
+
+&percnt;
+
+)
+
+sepia
+
+(
+
+100
+
+&percnt;
+
+)
+
+invert
+
+(
+
+100
+
+&percnt;
+
+)
+
+;
+
+**filter**
+
+:
+
+brightness
+
+(
+
+200
+
+&percnt;
+
+)
+
+grayscale
+
+(
+
+100
+
+&percnt;
+
+)
+
+sepia
+
+(
+
+100
+
+&percnt;
+
+)
+
+invert
+
+(
+
+100
+
+&percnt;
+
+)
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image217.jpg){width="2.1145833333333335in"
+height="2.7083333333333335in"}
+
+<h3 id="ch30-5">Section 30.5: Invert Color</h3>
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background-color**
+
+:
+
+white
+
+;
+
+-webkit-filter
+
+:
+
+invert
+
+(
+
+100
+
+&percnt;
+
+)
+
+;
+
+**filter**
+
+:
+
+invert
+
+(
+
+100
+
+&percnt;
+
+)
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image218.jpg){width="1.1979166666666667in"
+height="1.1979166666666667in"}
+
+> Turns from white to black.
+
+# Chapter 31: Cursor Styling
+
+## Section 31.1: Changing cursor type
+
+**cursor**
+
+:
+
+value
+
+;
+
+> **Examples:**
+
+**Value Description**
+
+> none No cursor is rendered for the element auto Default. The browser
+> sets a cursor help The cursor indicates that help is available wait
+> The cursor indicates that the program is busy move The cursor
+> indicates something is to be moved pointer The cursor is a pointer and
+> indicates a link
+
+## Section 31.2: pointer-events
+
+> The pointer-events property allows for control over how HTML elements
+> respond to mouse/touch events.
+
+.disabled
+
+{
+
+**pointer-events**
+
+:
+
+none
+
+;
+
+}
+
+> In this example,
+
+&apos;none&apos; prevents all click, state and cursor options on the specified
+HTML element &lbrack;&lbrack;1&rbrack;&rbrack;
+
+> Other valid values for HTMl elements are:
+>
+> auto; inherit.
+>
+> 1&period;
+> &lbrack;&lbrack;https://css-tricks.com/almanac/properties/p/pointer-events/&rbrack;&rbrack;(https://css-tricks.com/almanac/properties/p/pointer-events/)
+>
+> Other resources:
+>
+> &lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)
+> &lbrack;&lbrack;https://davidwalsh.name/pointer-events&rbrack;&rbrack;(https://davidwalsh.name/pointer-events)
+
+<h3 id="ch31-3">Section 31.3: caret-color</h3>
+
+> The caret-color CSS property specifies the color of the caret, the
+> visible indicator of the insertion point in an element where text and
+> other content is inserted by the user&apos;s typing or editing.
+>
+<h4>HTML</h4>
+
+**&lt;**
+
+**input**
+
+id
+
+=
+
+&quot;example&quot;
+
+**/&gt;**
+
+> <h4>CSS</h4>
+
+#example
+
+{
+
+**caret-color**
+
+:
+
+red
+
+;
+
+}
+
+> Resources:
+>
+> &lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)
+
+# Chapter 32: box-shadow
+
+**Parameters Details**
+
+> by default, the shadow is treated as a drop shadow. the inset keyword
+> draws the shadow inside the inset frame/border.
+>
+> offset-x the horizontal distance offset-y the vertical distance
+>
+> 0 by default. value cannot be negative. the bigger the value, the
+> bigger and lighter the shadow blur-radius becomes.
+>
+> 0 by default. positive values will cause the shadow to expand.
+> negative values will cause the shadow spread-radius to shrink.
+
+  -----------------------------------------------------------------------------
+  rgb()          ,   rgba()            ,   hsl()          ,   hsla()
+  -------------- --- ----------------- --- -------------- --- -----------------
+
+  -----------------------------------------------------------------------------
+
+color can be of various notations: a color keyword, hexadecimal,
+
+## Section 32.1: bottom-only drop shadow using a pseudoelement
+
+JSFiddle:
+&lbrack;&lbrack;https://jsfiddle.net/UnsungHero97/80qod7aL/2/&rbrack;&rbrack;(https://jsfiddle.net/UnsungHero97/80qod7aL/2/)
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;box_shadow&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.box_shadow
+
+{
+
+**background-color**
+
+:
+
+#1C90F3
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**margin**
+
+:
+
+50
+
+px
+
+;
+
+}
+
+.box_shadow
+
+:
+
+after
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**width**
+
+:
+
+190
+
+px
+
+;
+
+**height**
+
+:
+
+1
+
+px
+
+;
+
+**margin-top**
+
+:
+
+98
+
+px
+
+;
+
+**margin-left**
+
+:
+
+5
+
+px
+
+;
+
+**display**
+
+:
+
+block
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+**z-index**
+
+:
+
+&minus;
+
+1
+
+;
+
+-webkit-box-shadow
+
+:
+
+0
+
+px
+
+0
+
+px
+
+8
+
+px
+
+2
+
+px
+
+#444444
+
+;
+
+-moz-box-shadow
+
+:
+
+0
+
+px
+
+0
+
+px
+
+8
+
+px
+
+2
+
+px
+
+#444444
+
+;
+
+**box-shadow**
+
+:
+
+0
+
+px
+
+0
+
+px
+
+8
+
+px
+
+2
+
+px
+
+#444444
+
+;
+
+}
+
+!&lbrack;&rbrack;(./images/image220.jpg){width="6.25in" height="3.75in"}
+
+<h3 id="ch32-2">Section 32.2: drop shadow</h3>
+
+JSFiddle:
+&lbrack;&lbrack;https://jsfiddle.net/UnsungHero97/80qod7aL/&rbrack;&rbrack;(https://jsfiddle.net/UnsungHero97/80qod7aL/)
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;box_shadow&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.box_shadow
+
+{
+
+-webkit-box-shadow
+
+:
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+-1
+
+px
+
+#444444
+
+;
+
+-moz-box-shadow
+
+:
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+-1
+
+px
+
+#444444
+
+;
+
+**box-shadow**
+
+:
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+-1
+
+px
+
+#444444
+
+;
+
+}
+
+<h3 id="ch32-3">Section 32.3: inner drop shadow</h3>
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;box_shadow&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.box_shadow
+
+{
+
+**background-color**
+
+:
+
+#1C90F3
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**margin**
+
+:
+
+50
+
+px
+
+;
+
+-webkit-box-shadow
+
+:
+
+inset
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+0
+
+px
+
+#444444
+
+;
+
+-moz-box-shadow
+
+:
+
+inset
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+0
+
+px
+
+#444444
+
+;
+
+**box-shadow**
+
+:
+
+inset
+
+0
+
+px
+
+0
+
+px
+
+10
+
+px
+
+0
+
+px
+
+#444444
+
+;
+
+}
+
+> **Result:**
+
+!&lbrack;&rbrack;(./images/image221.jpg){width="2.6458333333333335in"
+height="1.5416666666666667in"}
+
+JSFiddle:
+&lbrack;&lbrack;https://jsfiddle.net/UnsungHero97/80qod7aL/1/&rbrack;&rbrack;(https://jsfiddle.net/UnsungHero97/80qod7aL/1/)
+
+<h3 id="ch32-4">Section 32.4: multiple shadows</h3>
+
+JSFiddle:
+&lbrack;&lbrack;https://jsfiddle.net/UnsungHero97/80qod7aL/5/&rbrack;&rbrack;(https://jsfiddle.net/UnsungHero97/80qod7aL/5/)
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;box_shadow&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.box_shadow
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**margin**
+
+:
+
+100
+
+px
+
+;
+
+**box-shadow**
+
+:
+
+-52
+
+px
+
+-52
+
+px
+
+0
+
+px
+
+0
+
+px
+
+#f65314
+
+,
+
+52
+
+px
+
+-52
+
+px
+
+0
+
+px
+
+0
+
+px
+
+#7cbb00
+
+,
+
+-52
+
+px
+
+52
+
+px
+
+0
+
+px
+
+0
+
+px
+
+#00a1f1
+
+,
+
+52
+
+px
+
+52
+
+px
+
+0
+
+px
+
+0
+
+px
+
+#ffbb00
+
+;
+
+}
+
+!&lbrack;&rbrack;(./images/image222.jpg){width="6.125in"
+height="5.833333333333333in"}
+
+# Chapter 33: Shapes for Floats
+
+**Parameter Details**
+
+> A value of none means that the float area (the area that is used for
+> wrapping content around a float none element) is unaffected. This is
+> the default/initial value.
+
+  -----------------------------------------------------------------------
+  inset     (),   circle      (),   ellipse       () or     polygon
+  --------- ----- ----------- ----- ------------- --------- -------------
+
+  -----------------------------------------------------------------------
+
+> Refers to one among (). Using one of these functions and its
+> basic-shape values the shape is defined.
+>
+> Refers to one among margin-box, border-box, padding-box, content-box.
+> When only &lt;shape-box&gt; is
+>
+> shape-box provided (without &lt;basic-shape&gt;) this box *is the* shape.
+> When it is used along with &lt;basic-shape&gt;, this acts as the reference
+> box.
+>
+> When an image is provided as value, the shape is computed based on the
+> alpha channel of the image image specified.
+
+## Section 33.1: Shape Outside with Basic Shape -- circle()
+
+> With the shape-outside CSS property one can define shape values for
+> the float area so that the inline content wraps around the shape
+> instead of the float&apos;s box.
+>
+> <h4>CSS</h4>
+
+img
+
+:
+
+nth-of-type
+
+(
+
+1
+
+)
+
+{
+
+**shape-outside**
+
+:
+
+circle
+
+(
+
+80
+
+px
+
+at
+
+50
+
+&percnt;
+
+50
+
+&percnt;
+
+)
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+img
+
+:
+
+nth-of-type
+
+(
+
+2
+
+)
+
+{
+
+**shape-outside**
+
+:
+
+circle
+
+(
+
+80
+
+px
+
+at
+
+50
+
+&percnt;
+
+50
+
+&percnt;
+
+)
+
+;
+
+**float**
+
+:
+
+right
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+p
+
+{
+
+**text-align**
+
+:
+
+center
+
+;
+
+**line-height**
+
+:
+
+30
+
+px
+
+;
+
+*/&ast; purely for demo &ast;/*
+
+}
+
+<h4>HTML</h4>
+>
+> **&lt;img**
+> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;**&gt;**
+>
+> **&lt;img**
+> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;**&gt;**
+>
+> **&lt;p&gt;**Some paragraph whose text content is required to be wrapped
+> such that it follows the curve of the circle on either side. And then
+> there is some filler text just to make the text long enough. Lorem
+> Ipsum Dolor Sit Amet&period;...**&lt;/p&gt;**
+>
+> In the above example, both the images are actually square images and
+> when the text is placed without the shapeoutside property, it will not
+> flow around the circle on either side. It will flow around the
+> containing box of the image only. With shape-outside the float area is
+> re-defined as a *circle* and the content is made to flow around this
+> *imaginary circle* that is created using shape-outside.
+>
+> The *imaginary circle* that is used to re-define the float area is a
+> circle with radius of 80px drawn from the center-mid point of the
+> image&apos;s reference box.
+>
+> Below are a couple of screenshots to illustrate how the content would
+> be wrapped around when shape-outside is used and when it is not used.
+> **Output with shape-outside**
+
+!&lbrack;&rbrack;(./images/image223.jpg){width="3.3333333333333335in"
+height="1.3229166666666667in"}
+
+> **Output without shape-outside**
+
+!&lbrack;&rbrack;(./images/image224.jpg){width="3.3333333333333335in"
+height="1.4895833333333333in"}
+
+## Section 33.2: Shape margin
+
+> The shape-margin CSS property adds a *margin* to shape-outside.
+>
+> <h4>CSS</h4>
+
+img
+
+:
+
+nth-of-type
+
+(
+
+1
+
+)
+
+{
+
+**shape-outside**
+
+:
+
+circle
+
+(
+
+80
+
+px
+
+at
+
+50
+
+&percnt;
+
+50
+
+&percnt;
+
+)
+
+;
+
+**shape-margin**
+
+:
+
+10
+
+px
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+img
+
+:
+
+nth-of-type
+
+(
+
+2
+
+)
+
+{
+
+**shape-outside**
+
+:
+
+circle
+
+(
+
+80
+
+px
+
+at
+
+50
+
+&percnt;
+
+50
+
+&percnt;
+
+)
+
+;
+
+**shape-margin**
+
+:
+
+10
+
+px
+
+;
+
+**float**
+
+:
+
+right
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+}
+
+p
+
+{
+
+**text-align**
+
+:
+
+center
+
+;
+
+**line-height**
+
+:
+
+30
+
+px
+
+;
+
+*/&ast; purely for demo &ast;/*
+
+}
+
+<h4>HTML</h4>
+>
+> **&lt;img**
+> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;**&gt;**
+>
+> **&lt;img**
+> src=&quot;http://images.clipartpanda.com/circle-clip-art-circlergb.jpg&quot;**&gt;**
+>
+> **&lt;p&gt;**Some paragraph whose text content is required to be wrapped
+> such that it follows the curve of the circle on either side. And then
+> there is some filler text just to make the text long enough. Lorem
+> Ipsum Dolor Sit Amet&period;...**&lt;/p&gt;**
+>
+> In this example, a 10px margin is added around the **shape** using
+> shape-margin. This creates a bit more space between the *imaginary
+> circle* that defines the float area and the actual content that is
+> flowing around.
+>
+> **Output:**
+
+!&lbrack;&rbrack;(./images/image225.jpg){width="3.3333333333333335in"
+height="1.3958333333333333in"}
+
+# Chapter 34: List Styles
+
+> **Value Description** list-style-type the type of list-item marker.
+>
+> list-style-position specifies where to place the marker
+> list-style-image specifies the type of list-item marker initial sets
+> this property to its default value inherit inherits this property from
+> its parent element
+
+## Section 34.1: Bullet Position
+
+  ---------------------------------------------------------------------------------------------
+  **&lt;li**   **&gt;** elements inside a containing element (       **&lt;ul**   **&gt;**   **&lt;ol**
+                                                                            or       
+  ---------- --------------------------------------------------- ---------- -------- ----------
+
+  ---------------------------------------------------------------------------------------------
+
+> A list consists of **&gt;**). Both the list items and the container can
+>
+> have margins and paddings which influence the exact position of the
+> list item content in the document. The default values for the margin
+> and padding may be different for each browser. In order to get the
+> same layout crossbrowser, these need to be set specifically.
+>
+> Each list item gets a &apos;marker box&apos;, which contains the bullet
+> marker. This box can either be placed inside or outside of the list
+> item box.
+
+**list-style-position**
+
+:
+
+inside
+
+;
+
+  -----------------------------------------------------------------------
+  **&lt;li**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> places the bullet within the **&gt;** element, pushing the content to
+> the right as needed.
+
+**list-style-position**
+
+:
+
+outside
+
+;
+
+  -----------------------------------------------------------------------
+  **&lt;li**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> places the bullet left of the **&gt;** element. If there is not enough
+> space in the padding of the containing element, the marker box will
+> extend to the left even if it would fall off the page.
+>
+> Showing the result of inside and outside positioning:
+> &lbrack;&lbrack;jsfiddle&rbrack;&rbrack;(https://jsfiddle.net/pqh3cxdp/)
+
+## Section 34.2: Removing Bullets / Numbers
+
+> Sometimes, a list should just not display any bullet points or
+> numbers. In that case, remember to specify margin and padding.
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+first item
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+second item
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+> CSS
+
+ul
+
+{
+
+**list-style-type**
+
+:
+
+none
+
+;
+
+}
+
+li
+
+{
+
+**margin**
+
+:
+
+0
+
+;
+
+**padding**
+
+:
+
+0
+
+;
+
+}
+
+## Section 34.3: Type of Bullet or Numbering
+
+  --------------------------------------------------------------------------------
+  **&lt;li**   **&gt;** tags within an unordered list (                     **&lt;ul**
+  ---------- ---------------------------------------------------------- ----------
+
+  --------------------------------------------------------------------------------
+
+> Specific for **&gt;**):
+>
+> **list-style**: disc; */&ast; A filled circle (default) &ast;/*
+> **list-style**: circle; */&ast; A hollow circle &ast;/* **list-style**:
+> square; */&ast; A filled square &ast;/* **list-style**: &apos;-&apos;; */&ast; any
+> string &ast;/*
+
+  -------------------------------------------------------------------------------
+  **&lt;li**   **&gt;** tags within an ordered list (                      **&lt;ol**
+  ---------- --------------------------------------------------------- ----------
+
+  -------------------------------------------------------------------------------
+
+> Specific for **&gt;**):
+
+**list-style**: decimal; */&ast; Decimal numbers beginning with 1 (default)
+&ast;/* **list-style**: decimal-leading-zero;*/&ast; Decimal numbers padded by
+initial zeros (01, 02, 03,* ... *10) &ast;/* **list-style**: lower-roman;
+*/&ast; Lowercase roman numerals (i., ii., iii., iv., &period;..) &ast;/*
+**list-style**: upper-roman; */&ast; Uppercase roman numerals (I., II.,
+III., IV., &period;..) &ast;/* **list-style-type**: lower-greek; */&ast; Lowercase
+roman letters (*α*.,* β*.,* γ*.,* δ*., &period;..) &ast;/* **list-style-type**:
+lower-alpha; */&ast; Lowercase letters (a., b., c., d., &period;..) &ast;/*
+**list-style-type**: lower-latin; */&ast; Lowercase letters (a., b., c.,
+d., &period;..) &ast;/* **list-style-type**: upper-alpha; */&ast; Uppercase letters
+(A., B., C., D., &period;..) &ast;/* **list-style-type**: upper-latin; */&ast;
+Uppercase letters (A., B., C., D., &period;..) &ast;/* Non-specific:
+
+> **list-style**: none; */&ast; No visible list marker &ast;/* **list-style**:
+> inherit; */&ast; Inherits from parent &ast;/*
+
+<h2 id="ch35">Chapter 35: Counters</h2>
+
+| Para  | &gt; Details                                              |
+| meter |                                                            |
+|---------|------------------------------------------------------------|
+| count   | This is the name of the counter that needs to be created   |
+| er-name | or incremented or printed. It can be any custom name as    |
+|         | the developer wishes.                                      |
+|---------|------------------------------------------------------------|
+| integer | This integer is an optional value that when provided next  |
+|         | to the counter name will represent the initial value of    |
+|         | the counter (in counter-set, counter-reset properties) or  |
+|         | the value by which the counter should be incremented (in   |
+|         | counter-increment).                                        |
+
+  -----------------------------------------------------------------------
+  counter-
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> This is the initial value for all 3 &ast; properties. When this value is
+> used for counter-
+
+none increment, the value of none of the counters are affected. When
+this is used for the other two, no
+
+> counter is created.
+>
+> This specifies the style in which the counter value needs to be
+> displayed. It supports all values
+
+counter-style supported by the list-style-type property. If none is used
+then the counter value is not printed
+
+> at all.
+>
+> This represents the string that must be placed between the values of
+> two different counter levels
+>
+> connector-string (like the &quot;.&quot; in &quot;2.1.1&quot;).
+
+## Section 35.1: Applying roman numerals styling to the counter output
+
+> <h4>CSS</h4>
+
+body
+
+{
+
+**counter-reset**
+
+:
+
+item-counter
+
+;
+
+}
+
+.item
+
+{
+
+**counter-increment**
+
+:
+
+item-counter
+
+;
+
+}
+
+.item
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+counter
+
+(
+
+item-counter
+
+,
+
+upper-roman
+
+)
+
+&quot;. &quot;
+
+;
+
+*/&ast; by specifying the upper-roman as style the*
+
+*output would be in roman numbers &ast;/*
+
+}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+Item No: 1
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+Item No: 2
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+Item No: 3
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> In the above example, the counter&apos;s output would be displayed as I,
+> II, III (roman numbers) instead of the usual 1, 2, 3 as the developer
+> has explicitly specified the counter&apos;s style.
+
+## Section 35.2: Number each item using CSS Counter
+
+> <h4>CSS</h4>
+
+body
+
+{
+
+**counter-reset**
+
+:
+
+item-counter
+
+;
+
+*/&ast; create the counter &ast;/*
+
+}
+
+.item
+
+{
+
+**counter-increment**
+
+:
+
+item-counter
+
+;
+
+*/&ast; increment the counter every time an element with class &quot;item&quot;*
+
+*is encountered &ast;/*
+
+}
+
+.item-header
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+counter
+
+(
+
+item-counter
+
+)
+
+&quot;. &quot;
+
+;
+
+*/&ast; print the value of the counter before the header and*
+
+*append a &quot;.&quot; to it &ast;/*
+
+}
+
+*/&ast; just for demo &ast;/*
+
+.item
+
+{
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**margin-bottom**
+
+:
+
+10
+
+px
+
+;
+
+}
+
+.item-header
+
+{
+
+**border-bottom**
+
+:
+
+1
+
+px
+
+solid
+
+;
+
+**height**
+
+:
+
+40
+
+px
+
+;
+
+**line-height**
+
+:
+
+40
+
+px
+
+;
+
+**padding**
+
+:
+
+5
+
+px
+
+;
+
+}
+
+.item-content
+
+{
+
+**padding**
+
+:
+
+8
+
+px
+
+;
+
+}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-header&apos;
+
+**&gt;**
+
+Item 1 Header
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-content&apos;
+
+**&gt;**
+
+Lorem Ipsum Dolor Sit Amet&period;...
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-header&apos;
+
+**&gt;**
+
+Item 2 Header
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-content&apos;
+
+**&gt;**
+
+Lorem Ipsum Dolor Sit Amet&period;...
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item&apos;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-header&apos;
+
+**&gt;**
+
+Item 3 Header
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&apos;item-content&apos;
+
+**&gt;**
+
+Lorem Ipsum Dolor Sit Amet&period;...
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+  -----------------------------------------------------------------------
+  :before
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> The above example numbers every &quot;item&quot; in the page and adds the
+> item&apos;s number before its header (using content property of
+> .item-header element&apos;s pseudo). A live demo of this code is available
+> &lbrack;&lbrack;here&rbrack;&rbrack;(https://jsfiddle.net/a7rmje3r/).
+
+## Section 35.3: Implementing multi-level numbering using CSS counters
+
+<h4>CSS</h4>
+
+ul
+
+{
+
+**list-style**
+
+:
+
+none
+
+;
+
+**counter-reset**
+
+:
+
+list-item-number
+
+;
+
+*/&ast; self nesting counter as name is same for all levels &ast;/*
+
+}
+
+li
+
+{
+
+**counter-increment**
+
+:
+
+list-item-number
+
+;
+
+}
+
+li
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+counters
+
+(
+
+list-item-number
+
+,
+
+&quot;.&quot;
+
+)
+
+&quot; &quot;
+
+;
+
+*/&ast; usage of counters() function means value of*
+
+*counters at all higher levels are combined before printing &ast;/*
+
+}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 1
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 1.1
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 1.1.1
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 2
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 2.1
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 2.1.1
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 2.1.2
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+Level 3
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+  ------------------------------------------------------------------------------
+  list-item-number   &lbrack;1&rbrack; (counter for second level) and     list-item-number
+                     nests it under                           
+  ------------------ ---------------------------------------- ------------------
+
+  ------------------------------------------------------------------------------
+
+> The above is an example of multi-level numbering using CSS counters.
+> It makes use of the ***self-nesting*** concept of counters. Self
+> nesting is a concept where if an element already has a counter with
+> the given name but is having to create another then it creates it as a
+> child of the existing counter. Here, the second level ul already
+> inherits the list-item-number counter from its parent but then has to
+> create its own list-item-number (for its children li) and so creates
+> &lbrack;0&rbrack; (counter for first level). Thus it achieves the multi-level
+> numbering.
+
+  ------------------------------------------------------------------------------
+  counters   () function instead of  counter   () function because    counters
+             the                               the                    
+  ---------- ----------------------- --------- ---------------------- ----------
+
+  ------------------------------------------------------------------------------
+
+> The output is printed using the () function is designed to prefix the
+> value of all higher level counters (parent) when printing the output.
+
+# Chapter 36: Functions
+
+## Section 36.1: calc() function
+
+> Accepts a mathematical expression and returns a numerical value.
+>
+> It is especially useful when working with different types of units
+> (e.g. subtracting a px value from a percentage) to calculate the value
+> of an attribute.
+>
+> +, -, /, and &ast; operators can all be used, and parentheses can be
+> added to specify the order of operations if necessary.
+
+Use
+
+calc
+
+(
+
+)
+
+to calculate the width of a div element:
+
+#div1
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**left**
+
+:
+
+50
+
+px
+
+;
+
+**width**
+
+:
+
+calc
+
+(
+
+100
+
+&percnt;
+
+&minus;
+
+100
+
+px
+
+)
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+black
+
+;
+
+**background-color**
+
+:
+
+yellow
+
+;
+
+**padding**
+
+:
+
+5
+
+px
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+  -----------------------------------------------------------------------
+  calc
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Use () to determine the position of a background-image:
+
+**background-position**
+
+:
+
+calc
+
+(
+
+50
+
+&percnt;
+
+&plus;
+
+17
+
+px
+
+)
+
+calc
+
+(
+
+50
+
+&percnt;
+
+&plus;
+
+10
+
+px
+
+)
+
+,
+
+50
+
+&percnt;
+
+50
+
+&percnt;
+
+;
+
+  -----------------------------------------------------------------------
+  calc
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Use () to determine the height of an element:
+
+**height**
+
+:
+
+calc
+
+(
+
+100
+
+&percnt;
+
+&minus;
+
+20
+
+px
+
+)
+
+;
+
+## Section 36.2: attr() function
+
+> Returns the value of an attribute of the selected element.
+
+  -----------------------------------------------------------------------
+  data-
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  ::before                      and             ::after
+  ----------------------------- --------------- -------------------------
+
+  -----------------------------------------------------------------------
+
+> Below is a blockquote element which contains a character inside a &ast;
+> attribute which CSS can use (e.g. inside the pseudo-element) using
+> this function.
+
+**&lt;**
+
+**blockquote**
+
+data-mark
+
+=
+
+&apos;&quot;&apos;
+
+**&gt;**
+
+**&lt;**
+
+**/blockquote**
+
+**&gt;**
+
+> In the following CSS block, the character is appended before and after
+> the text inside the element:
+
+blockquote
+
+&lbrack;
+
+data-mark
+
+&rbrack;
+
+::
+
+before
+
+,
+
+blockquote
+
+&lbrack;
+
+data-mark
+
+&rbrack;
+
+::
+
+after
+
+{
+
+**content**
+
+:
+
+attr
+
+(
+
+data-mark
+
+)
+
+;
+
+}
+
+## Section 36.3: var() function
+
+> The var() function allows CSS variables to be accessed.
+
+*/&ast; set a variable &ast;/*
+
+:
+
+root
+
+{
+
+&minus;-
+
+primary-color
+
+:
+
+blue
+
+;
+
+}
+
+*/&ast; access variable &ast;/*
+
+selector
+
+{
+
+**color**
+
+:
+
+var
+
+(
+
+&minus;-
+
+primary-color
+
+)
+
+;
+
+}
+
+> This feature is currently under development. Check
+> &lbrack;&lbrack;caniuse.com&rbrack;&rbrack;(http://caniuse.com/#feat=css-variables)
+> for the latest browser support.
+
+## Section 36.4: radial-gradient() function
+
+> Creates an image representing a gradient of colors radiating from the
+> center of the gradient
+>
+> radial-gradient(red, orange, yellow) */&ast;A gradient coming out from
+> the middle of the gradient, red at the center, then orange, until it
+> is finally yellow at the edges&ast;/*
+
+## Section 36.5: linear-gradient() function
+
+> Creates a image representing a linear gradient of colors.
+
+linear-gradient
+
+(
+
+0
+
+deg
+
+,
+
+red
+
+,
+
+yellow
+
+50
+
+&percnt;
+
+,
+
+blue
+
+)
+
+;
+
+> This creates a gradient going from bottom to top, with colors starting
+> at red, then yellow at 50%, and finishing in blue.
+
+# Chapter 37: Custom Properties (Variables)
+
+> CSS Variables allow authors to create reusable values which can be
+> used throughout a CSS document.
+>
+> For example, it&apos;s common in CSS to reuse a single color throughout a
+> document. Prior to CSS Variables this would mean reusing the same
+> color value many times throughout a document. With CSS Variables the
+> color value can be assigned to a variable and referenced in multiple
+> places. This makes changing values easier and is more semantic than
+> using traditional CSS values.
+
+## Section 37.1: Variable Color
+
+:
+
+root
+
+{
+
+&minus;-
+
+red
+
+:
+
+#b00
+
+;
+
+&minus;-
+
+blue
+
+:
+
+#4679bd
+
+;
+
+&minus;-
+
+grey
+
+:
+
+#ddd
+
+;
+
+}
+
+.Bx1
+
+{
+
+**color**
+
+:
+
+var
+
+(
+
+&minus;-
+
+red
+
+)
+
+;
+
+**background**
+
+:
+
+var
+
+(
+
+&minus;-
+
+grey
+
+)
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+var
+
+(
+
+&minus;-
+
+red
+
+)
+
+;
+
+}
+
+## Section 37.2: Variable Dimensions
+
+:
+
+root
+
+{
+
+&minus;-W200
+
+:
+
+200
+
+px
+
+;
+
+&minus;-
+
+W
+
+10
+
+:
+
+10
+
+px
+
+;
+
+}
+
+.Bx2
+
+{
+
+**width**
+
+:
+
+var
+
+(
+
+&minus;-W200
+
+)
+
+;
+
+**height**
+
+:
+
+var
+
+(
+
+&minus;-W200
+
+)
+
+;
+
+**margin**
+
+:
+
+var
+
+(
+
+&minus;-
+
+W
+
+10
+
+)
+
+;
+
+}
+
+## Section 37.3: Variable Cascading
+
+> CSS variables cascade in much the same way as other properties, and
+> can be restated safely.
+>
+> You can define variables multiple times and only the definition with
+> the highest specificity will apply to the element selected.
+>
+> Assuming this HTML:
+
+**&lt;**
+
+**a**
+
+class
+
+=
+
+&quot;button&quot;
+
+**&gt;**
+
+Button Green
+
+**&lt;**
+
+**/a**
+
+**&gt;**
+
+**&lt;**
+
+**a**
+
+class
+
+=
+
+&quot;button button_red&quot;
+
+**&gt;**
+
+Button Red
+
+**&lt;**
+
+**/a**
+
+**&gt;**
+
+**&lt;**
+
+**a**
+
+class
+
+=
+
+&quot;button&quot;
+
+**&gt;**
+
+Button Hovered On
+
+**&lt;**
+
+**/a**
+
+**&gt;**
+
+> We can write this CSS:
+
+.button
+
+{
+
+&minus;-
+
+color
+
+:
+
+green
+
+;
+
+**padding**
+
+:
+
+.5
+
+rem
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+var
+
+(
+
+&minus;-
+
+color
+
+)
+
+;
+
+**color**
+
+:
+
+var
+
+(
+
+&minus;-
+
+color
+
+)
+
+;
+
+}
+
+.button
+
+:
+
+hover
+
+{
+
+&minus;-
+
+color
+
+:
+
+blue
+
+;
+
+}
+
+.button_red
+
+{
+
+&minus;-
+
+color
+
+:
+
+red
+
+;
+
+}
+
+> And get this result:
+
+!&lbrack;&rbrack;(./images/image226.jpg){width="3.71875in"
+height="0.6041666666666666in"}
+
+## Section 37.4: Valid/Invalids
+
+> **Naming** When naming CSS variables, it contains only letters and
+> dashes just like other CSS properties (eg: lineheight,
+> -moz-box-sizing) but it should start with double dashes (&minus;-)
+
+//These are Invalids variable names
+
+&minus;-123
+
+color
+
+:
+
+blue
+
+;
+
+&minus;-
+
+&num;
+
+**color**
+
+:
+
+red
+
+;
+
+&minus;-
+
+bg
+
+&lowbar;color
+
+:
+
+yellow
+
+&minus;-
+
+&dollar;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+//Valid variable names
+
+&minus;-
+
+color
+
+:
+
+red
+
+;
+
+&minus;-
+
+bg-color
+
+:
+
+yellow
+
+&minus;-
+
+width
+
+:
+
+100
+
+px
+
+;
+
+> **CSS Variables are case sensitive.**
+
+*/&ast; The variable names below are all different variables &ast;/*
+
+&minus;-
+
+pcolor
+
+:
+
+;
+
+&minus;-
+
+Pcolor
+
+:
+
+;
+
+&minus;-
+
+pColor
+
+:
+
+;
+
+> **Empty Vs Space**
+
+*/&ast; Invalid &ast;/*
+
+&minus;-
+
+color
+
+:
+
+;
+
+*/&ast; Valid &ast;/*
+
+&minus;-
+
+color
+
+:
+
+;
+
+*/&ast; space is assigned &ast;/*
+
+> **Concatenations**
+
+*/&ast; Invalid - CSS doesn&apos;t support concatenation&ast;/*
+
+.logo
+
+{
+
+&minus;-
+
+logo-url
+
+:
+
+&apos;logo&apos;
+
+;
+
+**background**
+
+:
+
+url
+
+(
+
+&apos;assets/img/&apos;
+
+var
+
+(
+
+&minus;-
+
+logo-url
+
+)
+
+&apos;.png&apos;
+
+)
+
+;
+
+}
+
+*/&ast; Invalid - CSS bug &ast;/*
+
+.logo
+
+{
+
+&minus;-
+
+logo-url
+
+:
+
+&apos;assets/img/logo.png&apos;
+
+;
+
+**background**
+
+:
+
+url
+
+(
+
+var
+
+(
+
+&minus;-
+
+logo-url
+
+)
+
+)
+
+;
+
+}
+
+*/&ast; Valid &ast;/*
+
+.logo
+
+{
+
+&minus;-
+
+logo-url
+
+:
+
+url
+
+(
+
+&apos;assets/img/logo.png&apos;
+
+)
+
+;
+
+**background**
+
+:
+
+var
+
+(
+
+&minus;-
+
+logo-url
+
+)
+
+;
+
+}
+
+> **Careful when using Units**
+
+*/&ast; Invalid &ast;/*
+
+&minus;-
+
+width
+
+:
+
+10
+
+;
+
+**width**
+
+:
+
+var
+
+(
+
+&minus;-
+
+width
+
+)
+
+px
+
+;
+
+*/&ast; Valid &ast;/*
+
+&minus;-
+
+width
+
+:
+
+10
+
+px
+
+;
+
+**width**
+
+:
+
+var
+
+(
+
+&minus;-
+
+width
+
+)
+
+;
+
+*/&ast; Valid &ast;/*
+
+&minus;-
+
+width
+
+:
+
+10
+
+;
+
+**width**
+
+:
+
+calc
+
+(
+
+1
+
+px
+
+&ast;
+
+var
+
+(
+
+&minus;-
+
+width
+
+)
+
+)
+
+;
+
+*/&ast; multiply by 1 unit to convert &ast;/*
+
+**width**
+
+:
+
+calc
+
+(
+
+1
+
+em
+
+&ast;
+
+var
+
+(
+
+&minus;-
+
+width
+
+)
+
+)
+
+;
+
+<h3 id="ch37-5">Section 37.5: With media queries</h3>
+
+> You can re-set variables within media queries and have those new
+> values cascade wherever they are used, something that isn&apos;t possible
+> with pre-processor variables.
+>
+> Here, a media query changes the variables used to set up a very simple
+> grid:
+>
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+:
+
+root
+
+{
+
+&minus;-
+
+width
+
+:
+
+25
+
+&percnt;
+
+;
+
+&minus;-
+
+content
+
+:
+
+&apos;This is desktop&apos;
+
+;
+
+}
+
+**&commat;media**
+
+only screen and
+
+(
+
+**max-width**
+
+:
+
+767
+
+px
+
+)
+
+{
+
+:
+
+root
+
+{
+
+&minus;-
+
+width
+
+:
+
+50
+
+&percnt;
+
+;
+
+&minus;-
+
+content
+
+:
+
+&apos;This is mobile&apos;
+
+;
+
+}
+
+}
+
+**&commat;media**
+
+only screen and
+
+(
+
+**max-width**
+
+:
+
+480
+
+px
+
+)
+
+{
+
+:
+
+root
+
+{
+
+&minus;-
+
+width
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+}
+
+div
+
+{
+
+**width**
+
+:
+
+calc
+
+(
+
+var
+
+(
+
+&minus;-
+
+width
+
+)
+
+&minus;
+
+20
+
+px
+
+)
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+}
+
+div
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+var
+
+(
+
+&minus;-
+
+content
+
+)
+
+;
+
+}
+
+*/&ast; Other Styles &ast;/*
+
+body
+
+{
+
+**padding**
+
+:
+
+10
+
+px
+
+;
+
+}
+
+div
+
+{
+
+**display**
+
+:
+
+flex
+
+;
+
+**align-items**
+
+:
+
+center
+
+;
+
+**justify-content**
+
+:
+
+center
+
+;
+
+**font-weight**
+
+:
+
+bold
+
+;
+
+**float**
+
+:
+
+left
+
+;
+
+**margin**
+
+:
+
+10
+
+px
+
+;
+
+**border**
+
+:
+
+4
+
+px
+
+solid
+
+black
+
+;
+
+**background**
+
+:
+
+red
+
+;
+
+}
+
+> You can try resizing the window in this &lbrack;&lbrack;CodePen
+> Demo&rbrack;&rbrack;(https://codepen.io/mkumaran/pen/BZaXvz)
+>
+> Here&apos;s an animated screenshot of the resizing in action:
+
+!&lbrack;&rbrack;(./images/image227.jpg){width="7.48037510936133in"
+height="4.327166447944007in"}
+
+# Chapter 38: Single Element Shapes
+
+## Section 38.1: Trapezoid
+
+> A trapezoid can be made by a block element with zero height (height of
+> 0px), a width greater than zero and a border, that is transparent
+> except for one side:
+
+!&lbrack;&rbrack;(./images/image228.jpg){width="4.75in" height="1.96875in"}
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;trapezoid&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.trapezoid
+
+{
+
+**width**
+
+:
+
+50
+
+px
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-left**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-right**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-bottom**
+
+:
+
+100
+
+px
+
+solid
+
+black
+
+;
+
+}
+
+> With changing the border sides, the orientation of the trapezoid can
+> be adjusted.
+
+## Section 38.2: Triangles
+
+> To create a CSS triangle define an element with a width and height of
+> 0 pixels. The triangle shape will be formed using border properties.
+> For an element with 0 height and width the 4 borders (top, right,
+> bottom, left) each form a triangle. Here&apos;s an element with 0
+> height/width and 4 different colored borders.
+
+!&lbrack;&rbrack;(./images/image229.jpg){width="1.6666666666666667in"
+height="1.7083333333333333in"}
+
+> By setting some borders to transparent, and others to a color we can
+> create various triangles. For example, in the Up triangle, we set the
+> bottom border to the desired color, then set the left and right
+> borders to transparent. Here&apos;s an image with the left and right
+> borders shaded slightly to show how the triangle is being formed.
+
+!&lbrack;&rbrack;(./images/image230.jpg){width="1.1458333333333333in"
+height="1.1875in"}
+
+> The dimensions of the triangle can be altered by changing the
+> different border widths - taller, shorter, lopsided, etc. The examples
+> below all show a 50x50 pixel triangle.
+>
+> **Triangle - Pointing Up**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-up&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-up
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-left**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-right**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-bottom**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+}
+
+> **Triangle - Pointing Down**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-down&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-down
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-left**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-right**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-top**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+}
+
+> **Triangle - Pointing Right**
+
+!&lbrack;&rbrack;(./images/image233.jpg){width="1.1458333333333333in"
+height="1.1875in"}
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-right&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-right
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-top**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-bottom**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-left**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+}
+
+> **Triangle - Pointing Left**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-left&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-left
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-top**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-bottom**
+
+:
+
+25
+
+px
+
+solid
+
+transparent
+
+;
+
+**border-right**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+}
+
+> **Triangle - Pointing Up/Right**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-up-right&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-up-right
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-top**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-left**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+}
+
+> **Triangle - Pointing Up/Left**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-up-left&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-up-left
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-top**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-right**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+}
+
+> **Triangle - Pointing Down/Right**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-down-right&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-down-right
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-bottom**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-left**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+}
+
+> **Triangle - Pointing Down/Left**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;triangle-down-left&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.triangle-down-left
+
+{
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border-bottom**
+
+:
+
+50
+
+px
+
+solid
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-right**
+
+:
+
+50
+
+px
+
+solid
+
+transparent
+
+;
+
+}
+
+## Section 38.3: Circles and Ellipses
+
+> **Circle**
+>
+> To create a **circle**, define an element with an equal width and
+> height (a *square*) and then set the border-radius property of this
+> element to 50%.
+
+!&lbrack;&rbrack;(./images/image239.jpg){width="1.1458333333333333in"
+height="1.1875in"}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;circle&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.circle
+
+{
+
+**width**
+
+:
+
+50
+
+px
+
+;
+
+**height**
+
+:
+
+50
+
+px
+
+;
+
+**background**
+
+:
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-radius**
+
+:
+
+50
+
+&percnt;
+
+;
+
+}
+
+> **Ellipse**
+>
+> An **ellipse** is similar to a circle, but with different values for
+> width and height.
+
+!&lbrack;&rbrack;(./images/image240.jpg){width="0.9375in" height="0.9375in"}
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;oval&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.oval
+
+{
+
+**width**
+
+:
+
+50
+
+px
+
+;
+
+**height**
+
+:
+
+80
+
+px
+
+;
+
+**background**
+
+:
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+**border-radius**
+
+:
+
+50
+
+&percnt;
+
+;
+
+}
+
+## Section 38.4: Bursts
+
+> A burst is similar to a star but with the points extending less
+> distance from the body. Think of a burst shape as a square with
+> additional, slightly rotated, squares layered on top.
+
+  -----------------------------------------------------------------------
+  ::before                      and             ::after
+  ----------------------------- --------------- -------------------------
+
+  -----------------------------------------------------------------------
+
+> The additional squares are created using the psuedo-elements.
+>
+> **8 Point Burst**
+
+  -----------------------------------------------------------------------
+  before
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> An 8 point burst are 2 layered squares. The bottom square is the
+> element itself, the additional square is created using the :
+> pseudo-element. The bottom is rotated 20°, the top square is rotated
+> 135°.
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;burst-8&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.burst-8 {
+
+background: rgb(246, 156, 85);
+
+width: 40px;
+
+height: 40px;
+
+position: relative;
+
+text-align: center;
+
+-ms-transform: rotate(20deg);
+
+transform: rotate(20eg);
+
+}
+
+.burst-8::before {
+
+content: &quot;&quot;;
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+height: 40px;
+
+width: 40px;
+
+background: rgb(246, 156, 85);
+
+-ms-transform: rotate(135deg);
+
+transform: rotate(135deg);
+
+}
+
+> **12 Point Burst**
+
+  -----------------------------------------------------------------------
+  before                     and :                  after
+  -------------------------- ---------------------- ---------------------
+
+  -----------------------------------------------------------------------
+
+> An 12 point burst are 3 layered squares. The bottom square is the
+> element itself, the additional squares are created using the :
+> pseudo-elements. The bottom is rotated 0°, the next square is rotated
+> 30°, and the top is rotated 60°.
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;burst-12&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.burst-12 {
+
+width: 40px;
+
+height: 40px;
+
+position: relative;
+
+text-align: center;
+
+background: rgb(246, 156, 85);
+
+}
+
+.burst-12::before, .burst-12::after {
+
+content: &quot;&quot;;
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+height: 40px;
+
+width: 40px;
+
+background: rgb(246, 156, 85);
+
+}
+
+.burst-12::before {
+
+-ms-transform: rotate(30deg);
+
+transform: rotate(30deg);
+
+}
+
+.burst-12::after {
+
+-ms-transform: rotate(60deg);
+
+transform: rotate(60deg);
+
+}
+
+## Section 38.5: Square
+
+> To create a square, define an element with both a width and height. In
+> the example below, we have an element with a width and height of 100
+> pixels each.
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;square&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.square
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+rgb
+
+(
+
+246
+
+,
+
+156
+
+,
+
+85
+
+)
+
+;
+
+}
+
+## Section 38.6: Cube
+
+  -----------------------------------------------------------------------
+  skewX                 () and                      skewY
+  --------------------- --------------------------- ---------------------
+
+  -----------------------------------------------------------------------
+
+> This example shows how to create a cube using 2D transformation
+> methods () on pseudo elements.
+
+!&lbrack;&rbrack;(./images/image244.jpg){width="2.40625in"
+height="1.9479166666666667in"}
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;cube&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.cube
+
+{
+
+**background**
+
+:
+
+#dc2e2e
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**position**
+
+:
+
+relative
+
+;
+
+**margin**
+
+:
+
+50
+
+px
+
+;
+
+}
+
+.cube
+
+::
+
+before
+
+{
+
+**content**
+
+:
+
+&apos;&apos;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**background**
+
+:
+
+#f15757
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+20
+
+px
+
+;
+
+**transform**
+
+:
+
+skewX
+
+(
+
+-40
+
+deg
+
+)
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+-20
+
+px
+
+;
+
+**left**
+
+:
+
+8
+
+px
+
+;
+
+}
+
+.cube
+
+::
+
+after
+
+{
+
+**content**
+
+:
+
+&apos;&apos;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**background**
+
+:
+
+#9e1515
+
+;
+
+**width**
+
+:
+
+16
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**transform**
+
+:
+
+skewY
+
+(
+
+-50
+
+deg
+
+)
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+-10
+
+px
+
+;
+
+**left**
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+&lbrack;**&lbrack;See demo&rbrack;**&rbrack;(https://jsfiddle.net/codename0/9po0r1L1/)
+
+## Section 38.7: Pyramid
+
+  -----------------------------------------------------------------------
+  skewY()
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> This example shows how to create a **pyramid** using borders and 2D
+> transformation methods and rotate() on pseudo elements.
+
+!&lbrack;&rbrack;(./images/image245.jpg){width="2.1041666666666665in"
+height="1.8541666666666667in"}
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;pyramid&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.pyramid
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**position**
+
+:
+
+relative
+
+;
+
+**margin**
+
+:
+
+50
+
+px
+
+;
+
+}
+
+.pyramid
+
+::
+
+before
+
+,
+
+.pyramid
+
+::
+
+after
+
+{
+
+**content**
+
+:
+
+&apos;&apos;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**width**
+
+:
+
+0
+
+;
+
+**height**
+
+:
+
+0
+
+;
+
+**border**
+
+:
+
+50
+
+px
+
+solid
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+}
+
+.pyramid
+
+::
+
+before
+
+{
+
+**border-color**
+
+:
+
+transparent
+
+transparent
+
+#ff5656
+
+transparent
+
+;
+
+**transform**
+
+:
+
+scaleY
+
+(
+
+2
+
+)
+
+skewY
+
+(
+
+-40
+
+deg
+
+)
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+}
+
+.pyramid
+
+::
+
+after
+
+{
+
+**border-color**
+
+:
+
+transparent
+
+transparent
+
+#d64444
+
+transparent
+
+;
+
+**transform**
+
+:
+
+scaleY
+
+(
+
+2
+
+)
+
+skewY
+
+(
+
+40
+
+deg
+
+)
+
+rotate
+
+(
+
+-45
+
+deg
+
+)
+
+;
+
+}
+
+# Chapter 39: Columns
+
+## Section 39.1: Simple Example (column-count)
+
+> The CSS multi-column layout makes it easy to create multiple columns
+> of text.
+>
+> **Code**
+>
+> **&lt;div** id=&quot;multi-columns&quot;**&gt;**Lorem ipsum dolor sit amet,
+> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+> proident, sunt in culpa qui officia deserunt mollit anim id est
+> laborum**&lt;/div&gt;**
+>
+> .multi-columns {
+>
+> -moz-column-count: 2; -webkit-column-count: 2; **column-count**: 2; }
+>
+> **Result**
+
+!&lbrack;&rbrack;(./images/image246.jpg){width="7.48037510936133in"
+height="3.572153324584427in"}
+
+## Section 39.2: Column Width
+
+> The column-width property sets the minimum column width. If
+> column-count is not defined the browser will make as many columns as
+> fit in the available width.
+>
+> **Code:**
+>
+> **&lt;div** id=&quot;multi-columns&quot;**&gt;**
+>
+> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+> minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+> aliquip ex ea commodo consequat. Duis aute irure dolor in
+> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+> pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+> culpa qui officia deserunt mollit anim id est laborum
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+.multi-columns
+
+{
+
+-moz-column-width
+
+:
+
+100
+
+px
+
+;
+
+-webkit-column-width
+
+:
+
+100
+
+px
+
+;
+
+**column-width**
+
+:
+
+100
+
+px
+
+;
+
+}
+
+> **Result**
+
+!&lbrack;&rbrack;(./images/image247.jpg){width="6.125in"
+height="3.7083333333333335in"}
+
+# Chapter 40: Multiple columns
+
+> CSS allows to define that element contents wrap into multiple columns
+> with gaps and rules between them.
+
+## Section 40.1: Create Multiple Columns
+
+> **&lt;div** class=&quot;content&quot;**&gt;** Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+> ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+> veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+> ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+> hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+> eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+> dignissim qui blandit praesent luptatum zzril delenit augue duis
+> dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis
+> eleifend option congue nihil imperdiet doming id quod mazim placerat
+> facer possim assum. **&lt;/div&gt;**
+>
+> CSS
+
+.content
+
+{
+
+&minus;
+
+webkit-column-count
+
+:
+
+3
+
+;
+
+*/&ast; Chrome, Safari, Opera &ast;/*
+
+&minus;
+
+moz-column-count
+
+:
+
+3
+
+;
+
+*/&ast; Firefox &ast;/*
+
+**column-count**
+
+:
+
+3
+
+;
+
+}
+
+## Section 40.2: Basic example
+
+> Consider the following HTML markup:
+>
+> **&lt;section&gt;** **&lt;p&gt;**Lorem ipsum dolor sit amet, consetetur
+> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+> dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+> et justo duo dolores et ea rebum.**&lt;/p&gt;** **&lt;p&gt;** Stet clita kasd
+> gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+> sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+> rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+> ipsum dolor sit amet.**&lt;/p&gt;** **&lt;p&gt;**Lorem ipsum dolor sit amet,
+> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+> labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+> et accusam et justo duo dolores et ea rebum. Stet clita kasd
+> gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+> amet.**&lt;/p&gt; &lt;/section&gt;**
+>
+> With the following CSS applied the content is split into three columns
+> separated by a gray column rule of two pixels.
+
+section
+
+{
+
+**columns**
+
+:
+
+3
+
+;
+
+**column-gap**
+
+:
+
+40
+
+px
+
+;
+
+**column-rule**
+
+:
+
+2
+
+px
+
+solid
+
+gray
+
+;
+
+}
+
+See a &lbrack;&lbrack;live sample of this on
+JSFiddle&rbrack;&rbrack;(https://jsfiddle.net/vjL9ewmb/).
+
+# Chapter 41: Inline-Block Layout
+
+## Section 41.1: Justified navigation bar
+
+> The horizontally justified navigation (menu) bar has some number of
+> items that should be justified. The first (left) item has no left
+> margin within the container, the last (right) item has no right margin
+> within the container. The distance between items is equal, independent
+> on the individual item width.
+
+<h4>HTML</h4>
+
+**&lt;**
+
+**nav**
+
+**&gt;**
+
+**&lt;**
+
+**ul**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+abc
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+abcdefghijkl
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**li**
+
+**&gt;**
+
+abcdef
+
+**&lt;**
+
+**/li**
+
+**&gt;**
+
+**&lt;**
+
+**/ul**
+
+**&gt;**
+
+**&lt;**
+
+**/nav**
+
+**&gt;**
+
+<h4>CSS</h4>
+
+nav
+
+{
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**line-height**
+
+:
+
+1.4
+
+em
+
+;
+
+}
+
+ul
+
+{
+
+**list-style**
+
+:
+
+none
+
+;
+
+**display**
+
+:
+
+block
+
+;
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**margin**
+
+:
+
+0
+
+;
+
+**padding**
+
+:
+
+0
+
+;
+
+**text-align**
+
+:
+
+justify
+
+;
+
+**margin-bottom**
+
+:
+
+-1.4
+
+em
+
+;
+
+}
+
+ul
+
+:
+
+after
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+li
+
+{
+
+**display**
+
+:
+
+inline-block
+
+;
+
+}
+
+> **Notes**
+
+  -----------------------------------------------------------------------
+  after
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> The nav, ul and li tags were chosen for their semantic meaning of &apos;a
+> list of navigation (menu) items&apos;. Other tags may also be used of
+> course.
+>
+> The : pseudo-element causes an extra &apos;line&apos; in the ul and thus an
+> extra, empty height of this block, pushing other content down. This is
+> solved by the negative margin-bottom, which has to have the same
+> magnitude as the line-height (but negative).
+>
+> If the page becomes too narrow for all the items to fit, the items
+> will break to a new line (starting from the right) and be justified on
+> this line. The total height of the menu will grow as needed.
+
+# Chapter 42: Inheritance
+
+## Section 42.1: Automatic inheritance
+
+> Inheritance the a fundamental mechanism of CSS by which the computed
+> values of some properties of an element are applied to its&apos; children.
+> This is particularly useful when you want to set a global style to
+> your elements rather than having to set said properties to each and
+> every element in your markup.
+>
+> Common properties that are automatically inherited are: font, color,
+> text-align, line-height.
+>
+> Assume the following stylesheet:
+
+#myContainer
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+**padding**
+
+:
+
+5
+
+px
+
+;
+
+}
+
+  -----------------------------------------------------------------------------------------------------------
+  **color**   :   red   not only to the  **&lt;div**   **&gt;** element but also to **&lt;h3**   **&gt;**   **&lt;p**
+                                                     the                                   and      
+  ----------- --- ----- ---------------- ----------- -------------------------- ---------- -------- ---------
+
+  -----------------------------------------------------------------------------------------------------------
+
+> This will apply **&gt;** elements. However, due to the nature of padding
+> its value will ***not*** be inherited to those elements.
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;myContainer&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**3**
+
+**&gt;**
+
+Some header
+
+**&lt;**
+
+**/h**
+
+**3**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+Some paragraph
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+## Section 42.2: Enforced inheritance
+
+> Some properties are not automatically inherited from an element down
+> to its&apos; children. This is because those properties are typically
+> desired to be unique to the element (or selection of elements) to
+> which the property is applied to. Common such properties are margin,
+> padding, background, display, etc.
+>
+> However, sometimes inheritance is desired anyway. To achieve this, we
+> can apply the inherit value to the property that should be inherited.
+> The inherit value can be appied to *any* CSS property and *any* HTML
+> element.
+>
+> Assume the following stylesheet:
+
+#myContainer
+
+{
+
+**color**
+
+:
+
+red
+
+;
+
+**padding**
+
+:
+
+5
+
+px
+
+;
+
+}
+
+#myContainer
+
+p
+
+{
+
+**padding**
+
+:
+
+inherit
+
+;
+
+}
+
+  ------------------------------------------------------------------------------------
+  **color**   :   red       to both the              **&lt;h3**   **&gt;** and   **&lt;p**
+  ----------- --- --------- ------------------------ ---------- ------------ ---------
+
+  ------------------------------------------------------------------------------------
+
+> This will apply **&gt;** elements due to the inheritance nature of the
+> color property.
+
+  -----------------------------------------------------------------------
+  **&lt;p**
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> However, the **&gt;** element will also inherit the padding value from
+> its&apos; parent because this was specified.
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;myContainer&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**3**
+
+**&gt;**
+
+Some header
+
+**&lt;**
+
+**/h**
+
+**3**
+
+**&gt;**
+
+**&lt;**
+
+**p**
+
+**&gt;**
+
+Some paragraph
+
+**&lt;**
+
+**/p**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+# Chapter 43: CSS Image Sprites
+
+## Section 43.1: A Basic Implementation
+
+> **What&apos;s an image sprite?**
+>
+> An image sprite is a single asset located within an image sprite
+> sheet. An image sprite sheet is an image file that contains more than
+> one asset that can be extracted from it.
+>
+> For example:
+
+!&lbrack;&rbrack;(./images/image248.jpg){width="1.75in" height="1.875in"}
+
+> The image above is an image sprite sheet, and each one of those stars
+> is a sprite within the sprite sheet. These sprite sheets are useful
+> because they improve performance by reducing the number of HTTP
+> requests a browser might have to make.
+>
+> So how do you implement one? Here&apos;s some example code.
+>
+<h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;icon icon1&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;icon icon2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;icon icon3&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> <h4>CSS</h4>
+
+.icon
+
+{
+
+**background**
+
+:
+
+url
+
+(
+
+"
+
+icons-sprite.png
+
+"
+
+)
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**height**
+
+:
+
+20
+
+px
+
+;
+
+**width**
+
+:
+
+20
+
+px
+
+;
+
+}
+
+.icon1
+
+{
+
+**background-position**
+
+:
+
+0
+
+px
+
+0
+
+px
+
+;
+
+}
+
+.icon2
+
+{
+
+**background-position**
+
+:
+
+-20
+
+px
+
+0
+
+px
+
+;
+
+}
+
+.icon3
+
+{
+
+**background-position**
+
+:
+
+-40
+
+px
+
+0
+
+px
+
+;
+
+}
+
+> By using setting the sprite&apos;s width and height and by using the
+> background-position property in CSS (with an x and y value) you can
+> easily extract sprites from a sprite sheet using CSS.
+
+<h2 id="ch44">Chapter 44: Clipping and Masking</h2>
+
+| **          | > **Details**                                          |
+| Parameter** |                                                        |
+|-------------|--------------------------------------------------------|
+| clip-source | A URL which can point to an inline SVG element (or) an |
+|             | SVG element in an external file that contains the clip |
+|             | path&apos;s definition.                                    |
+
+  inset     (),   circle      (),   ellipse       () or     polygon
+
+
+> Refers to one among (). Using one of these
+
+  basic-shape         functions the clipping path is defined. These shape
+                      functions work exactly the same way as they do in Shapes
+                      for Floats
+
+  clip-geometry-box   This can have one among content-box, padding-box,
+
+                      border-box, margin-box, fill-box, stroke-box, view-box
+                      as values. When this is provided without any value for
+                      &lt;basic-shape&gt;, the edges of the corresponding box is
+                      used as the path for clipping. When used with a
+                      &lt;basic-shape&gt;, this acts as the reference box for the
+                      shape.
+
+  mask-reference      This can be none or an image or a reference URL to a
+                      mask image source.
+
+  repeat-style        This specifies how the mask should be repeated or tiled
+                      in the X and Y axes. The supported values are repeat-x,
+                      repeat-y, repeat, space, round, no-repeat.
+
+  mask-mode           Can be alpha or luminance or auto and indicates whether
+                      the mask should be treated as a alpha mask or a
+                      luminance mask. If no value is provided and the
+                      mask-reference is a direct image then it would be
+                      considered as alpha mask (or) if the mask-reference is a
+                      URL then it would be considered as luminance mask.
+
+  position            This specifies the position of each mask layer and is
+                      similar in behavior to the backgroundposition property.
+                      The value can be provided in 1 value syntax (like top,
+                      10%) or in 2 value
+
+  top right                             ,   50% 50%
+
+
+> syntax (like ).
+
+  geometry-box   This specifies the box to which the mask should be clipped (*mask
+                 painting area*) or the box which should be used as reference for the
+                 mask&apos;s origin (*mask positioning area*) depending on the property. The
+                 list of possible values are content-box, padding-box, border-box,
+                 margin-box, fill-box, stroke-box, view-box. Detailed explanation of how
+                 each of those values work is available in the &lbrack;&lbrack;W3C
+                 Spec&rbrack;&rbrack;(https://www.w3.org/TR/css-masking/#the-mask-clip).
+
+  bg-size        This represents the size of each mask-image layer and has the same
+                 syntax as backgroundsize. The value can be length or percentage or auto
+                 or cover or contain. Length, percentage and auto can either be provided
+                 as a single value or as one for each axis.
+
+> This can be any one among add, subtract, exclude, multiply per layer
+> and defines the type
+>
+> compositing-operator of compositing operation that should be used for
+> this layer with those below it. Detailed explanation about each value
+> is available in the &lbrack;&lbrack;W3C
+> Specs&rbrack;&rbrack;(https://www.w3.org/TR/css-masking/#the-mask-composite).
+
+<h3 id="ch44-1">Section 44.1: Clipping and Masking: Overview and Dierence</h3>
+
+> With **Clipping** and **Masking** you can make some specified parts of
+> elements transparent or opaque. Both can be applied to any HTML
+> element.
+>
+> **Clipping**
+
+  circle          (),     polygon           () or        ellipse
+
+
+> Clips are vector paths. Outside of this path the element will be
+> transparent, inside it&apos;s opaque. Therefore you can define a clip-path
+> property on elements. Every graphical element that also exists in SVG
+> you can use here as a function to define the path. Examples are ().
+
+!&lbrack;&rbrack;(./images/image249.jpg){width="3.3333333333333335in"
+height="2.71875in"}
+
+> Example
+
+**clip-path**
+
+:
+
+circle
+
+(
+
+100
+
+px
+
+at
+
+center
+
+)
+
+;
+
+> The element will be only visible inside of this circle, which is
+> positioned at the center of the element and has a radius of 100px.
+>
+> **Masking**
+>
+> Masks are similar to Clips, but instead of defining a path you define
+> a mask what layers over the element. You can imagine this mask as an
+> image what consist of mainly two colors: black and white.
+>
+> **Luminance Mask**: Black means the region is opaque, and white that
+> it&apos;s transparent, but there is also a grey area which is
+> semi-transparent, so you are able to make smooth transitions.
+>
+> **Alpha Mask**: Only on the transparent areas of the mask the element
+> will be opaque.
+
+!&lbrack;&rbrack;(./images/image250.jpg){width="3.3333333333333335in"
+height="2.0625in"}
+
+> This image for example can be used as a luminance mask to make for an
+> element a very smooth transition from right to left and from opaque to
+> transparent.
+>
+> The mask property let you specify the the mask type and an image to be
+> used as layer.
+>
+> Example
+
+**mask**
+
+:
+
+url
+
+(
+
+masks
+
+.svg
+
+#rectangle
+
+)
+
+luminance
+
+;
+
+> An element called rectangle defined in masks.svg will be used as an
+> **luminance mask** on the element.
+
+## Section 44.2: Simple mask that fades an image from solid to transparent
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**background**
+
+:
+
+url
+
+(
+
+http
+
+:
+
+//lorempixel.com/
+
+200
+
+/
+
+200
+
+/nature/
+
+1
+
+)
+
+;
+
+**mask-image**
+
+:
+
+linear-gradient
+
+(
+
+to
+
+right
+
+,
+
+white
+
+,
+
+transparent
+
+)
+
+;
+
+}
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> In the above example there is an element with an image as its
+> background. The mask that is applied on the image (using CSS) makes it
+> look as though it is fading out from left to right.
+>
+> The masking is achieved by using a linear-gradient that goes from
+> white (on the left) to transparent (on the right) as the mask. As it
+> is an alpha mask, image becomes transparent where the mask is
+> transparent.
+>
+> **Output without the mask:**
+
+[image251.jpg 2.18 x 2.18](./images/image251.jpg)
+
+> **Output with the mask:**
+
+[image252.jpg 2.18 x 2.18](./images/image252.jpg)
+
+> **Note:** As mentioned in remarks, the above example would work in
+> Chrome, Safari and Opera only when used with the -webkit prefix. This
+> example (with a linear-gradient as mask image) is not yet supported in
+> Firefox.
+
+<h3 id="ch44-3">Section 44.3: Clipping (Circle)</h3>
+
+<h4>CSS:</h4>
+
+```
+div
+{
+**width**
+:
+200
+px
+;
+**height**
+:
+200
+px
+;
+**background**
+:
+teal
+;
+**clip-path**
+:
+circle
+(
+30
+&percnt;
+at
+50
+&percnt;
+50
+&percnt;
+)
+;
+*/&ast; refer remarks before usage &ast;/*
+}
+```
+
+<h4>HTML</h4>
+
+```
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> This example shows how to clip a div to a circle. The element is
+> clipped into a circle whose radius is 30% based on the dimensions of
+> the reference box with its center point at the center of the reference
+> box. Here since no &lt;clipgeometry-box&gt; (in other words, reference
+> box) is provided, the border-box of the element will be used as the
+> reference box.
+>
+> The circle shape needs to have a radius and a center with (x,y)
+> coordinates:
+
+circle
+
+```
+(
+radius at x y
+)
+```
+
+&lbrack;**&lbrack;View Example&rbrack;**&rbrack;(https://jsfiddle.net/webtiki/qp69n494/)
+**Output:**
+
+[image253.jpg 2.468 x 2.229](./images/image253.jpg)
+
+<h3 id="ch44-4">Section 44.4: Clipping (Polygon)</h3>
+
+<h4>CSS:</h4>
+
+```
+div
+{
+**width**
+:
+200
+px
+;
+**height**
+:
+200
+px
+;
+**background**
+:
+teal
+;
+**clip-path**
+:
+polygon
+(
+0
+0
+,
+0
+100
+&percnt;
+,
+100
+&percnt;
+50
+&percnt;
+)
+;
+*/&ast; refer remarks before usage &ast;/*
+}
+```
+
+<h4>HTML:</h4>
+
+```
+**&lt;**
+**div**
+**&gt;**
+**&lt;**
+**/div**
+**&gt;**
+```
+
+> In the above example, a **polygonal** clipping path is used to clip
+> the square (200 x 200) element into a triangle shape. The output shape
+> is a triangle because the path starts at (that is, first coordinates
+> are at) 0 0 - which is the top-left
+
+  100%   &minus; which is bottom-left corner of the box and then       100% 50%
+         finally to                                               
+
+
+> corner of the box, then goes to 0 which is
+>
+> nothing but the right-middle point of the box. These paths are self
+> closing (that is, the starting point will be the ending point) and so
+> the final shape is that of a triangle.
+>
+> This can also be used on an element with an image or a gradient as
+> background.
+
+&lbrack;**&lbrack;View Example&rbrack;**&rbrack;(https://jsfiddle.net/eoa4a94k/)
+
+> **Output:**
+
+[image254.jpg 2.16 x 2.16](./images/image254.jpg)
+
+<h3 id="ch44-5">Section 44.5: Using masks to cut a hole in the middle of an image</h3>
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**background**
+
+:
+
+url
+
+(
+
+http
+
+:
+
+//lorempixel.com/
+
+200
+
+/
+
+200
+
+/abstract/
+
+6
+
+)
+
+;
+
+**mask-image**
+
+:
+
+radial-gradient
+
+(
+
+circle
+
+farthest-side at
+
+center
+
+,
+
+transparent
+
+49
+
+&percnt;
+
+,
+
+white
+
+50
+
+&percnt;
+
+)
+
+;
+
+*/&ast; check*
+
+*remarks before using &ast;/*
+
+}
+
+<h4>HTML</h4>
+>
+> In the above example, a transparent circle is created at the center
+> using radial-gradient and this is then used as a mask to produce the
+> effect of a circle being cut out from the center of an image.
+>
+> **Image without mask:**
+
+[image255.jpg 2.16 x 2.16](./images/image255.jpg)
+
+> **Image with mask:**
+
+[image256.jpg 2.16 x 2.16](./images/image256.jpg)
+
+<h3 id="ch44-6">Section 44.6: Using masks to create images with irregular shapes</h3>
+
+> <h4>CSS</h4>
+
+div
+
+{
+
+*/&ast; check remarks before usage &ast;/*
+
+**height**
+
+:
+
+200
+
+px
+
+;
+
+**width**
+
+:
+
+400
+
+px
+
+;
+
+**background-image**
+
+:
+
+url
+
+(
+
+http
+
+:
+
+//lorempixel.com/
+
+400
+
+/
+
+200
+
+/nature/
+
+4
+
+)
+
+;
+
+**mask-image**
+
+:
+
+linear-gradient
+
+(
+
+to
+
+top
+
+right
+
+,
+
+transparent
+
+49.5
+
+&percnt;
+
+,
+
+white
+
+50.5
+
+&percnt;
+
+)
+
+,
+
+linear-gradient
+
+(
+
+to
+
+top
+
+left
+
+,
+
+transparent
+
+49.5
+
+&percnt;
+
+,
+
+white
+
+50.5
+
+&percnt;
+
+)
+
+,
+
+linear-gradient
+
+(
+
+white
+
+,
+
+white
+
+)
+
+;
+
+**mask-size**
+
+:
+
+75
+
+&percnt;
+
+25
+
+&percnt;
+
+,
+
+25
+
+&percnt;
+
+25
+
+&percnt;
+
+,
+
+100
+
+&percnt;
+
+75
+
+&percnt;
+
+;
+
+**mask-position**
+
+:
+
+bottom
+
+left
+
+,
+
+bottom
+
+right
+
+,
+
+top
+
+left
+
+;
+
+**mask-repeat**
+
+:
+
+no-repeat
+
+;
+
+}
+
+> <h4>HTML</h4>
+
+**&lt;**
+
+**div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> In the above example, three linear-gradient images (which when placed
+> in their appropriate positions would cover 100% x 100% of the
+> container&apos;s size) are used as masks to produce a transparent
+> triangular shaped cut at the bottom of the image.
+>
+> **Image without the mask:**
+
+[image257.jpg 4.25 x 2.167](./images/image257.jpg)
+
+> **Image with the mask:**
+
+[image258.jpg 4.26 x 2.21](./images/image258.jpg)
+
+<h2 id="ch45">Chapter 45: Fragmentation</h2>
+
+**Value Description**
+
+> auto Default. Automatic page breaks always Always insert a page break
+> avoid Avoid page break (if possible) left Insert page breaks so that
+> the next page is formatted as a left page right Insert page breaks so
+> that the next page is formatted as a right page initial Sets this
+> property to its default value. inherit Inherits this property from its
+> parent element.
+
+## Section 45.1: Media print page-break
+
+**&commat;media**
+
+print
+
+{
+
+p
+
+{
+
+**page-break-inside**
+
+:
+
+avoid
+
+;
+
+}
+
+h1
+
+{
+
+**page-break-before**
+
+:
+
+always
+
+;
+
+}
+
+h2
+
+{
+
+**page-break-after**
+
+:
+
+avoid
+
+;
+
+}
+
+}
+
+> This code does 3 things:
+>
+> it prevents a page break inside any p tags, meaning a paragraph will
+> never be broken in two pages, if possible.
+>
+> it forces a page-break-before in all h1 headings, meaning that before
+> every h1 occurrence, there will be a page break.
+>
+> it prevents page-breaks right after any h2
+
+# Chapter 46: CSS Object Model (CSSOM)
+
+## Section 46.1: Adding a background-image rule via the CSSOM
+
+> To add a background-image rule via the CSSOM, first get a reference to
+> the rules of the first stylesheet:
+
+var
+
+stylesheet
+
+=
+
+document.styleSheets
+
+&lbrack;
+
+0
+
+&rbrack;
+
+.cssRules
+
+;
+
+> Then, get a reference to the end of the stylesheet:
+
+var
+
+end
+
+=
+
+stylesheet
+
+.length
+
+&minus;
+
+1
+
+;
+
+> Finally, insert a background-image rule for the body element at the
+> end of the stylesheet:
+>
+> stylesheet.insertRule(&quot;body { background-image:
+> url(&apos;http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico&apos;);
+> }&quot;, end);
+
+## Section 46.2: Introduction
+
+> The browser identifies tokens from stylesheet and coverts them into
+> nodes which are linked into a tree structure. The entire map of all
+> the nodes with their associated styles of a page would be the CSS
+> Object Model.
+>
+> To display the webpage, a web browser takes following steps.
+
+1.  The web browser examines your HTML and builds the DOM (Document
+    Object Model).
+
+2.  The web browser examines your CSS and builds the CSSOM (CSS Object
+    Model).
+
+3.  The web browser combines the DOM and the CSSOM to create a render
+    tree. The web browser displays your webpage.
+
+[image259.jpg 7.5 x 3](./images/image259.jpg)
+
+<h2 id="ch47">Chapter 47: Feature Queries</h2>
+
+**Parameter Details**
+
+  property                              :    value
+
+> Evaluates true if the browser can handle the CSS rule. The parenthesis
+> around the rule are
+>
+> ()
+>
+> required.
+>
+> and Returns true only if both the previous and next conditions are
+> true. not Negates the next condition or Returns true if either the
+> previous or next condition is true.
+
+  -----------------------------------------------------------------------
+  &period;..
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+() Groups conditions
+
+## Section 47.1: Basic &commat;supports usage
+
+**&commat;supports**
+
+(
+
+**display**
+
+:
+
+flex
+
+)
+
+{
+
+*/&ast; Flexbox is available, so use it &ast;/*
+
+.my-container
+
+{
+
+**display**
+
+:
+
+flex
+
+;
+
+}
+
+}
+
+> In terms of syntax, &commat;supports is very similar to &commat;media, but instead
+> of detecting screen size and orientation, &commat;supports will detect
+> whether the browser can handle a given CSS rule.
+
+  --------------------------------------------------------------------------------------------------
+  **&commat;supports**   (   flex   ), notice that the rule  **&commat;supports**   (   **display**   :   flex
+                              is                                                              
+  ---------------- --- ------ ------------------------ ---------------- --- ------------- --- ------
+
+  --------------------------------------------------------------------------------------------------
+
+Rather than doing something like ).
+
+## Section 47.2: Chaining feature detections
+
+> To detect multiple features at once, use the and operator.
+
+**&commat;supports**
+
+(
+
+**transform**
+
+:
+
+translateZ
+
+(
+
+1
+
+px
+
+)
+
+)
+
+and
+
+(
+
+**transform-style**
+
+:
+
+preserve-3d
+
+)
+
+and
+
+(
+
+**perspective**
+
+:
+
+1
+
+px
+
+)
+
+{
+
+*/&ast; Probably do some fancy 3d stuff here &ast;/*
+
+}
+
+There is also an
+
+or
+
+operator and a
+
+not
+
+operator:
+
+**&commat;supports**
+
+(
+
+**display**
+
+:
+
+flex
+
+)
+
+or
+
+(
+
+**display**
+
+:
+
+table-cell
+
+)
+
+{
+
+*/&ast; Will be used if the browser supports flexbox or display: table-cell
+&ast;/*
+
+}
+
+**&commat;supports**
+
+not
+
+(
+
+webkit-transform
+
+&minus;
+
+:
+
+translate
+
+(
+
+0
+
+,
+
+0
+
+,
+
+0
+
+)
+
+)
+
+{
+
+*/&ast; Will &ast;not&ast; be used if the browser supports -webkit-transform:
+translate(&period;..) &ast;/*
+
+}
+
+> For the ultimate &commat;supports experience, try grouping logical
+> expressions with parenthesis:
+
+**&commat;supports**
+
+(
+
+(
+
+**display**
+
+:
+
+block
+
+)
+
+and
+
+(
+
+zoom
+
+:
+
+1
+
+)
+
+)
+
+or
+
+(
+
+(
+
+**display**
+
+:
+
+flex
+
+)
+
+and
+
+(
+
+not
+
+(
+
+**display**
+
+:
+
+table-cell
+
+)
+
+)
+
+)
+
+or
+
+(
+
+**transform**
+
+:
+
+translateX
+
+(
+
+1
+
+px
+
+)
+
+)
+
+{
+
+*/&ast; &period;.. &ast;/*
+
+}
+
+> This will work if the browser
+
+  -------------------------------------------------------------------------
+  **display**           :   block              AND             zoom
+  --------------------- --- ------------------ --------------- ------------
+
+  -------------------------------------------------------------------------
+
+1.  Supports : 1, or
+
+  -------------------------------------------------------------------------------
+  **display**   :   flex     AND NOT         **display**   :   table-cell
+  ------------- --- -------- --------------- ------------- --- ------------------
+
+  -------------------------------------------------------------------------------
+
+2.  Supports , or
+
+  --------------------------------------------------------------------------
+  **transform**             :   translateX                      (   1px
+  ------------------------- --- ------------------------------- --- --------
+
+  --------------------------------------------------------------------------
+
+3.  Supports ).
+
+# Chapter 48: Stacking Context
+
+## Section 48.1: Stacking Context
+
+> In this example every positioned element creates its own stacking
+> context, because of their positioning and z-index values. The
+> hierarchy of stacking contexts is organized as follows:
+
+Root
+
+DIV #1
+
+DIV #2
+
+DIV #3
+
+DIV #4
+
+DIV #5
+
+DIV #6
+
+> It is important to note that DIV #4, DIV #5 and DIV #6 are children of
+> DIV #3, so stacking of those elements is completely resolved within
+> DIV#3. Once stacking and rendering within DIV #3 is completed, the
+> whole DIV #3 element is passed for stacking in the root element with
+> respect to its sibling&apos;s DIV.
+>
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div1&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #1
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: relative;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 5;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div2&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #2
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: relative;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 2;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div3&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div4&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #4
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: relative;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 6;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #3
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: absolute;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 4;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div5&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #5
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: relative;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 1;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+id
+
+=
+
+&quot;div6&quot;
+
+**&gt;**
+
+**&lt;**
+
+**h**
+
+**1**
+
+**&gt;**
+
+Division Element #6
+
+**&lt;**
+
+**/h**
+
+**1**
+
+**&gt;**
+
+**&lt;**
+
+**code**
+
+**&gt;**
+
+position: absolute;
+
+**&lt;**
+
+**br**
+
+**/&gt;**
+
+z-index: 3;
+
+**&lt;**
+
+**/code**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+#div5
+
+{
+
+**border**
+
+:
+
+1
+
+px
+
+dashed
+
+#996
+
+;
+
+**background-color**
+
+:
+
+#ffc
+
+;
+
+}
+
+#div4
+
+{
+
+**z-index**
+
+:
+
+6
+
+;
+
+**margin-bottom**
+
+:
+
+15
+
+px
+
+;
+
+**padding**
+
+:
+
+25
+
+px
+
+10
+
+px
+
+5
+
+px
+
+;
+
+}
+
+#div5
+
+{
+
+**z-index**
+
+:
+
+1
+
+;
+
+**margin-top**
+
+:
+
+15
+
+px
+
+;
+
+**padding**
+
+:
+
+5
+
+px
+
+10
+
+px
+
+;
+
+}
+
+#div6
+
+{
+
+**z-index**
+
+:
+
+3
+
+;
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+20
+
+px
+
+;
+
+**left**
+
+:
+
+180
+
+px
+
+;
+
+**width**
+
+:
+
+150
+
+px
+
+;
+
+**height**
+
+:
+
+125
+
+px
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+dashed
+
+#009
+
+;
+
+**padding-top**
+
+:
+
+125
+
+px
+
+;
+
+**background-color**
+
+:
+
+#ddf
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+> **Result:**
+
+[image260.jpg 6x3 inc](./images/image260.jpg)
+
+> Source:
+
+&lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context).
+
+# Chapter 49: Block Formatting Contexts
+
+## Section 49.1: Using the overflow property with a value dierent to visible
+
+img
+
+{
+
+**float**
+
+:
+
+left
+
+;
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**margin**
+
+:
+
+0
+
+10
+
+px
+
+;
+
+}
+
+.div1
+
+{
+
+**background**
+
+:
+
+#f1f1f1
+
+;
+
+*/&ast; does not create block formatting context &ast;/*
+
+}
+
+.div2
+
+{
+
+**background**
+
+:
+
+#f1f1f1
+
+;
+
+**overflow**
+
+:
+
+hidden
+
+;
+
+*/&ast; creates block formatting context &ast;/*
+
+}
+
+[image261.jpg 6 x 3](./images/image261.jpg)
+
+&lbrack;&lbrack;https://jsfiddle.net/MadalinaTn/qkwwmu6m/2/&rbrack;&rbrack;(https://jsfiddle.net/MadalinaTn/qkwwmu6m/2/)
+
+> &lbrack;&lbrack;Using the overflow property with a value different to visible (its
+> default) will create a new block formatting&rbrack; &lbrack;context.
+> This is technically necessary&rbrack; &lbrack;---&rbrack; &lbrack;if a
+> float intersected with the scrolling element it would
+> forcibly&rbrack; &lbrack;rewrap the
+> content.&rbrack;&rbrack;(https://css-tricks.com/almanac/properties/o/overflow/)
+>
+> This example that show how a number of paragraphs will interact with a
+> floated image is similar to &lbrack;&lbrack;this
+> example&rbrack;&rbrack;(https://css-tricks.com/almanac/properties/o/overflow/),
+> on css-tricks.com.
+
+&lbrack;&lbrack;2&rbrack;&rbrack;(https://css-tricks.com/almanac/properties/o/overflow/):
+&lbrack;&lbrack;https://developer.mozilla.org/en-US/docs/Web/CSS/overflow&rbrack;&rbrack;(https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+MDN
+
+# Chapter 50: Vertical Centering
+
+## Section 50.1: Centering with display: table
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;outer&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;inner&quot;
+
+**&gt;**
+
+centered
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.wrapper
+
+{
+
+**height**
+
+:
+
+600
+
+px
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+}
+
+.outer
+
+{
+
+**display**
+
+:
+
+table
+
+;
+
+**height**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**width**
+
+:
+
+100
+
+&percnt;
+
+;
+
+}
+
+.outer
+
+.inner
+
+{
+
+**display**
+
+:
+
+table-cell
+
+;
+
+**text-align**
+
+:
+
+center
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+}
+
+## Section 50.2: Centering with Flexbox
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;child&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.container
+
+{
+
+**height**
+
+:
+
+500
+
+px
+
+;
+
+**width**
+
+:
+
+500
+
+px
+
+;
+
+**display**
+
+:
+
+flex
+
+;
+
+// Use Flexbox
+
+**align-items**
+
+:
+
+center
+
+;
+
+// This centers children vertically in the parent.
+
+**justify-content**
+
+:
+
+center
+
+;
+
+// This centers children horizontally.
+
+**background**
+
+:
+
+white
+
+;
+
+}
+
+.child
+
+{
+
+**width**
+
+:
+
+100
+
+px
+
+;
+
+**height**
+
+:
+
+100
+
+px
+
+;
+
+**background**
+
+:
+
+blue
+
+;
+
+}
+
+## Section 50.3: Centering with Transform
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;centered&quot;
+
+**&gt;**
+
+centered
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.wrapper
+
+{
+
+**position**
+
+:
+
+relative
+
+;
+
+**height**
+
+:
+
+600
+
+px
+
+;
+
+}
+
+.centered
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**z-index**
+
+:
+
+999
+
+;
+
+**transform**
+
+:
+
+translate
+
+(
+
+-50
+
+&percnt;
+
+,
+
+-50
+
+&percnt;
+
+)
+
+;
+
+**top**
+
+:
+
+50
+
+&percnt;
+
+;
+
+**left**
+
+:
+
+50
+
+&percnt;
+
+;
+
+}
+
+## Section 50.4: Centering Text with Line Height
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;container&quot;
+
+**&gt;**
+
+**&lt;**
+
+**span**
+
+**&gt;**
+
+vertically centered
+
+**&lt;**
+
+**/span**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.container
+
+{
+
+**height**
+
+:
+
+50
+
+px
+
+;
+
+*/&ast; set height &ast;/*
+
+**line-height**
+
+:
+
+50
+
+px
+
+;
+
+*/&ast; set line-height equal to the height &ast;/*
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+*/&ast; works without this rule, but it is good having it explicitly set
+&ast;/*
+
+}
+
+> **Note:** This method will only vertically center a *single line of
+> text*. It will not center block elements correctly and if the text
+> breaks onto a new line, you will have two very tall lines of text.
+
+## Section 50.5: Centering with Position: absolute
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**img**
+
+src
+
+=
+
+&quot;http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.wrapper
+
+{
+
+**position**
+
+:
+
+relative
+
+;
+
+**height**
+
+:
+
+600
+
+px
+
+;
+
+}
+
+.wrapper
+
+img
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+0
+
+;
+
+**left**
+
+:
+
+0
+
+;
+
+**right**
+
+:
+
+0
+
+;
+
+**bottom**
+
+:
+
+0
+
+;
+
+**margin**
+
+:
+
+auto
+
+;
+
+}
+
+> If you want to center other then images, then you must give height and
+> width to that element.
+>
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;child&quot;
+
+**&gt;**
+
+make me center
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.wrapper
+
+{
+
+**position**
+
+:
+
+relative
+
+;
+
+**height**
+
+:
+
+600
+
+px
+
+;
+
+}
+
+.wrapper
+
+.child
+
+{
+
+**position**
+
+:
+
+absolute
+
+;
+
+**top**
+
+:
+
+0
+
+;
+
+**left**
+
+:
+
+0
+
+;
+
+**right**
+
+:
+
+0
+
+;
+
+**bottom**
+
+:
+
+0
+
+;
+
+**margin**
+
+:
+
+auto
+
+;
+
+**width**
+
+:
+
+200
+
+px
+
+;
+
+**height**
+
+:
+
+30
+
+px
+
+;
+
+**border**
+
+:
+
+1
+
+px
+
+solid
+
+#f00
+
+;
+
+}
+
+## Section 50.6: Centering with pseudo element
+
+> **HTML:**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;wrapper&quot;
+
+**&gt;**
+
+**&lt;**
+
+**div**
+
+class
+
+=
+
+&quot;content&quot;
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+**&lt;**
+
+**/div**
+
+**&gt;**
+
+> **CSS:**
+
+.wrapper
+
+{
+
+**min-height**
+
+:
+
+600
+
+px
+
+;
+
+}
+
+.wrapper
+
+:
+
+before
+
+{
+
+**content**
+
+:
+
+&quot;&quot;
+
+;
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**height**
+
+:
+
+100
+
+&percnt;
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+}
+
+.content
+
+{
+
+**display**
+
+:
+
+inline-block
+
+;
+
+**height**
+
+:
+
+80
+
+px
+
+;
+
+**vertical-align**
+
+:
+
+middle
+
+;
+
+}
+
+> This method is best used in cases where you have a varied-height
+> .content centered inside .wrapper; and you want .wrapper&apos;s height to
+> expand when .content&apos;s height exceed .wrapper&apos;s min-height.
+
+# Chapter 51: Object Fit and Placement
+
+## Section 51.1: object-fit
+
+> The **object-fit** property will defines how an element will fit into
+> a box with an established height and width. Usually applied to an
+> image or video, Object-fit accepts the following five values:
+>
+> **FILL**
+
+**object-fit**
+
+:
+
+fill
+
+;
+
+> Fill stretches the image to fit the content box without regard to the
+> image&apos;s original aspect ratio.
+>
+> **CONTAIN**
+
+**object-fit**
+
+:
+
+contain
+
+;
+
+> Contain fits the image in the box&apos;s height or width while maintaining
+> the image&apos;s aspect ratio.
+>
+> **COVER**
+
+**object-fit**
+
+:
+
+cover
+
+;
+
+[image264.jpg 6.2 x 2.8](./images/image264.jpg)
+
+> Cover fills the entire box with the image. The image aspect ratio is
+> preserved, but the image is cropped to the dimensions of the box.
+>
+> **NONE**
+
+**object-fit**
+
+:
+
+none
+
+;
+
+> None ignores the size of the box and is not resized.
+>
+> **SCALE-DOWN**
+
+**object-fit**
+
+:
+
+scale-down
+
+;
+
+> Scale-down either sizes the object as none or as contain. It displays
+> whichever option results in a smaller image size.
+
+[image266.jpg 7.2 x 3.65](./images/image266.jpg)
+
+<h2 id="ch52">Chapter 52: CSS design patterns</h2>
+
+> These examples are for documenting CSS-specific design patterns like
+> &lbrack;&lbrack;BEM&rbrack;&rbrack;(http://getbem.com/),
+> &lbrack;&lbrack;OOCSS&rbrack;&rbrack;(https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
+> and &lbrack;&lbrack;SMACSS&rbrack;&rbrack;(https://smacss.com/).
+>
+> These examples are NOT for documenting CSS frameworks like
+> &lbrack;&lbrack;Bootstrap&rbrack;&rbrack;(http://getbootstrap.com/) or
+> &lbrack;&lbrack;Foundation&rbrack;&rbrack;(http://foundation.zurb.com/).
+
+<h3 id="ch52-1">Section 52.1: BEM</h3>
+
+  -------------------------------------------------------------------------
+  Blocks         ,   Elements and Modifiers
+  -------------- --- ------------------------------------------------------
+
+  -------------------------------------------------------------------------
+
+> &lbrack;&lbrack;BEM&rbrack;&rbrack;(http://getbem.com/introduction/) stands for .
+> It&apos;s a methodology initially conceived by Russian tech company
+>
+> &lbrack;&lbrack;Yandex&rbrack;&rbrack;(https://en.wikipedia.org/wiki/Yandex), but
+> which gained quite some traction among American & Western-European web
+> developers as well.
+>
+> As the same implies, BEM metholology is all about componentization of
+> your HTML and CSS code into three types of components:
+>
+> **Blocks:** standalone entities that are meaningful on their own
+>
+> Examples are header, container, menu, checkbox & textbox
+>
+> **Elements:** Part of blocks that have no standalone meaning and are
+> semantically tied to their blocks.
+
+  -----------------------------------------------------------------------
+  menu item         , list item,          checkbox caption
+  ----------------- --------------------- -------------------------------
+
+  -----------------------------------------------------------------------
+
+> Examples are & header title
+>
+> **Modifiers:** Flags on a block or element, used to change appearance
+> or behavior
+
+  -----------------------------------------------------------------------
+  color yellow
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+> Examples are disabled, highlighted, checked, fixed, size big &
+>
+> The goal of BEM is to keep optimize the readability, maintainability
+> and flexibility of your CSS code. The way to achieve this, is to apply
+> the following rules.
+
+  -----------------------------------------------------------------------
+  blockname&minus;-modifiername        and   blockname&lowbar;&lowbar;elementname&minus;-
+  ------------------------------- ----- ---------------------------------
+
+  -----------------------------------------------------------------------
+
+> Block styles are never dependent on other elements on a page
+>
+> Blocks should have a simple, short name and avoid &lowbar; or - characters
+>
+> When styling elements, use selectors of format
+> blockname&lowbar;&lowbar;elementname When styling modifiers, use selectors of
+> format modifiername
+>
+> Elements or blocks that have modifiers should inherit everything from
+> the block or element it is modifying except the properties the
+> modifier is supposed to modify
+>
+> **Code example**
+>
+> If you apply BEM to your form elements, your CSS selectors should look
+> something like this:
+>
+> .form { } // Block
+>
+> .form&minus;-theme-xmas { } // Block + modifier .form&minus;-simple { } //
+> Block + modifier
+>
+> .form&lowbar;&lowbar;input { } // Block &gt; element
+>
+> .form&lowbar;&lowbar;submit { } // Block &gt; element
+>
+> .form&lowbar;&lowbar;submit&minus;-disabled { } // Block &gt; element + modifier
+>
+> The corresponding HTML should look something like this:
+
+**&lt;**
+
+**form**
+
+class
+
+=
+
+&quot;form form&minus;-theme-xmas form&minus;-simple&quot;
+
+**&gt;**
+
+**&lt;**
+
+**input**
+
+class
+
+=
+
+&quot;form&lowbar;&lowbar;input&quot;
+
+type
+
+=
+
+&quot;text&quot;
+
+**/&gt;**
+
+**&lt;**
+
+**input**
+
+class
+
+=
+
+&quot;form&lowbar;&lowbar;submit form&lowbar;&lowbar;submit&minus;-disabled&quot;
+
+type
+
+=
+
+&quot;submit&quot;
+
+**/&gt;**
+
+**&lt;**
+
+**/form**
+
+**&gt;**
+
+# Chapter 53: Browser Support & Prefixes
+
+**Prefix Browser(s)**
+
+> -webkit- Google Chrome, Safari, newer versions of Opera 12 and up,
+> Android, Blackberry and UC browsers -moz- Mozilla Firefox
+
+-ms- Internet Explorer, Edge
+
+  -----------------------------------------------------------------------
+  -o-                                 
+  ----------------------------------- -----------------------------------
+  , -xv-                              
+
+  -----------------------------------------------------------------------
+
+> Opera until version 12
+>
+> -khtml- Konquerer
+
+## Section 53.1: Transitions
+
+div
+
+{
+
+-webkit-transition
+
+:
+
+all
+
+4
+
+s
+
+ease
+
+;
+
+-moz-transition
+
+:
+
+all
+
+4
+
+s
+
+ease
+
+;
+
+-o-transition
+
+:
+
+all
+
+4
+
+s
+
+ease
+
+;
+
+**transition**
+
+:
+
+all
+
+4
+
+s
+
+ease
+
+;
+
+}
+
+## Section 53.2: Transform
+
+div
+
+{
+
+-webkit-transform
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+-moz-transform
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+-ms-transform
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+-o-transform
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+**transform**
+
+:
+
+rotate
+
+(
+
+45
+
+deg
+
+)
+
+;
+
+}
+
+# Chapter 54: Normalizing Browser Styles
+
+> Every browser has a default set of CSS styles that it uses for
+> rendering elements. These default styles may not be consistent across
+> browsers because: the language specifications are unclear so base
+> styles are up for interpretation, browsers may not follow
+> specifications that are given, or browsers may not have default styles
+> for newer HTML elements. As a result, people may want to normalize
+> default styles across as many browsers as possible.
+
+## Section 54.1: normalize.css
+
+> Browsers have a default set of CSS styles they use for rendering
+> elements. Some of these styles can even be customised using the
+> browser&apos;s settings to change default font face and size definitions,
+> for example. The styles contain the definition of which elements are
+> supposed to be block-level or inline, among other things.
+>
+> Because these default styles are given some leeway by the language
+> specifications and because browsers may not follow the specs properly
+> they can differ from browser to browser.
+>
+> This is where
+> &lbrack;&lbrack;normalize.css&rbrack;&rbrack;(http://necolas.github.io/normalize.css/)
+> comes into play. It overrides the most common inconsistencies and
+> fixes known bugs.
+>
+> **What does it do**
+>
+> Preserves useful defaults, unlike many CSS resets.
+>
+> Normalizes styles for a wide range of elements.
+>
+> Corrects bugs and common browser inconsistencies.
+>
+> Improves usability with subtle modifications.
+>
+> Explains what code does using detailed comments.
+>
+> So, by including normalize.css in your project your design will look
+> more alike and consistent across different browsers.
+>
+> **Difference to reset.css**
+>
+> You may have heard of reset.css. What&apos;s the difference between the
+> two?
+>
+> While normalize.css provides consistency by setting different
+> properties to unified defaults, reset.css achieves consistency by
+> **removing** all basic styling that a browser may apply. While this
+> might sound like a good idea at first, this actually means you have to
+> write **all** rules yourself, which goes against having a solid
+> standard.
+
+## Section 54.2: Approaches and Examples
+
+> CSS resets take separate approaches to browser defaults. Eric Meyer's
+> Reset CSS has been around for a while. His approach nullifies many of
+> the browser elements that have been known to cause problems right off
+> the back. The following is from his version (v2.0 &vertbar; 20110126) CSS
+> Reset.
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6,
+
+**p**
+
+, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong,
+
+**sub**
+
+, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video
+
+**{**
+
+margin:
+
+0
+
+;
+
+padding:
+
+0
+
+;
+
+border:
+
+0
+
+;
+
+font
+
+**-**
+
+size:
+
+100
+
+**%**
+
+;
+
+font: inherit;
+
+vertical
+
+**-**
+
+align: baseline;
+
+**}**
+
+&lbrack;&lbrack;Eric Meyer&apos;s Reset
+CSS&rbrack;&rbrack;(http://meyerweb.com/eric/tools/css/reset/)
+
+> Normalize CSS on the other and deals with many of these separately.
+> The following is a sample from the version (v4.2.0) of the code.
+
+*/&ast;&ast;*
+
+*&ast; 1. Change the default font family in all browsers (opinionated).*
+
+*&ast; 2. Correct the line height in all browsers.*
+
+*&ast; 3. Prevent adjustments of font size after orientation changes in IE
+and iOS.*
+
+*&ast;/*
+
+*/&ast; Document*
+
+*==========================================================================
+&ast;/*
+
+html
+
+{
+
+**font-family**
+
+:
+
+sans-serif
+
+;
+
+*/&ast; 1 &ast;/*
+
+**line-height**
+
+:
+
+1.15
+
+;
+
+*/&ast; 2 &ast;/*
+
+-ms-text-size-adjust
+
+:
+
+100
+
+&percnt;
+
+;
+
+*/&ast; 3 &ast;/*
+
+-webkit-text-size-adjust
+
+:
+
+100
+
+&percnt;
+
+;
+
+*/&ast; 3 &ast;/*
+
+}
+
+*/&ast; Sections*
+
+*==========================================================================
+&ast;/*
+
+*/&ast;&ast;*
+
+*&ast; Remove the margin in all browsers (opinionated).*
+
+*&ast;/*
+
+body
+
+{
+
+**margin**
+
+:
+
+0
+
+;
+
+}
+
+*/&ast;&ast;*
+
+*&ast; Add the correct display in IE 9-.*
+
+*&ast;/*
+
+article
+
+,
+
+aside
+
+,
+
+footer
+
+,
+
+header
+
+,
+
+nav
+
+,
+
+section
+
+{
+
+**display**
+
+:
+
+block
+
+;
+
+}
+
+*/&ast;&ast;*
+
+*&ast; Correct the font size and margin on &apos;h1&apos; elements within
+&apos;section&apos; and*
+
+*&ast; &apos;article&apos; contexts in Chrome, Firefox, and Safari.*
+
+*&ast;/*
+
+h1
+
+{
+
+**font-size**
+
+:
+
+2
+
+em
+
+;
+
+**margin**
+
+:
+
+0.67
+
+em
+
+0
+
+;
+
+}
+
+<a href="http://normalize.css/">Normalize CSS</a>
+
+# Chapter 55: Internet Explorer Hacks
+
+## Section 55.1: Adding Inline Block support to IE6 and IE7
+
+**display**
+
+:
+
+inline-block
+
+;
+
+> The display property with the value of inline-block is not supported
+> by Internet Explorer 6 and 7. A work-around for this is:
+
+zoom
+
+:
+
+1
+
+;
+
+&ast;
+
+**display**
+
+:
+
+inline
+
+;
+
+  display
+
+
+> The zoom property triggers the hasLayout feature of elements, and it
+> is available only in Internet Explorer. The &ast; makes sure that the
+> invalid property executes only on the affected browsers. Other
+> browsers will simply ignore the rule.
+
+<h3 id="ch55-2">Section 55.2: High Contrast Mode in Internet Explorer 10 and greater</h3>
+
+> In Internet Explorer 10+ and Edge, Microsoft provides the
+> -ms-high-contrast media selector to expose the &quot;High Contrast&quot;
+> setting from the browser, which allows the programmer to adjust their
+> site&apos;s styles accordingly.
+>
+> The -ms-high-contrast selector has 3 states: active, black-on-white,
+> and white-on-black. In IE10+ it also had a none state, but that is no
+> longer supported in Edge going forward.
+>
+> **Examples**
+
+**&commat;media**
+
+screen and
+
+(
+
+&minus;
+
+ms-high-contrast
+
+:
+
+active
+
+)
+
+,
+
+(
+
+&minus;
+
+ms-high-contrast
+
+:
+
+black-on-white
+
+)
+
+{
+
+.header
+
+{
+
+**background**
+
+:
+
+#fff
+
+;
+
+**color**
+
+:
+
+#000
+
+;
+
+}
+
+}
+
+> This will change the header background to white and the text color to
+> black when high contrast mode is active *and* it is in black-on-white
+> mode.
+
+<b>&commat;media</b>
+
+screen and
+
+(
+
+&minus;
+
+ms-high-contrast
+
+:
+
+white-on-black
+
+)
+
+{
+
+.header
+
+{
+
+<b>background</b>
+
+:
+
+#000
+
+;
+
+<b>color</b>
+
+:
+
+#fff
+
+;
+
+}
+
+}
+
+> Similar to the first example, but this specifically selects the
+> white-on-black state only, and inverts the header colors to a black
+> background with white text.
+>
+> <b>More Information:</b>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh465764.aspx">Microsoft Documentation</a>
+on -ms-high-contrast
+
+<h3 id="ch55-3">Section 55.3: Internet Explorer 6 & Internet Explorer 7 only</h3>
+
+> To target Internet Explorer 6 and Internet Explorer 7, start your
+> properties with &ast;:
+
+```
+.hide-on-ie6-and-ie7 {
+&ast;
+<b>display</b>: none;
+// This line is processed only on IE6 and IE7
+}
+```
+
+> To target Internet Explorer 8, wrap your selectors inside :
+
+```
+<b>&commat;media</b>
+&bsol;&bsol; 0
+screen {
+  .hide-on-ie8 {
+    <b>display</b>: none;
+  }
+}
+```
+
+| <b>&commat;media</b> &bsol;&bsol;0             | > screen { }                           |
+
+> Everything between is processed only by I
+
+<h2 id="ch56">Chapter 56: Performance</h2>
+
+<h3 id="ch56-1">Section 56.1: Use transform and opacity to avoid trigger layout</h3>
+
+Changing some CSS attribute will trigger the browser to synchronously
+calculate the style and layout, which is a bad thing when you need to
+animate at 60fps.
+
+<b>DON&apos;T</b>
+
+Animate with left and top trigger layout.
+
+```
+#box {
+  <b>left</b>: 0;
+  <b>top</b>: 0;
+  <b>transition</b>: left 0.5s, top 0.5s;
+  <b>position</b>: absolute;
+  <b>width</b>: 50px;
+  <b>height</b>: 50px;
+  <b>background-color</b>: gray;
+}
+#box.active {
+  <b>left</b>: 100px;
+  <b>top</b>: 100px;
+}
+```
+
+<a href="https://jsfiddle.net/trungdq88/gmpzxLyq/">Demo</a>
+took 11.7ms for rendering 9.8ms
+for painting
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 267.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image267.jpg"
+  style="width:100%"
   title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
+<!-- [image267.jpg 7.5 x 7.5](./images/image267.jpg) -->
 
-Welcome to this part of our data visualization lesson! In this part,
-we&apos;re going to talk about event handling in D3 and how we can use events to
-keep updated with changes in the code and create interactivity for the user.
+> <b>DO</b>
 
-In the last part, we created a graph model, which calculates the node positions
-dynamically and we also connect these positions to the graphics and the
-number of shapes in our SVGs. 
+Animate with transform with the same animation.
+
+```
+#box {
+  <b>left</b>: 0;
+  <b>top</b>: 0;
+  <b>position</b>: absolute;
+  <b>width</b>: 50px;
+  <b>height</b>: 50px;
+  <b>background-color</b>: gray;
+  <b>transition</b>: transform 0.5s;
+  <b>transform</b>: translate3d(0, 0, 0);
+}
+
+#box.active {
+  <b>transform</b>: translate3d(100px, 100px, 0);
+}
+```
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 283 responding to events (184) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image283.png" 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 268.  (xxx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="./images/image268.jpg"
+  style="width:50%"
   title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, if you would look into our example, what you could see is that you can&apos;t 
-see much. All you can see is little quarter shape on the top left of the visualization 
-and if you look into the code of the DOM, you will see that all the shapes are present. 
-However, they are all located in the default position of (0,0) in terms of coordinates, 
-even though the layout is calculating new positions constantly. 
-Now, we have connected them, but we are not keeping up with the changed position of the layouts. 
-
-What we need to do is take advantage of the events functionality of D3 to tell the
-shapes of our SVG to be updated in terms of position every time our layout is 
-calculating a new position for a certain node. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 284 responding to events ii (184) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image284.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
+  alt="." />
 </p>
 
-This is handled by the tick event that is implemented by the force layout. The 
-force layout in D3 actually implements three different events: a start event 
-that is called when the event is first started, the tick event is called on 
-every step of the simulation, meaning every time a new position is calculated 
-for a node, this tick event is called on every node, and finally, an end-event 
-that is called as soon as the simulation is stopped. 
-
-We&apos;ll be taking advantage of the tick event for now and we will tell the 
-force layout to do something as soon as there is a new simulation step completed.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 285 responding to events ii, #2 (184) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image285.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-We are are going to take the positions for the nodes, calculated by this
-layout, and attach them to our SVG shapes, so the actual position on our graphic
-gets updated. Now, the position of the node, calculated by the
-simulation by the layout, is stored in an attribute on the data point called x, as you can
-see back here and y. These are the coordinates, calculated by the
-layout. However, SVG uses a different attribute to define the position
-on the SVG graphics. These are called cx and cy. All we need to do now, is 
-assign the cx attribute the value of the data point x back here. 
-
-This is working the same way that we used a function to assign the line thickness
-depending on the data in the previous video, and the same thing is working for the
-link down here, except, this time, we have four coordinates: two coordinates
-for the starting point of the line and two for the end point of the line. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 286 adding events to nodes (186) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image286.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And, if we now take a look again at our example, you can see there is a nice-looking
-graph that gets updated dynamically as soon as the node positions change in the
-layout and if you want to see this in action and actually move around, please take a
-look at our demo lesson. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 287 adding events to nodes, #2 (187) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image287.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, one more thing, we would like to add in this
-and which is also a great example for the use of events is some sort of user 
-interactivity, meaning, we can click around the graph, maybe drag them around, 
-maybe transform the shape of a graph by clicking around.
-
-That&apos;s why we&apos;re going to use the on click event in D3, because SVG
-elements are DOM elements, they do already implement a click event, just like 
-buttons or links do in a website. So, all we have to do now is provide a
-function that will tell to node what it will do if it has been clicked on.
-
-Remember here that the node selection actually contains every node on our graphic and
-the click event, so, the function we define here, will be called on the
-node that is clicked on. That is why we have to use the &apos;this&apos; keyword down
-here to select the current node that has been clicked on using D3. So, D3
-selects this and then we can change any attribute, we can assign new attributes to
-this node itself. In this case, we&apos;ll change the radius attribute, meaning the
-size of the circle to 20. In our case, this will increase the size of the node to 20
-from 5 as it was before. 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 288 adding events to nodes, #3 (188) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image288.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If you click on the red node, it will change its shape from what you see on the 
-left to what you see on the right. However, this would happen instantly. Sometimes, 
-it would be nice to create a smoother transition and have a bit of a nicer animation. 
-Luckily, D3 also supports animations. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 289 adding animations (188) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image289.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Of course, it would sometimes be nice to have a bit of a
-smoother transition between the two sizes. This is where animations come in. D3
-already supports animations. In this case, all we need to do is, before we apply
-the new attribute value, we tell D3 that we wanted animated, they call in the
-transition function and we will also then specify a duration
-for this transition. In this case, we&apos;ll use 750 milliseconds. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 290 adding events to nodes (189) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image290.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If you then go back to our example and click on the red node, it will slowly increase
-its size over the course of seven hundred and fifty milliseconds until it stops
-when we have the right configuration. 
-This has shown you how events can be used to keep track with internal changes 
-and also provide some interactive features. 
-
-If you would like to know more, 
-see more examples of different events that you can implement and get a bit 
-more detail of how it actually works in the code, please refer to our demo video.
-
-<h3 id="ch4-7">4.7 Summary - API calls and Data Visualization (0:57)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 291 o nodes (189) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image291.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-
-Thank you, Dennis, for this introduction to data visualization in
-JavaScript!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 292 summing up (190) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image292.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Summing up this module, we can use data visualization to effectively
-communicate data.
-
-Currently, there are three dominant techniques to visualize data on the
-web. These are HTML elements, canvas and SVG. One of the most popular
-libraries to visualize data with JavaScript is D3. It allows us to bind data to
-visual elements and then draw and transform these elements.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 293 principles for effective graphical display[1] (190) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image293.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Before we conclude this module, we recommend to remember these
-principles of data visualizations for more effective data
-communications. In the next module, we would hear Professor Rost, as he
-speaks about few applications of JavaScript in the Life Sciences. I will
-then summarize the course and say a few parting words.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 294 spa - home - visualization example d3 (191) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image294.png" 
-  title="SPA - Home - Visualization Example using D3"
-  alt="SPA - Home - Visualization Example using D3."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Hello everyone! Welcome to the first demo video accompanying the API
-calls and data visualization lecture. In this first video, we&apos;re going to 
-look at what we&apos;re going to build in this lecture, the tools we use, some 
-of the code structure of what is provided and we&apos;re going to make our first 
-HTTP requests to our API to get some data to visualize. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 295 home page - visualization (192) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image295.png" 
-  title="Home Page - Visualization"
-  alt="Home Page - Visualization."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-After this lecture, this is what we&apos;re
-gonna have - a simple website. It has very a simple menu appear on navigation, the home
-page has some text, this is where we are at at the moment and a visualization
-page. This one has a button and when I click this button, there will be an API called 
-using HTTP requests that returns relationship data from characters of the Game of
-Thrones novels. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 296 network visualization using d3 library (192) ~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image296.png" 
-  title="Network Visualization using D3 library"
-  alt="Network Visualization using D3 library."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If I click it, it will release that data and create a network
-visualization using the D3 library. And in this visualization, each of
-the nodes represents a character and the links between them represent their
-relationships. And at the end, we guys, are going to add a little bit of
-interactivity.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 297 click node to increase in size (193) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image297.png" 
-  title="Click any node to increase in size"
-  alt="Click any node to increase in size."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-If I click any of the nodes, they&apos;ll change their color and increase 
-in size. And on a double click, they should back down again and become red. 
-That&apos;s what we&apos;re going to build now. Let&apos;s take a
-look at what we&apos;re going to need first. Let&apos;s close this one for
-now. We&apos;re going to need a couple of tools. We&apos;re going to the browser.
-I&apos;m using Chrome, but Firefox and Safari will work just fine. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 298 atom text editor for web dev (193) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image298.png" 
-  title="Atom Text Editor for web development"
-  alt="Atom Text Editor for web development."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-You&apos;ll need a text editor. I&apos;m using Atom (https://atom-editor.css/) 
-and if you&apos;re just starting out developing, especially in JavaScript, Atom 
-is definitely a good way to go. It&apos;s a free and open-source editor.
-It&apos;s actually built in JavaScript and has tons of themes and
-extensions on plugins. Give it a go if you&apos;re not sure what to use.
-And then, I&apos;m also going to use a terminal emulator, or you know, a
-shell. I&apos;m using iterm2 at the moment, but any terminal that comes with OSX or
-any Linux distribution will work just fine. Make sure you have Node
-installed, however. Let&apos;s take a little look at the code that is provided from
-previous lectures. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 299 package.json (194) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image299.png" 
-  title="package.json"
-  alt="package.json"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-I&apos;m in the folder right now and there&apos;s a bunch of loose
-files and two folders app and public. The first thing to look at is the
-package.json, which is the heart of any Node application. It has a couple of things,
-like the name, the version and the description and it has some
-dependencies as well, which are very important, because we gonna need those to run
-our local server. 
-
-The server itself is in the index.js. It is an express server. All we going
-to do later is type node in index.js and that will run the server for
-us. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 300 package.json, again (195) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image300.png" 
-  title="package.json, again"
-  alt="package.json, again."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, all the server-side code is in the app folder. It has the controllers, the 
-models and the views. These views are template files that will be rendered into 
-HTML and then displayed in the browser. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 301 visualization.pug (195) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image301.png" 
-  title="visualization.pug"
-  alt="visualization.pug"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Just a quick recap about what&apos;s in the template of our visualization page 
-- it extends the base view, which means they&apos;ll include things like the 
-navigation and we don&apos;t have to type that code in any page that wants to 
-use navigation, which is provided once and then we extend the other by using 
-the other views. 
-
-We&apos;re linking a stylesheet. That is a simple CSS file that defines things 
-like the color of the links between the nodes and we have the content block that 
-has the title you&apos;ve seen before in the visualization on top, it defines the button and we
-have an empty root element that we will later populate using D3 with our
-visualization. And then for that to work, we also include some JavaScript 
-files down here. First one is a D3 library and then the second one is our
-visualization.js where we will put our own code. One thing to note here is 
-that this button has an attribute called onclick. So, anytime you click this 
-button, the following code is executed. In our case, it calls the loadData function.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 302 d3.js (196) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image302.png" 
-  title="d3.js"
-  alt="d3.js"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, to get to that loadData function, take a look at the public folder. This
-folder holds all the client-side JavaScript code. We have a lib folder that
-holds all the dependencies or the libraries you want to use. In this case,
-it&apos;s only the D3 library, if I actually need to look at that.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 303 visualization.css (197) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image303.png" 
-  title="visualization.css"
-  alt="visualization.css"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We have a visualization folder that has anything to do with visualization. In 
-this case, it&apos;s our little stylesheet, just defining what the nodes and 
-the links look like.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 304 visualization.js (197) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image304.png" 
-  title="visualization.js"
-  alt="visualization.js"
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-And it has the visualization.js, which is where all the magic is going to happen. 
-This is what we&apos;re going to get later from the API and then create a
-visualization.
-
-We have two very empty functions at the moment. The first one is the
-loadData function and, remember, this gets called whenever we click our button.
-So, we gonna load data from the backend in this one and then we&apos;re going to
-send that data to the second function that will create the visualization on our
-page using D3. 
-
-In order to get started, we need to use the code that we already have. You need 
-to run the server, so the client-side code gets executed and provides us with 
-the API, so, we can get some data in this part here. Let&apos;s go to our 
-terminal. I&apos;m already in the folder that holds all the code. I can list it 
-here. I actually have a little shortcut for that command. If you see me typing l, 
-that is just the one above. What we need to do is run the index.js that will 
-create a server and provide the API, so we can work with it. However, 
-there&apos;s a little problem, though.
-
-If I run this, it&apos;ll crash, because it cannot find the express module
-it needs to run. So, let me just clear my screen here. What we need to do first
-is we need to install any dependency. Luckily, because this is an NPM package, you
-can just run npm install, because if you remember, taking a look back here, 
-the package.json defines all the dependencies we need. So, I&apos;m going to
-run npm install. 
-
-Actually, npm is enough, because if you type that a lot that actually saves some 
-time. And after a short moment, we have all our dependencies installed. As I clear 
-the screen again, you can see here, I can now type node index.js, run it. Mongoose 
-connected to the database, the Express server is running and we can start getting 
-some data from our API.
-
-If we go back to the browser now, navigate to localhost:3000, we will
-already get our little page, because the server is running. And, these, what you can see
-here, are rendered templates that we defined in the server&apos;s code. The visualization page
-exists as well. It has the button. However, when I click, nothing happens, 
-which make sense.
-
-Now going back to our code and opening the visualization.js file,
-this loadData function is called as soon as I press the button and all
-of it does, it is writing this little message to our console.
-
-Now, because this is running in the browser, you need to look at the
-browser console to see the message. In Google Chrome, the developer tools have the console,
-Safari and Firefox have very similar tools. In Chrome, if you click the little
-options button up here, you can go to more tools and developer tools or you can
-use the shortcuts of just alt+command+J or control+command+J on Windows and you
-can see up here, we have a little message. And if I keep clicking this button, we
-will get more messages. So far, so good. Let&apos;s take a look at what we need to do
-to actually get some data from our API.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 305  (199) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image305.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We will be using the classic native JavaScript way to do it with an xml
-http request object. If you&apos;re lucky enough to develop only for modern
-browsers, the upcoming version of JavaScript actually has a new API, called Fetch. If
-you are working in Node, you can also use it already, but for now we&apos;re just going to
-use the classic way and as you can see for our little example here, it&apos;s really
-easy to use. 
-
-To get going, we need three steps. We need to create
-the HTTP request, then we need to define behavior after a successful request, so
-what are we going to do with the data that we received, and in the third step, we
-just need to send it off. Let&apos;s start at the beginning. We&apos;ll create a
-new variable that holds our request and it holds an instance of a XMLHttp
-Request Right. That&apos;s the first step - done. 
-
-Now we need to define what we want to do if the request was successful. And, the
-request object implement a number of events. Those will be called at
-different times of the request and then the interaction with the backend. 
-
-For example, when the request makes first contact with the backend, there will 
-be an event. When the backend starts sending data, there will be an event and
-there is also an event that gets fired as soon as the request successfully has
-transferred all the data from the backend and that&apos;s the one
-we&apos;ll be looking at. We can define the onload event now. 
-
-What we&apos;re doing here is find a function that gets called every time the request is
-done loading data from the backend. And now we can create a new variable
-called response that will hold the data sent from the back-end. To access it,
-we need to access the request. In this case, we can access access this with the
-this keyword and then we&apos;ll get the responseText. So, that&apos;s all that we need.
-However, this response text, as it says, is a string and in our case,
-because we know the API is sending JSON data, this text is actually a JSON string.
-
-What we need to do to use it as a JavaScript object, is we need to
-do JSON.parse(this.responseText). And now here, is where we find what we
-actually want to do with the data. In this first video, we&apos;re not going
-to do anything with it. The next one, we&apos;re gonna transform it in a way that
-we can use it with D3 later on, but for now, let&apos;s just log it to the console,
-so we can take a look at it. That&apos;s all we need to define here.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 306  (199) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image306.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-The third step and the final step of sending an HTTP request is, we need
-to instantiate it using the open function. We need the open function to know what kind
-of HTTP request type we are sending. We will be sending a get request. You will also
-have to define the URL that we&apos;re sending request to. In our case, we are
-staying in the same domain that we are running currently. So, on the
-localhost:3000.
-
-Obviously, those define the route on that domain for the API and on the endpoints 
-relationships. And the server is defined, if there is a get request coming to that 
-route, it&apos;ll return the relationship data. And, finally, we have to send it 
-off. That&apos;s it. It&apos;s all we need to get data from the backend using HTTP 
-request in JavaScript. The native way, no external libraries are needed. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 307/308  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image307.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image308.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s get back to our browser, reload the page and click the button 
-again. As you can see, we get returned an array of objects and if we
-look a bit closer, these objects are relationships of characters. We have an
-object that has a couple of attributes. 
-Some of them are for internal use of the API and here are the interesting bits, 
-which is the source of the interaction and the target of the interactions, or 
-two characters, and the weight as well. And, these are all different interactions. 
-That&apos;s it for this lesson. In the next lesson, I&apos;ll show you how we 
-can transform these interactions, so we can create a graph using D3.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-9">4.9 Demo 2: Data Visualization (15:22)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 309  (200) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image309.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Hello and welcome back! This is the second lesson for the data
-visualization lecture. In the first lesson, we talked about how we can use HTTP calls
-to retrieve data from an API. In this lesson, we&apos;ll be taking a look at how
-to transform that data, so we can use it in the next lesson to create a
-graph visualization, like the one you can see here. The data is retrieved from
-our API in the first video was a list of relationships between characters in the
-Game of Thrones novels and you can actually see these relationships as
-the links between those points in this graph. 
-
-Now, to build a graph like this, we need two things - we need the list of 
-relationships, so the links, we also need the characters themselves who would 
-represent the nodes. What we&apos;re going to do now is you&apos;re going to go 
-through the list of relationships and extract a unique list of names, so we can 
-connect them, as you can see here. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 310  (201) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image310.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Let&apos;s take another look at what we did 
-in the last video. I&apos;m going to go back to the terminal and in the folder 
-where all our code is housed. Especially, in the top folder that has the index.js 
-file. Now, I&apos;m going to start running
-our server again using the command node index.js. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 311/312  (202) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image311.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image312.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Our back-end is running on
-port 3000. I&apos;m going to close this one and go to localhost:3000, go back to our
-visualization page and, as you can remember, when I click the button, we
-will get data from the back-end, but no visualization is generated yet. I&apos;m
-going to use the alt+command+J shortcut again to open up the developer console
-in Chrome and you can see here is the list of interactions that we got from
-our API in the first video. 
-
-Now, each of these interactions is
-actually an object. It has a number of attributes and the ones we are
-most interested in here, are source and target, which are the source and
-target of the interaction or the relationship. And then the values for
-these attributes are names of characters from the Game of Thones novels.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 313  (202) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image313.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s go back and look at the code that we generated in the first
-video. We&apos;re in our visualization.js file in the public section of our
-code and we populated this loadData function by generating a HTTP request,
-defining what we&apos;re going to do with it after it successfully loaded the data
-and then sending it off. 
-
-And now, we&apos;re going to start working a bit more with
-this onload function and we&apos;re going to transform the response data that we
-had in a way that we can use it with D3 later on. D3 for generating
-a graph visualization actually expects two things - a list of Node
-objects and the list of relationships or link objects. We already have a list of
-relationship objects and the first thing we need to do now is to extract
-a unique list of node names. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 314  (203) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image314.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-What we&apos;re going to do is to take another look at our browser. We&apos;re 
-going to go through all of the link objects of this list and
-for each of the source and target names we&apos;re going to check if this
-name is already part of our unique name list and if it&apos;s not, we&apos;re going to
-add it and then do the same for the target. I&apos;m going to do this for all of the
-objects.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 315  (204) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image315.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-First thing to do is create a new variable called names and this list of names 
-is going to be extracted from the array of relationships, which is stored in 
-our response object. So, I&apos;m going to use the functional approach here 
-using an array function that is native to JavaScript, called reduce. I&apos;m 
-going to call this reduce function on the response object, or this array of 
-relationships, which is stored in this variable. And what reduce does is it 
-goes over an array of object and applies a function to it, to each and one of 
-those, and it also keeps an accumulator variable that gets filled up as we go 
-along.
-
-What we&apos;re going to do is we&apos;re going to create a function and
-this function will be applied to each of those objects. In this case,
-this function will extract the names and then, back here, we have an
-empty array. This is our list of names in the beginning. It&apos;s empty and
-as we go along, I&apos;m going to put names in there if they don&apos;t already
-exist. And by the end of the reduced function, this variable will hold
-to fill up array back here, which is the list of names. And this
-function up here, we are just going to create an anonymous function,
-right here in place.
-
-This reduce function is a higher-order function calling this anonymous function 
-on the element of the array and this function gets two parameters. The first one 
-is the accumulator. In our case, that&apos;s going to be an array and the first 
-step is the empty one and then the second step it&apos;s going to be whatever we 
-did with it in the first step. And it also gets a value. In our case, that&apos;s 
-going to be a relationship that is stored in this response array.
-
-Now, what we need to do is check if the target and source names of our relationship 
-are already part of our names object, or list of names. And the list of names, 
-the current one, is going to be stored in our accumulator. So, what we&apos;re 
-going to do is to check if this accumulator already has this name as part of it. 
-I&apos;m going to use the <b>indexOf</b> function on the <b>val.target</b>. This 
-checks if the name that&apos;s stored in the target attributes of our relationship 
-object is found anywhere in our list of names and if it does, it will return
-the position of it in the array. And if it is not already in there, it will 
-return -1. 
-If the name is not already part of a list, we&apos;re going to add it. We&apos;re 
-going to push the name to our accumulator array, which is the list of names, and
-then we&apos;re going to do the exact same thing except for the source name.
-source equals -1.
-
-Then, we&apos;re gonna push this source name as well. We potentially now modify 
-this accumulator array by adding one or maybe two names. In any case, we want to 
-return this accumulator. So, in the second step, or in the following step, this 
-is now the new list in which there are any names that we added in this step. 
-That&apos;s already enough to get a list of unique names from our array of 
-responses. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 316  (205) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image316.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Just going to save the file and I&apos;m going to put log it to the 
-console, so we can take a look at it.
-<image with data on sidebar>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 317  (206) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image317.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Going back to the browser, I&apos;m going to reload the page, press our
-button. As you can see, we get a nice list of unique names. So, one more
-thing that D3 is a bit unique with - we already have a list of
-interactions or links between names, which are the relationships, except
-that D3 cannot work with the names themselves. Instead, it needs IDs and
-the IDs are going to correspond to the position of the names in this
-array. 
-
-The next thing we&apos;re going to do is we&apos;re going to go over
-the response array, which holds our relationships one more time and
-we&apos;re going to replace the actual names with the position of those
-names in the names array. We&apos;re going to use, in this case, we&apos;re
-going to say new variable and these are going to be our links we are
-going to use in our visualization later and that&apos;s going to be a
-<b>response.map().</b> This is another JavaScript array function and it&apos;s
-very similar to the reduce, except, in this case, we are not going to
-keep any accumulator. It&apos;s just going to pass this anonymous function
-that will be applied to each of the relationships. In this case, this
-function only gets the value of the current position in the array and
-what we&apos;re going to do is we&apos;re going to replace the source with the
-position of this name in the names array. It&apos;s going to be another names.indexOf
-val.source. 
-
-We&apos;re going to check where in the list of names is this name and then
-replace the name with that number and we&apos;re going to do the same for
-the target as well. And then, we&apos;re going to return this modified 
-relationship, so it will be replaced in the array of relationships.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 318  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image318.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, we&apos;re going to take another look at what that looks like and I&apos;m
-going to log both the names and the links. Reload our data. So, now, we
-have the list of names up here and we have a list of relationships.
-Except, this time instead of actually having the name Grenn here or
-actually Aemon right here, we have a number 1, which is the second
-position in our names array, which corresponds to Aemon and the target
-is position 0, which will be Grenn. So, that looks pretty good.
-
-Now, we need one more thing to work with D3. As I mentioned before, D3
-actually needs a list of objects that represent the nodes. Currently, we
-have a list of strings that are the names. Now, we&apos;re going to need to
-transform those names one more time into a list of arrays. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 319  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image319.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Basically, the list of nodes looks like this. It&apos;s an array and this
-array has a list of objects and we&apos;re going to give it just one
-attribute called name. At the end of our next transformation, we want to
-have an array of objects with where the name attribute corresponds to
-the name. And this time, we&apos;re going to go through the names using the
-forEach function, another JavaScript array function, and this one also
-takes an anonymous function and that gets the current value.
-
-In this case, its name and actually whatever you call this variable is
-relevant, you can call it X if you want, but in this case we&apos;re going
-through a list of names. Name seems appropriate and now for each of those names we need to
-create a new object. So, we need one more variable, which are going to
-be our nodes. That&apos;s going to be an array and for each of the names
-we&apos;re going to create a new object. So, new node object that has one
-attribute called names and that would be the name variable from up here.
-And then, we&apos;re gonna add this node object to our list of nodes that
-we&apos;re going to use later. Now, this is all we need. I&apos;m going to take
-another look at that just to make sure. 
-<two images>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 320/321  (207) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image320.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image321.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Our nodes now look like this. It&apos;s an array of objects now and each object 
-has one name attribute. We now have a list of node objects, which hold our names 
-and the list of links, which holds relationships between those nodes and that&apos;s
-already enough for us to start to get to work with D3. And we&apos;re going
-to do this in this createVisualization function in the next video.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 322  (208) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image322.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Just to finish this off, what we&apos;re going to do is we&apos;re going to
-pass this data, which is gathered from our API and transform in the
-correct format. I&apos;m going to pass it to this createVisualisation
-function down there that&apos;s just calling the function with the nodes as
-nodes and the links as links. And that&apos;s it! That&apos;s already enough in
-terms of data transformation. In the next video, we&apos;re going to take a
-closer look at D3 and how to you use this data to create our graph.
-Thank you very much for watching, see you in the next video!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-10">4.10 Demo 3: Data Visualization (35:07)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Hello and welcome to the third demo video of the data visualization
-lecture!
-
-In the first of two videos, we spent some time getting data from an API
-using an HTTP request and in the second video we transformed that data.
-
-We can start using it for our visualization.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 323  (210) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image323.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Just a quick reminder: this is what we&apos;re building, this is a D3 graph
-visualization that depicts relationships between Game of Thrones
-characters. Now, let&apos;s start getting into it taking a look at our code.
-We have the functions that we are looking at before.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 324/325  (210) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image324.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image325.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-This is the load data function that we dealt with in the first two
-videos. Now, we&apos;re going to spend some time to fill the
-createVisualization function down here where all the actual
-visualization will be built. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 327  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image326.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Taking another look at the visualization
-view in our app views folder, we can see that we already imported the d3
-library. Because of that, we can start using d3 in our own visualization
-file, which has the createVisualization method. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 327  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image327.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-
-Let&apos;s get right
-into it. There&apos;s a couple of steps we need to do: we need to create the
-physical simulation of the graph that d3 does for us and then we have to
-start adding elements to the website to our DOM. We&apos;ll start off
-with the first bit. We need a couple of settings for our visualization.
-We&apos;re going just set a fixed height and width for it. I&apos;m going to
-just use 800 pixels, you can use whatever fits your screen best and just
-play around with it a little bit. So that&apos;s two things we need straight
-away and then we also need our nodes and links that we got from the
-previous function and that we initially got from our API and then
-transformed.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 328  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image328.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-We&apos;ll create another variable and we call it force, because it&apos;s
-going to be a force directed graph layout and now we can start using d3
-by just typing d3 and we want a layout and it should be a force layout.
-And now we&apos;ll use function chaining that d3 uses a lot to set some
-settings on this. We&apos;re going to set the charge, which is basically
-the gravity settings and the gravity in this case should be minus 220.
-This is the force with which the nodes will repel each other. If you
-set this to a lower value or actually a higher value, say that&apos;s minus
-10, the nodes would stay closer together and if it&apos;s something higher
-or more negative, like minus 220, in this case, they&apos;ll be further
-apart, because the links act like springs and the nodes are actually
-like magnets repelling each other. And then, there&apos;s also the link
-distance: this basically tells us how long our springs are going to be
-between those repelling magnets and now you need to set the dimensions.
-
-This takes an array of two numbers height and width and we
-could just write some numbers in here, but we already set them up there
-and it&apos;s always a good practice to keep settings like these that you
-might need in several places outside of the actual code right here and
-put them at the top or somewhere you can just change them in one place.
-It needs some more things; it needs the nodes and we already generated
-those in the previous video. So, we can just give them the nodes that
-are coming from up here. It also need the links and it is the same deal 
-here. And then, finally, we have to start the simulation. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 329  (213) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image329.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-This is enough to tell d3 to create a
-forced directed layout for us using the nodes and links provided and
-start a simulation. And we go back to our site. This one&apos;s actually
-currently empty, because I still need to start our web server. This
-one&apos;s the demo of the finished version. We&apos;re going to look at our
-current state. Again, localhost 3000 the visualization is going to run
-it and, as you can see, it&apos;s the old state from before.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 330/331  (211) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image330.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-<img src="./images/image331.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, in the background, d3 is already calculating node positions and the
-graph in itself. However, we haven&apos;t actually told d3 yet how to
-display it. The next step we need to do is we need to start adding
-SVG elements to the page and if you remember in our visualization view,
-there&apos;s this empty element with the ID root. And if you take a look at
-our browser and using the developer tools, we can look at the website.
-
-There&apos;s this root element, it&apos;s currently empty. It just has the
-attribute root. So, we can identify it and other than that there&apos;s
-nothing in there. So, we&apos;re now going to start using d3 to manipulate
-the DOM by adding elements depending on that data.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 332  (214) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image332.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Because it&apos;s going to be an SVG element, we&apos;re going to call the
-variable SVG. I&apos;m going to use d3 select and this will allow us to
-select a DOM element; in this case, the root element, and because it has
-the ID root, it has the prefix of a hash tag (a pound symbol) and then
-we want to add a new element, which is an SVG element for our
-visualization. We&apos;re going to append an element of type SVG. It has
-several attributes. It has a width and again you can just use a variable
-and another attribute that&apos;s the height. If we now take a look at our
-site, reload the site (press the button). We have now added a new SVG
-element of our defined width and height.
-
-Now, the next thing you need to do is to add a number of elements that
-represent a graph depending on our data and, in this case, we need a
-number of links and nodes. We want to define what a link should look
-like and for that, if you can remember our lecture, we&apos;re going to use
-the d3 way of adding data, which is by selecting all elements with the
-class link attached to them (which will be none at the beginning) and
-we&apos;re going to compare that to our data. Our data, which are stored in
-the links variable and this we will now do a comparison between the
-elements found up here and the elements found in here and that will be
-like a Venn diagram.
-
-Comparing these two sets and then we have three subsets that we can
-access and we want to access anything that&apos;s in here that doesn&apos;t have
-a representation in the links already in the page and for that we use
-the enter function. And for each one of those elements we want to append
-a new element to our graph and it&apos;s going to be an element of type line
-and that will already append a line. Now, we already gave you a
-visualization.css file that has two simple classes; one for the style of
-the link and one for the style of the node and it just has the color for
-the stroke and a bit of opacity. And the node also has a color and again
-for the stroke and the settings for the width of the stroke to get a
-nice little wide stroke around it.
-
-We&apos;re going to set this one as well. We&apos;re going to set any line
-element. We&apos;ll get a class attribute with a value link and that&apos;s
-going to be enough to define the link. Now, we&apos;re going to do the same
-for the nodes variable node svg.selectAll elements with the class node
-attached to them. And compare them to the data and nodes. It needs to be a function, so they
-need the period infront of them, and then give me anything that is in
-the data, but not in the page and for any of those append a new element
-to our SVG graphics. In this case, a circle element and this one will
-also get the attribute class with the value; this time it is going to be
-node. Realize that this function to be a class attribute is not just
-important for the style of the class, but also because we are selecting
-any node element here, so any element with the class node.
-
-It&apos;s not just for the styling the CSS, but it&apos;s also a label.
-Then, because, these nodes are circles and the circle is a defined SVG
-element that needs another attribute, and this attribute is the radius
-of the circle we want to have and this one is actually defined by the r
-attribute and r needs a number and that&apos;s going to be pixels. So, I can
-technically put five here, but, as we said before, that&apos;s maybe not the
-best practice. Instead, I&apos;m going to pretend there&apos;s a new variable
-called nodeRadius
-and I&apos;m going to go back up to my settings and actually create that
-variable nodeRadius and set it to five. So, now, we defined the style
-and, in this case, also the radius for the nodes and we told d3 that we
-want a bunch of links for our links and a bunch of circles for our
-nodes. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ 333  (214) ~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-  <img src="./images/image333.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-Now, let&apos;s go back to our website, refresh the page, so the
-JavaScript gets reloaded and click the button again. As you can see,
-something has happened. If I take a look into the root element again, we
-now actually have added a bunch of lines and, further down, circles to
-our SVG visualization. 
-<image>
-Now, if you look closely, you might be able to
-see there&apos;s like a little something on the top left of our screen and
-these are actually our nodes. So, this is like a quarter circle and it is because
-these are our circle elements, but all of them are positioned at
-position zero, which in the visualization world means the top-left corner of the
-screen.
-
-It&apos;s like the classic Cartesian coordinate system that you probably
-know from your Math classes. Except zero, zero is actually on the top
-left. One more thing we need to do. Because in the beginning, we
-created our forced layout that is this bit here that tells d3 to take these nodes
-and links and start a forced layout simulation of the positions, and we told it
-for every link we want the line of every node. What we didn&apos;t do yet is actually
-connect those together, meaning we now need to tell d3 actually the
-position for these links and nodes should be whatever you are
-calculating over here. And in this case, we actually start looking into
-events. So, what we&apos;re going to do, and we need to do this down here,
-because we&apos;re going to need the nodes and the link, so we need to do it
-after we define those, we&apos;re going to go back to our force simulation,
-which is stored in the force variable. force.on() and on is the
-JavaScript way of dealing with events. So, whenever a tick event is
-fired, I want the following function to be called, and tick is the event
-that gets called every step of the simulation of this force layout. So,
-whenever it&apos;s calculating new positions, this function
-will be called. What we&apos;re going to do now, every time d3
-calculates new position for nodes, we&apos;re going to start adding attributes to our
-nodes. In this node variable, we still have stored any element with class node
-and after calling this, there will be a class node element for any of
-our nodes in the data. 
-
-What we&apos;re going to do now on every tick, we&apos;re going
-to update two attributes of our nodes and those two attributes are defining the
-position. The first one is cx at the position in the x-direction and it&apos;s going to 
-be defined by a function and in this case, this gets a data point and that is 
-d3 convention. This data point is actually going to be our node as calculated in the force layout up here.
-
-What&apos;s happening in this calculation is that we have our node element that you can
-remember from the lecture before and that one has a source and a
-target - in the case of the links and just the name in the case of the
-nodes.
-
-What we&apos;re going to do every time this function is called, we can access 
-the node element used in our force layout using this d variable. So, what 
-we&apos;re going to do is going to set the x position of our node to whatever 
-d3 have calculated for the x-position in the graph simulation, in the physics 
-simulation that calculates the position. So, with now doing this, we&apos;re 
-going to connect the x position of the node on the screen to the x position to 
-the node in the physics simulation and we&apos;re going to do the same thing for 
-the y position, return this time dy. Let&apos;s try it and see if that works.
-
-Aha! And now all the nodes get the position that d3 has calculated for them in 
-our physics simulation. Next thing we need to do is do the same thing for the 
-links and let me just make that look a bit nicer. In the same tick event function, 
-we&apos;re going to also do the same to our links, except this time, we need to 
-define four different positions, because the link has a beginning and an end 
-position and then there&apos;ll be a line between those. 
-
-I&apos;m going to start off using x1 which is the x position of the beginning of
-the line and it&apos;s going to be the same thing function d and this time our link 
-element has a source and the target and those get separate positions
-calculated by the physics simulation. So, we&apos;re going to say source.x, and then
-next one it&apos;s going to be the y position of the beginning of the line, and this
-one is going to be source.y, target is going to come next.
-
-Now, the third one is x2, x is position of the end of the line.
-This time, the target x position and, finally, the y2 attribute function
-d return the d.target y. Now, we set for each of the link elements, we
-set the x and y positions of the source of the link and the x and y
-position of the target of the link. So, after saving that file, gone back to our
-simulations, reload the page, hit the button, et voila! We do have a nice 
-graph with nodes and links in between them. 
-
-Now, it doesn&apos;t quite look like our demo in the beginning yet, because
-that doesn&apos;t have any colors and also nothing is happening when I click on
-any of the nodes. So, there&apos;s going to be a couple of more things we&apos;re going to
-do just for fun. So, we added some styling using the classes node and link in our
-visualization file over here, but all they define is a stroke and now
-we&apos;re going to try it and define the colors of the nodes depending on the name
-of the characters. And for colors d3 provides a number of functions. The first
-thing we need is a scale. We&apos;re going to define this one up here again just by
-going var color equals d3.scale.category20. So, what this does is, it returns a
-scale of 20 different values, discrete values, and we&apos;re going to use those to
-select 20 different colors depending on the name of our characters. 
-
-This returns a function, so we can now call this color function with any
-string and it will just return us a color. So, going down to our node again
-and now we&apos;re going to call another function on this one, called
-style. And you want to fill the node with a certain value and this again
-takes the function and it gets the d element, which is the current data point or
-datum and we want to set the fill element of that current datum to whatever the
-color function gives us for the name and we know that our current data point
-has this names element, because we defined that in the last lecture that all the
-nodes are objects with this name attribute. Click on back to the site, we&apos;re
-loading it again.
-
-Now, all the nodes have different colors depending on the name of the
-character and you can see that some of them appear multiple times like the red one
-for example here. That&apos;s because we have about around 100 characters, but
-only 20 different colors in our scale. They&apos;re not all going to be the
-same, but if you really want to have unique ones, you can also write your own color
-function, for example, here, instead of using the d3 one. Just play around a 
-bit if you like. 
-
-There are two more things that have been in the demo that we haven&apos;t done 
-yet. So, one thing I&apos;m going to do is I&apos;m going to define the width
-of our links dynamically depending on the weight of the relationship object 
-that we got returned from the API. Again, we&apos;re going to use the style 
-function, but in this case I&apos;m going to fill. It&apos;s actually going to
-be the stroke width so we&apos;re going to define the width of the line between two
-nodes.
-
-Again, function receives the current data point and then this gets
-called for any element that has the class link attached to it. And we can just 
-return the d.weight here because all of the link, all of the relationships that 
-we got from the API actually have a weight attribute. Now, if you take a look at 
-that. Well, it doesn&apos;t really look too nice, because there&apos;s a big 
-difference between some of the smaller ones and the bigger ones and some of them 
-are quite large, so it becomes a bit ungainly. What I&apos;m going to do is I&apos;m 
-actually going to use another built-in JavaScript function from the math library, 
-which is the square root. I&apos;m just going to square the weight and now 
-it looks a lot nicer. As you can see, the characters that are having more intensive 
-relationships have now wider links between them than those that have like a less 
-close relationship.
-
-If you remember the demo I showed you in the beginning of this video and the in 
-last few videos as well, we also can define an interactive behavior of the
-graph. There is a couple of things we can do. If you&apos;d like to see some more 
-advanced examples, go online and you can see things like dragging them around, 
-so they respond nicely to input. For now, we&apos;re going to focus on making them 
-clickable. For that, we are going to add two more event functions. So, we&apos;re 
-going to take a look at the node and this time you&apos;re gonna implement an event 
-on the node itself. So, the node is a DOM element and as such it responds to 
-click events, so if I click on it, it get registered by the browser and we&apos;ll 
-fire this click event on this node element. So, I can define what&apos;s going to
-happen whenever this click event is fired, and I&apos;m going to use d3
-again and what I&apos;m going to do is I&apos;m going to select this specific node
-using d3 and change some of its attributes. So, I&apos;m going to do it
-d3.select and this time because this function is called on the node itself,
-
-I&apos;m going to select this and now I can start transforming whichever
-node I or the user has clicked on. And what I&apos;m going to do is, I&apos;m going to
-set the attribute radius to 20. Actually, because, we already have our node
-radius, let&apos;s just set it to whatever the node radius was times 4. If I save that, go
-back, reload, run the visualization and I&apos;ll click on any of the links, they are four
-times the size then before. Now, that&apos;s nice but looks a bit abrupt. One of
-the things that d3 is really good at is making transitions look smooth and nice.
-
-We&apos;re going to add a little bit more to this and then add a transition
-and this transition function needs to be called before the actual change of
-attributes. So, I&apos;m going to just tell it to transition and then I also
-need to define how long that transition period is going to be and
-that&apos;s in milliseconds and I&apos;m going to make it nice and slow, so you
-can see it, so 750 milliseconds. So, save the file and go back and
-reload our graph again. If I now click any of the nodes, get it a little
-nice and slowly transition from one setting of radius size to the next.
-And we can also just for the fun of it maybe add another transition. So,
-let&apos;s say you want to change the fill color and I&apos;m just going to
-change to red so whenever I click on it, it will increase its radius by
-times 4 and it fill the color red. And you could take a look at the d3
-documentation, there&apos;s a whole number of things you can do with this
-and it&apos;s a lot of fun to play around. So, just spend some time with it
-if you&apos;re interested. Now, this is fine, but what if you want to go
-back. So there&apos;s a number of things we could do. We could for example start 
-storing the previous size or color, you know node itself, and then on a different 
-event go back to that. So, now we&apos;re going to keep it simple and just going to 
-define another event on the nodes. A node on double-click I want something else 
-to happen.
-
-More specifically, again, I want to select the current node using d3 and
-again I&apos;d like it to transition nicely to the same duration and I&apos;m just 
-going to return the attribute to its original radius, so node radius again, 
-and I&apos;m just gonna set the color to white to say okay I&apos;ve been here before,
-this one has been clicked.
-
-So, now I can click it. It will get big and red on a double-click it will go 
-back to white. So now, with a few simple steps and a few lines of code we&apos;ve
-created a nice and interactive graph visualization using d3. There&apos;s a number 
-of things you can add to that. Play around with it and it&apos;s a lot of fun. 
-There&apos;s a whole bunch of documentation and tutorials available on d3 online. 
-So, take a look at it. 
-
-We have been using the version 3 of d3. There&apos;s an upcoming version 4 that
-changes some of the functions and the way to interact with it.
-So, take a look at that if you see this video in a couple of months from
-now or so, but the basic principles are all the same. It&apos;s just that
-some of the functions have been simplified or moved around a little bit.
-This is all we need to create this visualization: we have our forced
-layout physics simulation that calculates our node positions, we created
-a new SVG element on our DOM on the HTML page to actually populate with
-our visualization, we created a bunch of link and node elements in SVGs
-for lines and circles and then we connected the positions for the
-calculated positions of the physics simulation to our SVG elements on
-the page, and then also added some events for interactivity. I really
-hope you enjoyed these demonstration videos to our visualization
-lecture. Thank you very much for watching!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-0">5.0 Conclusion -- Putting it all together (1:16)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Course Summary</h3>
-Congratulations on finishing the series of lectures about developing a
-web application using the power of Node.js! The knowledge you acquired
-in the lectures and in the exercises will enable you to develop your own
-web or mobile applications entirely in JavaScript. In this series of
-lectures, we first covered the language basics, explaining the syntax
-and structure of a JavaScript program. We then saw that you can use
-objects and functions to structure your code. JavaScript is no longer a
-language that is just intended to be used in the web browser. Instead,
-we saw that JavaScript can now be run on the server side, allowing you
-to write JavaScript code both on the front and the back-end side.
-
-Finally, we saw that you can use JavaScript to turn data into
-interactive visual elements. So, by completing this course you should
-now be comfortable creating an end-to-end JavaScript application. We
-encourage you to continue and explore advanced topics, such as learning
-more on how to use web development frameworks or how to take advantage
-of functional reactive programming. We hope you enjoyed the set of
-lectures and we wish you good luck working with JavaScript!
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-1">5.1 JavaScript in Bioinformatics (3:53)</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Hello! My name is Burkhard Rost. I&apos;m the Chair of Computational Biology
-in the department of Computational Biology and Bioinformatics at the
-Technical University in Munich at TUM. I got into Computational Biology,
-into Life Sciences, as a physicist, because I was fascinated by watching
-seeing protein structures in 3D. The intricate details of these shapes
-of protein 3D structures, something that I just found so absolutely
-fascinating.
-
-And I saw them on SGI&apos;s, then on screens that, in fact, I had 3D
-glasses, I could look at the protein, I could look at what is behind
-this protein. And it absolutely fascinated me. It took over 20 years
-before we could do something, such as what I then saw on very expensive
-machines for everybody. Now, today, visualization is simple.
-
-Today, we all are used to seeing 3D information on our home screens, on
-our computers, but the moment until we got to the point, so it needed
-something, in order to, really span between making it simple and using
-biological data, and the thing that connects these two extreme points
-really is JavaScript. It&apos;s the language, it&apos;s the bridge. JavaScript
-is extremely easy to share, it&apos;s extremely easy to write, is extremely
-easy to learn quickly. You need, in order to use it, just a browser and
-it allows a very easy interpretation of data, it allows easy writing.
-
-Now, it is important to use JavaScript as a means of visualizing very
-complex data. In Biology, data is complex. Well, complex data we also
-find in other fields. We find it in Astrophysics, we find it in Physics,
-we find it in Finances, for instance, and other examples. The difference
-really is that in Biology, in some sense, the data, I&apos;d argue, is even
-more complex. Another issue is that in Biology data is constantly
-changing. What today is the top data, tomorrow nobody will care for.
-
-Tomorrow, being in five years from now. Now, that means we need an
-interface, a bridge, between the data and visualization of the data,
-that in fact is very easy to handle, very easy to write and that, again,
-is exactly JavaScript. That is why JavaScript is uniquely fascinating
-for Biology and hopefully will allow us to make more sense of complex
-data, which, in fact, I believe, will help us to get a better healthcare
-in the future. More and more Biology, Molecular Biology, modern Biology
-will intrude where we see a physician and I believe this will really
-contribute to helping to get a better treatment for all of us. More
-health for all of us. When we taught JavaScript, one of the examples that
-we used was the Game of Thrones. Initially, we used it, because that was
-a relatively easy data set to use and to motivate students. Biological
-data is more complex, but even from these simple first implementations
-we learned something about how to do JavaScript and something that gave
-us a new idea how to in fact look at protein interaction visualizers.
-
-JavaScript also allows you to come up with a quick solution and then
-that quick solution may give you a new idea where to go. This again is
-an interactive way of using visualization, in a way that we haven&apos;t had
-before and it&apos;s really easy for everybody to use. I hope you will enjoy
-the JavaScript course. I hope you will enjoy programming JavaScript and
-I hope you will contribute to the growing body of things that will help
-Science and Life Science in particular. Thanks for being with us!
-Burkhard Rost, bye bye.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##  (m:ss) (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
-<p align="center">
-  <img src="./images/imageXXX.png" 
-  title=""
-  alt="."
-  style="border: 2px solid #000000; width:40%;" />
-</p>
-<!-- date first editted 6/22/2024 Sat 5+pm -->
-<!-- date last editted 6/24/2024 Mon 12+pm -->
-<!-- date last editted 6/25/2024 Tue 7+pm -->
-<!-- date last editted 6/26/2024 Wed 4+am -->
-<!-- date last editted 6/28/2024 Fri 11+am -->
-<!-- date last editted 6/30/2024 Sun 11+pm -->
-
-...The end...
+<a href="https://jsfiddle.net/trungdq88/Logdo0rn/">jsFiddle Demo</a>
+same animation, took <b>1.3ms</b> for rendering, <b>2.0ms</b> for painting.
+
+<!-- [imge268.jpg](./images/image268.jpg) -->
+<!-- width 6.2" -->
+
+<!-- the end -->
+<!-- 6/28/2024 Fri 5:41pm -->
+<!-- 7/1/2024 Mon 2:24am -->
