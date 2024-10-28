@@ -5224,22 +5224,26 @@ then the second one is our visualization.js where we will put our own
 code. One thing to note here is that this button has an attribute called
 onclick. So, anytime you click this button, the following code is
 executed. In our case, it calls the loadData function.</p>
+
 <p>Now, to get to that loadData function, take a look at the public
 folder. This folder holds all the client-side JavaScript code. So, we
 have a lib folder that holds all the dependencies or the libraries you
 want to use. In this case, it's only the D3 library, if I actually need
 to look at that.</p>
+
 <p>We have a visualization folder that has anything to do with
 visualization. In this case, it's our little stylesheet, just defining
 what the nodes and the links look like and it has the visualization.js,
 which is where all the magic is going to happen. So, this is what we're
 going to get later from the API and then create a visualization.</p>
+
 <p>So, we have two very empty functions at the moment. The first one is
 the loadData function and, remember, this gets called whenever we click
 our button. So, we gonna load data from the backend in this one and then
 we're going to send that data to the second function that will create
 the visualization on our page using D3. So, in order to get started, we
 need to use the code that we already have.</p>
+
 <p>You need to run the server, so the client-side code gets executed and
 provides us with the API, so, we can get some data in this part here.
 Let's go to our terminal. I'm already in the folder that holds all the
@@ -5248,26 +5252,31 @@ command. So, if you see me typing l, that is just the one above. What we
 need to do is basically run the index.js that will create a server and
 provide the API, so we can work with it. However, there's a little
 problem, though.</p>
+
 <p>If I run this, it'll crash, because it cannot find the express module
 it needs to run. So, let me just clear my screen here. What we need to
 do first is we need to install any dependency. Luckily, because this is
 an NPM package, you can just run npm install, because if you remember,
 taking a look back here, the package.json defines all the dependencies
 we need. So, I'm going to run npm install.</p>
+
 <p>Actually, npm i is enough, because if you type that a lot that
 actually saves some time. And after a short moment, we have all our
 dependencies installed. As I clear the screen again, you can see here, I
 can now type node index.js, run it. Mongoose connected to the database,
 the Express server is running and we can start getting some data from
 our API.</p>
+
 <p>If we go back to the browser now, navigate to localhost:3000, we will
 already get our little page, because the server is running. And, these,
 what you can see here, are rendered templates that we defined in the
 server's code. The visualization page exists as well. It has the button.
 However, when I click, nothing happens, which make sense.</p>
+
 <p>Now going back to our code and opening the visualization.js file,
 this loadData function is called as soon as I press the button and all
 of it does, it is writing this little message to our console.</p>
+
 <p>Now, because this is running in the browser, you need to look at the
 browser console to see the message. In Google Chrome, the developer
 tools have the console, Safari and Firefox have very similar tools. In
@@ -5277,12 +5286,14 @@ alt+command+J or control+command+J on Windows and you can see up here,
 we have a little message. And if I keep clicking this button, we will
 get more messages. So far, so good. Let's take a look at what we need to
 do to actually get some data from our API.</p>
+
 <p>We will be using the classic native JavaScript way to do it with an
 xml http request object. If you're lucky enough to develop only for
 modern browsers, the upcoming version of JavaScript actually has a new
 API, called Fetch. If you are working in Node, you can also use it
 already, but for now we're just going to use the classic way and as you
 can see for our little example here, it's really easy to use.</p>
+
 <p>To actually get going, we need three steps. We need to create the
 HTTP request, then we need to define behavior after a successful
 request, so what are we going to do with the data that we received, and
@@ -5290,11 +5301,13 @@ in the third step, we just need to send it off. Let's start at the
 beginning. We'll create a new variable that holds our request and it
 holds an instance of a XMLHttp Request Right. That's the first step -
 done.</p>
+
 <p>Now we need to define what we actually want to do if the request was
 successful. And, the request object implement a number of events. Those
 will be called at different times of the request and then the
 interaction with the backend. For example, when the request makes first
 contact with the backend, there will be an event.</p>
+
 <p>When the backend starts sending data, there will be an event and
 there is also an event that gets fired as soon as the request
 successfully has transferred all the data from the backend and that's
@@ -5305,9 +5318,11 @@ create a new variable called response that will hold the data sent from
 the back-end. To access it, we need to access the request. In this case,
 we can access access this with the this keyword and then we'll get the
 responseText. So, that's all that we need.</p>
+
 <p>However, this response text, as it says, is a string and in our case,
 because we know the API is sending JSON data, this text is actually a
 JSON string.</p>
+
 <p>What we need to do to use it as a JavaScript object, is we need to do
 JSON.parse(this.responseText). And now here, is where we find what we
 actually want to do with the data. In this first video, we're not going
@@ -5315,28 +5330,32 @@ to do anything with it. The next one, we're gonna transform it in a way
 that we can use it with D3 later on, but for now, let's just log it to
 the console, so we can take a look at it. That's all we need to define
 here.</p>
-<p>The third step and the final step of sending an HTTP request is, we
+
+<p>The third step and final step of sending an HTTP request is, we
 need to instantiate it using the open function. We need the open
 function to know what kind of HTTP request type we are sending. We will
 be sending a get request. You will also have to define the URL that
 we're sending request to. In our case, we are staying in the same domain
 that we are running currently. So, on the localhost:3000.</p>
+
 <p>Obviously, those define the route on that domain for the API and on
 the endpoints relationships. And the server is defined, if there is a
 get request coming to that route, it'll return the relationship data.
 And, finally, we have to send it off. That's it. It's all we need to get
 data from the backend using HTTP request in JavaScript. The native way,
 no external libraries are needed.</p>
+
 <p>Let's get back to our browser, reload the page and click the button
 again. As you can see, we get returned an array of objects and if we
 look a bit closer, these objects are relationships of characters. We
 have an object that has a couple of attributes.</p>
-Some of them are for internal use of the API and here are the
+
+<p>Some of them are for internal use of the API and here are the
 interesting bits, which is the source of the interaction and the target
 of the interactions, or two characters, and the weight as well. And,
 these are all different interactions. That's it for this lesson. In the
 next lesson, I'll show you how we can transform these interactions, so
-we can create a graph using D3.
+we can create a graph using D3.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-9">
 4.9 Demo 2: Data Visualization (15:22)
@@ -5353,6 +5372,7 @@ you can actually see these relationships as the links between those
 points in this graph. Now, to build a graph like this, we need two
 things - we need the list of relationships, so the links, we also need
 the characters themselves who would represent the nodes.</p>
+
 <p>What we're going to do now is you're going to go through the list of
 relationships and extract a unique list of names, so we can connect
 them, as you can see here. Let's take another look at what we did in the
@@ -5366,11 +5386,13 @@ will get data from the back-end, but no visualization is generated yet.
 I'm going to use the alt+command+J shortcut again to open up the
 developer console in Chrome and you can see here is the list of
 interactions that we got from our API in the first video.</p>
+
 <p>Now, each of these interactions is actually an object. It has a
 number of attributes and the ones we are most interested in here, are
 source and target, which are the source and target of the interaction or
 the relationship. And then the values for these attributes are names of
 characters from the Game of Thones novels.</p>
+
 <p>Let's go back and look at the code that we generated in the first
 video. We're in our visualization.js file in the public section of our
 code and we populated this loadData function by generating a HTTP
@@ -5383,11 +5405,13 @@ two things - a list of Node objects and the list of relationships or
 link objects. We already have a list of relationship objects and the
 first thing we need to do now is to extract a unique list of node names.
 What we're going to do is to take another look at our browser.</p>
+
 <p>We're going to go through all of the link objects of this list and
 for each of the source and target names we're going to check if this
 name is already part of our unique name list and if it's not, we're
 going to add it and then do the same for the target. I'm going to do
 this for all of the objects.</p>
+
 <p>First thing to do is create a new variable called names and this list
 of names is going to be extracted from the array of relationships, which
 is stored in our response object. So, I'm going to use the functional
@@ -5397,6 +5421,7 @@ object, or this array of relationships, which is stored in this
 variable. And what reduce does is it goes over an array of object and
 applies a function to it, to each and one of those, and it also keeps an
 accumulator variable that gets filled up as we go along.</p>
+
 <p>What we're going to do is we're going to create a function and this
 function will be applied to each of those objects. In this case, this
 function will extract the names and then, back here, we have an empty
@@ -5406,6 +5431,7 @@ And by the end of the reduced function, this variable will hold to fill
 up array back here, which is the list of names. And this function up
 here, we are just going to create an anonymous function, right here in
 place.</p>
+
 <p>This reduce function is a higher-order function calling this
 anonymous function on the element of the array and this function gets
 two parameters. The first one is the accumulator. In our case, that's
@@ -5413,6 +5439,7 @@ going to be an array and the first step is the empty one and then the
 second step it's going to be whatever we did with it in the first step.
 And it also gets a value. In our case, that's going to be a relationship
 that is stored in this response array.</p>
+
 <p>Now, what we need to do is check if the target and source names of
 our relationship are already part of our names object, or list of names.
 And the list of names, the current one, is going to be stored in our
@@ -5422,10 +5449,12 @@ function on the <b>val.target</b>. This checks if the name that's stored
 in the target attributes of our relationship object is found anywhere in
 our list of names and if it does, it will return the position of it in
 the array. And if it is not already in there, it will return -1.</p>
+
 <p>If the name is not already part of a list, we're going to add it.
 We're going to push the name to our accumulator array, which is the list
 of names, and then we're going to do the exact same thing except for the
 source name. source equals -1.</p>
+
 <p>Then, we're gonna push this source name as well. We potentially now
 modify this accumulator array by adding one or maybe two names. In any
 case, we want to return this accumulator. So, in the second step, or in
@@ -5434,6 +5463,7 @@ names that we added in this step. That's already enough to get a list of
 unique names from our array of responses. Just going to save the file
 and I'm going to put log it to the console, so we can take a look at
 it.</p>
+
 <p>Going back to the browser, I'm going to reload the page, press our
 button. As you can see, we get a nice list of unique names. So, one more
 thing that D3 is a bit unique with - we already have a list of
@@ -5454,10 +5484,12 @@ function only gets the value of the current position in the array and
 what we're going to do is we're going to replace the source with the
 position of this name in the names array. It's going to be another
 names.indexOf val.source.</p>
+
 <p>We're going to check where in the list of names is this name and then
 replace the name with that number and we're going to do the same for the
 target as well. And then, we're going to return this modified
 relationship, so it will be replaced in the array of relationships.</p>
+
 <p>Now, we're going to take another look at what that looks like and I'm
 going to log both the names and the links. Reload our data. So, now, we
 have the list of names up here and we have a list of relationships.
@@ -5465,6 +5497,7 @@ Except, this time instead of actually having the name Grenn here or
 actually Aemon right here, we have a number 1, which is the second
 position in our names array, which corresponds to Aemon and the target
 is position 0, which will be Grenn. So, that looks pretty good.</p>
+
 <p>Now, we need one more thing to work with D3. As I mentioned before,
 D3 actually needs a list of objects that represent the nodes. Currently,
 we have a list of strings that are the names. Now, we're going to need
@@ -5476,9 +5509,11 @@ have an array of objects with where the name attribute corresponds to
 the name. And this time, we're going to go through the names using the
 forEach function, another JavaScript array function, and this one also
 takes an anonymous function and that gets the current value.</p>
+
 <p>In this case, its name and actually whatever you call this variable
 is relevant, you can call it X if you want, but in this case we're going
 through a list of names.</p>
+
 <p>So, name seems appropriate and now for each of those names we need to
 create a new object. So, we need one more variable, which are going to
 be our nodes. That's going to be an array and for each of the names
@@ -5488,11 +5523,13 @@ And then, we're gonna add this node object to our list of nodes that
 we're going to use later. Now, this is all we need. I'm going to take
 another look at that just to make sure. So, our nodes now look like
 this.</p>
+
 <p>It's an array of objects now and each object has one name attribute.
 We have now a list of node objects, which hold our names and the list of
 links, which holds relationships between those nodes and that's already
 enough for us to start to get to work with D3. And we're going to do
 this in this createVisualization function in the next video.</p>
+
 <p>So, just to finish this off, what we're going to do is we're going to
 pass this data, which is gathered from our API and transform in the
 correct format. I'm going to pass it to this createVisualisation
@@ -5501,25 +5538,28 @@ nodes and the links as links. And that's it! That's already enough in
 terms of data transformation. In the next video, we're going to take a
 closer look at D3 and how to you use this data to create our graph.
 Thank you very much for watching, see you in the next video!</p>
-<h3 id="ch4-10">
-4.10 Demo 3: Data Visualization (35:07)
-</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-10">4.10 Demo 3: Data Visualization (35:07)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hello and welcome to the third demo video of the data visualization
 lecture!</p>
+
 <p>In the first of two videos, we spent some time getting data from an
 API using an HTTP request and in the second video we transformed that
-data.</p>
-<p>We can start using it for our visualization.</p>
+data. We can start using it for our visualization.</p>
+
 <p>Just a quick reminder: this is what we're building, this is a D3
 graph visualization that depicts relationships between Game of Thrones
 characters. Now, let's start getting into it taking a look at our code.
 We have the functions that we are looking at before.</p>
+
 <p>This is the load data function that we dealt with in the first two
 videos. Now, we're going to spend some time to fill the
 createVisualization function down here where all the actual
 visualization will be built. Taking another look at the visualization
 view in our app views folder, we can see that we already imported the d3
 library.</p>
+
 <p>Because of that, we can start using d3 in our own visualization file,
 which has the createVisualization method. Let's get right into it.
 There's a couple of steps we need to do: we need to create the physical
@@ -5532,6 +5572,7 @@ around with it a little bit. So that's two things we need straight away
 and then we also need our nodes and links that we got from the previous
 function and that we initially got from our API and then
 transformed.</p>
+
 <p>We'll create another variable and we call it force, because it's
 going to be a force directed graph layout and now we can start using d3
 by just typing d3 and we want a layout and it should be a force layout.
@@ -5662,23 +5703,27 @@ which is stored in the force variable. force.on() and on is the
 JavaScript way of dealing with events. So, whenever a tick event is
 fired, I want the following function to be called, and tick is the event
 that gets called every step of the simulation of this force layout. So,
-whenever it's calculating new positions, this function</p>
-<p>will be called. So, what we're going to do now, every time d3
-calculates</p>
-<p>new position for nodes, we're going to start adding attributes to our
-nodes. So, in this node variable, we still have stored any element with
+whenever it's calculating new positions, this function will be called. 
+So, what we're going to do now, every time d3 calculates new position for nodes, 
+we're going to start adding attributes to our
+nodes.</p>
+
+<p>So, in this node variable, we still have stored any element with
 class node and after calling this, there will be a class node element
 for any of our nodes in the data. So, what we're going to do now on
 every tick, we're going to update two attributes of our nodes and those
 two attributes are defining the position.</p>
+
 <p>The first one is cx at the position in the x-direction and it's going
 to be defined by a function and in this case, this gets a data point and
 that is d3 convention. This data point is actually going to be our node
 as calculated in the force layout up here.</p>
+
 <p>What's happening in this calculation is that we have our node element
 that you can remember from the lecture before and that one has a source
 and a target - in the case of the links and just the name in the case of
 the nodes.</p>
+
 <p>What we're going to do every time this function is called, we can
 access the node element used in our force layout using this d variable.
 So, what we're going to do is going to set the x position of our node to
@@ -5688,6 +5733,7 @@ doing this, we're going to connect the x position of the node on the
 screen to the x position to the node in the physics simulation and we're
 going to do the same thing for the y position, return this time dy.
 Let's try it and see if that works.</p>
+
 <p>Aha! And now all the nodes get the position that d3 has calculated
 for them in our physics simulation. Next thing we need to do is do the
 same thing for the links and let me just make that look a bit nicer. In
@@ -5695,6 +5741,7 @@ the same tick event function, we're going to also do the same to our
 links, except this time, we need to define four different positions,
 because the link has a beginning and an end position and then there'll
 be a line between those.</p>
+
 <p>I'm going to start off using x1 which is the x position of the
 beginning of the line and it's going to be the same thing function d and
 this time our link element has a source and the target and those get
@@ -5702,6 +5749,7 @@ separate positions calculated by the physics simulation. So, we're going
 to say source.x, and then next one it's going to be the y position of
 the beginning of the line, and this one is going to be source.y, target
 is going to come next.</p>
+
 <p>Now, the third one is x2, x is position of the end of the line. This
 time, the target x position and, finally, the y2 attribute function d
 return the d.target y. Now, we set for each of the link elements, we set
@@ -5709,6 +5757,7 @@ the x and y positions of the source of the link and the x and y position
 of the target of the link. So, after saving that file, gone back to our
 simulations, reload the page, hit the button, et voila! We do have a
 nice graph with nodes and links in between them.</p>
+
 <p>Now, it doesn't quite look like our demo in the beginning yet,
 because that doesn't have any colors and also nothing is happening when
 I click on any of the nodes. So, there's going to be a couple of more
@@ -5722,6 +5771,7 @@ color equals d3.scale.category20. So, what this does is, it returns a
 scale of 20 different values, discrete values, and we're going to use
 those to select 20 different colors depending on the name of our
 characters.</p>
+
 <p>So, this returns a function, so we can now call this color function
 with any string and it will just return us a color. So, going down to
 our node again and now we're going to call another function on this one,
@@ -5733,6 +5783,7 @@ we know that our current data point has this names element, because we
 defined that in the last lecture that all the nodes are objects with
 this name attribute. Click on back to the site, we're loading it
 again.</p>
+
 <p>Now, all the nodes have different colors depending on the name of the
 character and you can see that some of them appear multiple times like
 the red one for example here. That's because we have about around 100
@@ -5740,6 +5791,7 @@ characters, but only 20 different colors in our scale. They're not all
 going to be the same, but if you really want to have unique ones, you
 can also write your own color function, for example, here, instead of
 using the d3 one. Just play around a bit if you like.</p>
+
 <p>There are two more things that have been in the demo that we haven't
 done yet. So, one thing I'm going to do is I'm going to define the width
 of our links dynamically depending on the weight of the relationship
@@ -5747,6 +5799,7 @@ object that we got returned from the API. Again, we're going to use the
 style function, but in this case I'm going to fill. It's actually going
 to be the stroke width so we're going to define the width of the line
 between two nodes.</p>
+
 <p>Again, function receives the current data point and then this gets
 called for any element that has the class link attached to it. And we
 can just return the d.weight here because all of the link, all of the
@@ -5760,6 +5813,7 @@ root. I'm just going to square the weight and now it looks a lot nicer.
 As you can see, the characters that are having more intensive
 relationships have now wider links between them than those that have
 like a less close relationship.</p>
+
 <p>If you remember the demo I showed you in the beginning of this video
 and the in last few videos as well, we also can define an interactive
 behavior of the graph. There is a couple of things we can do. If you'd
@@ -5776,6 +5830,7 @@ d3 again and what I'm going to do is I'm going to select this specific
 node using d3 and change some of its attributes. So, I'm going to do it
 d3.select and this time because this function is called on the node
 itself,</p>
+
 <p>I'm going to select this and now I can start transforming whichever
 node I or the user has clicked on. And what I'm going to do is, I'm
 going to set the attribute radius to 20. Actually, because, we already
@@ -5809,55 +5864,51 @@ and again I'd like it to transition nicely to the same duration and I'm
 just going to return the attribute to its original radius, so node
 radius again, and I'm just gonna set the color to white to say okay I've
 been here before, this one has been clicked.</p>
+
 <p>So, now I can click it. It will get big and red on a double-click it
 will go back to white. So now, with a few simple steps and a few lines
 of code we've created a nice and interactive graph visualization using
 d3. There's a number of things you can add to that. Play around with it
 and it's a lot of fun. There's a whole bunch of documentation and
 tutorials available on d3 online. So, take a look at it.</p>
-We have been using the version 3 of d3. There's an upcoming version 4
-that changes some of the functions and the way to interact with it. So,
-take a look at that if you see this video in a couple of months from now
-or so, but the basic principles are all the same. It's just that some of
-the functions have been simplified or moved around a little bit. This is
-all we need to create this visualization: we have our forced layout
-physics simulation that calculates our node positions, we created a new
-SVG element on our DOM on the HTML page to actually populate with our
-visualization, we created a bunch of link and node elements in SVGs for
-lines and circles and then we connected the positions for the calculated
-positions of the physics simulation to our SVG elements on the page, and
-then also added some events for interactivity. I really hope you enjoyed
-these demonstration videos to our visualization lecture. Thank you very
-much for watching!
+
+<p>We have been using the version 3 of d3. There's version 4 that changes some of the 
+functions and the way to interact with it. So, take a look at that if you see this 
+lesson in a couple of months from now or so, but the basic principles are all the same. 
+It's just that some of the functions have been simplified or moved around a little bit. 
+This is all we need to create this visualization: we have our forced layout physics 
+simulation that calculates our node positions, we created a new SVG element on our DOM on 
+the HTML page to actually populate with our visualization, we created a bunch of link and 
+node elements in SVGs for lines and circles and then we connected the positions for the 
+calculated positions of the physics simulation to our SVG elements on the page, and then 
+also added some events for interactivity. I really hope you enjoyed these demonstration 
+videos to our visualization lecture. Thank you very much for watching!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-0">
-5.0 Conclusion – Putting it all together (1:16)
-</h3>
+<h3 id="ch5-0">5.0 Conclusion – Putting it all together (1:16)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-Course Summary
-</h3>
+<h3>Course Summary</h3>
+
 <p>Congratulations on finishing the series of lectures about developing
 a web application using the power of Node.js! The knowledge you acquired
 in the lectures and in the exercises will enable you to develop your own
-web or mobile applications entirely in JavaScript. In this series of
-lectures, we first covered the language basics, explaining the syntax
-and structure of a JavaScript program. We then saw that you can use
-objects and functions to structure your code. JavaScript is no longer a
-language that is just intended to be used in the web browser. Instead,
-we saw that JavaScript can now be run on the server side, allowing you
-to write JavaScript code both on the front and the back-end side.</p>
-Finally, we saw that you can use JavaScript to turn data into
+web or mobile applications entirely in JavaScript.</p>
+
+<p>In this series of lectures, we first covered the language basics, explaining the 
+syntax and structure of a JavaScript program. We then saw that you can use objects and 
+functions to structure your code. JavaScript is no longer a language that is just 
+intended to be used in the web browser. Instead, we saw that JavaScript can now be run on 
+the server side, allowing you to write JavaScript code both on the front and the back-end 
+side.</p>
+
+<p>Finally, we saw that you can use JavaScript to turn data into
 interactive visual elements. So, by completing this course you should
 now be comfortable creating an end-to-end JavaScript application. We
 encourage you to continue and explore advanced topics, such as learning
 more on how to use web development frameworks or how to take advantage
 of functional reactive programming. We hope you enjoyed the set of
-lectures and we wish you good luck working with JavaScript!
+lectures and we wish you good luck working with JavaScript!</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch5-1">
-5.1 JavaScript in Bioinformatics (3:53)
-</h3>
+<h3 id="ch5-1">5.1 JavaScript in Bioinformatics (3:53)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hello! My name is Burkhard Rost. I'm the Chair of Computational
 Biology in the department of Computational Biology and Bioinformatics at
@@ -5866,11 +5917,13 @@ Biology, into Life Sciences, as a physicist, because I was fascinated by
 watching seeing protein structures in 3D. The intricate details of these
 shapes of protein 3D structures, something that I just found so
 absolutely fascinating.</p>
+
 <p>And I saw them on SGI's, then on screens that, in fact, I had 3D
 glasses, I could look at the protein, I could look at what is behind
 this protein. And it absolutely fascinated me. It took over 20 years
 before we could do something, such as what I then saw on very expensive
 machines for everybody. Now, today, visualization is simple.</p>
+
 <p>Today, we all are used to seeing 3D information on our home screens,
 on our computers, but the moment until we got to the point, so it needed
 something, in order to, really span between making it simple and using
@@ -5879,6 +5932,7 @@ really is JavaScript. It's the language, it's the bridge. JavaScript is
 extremely easy to share, it's extremely easy to write, is extremely easy
 to learn quickly. You need, in order to use it, just a browser and it
 allows a very easy interpretation of data, it allows easy writing.</p>
+
 <p>Now, it is important to use JavaScript as a means of visualizing very
 complex data. In Biology, data is complex. Well, complex data we also
 find in other fields. We find it in Astrophysics, we find it in Physics,
@@ -5886,6 +5940,7 @@ we find it in Finances, for instance, and other examples. The difference
 really is that in Biology, in some sense, the data, I'd argue, is even
 more complex. Another issue is that in Biology data is constantly
 changing. What today is the top data, tomorrow nobody will care for.</p>
+
 <p>Tomorrow, being in five years from now. Now, that means we need an
 interface, a bridge, between the data and visualization of the data,
 that in fact is very easy to handle, very easy to write and that, again,
@@ -5895,13 +5950,16 @@ data, which, in fact, I believe, will help us to get a better healthcare
 in the future. More and more Biology, Molecular Biology, modern Biology
 will intrude where we see a physician and I believe this will really
 contribute to helping to get a better treatment for all of us. More
-health for all of us. When we taught JavaScript, one of the examples
+health for all of us.</p>
+
+<p>When we taught JavaScript, one of the examples
 that we used was the Game of Thrones. Initially, we used it, because
 that was a relatively easy data set to use and to motivate students.
 Biological data is more complex, but even from these simple first
 implementations we learned something about how to do JavaScript and
 something that gave us a new idea how to in fact look at protein
 interaction visualizers.</p>
+
 <p>JavaScript also allows you to come up with a quick solution and then
 that quick solution may give you a new idea where to go. This again is
 an interactive way of using visualization, in a way that we haven't had
@@ -5924,6 +5982,7 @@ Burkhard Rost, bye bye.</p>
 <!-- date last editted 6/25/2024 Tue 7+pm -->
 <!-- date last editted 6/26/2024 Wed 4+am -->
 <!-- date last editted 6/27/2024 Thu 4+pm -->
+<!-- date last editted 10/28/2024 Mon 3+pm -->
 <p>…The end…</p>
 </body>
 </html>
