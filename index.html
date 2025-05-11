@@ -1414,17 +1414,17 @@ name, year and print.</p>
   alt="Working with properties."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>We have already seen defining and accessing properties.</p>
-<p>We can also change and delete them. To change your property, we
-simply assign a new value.</p>
-<p>Delete operator allows us to remove a property from an object.</p>
-<p>Remember, using delete operator is not the same as assigning
-undefined to a property.</p>
-<p>When we assign undefined to a certain property, it is not
-removed.</p>
-<p>So, an object still has property with its name and value
-undefined.</p>
-<p>Delete, on the other hand, completely removes a property from an object.</p>
+<p>We have already seen defining and accessing properties.
+We can also change and delete them. To change your property, we
+simply assign a new value.
+Delete operator allows us to remove a property from an object.
+Remember, using delete operator is not the same as assigning
+undefined to a property.
+When we assign undefined to a certain property, it is not
+removed.
+So, an object still has property with its name and value
+undefined.
+Delete, on the other hand, completely removes a property from an object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 71 iterating over properties (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1445,8 +1445,7 @@ bracket notation.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>We can also check if a certain property exists using hasOwnProperty
-method.</p>
-<p>This method takes a name of a property as an argument and returns true
+method. This method takes a name of a property as an argument and returns true
 if such a property exists. Otherwise, it returns false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 73 comparing objects (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1457,8 +1456,7 @@ if such a property exists. Otherwise, it returns false.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>An important thing to remember is that an object is only equal to
-itself.</p>
-<p>In other words, equality operator returns true only if both variables
+itself. In other words, equality operator returns true only if both variables
 hold a reference to the same object. It will return false in all other
 cases, even if objects have the same set of properties with the same
 names and the same values.</p>
@@ -1473,8 +1471,7 @@ names and the same values.</p>
 <p>Oh, by the way, just two slides ago we have invoked
 <b>hasOwnProperty</b> method on our objects, right? But we have never
 added this method to our objects. Yet, we still are able to invoke it.
-Why? Because prototypes!</p>
-<p>In JavaScript, each object has a special connection to another object -
+Why? Because prototypes! In JavaScript, each object has a special connection to another object -
 to a prototype.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 75 prototypal inheritance (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1499,12 +1496,11 @@ object literal or an object constructor. <b>Object.prototype</b> has
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>A prototype is an object and we know how to add properties to an
-object.</p>
-<p>So, what happens when we add a property to a prototype?</p>
-<p>All objects inheriting from this prototype get immediate access to
+object. So, what happens when we add a property to a prototype?
+All objects inheriting from this prototype get immediate access to
 the new property. Let's add a new property called <b>easterEgg</b> with
-a value "Hello, world!" to the <b>Object.prototype.</b></p>
-<p>Having done that, we can immediately access <strong>easterEgg</strong>
+a value "Hello, world!" to the <b>Object.prototype.</b>
+Having done that, we can immediately access <strong>easterEgg</strong>
 property from our <strong>cls object</strong>, which was created via an
 object literal and inherits from <strong>Object.prototype</strong>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1516,13 +1512,13 @@ object literal and inherits from <strong>Object.prototype</strong>.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>So, what will happen if we add a property with the same name
-easterEgg to our cls object?</p>
-<p>Will it have any effect on the Object.prototype?</p>
-<p>Let's try it. As we can see from this example, adding such a property
+easterEgg to our cls object?
+Will it have any effect on the Object.prototype?
+Let's try it. As we can see from this example, adding such a property
 to one specific object does not effect that prototype and, consequently,
 does not affect all other objects inheriting from the same
-prototype.</p>
-<p>As we have seen, JavaScript allows us to write programs in
+prototype.
+As we have seen, JavaScript allows us to write programs in
 object-oriented way.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 78 oop in javascript (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1533,8 +1529,8 @@ object-oriented way.</p>
   style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>Object-oriented programming paradigm means we model our program as a
-set of objects. Objects are a combination of data and behavior.</p>
-<p>Methods represent behavior, while attributes, these are properties that
+set of objects. Objects are a combination of data and behavior.
+Methods represent behavior, while attributes, these are properties that
 hold data, are data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 79 objects with similar behavior (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1548,23 +1544,22 @@ hold data, are data.</p>
 similar attributes and behavior. For details about object-oriented
 programming paradigm, visit the following link. Now, let's return to our
 objects and our concerns. So, we know how to create objects that combine
-data and behavior.</p>
-<p>How can we create groups of similar objects? Consider this
+data and behavior. How can we create groups of similar objects? Consider this
 example.</p>
 <p>Imagine swordsmen in a video game. They all have hit points and they
 all can attack with a sword. We want to be able to create several
-swordsmen. How can we do that in JavaScript?</p>
-<p>We know that we can create how a swordsman with an object literal
+swordsmen. How can we do that in JavaScript?
+We know that we can create how a swordsman with an object literal
 explicitly defining attributes and methods each time. That is
 tedious!</p>
-<p>We also know that we can add methods to the Object.prototype.</p>
-<p>Hmm, that is dangerous and is actually considered an
-anti-pattern.</p>
-<p>Let's say, first we add our attack with a sword method to the
+<p>We also know that we can add methods to the Object.prototype.
+Hmm, that is dangerous and is actually considered an
+anti-pattern.
+Let's say, first we add our attack with a sword method to the
 Object.prototype.</p>
 <p>Then, we decide, we also want to have archers and add shooting arrow
-method to the Object.prototype.</p>
-<p>Now, swordsmen have shooting arrow method and archers have attack with a
+method to the Object.prototype.
+Now, swordsmen have shooting arrow method and archers have attack with a
 sword method. Is there a better way?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 80 constructor functions, #1 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1574,8 +1569,7 @@ sword method. Is there a better way?</p>
   alt="Constructor functions, #1."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Yes! There is!</p>
-<p>With constructor functions we can create groups of objects. Each object
+<p>Yes! There is! With constructor functions we can create groups of objects. Each object
 belonging to a group, has similar contents and behavior.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 81 constructor functions, #2 (49) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1585,9 +1579,8 @@ belonging to a group, has similar contents and behavior.</p>
   alt="Constructor functions, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>How exactly does a constructor function work?</p>
-<p>First, we invoke it with a new keyword.</p>
-<p>New keyword creates a new object.</p>
+<p>How exactly does a constructor function work? First, we invoke it with a new keyword. 
+New keyword creates a new object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 82 constructor functions, #3 (50) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1599,10 +1592,10 @@ belonging to a group, has similar contents and behavior.</p>
 <p>The value of constructor function special property, called prototype,
 becomes the prototype of the newly created object.</p>
 <p>The keyword this returns our new object inside the constructor
-function, allowing us to define and initialize object's properties.</p>
-<p>Each function has a prototype property.</p>
-<p>The value of prototype property is an object.</p>
-<p>This object becomes the prototype of every object created by a
+function, allowing us to define and initialize object's properties.
+Each function has a prototype property.
+The value of prototype property is an object.
+This object becomes the prototype of every object created by a
 corresponding constructor function. As we can see in this example, once
 we add methods getTotalDamage to Swordsman.prototype, object Swordsman
 created by Swordsman constructor function inherits this method.</p>
@@ -1616,12 +1609,9 @@ with similar behavior and data.</p>
   alt="Adding properties to a prototype."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>We can add properties of any type and not just functions. However,
-adding attributes, that is data properties to a prototype, is an
-anti-pattern.</p>
-<p>Why?</p>
-<p>Can you imagine what will happen if we make hitPoints a property of a
-prototype?</p>
+<p>We can add properties of any type and not just functions. However, adding attributes, that 
+is data properties to a prototype, is an anti-pattern. Why? Can you imagine what will happen 
+if we make hitPoints a property of a prototype?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2-3">2.3 Functions, part 2 (5:19)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1644,11 +1634,9 @@ functions.</p>
   alt="Working with arguments object."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Let's look again at the arguments object.</p>
-<p>It contains arguments passed to a function.</p>
-<p>We can access a specific argument by index.</p>
-<p>We can use length property to get number of passed arguments.</p>
-<p>Arguments object looks like an array, but, remember, it is not an array.</p>
+<p>Let's look again at the arguments object. It contains arguments passed to a function.
+We can access a specific argument by index. We can use length property to get number of 
+passed arguments. Arguments object looks like an array, but, remember, it is not an array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 86 working with arguments object, #2 (52) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -1657,9 +1645,8 @@ functions.</p>
   alt="Working with arguments object, #2."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-<p>Arguments object does not have array methods. We can see in this example
-that attempting to invoke an array's method indexOf results in a
-TypeErrorpart 2.</p>
+<p>Arguments object does not have array methods. We can see in this example that attempting to 
+invoke an array's method indexOf results in a TypeErrorpart 2.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 87 rest parameters (52) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3296,7 +3283,7 @@ everything that is in <b>navigation.pug</b>, which in this case is just
 a ul or unordered list with the hashtag navigation, which means it has
 the id navigation. One list item, which has an a href, which is a link
 to the home. Also, the name of this link will be home itself.</p>
-The next interesting part of our <b>base.pug</b> is the block content.
+<p>The next interesting part of our <b>base.pug</b> is the block content.
 In <b>Pug</b>, we define blocks, which are extendable parts of our HTML
 file. In this case, we want to extend the base in our <b>home.pug</b>
 and we want to extend the base based on the block content. So, we extend
@@ -3304,7 +3291,7 @@ block content by writing block content and every element that follows
 that block content statement will be put exactly where the block content
 is in the <b>base.pug</b>. So, in this case, we will put there an h1,
 which will be here is a title and that p for the paragraph, a nice
-paragraph.
+paragraph.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 175 pug: home.pug + base.pug + navigation.pug, #2 (111) ~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3788,13 +3775,13 @@ router, which is a new express router. That's what we do in this line
 here. And then we can assign some routes to it. For example, get
 requests or we can also assign post requests, put request, delete
 requests.</p>
-These are the requests that I talked about in my lectures. But before
+<p>These are the requests that I talked about in my lectures. But before
 that, let's see here, we are actually requiring something else and we
 call it the relationships controller and this file is actually located
 somewhere, not right at the root of our application. It's located in the
 folder app, that we see here on top, so let's expand that. Then we go
 into controllers and then we are requiring relationships, which is this
-file over here.
+file over here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 207 router.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3803,11 +3790,11 @@ file over here.
   alt="router.js."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Let's double click on that and open it up and what we see here is again,
+<p>Let's double click on that and open it up and what we see here is again,
 first of all, that we are requiring something else. It's again the file
 and now the two dots tell us that we have to look one folder before the
 folder we are in. So, we are in controllers and we need to look at app
-and then we want to look at models.
+and then we want to look at models.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 208 relationships.js (131) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3835,10 +3822,10 @@ double or float numbers.</p>
 into our database, which do not adhere to the standard, to say so. All
 of the objects need to have a field, which is source of that string, a
 field which is target of type string and a weight of type number.</p>
-The last line is the module exports. This we have seen before. This is
+<p>The last line is the module exports. This we have seen before. This is
 what happens when we actually require this specific file. And what we're
 exporting here is exactly the model. The model that we defined over here
-is what we are exporting down here.
+is what we are exporting down here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ 209 controllers/relationships.js (132) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3876,11 +3863,11 @@ database, then I want to return a response, which contains our results
 and of status 200, which in HTTP means it was a successful request and
 I'm returning some results or I'm returning what you expect me to
 return.</p>
-On the other hand, if there was an error, so, if there is an error, what
+<p>On the other hand, if there was an error, so, if there is an error, what
 I want to return is a response with the status of 500, which again in
 HTTP means there has been an error on the server side and I want to send
 my error back to the user, so that the user knows of what kind of
-problem might have happened.
+problem might have happened.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 210 relationships.js (133) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3926,12 +3913,12 @@ execute this function, but I want to execute a function on the spot at
 the moment for that user and I want to answer to that user exactly the
 data that we get back from the database at that specific point in
 time.</p>
-The last thing that we see here is that we are exporting again because
+<p>The last thing that we see here is that we are exporting again because
 this is necessary for the other files requiring this file to know what
 would we actually want to achieve by requiring this file. And what I'm
 exporting here is exactly the router object, which is the one that we
 have defined over here and to which we have assigned a route. I get
-requests over here.
+requests over here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 211  (134) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3940,10 +3927,10 @@ requests over here.
   alt="index.js ."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-Now, we can go back into the index.json or we actually require the
+<p>Now, we can go back into the index.json or we actually require the
 router and we assign it to this variable here. And we can say that our
 router is listening on the route here and we are using the route of our
-application.
+application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 212  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -3952,11 +3939,11 @@ application.
   alt="index.js ."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-And if an incoming request gets on the route and it matches one of the
+<p>And if an incoming request gets on the route and it matches one of the
 routers specified, incoming requests, for example, /api/relationships,
 as we have seen here, then you have to answer oh sorry you have to
 answer with this call of this function, which is but basically we are
-telling the application here.
+telling the application here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 213  (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4001,8 +3988,8 @@ that?</p>
   alt=" ."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-We go back to our webstore and we start implementing a new route. We
-know that the routes are defined into the router.
+<p>We go back to our webstore and we start implementing a new route. We
+know that the routes are defined into the router.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 216  (136) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4072,12 +4059,12 @@ just return there was some kind of an error. This is the error. And if
 there was no error, we will have some results, which are most likely and
 hopefully going to be those elements in which the source is Aemon and we
 will return this element to the user.</p>
-Now, I am saving this and as you have noticed, there is no need for me
+<p>Now, I am saving this and as you have noticed, there is no need for me
 to change the model, because the model is the same. There's no
 difference there, the only thing again that I'm changing here is just
 I'm filtering out the relationships, such that what I get is that the
 source of our relationships is Aemon. Now I have saved this file, there
-is no modification here, so there's no need to save anything here.
+is no modification here, so there's no need to save anything here.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ 219 restart process with $npm start (138) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4095,8 +4082,8 @@ copy of the files. So, since the copy is outdated, I need to restart my
 server and I can do that by pressing this button. If I was using the
 terminal, you would have to press control+C and then you can just type
 in $NPM start again.</p>
-Just for the sake here, I press run again and the output is going to be
-the same, because I'm not logging anything new.
+<p>Just for the sake here, I press run again and the output is going to be
+the same, because I'm not logging anything new.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 220 relationship data with two objects (139) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4105,11 +4092,11 @@ the same, because I'm not logging anything new.
   alt="Relationship data with two objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-But when I go to Safari now and I have my API relationships root, if I
+<p>But when I go to Safari now and I have my API relationships root, if I
 now append Aemon, as you see here, what I will get is a new array. So,
 this is the array of objects with only two objects and the two objects
 that I get are with the source Aemon. These are the only two objects
-that I have in my database, which have this source.
+that I have in my database, which have this source.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ 221 relationship data with multiple objects (139) ~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4118,12 +4105,12 @@ that I have in my database, which have this source.
   alt="Relationship data with multiple objects."
   style="border: 2px solid #000000; width:40%;" />
 </p>
-We were successful in implementing this route and we can also confirm
+<p>We were successful in implementing this route and we can also confirm
 that by going back, looking at our complete relationships root with all
 of our relationships data and you will see that at the very top there's
 only two objects, which are of a source Aemon and they are exactly the
 same ones that we get if we navigate back to this root. So, yes, this is
-exactly what I wanted to show you.
+exactly what I wanted to show you.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 222 relationships.js (139) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4155,7 +4142,7 @@ because out of simplicity. This is just an API.</p>
 some new lines of code, which you should look into. They are interesting
 and I'm very sure that if you understand those lines of code, you
 actually understand how the application works.</p>
-That is a good test for you to try out and have fun.
+<p>That is a good test for you to try out and have fun.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4-0">4.0 API calls and Data Visualization (1:01)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4607,8 +4594,7 @@ with all the rest of the web page contained within it.</p>
 <p>For all the other tags, it works in a similar way. In the way that
 there's an opening tag, then there is more content and then there's a
 closing tag.</p>
-This example here is actually the compiled version of our visualization
-site.
+<p>This example here is actually the compiled version of our visualization site.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 248  (14x) ~~~~~~~~~~~~~~~~~-->
 <p align="center">
@@ -4687,13 +4673,11 @@ type of object, such as a line or a circle, but it is also determined by
 the number of attributes that can be found in these elements. And this
 is where we can determine most of the features of such a shape, and
 where D3 can greatly help us.</p>
-In the next section of this lesson, we will take a deeper look into how
+<p>In the next section of this lesson, we will take a deeper look into how
 data binding works in D3, and how we can use it to dynamically create
-these kinds of shapes and graphics.
+these kinds of shapes and graphics.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-4">
-4.4 Data binding with D3 (14:37)
-</h3>
+<h3 id="ch4-4">4.4 Data binding with D3 (14:37)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Welcome back to our lecture about data visualization! In this part,
 we'll take a closer look onto data binding with D3 and we will also
@@ -4878,14 +4862,12 @@ label these lines as links.</p>
 case, for circular elements, but we will skip this for now. You can take
 a look at our accompanying video where we demonstrate how to actually do
 this in code.</p>
-Now, that we actually created a graph model and we created a graph
+<p>Now, that we actually created a graph model and we created a graph
 visualization using SVG, we'll take a bit of a closer look into how to
 control the look of this SVG using CSS and style elements in the next
-lecture.
+lecture.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-5">
-4.5 Controlling Element Styles (8:13)
-</h3>
+<h3 id="ch4-5">4.5 Controlling Element Styles (8:13)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this part of our data visualization lecture, we've been talking
 about controlling element styles using D3. Chris mentioned CSS a couple
@@ -4969,14 +4951,12 @@ points.</p>
 <p>You would say: always take the square root of the weight. Or you
 could also use the logarithm for that. So, it is then more
 naturally-looking width for the connections.</p>
-Now that we have seen how we can use CSS and D3 to actually influence
+<p>Now that we have seen how we can use CSS and D3 to actually influence
 the style and appearance of our visualizations and graphics, in the next
 part we'll talk about how we can make them interactive using event
-handling.
+handling.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-6">
-4.6 Event handling in D3 (7:18)
-</h3>
+<h3 id="ch4-6">4.6 Event handling in D3 (7:18)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Welcome to this part of our data visualization lesson! In this part,
 we're going to talk about event handling in D3 and how we can use events
@@ -5061,9 +5041,9 @@ changes and also provide some interactive features. If you would like to
 know more, see more examples of different events that you can implement
 and get a bit more detail of how it actually works in the code, please
 refer to our demo video.</p>
-<h3 id="ch4-7">
-4.7 Summary Module 4 - API calls and Data Visualization (0:57)
-</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-7">4.7 Summary Module 4 - API calls and Data Visualization (0:57)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Thank you, Dennis, for this introduction to data visualization in
 JavaScript!</p>
 <p>Summing up this module, we can use data visualization to effectively
@@ -5078,9 +5058,9 @@ principles of data visualizations for more effective data
 communications. In the next module, we would hear Professor Rost, as he
 speaks about few applications of JavaScript in the Life Sciences. I will
 then summarize the course and say a few parting words.</p>
-<h3 id="ch4-8">
-4.8 Demo 1: Data Visualization (15:06)
-</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch4-8">4.8 Demo 1: Data Visualization (15:06)</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hello everyone! Welcome to the first demo video accompanying the API
 calls and</p>
 <p>data visualization lecture. In this first video, we're going to look
@@ -5273,9 +5253,7 @@ these are all different interactions. That's it for this lesson. In the
 next lesson, I'll show you how we can transform these interactions, so
 we can create a graph using D3.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3 id="ch4-9">
-4.9 Demo 2: Data Visualization (15:22)
-</h3>
+<h3 id="ch4-9">4.9 Demo 2: Data Visualization (15:22)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Hello and welcome back! This is the second lesson for the data
 visualization lecture. In the first lesson, we talked about how we can
